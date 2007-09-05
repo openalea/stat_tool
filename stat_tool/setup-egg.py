@@ -28,7 +28,6 @@ if __name__ == '__main__':
           description='statistics',
           url='',
           license='GPL',
-
           
           # Define where to execute scons
           scons_scripts=['SConstruct'],
@@ -49,8 +48,8 @@ if __name__ == '__main__':
           
 
           # Dependencies
-          setup_requires = setup_requires + ['openalea.deploy'],
-          install_requires = install_requires,
+          setup_requires = setup_requires + ['openalea.deploy', 'vplants.tool'],
+          install_requires = install_requires + ['vplants.tool'],
           dependency_links = ['http://openalea.gforge.inria.fr/pi'],
           )
 
