@@ -9,10 +9,13 @@ build-backend = "scikit_build_core.build"
 include-package-data = false # force explicit declaration of data (disable automatic inclusion)
 
 [tool.setuptools.package-data]
-"openalea.pkg_name" = ["data/**/*"]
+"openalea.stat_tool" = ["data/**/*"]
 
 # enable dynamic version based on git tags
 [tool.setuptools_scm]
+fallback_version = "1.4.0.dev0"
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
 
 [tool.scikit-build]
 build-dir = "./build/"
@@ -37,7 +40,7 @@ authors = [
   { name = "Pierre Fernique" },
   { name = "Christophe Pradal" },
   { name = "Thomas Cokelaer" },
-  { name = "Sébastien Dufour" },
+  { name = "Thomas Arsouze" },
 ]
 description = "Basic Statistical tools"
 readme = "README.md"
