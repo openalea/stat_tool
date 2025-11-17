@@ -63,6 +63,7 @@ test:
   source_files:
     - test/
   commands:
+    - cd test
     - pytest -v test_*.py
 
 
