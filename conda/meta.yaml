@@ -35,6 +35,7 @@ requirements:
     {% endfor  %}
     - cmake
     - make                                 # [not win]
+    - boost
 
   build:
     - {{ compiler("cxx") }}
