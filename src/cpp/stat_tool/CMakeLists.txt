@@ -15,6 +15,7 @@ endif()
 target_include_directories(vpstat_tool PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:include>
+    ${Boost_INCLUDE_DIRS}
 )
 
 set(STAT_TOOL_LIBDIR "${SKBUILD_PLATLIB_DIR}/openalea/stat_tool")
