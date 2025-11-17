@@ -4,9 +4,12 @@ channels:
   - openalea3
 dependencies:
   - python
+  - scikit-build-core
+  - setuptoools-scm
+  - setuptools
+  - cmake
   - pip
   - boost
   - matplotlib-base
   - pip:
       - -e '..[test,dev,doc]'
-
