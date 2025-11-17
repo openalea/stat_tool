@@ -82,7 +82,7 @@ namespace stat_tool {
     friend MultivariateMixture* multivariate_mixture_building(StatError &error ,
                                                               int nb_component , double *weight ,
                                                               const DiscreteParametricProcess **component);
-    friend MultivariateMixture* multivariate_mixture_ascii_read(StatError &error , const std::string &path ,
+    friend STAT_TOOL_API MultivariateMixture* multivariate_mixture_ascii_read(StatError &error , const std::string &path ,
                                                                 double cumul_threshold);
     friend std::ostream& operator<<(std::ostream &os , const MultivariateMixture &mixt)
     { return mixt.ascii_write(os , mixt.mixture_data , false , false); }
