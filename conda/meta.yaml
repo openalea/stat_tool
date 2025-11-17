@@ -63,7 +63,7 @@ test:
   source_files:
     - test/
   commands:
-    - pytest
+    - pytest -v test_*.py
 
 
 about:
@@ -75,3 +75,5 @@ about:
 extra:
   recipe-maintainers:
     - Jean-Baptiste Durand
+    - Thomas Arsouze
+    - Christophe Pradal
