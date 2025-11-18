@@ -5,7 +5,10 @@
 #########################################################################
 """
 
-__version__ = "$Id$"
+try:
+    from .tools import interface
+except ImportError:
+    from tools import interface
 
 
 # from openalea.stat_tool.plot import DISABLE_PLOT
@@ -14,182 +17,172 @@ from openalea.stat_tool.distribution import Binomial, Poisson
 from openalea.stat_tool.multivariate_mixture import _MultivariateMixture
 from openalea.stat_tool.vectors import Vectors
 
-from .tools import interface, runTestClass
+import os, tempfile
+
+import pytest
+
+@pytest.fixture
+def data():
+    d11 = Binomial(0, 12, 0.1)
+    d12 = Binomial(0, 12, 0.5)
+    d13 = Binomial(0, 12, 0.8)
+
+    d21 = Poisson(0, 18.0)
+    d22 = Poisson(0, 5.0)
+    d23 = Poisson(0, 0.20)
+
+    data = _MultivariateMixture(
+        [0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]]
+    )
+    assert data.nb_component == 3
+    assert data.nb_variable == 2
+    return data
+
+@pytest.fixture
+def myi(data):
+    return interface(data,  "data/mixture_mv1.mixt", _MultivariateMixture)
 
 
-class Test(interface):
-    """a simple unittest class"""
 
-    def __init__(self):
-        interface.__init__(
-            self, self.build_data(), "data/mixture_mv1.mixt", _MultivariateMixture
-        )
+def _test_constructor_from_file(myi):
+    # raise error (proba non equal to 1) when nosetests used from parent directory.
+    myi.constructor_from_file()
 
-    def build_data(self):
-        d11 = Binomial(0, 12, 0.1)
-        d12 = Binomial(0, 12, 0.5)
-        d13 = Binomial(0, 12, 0.8)
+def test_constructor_from_file_failure(myi):
+    myi.constructor_from_file_failure()
 
-        d21 = Poisson(0, 18.0)
-        d22 = Poisson(0, 5.0)
-        d23 = Poisson(0, 0.20)
+def test_print(myi):
+    myi.print_data()
 
-        data = _MultivariateMixture(
-            [0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]]
-        )
-        assert data.nb_component == 3
-        assert data.nb_variable == 2
-        return data
+def test_display(myi):
+    myi.display()
+    myi.display_versus_ascii_write()
+    myi.display_versus_str()
 
-    def test_empty(self):
-        """skip test_empty
+def test_len(data):
+    c = data
+    assert len(c) == 3
 
-        because there is an empty constructor in VectorDistance;"""
-        pass
+def test_plot(data):
+    # if DISABLE_PLOT == False:
+    data.plot(1)
+    #   self.data.plot(2)
 
-    def _test_constructor_from_file(self):
-        # raise error (proba non equal to 1) when nosetests used from parent directory.
-        self.constructor_from_file()
 
-    def test_constructor_from_file_failure(self):
-        self.constructor_from_file_failure()
+def test_plot_write(myi):
+    myi.plot_write()
 
-    def test_print(self):
-        self.print_data()
+def test_file_ascii_write(myi):
+    myi.file_ascii_write()
 
-    def test_display(self):
-        self.display()
-        self.display_versus_ascii_write()
-        self.display_versus_str()
+def my_estimate():
+    data_file = "data/cluster_vectors.vec"
+    v = Vectors(data_file)
+    assert len(v) == 836
+    assert v.nb_variable == 5
+    m = v.mixture_estimation(3, 300, [])
 
-    def test_len(self):
-        c = self.data
-        assert len(c) == 3
+    return m, v
 
-    def test_plot(self):
-        # if DISABLE_PLOT == False:
-        self.data.plot(1)
-        #   self.data.plot(2)
+def test_estimate():
+    m, v = my_estimate()
+    assert m, v
 
-    def _test_save(self):
-        self.save()
+def test_mixture_plots():
+    m, v = my_estimate()
+    m.plot()
+    # Get marginals
+    for i in range(v.nb_variable):
+        marginal = m.extract_distribution(i + 1)
+        assert marginal.nb_component == 3
+    marginal.plot()
+    assert m, v
 
-    def test_plot_write(self):
-        self.plot_write()
+def test_spreadsheet_write(myi):
+    myi.spreadsheet_write()
 
-    def test_file_ascii_write(self):
-        self.file_ascii_write()
+def test_simulate(myi):
+    myi.simulate()
 
-    def test_estimate(self):
-        data_file = "data/cluster_vectors.vec"
-        v = Vectors(data_file)
-        assert len(v) == 836
-        assert v.nb_variable == 5
-        m = v.mixture_estimation(3, 300, [])
-        self._m = m
-        self._v = v
-        return m, v
+def test_extract():
+    m, v = test_simulate2()
+    for i in range(1, v.nb_variable + 1):
+        m2 = v.extract(i)
+        assert m2
+    return m2
 
-    def test_mixture_plots(self):
-        if hasattr(self, "_m") and hasattr(self, "_m"):
-            m, v = self._m, self._v
+def test_extract_data():
+    m, v = my_estimate()
+    d = m.extract_data()
+    assert d
+
+def test_simulate2():
+    d11 = Binomial(0, 12, 0.1)
+    d12 = Binomial(0, 12, 0.5)
+    d13 = Binomial(0, 12, 0.8)
+    d21 = Poisson(0, 18.0)
+    d22 = Poisson(0, 5.0)
+    d23 = Poisson(0, 0.20)
+    m = _MultivariateMixture([0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]])
+    v = m.simulate(5000)
+    assert v
+
+    # TODO: set seed
+    estimation_failed = True
+    while estimation_failed:
+        try:
+            m_estim_model = v.mixture_estimation(m, 100, [True, True])
+        except Exception:
+            pass
         else:
-            m, v = self.test_estimate()
-        m.plot()
-        # Get marginals
-        for i in range(v.nb_variable):
-            marginal = m.extract_distribution(i + 1)
-            assert marginal.nb_component == 3
-        marginal.plot()
-        return m, v
+            estimation_failed = False
+    assert m_estim_model
 
-    def test_spreadsheet_write(self):
-        self.spreadsheet_write()
+    estimation_failed = True
+    while estimation_failed:
+        try:
+            m_estim_nbcomp = v.mixture_estimation(2)
+        except Exception:
+            pass
+        else:
+            estimation_failed = False
+    assert m_estim_nbcomp
 
-    def test_simulate(self):
-        self.simulate()
+    return m, v
 
-    def test_extract(self):
-        m, v = self.test_simulate2()
-        for i in range(1, v.nb_variable + 1):
-            m2 = v.extract(i)
-            assert m2
-        return m2
+def _test_permutation(data):
+    data1 = data
 
-    def test_extract_data(self):
-        m, v = self.test_estimate()
-        d = m.extract_data()
-        assert d
+    data2 = _MultivariateMixture(data1)
+    data2.state_permutation([0, 2, 1])
+    data2.state_permutation([0, 2, 1])
 
-    def test_simulate2(self):
-        d11 = Binomial(0, 12, 0.1)
-        d12 = Binomial(0, 12, 0.5)
-        d13 = Binomial(0, 12, 0.8)
-        d21 = Poisson(0, 18.0)
-        d22 = Poisson(0, 5.0)
-        d23 = Poisson(0, 0.20)
-        m = _MultivariateMixture([0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]])
-        v = m.simulate(5000)
-        assert v
+    assert str(data1) == str(data2)
 
-        # TODO: set seed
-        estimation_failed = True
-        while estimation_failed:
-            try:
-                m_estim_model = v.mixture_estimation(m, 100, [True, True])
-            except Exception:
-                pass
-            else:
-                estimation_failed = False
-        assert m_estim_model
-
-        estimation_failed = True
-        while estimation_failed:
-            try:
-                m_estim_nbcomp = v.mixture_estimation(2)
-            except Exception:
-                pass
-            else:
-                estimation_failed = False
-        assert m_estim_nbcomp
-
-        return m, v
-
-    def _test_permutation(self):
-        data1 = self.data
-
-        data2 = _MultivariateMixture(data1)
-        data2.state_permutation([0, 2, 1])
-        data2.state_permutation([0, 2, 1])
-
-        assert str(data1) == str(data2)
-
-    def test_cluster_data(self):
-        """Clustering using the mixture model"""
-        m, v = self.test_simulate2()
-        clust_entropy = m.cluster_data(v, True)
-        import os
-        import tempfile
-
-        tmp_file_name = tempfile.mktemp()
-        clust_entropy.file_ascii_write(tmp_file_name, False)
-        os.remove(tmp_file_name)
-        clust_plain = m.cluster_data(v, False)
-        assert clust_entropy.nb_variable == m.nb_variable + 2
-        assert clust_plain.nb_variable == m.nb_variable + 1
-
-    def test_cluster_data_file(self):
-        """Clustering using the mixture model, reading data from a file"""
-        m, v = self.test_estimate()
-        clust_entropy = m.cluster_data(v, True)
-        import os
-        import tempfile
-
-        tmp_file_name = tempfile.mktemp()
-        clust_entropy.file_ascii_write(tmp_file_name, False)
-        os.remove(tmp_file_name)
-        assert clust_entropy.nb_variable == m.nb_variable + 2
+def test_cluster_data():
+    """Clustering using the mixture model"""
+    m, v = test_simulate2()
+    clust_entropy = m.cluster_data(v, True)
 
 
-if __name__ == "__main__":
-    runTestClass(Test())
+    with tempfile.NamedTemporaryFile(delete=False) as tmp:
+        clust_entropy.file_ascii_write(tmp.name, False)
+
+    clust_plain = m.cluster_data(v, False)
+    os.remove(tmp.name)
+
+    assert clust_entropy.nb_variable == m.nb_variable + 2
+    assert clust_plain.nb_variable == m.nb_variable + 1
+
+def test_cluster_data_file():
+    """Clustering using the mixture model, reading data from a file"""
+    m, v = my_estimate()
+    clust_entropy = m.cluster_data(v, True)
+
+    with tempfile.NamedTemporaryFile(delete=False) as tmp:
+        clust_entropy.file_ascii_write(tmp.name, False)
+
+    os.remove(tmp.name)
+
+    assert clust_entropy.nb_variable == m.nb_variable + 2
+
