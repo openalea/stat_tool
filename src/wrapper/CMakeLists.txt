@@ -17,7 +17,7 @@ else()
 endif()
 
 # Link to vpstat_tool and Boost.Python
-target_link_libraries(_stat_tool vpstat_tool)
+target_link_libraries(_stat_tool stat_tool)
 target_compile_definitions(_stat_tool PRIVATE BOOST_ALL_NO_LIB)
 target_link_libraries(_stat_tool ${Boost_LIBRARIES})
 if(APPLE)
@@ -33,7 +33,7 @@ set_target_properties(_stat_tool PROPERTIES
   INSTALL_RPATH "${origin_token}"
 )
 
-add_dependencies(_stat_tool vpstat_tool)
+add_dependencies(_stat_tool stat_tool)
 ## wrapper_install(_stat_tool stat_tool)
 message(STATUS "Installing wrappers to ${SKBUILD_PLATLIB_DIR}/openalea/stat_tool")
 set_target_properties(_stat_tool PROPERTIES PREFIX "")

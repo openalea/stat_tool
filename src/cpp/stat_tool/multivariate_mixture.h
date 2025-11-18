@@ -79,11 +79,12 @@ namespace stat_tool {
     friend class Vectors;
     friend class MultivariateMixtureData;
 
-    friend MultivariateMixture* multivariate_mixture_building(StatError &error ,
-                                                              int nb_component , double *weight ,
-                                                              const DiscreteParametricProcess **component);
+    friend MultivariateMixture* multivariate_mixture_building(StatError &error , int nb_component ,
+                                                     int nb_variable, double *weight,
+                                                     DiscreteParametricProcess **ppcomponent,
+                                                     CategoricalProcess **pnpcomponent);
     friend MultivariateMixture* multivariate_mixture_ascii_read(StatError &error , const std::string &path ,
-                                                                double cumul_threshold);
+                                                                double cumul_threshold = CUMUL_THRESHOLD);
     friend std::ostream& operator<<(std::ostream &os , const MultivariateMixture &mixt)
     { return mixt.ascii_write(os , mixt.mixture_data , false , false); }
 
