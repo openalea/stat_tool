@@ -36,10 +36,7 @@
 
 __version__ = "$Id$"
 
-
-from openalea.stat_tool.plot import DISABLE_PLOT
-
-DISABLE_PLOT = False
+from .tools import robust_path as get_shared_data
 
 from openalea.stat_tool.cluster import Cluster
 from openalea.stat_tool.comparison import Compare, ComparisonTest
@@ -55,9 +52,6 @@ from openalea.stat_tool.histogram import Histogram
 from openalea.stat_tool.output import Display, Plot, plot
 from openalea.stat_tool.simulate import Simulate
 
-from .tools import robust_path as get_shared_data
-
-plot.DISABLE_PLOT = DISABLE_PLOT
 
 
 def test():
