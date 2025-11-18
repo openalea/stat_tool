@@ -348,7 +348,7 @@ def Save(obj, *args, **kargs):
 
 
 
-class StatInterface(object):
+class StatInterface:
     """ Abstract base class for stat_tool objects """
 
 

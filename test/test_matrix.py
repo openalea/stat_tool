@@ -2,82 +2,51 @@
 
 __version__ = "$Id$"
 
+try:
+    from .tools import interface
+    from .tools import robust_path as get_shared_data
+except ImportError:
+    from tools import interface
+    from tools import robust_path as get_shared_data
+
 from openalea.stat_tool.comparison import Compare
 from openalea.stat_tool.data_transform import SelectVariable
 from openalea.stat_tool.vectors import VectorDistance, Vectors
 
-from .tools import interface, runTestClass
-from .tools import robust_path as get_shared_data
+import pytest
+
+@pytest.fixture
+def data():
+    vec10 = Vectors(get_shared_data("chene_sessile.vec"))
+    vec15 = SelectVariable(vec10, [1, 3, 6], Mode="Reject")
+    matrix10 = Compare(vec15, VectorDistance("N", "N", "N"))
+    assert 138 == matrix10.nb_row
+    assert 138 == matrix10.nb_column
+    return matrix10
+
+@pytest.fixture
+def myi(data):
+    # init expect the 4th argument to be provided.
+    # vectors is therefore passed as dummy structure
+    return interface(data, None, Vectors)
 
 
-class Test(interface):
-    """a simple unittest class for distance matrix"""
+def test_print(myi):
+    myi.print_data()
 
-    def __init__(self):
-        interface.__init__(self, self.build_data(), None, Vectors)
-        # init expect the 4th argument to be provided.
-        # vectors is therefore passed as dummy structure
+def test_display(myi):
+    myi.display()
+    myi.display_versus_ascii_write()
+    myi.display_versus_str()
 
-    def build_data(self):
-        vec10 = Vectors(get_shared_data("chene_sessile.vec"))
-        vec15 = SelectVariable(vec10, [1, 3, 6], Mode="Reject")
-        matrix10 = Compare(vec15, VectorDistance("N", "N", "N"))
-        assert 138 == matrix10.nb_row
-        assert 138 == matrix10.nb_column
-        return matrix10
+def test_plot(myi):
+    myi.plot()
 
-    def test_empty(self):
-        """no construtor"""
-        pass
+def test_plot_write(myi):
+    myi.plot_write()
 
-    def test_constructor_from_file(self):
-        """no construtor"""
-        pass
+def test_file_ascii_write(myi):
+    myi.file_ascii_write()
 
-    def test_constructor_from_file_failure(self):
-        """no construtor"""
-        pass
-
-    def test_print(self):
-        self.print_data()
-
-    def test_display(self):
-        self.display()
-        self.display_versus_ascii_write()
-        self.display_versus_str()
-
-    def test_len(self):
-        """not implemented; irrelevant?"""
-        pass
-
-    def test_plot(self):
-        self.plot()
-
-    def _test_save(self):
-        pass
-        # self.save()
-
-    def test_plot_write(self):
-        self.plot_write()
-
-    def test_file_ascii_write(self):
-        self.file_ascii_write()
-
-    def test_spreadsheet_write(self):
-        self.spreadsheet_write()
-
-    def test_simulate(self):
-        """no simulate method"""
-        pass
-
-    def test_extract(self):
-        """no such method"""
-        pass
-
-    def test_extract_data(self):
-        """no such method"""
-        pass
-
-
-if __name__ == "__main__":
-    runTestClass(Test())
+def test_spreadsheet_write(myi):
+    myi.spreadsheet_write()

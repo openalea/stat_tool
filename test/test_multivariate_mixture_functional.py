@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 """tests on mv_mixture"""
-__version__ = "$Id$"
 
+try:
+    from .tools import robust_path as get_shared_data
+except ImportError:
+    from tools import robust_path as get_shared_data
 
 from openalea.stat_tool.multivariate_mixture import _MultivariateMixture
 from openalea.stat_tool.distribution import Binomial, Poisson
@@ -58,6 +61,3 @@ def test1():
     clust_entropy = m_estim_nbcomp.cluster_data(v , True)
     clust_plain = m_estim_nbcomp.cluster_data(v , False)
 
-
-if __name__ == "__main__":
-    test1()
