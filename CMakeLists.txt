@@ -42,7 +42,7 @@ endif()
 option(WITH_EFENCE "Build with efence library" OFF)
 option(WITH_TEST "Build tests" OFF)
 
-find_package(Python3 COMPONENTS Interpreter Development.Module REQUIRED)
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
 message(STATUS "Python_INCLUDE_DIRS: ${Python_INCLUDE_DIRS}")
 message(STATUS "Python_EXECUTABLE: ${Python_EXECUTABLE}")
 message(STATUS "Python LIB : " ${Python_LIBRARIES})
