@@ -6,7 +6,7 @@ add_library(stat_tool SHARED ${SOURCES})
 
 # Export symbols on Windows
 if (WIN32)
-    target_compile_definitions(stat_tool PRIVATE STAT_TOOL_EXPORTS)
+    target_compile_definitions(stat_tool PRIVATE STAT_TOOL_MAKEDLL)
 endif()
 
 # Optionally add efence
