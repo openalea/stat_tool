@@ -45,6 +45,8 @@ option(WITH_TEST "Build tests" OFF)
 find_package(Python3 COMPONENTS Interpreter Development.Module REQUIRED)
 message(STATUS "Python_INCLUDE_DIRS: ${Python_INCLUDE_DIRS}")
 message(STATUS "Python_EXECUTABLE: ${Python_EXECUTABLE}")
+message(STATUS "Python LIB : " ${Python_LIBRARIES})
+include_directories(${Python_INCLUDE_DIRS})
 
 include(cmake/wrapper.cmake)
 
