@@ -10,9 +10,9 @@ import os
 
 from openalea.stat_tool import Simulate
 from openalea.stat_tool.output import Display, Save
-from openalea.stat_tool.plot import DISABLE_PLOT
+import openalea.stat_tool.plot
 
-DISABLE_PLOT = True
+DISABLE_PLOT = openalea.stat_tool.plot.DISABLE_PLOT = True
 
 from pathlib import Path
 
