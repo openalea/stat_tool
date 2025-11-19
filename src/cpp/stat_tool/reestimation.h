@@ -181,9 +181,10 @@ namespace stat_tool {
   };
 
 
-  STAT_TOOL_API double interval_bisection(Reestimation<double> *distribution_reestim ,
+  double interval_bisection(Reestimation<double> *distribution_reestim ,
                             Reestimation<double> *length_bias_reestim);
 
+#include "reestimation.hpp"
 
 };  // namespace stat_tool
 
