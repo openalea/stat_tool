@@ -2219,9 +2219,14 @@ void Reestimation<Type>::inverse_gaussian_estimation(ContinuousParametric *dist)
   }
 }
 
+template class stat_tool::Reestimation<int>;
+template class stat_tool::Reestimation<double>;
 
 };  // namespace stat_tool
 
+
+//template class stat_tool::Reestimation<int>;
+//template class stat_tool::Reestimation<double>;
 
 
 #endif
