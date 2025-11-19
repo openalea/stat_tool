@@ -21,12 +21,12 @@ target_include_directories(stat_tool PUBLIC
     ${Boost_INCLUDE_DIRS}
 )
 
-target_link_libraries(stat_tool
-    PUBLIC ${Boost_LIBRARIES} 
+#target_link_libraries(stat_tool
+#    PUBLIC ${Boost_LIBRARIES} 
 )
-target_link_libraries(stat_tool
-    PUBLIC Python3::Python
-)
+#target_link_libraries(stat_tool
+#    PUBLIC Python3::Python
+#)
 
 
 set(STAT_TOOL_LIBDIR "${SKBUILD_PLATLIB_DIR}/openalea/stat_tool")
