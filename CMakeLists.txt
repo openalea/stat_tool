@@ -14,9 +14,10 @@ endif()
 include(GNUInstallDirs)
 
 # Set C++ standard and compile options
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS ON)
+set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG")
 set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)  # For shared libs
 
@@ -27,6 +28,14 @@ endif()
 if(DEFINED ENV{SKIP_BUILD})
   message(STATUS "Skipping build of C/C++ extensions")
   return()  # stops processing the CMakeLists here
+endif()
+
+if (MSVC)
+    string(REGEX REPLACE "/W3" "/W0" ${CMAKE_CXX_FLAGS} "${${CMAKE_CXX_FLAGS}}") 
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MD")
+
+    # To fix compilation error with vc14 and boost
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /DHAVE_SNPRINTF")
 endif()
 
 # Options
