@@ -84,7 +84,7 @@ namespace stat_tool {
                                                      DiscreteParametricProcess **ppcomponent,
                                                      CategoricalProcess **pnpcomponent);
     friend MultivariateMixture* multivariate_mixture_ascii_read(StatError &error , const std::string &path ,
-                                                                double cumul_threshold  = CUMUL_THRESHOLD);
+                                                                double cumul_threshold);
     friend std::ostream& operator<<(std::ostream &os , const MultivariateMixture &mixt)
     { return mixt.ascii_write(os , mixt.mixture_data , false , false); }
 
