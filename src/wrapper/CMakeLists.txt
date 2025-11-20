@@ -26,8 +26,8 @@ if(APPLE)
   ##target_link_libraries(_stat_tool Python3::Python)
 endif()
 
-## wrapper_link_boost(_stat_tool)
-## wrapper_link_python(_stat_tool)
+wrapper_link_boost(_stat_tool)
+wrapper_link_python(_stat_tool)
 
 set_target_properties(_stat_tool PROPERTIES
   INSTALL_RPATH "${origin_token}"

@@ -17,6 +17,7 @@ include(GNUInstallDirs)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS ON)
+# set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG")
 set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)  # For shared libs
 
@@ -29,13 +30,23 @@ if(DEFINED ENV{SKIP_BUILD})
   return()  # stops processing the CMakeLists here
 endif()
 
+if (MSVC)
+    string(REGEX REPLACE "/W3" "/W0" ${CMAKE_CXX_FLAGS} "${${CMAKE_CXX_FLAGS}}") 
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MD")
+
+    # To fix compilation error with vc14 and boost
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /DHAVE_SNPRINTF")
+endif()
+
 # Options
 option(WITH_EFENCE "Build with efence library" OFF)
 option(WITH_TEST "Build tests" OFF)
 
-find_package(Python3 COMPONENTS Interpreter Development.Module REQUIRED)
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
 message(STATUS "Python_INCLUDE_DIRS: ${Python_INCLUDE_DIRS}")
 message(STATUS "Python_EXECUTABLE: ${Python_EXECUTABLE}")
+message(STATUS "Python LIB : " ${Python_LIBRARIES})
+#include_directories(${Python_INCLUDE_DIRS})
 
 include(cmake/wrapper.cmake)
 
