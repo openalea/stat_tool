@@ -24,7 +24,7 @@ logging.level = "WARNING"
 build.verbose = true
 sdist.include = ["*.so", "*.dylib", "*.dll", "*.pyd", "*.lib"]
 editable.rebuild = true
-experimental = true
+experimental = false
 
 [tool.scikit-build.cmake]
 build-type = "Release"
