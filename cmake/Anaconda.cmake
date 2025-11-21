@@ -36,21 +36,21 @@ if (DEFINED ENV{CONDA_BUILD})
     endif()
 
     # specify the cross compiler
-    set(CMAKE_C_COMPILER $ENV{CC})
-    set(CMAKE_LINKER $ENV{LD})
-    set(CMAKE_AR $ENV{AR})
-    set(CMAKE_NM $ENV{NM})
-    set(CMAKE_RANLIB $ENV{RANLIB})
-    set(CMAKE_STRIP $ENV{STRIP})
-    set(CMAKE_INSTALL_NAME_TOOL $ENV{INSTALL_NAME_TOOL})
+    #set(CMAKE_C_COMPILER $ENV{CC})
+    #set(CMAKE_LINKER $ENV{LD})
+    #set(CMAKE_AR $ENV{AR})
+    #set(CMAKE_NM $ENV{NM})
+    #set(CMAKE_RANLIB $ENV{RANLIB})
+    #set(CMAKE_STRIP $ENV{STRIP})
+    #set(CMAKE_INSTALL_NAME_TOOL $ENV{INSTALL_NAME_TOOL})
 
-    if (APPLE)
-        set(CMAKE_OSX_ARCHITECTURES $ENV{OSX_ARCH})
-    endif()
+    #if (APPLE)
+    #    set(CMAKE_OSX_ARCHITECTURES $ENV{OSX_ARCH})
+    #endif()
 
-    set(CMAKE_CXX_COMPILER $ENV{CXX})
-    set(CMAKE_CXX_COMPILER_RANLIB $ENV{RANLIB})
-    set(CMAKE_CXX_COMPILER_AR $ENV{AR})
+    #set(CMAKE_CXX_COMPILER $ENV{CXX})
+    #set(CMAKE_CXX_COMPILER_RANLIB $ENV{RANLIB})
+    #set(CMAKE_CXX_COMPILER_AR $ENV{AR})
 
     # where is the target environment
     set(CMAKE_FIND_ROOT_PATH $ENV{PREFIX} $ENV{BUILD_PREFIX})
@@ -83,7 +83,6 @@ if (DEFINED ENV{CONDA_BUILD})
     # for libraries and headers in the target directories
     set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
     set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
-
 
     set(USE_CONDA_BUILD ON)
 else()
