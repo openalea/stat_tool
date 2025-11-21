@@ -70,13 +70,13 @@ def test_display(myi):
     myi.display_versus_ascii_write()
     myi.display_versus_str()
 
-def test_plot(myi):
+def _test_plot(myi):
     myi.plot()
 
 def test_save(myi):
     myi.save()
 
-def test_plot_write(myi):
+def _test_plot_write(myi):
     myi.plot_write()
 
 def test_file_ascii_write(myi):

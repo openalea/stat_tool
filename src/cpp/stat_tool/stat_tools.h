@@ -1037,7 +1037,8 @@ namespace stat_tool {
   STAT_TOOL_API extern std::mt19937 mt;
   STAT_TOOL_API extern std::uniform_real_distribution<double> rand_unif;
 
-  STAT_TOOL_API void set_seed(int seed, std::mt19937 &generator=mt);
+  STAT_TOOL_API void set_seed(int seed, std::mt19937 &generator);
+  STAT_TOOL_API void set_seed(int seed);
 
   STAT_TOOL_API int column_width(int);
   STAT_TOOL_API int column_width(int min_value , int max_value);
