@@ -73,7 +73,6 @@ dependencies = [
 [project.optional-dependencies]
 test = [
   "pytest",
-  "nose",
   "nbmake",
 ]
 dev = [
@@ -105,7 +104,7 @@ dependencies = [
 [project.urls]
 Repository = "https://github.com/openalea/stat_tool"
 Homepage = "https://stat_tool.readthedocs.io/"
-"Bug Tracker" = "https://github.com/openaleastat_tool/issues"
+"Bug Tracker" = "https://github.com/openalea/stat_tool/issues"
 Discussions = "https://github.com/openalea/stat_tool/discussions"
 Changelog = "https://github.com/openalea/stat_tool/releases"
 

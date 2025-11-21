@@ -12,5 +12,7 @@ target_sources(
 )
 
 # Add the headers to be installed with the library
-set_target_properties(oastat_tool PROPERTIES PUBLIC_HEADER ${HEADERS})
-
+install(
+  FILES ${HEADERS}
+  DESTINATION "${CONDA_ENV}include/stat_tool"
+)
