@@ -60,9 +60,9 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)  # For shared libs
 
 ##################################################
 # TODO : REMOVE?
-# if(WIN32)
-#   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -enable-stdcall-fixup -enable-auto-import -enable-runtime-pseudo-reloc -s")
-# endif()
+if(WIN32)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -enable-stdcall-fixup -enable-auto-import -enable-runtime-pseudo-reloc -s")
+endif()
 
 
 # if(DEFINED ENV{SKIP_BUILD})
