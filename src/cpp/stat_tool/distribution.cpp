@@ -596,6 +596,11 @@ void set_seed(int seed, std::mt19937 &generator)
 	generator.seed(seed);
 }
 
+STAT_TOOL_API void set_seed(int seed)
+{
+  set_seed(seed, mt);
+}
+
 /*--------------------------------------------------------------*/
 /**
  *  \brief Computation of the column width for an integer value.
