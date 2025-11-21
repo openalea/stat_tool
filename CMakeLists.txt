@@ -150,19 +150,21 @@ endif()
 ##################################################
 # Install targets and headers for stat_tool lib
 install(TARGETS oastat_tool
-        RUNTIME LIBRARY ARCHIVE
+            RUNTIME DESTINATION "${CMAKE_INSTALL_PREFIX}/bin"
+            LIBRARY DESTINATION "${CMAKE_INSTALL_PREFIX}/lib"
+            ARCHIVE DESTINATION "${CMAKE_INSTALL_PREFIX}/lib"
 )
 
 # Install header
 install(TARGETS oastat_tool
         PUBLIC_HEADER
-          DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/stat_tool
+          DESTINATION "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_INCLUDEDIR}/stat_tool"
 )
 
 install(
   TARGETS
     _stat_tool
-  DESTINATION openalea/stat_tool
+  DESTINATION "${SKBUILD_PLATLIB_DIR}/openalea/stat_tool"
 )
 
 # Optionally handle tests
