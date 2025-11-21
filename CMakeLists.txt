@@ -60,9 +60,9 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)  # For shared libs
 
 ##################################################
 # TODO : REMOVE?
-if(WIN32)
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -enable-stdcall-fixup -enable-auto-import -enable-runtime-pseudo-reloc -s")
-endif()
+# if(WIN32)
+#   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -enable-stdcall-fixup -enable-auto-import -enable-runtime-pseudo-reloc -s")
+# endif()
 
 
 # RPath settings
@@ -81,7 +81,7 @@ if("${isSystemDir}" STREQUAL "-1")
 endif("${isSystemDir}" STREQUAL "-1")
 
 
-if (MSVC)
+if (WIN32)
     string(REGEX REPLACE "/W3" "/W0" ${CMAKE_CXX_FLAGS} "${${CMAKE_CXX_FLAGS}}") 
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MD")
 
