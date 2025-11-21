@@ -167,7 +167,6 @@ install(TARGETS oastat_tool
             RUNTIME DESTINATION "${CONDA_ENV}bin/"
             LIBRARY DESTINATION "${CONDA_ENV}lib/"
             ARCHIVE DESTINATION "${CONDA_ENV}lib/"
-            PUBLIC_HEADER DESTINATION "${CONDA_ENV}include/stat_tool"
 )
 
 install(

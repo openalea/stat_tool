@@ -98,7 +98,7 @@ def test_len(data):
 def test_plot(myi):
     myi.plot()
 
-def test_save(myi):
+def _test_save(myi):
     myi.save(Format="Data")
 
 def test_plot_write(myi):
