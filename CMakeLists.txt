@@ -38,7 +38,7 @@ cmake_policy(SET CMP0074 NEW)
 cmake_policy(SET CMP0076 NEW)
  # for Python*_FIND_STRATEGY=LOCATION
 cmake_policy(SET CMP0094 NEW)
-
+cmake_policy(SET CMP0167 NEW)
 ##################################################
 # Initialize some default paths
 # See https://cmake.org/cmake/help/latest/module/GNUInstallDirs.html
@@ -167,12 +167,7 @@ install(TARGETS oastat_tool
             RUNTIME DESTINATION "${CONDA_ENV}bin/"
             LIBRARY DESTINATION "${CONDA_ENV}lib/"
             ARCHIVE DESTINATION "${CONDA_ENV}lib/"
-)
-
-# Install header
-install(TARGETS oastat_tool
-        PUBLIC_HEADER
-          DESTINATION "${CONDA_ENV}include/stat_tool"
+            PUBLIC_HEADER DESTINATION "${CONDA_ENV}include/stat_tool"
 )
 
 install(
