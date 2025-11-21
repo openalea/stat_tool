@@ -52,8 +52,8 @@ using namespace std;
 
 namespace stat_tool {
 
-std::mt19937 mt(0.);
-std::uniform_real_distribution<double> rand_unif(0.0, 1.0);
+STAT_TOOL_API std::mt19937 mt(0);
+STAT_TOOL_API std::uniform_real_distribution<double> rand_unif(0.0, 1.0);
 
 /*--------------------------------------------------------------*/
 /**
