@@ -22,4 +22,4 @@ jobs:
     secrets:
       anaconda_token: ${{ secrets.ANACONDA_TOKEN }}
     with:
-      os: ["windows-latest"]
+      operating-system: ["windows-latest"]
