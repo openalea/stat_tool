@@ -65,11 +65,6 @@ if(WIN32)
 endif()
 
 
-# if(DEFINED ENV{SKIP_BUILD})
-#   message(STATUS "Skipping build of C/C++ extensions")
-#   return()  # stops processing the CMakeLists here
-# endif()
-
 # RPath settings
 set(CMAKE_SKIP_BUILD_RPATH FALSE)
 set(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE)
@@ -84,7 +79,6 @@ list(
 if("${isSystemDir}" STREQUAL "-1")
   set(CMAKE_INSTALL_RPATH ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR})
 endif("${isSystemDir}" STREQUAL "-1")
-
 
 
 if (MSVC)
