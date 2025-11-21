@@ -64,7 +64,8 @@ test:
     - test/
   commands:
     - cd test
-    - pytest -v --ignore=aml
+    - pytest -v --ignore=aml          # [not win]
+    - pytest -v test_cluster.py test_comparison.py test_distribution.py test_histogram.py test_mixture.py   # [win]
 
 
 about:
