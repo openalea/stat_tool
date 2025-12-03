@@ -42,7 +42,15 @@ def data():
 def myi(data):
     return interface(data,  "data/mixture_mv1.mixt", _MultivariateMixture)
 
+@pytest.fixture
+def my_estimate():
+    data_file = "data/cluster_vectors.vec"
+    v = Vectors(data_file)
+    assert len(v) == 836
+    assert v.nb_variable == 5
+    m = v.mixture_estimation(3, 300, [])
 
+    return m, v
 
 def _test_constructor_from_file(myi):
     # raise error (proba non equal to 1) when nosetests used from parent directory.
@@ -75,21 +83,14 @@ def test_plot_write(myi):
 def test_file_ascii_write(myi):
     myi.file_ascii_write()
 
-def my_estimate():
-    data_file = "data/cluster_vectors.vec"
-    v = Vectors(data_file)
-    assert len(v) == 836
-    assert v.nb_variable == 5
-    m = v.mixture_estimation(3, 300, [])
 
-    return m, v
 
-def test_estimate():
-    m, v = my_estimate()
+def test_estimate(my_estimate):
+    m, v = my_estimate
     assert m, v
 
-def test_mixture_plots():
-    m, v = my_estimate()
+def test_mixture_plots(my_estimate):
+    m, v = my_estimate
     m.plot()
     # Get marginals
     for i in range(v.nb_variable):
@@ -109,10 +110,9 @@ def test_extract():
     for i in range(1, v.nb_variable + 1):
         m2 = v.extract(i)
         assert m2
-    return m2
 
-def test_extract_data():
-    m, v = my_estimate()
+def test_extract_data(my_estimate):
+    m, v = my_estimate
     d = m.extract_data()
     assert d
 
@@ -174,9 +174,9 @@ def test_cluster_data():
     assert clust_entropy.nb_variable == m.nb_variable + 2
     assert clust_plain.nb_variable == m.nb_variable + 1
 
-def test_cluster_data_file():
+def test_cluster_data_file(my_estimate):
     """Clustering using the mixture model, reading data from a file"""
-    m, v = my_estimate()
+    m, v = my_estimate
     clust_entropy = m.cluster_data(v, True)
 
     with tempfile.NamedTemporaryFile(delete=False) as tmp:
