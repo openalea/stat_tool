@@ -105,8 +105,8 @@ def test_spreadsheet_write(myi):
 def test_simulate(myi):
     myi.simulate()
 
-def test_extract():
-    m, v = test_simulate2()
+def test_extract(my_estimate):
+    m, v = my_estimate
     for i in range(1, v.nb_variable + 1):
         m2 = v.extract(i)
         assert m2
@@ -148,8 +148,6 @@ def test_simulate2():
             estimation_failed = False
     assert m_estim_nbcomp
 
-    return m, v
-
 def _test_permutation(data):
     data1 = data
 
@@ -159,9 +157,9 @@ def _test_permutation(data):
 
     assert str(data1) == str(data2)
 
-def test_cluster_data():
+def test_cluster_data(my_estimate):
     """Clustering using the mixture model"""
-    m, v = test_simulate2()
+    m, v = my_estimate
     clust_entropy = m.cluster_data(v, True)
 
 
