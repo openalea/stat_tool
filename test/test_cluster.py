@@ -88,6 +88,11 @@ def test_transcode_histo(data):
     histo5 = Transcode(fagus, [1, 2, 2, 3, 3, 4, 4, 5])
     assert str(histo5) == str(fagus.transcode([1, 2, 2, 3, 3, 4, 4, 5]))
 
+def _test_transcode_vectors():
+    vec = Vectors([[1, 2, 3], [1, 3, 1], [4, 5, 6]])
+    assert str(vec.transcode(1, [1, 2, 3, 4])) == str(
+        Transcode(vec, 1, [1, 2, 3, 4])
+    )
 
 def test_transcode_histo_err(data):
     fagus = data

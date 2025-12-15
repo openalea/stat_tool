@@ -16,10 +16,17 @@ except ImportError:
 from openalea.stat_tool.distribution import Binomial, Poisson
 from openalea.stat_tool.multivariate_mixture import _MultivariateMixture
 from openalea.stat_tool.vectors import Vectors
+from openalea.stat_tool.distribution import set_seed
 
 import os, tempfile
 
 import pytest
+
+from pathlib import Path
+
+@pytest.fixture
+def path():
+    return Path(__file__).parent
 
 @pytest.fixture
 def data():
@@ -39,12 +46,12 @@ def data():
     return data
 
 @pytest.fixture
-def myi(data):
-    return interface(data,  "data/mixture_mv1.mixt", _MultivariateMixture)
+def myi(data, path):
+    return interface(data,  str((path / "data" / "mixture_mv1.mixt")), _MultivariateMixture)
 
 @pytest.fixture
-def my_estimate():
-    data_file = "data/cluster_vectors.vec"
+def my_estimate(path):
+    data_file = str((path / "data" / "cluster_vectors.vec"))
     v = Vectors(data_file)
     assert len(v) == 836
     assert v.nb_variable == 5
@@ -52,7 +59,7 @@ def my_estimate():
 
     return m, v
 
-def _test_constructor_from_file(myi):
+def test_constructor_from_file(myi):
     # raise error (proba non equal to 1) when nosetests used from parent directory.
     myi.constructor_from_file()
 
@@ -71,19 +78,20 @@ def test_len(data):
     c = data
     assert len(c) == 3
 
-def test_plot(data):
-    # if DISABLE_PLOT == False:
-    data.plot(1)
-    #   self.data.plot(2)
+# def test_plot(data):
+#     data.plot(1)
+    #   data.plot(2)
 
+def test_plot(myi):
+    myi.plot()
+    myi.plot_write()
+    #   data.plot(2)
 
 def test_plot_write(myi):
     myi.plot_write()
 
 def test_file_ascii_write(myi):
     myi.file_ascii_write()
-
-
 
 def test_estimate(my_estimate):
     m, v = my_estimate
@@ -127,7 +135,7 @@ def test_simulate2():
     v = m.simulate(5000)
     assert v
 
-    # TODO: set seed
+    set_seed(0)
     estimation_failed = True
     while estimation_failed:
         try:
@@ -148,7 +156,7 @@ def test_simulate2():
             estimation_failed = False
     assert m_estim_nbcomp
 
-def _test_permutation(data):
+def test_permutation(data):
     data1 = data
 
     data2 = _MultivariateMixture(data1)
@@ -184,3 +192,52 @@ def test_cluster_data_file(my_estimate):
 
     assert clust_entropy.nb_variable == m.nb_variable + 2
 
+if __name__ == "__main__":
+    def path():
+        return Path(__file__).parent
+    
+    def data():
+        d11 = Binomial(0, 12, 0.1)
+        d12 = Binomial(0, 12, 0.5)
+        d13 = Binomial(0, 12, 0.8)
+
+        d21 = Poisson(0, 18.0)
+        d22 = Poisson(0, 5.0)
+        d23 = Poisson(0, 0.20)
+
+        data = _MultivariateMixture(
+            [0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]]
+        )
+        assert data.nb_component == 3
+        assert data.nb_variable == 2
+        return data
+    
+    def my_estimate(path):
+        data_file = str((path / "data" / "cluster_vectors.vec"))
+        v = Vectors(data_file)
+        assert len(v) == 836
+        assert v.nb_variable == 5
+        m = v.mixture_estimation(3, 300, [])
+
+        return m, v
+    
+    myi = interface(data,  str((path() / "data" / "mixture_mv1.mixt")), _MultivariateMixture)
+    myi.data = data()
+    test_constructor_from_file(myi)
+    test_constructor_from_file_failure(myi)
+    test_print(myi)
+    test_display(myi)
+    test_len(data())
+    test_plot(myi)
+    test_plot_write(myi)
+    test_file_ascii_write(myi)
+    test_estimate(my_estimate(path()))
+    test_mixture_plots(my_estimate(path()))
+    test_spreadsheet_write(myi)
+    test_simulate(myi)
+    test_extract(my_estimate(path()))
+    test_extract_data(my_estimate(path()))
+    test_simulate2()
+    test_permutation(data())
+    test_cluster_data(my_estimate(path()))
+    test_cluster_data_file(my_estimate(path()))

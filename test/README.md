@@ -2,6 +2,7 @@
 
 This is the status of the tests (to be updated)
 
+all                                     TOBEFINALISED 
 test_cluster_and_distance_matrix.py     DONE
 test_cluster.py                         DONE
 test_comparison.py                      DONE
@@ -15,12 +16,12 @@ test_distance_matrix.py                 TOBECLEANED
 test_distribution_functional.py         DONE
 test_distribution.py                    DONE
 test_error.py                           DONE
-test_estimate.py                        TOBEFINALISED
+test_estimate.py                        DONE
 test_histogram.py                       DONE
 test_matrix.py                          TOBECLEANED/FINALISED
 test_mixture_functional.py              DONE
 test_mixture.py                         DONE
-test_multivariate_mixture_functional.py TOBEFINALISED
+test_multivariate_mixture_functional.py DONE
 test_multivariate_mixture.py            TOBEFINALISED
 test_output.py                          TOBEFINALISED
 test_plot.py                            TOBEFINALISED

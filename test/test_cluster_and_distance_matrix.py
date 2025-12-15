@@ -23,8 +23,6 @@ from openalea.stat_tool import (
 )
 import sys
 
-# from openalea.stat_tool import get_shared_data
-
 
 def test():
     print(sys.argv)

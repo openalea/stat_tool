@@ -138,10 +138,15 @@ class Test:
             plotter.plot(a, "test_plot")
 
     def test_gnuplot(self):
-        if DISABLE_PLOT:
-            return
-        a = self.get_plotable()
-        plotter = gnuplot()
-        if DISABLE_PLOT == False:
-            plotter.plot(a, "test_plot")
+        try:
+            import Gnuplot
+        except ModuleNotFoundError:
+            pass
+        else:
+            if DISABLE_PLOT:
+                return
+            a = self.get_plotable()
+            plotter = gnuplot()
+            if DISABLE_PLOT == False:
+                plotter.plot(a, "test_plot")
 

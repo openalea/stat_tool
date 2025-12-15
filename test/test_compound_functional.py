@@ -9,7 +9,13 @@ import os
 
 import numpy as np
 
-from .tools import robust_path as get_shared_data
+try:
+    from .tools import interface
+    from .tools import robust_path as get_shared_data
+except ImportError:
+    from tools import interface
+    from tools import robust_path as get_shared_data
+
 
 from openalea.stat_tool import Compound, Histogram, Distribution
 
