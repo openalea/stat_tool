@@ -13,6 +13,8 @@ from openalea.stat_tool.distribution import (
 )
 from openalea.stat_tool.histogram import Histogram
 
+from openalea.stat_tool.distribution import set_seed
+
 import pytest
 
 @pytest.fixture
@@ -60,6 +62,9 @@ def test_plot_null_variance():
     v = Histogram([0] * 100)
     v.plot()
 
+def test_save(myi):
+    myi.save()
+
 def test_plot_write(myi):
     myi.plot_write()
 
@@ -76,12 +81,13 @@ def test_survival_spreadsheet_write(myi):
     myi.survival_spreadsheet_write()
 
 def test_extract_data():
-    """todo : check if this test makes sense"""
+    """test extract_data"""
     h = Histogram(str(get_shared_data("meri1.his")))
 
     e = h.estimate_nonparametric()
 
-    assert e
+    assert e.extract_data()
+
 def test_survival_ascii_write(data):
     """test display"""
     h = data
@@ -98,6 +104,7 @@ def test_to_histogram():
     """Test the ToHistogram function"""
 
     d = Distribution("NEGATIVE_BINOMIAL", 0, 1, 0.5)
+    set_seed(0)
     h = d.simulate(1000)
     d2 = ToDistribution(h)
     assert h and d2
@@ -107,6 +114,7 @@ def test_to_histogram():
     assert h == h2
 
 def test_extract_model():
+    set_seed(0)
     d = Binomial(0, 10, 0.5)
     d == d.simulate(1000).extract_model()
 

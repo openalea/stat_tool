@@ -70,13 +70,13 @@ def test_display(myi):
     myi.display_versus_ascii_write()
     myi.display_versus_str()
 
-def _test_plot(myi):
+def test_plot(myi):
     myi.plot()
 
 def test_save(myi):
     myi.save()
 
-def _test_plot_write(myi):
+def test_plot_write(myi):
     myi.plot_write()
 
 def test_file_ascii_write(myi):
@@ -115,6 +115,7 @@ class TestDistribution:
     test the ToDistribution and ToHistogram
     """
     def test_to_histogram(self):
+        set_seed(0)
         d = Distribution("NEGATIVE_BINOMIAL", 0, 1, 0.5)
         h = d.simulate(1000)
         d2 = ToDistribution(h)
@@ -125,6 +126,7 @@ class TestDistribution:
         assert h == h2
 
     def test_uniform(self):
+        set_seed(0)
         d = Distribution("UNIFORM", 0, 10)
         s = d.simulate(1000)
         assert list(s)
@@ -148,6 +150,7 @@ class TestDistribution:
         assert isinstance(m, _DiscreteParametricModel)
 
     def test_binomial(self):
+        set_seed(0)
         d = Distribution("BINOMIAL", 0, 10, 0.5)
         assert list(d.simulate(1000))
         assert d.get_sup_bound == 10
@@ -163,6 +166,7 @@ class TestDistribution:
         assert isinstance(m, _DiscreteParametricModel)
 
     def test_poisson(self):
+        set_seed(0)
         d = Distribution("POISSON", 0, 2)
         assert list(d.simulate(1000))
         assert d.get_sup_bound == -1
@@ -178,6 +182,7 @@ class TestDistribution:
         assert isinstance(m, _DiscreteParametricModel)
 
     def test_neg_binomial(self):
+        set_seed(0)
         d = Distribution("NEGATIVE_BINOMIAL", 0, 1, 0.5)
         assert list(d.simulate(1000))
         assert d.get_sup_bound == -1
@@ -205,6 +210,7 @@ class TestDistribution:
             assert True
 
     def test_simulation(self):
+        set_seed(0)
         """simulate a vector of realizations"""
         d = Uniform(0, 1)
         try:

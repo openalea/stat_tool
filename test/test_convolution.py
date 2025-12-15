@@ -12,8 +12,10 @@ from openalea.stat_tool import Convolution, Estimate
 from openalea.stat_tool.data_transform import ExtractDistribution
 from openalea.stat_tool.distribution import Binomial, NegativeBinomial
 
+from openalea.stat_tool.distribution import set_seed
 
 import pytest
+
 @pytest.fixture
 def data():
     d1 = Binomial(0, 10, 0.5)
@@ -75,7 +77,7 @@ def test_extract(data):
 
 def test_extract_data(data):
     """run and test the extract_data methods"""
-
+    set_seed(0)
     m = data
     s = m.simulate(1000)
     e = s.estimate_convolution(Binomial(0, 10, 0.5), Estimator="Parametric")
@@ -85,6 +87,7 @@ def test_extract_data(data):
 
     # todo: find robust assert ?
     print(eprime.get_mean)
+    assert eprime
 
 def test_truncate(data):
     s = data

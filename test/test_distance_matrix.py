@@ -35,6 +35,10 @@ def myi(data):
 def test_print(myi):
     myi.print_data()
 
+
+def test_plot(myi):
+    myi.plot()
+
 def test_display(myi):
     myi.display()
     myi.display_versus_ascii_write()

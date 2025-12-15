@@ -19,6 +19,8 @@ from openalea.stat_tool.estimate import Estimate, likelihood_penalty_type
 from openalea.stat_tool.histogram import Histogram
 from openalea.stat_tool.simulate import Simulate
 
+from openalea.stat_tool.distribution import set_seed
+
 from importlib.resources import files, as_file
 
 import pytest
@@ -80,6 +82,7 @@ def test_poisson():
     >>> p = distribution.poisson(0, 10)
     >>> h = p.simulate(1000)
     """
+    set_seed(0)
     p = distribution.Poisson(0, 10)
     h = p.simulate(1000)
 
@@ -90,6 +93,7 @@ def test_binomial_estimation():
     from openalea.stat_tool.enums import distribution_identifier_type as dist_type
 
     p = distribution.Binomial(2, 12, 0.7)
+    set_seed(0)
     h = p.simulate(1000)
     d1 = h.estimate_parametric("B")
     d2 = h.default_parametric_estimation(dist_type["B"])
@@ -101,6 +105,7 @@ def test_uniform_estimation():
     from openalea.stat_tool.enums import distribution_identifier_type as dist_type
 
     p = distribution.Uniform(2, 12)
+    set_seed(0)
     h = p.simulate(1000)
     d1 = h.estimate_parametric("U")
     d2 = h.default_parametric_estimation(dist_type["U"])
@@ -112,6 +117,7 @@ def test_Poisson_estimation():
     from openalea.stat_tool.enums import distribution_identifier_type as dist_type
 
     p = distribution.Poisson(0, 10)
+    set_seed(0)
     h = p.simulate(1000)
     d1 = h.estimate_parametric("P")
     d2 = h.default_parametric_estimation(dist_type["P"])
@@ -123,6 +129,7 @@ def test_negative_binomial_estimation():
     from openalea.stat_tool.enums import distribution_identifier_type as dist_type
 
     p = distribution.NegativeBinomial(2, 4.5, 0.6)
+    set_seed(0)
     h = p.simulate(1000)
     d1 = h.estimate_parametric("NB")
     d2 = h.default_parametric_estimation(dist_type["NB"])
@@ -179,6 +186,7 @@ def test_convolution():
 def test_compound_two_distribution(compound1):
     """test to be checked"""
     cdist1 = compound1
+    set_seed(0)
     chisto1 = Simulate(cdist1, 200)
 
     cdist2 = Estimate(

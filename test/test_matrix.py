@@ -30,6 +30,48 @@ def myi(data):
     # vectors is therefore passed as dummy structure
     return interface(data, None, Vectors)
 
+def test_get_column_identifier(data):
+    assert data.get_column_identifier(0) == 1
+
+def test_get_deletion_distance(data):
+    assert data.get_deletion_distance(0,0) == -1.
+
+def test_get_distance(data):
+    assert data.get_distance(0,0) == 0.
+
+def test_get_insertion_distance(data):
+    assert data.get_inserion_distance(0,0) == -1.
+
+def test_get_nb_match(data):
+    assert data.get_nb_match(0,0) == -1
+
+def test_get_length(data):
+    assert data.get_length(0,0) == 0.0
+
+def test_get_insertion(data):
+    assert data.get_nb_insertion(0,0) == -1
+
+def test_get_deletion(data):
+    assert data.get_nb_deletion(0,0) == -1
+
+def test_get_nb_substitution(data):
+    assert data.get_nb_substitution(0,0) == -1
+
+def test_get_nb_transposition(data):
+    assert data.get_nb_transposition(0,0) == -1
+
+def test_get_row_identifier(data):
+    assert data.get_row_identifier(0) == 1
+
+def test_get_substitution_distance(data):
+    assert data.get_substitution_distance(0,0) == -1
+
+def test_get_insertion_distance(data):
+    assert data.get_insertion_distance(0,0) == -1
+
+# TODO: test_hierarchical_clustering
+def test_get_shape(data):
+    assert (data.nb_column, data.nb_row) == (138, 138)
 
 def test_print(myi):
     myi.print_data()
@@ -45,8 +87,14 @@ def test_plot(myi):
 def test_plot_write(myi):
     myi.plot_write()
 
-def test_file_ascii_write(myi):
-    myi.file_ascii_write()
+def test_select_individual(myi):
+    assert myi.data.select_individual([1], False)
+    
+def test_select_individual(myi):
+    assert myi.data.select_individual([1], False)
+    
+def test_partitioning_clusters(myi):
+    assert myi.partitioning_clusters([0])
 
 def test_spreadsheet_write(myi):
     myi.spreadsheet_write()

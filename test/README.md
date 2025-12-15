@@ -11,8 +11,8 @@ test_compound.py                        DONE
 test_convolution_functional.py          DONE
 test_convolution.py                     DONE
 test_dataflow_stat.py                   DONE
-test_data_transform.py                  TOBECLEANED (remove markov and co)
-test_distance_matrix.py                 TOBECLEANED
+test_data_transform.py                  DONE
+test_distance_matrix.py                 DONE
 test_distribution_functional.py         DONE
 test_distribution.py                    DONE
 test_error.py                           DONE
