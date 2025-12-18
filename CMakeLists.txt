@@ -36,7 +36,7 @@ project(openalea.stat_tool
 cmake_policy(SET CMP0074 NEW)
 # We allow target_sources to convert relative paths to absolute paths
 cmake_policy(SET CMP0076 NEW)
- # for Python*_FIND_STRATEGY=LOCATION
+# for Python*_FIND_STRATEGY=LOCATION
 cmake_policy(SET CMP0094 NEW)
 cmake_policy(SET CMP0167 NEW)
 ##################################################
@@ -80,18 +80,21 @@ if("${isSystemDir}" STREQUAL "-1")
   set(CMAKE_INSTALL_RPATH ${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR})
 endif("${isSystemDir}" STREQUAL "-1")
 
-
 if (WIN32)
-    string(REGEX REPLACE "/W3" "/W0" ${CMAKE_CXX_FLAGS} "${${CMAKE_CXX_FLAGS}}") 
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MD")
+  string(REGEX REPLACE "/W3" "/W0" ${CMAKE_CXX_FLAGS} "${${CMAKE_CXX_FLAGS}}")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MD")
 
-    # To fix compilation error with vc14 and boost
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /DHAVE_SNPRINTF")
+  # To fix compilation error with vc14 and boost
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /DHAVE_SNPRINTF")
 endif()
 
-# Options
+# Default options (set in pyproject.toml or directly using "cmake -D")
+# "option" does not override the cache value, contrary to cmake -D or pyproject setting
+# These 2 lines are safety default values
 option(WITH_EFENCE "Build with efence library" OFF)
 option(WITH_TEST "Build tests" OFF)
+message(STATUS "WITH_EFENCE = ${WITH_EFENCE}")
+message(STATUS "WITH_TEST = ${WITH_TEST}")
 
 ##################################################
 # Add a library for stat_tool and its Python wrappers
@@ -117,8 +120,13 @@ endif()
 
 # Optionally add efence
 if(WITH_EFENCE)
-  target_compile_definitions(oastat_tool PUBLIC DEBUG)
-  target_link_libraries(oastat_tool PUBLIC efence)
+  find_library(EFENCE_LIBRARY NAMES efence)
+  if(EFENCE_LIBRARY)
+    target_link_libraries(oastat_tool PUBLIC ${EFENCE_LIBRARY})
+    target_compile_definitions(oastat_tool PUBLIC DEBUG)
+  else()
+    message(WARNING "Could not find efence library, disabling it")
+  endif()
 endif()
 
 # Add files to build
@@ -126,7 +134,7 @@ add_subdirectory(src/cpp/stat_tool)
 
 
 ##################################################
-# Add a Python binding library 
+# Add a Python binding library
 python_add_library(_stat_tool MODULE)
 
 target_include_directories(oastat_tool
@@ -139,26 +147,26 @@ target_link_libraries(_stat_tool
     oastat_tool
     Boost::python
     Python::Module
-  )
+)
 
-  target_compile_definitions(_stat_tool PRIVATE BOOST_ALL_NO_LIB)
+target_compile_definitions(_stat_tool PRIVATE BOOST_ALL_NO_LIB)
 
-  # Control the output name of the produced shared library
-  set_target_properties(_stat_tool PROPERTIES PREFIX "")
-  set_target_properties(_stat_tool PROPERTIES OUTPUT_NAME "_stat_tool")
-  if(WIN32)
-    set_target_properties(_stat_tool PROPERTIES SUFFIX ".pyd")
-  elseif(APPLE)
-    set_target_properties(_stat_tool PROPERTIES SUFFIX ".so")
-  endif()
+# Control the output name of the produced shared library
+set_target_properties(_stat_tool PROPERTIES PREFIX "")
+set_target_properties(_stat_tool PROPERTIES OUTPUT_NAME "_stat_tool")
+if(WIN32)
+  set_target_properties(_stat_tool PROPERTIES SUFFIX ".pyd")
+elseif(APPLE)
+  set_target_properties(_stat_tool PROPERTIES SUFFIX ".so")
+endif()
 
 add_subdirectory("src/wrapper/")
 
 
 if(APPLE)
-    set_target_properties(_stat_tool PROPERTIES INSTALL_RPATH "@loader_path/.")
+  set_target_properties(_stat_tool PROPERTIES INSTALL_RPATH "@loader_path/.")
 elseif(UNIX)
-    set_target_properties(_stat_tool PROPERTIES INSTALL_RPATH "$ORIGIN/.")
+  set_target_properties(_stat_tool PROPERTIES INSTALL_RPATH "$ORIGIN/.")
 endif()
 
 ##################################################

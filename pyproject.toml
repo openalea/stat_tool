@@ -1,8 +1,5 @@
 [build-system]
-requires = [
-    "scikit-build-core",
-    "setuptools_scm",
-]
+requires = ["scikit-build-core", "setuptools_scm"]
 build-backend = "scikit_build_core.build"
 
 [tool.setuptools]
@@ -30,6 +27,10 @@ search.site-packages = false
 [tool.scikit-build.cmake]
 build-type = "Release"
 source-dir = "."
+
+[tool.scikit-build.cmake.define]
+WITH_TEST = false
+WITH_EFENCE = false
 
 [tool.scikit-build.wheel.packages]
 "openalea/stat_tool" = "src/openalea/stat_tool"
@@ -67,18 +68,11 @@ classifiers = [
 
 # you can list here all dependencies that are pip-instalable, and that have a name identical to the one used by conda (to allow reuse of this list in meta.yaml)
 # If conda name is different, please do not declare the pip name, and declare conda name in the next section
-dependencies = [
-] # == install_requires
+dependencies = [] # == install_requires
 
 [project.optional-dependencies]
-test = [
-  "pytest",
-  "nbmake",
-]
-dev = [
-  "pytest >=6",
-  "pytest-cov >=3",
-]
+test = ["pytest", "nbmake"]
+dev = ["pytest >=6", "pytest-cov >=3"]
 doc = [
   "sphinx-autobuild",
   "pydata-sphinx-theme",
@@ -92,14 +86,8 @@ doc = [
 
 # section specific to conda-only distributed package (not used by pip yet)
 [tool.conda.environment]
-channels = [
-  "openalea3",
-  "conda-forge"
-]
-dependencies = [
-  "boost",
-  "matplotlib-base",
-]
+channels = ["openalea3", "conda-forge"]
+dependencies = ["boost", "matplotlib-base"]
 
 [project.urls]
 Repository = "https://github.com/openalea/stat_tool"
@@ -107,4 +95,3 @@ Homepage = "https://stat_tool.readthedocs.io/"
 "Bug Tracker" = "https://github.com/openalea/stat_tool/issues"
 Discussions = "https://github.com/openalea/stat_tool/discussions"
 Changelog = "https://github.com/openalea/stat_tool/releases"
-
