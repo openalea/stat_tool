@@ -36,6 +36,11 @@
 using namespace boost::python;
 using namespace stat_tool;
 
+/* namespace boost { namespace python {
+     bool hasattr(object o, const char* name) {
+         return PyObject_HasAttrString(o.ptr(), name);
+     }
+ } } */
 
 // DistanceMatrix
 
@@ -90,12 +95,15 @@ public:
   {
     Clusters *ret;
     StatError error;
+    bool status = true;
 
     ostringstream os;
 
     int nb_cluster = len(clusters);
     int* cluster_nb_pattern;
     int** cluster_pattern;
+
+    boost::python::list l;
 
     cluster_nb_pattern = new int[nb_cluster];
     cluster_pattern = new int*[nb_cluster];
@@ -105,18 +113,27 @@ public:
       {
         for (int i = 0; i < nb_cluster; i++)
           {
-            boost::python::list* l =
-                extract<boost::python::list*> (clusters[i]);
-            int nb_item = len(*l);
-            cluster_nb_pattern[i] = nb_item;
+#ifdef DEBUG
+            cout << "Processing cluster " << i << endl;
+#endif            
+            extract<boost::python::list> x(clusters[i]);
+            
+            if (x.check()) {
+              l = x;
+              int nb_item = len(l);
 
-            cluster_pattern[i] = new int[nb_item];
+              cluster_nb_pattern[i] = nb_item;
 
-            for (int j = 0; j < cluster_nb_pattern[i]; j++)
-              {
-                cluster_pattern[i][j] = extract<int> ((*l)[j]);
-              }
+              cluster_pattern[i] = new int[nb_item];
+
+              for (int j = 0; j < cluster_nb_pattern[i]; j++)
+                {
+                  cluster_pattern[i][j] = extract<int> ((l)[j]);
+                }
+          } else {
+            status = false;
           }
+        }
       }
     catch (...)
       {
@@ -128,15 +145,17 @@ public:
         delete[] cluster_pattern;
       }
 
-    ret = dm.partitioning(error, &os, nb_cluster, cluster_nb_pattern,
-        cluster_pattern);
+    if (status) {
+      ret = dm.partitioning(error, &os, nb_cluster, cluster_nb_pattern,
+          cluster_pattern);
 
-    // Free memory
-    for (int i = 0; i < nb_cluster; i++)
-      delete[] cluster_pattern[i];
+      // Free memory
+      for (int i = 0; i < nb_cluster; i++)
+        delete[] cluster_pattern[i];
 
-    delete[] cluster_nb_pattern;
-    delete[] cluster_pattern;
+      delete[] cluster_nb_pattern;
+      delete[] cluster_pattern;
+    }
 
     if (!ret)
       stat_tool::wrap_util::throw_error(error);

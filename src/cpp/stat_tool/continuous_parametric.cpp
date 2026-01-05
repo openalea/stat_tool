@@ -2996,6 +2996,10 @@ double ContinuousParametric::sup_norm_distance_computation(ContinuousParametric 
   double overlap;
 # endif
 
+# ifdef DEBUG
+  double overlap;
+# endif
+
 
   switch (ident) {
 

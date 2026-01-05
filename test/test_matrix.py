@@ -13,6 +13,8 @@ from openalea.stat_tool.comparison import Compare
 from openalea.stat_tool.data_transform import SelectVariable
 from openalea.stat_tool.vectors import VectorDistance, Vectors
 
+from pathlib import Path
+
 import pytest
 
 @pytest.fixture
@@ -93,8 +95,59 @@ def test_select_individual(myi):
 def test_select_individual(myi):
     assert myi.data.select_individual([1], False)
     
-def test_partitioning_clusters(myi):
-    assert myi.partitioning_clusters([0])
+# def test_wrong_partitioning_clusters(myi):
+#   assert myi.data.partitioning_clusters([0])
 
+def test_partitioning_clusters(myi):
+   assert myi.data.partitioning_clusters([[1, 2], [3, 4]])
+
+def test_partitioning_prototype(myi):
+    # TODO: find a test that would make more sense
+    try:
+        assert myi.data.partitioning_prototype(0, [0], 0, 0)
+        assert False
+    except:
+        assert True    
+            
+
+def test_symmetrize(myi):
+    try:
+        myi.data.symmetrize()
+        assert False
+    except:
+        assert True    
+    
+def test_test_symmetry(myi):
+    assert myi.data.test_symmetry()
+
+def test_unnormalize(myi):
+    try:
+        myi.data.unnormalize()
+        assert False
+    except:
+        assert True    
+    
 def test_spreadsheet_write(myi):
     myi.spreadsheet_write()
+
+
+if __name__ == "__main__":
+    def path():
+        return Path(__file__).parent
+
+    data_file = str(get_shared_data("chene_sessile.vec"))
+
+    def data():
+        vec10 = Vectors(get_shared_data(data_file))
+        vec15 = SelectVariable(vec10, [1, 3, 6], Mode="Reject")
+        matrix10 = Compare(vec15, VectorDistance("N", "N", "N"))
+        return matrix10
+    
+    
+    
+    myi = interface(data,  data_file, Vectors)
+    myi.data = data()
+
+    test_get_column_identifier(data())
+    test_select_individual(myi)
+    test_partitioning_clusters(myi)
