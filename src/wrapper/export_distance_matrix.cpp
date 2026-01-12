@@ -533,7 +533,6 @@ public:
   }
 
 
-
 };
 
 #define WRAP DistanceMatrixWrap
@@ -615,6 +614,31 @@ class_distance_matrix()
 #undef WRAP
 #undef CLASS
 
+class ClustersWrap
+{
+
+public:
+
+  static int
+  // Return cluster of an (individual ="pattern")
+  // Indices are between 1 and nb_pattern for individuals
+  // between 1 and nb_cluster for clusters
+  get_assignment(const Clusters &cluster, int pattern)
+  {
+    StatError error;
+
+    if ((0 < pattern) & (pattern <= cluster.get_nb_pattern()))
+      return cluster.get_assignment(pattern-1)+1;
+    else {
+      error.update(STAT_error[STATR_SAMPLE_INDEX]);
+      stat_tool::wrap_util::throw_error(error);   
+    }
+  }
+};
+
+#define WRAP ClustersWrap
+#define CLASS Clusters
+
 void
 class_cluster()
 {
@@ -623,8 +647,11 @@ class_cluster()
 
   .def(self_ns::str(self)) // __str__
 
-  ;
+  .def("get_nb_cluster", &CLASS::get_nb_cluster, "Return number of clusters")
+  .def("get_assignment", WRAP::get_assignment,
+      args("pattern"),"Get cluster of a vector (index between 0 and nb_pattern)")
 
+  ;
   /*
   Clusters();
      Clusters(const DistanceMatrix &dist_matrix , int inb_cluster ,
@@ -659,7 +686,12 @@ class_cluster()
      int get_pattern_length(int pattern , int cluster) const
      { return pattern_length[pattern][cluster]; }
      */
+
 }
+
+
+#undef WRAP
+#undef CLASS
 
 void
 class_dendrogram()

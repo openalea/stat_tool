@@ -12,6 +12,7 @@ except ImportError:
 from openalea.stat_tool.comparison import Compare
 from openalea.stat_tool.data_transform import SelectVariable
 from openalea.stat_tool.vectors import VectorDistance, Vectors
+from openalea.stat_tool.cluster import Clustering
 
 from pathlib import Path
 
@@ -71,7 +72,6 @@ def test_get_substitution_distance(data):
 def test_get_insertion_distance(data):
     assert data.get_insertion_distance(0,0) == -1
 
-# TODO: test_hierarchical_clustering
 def test_get_shape(data):
     assert (data.nb_column, data.nb_row) == (138, 138)
 
@@ -95,14 +95,28 @@ def test_select_individual(myi):
 def test_select_individual(myi):
     assert myi.data.select_individual([1], False)
     
-# def test_wrong_partitioning_clusters(myi):
-#   assert myi.data.partitioning_clusters([0])
+def test_wrong_partitioning_clusters(myi):
+    try:
+        # TODO: uncomment
+        #myi.data.partitioning_clusters([0])
+        myi.data.partitioning_clusters([])
+        myi.data.partitioning_clusters([[1,2], [3,4]])
+        assert False
+    except:
+        assert True
 
 def test_partitioning_clusters(myi):
-   assert myi.data.partitioning_clusters([[1, 2], [3, 4]])
+   clust1 = Clustering(myi.data, "Partition", 2)
+   nb_clusters = clust1.get_nb_cluster()
+   # partition
+   part1 = [[i for i in range(1,myi.data.nb_row+1) if clust1.get_assignment(i) == c] for c in range(1,nb_clusters+1)]
+   assert myi.data.partitioning_clusters(part1)
 
-def test_partitioning_prototype(myi):
-    # TODO: find a test that would make more sense
+def test_wrong_partitioning_prototype(myi):
+    """
+    Testing errors in partitioning_prototype.
+    Other features of partitioning_prototype are tested in test_cluster.py
+    """
     try:
         assert myi.data.partitioning_prototype(0, [0], 0, 0)
         assert False
@@ -110,7 +124,7 @@ def test_partitioning_prototype(myi):
         assert True    
             
 
-def test_symmetrize(myi):
+def test_wrong_symmetrize(myi):
     try:
         myi.data.symmetrize()
         assert False

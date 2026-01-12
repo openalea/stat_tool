@@ -152,3 +152,7 @@ def test_clustering():
     assert str(c1) == str(matrix10.partitioning_prototype(3, [1, 3, 12], 1, 1))
     assert str(c1_bis) == str(matrix10.partitioning_prototype(3, [1, 3, 12], 1, 2))
 
+    c5 = Clustering(matrix10, "Partition", 2)
+    assert c5
+    assert c5.get_nb_cluster() == 2
+    c5.get_assignment(2) == 1
