@@ -100,88 +100,94 @@ public:
     ostringstream os;
 
     int nb_cluster = len(clusters);
-    int* cluster_nb_pattern;
-    int** cluster_pattern;
+    int* cluster_nb_pattern = NULL;
+    int** cluster_pattern = NULL;
 
     boost::python::list l;
 
     cluster_nb_pattern = new int[nb_cluster];
     cluster_pattern = new int*[nb_cluster];
 
-    // Build dynamic 2D array
-    try
-      {
-        for (int i = 0; i < nb_cluster; i++)
-          {
-#ifdef DEBUG
-            cout << "Processing cluster " << i << endl;
-#endif            
-            extract<boost::python::list> x(clusters[i]);
-            
-            if (x.check()) {
-              l = x;
-              int nb_item = len(l);
+    if (nb_cluster > 1) {
+      // Build dynamic 2D array
+      try
+        {
+          for (int i = 0; i < nb_cluster; i++)
+            {
+  #ifdef DEBUG
+              cout << "Processing cluster " << i << endl;
+  #endif            
+              extract<boost::python::list> x(clusters[i]);
+              
+              if (x.check()) {
+                l = x;
+                int nb_item = len(l);
 
-              cluster_nb_pattern[i] = nb_item;
+                cluster_nb_pattern[i] = nb_item;
 
-              cluster_pattern[i] = new int[nb_item];
+                cluster_pattern[i] = new int[nb_item];
 
-              for (int j = 0; j < cluster_nb_pattern[i]; j++)
-                {
-                  cluster_pattern[i][j] = extract<int> ((l)[j]);
-                }
-          } else {
-            status = false;
+                for (int j = 0; j < cluster_nb_pattern[i]; j++)
+                  {
+                    cluster_pattern[i][j] = extract<int> ((l)[j]);
+                  }
+            } else {
+              status = false;
+            }
           }
         }
-      }
-    catch (...)
-      {
+      catch (...)
+        {
+          // Free memory
+          for (int i = 0; i < nb_cluster; i++)
+            delete[] cluster_pattern[i];
+
+          delete[] cluster_nb_pattern;
+          delete[] cluster_pattern;
+        }
+
+      if (status) {
+        ret = dm.partitioning(error, &os, nb_cluster, cluster_nb_pattern,
+            cluster_pattern);
+
         // Free memory
         for (int i = 0; i < nb_cluster; i++)
           delete[] cluster_pattern[i];
 
         delete[] cluster_nb_pattern;
         delete[] cluster_pattern;
-      }
+      }} else {
+        ret = dm.partitioning(error, &os, nb_cluster, cluster_nb_pattern,
+            cluster_pattern);
+            delete[] cluster_nb_pattern;
+          delete[] cluster_pattern;
+        }
 
-    if (status) {
-      ret = dm.partitioning(error, &os, nb_cluster, cluster_nb_pattern,
-          cluster_pattern);
+      if (!ret)
+        stat_tool::wrap_util::throw_error(error);
 
-      // Free memory
-      for (int i = 0; i < nb_cluster; i++)
-        delete[] cluster_pattern[i];
-
-      delete[] cluster_nb_pattern;
-      delete[] cluster_pattern;
+      return ret;
     }
 
-    if (!ret)
-      stat_tool::wrap_util::throw_error(error);
+    static std::string
+    hierarchical_clustering(const DistanceMatrix& dm, int ialgorithm,
+        int icriterion, const std::string path, int iformat)
+    {
+      StatError error;
+      ostringstream os;
+      hierarchical_strategy algorithm = hierarchical_strategy(ialgorithm);
+      linkage criterion = linkage(icriterion);
+      output_format format = output_format(iformat);
 
-    return ret;
-  }
+      bool ret;
 
-  static std::string
-  hierarchical_clustering(const DistanceMatrix& dm, int ialgorithm,
-       int icriterion, const std::string path, int iformat)
-  {
-    StatError error;
-    ostringstream os;
-    hierarchical_strategy algorithm = hierarchical_strategy(ialgorithm);
-    linkage criterion = linkage(icriterion);
-    output_format format = output_format(iformat);
+      ret = dm.hierarchical_clustering(error, &os, algorithm, criterion,
+                                      path, format);
 
-    bool ret;
+      if (!ret)
+        stat_tool::wrap_util::throw_error(error);
 
-    ret = dm.hierarchical_clustering(error, &os, algorithm, criterion,
-                                     path, format);
-
-    if (!ret)
-      stat_tool::wrap_util::throw_error(error);
-
-    return string(os.str());
+      return string(os.str());
 
   }
 

@@ -18,7 +18,7 @@ test_distribution.py                    DONE
 test_error.py                           DONE
 test_estimate.py                        DONE
 test_histogram.py                       DONE
-test_matrix.py                          TOBECLEANED/FINALISED
+test_matrix.py                          DONE
 test_mixture_functional.py              DONE
 test_mixture.py                         DONE
 test_multivariate_mixture_functional.py DONE

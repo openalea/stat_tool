@@ -97,8 +97,7 @@ def test_select_individual(myi):
     
 def test_wrong_partitioning_clusters(myi):
     try:
-        # TODO: uncomment
-        #myi.data.partitioning_clusters([0])
+        myi.data.partitioning_clusters([0])
         myi.data.partitioning_clusters([])
         myi.data.partitioning_clusters([[1,2], [3,4]])
         assert False
@@ -165,3 +164,4 @@ if __name__ == "__main__":
     test_get_column_identifier(data())
     test_select_individual(myi)
     test_partitioning_clusters(myi)
+    test_wrong_partitioning_clusters(myi)
