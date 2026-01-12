@@ -32,7 +32,7 @@ cd stat_tool/test; pytest
 
 ```bash
 # Install dependency with conda
-mamba env create -n phm -f conda/environment.yml
+mamba env create -n stat -f conda/environment.yml
 mamba activate stat_tool
 
 # Clone stat_tool and install
