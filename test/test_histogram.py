@@ -1,8 +1,12 @@
 """histogram tests"""
 
 
-from .tools import interface
-from .tools import robust_path as get_shared_data
+try:
+    from .tools import interface
+    from .tools import robust_path as get_shared_data
+except ImportError:
+    from tools import interface
+    from tools import robust_path as get_shared_data
 
 import openalea.stat_tool as stat_tool
 from openalea.stat_tool.distribution import (
@@ -126,3 +130,14 @@ def test_extract_vec():
     h = vs.extract(4)
     assert h
     print(h)
+
+if __name__ == "__main__":
+
+    def data():
+        v = Histogram([0, 1, 2, 3])
+        return v            
+    
+    myi = interface(data, "data/peup1.his", Histogram)
+    myi.data = data()
+
+    test_save(myi)
