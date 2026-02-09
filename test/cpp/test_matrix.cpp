@@ -57,6 +57,16 @@ int main(void) {
       delete [] cluster_pattern[1];
       if (error.get_nb_error() > 0)
         cout << error;
+      delete [] cluster_pattern;
+      delete [] cluster_nb_pattern;
+      cluster_pattern = new int*[1];
+      cluster_pattern[0] = new int[1];
+      cluster_pattern[0][0] = 0;
+      cluster_nb_pattern = new int[1];
+      cluster_nb_pattern[0] = 0;
+      clust = matrix10->partitioning(error, &cout, 1, cluster_nb_pattern,
+          cluster_pattern);
+      delete [] cluster_pattern[0];
     } else {
       cout << error;
     }

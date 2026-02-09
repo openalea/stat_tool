@@ -19,6 +19,7 @@ import pytest
 
 @pytest.fixture
 def data():
+    # Inspired from stat_toot_test.aml
     vec10 = Vectors(get_shared_data("chene_sessile.vec"))
     vec15 = SelectVariable(vec10, [1, 3, 6], Mode="Reject")
     matrix10 = Compare(vec15, VectorDistance("N", "N", "N"))
