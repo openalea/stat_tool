@@ -35,6 +35,7 @@ extensions = [
     "sphinx_favicon",  # support for favicon
     "nbsphinx",  # for integrating jupyter notebooks
     "myst_parser",  # for parsing .md files
+    "breathe",  # for inclusion of C++ Doxygen documentation
 ]
 
 
@@ -155,3 +156,6 @@ texinfo_documents = [
 ]
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {"python": ("https://docs.python.org/", None)}
+
+breathe_projects = {'stat_tool': 'xml'}
+breathe_default_project = 'stat_tool'
