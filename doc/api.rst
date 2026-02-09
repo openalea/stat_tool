@@ -1,9 +1,8 @@
-API reference
-#############
+C++ Documentation
+#################
 
 .. toctree
     :maxdepth: 2
-    :hidden:
 
 
     .. doxygenclass:: stat_tool::
@@ -13,5 +12,16 @@ API reference
     .. autodoxygenindex::
         :project: stat_tool
 
+    .. doxygennamespace:: stat_tool::Clusters
+
+    .. doxygennamespace:: stat_tool
+
+.. contents::
+    :local:
+    :depth: 2
+
 .. doxygenindex::
-    :outline:
+
+
+
+
