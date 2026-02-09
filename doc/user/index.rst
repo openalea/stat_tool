@@ -36,13 +36,3 @@ tutorials and examples
     aml2py.rst
     troubleshooting.rst
 
-
-VisuAlea dataflow
-===================
-
-.. toctree::
-    :maxdepth: 1
-
-
-    visualea_oak_demo.rst
-    visualea_beech1.rst

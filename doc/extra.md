@@ -1,8 +1,7 @@
 # Additional resources for stat_tool
 
 ```{include} ../CONTRIBUTING.md
-   :start-after: <!-- CONTRIBUTING-START -->
-   :end-before
+
 ```
 
 ```{include} ../AUTHORS.md

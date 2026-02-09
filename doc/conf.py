@@ -3,13 +3,13 @@ import os
 import sys
 from importlib.metadata import metadata
 
-pkg_name='stat_tool'
-meta = metadata('openalea.' + pkg_name)
+pkg_name = "stat_tool"
+meta = metadata("openalea." + pkg_name)
 release = meta.get("version")
 # for example take major/minor
-version = ".".join(release.split('.')[:3])
-author = meta['Author'].split(',')[0] + "et al."
-desc = meta['Summary']
+version = ".".join(release.split(".")[:3])
+author = meta["Author"].split(",")[0] + "et al."
+desc = meta["Summary"]
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -35,12 +35,13 @@ extensions = [
     "sphinx_favicon",  # support for favicon
     "nbsphinx",  # for integrating jupyter notebooks
     "myst_parser",  # for parsing .md files
-    "breathe",  # for inclusion of C++ Doxygen documentation
+    "matplotlib.sphinxext.plot_directive",
+    "breathe",
 ]
 
 
 nbsphinx_thumbnails = {
-    'examples/Segmentation': '_static/segmentation_thumb.png',
+    "examples/Segmentation": "_static/segmentation_thumb.png",
 }
 
 nbsphinx_allow_errors = True
@@ -54,6 +55,10 @@ source_suffix = {
     ".rst": "restructuredtext",
     ".md": "markdown",
 }
+
+breathe_projects = {"stat_tool": "xml"}
+breathe_default_project = "stat_tool"
+
 # The master toctree document.
 master_doc = "index"
 # General information about the project.

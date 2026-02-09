@@ -47,7 +47,7 @@ be sufficient to allow you to declare and manipulate other objects such as
 
 
 .. just to prevent annoying warnings
-.. htmlonly::
+.. only:: html
 
     .. toctree::
         :hidden:
