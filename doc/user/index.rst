@@ -22,7 +22,6 @@ From original AML documentation
     description.rst
     syntax.rst
     syntax2.rst
-    list.rst
 
 tutorials and examples
 =======================
@@ -30,7 +29,6 @@ tutorials and examples
 .. toctree::
     :maxdepth: 1
 
-    tutorial.rst
     gnuplot_versus_matplotlib.rst
     plotting.rst
     aml2py.rst
