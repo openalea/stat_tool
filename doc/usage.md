@@ -1,9 +1,13 @@
 # Usage
 
-```{nbgallery}
-examples/clustering.ipynb
+```{toctree}
+:maxdepth: 2
+:hidden:
+
+Convolution <user/convolution.rst>
+Histogram <user/histogram.rst>
 ```
 
-```{include}
-user/index.rst
-```
+```{nbgallery}
+examples/clustering.ipynb
+
