@@ -89,6 +89,7 @@ html_theme = "pydata_sphinx_theme"
 # documentation.
 html_theme_options = {
     "header_links_before_dropdown": 6,
+    "show_toc_level": 2,
     "sidebarwidth": 200,
     "collapse_navigation": "false",
     "icon_links": [
@@ -162,5 +163,5 @@ texinfo_documents = [
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {"python": ("https://docs.python.org/", None)}
 
-breathe_projects = {'stat_tool': 'xml'}
-breathe_default_project = 'stat_tool'
+breathe_projects = {"stat_tool": "xml"}
+breathe_default_project = "stat_tool"

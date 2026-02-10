@@ -14,7 +14,7 @@
 
     :Revision: $Id$
 
-.. inheritance-diagram:: openalea.stat_tool.plot
+.. .. inheritance-diagram:: openalea.stat_tool.plot
 
 """
 

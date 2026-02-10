@@ -145,6 +145,7 @@ def Plot(obj, *args, **kargs):
 
     In the case of Markovian models or sequences, the graphical outputs are
     grouped as follows:
+
       - "SelfTransition": add outgoing server thunderbirdself-transition probability as a function of the
         index parameter (non-homogeneous Markov chain),
       - "Observation": observation distributions attached to each state of the
@@ -287,7 +288,10 @@ def Save(obj, *args, **kargs):
     the index parameter t computed from the parameters of a hidden Markovian model
     for the sequence (ViewPoint="StateProfile").
 
-    .. note:: The persistence mechanism is implemented by the Save function.
+    Note
+    ----
+
+    The persistence mechanism is implemented by the Save function.
 
 
     Parameters
