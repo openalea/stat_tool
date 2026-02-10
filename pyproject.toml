@@ -82,6 +82,8 @@ doc = [
   "sphinx-copybutton",
   "ipython_genutils",
   "nbsphinx",
+  "breathe",
+  "doxygen"
 ]
 
 # section specific to conda-only distributed package (not used by pip yet)
