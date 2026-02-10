@@ -30,7 +30,7 @@ Thanks to all that ontribute making this package what it is !
 
 after activation of the conda environment depicted in the online documentation.
 
- * Comilation options for developers such are WITH_TEST, WITH_EFENCE are defined in pyproject.toml. They can be used with
+ * Compilation options for developers such are WITH_TEST, WITH_EFENCE are defined in pyproject.toml. They can be used with
 
     pip install --no-build-isolation --config-settings=cmake.define.WITH_TEST=TRUE -e .
     pip install --no-build-isolation --config-settings=cmake.build-type="Debug" -e .
