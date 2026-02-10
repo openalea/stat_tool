@@ -1,0 +1,5 @@
+- Fix “ContinousParametric” and “ContinousParametricProcess” classes API documentation
+- Move "Usage Example" from "User guide" section to "Usage" section
+- Add docstrings to constants. Simply add "///" instead of "//" ?
+- Welcome page: better integrate code lines (`pip install...`). Also move section "Note for developpers" into a more appropriated section ?
+- Move objects description from "tutorials.rst" into "Usage" section
