@@ -6,6 +6,7 @@
 
 Convolution <user/convolution.rst>
 Histogram <user/histogram.rst>
+Plotting <user/plotting.rst>
 Vectors <user/vectors.rst>
 ```
 

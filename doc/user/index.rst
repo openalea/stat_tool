@@ -30,7 +30,6 @@ tutorials and examples
     :maxdepth: 1
 
     gnuplot_versus_matplotlib.rst
-    plotting.rst
     aml2py.rst
     troubleshooting.rst
 
