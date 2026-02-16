@@ -4,6 +4,7 @@ channels:
   - conda-forge
 dependencies:
   - scikit-build-core
+  - setuptools_scm
   - cmake
   - boost
   - matplotlib-base
