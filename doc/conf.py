@@ -63,7 +63,7 @@ breathe_default_project = "stat_tool"
 # Run doxygen when building on readthedocs
 read_the_docs_build = os.environ.get("READTHEDOCS", None) == "True"
 if read_the_docs_build:
-    subprocess.call("cd ../doxygen; doxygen", shell=True)
+    subprocess.call("doxygen", shell=True)
 
 # The master toctree document.
 master_doc = "index"
