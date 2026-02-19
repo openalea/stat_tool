@@ -61,3 +61,6 @@ def test1():
     clust_entropy = m_estim_nbcomp.cluster_data(v , True)
     clust_plain = m_estim_nbcomp.cluster_data(v , False)
 
+
+if __name__ == "__main__":
+    test1()

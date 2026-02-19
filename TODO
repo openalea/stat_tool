@@ -3,3 +3,4 @@
 - [ ] Add docstrings to constants. Simply add "///" instead of "//" ? Find how to transfert comments from doxygen xml to breathe
 - [x] Welcome page: better integrate code lines (`pip install...`). Also move section "Note for developpers" into a more appropriated section ?
 - [ ] Move objects description from "tutorials.rst" into "Usage" section
+- [ ] Ensure that warnings are raise is non-existing keyword arguments are used in functions (e.g. Nbiteration in place of NbIteration)
