@@ -82,14 +82,14 @@ doc = [
   "sphinx-copybutton",
   "ipython_genutils",
   "nbsphinx",
+  "ninja",
   "breathe",
-  "doxygen"
 ]
 
 # section specific to conda-only distributed package (not used by pip yet)
 [tool.conda.environment]
 channels = ["openalea3", "conda-forge"]
-dependencies = ["boost", "matplotlib-base"]
+dependencies = ["boost", "matplotlib-base", "doxygen"]
 
 [project.urls]
 Repository = "https://github.com/openalea/stat_tool"

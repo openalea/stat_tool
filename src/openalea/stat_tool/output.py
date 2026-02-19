@@ -49,8 +49,9 @@ def add_doc(function):
     """a simple decorator to replace f's docstring by a new one
 
     The new one is the docstring of the function's name capitalized.
-    E.g: if function's name is display, then
-        >>> display.__doc__ = Display.__doc__
+    E.g: if function's name is display, then::
+
+        display.__doc__ = Display.__doc__
     """
     name = function.__name__
 
@@ -144,6 +145,7 @@ def Plot(obj, *args, **kargs):
 
     In the case of Markovian models or sequences, the graphical outputs are
     grouped as follows:
+
       - "SelfTransition": add outgoing server thunderbirdself-transition probability as a function of the
         index parameter (non-homogeneous Markov chain),
       - "Observation": observation distributions attached to each state of the
@@ -215,11 +217,16 @@ def Plot(obj, *args, **kargs):
             convolution_data or compound_data
           * "StateProfile" only if the first mandatory argument is of type
             hidden_markov or hidden_semi-markov.
+
     Title: (string)
         graphic title (the default: no title).
+
     nbcol: (int)
         number of columns in the output figure
-      * Show:
+
+    Show: (dict)
+        Display options
+
       * legend_size: 10
       * legend_nbcol: 2
       * legend_loc: best
@@ -281,54 +288,58 @@ def Save(obj, *args, **kargs):
     the index parameter t computed from the parameters of a hidden Markovian model
     for the sequence (ViewPoint="StateProfile").
 
-    .. note:: The persistence mechanism is implemented by the Save function.
+    Note
+    ----
+
+    The persistence mechanism is implemented by the Save function.
 
 
     Parameters
     ----------
 
-      obj: object of the STAT module (except objects of type vector_distance),
-      file_name : (string),
-      histo : (_FrequencyDistribution, _DiscreteMixtureData, _ConvolutionData, _CompoundData),
-      vec : (_Vectors),
-      timev : (_TimeEvents, _RenewalData),
-      seq : (_Sequences, _DiscreteSequences, _MarkovData, _SemiMarkovData, _Tops).
-      dist : (_Distribution, _Mixture, _Convolution, _Compound),
-      hmc : (_HiddenMarkov),
-      hsmc : (_HiddenSemiMarkov).
+    obj: object of the STAT module (except objects of type vector_distance),
+    file_name : (string),
+    histo : (_FrequencyDistribution, _DiscreteMixtureData, _ConvolutionData, _CompoundData),
+    vec : (_Vectors),
+    timev : (_TimeEvents, _RenewalData),
+    seq : (_Sequences, _DiscreteSequences, _MarkovData, _SemiMarkovData, _Tops).
+    dist : (_Distribution, _Mixture, _Convolution, _Compound),
+    hmc : (_HiddenMarkov),
+    hsmc : (_HiddenSemiMarkov).
 
     Keywords
     --------
 
-      ViewPoint : (string)
-        point of view on the object ("Data" or "Survival" or "StateProfile").
+    ViewPoint : (string)
+        Point of view on the object ("Data" or "Survival" or "StateProfile").
+
         This optional argument can be set at :
-          * "Data" only if the first argument is of type `_Sequences`,
+
+        * "Data" only if the first argument is of type `_Sequences`,
             `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData` or `_Tops`,
-          * "Survival" only if the first argument is of type `_Distribution`,
+        * "Survival" only if the first argument is of type `_Distribution`,
             `_Mixture`, `_Convolution`, `_Compound`, `_FrequencyDistribution`, `_DiscreteMixtureData`,
             `_ConvolutionData` or `_CompoundData`
-          * "StateProfile" only if the first argument is of type `_HiddenMarkov or
+        * "StateProfile" only if the first argument is of type `_HiddenMarkov or
             `_HiddenSemiMarkov`.
-      Detail : (int)
+    Detail : (int)
         level of detail: 1 (default value) or 2.
         This optional argument can only be used if the optional argument ViewPoint
         is not set, or if the optional argument ViewPoint is set at "Data" and
         if the first mandatory argument is of type `_Vectors`, `_Sequences`,
         `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData` or `_Tops`.
-      Format : (string)
-        file format: "ASCII" (default format), "Binary" or "SpreadSheet".
+    file format: "ASCII" (default format), "Binary" or "SpreadSheet".
         These file formats cannot be specified if the optional argument ViewPoint
         is set at "Data". The optional argument Format can only be set at "Binary"
         if the optional argument ViewPoint is not set.
-      Format : (string)
+    Format : (string)
         format of sequences (only relevant for multivariate sequences):
         "Column" (default value) or "Line". This optional argument can only be used if the
         optional argument ViewPoint is set at "Data", and hence, if the first argument is of
         type `_Sequences`, `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData`
         or `_Tops`. If the first argument is of type `_Vectors`, use Format="Data" to actually
         save the data rather than their summary.
-      Sequence : (int)
+    Sequence : (int)
         identifier of a sequence. This optional argument can only be used
         if the optional argument ViewPoint is set at "StateProfile", and hence, if the first
         mandatory argument is of type `_HiddenMarkov` or `_HiddenSemiMarkov`.
@@ -361,8 +372,8 @@ def Save(obj, *args, **kargs):
 
     Todo
     ----
-        In the statInterface, Format is used for ViewPoint=="Data" need to be
-        clarified
+    In the statInterface, Format is used for ViewPoint=="Data" need to be
+    clarified
     """
 
     return obj.save(*args, **kargs)

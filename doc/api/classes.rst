@@ -15,9 +15,9 @@ Classes
    :members:
 .. doxygenclass:: stat_tool::CompoundData
    :members:
-.. doxygenclass:: ContinousParametric
+.. doxygenclass:: stat_tool::ContinuousParametric
    :members:
-.. doxygenclass:: ContinousParametricProcess
+.. doxygenclass:: stat_tool::ContinuousParametricProcess
    :members:
 .. doxygenclass:: stat_tool::Convolution
    :members:

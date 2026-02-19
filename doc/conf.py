@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+import subprocess
 import sys
 from importlib.metadata import metadata
 
@@ -56,8 +57,13 @@ source_suffix = {
     ".md": "markdown",
 }
 
+# C++ API
 breathe_projects = {"stat_tool": "xml"}
 breathe_default_project = "stat_tool"
+# Run doxygen when building on readthedocs
+read_the_docs_build = os.environ.get("READTHEDOCS", None) == "True"
+if read_the_docs_build:
+    subprocess.call("doxygen", shell=True)
 
 # The master toctree document.
 master_doc = "index"
@@ -89,6 +95,7 @@ html_theme = "pydata_sphinx_theme"
 # documentation.
 html_theme_options = {
     "header_links_before_dropdown": 6,
+    "show_toc_level": 2,
     "sidebarwidth": 200,
     "collapse_navigation": "false",
     "icon_links": [
@@ -162,5 +169,5 @@ texinfo_documents = [
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {"python": ("https://docs.python.org/", None)}
 
-breathe_projects = {'stat_tool': 'xml'}
-breathe_default_project = 'stat_tool'
+breathe_projects = {"stat_tool": "xml"}
+breathe_default_project = "stat_tool"

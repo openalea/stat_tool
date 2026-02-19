@@ -23,19 +23,6 @@ Thanks to all that ontribute making this package what it is !
   <img src="https://contrib.rocks/image?repo=openalea/stat_tool" />
 </a>
 
-## Note for developers
+## Installation
 
-- Compile and install with
-
-  pip install -e .
-
-after activation of the conda environment depicted in the online documentation.
-
-  * Compilation options for developers such as WITH_TEST, WITH_EFENCE are defined in pyproject.toml. They can be used with
-
-  pip install --no-build-isolation --config-settings=cmake.define.WITH_TEST=TRUE -e .
-  pip install --no-build-isolation --config-settings=cmake.build-type="Debug" -e .
-
-and also combined:
-
-    pip install --no-build-isolation --config-settings=cmake.define.WITH_TEST=TRUE --config-settings=cmake.define.WITH_EFENCE=TRUE --config-settings=cmake.build-type="Debug" -e .
+See instructions on documentation, section [Installation](./installation.md)
