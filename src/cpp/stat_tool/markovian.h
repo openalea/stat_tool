@@ -189,6 +189,8 @@ namespace stat_tool {
 
     double likelihood_computation(const ChainData &chain_data , bool initial_flag = true) const;
     void chi2_fit(const ChainData &chain_data , Test &test) const;
+
+    int get_nb_state() const; /// Return number of states
   };
 
 

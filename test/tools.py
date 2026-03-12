@@ -20,7 +20,7 @@ from pathlib import Path
 
 import openalea.stat_tool as st
 from openalea.stat_tool import get_shared_data
-from openalea.stat_tool.distribution import set_seed
+
 
 
 def runTestClass(myclass):
@@ -46,9 +46,9 @@ class interface:
     :param structure: reference to a data structure Class that is not instantiated.
 
     :Usage:
-    In you test file, add::
+    In your test file, add::
 
-        >>> from tools import interface
+        >>> from .tools import interface
 
     Then, if we consider the Compound class case, create a class as follows::
 
