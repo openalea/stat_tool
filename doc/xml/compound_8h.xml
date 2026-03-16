@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="compound_8h" kind="file" language="C++">
+    <compoundname>compound.h</compoundname>
+    <includes refid="stat__tools_8h" local="yes">stat_tools.h</includes>
+    <includes refid="distribution_8h" local="yes">distribution.h</includes>
+    <includedby refid="compound_8cpp" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp</includedby>
+    <includedby refid="compound__algorithms_8cpp" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound_algorithms.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h</label>
+        <link refid="compound_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="18">
+        <label>distribution.h</label>
+        <link refid="distribution_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>plotable.h</label>
+        <link refid="plotable_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>plotable.hpp</label>
+        <link refid="plotable_8hpp"/>
+      </node>
+      <node id="5">
+        <label>reestimation.h</label>
+        <link refid="reestimation_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>reestimation.hpp</label>
+        <link refid="reestimation_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stat_label.h</label>
+        <link refid="stat__label_8h"/>
+      </node>
+      <node id="2">
+        <label>stat_tools.h</label>
+        <link refid="stat__tools_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>boost/math/special_functions/digamma.hpp</label>
+      </node>
+      <node id="15">
+        <label>cmath</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>iterator</label>
+      </node>
+      <node id="8">
+        <label>list</label>
+      </node>
+      <node id="3">
+        <label>random</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp</label>
+        <link refid="compound_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h</label>
+        <link refid="compound_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound_algorithms.cpp</label>
+        <link refid="compound__algorithms_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classstat__tool_1_1Compound" prot="public">stat_tool::Compound</innerclass>
+    <innerclass refid="classstat__tool_1_1CompoundData" prot="public">stat_tool::CompoundData</innerclass>
+    <innernamespace refid="namespacestat__tool">stat_tool</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-c++-*-</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>StructureAnalysis:<sp/>Identifying<sp/>patterns<sp/>in<sp/>plant<sp/>architecture<sp/>and<sp/>development</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>1995-2018<sp/>CIRAD<sp/>AGAP</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>File<sp/>author(s):<sp/>Yann<sp/>Guedon<sp/>(yann.guedon@cirad.fr)</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Source$</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Id$</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Forum<sp/>for<sp/>StructureAnalysis<sp/>developers:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>Licence</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>For<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/>If<sp/>not,</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>COMPOUND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMPOUND_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stat__tools_8h" kindref="compound">stat_tools.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="distribution_8h" kindref="compound">distribution.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestat__tool" kindref="compound">stat_tool</ref><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/><sp/>Constants</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="namespacestat__tool_1a399efc20ca37b961f5ec1ae4e125e1a5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a399efc20ca37b961f5ec1ae4e125e1a5" kindref="member">COMPOUND_THRESHOLD</ref><sp/>=<sp/>0.99999;<sp/><sp/></highlight><highlight class="comment">//<sp/>threshold<sp/>on<sp/>the<sp/>cumulative<sp/>distribution<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>determining<sp/>the<sp/>upper<sp/>bound<sp/>of<sp/>the<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="namespacestat__tool_1a8a903163877c2af0d6b7e887c1c48425" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a8a903163877c2af0d6b7e887c1c48425" kindref="member">COMPOUND_INIT_PROBABILITY</ref><sp/>=<sp/>0.001;<sp/><sp/></highlight><highlight class="comment">//<sp/>threshold<sp/>for<sp/>probability<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespacestat__tool_1a22411b17a01d7703d0f8517ab2b1adb0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a22411b17a01d7703d0f8517ab2b1adb0" kindref="member">COMPOUND_LIKELIHOOD_DIFF</ref><sp/>=<sp/>1.e-5;<sp/><sp/></highlight><highlight class="comment">//<sp/>threshold<sp/>for<sp/>stopping<sp/>EM<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="namespacestat__tool_1a8d93c625c211eec85a95bd1795117335" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a8d93c625c211eec85a95bd1795117335" kindref="member">COMPOUND_NB_ITER</ref><sp/>=<sp/>10000;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>maximum<sp/>number<sp/>of<sp/>EM<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="namespacestat__tool_1a8d5ffbde6212d8f7711a632dfb34bc7e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a8d5ffbde6212d8f7711a632dfb34bc7e" kindref="member">COMPOUND_DIFFERENCE_WEIGHT</ref><sp/>=<sp/>0.5;<sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>penalty<sp/>weight<sp/>(1st-<sp/>or<sp/>2nd-order<sp/>difference<sp/>cases)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="namespacestat__tool_1a2079a42e6853255ab830cea21716b05c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a2079a42e6853255ab830cea21716b05c" kindref="member">COMPOUND_ENTROPY_WEIGHT</ref><sp/>=<sp/>0.1;<sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>penalty<sp/>weight<sp/>(entropy<sp/>case)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="namespacestat__tool_1a50a1cd4a35022790299be50bab2ba2d4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a50a1cd4a35022790299be50bab2ba2d4" kindref="member">COMPOUND_COEFF</ref><sp/>=<sp/>10;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rounding<sp/>coefficient<sp/>for<sp/>the<sp/>estimator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/><sp/>Class<sp/>definition</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classstat__tool_1_1Compound" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1aff9f1eb755d5988dcad01d04e48f9d9a" kindref="member">STAT_TOOL_API</ref><sp/><ref refid="classstat__tool_1_1Compound_1a1b9193218a519079e2cb5c07fc326e63" kindref="member">Compound</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1StatInterface" kindref="compound">StatInterface</ref><sp/>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution_1a7854c3e83af17605b6f1b2e08191a883" kindref="member">Distribution</ref><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classstat__tool_1_1Compound_1a4b140c2efdbf49a5c39265992d544d7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1Compound_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>;</highlight></codeline>
+<codeline lineno="82" refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" kindref="member">CompoundData</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classstat__tool_1_1Compound_1ab256b34650cdc4ab9769b476bee54b16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1Compound_1ab256b34650cdc4ab9769b476bee54b16" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a1b9193218a519079e2cb5c07fc326e63" kindref="member">Compound</ref><sp/>&amp;compound)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>compound.<ref refid="classstat__tool_1_1Compound_1a4afe9fdbc26280492625d6711ca1e35a" kindref="member">ascii_write</ref>(os<sp/>,<sp/>compound.<ref refid="classstat__tool_1_1Compound_1a67eec9441fe46ac494d2c56900123f54" kindref="member">compound_data</ref><sp/>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>private<sp/>:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classstat__tool_1_1Compound_1a67eec9441fe46ac494d2c56900123f54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" kindref="member">CompoundData</ref><sp/>*<ref refid="classstat__tool_1_1Compound_1a67eec9441fe46ac494d2c56900123f54" kindref="member">compound_data</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="classstat__tool_1_1Compound_1a4b2ee5b2c2c8e9ebbc49c3b733afed71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*<ref refid="classstat__tool_1_1Compound_1a4b2ee5b2c2c8e9ebbc49c3b733afed71" kindref="member">sum_distribution</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="classstat__tool_1_1Compound_1ab4249549fcd38132ba71d5d81ab6b664" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*<ref refid="classstat__tool_1_1Compound_1ab4249549fcd38132ba71d5d81ab6b664" kindref="member">distribution</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a01487ae5ed144aa6731f835c4e7f4d96" kindref="member">copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a1b9193218a519079e2cb5c07fc326e63" kindref="member">Compound</ref><sp/>&amp;compound<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>data_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classstat__tool_1_1Compound_1a4afe9fdbc26280492625d6711ca1e35a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1Compound_1a4afe9fdbc26280492625d6711ca1e35a" kindref="member">ascii_write</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" kindref="member">CompoundData</ref><sp/>*compound_histo<sp/>,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>file_flag)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97" refid="classstat__tool_1_1Compound_1a4fe36eeb27a7917c6e029461ba8b35f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1Compound_1a4fe36eeb27a7917c6e029461ba8b35f2" kindref="member">spreadsheet_write</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" kindref="member">CompoundData</ref><sp/>*compound_histo)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1ad9a62fd501b86286efb1e61f3044271b" kindref="member">plot_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*title<sp/>,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" kindref="member">CompoundData</ref><sp/>*compound_histo)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/><ref refid="classstat__tool_1_1Compound_1ab4579edb715aee6bb5956b0919df70de" kindref="member">get_plotable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" kindref="member">CompoundData</ref><sp/>*compound_histo)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a734ed1d2bff74d66d581de432fcc094b" kindref="member">computation</ref>(<ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>**power_dist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_nb_value<sp/>,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sum_flag<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dist_flag);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a220a90aa31e9346a4b44db39355372a4" kindref="member">expectation_step</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>&amp;histo<sp/>,<sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>**power_dist<sp/>,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;double&gt;</ref><sp/>*sum_reestim<sp/>,<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;double&gt;</ref><sp/>*reestim)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>public<sp/>:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Compound_1a1b9193218a519079e2cb5c07fc326e63" kindref="member">Compound</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Compound_1a1b9193218a519079e2cb5c07fc326e63" kindref="member">Compound</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>&amp;sum_dist<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>&amp;dist<sp/>,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold<sp/>=<sp/><ref refid="namespacestat__tool_1a399efc20ca37b961f5ec1ae4e125e1a5" kindref="member">COMPOUND_THRESHOLD</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Compound_1a1b9193218a519079e2cb5c07fc326e63" kindref="member">Compound</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>&amp;sum_dist<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>&amp;dist<sp/>,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1add3c8809830c5b44dbc3e2e3bed80698" kindref="member">compound_distribution</ref><sp/>type);</highlight></codeline>
+<codeline lineno="114" refid="classstat__tool_1_1Compound_1a32fbf06349802346144464feb5af00f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Compound_1a32fbf06349802346144464feb5af00f9" kindref="member">Compound</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a1b9193218a519079e2cb5c07fc326e63" kindref="member">Compound</ref><sp/>&amp;compound<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>data_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>:<ref refid="classstat__tool_1_1Distribution_1a7854c3e83af17605b6f1b2e08191a883" kindref="member">Distribution</ref>(compound)<sp/>{<sp/><ref refid="classstat__tool_1_1Compound_1a01487ae5ed144aa6731f835c4e7f4d96" kindref="member">copy</ref>(compound<sp/>,<sp/>data_flag);<sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Compound" kindref="compound">~Compound</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref><sp/>&amp;compound);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref>*<sp/>extract_data(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref>*<sp/>ascii_read(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path<sp/>,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold<sp/>=<sp/><ref refid="namespacestat__tool_1a399efc20ca37b961f5ec1ae4e125e1a5" kindref="member">COMPOUND_THRESHOLD</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/>line_write(std::ostream<sp/>&amp;os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classstat__tool_1_1Compound_1aa4849c89515b55cdabdecc845695ada8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1Compound_1aa4849c89515b55cdabdecc845695ada8" kindref="member">ascii_write</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127" refid="classstat__tool_1_1Compound_1a6c4ab290a6518348cefd115244d3adf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a6c4ab290a6518348cefd115244d3adf8" kindref="member">ascii_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128" refid="classstat__tool_1_1Compound_1aabaca0a1b7f53f8087647628cf9c2e29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1aabaca0a1b7f53f8087647628cf9c2e29" kindref="member">spreadsheet_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1ad9a62fd501b86286efb1e61f3044271b" kindref="member">plot_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*title<sp/>=<sp/>NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/><ref refid="classstat__tool_1_1Compound_1ab4579edb715aee6bb5956b0919df70de" kindref="member">get_plotable</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a734ed1d2bff74d66d581de432fcc094b" kindref="member">computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_nb_value<sp/>=<sp/>1<sp/>,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold<sp/>=<sp/><ref refid="namespacestat__tool_1a399efc20ca37b961f5ec1ae4e125e1a5" kindref="member">COMPOUND_THRESHOLD</ref><sp/>,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sum_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dist_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" kindref="member">CompoundData</ref>*<sp/><ref refid="classstat__tool_1_1Compound_1a3e0b8ce852b483822cfa656abfd65e48" kindref="member">simulation</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_element)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>member<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classstat__tool_1_1Compound_1ab4e7902e8fd909c3c3380d2c8d29e060" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" kindref="member">CompoundData</ref>*<sp/><ref refid="classstat__tool_1_1Compound_1ab4e7902e8fd909c3c3380d2c8d29e060" kindref="member">get_compound_data</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a67eec9441fe46ac494d2c56900123f54" kindref="member">compound_data</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="140" refid="classstat__tool_1_1Compound_1a7226f4cc223cb52eebf84ddbffe743ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref>*<sp/><ref refid="classstat__tool_1_1Compound_1a7226f4cc223cb52eebf84ddbffe743ce" kindref="member">get_sum_distribution</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1a4b2ee5b2c2c8e9ebbc49c3b733afed71" kindref="member">sum_distribution</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="141" refid="classstat__tool_1_1Compound_1afb95cd155fa061a961f4a6cd99a419c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref>*<sp/><ref refid="classstat__tool_1_1Compound_1afb95cd155fa061a961f4a6cd99a419c3" kindref="member">get_distribution</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Compound_1ab4249549fcd38132ba71d5d81ab6b664" kindref="member">distribution</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="classstat__tool_1_1CompoundData" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1aff9f1eb755d5988dcad01d04e48f9d9a" kindref="member">STAT_TOOL_API</ref><sp/><ref refid="classstat__tool_1_1CompoundData_1aa9760999ecb82471d0f05b05a2ce6d18" kindref="member">CompoundData</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1StatInterface" kindref="compound">StatInterface</ref><sp/>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>{</highlight></codeline>
+<codeline lineno="148" refid="classstat__tool_1_1CompoundData_1a4b140c2efdbf49a5c39265992d544d7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1CompoundData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>;</highlight></codeline>
+<codeline lineno="149" refid="classstat__tool_1_1CompoundData_1a2f8312e6ec4e45b24d6fd245dfcffe87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1CompoundData_1a2f8312e6ec4e45b24d6fd245dfcffe87" kindref="member">Compound</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="classstat__tool_1_1CompoundData_1ad86a3cb1fa45d90b847636bab2ba11c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1CompoundData_1ad86a3cb1fa45d90b847636bab2ba11c2" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1aa9760999ecb82471d0f05b05a2ce6d18" kindref="member">CompoundData</ref><sp/>&amp;compound_histo)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>compound_histo.<ref refid="classstat__tool_1_1CompoundData_1ae5d4c01c0afe231b79736654d9ba0995" kindref="member">ascii_write</ref>(os<sp/>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>private<sp/>:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classstat__tool_1_1CompoundData_1a5131fe4d851f11cadf72076dbaef0236" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1a2f8312e6ec4e45b24d6fd245dfcffe87" kindref="member">Compound</ref><sp/>*<ref refid="classstat__tool_1_1CompoundData_1a5131fe4d851f11cadf72076dbaef0236" kindref="member">compound</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157" refid="classstat__tool_1_1CompoundData_1a76a62a207c34b1eac10bb501e333787e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>*<ref refid="classstat__tool_1_1CompoundData_1a76a62a207c34b1eac10bb501e333787e" kindref="member">sum_frequency_distribution</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="158" refid="classstat__tool_1_1CompoundData_1ade0b420afdb8dfdac405bde1d51d2d78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>*<ref refid="classstat__tool_1_1CompoundData_1ade0b420afdb8dfdac405bde1d51d2d78" kindref="member">frequency_distribution</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1a29a1701514d846787af93d388b6b2e24" kindref="member">copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1aa9760999ecb82471d0f05b05a2ce6d18" kindref="member">CompoundData</ref><sp/>&amp;compound_histo<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>model_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>public<sp/>:</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1aa9760999ecb82471d0f05b05a2ce6d18" kindref="member">CompoundData</ref>();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1aa9760999ecb82471d0f05b05a2ce6d18" kindref="member">CompoundData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>&amp;histo<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1a2f8312e6ec4e45b24d6fd245dfcffe87" kindref="member">Compound</ref><sp/>&amp;icompound);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1aa9760999ecb82471d0f05b05a2ce6d18" kindref="member">CompoundData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1a2f8312e6ec4e45b24d6fd245dfcffe87" kindref="member">Compound</ref><sp/>&amp;icompound);</highlight></codeline>
+<codeline lineno="167" refid="classstat__tool_1_1CompoundData_1aae2cac817b1e8db553bc09c1dd03b234" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1aae2cac817b1e8db553bc09c1dd03b234" kindref="member">CompoundData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1aa9760999ecb82471d0f05b05a2ce6d18" kindref="member">CompoundData</ref><sp/>&amp;compound_histo<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>model_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>:<ref refid="classstat__tool_1_1CompoundData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>(compound_histo)<sp/>{<sp/><ref refid="classstat__tool_1_1CompoundData_1a29a1701514d846787af93d388b6b2e24" kindref="member">copy</ref>(compound_histo<sp/>,<sp/>model_flag);<sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData" kindref="compound">~CompoundData</ref>();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref><sp/>&amp;compound_histo);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref>*<sp/>extract(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/><ref refid="namespacestat__tool_1add3c8809830c5b44dbc3e2e3bed80698" kindref="member">compound_distribution</ref><sp/>type)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/>line_write(std::ostream<sp/>&amp;os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="classstat__tool_1_1CompoundData_1ae5d4c01c0afe231b79736654d9ba0995" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1CompoundData_1ae5d4c01c0afe231b79736654d9ba0995" kindref="member">ascii_write</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177" refid="classstat__tool_1_1CompoundData_1a6016f7a0586e3c18df6bbbd5bc510b33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1a6016f7a0586e3c18df6bbbd5bc510b33" kindref="member">ascii_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1a8ad361cb20b2e47e850db2927feb040a" kindref="member">spreadsheet_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1ae241e085f5a4b3bec26f4c4737fc75c5" kindref="member">plot_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*title<sp/>=<sp/>NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/><ref refid="classstat__tool_1_1CompoundData_1a4a888ae2ac691e1afa4e584e7d68c378" kindref="member">get_plotable</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>member<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="classstat__tool_1_1CompoundData_1a3f9fb4e9104b6e429aecdaf578831279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1a2f8312e6ec4e45b24d6fd245dfcffe87" kindref="member">Compound</ref>*<sp/><ref refid="classstat__tool_1_1CompoundData_1a3f9fb4e9104b6e429aecdaf578831279" kindref="member">get_compound</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1a5131fe4d851f11cadf72076dbaef0236" kindref="member">compound</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="185" refid="classstat__tool_1_1CompoundData_1a084930fcd6c082f5988fdc165d7ba1df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>*<sp/><ref refid="classstat__tool_1_1CompoundData_1a084930fcd6c082f5988fdc165d7ba1df" kindref="member">get_sum_frequency_distribution</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1a76a62a207c34b1eac10bb501e333787e" kindref="member">sum_frequency_distribution</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="186" refid="classstat__tool_1_1CompoundData_1aeec7306ed7225a8abf242e4579c52ad7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1CompoundData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>*<sp/><ref refid="classstat__tool_1_1CompoundData_1aeec7306ed7225a8abf242e4579c52ad7" kindref="member">get_frequency_distribution</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1CompoundData_1ade0b420afdb8dfdac405bde1d51d2d78" kindref="member">frequency_distribution</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h"/>
+  </compounddef>
+</doxygen>

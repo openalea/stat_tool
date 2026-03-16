@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="reestimation_8h" kind="file" language="C++">
+    <compoundname>reestimation.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includedby refid="reestimation_8cpp" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.cpp</includedby>
+    <includedby refid="stat__tools_8h" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h</label>
+        <link refid="reestimation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="39">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/categorical_process.cpp</label>
+        <link refid="categorical__process_8cpp"/>
+      </node>
+      <node id="40">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain.cpp</label>
+        <link refid="chain_8cpp"/>
+      </node>
+      <node id="41">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp</label>
+        <link refid="chain__algorithms_8cpp"/>
+      </node>
+      <node id="20">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp</label>
+        <link refid="clusters_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp</label>
+        <link refid="compound_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h</label>
+        <link refid="compound_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound_algorithms.cpp</label>
+        <link refid="compound__algorithms_8cpp"/>
+      </node>
+      <node id="24">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp</label>
+        <link refid="continuous__parametric_8cpp"/>
+      </node>
+      <node id="25">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_estimation.hpp</label>
+        <link refid="continuous__parametric__estimation_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp</label>
+        <link refid="continuous__parametric__process_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp</label>
+        <link refid="convolution_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h</label>
+        <link refid="convolution_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution_algorithms.cpp</label>
+        <link refid="convolution__algorithms_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp</label>
+        <link refid="curves_8cpp"/>
+      </node>
+      <node id="10">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h</label>
+        <link refid="curves_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp</label>
+        <link refid="dendrogram_8cpp"/>
+      </node>
+      <node id="15">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture.cpp</label>
+        <link refid="discrete__mixture_8cpp"/>
+      </node>
+      <node id="14">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture.h</label>
+        <link refid="discrete__mixture_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp</label>
+        <link refid="discrete__mixture__algorithms_8cpp"/>
+      </node>
+      <node id="33">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric.cpp</label>
+        <link refid="discrete__parametric_8cpp"/>
+      </node>
+      <node id="43">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp</label>
+        <link refid="discrete__parametric__process_8cpp"/>
+      </node>
+      <node id="22">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.cpp</label>
+        <link refid="distance__matrix_8cpp"/>
+      </node>
+      <node id="19">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h</label>
+        <link refid="distance__matrix_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution.cpp</label>
+        <link refid="distribution_8cpp"/>
+      </node>
+      <node id="32">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution.h</label>
+        <link refid="distribution_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp</label>
+        <link refid="distribution__algorithms_8cpp"/>
+      </node>
+      <node id="13">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp</label>
+        <link refid="frequency__distribution1_8cpp"/>
+      </node>
+      <node id="35">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp</label>
+        <link refid="frequency__distribution2_8cpp"/>
+      </node>
+      <node id="36">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp</label>
+        <link refid="histogram_8cpp"/>
+      </node>
+      <node id="37">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/interface.cpp</label>
+        <link refid="interface_8cpp"/>
+      </node>
+      <node id="38">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h</label>
+        <link refid="markovian_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/mixture.h</label>
+        <link refid="mixture_8h"/>
+      </node>
+      <node id="17">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp</label>
+        <link refid="multivariate__mixture_8cpp"/>
+      </node>
+      <node id="44">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h</label>
+        <link refid="multivariate__mixture_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp</label>
+        <link refid="multivariate__mixture__algorithms_8cpp"/>
+      </node>
+      <node id="45">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp</label>
+        <link refid="plotable_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.cpp</label>
+        <link refid="reestimation_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h</label>
+        <link refid="reestimation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp</label>
+        <link refid="regression_8cpp"/>
+      </node>
+      <node id="27">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h</label>
+        <link refid="regression_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h</label>
+        <link refid="stat__tools_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp</label>
+        <link refid="test_8cpp"/>
+      </node>
+      <node id="29">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_algorithms.cpp</label>
+        <link refid="vector__algorithms_8cpp"/>
+      </node>
+      <node id="30">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp</label>
+        <link refid="vector__distance_8cpp"/>
+      </node>
+      <node id="31">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.cpp</label>
+        <link refid="vectors_8cpp"/>
+      </node>
+      <node id="23">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h</label>
+        <link refid="vectors_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classstat__tool_1_1Reestimation" prot="public">stat_tool::Reestimation</innerclass>
+    <innernamespace refid="namespacestat__tool">stat_tool</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-c++-*-</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>StructureAnalysis:<sp/>Identifying<sp/>patterns<sp/>in<sp/>plant<sp/>architecture<sp/>and<sp/>development</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>1995-2018<sp/>CIRAD<sp/>AGAP</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>File<sp/>author(s):<sp/>Yann<sp/>Guedon<sp/>(yann.guedon@cirad.fr)</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Source$</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Id$</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Forum<sp/>for<sp/>StructureAnalysis<sp/>developers:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>Licence</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>For<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/>If<sp/>not,</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>REESTIMATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REESTIMATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestat__tool" kindref="compound">stat_tool</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/><sp/>Constants</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref><sp/>=<sp/>0.999;<sp/><sp/></highlight><highlight class="comment">//<sp/>threshold<sp/>on<sp/>the<sp/>cumulative<sp/>distribution<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>to<sp/>determine<sp/>an<sp/>upper<sp/>bound<sp/>of<sp/>the<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="namespacestat__tool_1adb96ce92a734df1e390b17d95c38cf98" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1adb96ce92a734df1e390b17d95c38cf98" kindref="member">BISECTION_RATIO_THRESHOLD</ref><sp/>=<sp/>1.e-8;<sp/><sp/></highlight><highlight class="comment">//<sp/>threshold<sp/>for<sp/>stopping<sp/>the<sp/>interval<sp/>bisection<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="namespacestat__tool_1aa52b0d5b470bf61798a48e4153089490" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1aa52b0d5b470bf61798a48e4153089490" kindref="member">BISECTION_NB_ITER</ref><sp/>=<sp/>100;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>maximum<sp/>number<sp/>of<sp/>iterations<sp/>for<sp/>the<sp/>interval<sp/>bisection<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74c" kindref="member">penalty_type</ref><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74ca4f4595f3f658e6a2d0be166db6402dfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74ca4f4595f3f658e6a2d0be166db6402dfd" kindref="member">FIRST_DIFFERENCE</ref><sp/>,</highlight></codeline>
+<codeline lineno="64" refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74ca363f005fcaab798b469e515311aa2fa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74ca363f005fcaab798b469e515311aa2fa6" kindref="member">SECOND_DIFFERENCE</ref><sp/>,</highlight></codeline>
+<codeline lineno="65" refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74ca46140af6c87e1ee1aae0b0a10416bcf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74ca46140af6c87e1ee1aae0b0a10416bcf8" kindref="member">ENTROPY</ref></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71" kindref="member">side_effect</ref><sp/>{</highlight></codeline>
+<codeline lineno="69" refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71ae2a71b1b375d518dc415d8e54e69bd07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71ae2a71b1b375d518dc415d8e54e69bd07" kindref="member">ZERO</ref><sp/>,</highlight></codeline>
+<codeline lineno="70" refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71a0b6288360ce566a77ef29a0074e60d3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71a0b6288360ce566a77ef29a0074e60d3c" kindref="member">CONTINUATION</ref></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/>Class<sp/>definition</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Distribution;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DiscreteParametric;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ContinuousParametric;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
+<codeline lineno="93" refid="classstat__tool_1_1Reestimation" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1Reestimation_1a273d5c1fb586a1cb592b1e09b7d60a80" kindref="member">Reestimation</ref><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classstat__tool_1_1Reestimation_1a6e2fc30ef2abd0bfa3da51bfdc075067" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1Reestimation_1a6e2fc30ef2abd0bfa3da51bfdc075067" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a273d5c1fb586a1cb592b1e09b7d60a80" kindref="member">Reestimation&lt;Type&gt;</ref><sp/>&amp;histo)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1a5dbf6aced93d7db69d77b269f951c4d4" kindref="member">print</ref>(os);<sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>public<sp/>:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="classstat__tool_1_1Reestimation_1a3c9100385ce84d920b066f92ae4b11d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a3c9100385ce84d920b066f92ae4b11d0" kindref="member">alloc_nb_value</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/><ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/><ref refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" kindref="member">max</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="classstat__tool_1_1Reestimation_1a3487df5dc55a1bb225ad5195c5858a43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a3487df5dc55a1bb225ad5195c5858a43" kindref="member">mean</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="classstat__tool_1_1Reestimation_1a72284881e04f61ff919c689b867c1c94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a72284881e04f61ff919c689b867c1c94" kindref="member">variance</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/>*<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" kindref="member">init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_value);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a7f8cef439c9fbb030ad1617c0c0adbbf" kindref="member">copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a273d5c1fb586a1cb592b1e09b7d60a80" kindref="member">Reestimation&lt;Type&gt;</ref><sp/>&amp;histo);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classstat__tool_1_1Reestimation_1a273d5c1fb586a1cb592b1e09b7d60a80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation_1a273d5c1fb586a1cb592b1e09b7d60a80" kindref="member">Reestimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_value<sp/>=<sp/>0)<sp/>:<sp/><ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref>(0),<sp/><ref refid="classstat__tool_1_1Reestimation_1a3c9100385ce84d920b066f92ae4b11d0" kindref="member">alloc_nb_value</ref>(0),<sp/><ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>(0),</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>(0),<sp/><ref refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" kindref="member">max</ref>(0),<sp/><ref refid="classstat__tool_1_1Reestimation_1a3487df5dc55a1bb225ad5195c5858a43" kindref="member">mean</ref>(-1),<sp/><ref refid="classstat__tool_1_1Reestimation_1a72284881e04f61ff919c689b867c1c94" kindref="member">variance</ref>(-1),<sp/><ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>(NULL)<sp/>{<sp/><ref refid="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" kindref="member">init</ref>(inb_value);<sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation_1a273d5c1fb586a1cb592b1e09b7d60a80" kindref="member">Reestimation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;Type&gt;</ref><sp/>&amp;histo);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation_1a273d5c1fb586a1cb592b1e09b7d60a80" kindref="member">Reestimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_histo<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;Type&gt;</ref><sp/>**histo);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation_1a6b69afa59b26c3b2c4b9556866406b49" kindref="member">~Reestimation</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;Type&gt;</ref>&amp;<sp/><ref refid="classstat__tool_1_1Reestimation_1add69f0e734ab6d20a7bfd79f2481fe6a" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;Type&gt;</ref><sp/>&amp;histo);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1Reestimation_1a459b3b4e77b93b109f5ce8410f2f87dc" kindref="member">ascii_characteristic_print</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shape<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>comment_flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1Reestimation_1acc321efb7ed90ab0cc87fed5b3883166" kindref="member">ascii_circular_characteristic_print</ref>(std::ostream<sp/>&amp;os<sp/>,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>comment_flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1Reestimation_1a5dbf6aced93d7db69d77b269f951c4d4" kindref="member">print</ref>(std::ostream<sp/>&amp;os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1ae188d7e87ad2dc663dc875c19f70cc55" kindref="member">nb_value_computation</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a0077ec2bfda1f17b0b898c5776d23a4f" kindref="member">offset_computation</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a4b70767f5443a384666ca6ac2950c5bb" kindref="member">nb_element_computation</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a1ad8c55d9c32a4cec2590bb9228a076e" kindref="member">max_computation</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1af53c60692899fb8c3f007647a146a8ab" kindref="member">mode_computation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a5823aaa50d5f93903426e17652571d2b" kindref="member">mean_computation</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1ae89ab8ee84cb9d2f274922c94203bb0b" kindref="member">quantile_computation</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>icumul<sp/>=<sp/>0.5)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1af06ac7743b290d877e2dbd1d7bbcb623" kindref="member">variance_computation</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bias<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1ac7c1a17e4b1e7c9bae8daad4c31131e1" kindref="member">mean_absolute_deviation_computation</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>location)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1adb1faf5ce02f41f298b5f1a2675fc12c" kindref="member">log_geometric_mean_computation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a1abeb67272bae44f85d22fa09edbf387" kindref="member">skewness_computation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1ae34326f12f88c086dd9a75e2bc64740b" kindref="member">kurtosis_computation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a0ddf3489d79f8526291b5646af142a92" kindref="member">mean_direction_computation</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*mean_direction)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a8fcd2adf6e459772f897157a45f30e3e" kindref="member">information_computation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a1fe504bc4efc297e925e544447c7ee1a" kindref="member">likelihood_computation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref><sp/>&amp;dist)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1ae31fdabfb21a1b8732a2207d671099d8" kindref="member">distribution_estimation</ref>(<ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref><sp/>*pdist)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a491eee1aabb81cc6584daca1fdc979e5" kindref="member">penalized_likelihood_estimation</ref>(<ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref><sp/>*dist<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>weight<sp/>,<sp/><ref refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74c" kindref="member">penalty_type</ref><sp/>pen_type<sp/>,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*penalty<sp/>,<sp/><ref refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71" kindref="member">side_effect</ref><sp/>outside)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a447392433aafc633c93b762944616385" kindref="member">uniform_estimation</ref>(<ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*pdist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>min_inf_bound_flag)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1ada98b053aa38c05762434eeb5c51bfce" kindref="member">binomial_estimation</ref>(<ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*pdist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>min_inf_bound_flag)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a83f453f9b97c60822488e55edb04dcdc" kindref="member">poisson_estimation</ref>(<ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*pdist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>min_inf_bound_flag<sp/>,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a6e529c9f833559313b3c827fd3d2e7ea" kindref="member">negative_binomial_estimation</ref>(<ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*pdist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>min_inf_bound_flag<sp/>,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a2eb4e6b4c0617a9f9bfbd0d6ebf38dd5" kindref="member">geometric_poisson_estimation</ref>(<ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*pdist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>min_inf_bound_flag<sp/>,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a059264bb4d742e69d7963db7877a062b" kindref="member">parametric_estimation</ref>(<ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*pdist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound<sp/>=<sp/>0<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>min_inf_bound_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold<sp/>=<sp/><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref><sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>geometric_poisson<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a73a49b2c4c02a23ee0a511c97f647d24" kindref="member">type_parametric_estimation</ref>(<ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*pdist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound<sp/>=<sp/>0<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>min_inf_bound_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold<sp/>=<sp/><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref><sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>geometric_poisson<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref>*<sp/><ref refid="classstat__tool_1_1Reestimation_1a73a49b2c4c02a23ee0a511c97f647d24" kindref="member">type_parametric_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound<sp/>=<sp/>0<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>min_inf_bound_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold<sp/>=<sp/><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a199376f41534b96fc3c54b05af9f0e9b" kindref="member">equilibrium_process_combination</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;Type&gt;</ref><sp/>*length_bias_reestim<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>imean);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a2e8e2381b136ac48ad19eac24cc1588d" kindref="member">equilibrium_process_estimation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;Type&gt;</ref><sp/>*length_bias_reestim<sp/>,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref><sp/>*dist<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>imean)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1af73d5bc170b6aaf0ea75fd132a288dc8" kindref="member">penalized_likelihood_equilibrium_process_estimation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;Type&gt;</ref><sp/>*length_bias_reestim<sp/>,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref><sp/>*dist<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>imean<sp/>,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>weight<sp/>,<sp/><ref refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74c" kindref="member">penalty_type</ref><sp/>pen_type<sp/>,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*penalty<sp/>,<sp/><ref refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71" kindref="member">side_effect</ref><sp/>outside)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1ae139afe73cff020ede0f3f6c02b93e8c" kindref="member">state_occupancy_estimation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;Type&gt;</ref><sp/>*final_run<sp/>,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation&lt;double&gt;</ref><sp/>*occupancy_reestim<sp/>,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Type<sp/>*occupancy_survivor<sp/>,<sp/>Type<sp/>*censored_occupancy_survivor<sp/>,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>characteristic_computation<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1a7e5b37b4cc444e89024a3feaf6b10e5e" kindref="member">gamma_estimation</ref>(<ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>*dist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1af640ab43d7bd572328830e6bd9534c01" kindref="member">zero_inflated_gamma_estimation</ref>(<ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>*dist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation_1ab8f1ccd8b05fda5289b4f944193c1f0d" kindref="member">inverse_gaussian_estimation</ref>(<ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>*dist)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a75734a6e397703cc45e0904a03dcd27f" kindref="member">interval_bisection</ref>(Reestimation&lt;double&gt;<sp/>*distribution_reestim<sp/>,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Reestimation&lt;double&gt;<sp/>*length_bias_reestim);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h"/>
+  </compounddef>
+</doxygen>

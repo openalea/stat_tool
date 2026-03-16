@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['gamma_5fdefault_5fscale_5fparameter_0',['GAMMA_DEFAULT_SCALE_PARAMETER',['../namespacestat__tool.html#acd8413dc292aba8bc3f3634a5c9639fc',1,'stat_tool']]],
+  ['gamma_5ffrequency_5fthreshold_1',['GAMMA_FREQUENCY_THRESHOLD',['../namespacestat__tool.html#ac1e45fb51d0fa3b93feddbf37a994661',1,'stat_tool']]],
+  ['gamma_5finverse_5fsample_5fsize_5ffactor_2',['GAMMA_INVERSE_SAMPLE_SIZE_FACTOR',['../namespacestat__tool.html#abef7f213e0ed9452267f92f0b7550388',1,'stat_tool']]],
+  ['gamma_5fiteration_5ffactor_3',['GAMMA_ITERATION_FACTOR',['../namespacestat__tool.html#a153b549134c04e7a8ba2b342288c3af3',1,'stat_tool']]],
+  ['gamma_5fmax_5fnb_5fdecimal_4',['GAMMA_MAX_NB_DECIMAL',['../namespacestat__tool.html#a21a2f0e6aee12950e984154f28967f0d',1,'stat_tool']]],
+  ['gamma_5fmax_5fnb_5fiteration_5',['GAMMA_MAX_NB_ITERATION',['../namespacestat__tool.html#a4132dab0764f7222358fa870b11d8a6b',1,'stat_tool']]],
+  ['gamma_5fmin_5fshape_5fparameter_6',['GAMMA_MIN_SHAPE_PARAMETER',['../namespacestat__tool.html#afe91440cd21d61855e5582ae7de64d74',1,'stat_tool']]],
+  ['gamma_5fnb_5fstep_7',['GAMMA_NB_STEP',['../namespacestat__tool.html#a94124737d1c429217629f3244903fb63',1,'stat_tool']]],
+  ['gamma_5fnb_5fsub_5fstep_8',['GAMMA_NB_SUB_STEP',['../namespacestat__tool.html#ae603c121aa66e1c119385244b500a064',1,'stat_tool']]],
+  ['gamma_5fshape_5fparameter_5fthreshold_9',['GAMMA_SHAPE_PARAMETER_THRESHOLD',['../namespacestat__tool.html#a4ca6204f097519e64eace5db60b2eafa',1,'stat_tool']]],
+  ['gamma_5ftail_10',['GAMMA_TAIL',['../namespacestat__tool.html#a48e5ef19bf7a26cd97c8a24a4166b3a8',1,'stat_tool']]],
+  ['gamma_5fzero_5ffrequency_5fthreshold_11',['GAMMA_ZERO_FREQUENCY_THRESHOLD',['../namespacestat__tool.html#a05e6901c813049243f7dfcf58263142f',1,'stat_tool']]],
+  ['gaussian_5fmax_5fnb_5fdecimal_12',['GAUSSIAN_MAX_NB_DECIMAL',['../namespacestat__tool.html#a8338875b9004f92e4113305f9235ea73',1,'stat_tool']]],
+  ['gaussian_5fmin_5fvariation_5fcoeff_13',['GAUSSIAN_MIN_VARIATION_COEFF',['../namespacestat__tool.html#a5573606f20a1080510ebd9f0300e1757',1,'stat_tool']]],
+  ['gaussian_5fnb_5fstep_14',['GAUSSIAN_NB_STEP',['../namespacestat__tool.html#aa4e604bb1fb9d33935efdc29768d5d1c',1,'stat_tool']]],
+  ['gaussian_5fnb_5fsub_5fstep_15',['GAUSSIAN_NB_SUB_STEP',['../namespacestat__tool.html#a60ba14a193f45a080f19cea5a517efd6',1,'stat_tool']]],
+  ['gaussian_5ftail_16',['GAUSSIAN_TAIL',['../namespacestat__tool.html#ad2a33df471c4abfcb3838758c1fd8ce1',1,'stat_tool']]],
+  ['global_5fnb_5fiter_17',['GLOBAL_NB_ITER',['../namespacestat__tool.html#ae1877bb34400c3a90aa66fc41c66e2f0',1,'stat_tool']]],
+  ['grid_18',['grid',['../classstat__tool_1_1MultiPlot.html#a9dc132eedba657ddaf2e475502e0e978',1,'stat_tool::MultiPlot']]],
+  ['group_19',['group',['../classstat__tool_1_1MultiPlot.html#a78aeceea5648668128d414e50e531498',1,'stat_tool::MultiPlot']]]
+];

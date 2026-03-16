@@ -1,0 +1,1423 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Constants &#8212; stat_tool 0.1b1.dev98 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=0b994bee"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/constants';</script>
+    <link rel="icon" href="../_static/openalea_web.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Additional resources for stat_tool" href="../extra.html" />
+    <link rel="prev" title="Enums" href="enums.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1b1.dev98" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/openalea_web.svg" class="logo__image only-light" alt="stat_tool 0.1b1.dev98 documentation - Home"/>
+    <img src="../_static/openalea_web.svg" class="logo__image only-dark pst-js-only" alt="stat_tool 0.1b1.dev98 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Home
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../installation.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../usage.html">
+    Usage
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../extra.html">
+    More
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/openalea/stat_tool" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../index.html">
+    Home
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../installation.html">
+    Install
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../usage.html">
+    Usage
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    API Reference
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../extra.html">
+    More
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/openalea/stat_tool" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">AML API:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../user/list.html">List of AML functions of the STAT module</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Python API:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../user/autosum.html">Reference guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">C++ API:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Constants</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">API Reference</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Constants</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="constants">
+<h1>Constants<a class="headerlink" href="#constants" title="Link to this heading">#</a></h1>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool18COMPOUND_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1a399efc20ca37b961f5ec1ae4e125e1a5"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">COMPOUND_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.99999</span></span><a class="headerlink" href="#_CPPv4N9stat_tool18COMPOUND_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool25COMPOUND_INIT_PROBABILITYE">
+<span class="target" id="namespacestat__tool_1a8a903163877c2af0d6b7e887c1c48425"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">COMPOUND_INIT_PROBABILITY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.001</span></span><a class="headerlink" href="#_CPPv4N9stat_tool25COMPOUND_INIT_PROBABILITYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool24COMPOUND_LIKELIHOOD_DIFFE">
+<span class="target" id="namespacestat__tool_1a22411b17a01d7703d0f8517ab2b1adb0"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">COMPOUND_LIKELIHOOD_DIFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool24COMPOUND_LIKELIHOOD_DIFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool16COMPOUND_NB_ITERE">
+<span class="target" id="namespacestat__tool_1a8d93c625c211eec85a95bd1795117335"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">COMPOUND_NB_ITER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool16COMPOUND_NB_ITERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool26COMPOUND_DIFFERENCE_WEIGHTE">
+<span class="target" id="namespacestat__tool_1a8d5ffbde6212d8f7711a632dfb34bc7e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">COMPOUND_DIFFERENCE_WEIGHT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool26COMPOUND_DIFFERENCE_WEIGHTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool23COMPOUND_ENTROPY_WEIGHTE">
+<span class="target" id="namespacestat__tool_1a2079a42e6853255ab830cea21716b05c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">COMPOUND_ENTROPY_WEIGHT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool23COMPOUND_ENTROPY_WEIGHTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14COMPOUND_COEFFE">
+<span class="target" id="namespacestat__tool_1a50a1cd4a35022790299be50bab2ba2d4"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">COMPOUND_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14COMPOUND_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14bilateral_tailE">
+<span class="target" id="namespacestat__tool_1ab51499a4c86812d99929b1a0151f2ced"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">bilateral_tail</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">7</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0.05</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.025</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.01</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.005</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.0025</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.001</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.0005</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14bilateral_tailE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool19posterior_thresholdE">
+<span class="target" id="namespacestat__tool_1a048662ab67795294d0b79673f4ce38f8"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">posterior_threshold</span></span></span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">7</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0.25</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.05</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.025</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.01</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.005</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.0025</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N9stat_tool19posterior_thresholdE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool27CONVOLUTION_NB_DISTRIBUTIONE">
+<span class="target" id="namespacestat__tool_1ac6d4838bd3e431c97ca098c5144214e6"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONVOLUTION_NB_DISTRIBUTION</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool27CONVOLUTION_NB_DISTRIBUTIONE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool21CONVOLUTION_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1af4547c21f4b13f2eff91f0f830b1ae37"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONVOLUTION_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.9999</span></span><a class="headerlink" href="#_CPPv4N9stat_tool21CONVOLUTION_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool28CONVOLUTION_INIT_PROBABILITYE">
+<span class="target" id="namespacestat__tool_1abe51eaa16cd475438546bec333ac9aa3"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONVOLUTION_INIT_PROBABILITY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.001</span></span><a class="headerlink" href="#_CPPv4N9stat_tool28CONVOLUTION_INIT_PROBABILITYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool27CONVOLUTION_LIKELIHOOD_DIFFE">
+<span class="target" id="namespacestat__tool_1a03df11abd7e97ce63d2c170f824e3d97"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONVOLUTION_LIKELIHOOD_DIFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool27CONVOLUTION_LIKELIHOOD_DIFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool19CONVOLUTION_NB_ITERE">
+<span class="target" id="namespacestat__tool_1ae9c4b387029b5c93f91e0b2816c13d45"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONVOLUTION_NB_ITER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool19CONVOLUTION_NB_ITERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool29CONVOLUTION_DIFFERENCE_WEIGHTE">
+<span class="target" id="namespacestat__tool_1ab94edaba481d463ad6f75f5e0d56155f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONVOLUTION_DIFFERENCE_WEIGHT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool29CONVOLUTION_DIFFERENCE_WEIGHTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool26CONVOLUTION_ENTROPY_WEIGHTE">
+<span class="target" id="namespacestat__tool_1a221c29e73376099ac04bf7c4911a785a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONVOLUTION_ENTROPY_WEIGHT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool26CONVOLUTION_ENTROPY_WEIGHTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17CONVOLUTION_COEFFE">
+<span class="target" id="namespacestat__tool_1aea9a9de465caf7f35d491f484e571a05"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONVOLUTION_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17CONVOLUTION_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13MAX_FREQUENCYE">
+<span class="target" id="namespacestat__tool_1a05d317883bf0b7829301680d605a2403"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_FREQUENCY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">50</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13MAX_FREQUENCYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool9MAX_RANGEE">
+<span class="target" id="namespacestat__tool_1aca252df71e9cf1bdfe9223687656baf8"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_RANGE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N9stat_tool9MAX_RANGEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13PLOT_NB_CURVEE">
+<span class="target" id="namespacestat__tool_1a2cb8ab2d60c89ae072248e1f3ac92709"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_NB_CURVE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">12</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13PLOT_NB_CURVEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool18PLOT_MIN_FREQUENCYE">
+<span class="target" id="namespacestat__tool_1a5c3ca8068bcb770a3898f44f826d0617"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_MIN_FREQUENCY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool18PLOT_MIN_FREQUENCYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool29DISCRETE_MIXTURE_NB_COMPONENTE">
+<span class="target" id="namespacestat__tool_1afe03a7fe0a16dcde5cd3b38e673d2342"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DISCRETE_MIXTURE_NB_COMPONENT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N9stat_tool29DISCRETE_MIXTURE_NB_COMPONENTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool27NEGATIVE_BINOMIAL_PARAMETERE">
+<span class="target" id="namespacestat__tool_1a59bb0f8c86973722b752bbcd6a3fcac8"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NEGATIVE_BINOMIAL_PARAMETER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">20.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool27NEGATIVE_BINOMIAL_PARAMETERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool15MIN_WEIGHT_STEPE">
+<span class="target" id="namespacestat__tool_1a30834d355121af9860873e72308f5fe7"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MIN_WEIGHT_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool15MIN_WEIGHT_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool15MAX_WEIGHT_STEPE">
+<span class="target" id="namespacestat__tool_1a8b12ef045ebda3a5f979efd712d417a6"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_WEIGHT_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool15MAX_WEIGHT_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool22DISCRETE_MIXTURE_COEFFE">
+<span class="target" id="namespacestat__tool_1a83da463ad02863e48474ea172da933d1"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DISCRETE_MIXTURE_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N9stat_tool22DISCRETE_MIXTURE_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool32DISCRETE_MIXTURE_LIKELIHOOD_DIFFE">
+<span class="target" id="namespacestat__tool_1abdd83c4ead871467acf38b91453f0ab9"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DISCRETE_MIXTURE_LIKELIHOOD_DIFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool32DISCRETE_MIXTURE_LIKELIHOOD_DIFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool24DISCRETE_MIXTURE_NB_ITERE">
+<span class="target" id="namespacestat__tool_1a5a3be2b6e0a0c565c4aa42d25a448225"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DISCRETE_MIXTURE_NB_ITER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">500</span></span><a class="headerlink" href="#_CPPv4N9stat_tool24DISCRETE_MIXTURE_NB_ITERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool19ASCII_NB_INDIVIDUALE">
+<span class="target" id="namespacestat__tool_1a67b2048938f9c632fbfb957ebe117498"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ASCII_NB_INDIVIDUAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool19ASCII_NB_INDIVIDUALE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool12PLOT_YMARGINE">
+<span class="target" id="namespacestat__tool_1a87264f2a88479bd1c058773ff5081649"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_YMARGIN</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool12PLOT_YMARGINE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool18DISTANCE_ROUNDNESSE">
+<span class="target" id="namespacestat__tool_1a2b7c0642b0b7f19d50e3f6d7acfabf90"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DISTANCE_ROUNDNESS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-12</span></span><a class="headerlink" href="#_CPPv4N9stat_tool18DISTANCE_ROUNDNESSE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14GLOBAL_NB_ITERE">
+<span class="target" id="namespacestat__tool_1ae1877bb34400c3a90aa66fc41c66e2f0"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GLOBAL_NB_ITER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">20</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14GLOBAL_NB_ITERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool22PARTITIONING_NB_ITER_1E">
+<span class="target" id="namespacestat__tool_1aaec1ee87e01375ce4ef009d2c23b18d9"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PARTITIONING_NB_ITER_1</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">50</span></span><a class="headerlink" href="#_CPPv4N9stat_tool22PARTITIONING_NB_ITER_1E" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool22PARTITIONING_NB_ITER_2E">
+<span class="target" id="namespacestat__tool_1ae3ca215a37e28aa00d20af83c4e8611e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PARTITIONING_NB_ITER_2</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">20</span></span><a class="headerlink" href="#_CPPv4N9stat_tool22PARTITIONING_NB_ITER_2E" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool8NB_STATEE">
+<span class="target" id="namespacestat__tool_1ad154e977482820dba300c70fceadd6ea"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_STATE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N9stat_tool8NB_STATEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool5ORDERE">
+<span class="target" id="namespacestat__tool_1a92e2d6ea5204f8712b9749d2acc9e88d"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ORDER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">8</span></span><a class="headerlink" href="#_CPPv4N9stat_tool5ORDERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool15MIN_PROBABILITYE">
+<span class="target" id="namespacestat__tool_1a9efe749b1ea51e1a0d0f6b14698e9148"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MIN_PROBABILITY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool15MIN_PROBABILITYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool19THRESHOLDING_FACTORE">
+<span class="target" id="namespacestat__tool_1a83b4f6fa98d8466e6c5640cd46fddc91"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">THRESHOLDING_FACTOR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.8</span></span><a class="headerlink" href="#_CPPv4N9stat_tool19THRESHOLDING_FACTORE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool12NB_PARAMETERE">
+<span class="target" id="namespacestat__tool_1a7919820d88a4d6207772ac91411941ec"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_PARAMETER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool12NB_PARAMETERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17NB_OUTPUT_PROCESSE">
+<span class="target" id="namespacestat__tool_1a182feede630c534b64020b66eb426b4c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_OUTPUT_PROCESS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">15</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17NB_OUTPUT_PROCESSE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool9NB_OUTPUTE">
+<span class="target" id="namespacestat__tool_1ab0da3f786f4a15ff2551f289a4894d03"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_OUTPUT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">25</span></span><a class="headerlink" href="#_CPPv4N9stat_tool9NB_OUTPUTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool21OBSERVATION_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1a960fa4d455d92bb0ea54561ce1a35524"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">OBSERVATION_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.999</span></span><a class="headerlink" href="#_CPPv4N9stat_tool21OBSERVATION_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool23ACCESSIBILITY_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1ae643fa65ec9806310e127f2a269d6c03"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ACCESSIBILITY_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-6</span></span><a class="headerlink" href="#_CPPv4N9stat_tool23ACCESSIBILITY_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool20ACCESSIBILITY_LENGTHE">
+<span class="target" id="namespacestat__tool_1a0356ce173d03c779b7820589561f5891"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ACCESSIBILITY_LENGTH</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N9stat_tool20ACCESSIBILITY_LENGTHE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17NOISE_PROBABILITYE">
+<span class="target" id="namespacestat__tool_1ac35eb9171b32bf918b9d9929de180af8"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NOISE_PROBABILITY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.05</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17NOISE_PROBABILITYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool16MEAN_SHIFT_COEFFE">
+<span class="target" id="namespacestat__tool_1a549878edf0bb53b01ff30b1d55b487a9"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MEAN_SHIFT_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool16MEAN_SHIFT_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14MIN_NB_ELEMENTE">
+<span class="target" id="namespacestat__tool_1a52140a1b9385acd7f0320e4452e7a749"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MIN_NB_ELEMENT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14MIN_NB_ELEMENTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17OBSERVATION_COEFFE">
+<span class="target" id="namespacestat__tool_1a9fedb2562d0e1c2f70fdc343f72dcdd0"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">OBSERVATION_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17OBSERVATION_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool20GAMMA_MAX_NB_DECIMALE">
+<span class="target" id="namespacestat__tool_1a21a2f0e6aee12950e984154f28967f0d"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_MAX_NB_DECIMAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">6</span></span><a class="headerlink" href="#_CPPv4N9stat_tool20GAMMA_MAX_NB_DECIMALE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool31INVERSE_GAUSSIAN_MAX_NB_DECIMALE">
+<span class="target" id="namespacestat__tool_1a34c642aa022dfb7190802c79b0d0ccce"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">INVERSE_GAUSSIAN_MAX_NB_DECIMAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">6</span></span><a class="headerlink" href="#_CPPv4N9stat_tool31INVERSE_GAUSSIAN_MAX_NB_DECIMALE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool23GAUSSIAN_MAX_NB_DECIMALE">
+<span class="target" id="namespacestat__tool_1a8338875b9004f92e4113305f9235ea73"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAUSSIAN_MAX_NB_DECIMAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">6</span></span><a class="headerlink" href="#_CPPv4N9stat_tool23GAUSSIAN_MAX_NB_DECIMALE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool20DEGREE_DECIMAL_SCALEE">
+<span class="target" id="namespacestat__tool_1ab38a8795dd80712da51ac445d9f90469"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DEGREE_DECIMAL_SCALE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool20DEGREE_DECIMAL_SCALEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool20RADIAN_DECIMAL_SCALEE">
+<span class="target" id="namespacestat__tool_1a6e14e4b5a839ff9db010d77198d48a04"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">RADIAN_DECIMAL_SCALE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool20RADIAN_DECIMAL_SCALEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool25MVMIXTURE_LIKELIHOOD_DIFFE">
+<span class="target" id="namespacestat__tool_1aab774c7a1682302f7411f31505118070"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MVMIXTURE_LIKELIHOOD_DIFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-8</span></span><a class="headerlink" href="#_CPPv4N9stat_tool25MVMIXTURE_LIKELIHOOD_DIFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13MIXTURE_COEFFE">
+<span class="target" id="namespacestat__tool_1ad3edf78f3e1567ca7e4ef145670c5372"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MIXTURE_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13MIXTURE_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool15CUMUL_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CUMUL_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.999</span></span><a class="headerlink" href="#_CPPv4N9stat_tool15CUMUL_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool25BISECTION_RATIO_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1adb96ce92a734df1e390b17d95c38cf98"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">BISECTION_RATIO_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-8</span></span><a class="headerlink" href="#_CPPv4N9stat_tool25BISECTION_RATIO_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17BISECTION_NB_ITERE">
+<span class="target" id="namespacestat__tool_1aa52b0d5b470bf61798a48e4153089490"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">BISECTION_NB_ITER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17BISECTION_NB_ITERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool20REGRESSION_NB_VECTORE">
+<span class="target" id="namespacestat__tool_1aff9bb3dc04dd4bd548547d16cb09d7fe"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">REGRESSION_NB_VECTOR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool20REGRESSION_NB_VECTORE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool12NEIGHBORHOODE">
+<span class="target" id="namespacestat__tool_1aaad4f32d346d1a2aa4a9e4c438ff4965"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NEIGHBORHOOD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><a class="headerlink" href="#_CPPv4N9stat_tool12NEIGHBORHOODE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool12ERROR_LENGTHE">
+<span class="target" id="namespacestat__tool_1a436022d50d8085854cbf73bf37bd7d76"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ERROR_LENGTH</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">200</span></span><a class="headerlink" href="#_CPPv4N9stat_tool12ERROR_LENGTHE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool9I_DEFAULTE">
+<span class="target" id="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">I_DEFAULT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool9I_DEFAULTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool9D_DEFAULTE">
+<span class="target" id="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">D_DEFAULT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool9D_DEFAULTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool5D_INFE">
+<span class="target" id="namespacestat__tool_1a710852f459bd0493d0eaaac065dab938"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">D_INF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1.e37</span></span><a class="headerlink" href="#_CPPv4N9stat_tool5D_INFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool12DOUBLE_ERRORE">
+<span class="target" id="namespacestat__tool_1a69438f42880af4584b2a8a68157210ed"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DOUBLE_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-6</span></span><a class="headerlink" href="#_CPPv4N9stat_tool12DOUBLE_ERRORE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool23NB_CRITICAL_PROBABILITYE">
+<span class="target" id="namespacestat__tool_1a5320650a59906f92f92f3dc21652903a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_CRITICAL_PROBABILITY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N9stat_tool23NB_CRITICAL_PROBABILITYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool24ref_critical_probabilityE">
+<span class="target" id="namespacestat__tool_1a68e05f0e54fa0f0df70b28d23540d40e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ref_critical_probability</span></span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#_CPPv4N9stat_tool23NB_CRITICAL_PROBABILITYE" title="stat_tool::NB_CRITICAL_PROBABILITY"><span class="n"><span class="pre">NB_CRITICAL_PROBABILITY</span></span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0.05</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">0.01</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N9stat_tool24ref_critical_probabilityE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool8NB_VALUEE">
+<span class="target" id="namespacestat__tool_1ac1eb21f66e1ce1b2056a56de826fe438"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_VALUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool8NB_VALUEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool15SAMPLE_NB_VALUEE">
+<span class="target" id="namespacestat__tool_1a846ceaf9aedff77a60b0c314d02972e2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SAMPLE_NB_VALUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N9stat_tool8NB_VALUEE" title="stat_tool::NB_VALUE"><span class="n"><span class="pre">NB_VALUE</span></span></a><a class="headerlink" href="#_CPPv4N9stat_tool15SAMPLE_NB_VALUEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13MAX_INF_BOUNDE">
+<span class="target" id="namespacestat__tool_1a646bc309e20b9f64c60ee4f7e3b20a99"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_INF_BOUND</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13MAX_INF_BOUNDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14MAX_DIFF_BOUNDE">
+<span class="target" id="namespacestat__tool_1ab5bf827a8722330be65fa4445aee0068"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_DIFF_BOUND</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14MAX_DIFF_BOUNDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool8MAX_MEANE">
+<span class="target" id="namespacestat__tool_1aff5e05b58ec81be53d505e59f7cbd43b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_MEAN</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool8MAX_MEANE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool19MAX_SEQUENCE_LENGTHE">
+<span class="target" id="namespacestat__tool_1ad44d043fa75ac4981b74aad83356954a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_SEQUENCE_LENGTH</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool19MAX_SEQUENCE_LENGTHE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13B_PROBABILITYE">
+<span class="target" id="namespacestat__tool_1a631f47bde553f86e57b30cb076c2e248"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">B_PROBABILITY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.8</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13B_PROBABILITYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool11B_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1acfe6f7429672cd6f34d9a6d857794dc3"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">B_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1000.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool11B_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool11P_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1ae6b2f53a5f773b4531cb121bbf234693"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">P_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">90.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool11P_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool12NB_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1a07081d22b521a3134e082f8447b34353"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">500.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool12NB_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool21SAMPLE_NB_VALUE_COEFFE">
+<span class="target" id="namespacestat__tool_1a24929fd1472b945917163e2a36d6e384"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SAMPLE_NB_VALUE_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool21SAMPLE_NB_VALUE_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool16INF_BOUND_MARGINE">
+<span class="target" id="namespacestat__tool_1a6286ae37002df02fd5bddc8453cd24e3"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">INF_BOUND_MARGIN</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool16INF_BOUND_MARGINE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool16SUP_BOUND_MARGINE">
+<span class="target" id="namespacestat__tool_1a922519c0ec40334044fa77042ecae40f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SUP_BOUND_MARGIN</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><a class="headerlink" href="#_CPPv4N9stat_tool16SUP_BOUND_MARGINE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13POISSON_RATIOE">
+<span class="target" id="namespacestat__tool_1a5c45e6f5622562de6e12e830862d8a07"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">POISSON_RATIO</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.7</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13POISSON_RATIOE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13POISSON_RANGEE">
+<span class="target" id="namespacestat__tool_1a4b40c33a2342f555357d046290629363"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">POISSON_RANGE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13POISSON_RANGEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14NB_VALUE_COEFFE">
+<span class="target" id="namespacestat__tool_1a1a0e874c68e20530ad5c5dc2d257285f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_VALUE_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14NB_VALUE_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool9MIN_RANGEE">
+<span class="target" id="namespacestat__tool_1adb01c29828c85a6410096f04828d094d"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MIN_RANGE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool9MIN_RANGEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool11MAX_SURFACEE">
+<span class="target" id="namespacestat__tool_1a948c1621334e151aa354287627d7bd0d"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_SURFACE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool11MAX_SURFACEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool15DIST_NB_ELEMENTE">
+<span class="target" id="namespacestat__tool_1a104f22cff1cd41b73439c50652ae0d76"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DIST_NB_ELEMENT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1000000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool15DIST_NB_ELEMENTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool20NB_COMPLETE_INTERVALE">
+<span class="target" id="namespacestat__tool_1abf2f32e51b1a579be2bc4b7acf3556d2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_COMPLETE_INTERVAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><a class="headerlink" href="#_CPPv4N9stat_tool20NB_COMPLETE_INTERVALE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool23RENEWAL_LIKELIHOOD_DIFFE">
+<span class="target" id="namespacestat__tool_1aad9b8e9d4a77fc431d10a81f34b40914"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">RENEWAL_LIKELIHOOD_DIFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool23RENEWAL_LIKELIHOOD_DIFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool15RENEWAL_NB_ITERE">
+<span class="target" id="namespacestat__tool_1a923a8fc06583423b750991f046c7dd39"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">RENEWAL_NB_ITER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool15RENEWAL_NB_ITERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool25RENEWAL_DIFFERENCE_WEIGHTE">
+<span class="target" id="namespacestat__tool_1a108605667555dbe340081fda16c38e0b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">RENEWAL_DIFFERENCE_WEIGHT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool25RENEWAL_DIFFERENCE_WEIGHTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool22RENEWAL_ENTROPY_WEIGHTE">
+<span class="target" id="namespacestat__tool_1a3fec7231195b1cab5b0d2e459d304b45"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">RENEWAL_ENTROPY_WEIGHT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.05</span></span><a class="headerlink" href="#_CPPv4N9stat_tool22RENEWAL_ENTROPY_WEIGHTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool15MAX_VALUE_COEFFE">
+<span class="target" id="namespacestat__tool_1a61f989a56ac4d305a0b692fe33d43a81"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_VALUE_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool15MAX_VALUE_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool29CONTINUOUS_POSITIVE_INF_BOUNDE">
+<span class="target" id="namespacestat__tool_1aaa12bc88ef19d70597b991727ae1c775"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONTINUOUS_POSITIVE_INF_BOUND</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-12</span></span><a class="headerlink" href="#_CPPv4N9stat_tool29CONTINUOUS_POSITIVE_INF_BOUNDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool10GAMMA_TAILE">
+<span class="target" id="namespacestat__tool_1a48e5ef19bf7a26cd97c8a24a4166b3a8"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_TAIL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-3</span></span><a class="headerlink" href="#_CPPv4N9stat_tool10GAMMA_TAILE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13GAMMA_NB_STEPE">
+<span class="target" id="namespacestat__tool_1a94124737d1c429217629f3244903fb63"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_NB_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13GAMMA_NB_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17GAMMA_NB_SUB_STEPE">
+<span class="target" id="namespacestat__tool_1ae603c121aa66e1c119385244b500a064"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_NB_SUB_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17GAMMA_NB_SUB_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool32GAMMA_INVERSE_SAMPLE_SIZE_FACTORE">
+<span class="target" id="namespacestat__tool_1abef7f213e0ed9452267f92f0b7550388"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_INVERSE_SAMPLE_SIZE_FACTOR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool32GAMMA_INVERSE_SAMPLE_SIZE_FACTORE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool25GAMMA_MIN_SHAPE_PARAMETERE">
+<span class="target" id="namespacestat__tool_1afe91440cd21d61855e5582ae7de64d74"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_MIN_SHAPE_PARAMETER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool25GAMMA_MIN_SHAPE_PARAMETERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool29GAMMA_DEFAULT_SCALE_PARAMETERE">
+<span class="target" id="namespacestat__tool_1acd8413dc292aba8bc3f3634a5c9639fc"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_DEFAULT_SCALE_PARAMETER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool29GAMMA_DEFAULT_SCALE_PARAMETERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool30GAMMA_ZERO_FREQUENCY_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1a05e6901c813049243f7dfcf58263142f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_ZERO_FREQUENCY_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.999</span></span><a class="headerlink" href="#_CPPv4N9stat_tool30GAMMA_ZERO_FREQUENCY_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool31GAMMA_SHAPE_PARAMETER_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1a4ca6204f097519e64eace5db60b2eafa"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_SHAPE_PARAMETER_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool31GAMMA_SHAPE_PARAMETER_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool25GAMMA_FREQUENCY_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1ac1e45fb51d0fa3b93feddbf37a994661"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_FREQUENCY_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool25GAMMA_FREQUENCY_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool22GAMMA_ITERATION_FACTORE">
+<span class="target" id="namespacestat__tool_1a153b549134c04e7a8ba2b342288c3af3"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_ITERATION_FACTOR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool22GAMMA_ITERATION_FACTORE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool22GAMMA_MAX_NB_ITERATIONE">
+<span class="target" id="namespacestat__tool_1a4132dab0764f7222358fa870b11d8a6b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAMMA_MAX_NB_ITERATION</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool22GAMMA_MAX_NB_ITERATIONE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool21INVERSE_GAUSSIAN_TAILE">
+<span class="target" id="namespacestat__tool_1aaa09ea0e857446ad7e9e1c88457b794e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">INVERSE_GAUSSIAN_TAIL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-3</span></span><a class="headerlink" href="#_CPPv4N9stat_tool21INVERSE_GAUSSIAN_TAILE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool24INVERSE_GAUSSIAN_NB_STEPE">
+<span class="target" id="namespacestat__tool_1acde218c35c10eee2f2fbd35b0dbbaeeb"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">INVERSE_GAUSSIAN_NB_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool24INVERSE_GAUSSIAN_NB_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool28INVERSE_GAUSSIAN_NB_SUB_STEPE">
+<span class="target" id="namespacestat__tool_1abf8202fc0a6b1216ae347df0b4d7f86c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">INVERSE_GAUSSIAN_NB_SUB_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool28INVERSE_GAUSSIAN_NB_SUB_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13GAUSSIAN_TAILE">
+<span class="target" id="namespacestat__tool_1ad2a33df471c4abfcb3838758c1fd8ce1"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAUSSIAN_TAIL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5.e-4</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13GAUSSIAN_TAILE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool16GAUSSIAN_NB_STEPE">
+<span class="target" id="namespacestat__tool_1aa4e604bb1fb9d33935efdc29768d5d1c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAUSSIAN_NB_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool16GAUSSIAN_NB_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool20GAUSSIAN_NB_SUB_STEPE">
+<span class="target" id="namespacestat__tool_1a60ba14a193f45a080f19cea5a517efd6"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAUSSIAN_NB_SUB_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool20GAUSSIAN_NB_SUB_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool28GAUSSIAN_MIN_VARIATION_COEFFE">
+<span class="target" id="namespacestat__tool_1a5573606f20a1080510ebd9f0300e1757"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">GAUSSIAN_MIN_VARIATION_COEFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-3</span></span><a class="headerlink" href="#_CPPv4N9stat_tool28GAUSSIAN_MIN_VARIATION_COEFFE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17VON_MISES_NB_STEPE">
+<span class="target" id="namespacestat__tool_1a2d1b3e50fedd61f2d80715e31e1f40ac"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">VON_MISES_NB_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3600</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17VON_MISES_NB_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool21VON_MISES_NB_SUB_STEPE">
+<span class="target" id="namespacestat__tool_1a125a84f3f2c7ef10ec30c512af6aaae3"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">VON_MISES_NB_SUB_STEP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool21VON_MISES_NB_SUB_STEPE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14CHI2_FREQUENCYE">
+<span class="target" id="namespacestat__tool_1abc8cc77069aa538890d35ac68e30bd19"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CHI2_FREQUENCY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14CHI2_FREQUENCYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool31MARGINAL_DISTRIBUTION_MAX_VALUEE">
+<span class="target" id="namespacestat__tool_1aa2b7670879bc7d60039704cae3a8ae09"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MARGINAL_DISTRIBUTION_MAX_VALUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">25000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool31MARGINAL_DISTRIBUTION_MAX_VALUEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool19HISTOGRAM_FREQUENCYE">
+<span class="target" id="namespacestat__tool_1a7ba5015e5f6dcdc70b855d6a87423f2a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">HISTOGRAM_FREQUENCY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool19HISTOGRAM_FREQUENCYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool18SKEWNESS_ROUNDNESSE">
+<span class="target" id="namespacestat__tool_1aae460d0a96a50c8ab4e49c6feaaa0e0a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SKEWNESS_ROUNDNESS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-2</span></span><a class="headerlink" href="#_CPPv4N9stat_tool18SKEWNESS_ROUNDNESSE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool8NB_ERRORE">
+<span class="target" id="namespacestat__tool_1a6eee2d2fce3b64b633d4b23de57bf69c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool8NB_ERRORE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17LINE_NB_CHARACTERE">
+<span class="target" id="namespacestat__tool_1a16c06841d6e879609cf24e0bba45a36a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">LINE_NB_CHARACTER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17LINE_NB_CHARACTERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14ASCII_NB_VALUEE">
+<span class="target" id="namespacestat__tool_1a74f3c6d2b99023cc0251048eca47f232"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ASCII_NB_VALUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">15</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14ASCII_NB_VALUEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool11ASCII_SPACEE">
+<span class="target" id="namespacestat__tool_1a21065e6bb7062aec23928bde88198a0e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ASCII_SPACE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N9stat_tool11ASCII_SPACEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool15ASCII_ROUNDNESSE">
+<span class="target" id="namespacestat__tool_1a948d2fbbb6d193eeabb3f8ce8f92257f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ASCII_ROUNDNESS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool15ASCII_ROUNDNESSE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool21SPREADSHEET_ROUNDNESSE">
+<span class="target" id="namespacestat__tool_1a231838e294f125b59b065a99c5655ea2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SPREADSHEET_ROUNDNESS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-7</span></span><a class="headerlink" href="#_CPPv4N9stat_tool21SPREADSHEET_ROUNDNESSE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool21DISPLAY_NB_INDIVIDUALE">
+<span class="target" id="namespacestat__tool_1a1f9eda7542f3c98de22e69e80d5f2c02"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DISPLAY_NB_INDIVIDUAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">50</span></span><a class="headerlink" href="#_CPPv4N9stat_tool21DISPLAY_NB_INDIVIDUALE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool20PLOT_NB_DISTRIBUTIONE">
+<span class="target" id="namespacestat__tool_1af266608840504266b3dd66f0e9671dd5"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_NB_DISTRIBUTION</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">15</span></span><a class="headerlink" href="#_CPPv4N9stat_tool20PLOT_NB_DISTRIBUTIONE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17PLOT_NB_HISTOGRAME">
+<span class="target" id="namespacestat__tool_1a24d31bd34b6b7f66f64b7a559663f8da"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_NB_HISTOGRAM</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">15</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17PLOT_NB_HISTOGRAME" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14PLOT_ROUNDNESSE">
+<span class="target" id="namespacestat__tool_1a6c8bd1fcb24c63567dc217bcb86849d2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_ROUNDNESS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14PLOT_ROUNDNESSE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool10PLOT_SHIFTE">
+<span class="target" id="namespacestat__tool_1a86cb53e64e70bd662f5e4f5823b21ff0"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_SHIFT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.2</span></span><a class="headerlink" href="#_CPPv4N9stat_tool10PLOT_SHIFTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool14PLOT_MAX_SHIFTE">
+<span class="target" id="namespacestat__tool_1a02ffa6e37b98db8794532da64d5d73e6"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_MAX_SHIFT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.5</span></span><a class="headerlink" href="#_CPPv4N9stat_tool14PLOT_MAX_SHIFTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13TIC_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1a8c7e49a4eb112c1bd9295f5a9e56d9a8"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">TIC_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13TIC_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool19PLOT_MASS_THRESHOLDE">
+<span class="target" id="namespacestat__tool_1ac5afdd7976a589b37286c018851d79de"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_MASS_THRESHOLD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.e-3</span></span><a class="headerlink" href="#_CPPv4N9stat_tool19PLOT_MASS_THRESHOLDE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool6YSCALEE">
+<span class="target" id="namespacestat__tool_1ad70e7ebb79e64502eb7f4146c054b280"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">YSCALE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool6YSCALEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool16PLOT_RANGE_RATIOE">
+<span class="target" id="namespacestat__tool_1a9421b05a4d202493116591a30a7ff38b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_RANGE_RATIO</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool16PLOT_RANGE_RATIOE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool27CRITICAL_PROBABILITY_FACTORE">
+<span class="target" id="namespacestat__tool_1aa808f73633270eb7e268bb08340f95a1"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CRITICAL_PROBABILITY_FACTOR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.2</span></span><a class="headerlink" href="#_CPPv4N9stat_tool27CRITICAL_PROBABILITY_FACTORE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool18VECTOR_NB_VARIABLEE">
+<span class="target" id="namespacestat__tool_1a7a8f65ad1113e1c7fc00512de2aba65b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">VECTOR_NB_VARIABLE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">60</span></span><a class="headerlink" href="#_CPPv4N9stat_tool18VECTOR_NB_VARIABLEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool18DISTANCE_NB_VECTORE">
+<span class="target" id="namespacestat__tool_1a6315249f2dc2f96f48b79472d31ca282"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DISTANCE_NB_VECTOR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2000</span></span><a class="headerlink" href="#_CPPv4N9stat_tool18DISTANCE_NB_VECTORE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool27SUP_NORM_DISTANCE_NB_VECTORE">
+<span class="target" id="namespacestat__tool_1ab16f105cb865ce3c4b774f775d572b15"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">SUP_NORM_DISTANCE_NB_VECTOR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool27SUP_NORM_DISTANCE_NB_VECTORE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool20CONTINGENCY_NB_VALUEE">
+<span class="target" id="namespacestat__tool_1a72c8d36bdefd1c449f8fa78c6ed10f23"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">CONTINGENCY_NB_VALUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N9stat_tool20CONTINGENCY_NB_VALUEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool28DISPLAY_CONTINGENCY_NB_VALUEE">
+<span class="target" id="namespacestat__tool_1a77328c04bb85a8b9ea089a7b01d8167b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DISPLAY_CONTINGENCY_NB_VALUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">20</span></span><a class="headerlink" href="#_CPPv4N9stat_tool28DISPLAY_CONTINGENCY_NB_VALUEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool26VARIANCE_ANALYSIS_NB_VALUEE">
+<span class="target" id="namespacestat__tool_1a9e0495da3d699ce4aa0a04440ab0a31f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">VARIANCE_ANALYSIS_NB_VALUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N9stat_tool26VARIANCE_ANALYSIS_NB_VALUEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool28DISPLAY_CONDITIONAL_NB_VALUEE">
+<span class="target" id="namespacestat__tool_1aefe19d49242479939f4b61f37c0a60ab"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">DISPLAY_CONDITIONAL_NB_VALUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N9stat_tool28DISPLAY_CONDITIONAL_NB_VALUEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool13PLOT_NB_VALUEE">
+<span class="target" id="namespacestat__tool_1a538d2f07305f8d79b0a60c3fdb6ec3c7"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">PLOT_NB_VALUE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">30</span></span><a class="headerlink" href="#_CPPv4N9stat_tool13PLOT_NB_VALUEE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool11NB_CATEGORYE">
+<span class="target" id="namespacestat__tool_1ab04094fcb7d13aaa69ca40acd0616692"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_CATEGORY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">50</span></span><a class="headerlink" href="#_CPPv4N9stat_tool11NB_CATEGORYE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17MIN_NB_ASSIGNMENTE">
+<span class="target" id="namespacestat__tool_1a5660ee00c20d2ebf8e62f1c7e51851b0"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MIN_NB_ASSIGNMENT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17MIN_NB_ASSIGNMENTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool17MAX_NB_ASSIGNMENTE">
+<span class="target" id="namespacestat__tool_1a2a53bf546d215d2b988c190368346546"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">MAX_NB_ASSIGNMENT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N9stat_tool17MAX_NB_ASSIGNMENTE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9stat_tool23NB_ASSIGNMENT_PARAMETERE">
+<span class="target" id="namespacestat__tool_1a1c171c288b4d9214f9c87ec33f7cab93"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">stat_tool</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">NB_ASSIGNMENT_PARAMETER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.</span></span><a class="headerlink" href="#_CPPv4N9stat_tool23NB_ASSIGNMENT_PARAMETERE" title="Link to this definition">#</a><br /></dt>
+<dd></dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="enums.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Enums</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../extra.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Additional resources for stat_tool</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool18COMPOUND_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">COMPOUND_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool25COMPOUND_INIT_PROBABILITYE"><code class="docutils literal notranslate"><span class="pre">COMPOUND_INIT_PROBABILITY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool24COMPOUND_LIKELIHOOD_DIFFE"><code class="docutils literal notranslate"><span class="pre">COMPOUND_LIKELIHOOD_DIFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool16COMPOUND_NB_ITERE"><code class="docutils literal notranslate"><span class="pre">COMPOUND_NB_ITER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool26COMPOUND_DIFFERENCE_WEIGHTE"><code class="docutils literal notranslate"><span class="pre">COMPOUND_DIFFERENCE_WEIGHT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool23COMPOUND_ENTROPY_WEIGHTE"><code class="docutils literal notranslate"><span class="pre">COMPOUND_ENTROPY_WEIGHT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14COMPOUND_COEFFE"><code class="docutils literal notranslate"><span class="pre">COMPOUND_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14bilateral_tailE"><code class="docutils literal notranslate"><span class="pre">bilateral_tail</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool19posterior_thresholdE"><code class="docutils literal notranslate"><span class="pre">posterior_threshold</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool27CONVOLUTION_NB_DISTRIBUTIONE"><code class="docutils literal notranslate"><span class="pre">CONVOLUTION_NB_DISTRIBUTION</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool21CONVOLUTION_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">CONVOLUTION_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool28CONVOLUTION_INIT_PROBABILITYE"><code class="docutils literal notranslate"><span class="pre">CONVOLUTION_INIT_PROBABILITY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool27CONVOLUTION_LIKELIHOOD_DIFFE"><code class="docutils literal notranslate"><span class="pre">CONVOLUTION_LIKELIHOOD_DIFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool19CONVOLUTION_NB_ITERE"><code class="docutils literal notranslate"><span class="pre">CONVOLUTION_NB_ITER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool29CONVOLUTION_DIFFERENCE_WEIGHTE"><code class="docutils literal notranslate"><span class="pre">CONVOLUTION_DIFFERENCE_WEIGHT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool26CONVOLUTION_ENTROPY_WEIGHTE"><code class="docutils literal notranslate"><span class="pre">CONVOLUTION_ENTROPY_WEIGHT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17CONVOLUTION_COEFFE"><code class="docutils literal notranslate"><span class="pre">CONVOLUTION_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13MAX_FREQUENCYE"><code class="docutils literal notranslate"><span class="pre">MAX_FREQUENCY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool9MAX_RANGEE"><code class="docutils literal notranslate"><span class="pre">MAX_RANGE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13PLOT_NB_CURVEE"><code class="docutils literal notranslate"><span class="pre">PLOT_NB_CURVE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool18PLOT_MIN_FREQUENCYE"><code class="docutils literal notranslate"><span class="pre">PLOT_MIN_FREQUENCY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool29DISCRETE_MIXTURE_NB_COMPONENTE"><code class="docutils literal notranslate"><span class="pre">DISCRETE_MIXTURE_NB_COMPONENT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool27NEGATIVE_BINOMIAL_PARAMETERE"><code class="docutils literal notranslate"><span class="pre">NEGATIVE_BINOMIAL_PARAMETER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool15MIN_WEIGHT_STEPE"><code class="docutils literal notranslate"><span class="pre">MIN_WEIGHT_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool15MAX_WEIGHT_STEPE"><code class="docutils literal notranslate"><span class="pre">MAX_WEIGHT_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool22DISCRETE_MIXTURE_COEFFE"><code class="docutils literal notranslate"><span class="pre">DISCRETE_MIXTURE_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool32DISCRETE_MIXTURE_LIKELIHOOD_DIFFE"><code class="docutils literal notranslate"><span class="pre">DISCRETE_MIXTURE_LIKELIHOOD_DIFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool24DISCRETE_MIXTURE_NB_ITERE"><code class="docutils literal notranslate"><span class="pre">DISCRETE_MIXTURE_NB_ITER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool19ASCII_NB_INDIVIDUALE"><code class="docutils literal notranslate"><span class="pre">ASCII_NB_INDIVIDUAL</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool12PLOT_YMARGINE"><code class="docutils literal notranslate"><span class="pre">PLOT_YMARGIN</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool18DISTANCE_ROUNDNESSE"><code class="docutils literal notranslate"><span class="pre">DISTANCE_ROUNDNESS</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14GLOBAL_NB_ITERE"><code class="docutils literal notranslate"><span class="pre">GLOBAL_NB_ITER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool22PARTITIONING_NB_ITER_1E"><code class="docutils literal notranslate"><span class="pre">PARTITIONING_NB_ITER_1</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool22PARTITIONING_NB_ITER_2E"><code class="docutils literal notranslate"><span class="pre">PARTITIONING_NB_ITER_2</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool8NB_STATEE"><code class="docutils literal notranslate"><span class="pre">NB_STATE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool5ORDERE"><code class="docutils literal notranslate"><span class="pre">ORDER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool15MIN_PROBABILITYE"><code class="docutils literal notranslate"><span class="pre">MIN_PROBABILITY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool19THRESHOLDING_FACTORE"><code class="docutils literal notranslate"><span class="pre">THRESHOLDING_FACTOR</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool12NB_PARAMETERE"><code class="docutils literal notranslate"><span class="pre">NB_PARAMETER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17NB_OUTPUT_PROCESSE"><code class="docutils literal notranslate"><span class="pre">NB_OUTPUT_PROCESS</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool9NB_OUTPUTE"><code class="docutils literal notranslate"><span class="pre">NB_OUTPUT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool21OBSERVATION_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">OBSERVATION_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool23ACCESSIBILITY_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">ACCESSIBILITY_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool20ACCESSIBILITY_LENGTHE"><code class="docutils literal notranslate"><span class="pre">ACCESSIBILITY_LENGTH</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17NOISE_PROBABILITYE"><code class="docutils literal notranslate"><span class="pre">NOISE_PROBABILITY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool16MEAN_SHIFT_COEFFE"><code class="docutils literal notranslate"><span class="pre">MEAN_SHIFT_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14MIN_NB_ELEMENTE"><code class="docutils literal notranslate"><span class="pre">MIN_NB_ELEMENT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17OBSERVATION_COEFFE"><code class="docutils literal notranslate"><span class="pre">OBSERVATION_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool20GAMMA_MAX_NB_DECIMALE"><code class="docutils literal notranslate"><span class="pre">GAMMA_MAX_NB_DECIMAL</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool31INVERSE_GAUSSIAN_MAX_NB_DECIMALE"><code class="docutils literal notranslate"><span class="pre">INVERSE_GAUSSIAN_MAX_NB_DECIMAL</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool23GAUSSIAN_MAX_NB_DECIMALE"><code class="docutils literal notranslate"><span class="pre">GAUSSIAN_MAX_NB_DECIMAL</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool20DEGREE_DECIMAL_SCALEE"><code class="docutils literal notranslate"><span class="pre">DEGREE_DECIMAL_SCALE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool20RADIAN_DECIMAL_SCALEE"><code class="docutils literal notranslate"><span class="pre">RADIAN_DECIMAL_SCALE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool25MVMIXTURE_LIKELIHOOD_DIFFE"><code class="docutils literal notranslate"><span class="pre">MVMIXTURE_LIKELIHOOD_DIFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13MIXTURE_COEFFE"><code class="docutils literal notranslate"><span class="pre">MIXTURE_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool15CUMUL_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">CUMUL_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool25BISECTION_RATIO_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">BISECTION_RATIO_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17BISECTION_NB_ITERE"><code class="docutils literal notranslate"><span class="pre">BISECTION_NB_ITER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool20REGRESSION_NB_VECTORE"><code class="docutils literal notranslate"><span class="pre">REGRESSION_NB_VECTOR</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool12NEIGHBORHOODE"><code class="docutils literal notranslate"><span class="pre">NEIGHBORHOOD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool12ERROR_LENGTHE"><code class="docutils literal notranslate"><span class="pre">ERROR_LENGTH</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool9I_DEFAULTE"><code class="docutils literal notranslate"><span class="pre">I_DEFAULT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool9D_DEFAULTE"><code class="docutils literal notranslate"><span class="pre">D_DEFAULT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool5D_INFE"><code class="docutils literal notranslate"><span class="pre">D_INF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool12DOUBLE_ERRORE"><code class="docutils literal notranslate"><span class="pre">DOUBLE_ERROR</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool23NB_CRITICAL_PROBABILITYE"><code class="docutils literal notranslate"><span class="pre">NB_CRITICAL_PROBABILITY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool24ref_critical_probabilityE"><code class="docutils literal notranslate"><span class="pre">ref_critical_probability</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool8NB_VALUEE"><code class="docutils literal notranslate"><span class="pre">NB_VALUE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool15SAMPLE_NB_VALUEE"><code class="docutils literal notranslate"><span class="pre">SAMPLE_NB_VALUE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13MAX_INF_BOUNDE"><code class="docutils literal notranslate"><span class="pre">MAX_INF_BOUND</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14MAX_DIFF_BOUNDE"><code class="docutils literal notranslate"><span class="pre">MAX_DIFF_BOUND</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool8MAX_MEANE"><code class="docutils literal notranslate"><span class="pre">MAX_MEAN</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool19MAX_SEQUENCE_LENGTHE"><code class="docutils literal notranslate"><span class="pre">MAX_SEQUENCE_LENGTH</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13B_PROBABILITYE"><code class="docutils literal notranslate"><span class="pre">B_PROBABILITY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool11B_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">B_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool11P_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">P_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool12NB_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">NB_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool21SAMPLE_NB_VALUE_COEFFE"><code class="docutils literal notranslate"><span class="pre">SAMPLE_NB_VALUE_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool16INF_BOUND_MARGINE"><code class="docutils literal notranslate"><span class="pre">INF_BOUND_MARGIN</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool16SUP_BOUND_MARGINE"><code class="docutils literal notranslate"><span class="pre">SUP_BOUND_MARGIN</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13POISSON_RATIOE"><code class="docutils literal notranslate"><span class="pre">POISSON_RATIO</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13POISSON_RANGEE"><code class="docutils literal notranslate"><span class="pre">POISSON_RANGE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14NB_VALUE_COEFFE"><code class="docutils literal notranslate"><span class="pre">NB_VALUE_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool9MIN_RANGEE"><code class="docutils literal notranslate"><span class="pre">MIN_RANGE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool11MAX_SURFACEE"><code class="docutils literal notranslate"><span class="pre">MAX_SURFACE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool15DIST_NB_ELEMENTE"><code class="docutils literal notranslate"><span class="pre">DIST_NB_ELEMENT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool20NB_COMPLETE_INTERVALE"><code class="docutils literal notranslate"><span class="pre">NB_COMPLETE_INTERVAL</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool23RENEWAL_LIKELIHOOD_DIFFE"><code class="docutils literal notranslate"><span class="pre">RENEWAL_LIKELIHOOD_DIFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool15RENEWAL_NB_ITERE"><code class="docutils literal notranslate"><span class="pre">RENEWAL_NB_ITER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool25RENEWAL_DIFFERENCE_WEIGHTE"><code class="docutils literal notranslate"><span class="pre">RENEWAL_DIFFERENCE_WEIGHT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool22RENEWAL_ENTROPY_WEIGHTE"><code class="docutils literal notranslate"><span class="pre">RENEWAL_ENTROPY_WEIGHT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool15MAX_VALUE_COEFFE"><code class="docutils literal notranslate"><span class="pre">MAX_VALUE_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool29CONTINUOUS_POSITIVE_INF_BOUNDE"><code class="docutils literal notranslate"><span class="pre">CONTINUOUS_POSITIVE_INF_BOUND</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool10GAMMA_TAILE"><code class="docutils literal notranslate"><span class="pre">GAMMA_TAIL</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13GAMMA_NB_STEPE"><code class="docutils literal notranslate"><span class="pre">GAMMA_NB_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17GAMMA_NB_SUB_STEPE"><code class="docutils literal notranslate"><span class="pre">GAMMA_NB_SUB_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool32GAMMA_INVERSE_SAMPLE_SIZE_FACTORE"><code class="docutils literal notranslate"><span class="pre">GAMMA_INVERSE_SAMPLE_SIZE_FACTOR</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool25GAMMA_MIN_SHAPE_PARAMETERE"><code class="docutils literal notranslate"><span class="pre">GAMMA_MIN_SHAPE_PARAMETER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool29GAMMA_DEFAULT_SCALE_PARAMETERE"><code class="docutils literal notranslate"><span class="pre">GAMMA_DEFAULT_SCALE_PARAMETER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool30GAMMA_ZERO_FREQUENCY_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">GAMMA_ZERO_FREQUENCY_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool31GAMMA_SHAPE_PARAMETER_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">GAMMA_SHAPE_PARAMETER_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool25GAMMA_FREQUENCY_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">GAMMA_FREQUENCY_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool22GAMMA_ITERATION_FACTORE"><code class="docutils literal notranslate"><span class="pre">GAMMA_ITERATION_FACTOR</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool22GAMMA_MAX_NB_ITERATIONE"><code class="docutils literal notranslate"><span class="pre">GAMMA_MAX_NB_ITERATION</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool21INVERSE_GAUSSIAN_TAILE"><code class="docutils literal notranslate"><span class="pre">INVERSE_GAUSSIAN_TAIL</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool24INVERSE_GAUSSIAN_NB_STEPE"><code class="docutils literal notranslate"><span class="pre">INVERSE_GAUSSIAN_NB_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool28INVERSE_GAUSSIAN_NB_SUB_STEPE"><code class="docutils literal notranslate"><span class="pre">INVERSE_GAUSSIAN_NB_SUB_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13GAUSSIAN_TAILE"><code class="docutils literal notranslate"><span class="pre">GAUSSIAN_TAIL</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool16GAUSSIAN_NB_STEPE"><code class="docutils literal notranslate"><span class="pre">GAUSSIAN_NB_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool20GAUSSIAN_NB_SUB_STEPE"><code class="docutils literal notranslate"><span class="pre">GAUSSIAN_NB_SUB_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool28GAUSSIAN_MIN_VARIATION_COEFFE"><code class="docutils literal notranslate"><span class="pre">GAUSSIAN_MIN_VARIATION_COEFF</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17VON_MISES_NB_STEPE"><code class="docutils literal notranslate"><span class="pre">VON_MISES_NB_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool21VON_MISES_NB_SUB_STEPE"><code class="docutils literal notranslate"><span class="pre">VON_MISES_NB_SUB_STEP</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14CHI2_FREQUENCYE"><code class="docutils literal notranslate"><span class="pre">CHI2_FREQUENCY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool31MARGINAL_DISTRIBUTION_MAX_VALUEE"><code class="docutils literal notranslate"><span class="pre">MARGINAL_DISTRIBUTION_MAX_VALUE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool19HISTOGRAM_FREQUENCYE"><code class="docutils literal notranslate"><span class="pre">HISTOGRAM_FREQUENCY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool18SKEWNESS_ROUNDNESSE"><code class="docutils literal notranslate"><span class="pre">SKEWNESS_ROUNDNESS</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool8NB_ERRORE"><code class="docutils literal notranslate"><span class="pre">NB_ERROR</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17LINE_NB_CHARACTERE"><code class="docutils literal notranslate"><span class="pre">LINE_NB_CHARACTER</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14ASCII_NB_VALUEE"><code class="docutils literal notranslate"><span class="pre">ASCII_NB_VALUE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool11ASCII_SPACEE"><code class="docutils literal notranslate"><span class="pre">ASCII_SPACE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool15ASCII_ROUNDNESSE"><code class="docutils literal notranslate"><span class="pre">ASCII_ROUNDNESS</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool21SPREADSHEET_ROUNDNESSE"><code class="docutils literal notranslate"><span class="pre">SPREADSHEET_ROUNDNESS</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool21DISPLAY_NB_INDIVIDUALE"><code class="docutils literal notranslate"><span class="pre">DISPLAY_NB_INDIVIDUAL</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool20PLOT_NB_DISTRIBUTIONE"><code class="docutils literal notranslate"><span class="pre">PLOT_NB_DISTRIBUTION</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17PLOT_NB_HISTOGRAME"><code class="docutils literal notranslate"><span class="pre">PLOT_NB_HISTOGRAM</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14PLOT_ROUNDNESSE"><code class="docutils literal notranslate"><span class="pre">PLOT_ROUNDNESS</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool10PLOT_SHIFTE"><code class="docutils literal notranslate"><span class="pre">PLOT_SHIFT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool14PLOT_MAX_SHIFTE"><code class="docutils literal notranslate"><span class="pre">PLOT_MAX_SHIFT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13TIC_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">TIC_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool19PLOT_MASS_THRESHOLDE"><code class="docutils literal notranslate"><span class="pre">PLOT_MASS_THRESHOLD</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool6YSCALEE"><code class="docutils literal notranslate"><span class="pre">YSCALE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool16PLOT_RANGE_RATIOE"><code class="docutils literal notranslate"><span class="pre">PLOT_RANGE_RATIO</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool27CRITICAL_PROBABILITY_FACTORE"><code class="docutils literal notranslate"><span class="pre">CRITICAL_PROBABILITY_FACTOR</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool18VECTOR_NB_VARIABLEE"><code class="docutils literal notranslate"><span class="pre">VECTOR_NB_VARIABLE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool18DISTANCE_NB_VECTORE"><code class="docutils literal notranslate"><span class="pre">DISTANCE_NB_VECTOR</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool27SUP_NORM_DISTANCE_NB_VECTORE"><code class="docutils literal notranslate"><span class="pre">SUP_NORM_DISTANCE_NB_VECTOR</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool20CONTINGENCY_NB_VALUEE"><code class="docutils literal notranslate"><span class="pre">CONTINGENCY_NB_VALUE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool28DISPLAY_CONTINGENCY_NB_VALUEE"><code class="docutils literal notranslate"><span class="pre">DISPLAY_CONTINGENCY_NB_VALUE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool26VARIANCE_ANALYSIS_NB_VALUEE"><code class="docutils literal notranslate"><span class="pre">VARIANCE_ANALYSIS_NB_VALUE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool28DISPLAY_CONDITIONAL_NB_VALUEE"><code class="docutils literal notranslate"><span class="pre">DISPLAY_CONDITIONAL_NB_VALUE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool13PLOT_NB_VALUEE"><code class="docutils literal notranslate"><span class="pre">PLOT_NB_VALUE</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool11NB_CATEGORYE"><code class="docutils literal notranslate"><span class="pre">NB_CATEGORY</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17MIN_NB_ASSIGNMENTE"><code class="docutils literal notranslate"><span class="pre">MIN_NB_ASSIGNMENT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool17MAX_NB_ASSIGNMENTE"><code class="docutils literal notranslate"><span class="pre">MAX_NB_ASSIGNMENT</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#_CPPv4N9stat_tool23NB_ASSIGNMENT_PARAMETERE"><code class="docutils literal notranslate"><span class="pre">NB_ASSIGNMENT_PARAMETER</span></code></a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/constants.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright Cecill-C INRAE / INRIA / CIRAD.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

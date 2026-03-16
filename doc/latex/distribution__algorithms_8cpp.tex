@@ -1,0 +1,35 @@
+\doxysection{/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/distribution\+\_\+algorithms.cpp File Reference}
+\hypertarget{distribution__algorithms_8cpp}{}\label{distribution__algorithms_8cpp}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/distribution\_algorithms.cpp@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/distribution\_algorithms.cpp}}
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$boost/math/distributions/binomial.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/math/distributions/poisson.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/math/distributions/negative\+\_\+binomial.\+hpp$>$}\newline
+{\ttfamily \#include "{}distribution.\+h"{}}\newline
+{\ttfamily \#include "{}stat\+\_\+label.\+h"{}}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacestat__tool}{stat\+\_\+tool}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{distribution__algorithms_8cpp_a525335710b53cb064ca56b936120431e}{\+\_\+\+USE\+\_\+\+MATH\+\_\+\+DEFINES}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacestat__tool_a1464812951798742fc294d814b3eff35}{stat\+\_\+tool\+::cumul\+\_\+method}} (int nb\+\_\+value, const double \texorpdfstring{$\ast$}{*}cumul, double scale)
+\begin{DoxyCompactList}\small\item\em Simulation using the cumulative distribution function. The median is used to determine the direction of the algorithm (forward from the lower bound or backward from the highest value). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespacestat__tool_a75734a6e397703cc45e0904a03dcd27f}{stat\+\_\+tool\+::interval\+\_\+bisection}} (\mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation}}$<$ double $>$ \texorpdfstring{$\ast$}{*}distribution\+\_\+reestim, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation}}$<$ double $>$ \texorpdfstring{$\ast$}{*}length\+\_\+bias\+\_\+reestim)
+\begin{DoxyCompactList}\small\item\em Computation of the mean of a distribution by interval bissection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{distribution__algorithms_8cpp_a525335710b53cb064ca56b936120431e}\index{distribution\_algorithms.cpp@{distribution\_algorithms.cpp}!\_USE\_MATH\_DEFINES@{\_USE\_MATH\_DEFINES}}
+\index{\_USE\_MATH\_DEFINES@{\_USE\_MATH\_DEFINES}!distribution\_algorithms.cpp@{distribution\_algorithms.cpp}}
+\doxysubsubsection{\texorpdfstring{\_USE\_MATH\_DEFINES}{\_USE\_MATH\_DEFINES}}
+{\footnotesize\ttfamily \label{distribution__algorithms_8cpp_a525335710b53cb064ca56b936120431e} 
+\#define \+\_\+\+USE\+\_\+\+MATH\+\_\+\+DEFINES}
+

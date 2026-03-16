@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1StatInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>stat_tool::StatInterface</compoundname>
+    <derivedcompoundref refid="classstat__tool_1_1Compound" prot="public" virt="non-virtual">stat_tool::Compound</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1CompoundData" prot="public" virt="non-virtual">stat_tool::CompoundData</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1Convolution" prot="public" virt="non-virtual">stat_tool::Convolution</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1ConvolutionData" prot="public" virt="non-virtual">stat_tool::ConvolutionData</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1Dendrogram" prot="public" virt="non-virtual">stat_tool::Dendrogram</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1DiscreteDistributionData" prot="public" virt="non-virtual">stat_tool::DiscreteDistributionData</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1DiscreteMixture" prot="public" virt="non-virtual">stat_tool::DiscreteMixture</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1DiscreteMixtureData" prot="public" virt="non-virtual">stat_tool::DiscreteMixtureData</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1DiscreteParametricModel" prot="public" virt="non-virtual">stat_tool::DiscreteParametricModel</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1DistanceMatrix" prot="public" virt="non-virtual">stat_tool::DistanceMatrix</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1MultivariateMixture" prot="public" virt="non-virtual">stat_tool::MultivariateMixture</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1Regression" prot="public" virt="non-virtual">stat_tool::Regression</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1VectorDistance" prot="public" virt="non-virtual">stat_tool::VectorDistance</derivedcompoundref>
+    <derivedcompoundref refid="classstat__tool_1_1Vectors" prot="public" virt="non-virtual">stat_tool::Vectors</derivedcompoundref>
+    <includes refid="stat__tools_8h" local="no">stat_tools.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1StatInterface_1a7db89a0e0500b15ff2b14022d6a12a5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>virtual std::ostream &amp; stat_tool::StatInterface::line_write</definition>
+        <argsstring>(std::ostream &amp;os) const =0</argsstring>
+        <name>line_write</name>
+        <qualifiedname>stat_tool::StatInterface::line_write</qualifiedname>
+        <reimplementedby refid="classstat__tool_1_1Clusters_1ae8ddde74f74c2eb033f44acc25e9a17f">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Compound_1ae8a793f95299a5f4839db934549e8cdb">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1CompoundData_1ab9859f1bd0b86e2cbd3297b5e4ce68cc">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Convolution_1a83f3914f088950d7bd5a31f5378d0460">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1ConvolutionData_1ac905e75161bdc4e3009c04402f8edec6">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Dendrogram_1a3416f7ddfbb87a8bfccec05dfe82727e">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteDistributionData_1a6fd20d45cc28b2a2a3fcea27f8b9714a">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixture_1a66dcbe96f22181d3db36b402bc4441f1">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixtureData_1aad94e769d36e80003ba807bf10e94eec">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteParametricModel_1aca10ffa67324e443c7b0db2468cdd721">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DistanceMatrix_1a3d9ff8d5002bb0203a95537e5325cf77">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixture_1afb8e0df6f4742fa5fc0674f28cf982fc">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixtureData_1ab89752c3ea4012157c87ed61586b771e">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Regression_1ad3bf39fddaff0466e27791242c0d7f82">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1VectorDistance_1a8fac36bd923ce191a64da8311ea653b2">line_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Vectors_1a9a6573a8e6b2db27ec9dc7e29d927819">line_write</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="475" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1StatInterface_1a9cc8c361520374ddcfbe45011613266c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>virtual std::ostream &amp; stat_tool::StatInterface::ascii_write</definition>
+        <argsstring>(std::ostream &amp;os, bool exhaustive=false) const =0</argsstring>
+        <name>ascii_write</name>
+        <qualifiedname>stat_tool::StatInterface::ascii_write</qualifiedname>
+        <reimplementedby refid="classstat__tool_1_1Clusters_1a93d451a9133fa9c0a89eeba75152993f">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Compound_1aa4849c89515b55cdabdecc845695ada8">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1CompoundData_1ae5d4c01c0afe231b79736654d9ba0995">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Convolution_1a7093e7c568468bfc9c4651c9be932ea0">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1ConvolutionData_1a0f588f21571aeb7c5f842c1de5509d03">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Dendrogram_1a5e8d02450e64fab2b4b59784df6b438d">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteDistributionData_1aa9b7627a40a150b57de432069574efca">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixture_1a3508e01246983c274268fd17ead3a64d">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixtureData_1a2eb253ac02e93941ed286ef921f7f167">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteParametricModel_1aa8cc27e167a74b155caa98fcaeedb491">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DistanceMatrix_1aa4f9edf14fc1f5c9b83e62db25a73df6">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixture_1ab252390a47e0f4821b5f02e106f4d131">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixtureData_1aa03b6bd704f886debab5a1bedb3dcab9">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Regression_1a54b5fd8b2924a3ea4a34c8a396b45605">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1VectorDistance_1aed405f1a2e7fdbcef2937f3c54b1cf42">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Vectors_1a060611d3aac9d62e760185540542d9a2">ascii_write</reimplementedby>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exhaustive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="477" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1StatInterface_1a7571e2adbbe004af3ece0f623c69cef6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string stat_tool::StatInterface::ascii_write</definition>
+        <argsstring>(bool exhaustive=false) const</argsstring>
+        <name>ascii_write</name>
+        <qualifiedname>stat_tool::StatInterface::ascii_write</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>exhaustive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Writing of a StructureAnalysis object (for display on the console). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">exhaustive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag detail level,</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="478" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="244" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1StatInterface_1a7ebddce7b16070eee648eb888b8c5ec4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool stat_tool::StatInterface::ascii_write</definition>
+        <argsstring>(StatError &amp;error, const std::string path, bool exhaustive=false) const =0</argsstring>
+        <name>ascii_write</name>
+        <qualifiedname>stat_tool::StatInterface::ascii_write</qualifiedname>
+        <reimplementedby refid="classstat__tool_1_1Clusters_1ac9f381786f3d506d7c2b8ba3936cc4a7">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Compound_1a6c4ab290a6518348cefd115244d3adf8">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1CompoundData_1a6016f7a0586e3c18df6bbbd5bc510b33">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Convolution_1a2f18a95d197169d1cb9c65ee84cf55de">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1ConvolutionData_1a6105b5f76f73e772a2ff609de7da576b">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Dendrogram_1a1cfdde3d65c66100d5f720ab47f9e334">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteDistributionData_1ac2eaeaf7ca7f932ff3a70569aab5422c">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixture_1ad5e36b01d5099f4bd895c74eb8a905ea">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixtureData_1a590ca3384ade4faf54dfd1b1ad2fbb90">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteParametricModel_1ab0065cab370c50ac0328bb0ccf1b28d4">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DistanceMatrix_1a7c1d5710cff5e8f923b23a996eab7f43">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixture_1a96177f1e51de820f3dda9f5cd3ccbd0f">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixtureData_1a60dc82362413e92bba8c2d5271b4ead5">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Regression_1a0c3c0a60c6ccf669c1e4113217f5f77b">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1VectorDistance_1a9680d56486d82a192f1d517d610121c3">ascii_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Vectors_1ab5bce070e2fdbda3cd05f58b4d61102b">ascii_write</reimplementedby>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exhaustive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="479" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1StatInterface_1abcc9eead01dd45344d047916210cfe8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool stat_tool::StatInterface::spreadsheet_write</definition>
+        <argsstring>(StatError &amp;error, const std::string path) const =0</argsstring>
+        <name>spreadsheet_write</name>
+        <qualifiedname>stat_tool::StatInterface::spreadsheet_write</qualifiedname>
+        <reimplementedby refid="classstat__tool_1_1Clusters_1a7fcd08fc8452f8ad13935fda736f452b">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Compound_1aabaca0a1b7f53f8087647628cf9c2e29">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1CompoundData_1a8ad361cb20b2e47e850db2927feb040a">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Convolution_1a24207ee86708d3068aa8590a9f4c62c7">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1ConvolutionData_1a9c840f2997a2237c273f5326701cf57c">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Dendrogram_1adfd71130175a6f8ff414e2ebdc79dcb9">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteDistributionData_1af8c0206a197e468f630d019c795dd6e4">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixture_1a90af67e0f17a29d1cacf1e9adbfa21ae">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixtureData_1afe70b420bb849137ffe4d5582a764792">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteParametricModel_1aecd274ec81effdb72b749b29e800ce32">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DistanceMatrix_1a4425056239ab0aff3162461174558cc0">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixture_1af1a84879816acf7f1ee105ea7f85a046">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Regression_1a92f56d95ccea07ea80f9d079296552f7">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1VectorDistance_1ae9677500c5966ec582c96afa33316768">spreadsheet_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Vectors_1a39476b5596737b25652be70ef081e50a">spreadsheet_write</reimplementedby>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="481" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1StatInterface_1a22886aaa72572ca234cc5f27a8b25012" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool stat_tool::StatInterface::plot_write</definition>
+        <argsstring>(StatError &amp;error, const char *prefix, const char *title=NULL) const =0</argsstring>
+        <name>plot_write</name>
+        <qualifiedname>stat_tool::StatInterface::plot_write</qualifiedname>
+        <reimplementedby refid="classstat__tool_1_1Clusters_1ab5d5c8631df66793f6e31ca47b3410c6">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Compound_1ac916dd4060f49cd6493e5e3dad17cb48">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1CompoundData_1ae241e085f5a4b3bec26f4c4737fc75c5">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Convolution_1aff6a82b565b4cdf17fc3e2a6333a4e82">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1ConvolutionData_1a7ba504b5a14f96dc55e5b0adcea67ec0">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Dendrogram_1a7989da7503a766fafc6e677700af9e2e">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteDistributionData_1a2f6b8f4be00091ee6a1b3127d6711570">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixture_1a0be9c1177c1f27d96fac87a319036666">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixtureData_1a4095c0301afde882346cfeecef9e88b3">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteParametricModel_1a7b6313878d319a16d65c9b7fc2995c80">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DistanceMatrix_1a10e672fd277f8701b2cde489475a0779">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixture_1a3cf5119062a21348c53eef0492e05bf7">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixtureData_1a297753432721adef11b5239431582882">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Regression_1a1b1615f6071c980523c3beab2959c91d">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1VectorDistance_1a5b4b203f3c106f5ab8ecfe9657fa5809">plot_write</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Vectors_1a4c2b84dc8c71fdf3bf8520a702724f52">plot_write</reimplementedby>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>title</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="483" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1StatInterface_1a9210a878974973ea3a4a0cf209258a5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
+        <definition>virtual MultiPlotSet * stat_tool::StatInterface::get_plotable</definition>
+        <argsstring>() const</argsstring>
+        <name>get_plotable</name>
+        <qualifiedname>stat_tool::StatInterface::get_plotable</qualifiedname>
+        <reimplementedby refid="classstat__tool_1_1Clusters_1a494759ea641d970bb273e004c13b8b54">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Compound_1af0baae4012ae3bb817cbd27d1f072905">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1CompoundData_1a4a888ae2ac691e1afa4e584e7d68c378">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Convolution_1aa018b77fc8240bd8c49101010e9afa8b">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1ConvolutionData_1aa3492aa5d7cb0f7839014d2e4acce2ff">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteDistributionData_1af32cd4ee1d5e633e027555ff0c5133e9">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixture_1a50ea3cfe9ca2225ac2243cd1cf23aa4d">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteMixtureData_1a3426aa4f24ccdb6cd00832012a225464">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DiscreteParametricModel_1a748333f5b3c2835833d6353fbec812bd">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1DistanceMatrix_1adfecbe4c03130af4dce1ac451c3503de">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixture_1a73a803bbfd52d68c2ad8d34b2311f26b">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1MultivariateMixtureData_1a335bc23509add422b33723c2d2145815">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Regression_1a169a52da0755e7301e49106969293603">get_plotable</reimplementedby>
+        <reimplementedby refid="classstat__tool_1_1Vectors_1a2ad527c10b5b23f4b01314d45d8f2954">get_plotable</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="486" column="26" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="486" bodyend="486"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Abstract class defining a common interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>stat_tool::Clusters</label>
+        <link refid="classstat__tool_1_1Clusters"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stat_tool::Compound</label>
+        <link refid="classstat__tool_1_1Compound"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stat_tool::CompoundData</label>
+        <link refid="classstat__tool_1_1CompoundData"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stat_tool::Convolution</label>
+        <link refid="classstat__tool_1_1Convolution"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stat_tool::ConvolutionData</label>
+        <link refid="classstat__tool_1_1ConvolutionData"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stat_tool::Dendrogram</label>
+        <link refid="classstat__tool_1_1Dendrogram"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stat_tool::DiscreteDistributionData</label>
+        <link refid="classstat__tool_1_1DiscreteDistributionData"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stat_tool::DiscreteMixture</label>
+        <link refid="classstat__tool_1_1DiscreteMixture"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stat_tool::DiscreteMixtureData</label>
+        <link refid="classstat__tool_1_1DiscreteMixtureData"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>stat_tool::DiscreteParametricModel</label>
+        <link refid="classstat__tool_1_1DiscreteParametricModel"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stat_tool::DistanceMatrix</label>
+        <link refid="classstat__tool_1_1DistanceMatrix"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stat_tool::MultivariateMixture</label>
+        <link refid="classstat__tool_1_1MultivariateMixture"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stat_tool::MultivariateMixtureData</label>
+        <link refid="classstat__tool_1_1MultivariateMixtureData"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stat_tool::Regression</label>
+        <link refid="classstat__tool_1_1Regression"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>stat_tool::StatInterface</label>
+        <link refid="classstat__tool_1_1StatInterface"/>
+      </node>
+      <node id="15">
+        <label>stat_tool::VectorDistance</label>
+        <link refid="classstat__tool_1_1VectorDistance"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stat_tool::Vectors</label>
+        <link refid="classstat__tool_1_1Vectors"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="471" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="471" bodyend="489"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1StatInterface_1a9cc8c361520374ddcfbe45011613266c" prot="public" virt="pure-virtual"><scope>stat_tool::StatInterface</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1StatInterface_1a7571e2adbbe004af3ece0f623c69cef6" prot="public" virt="non-virtual"><scope>stat_tool::StatInterface</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1StatInterface_1a7ebddce7b16070eee648eb888b8c5ec4" prot="public" virt="pure-virtual"><scope>stat_tool::StatInterface</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1StatInterface_1a9210a878974973ea3a4a0cf209258a5e" prot="public" virt="virtual"><scope>stat_tool::StatInterface</scope><name>get_plotable</name></member>
+      <member refid="classstat__tool_1_1StatInterface_1a7db89a0e0500b15ff2b14022d6a12a5c" prot="public" virt="pure-virtual"><scope>stat_tool::StatInterface</scope><name>line_write</name></member>
+      <member refid="classstat__tool_1_1StatInterface_1a22886aaa72572ca234cc5f27a8b25012" prot="public" virt="pure-virtual"><scope>stat_tool::StatInterface</scope><name>plot_write</name></member>
+      <member refid="classstat__tool_1_1StatInterface_1abcc9eead01dd45344d047916210cfe8c" prot="public" virt="pure-virtual"><scope>stat_tool::StatInterface</scope><name>spreadsheet_write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

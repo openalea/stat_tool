@@ -1,0 +1,651 @@
+\doxysection{stat\+\_\+tool\+::Chain Class Reference}
+\hypertarget{classstat__tool_1_1Chain}{}\label{classstat__tool_1_1Chain}\index{stat\_tool::Chain@{stat\_tool::Chain}}
+
+
+Markov chain.  
+
+
+
+
+{\ttfamily \#include $<$markovian.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_afb82eeda1401ace14f8e6392abe9d613}{parameter\+\_\+copy}} (const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&)
+\begin{DoxyCompactList}\small\item\em Copy of Markov chain parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_aa46c7cb37bfa15b09b0e44e314e87a4a}{copy}} (const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&)
+\begin{DoxyCompactList}\small\item\em Copy of a \doxylink{classstat__tool_1_1Chain}{Chain} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_a5fd4ced6da0ff7731e418320f387a205}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Destruction of the data members of a \doxylink{classstat__tool_1_1Chain}{Chain} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212}{Chain}} (\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}} itype=\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{ORDINARY}}, int inb\+\_\+state=0, bool init\+\_\+flag=true)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1Chain}{Chain} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Chain_ac871df0a5c2a8f52ef983e67f8f84c4f}{Chain}} (\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}} itype, int inb\+\_\+state, int inb\+\_\+row, bool init\+\_\+flag)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1Chain}{Chain} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Chain_a4a52870e19a8f7f1afe44d4857b049a8}{Chain}} (const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&chain)
+\item 
+\mbox{\hyperlink{classstat__tool_1_1Chain_a491aad680b3de78a58d71e227a7f0423}{\texorpdfstring{$\sim$}{\string~}\+Chain}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{classstat__tool_1_1Chain}{Chain} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \& \mbox{\hyperlink{classstat__tool_1_1Chain_a716d50246800c3290cf860d53e8b5f5a}{operator=}} (const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&chain)
+\begin{DoxyCompactList}\small\item\em Assignment operator of the \doxylink{classstat__tool_1_1Chain}{Chain} class. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1Chain_ae68543fe77a56589e794d8d286043d9f}{ascii\+\_\+print}} (std\+::ostream \&os, bool file\+\_\+flag=false) const
+\begin{DoxyCompactList}\small\item\em Writing of a \doxylink{classstat__tool_1_1Chain}{Chain} object. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1Chain_a6a2c52fbc7dea131e0954d5f5a26f735}{spreadsheet\+\_\+print}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Writing of a \doxylink{classstat__tool_1_1Chain}{Chain} object at the spreadsheet format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_aa8675d1ae33aa0701e9c8ed672772a43}{create\+\_\+cumul}} ()
+\begin{DoxyCompactList}\small\item\em Construction of the cumulative initial and transition distribution functions of a \doxylink{classstat__tool_1_1Chain}{Chain} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_ad34f436790146f5c3a08ab47f1cfcb2d}{cumul\+\_\+computation}} ()
+\begin{DoxyCompactList}\small\item\em Computation of cumulative initial and transition distribution functions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_ab428d5b2f48bd4fe70fd346ef0be4073}{remove\+\_\+cumul}} ()
+\begin{DoxyCompactList}\small\item\em Destruction of the cumulative initial and transition distribution functions of a \doxylink{classstat__tool_1_1Chain}{Chain} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_a9e33fae6126d9b09a990bfbf0572e957}{log\+\_\+computation}} ()
+\begin{DoxyCompactList}\small\item\em Log transform of Markov chain parameters. \end{DoxyCompactList}\item 
+bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_a9f8dae4573bea6318eb86688b86fff40}{logic\+\_\+transition\+\_\+computation}} () const
+\begin{DoxyCompactList}\small\item\em Construction of the matrix of possible transitions between states (adjacency matrix of the graph of possible transitions). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstat__tool_1_1Chain_a0f7ea7f78625c2c38fc4bc433a8da22c}{strongly\+\_\+connected\+\_\+component\+\_\+research}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}ilogic\+\_\+transition=NULL) const
+\begin{DoxyCompactList}\small\item\em Determination of the strongly connected components of a Markov chain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_a19996f9118df0209e5b32d9abdff2084}{graph\+\_\+accessibility\+\_\+computation}} (bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}ilogic\+\_\+transition)
+\begin{DoxyCompactList}\small\item\em Computation of the accessibility of Markov chain states (graph-\/based approach). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_ac3ce9d294c6062f48ab0d21c501591cd}{probability\+\_\+accessibility\+\_\+computation}} ()
+\begin{DoxyCompactList}\small\item\em Computation of the accessibility of Markov chain states (probabilistic approach). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_ad9284fb54428b5a1cfe1c216675a31dd}{component\+\_\+computation}} (bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}ilogic\+\_\+transition=NULL)
+\begin{DoxyCompactList}\small\item\em Extraction of the Markov chain classes (transient/recurrent/absorbing) from state accessibility. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstat__tool_1_1Chain_a2eaff8480d05756c424bd439c3696278}{parallel\+\_\+initial\+\_\+state}} () const
+\begin{DoxyCompactList}\small\item\em Computation of the number of initial states in parallel (clustering structure). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_a73c2b6491391045f22a517c330f179d5}{thresholding}} (double min\+\_\+probability, bool semi\+\_\+markov=false)
+\begin{DoxyCompactList}\small\item\em Application of a threshold on the Markov chain parameters. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1Chain_a043c5b3e1428ab76fef964c0404d5527}{nb\+\_\+parameter\+\_\+computation}} (double min\+\_\+probability=0.) const
+\begin{DoxyCompactList}\small\item\em Computation of the number of free transition probabilities. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1Chain_ae9b0c570758e2ad5bcb25c944588a173}{chi2\+\_\+value\+\_\+computation}} (const \mbox{\hyperlink{classstat__tool_1_1ChainData}{Chain\+Data}} \&chain\+\_\+data) const
+\begin{DoxyCompactList}\small\item\em Computation of the chi2 value for a Markov chain (goodness of fit test). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_ac993b8fec1023bd9264d7dd4922a8098}{init}} (bool left\+\_\+right, double self\+\_\+transition)
+\begin{DoxyCompactList}\small\item\em Initialization of Markov chain parameters. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1Chain_a4ff539375f5858fd62edf6f78f87e1dd}{likelihood\+\_\+computation}} (const \mbox{\hyperlink{classstat__tool_1_1ChainData}{Chain\+Data}} \&chain\+\_\+data, bool initial\+\_\+flag=true) const
+\begin{DoxyCompactList}\small\item\em Computation of the log-\/likelihood of a Markov chain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Chain_a1ced0cead653ad5c1fad85ef2f28298e}{chi2\+\_\+fit}} (const \mbox{\hyperlink{classstat__tool_1_1ChainData}{Chain\+Data}} \&chain\+\_\+data, \mbox{\hyperlink{classstat__tool_1_1Test}{Test}} \&test) const
+\begin{DoxyCompactList}\small\item\em Chi2 goodness of fit test for a Markov chain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_a564b28178894084c45c73c804d339cd4}{parsing}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, ifstream \&in\+\_\+file, int \&line, \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}} \mbox{\hyperlink{classstat__tool_1_1Chain_a0d9ab1c8bb7e547e65105272f11b718a}{type}})
+\begin{DoxyCompactList}\small\item\em Analysis of the format of a \doxylink{classstat__tool_1_1Chain}{Chain} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}} \mbox{\hyperlink{classstat__tool_1_1Chain_a0d9ab1c8bb7e547e65105272f11b718a}{type}}
+\begin{DoxyCompactList}\small\item\em process type (ORDINARY/\+EQUILIBRIUM) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1Chain_acc34af02c00c2467b58647c4c23885b9}{nb\+\_\+state}}
+\begin{DoxyCompactList}\small\item\em number of states \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1Chain_ad123535815e2e4f9310e039c2bb305e7}{nb\+\_\+row}}
+\begin{DoxyCompactList}\small\item\em number of rows of the transition probability matrix \end{DoxyCompactList}\item 
+bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_a32b6716d0b8f1eb4e71930c8e79c97e0}{accessibility}}
+\begin{DoxyCompactList}\small\item\em state accessibility matrix \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1Chain_a37a875fb7c90f86cb9b72f2a77a30742}{nb\+\_\+component}}
+\begin{DoxyCompactList}\small\item\em number of classes \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_ac0b3945c83dbde7f37b8351354a744fc}{component\+\_\+nb\+\_\+state}}
+\begin{DoxyCompactList}\small\item\em numbers of states per class \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_a74127874d7a50bef2475c92ed84324ab}{component}}
+\begin{DoxyCompactList}\small\item\em classes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacestat__tool_a1be004130f6e95c1e08f73d470a83629}{state\+\_\+type}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_ab3c70734391e45bcd78b5f6490b4bb96}{stype}}
+\begin{DoxyCompactList}\small\item\em state types (TRANSIENT/\+RECURRENT/\+ABSORBING) \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_a7cd5ac2a8a9b1e739ea2bb0fbfa0c1c8}{initial}}
+\begin{DoxyCompactList}\small\item\em initial probabilities \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_a302bd895ef75ba79036ecd916deb113e}{cumul\+\_\+initial}}
+\begin{DoxyCompactList}\small\item\em cumulative initial distribution function \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_a96445ebc728cd22d8a7fb1b26277bd16}{transition}}
+\begin{DoxyCompactList}\small\item\em transition probability matrix \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Chain_a3a93f35cf2bd9cb3f5d795fcd97c2080}{cumul\+\_\+transition}}
+\begin{DoxyCompactList}\small\item\em cumulative transition distribution functions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1Chain_a19e10050927d366bf827b374e10818d9}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&chain)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Markov chain. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212}\index{stat\_tool::Chain@{stat\_tool::Chain}!Chain@{Chain}}
+\index{Chain@{Chain}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{Chain()}{Chain()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212} 
+stat\+\_\+tool\+::\+Chain\+::\+Chain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}}}]{itype}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{ORDINARY}}}, }\item[{int}]{inb\+\_\+state}{ = {\ttfamily 0}, }\item[{bool}]{init\+\_\+flag}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{classstat__tool_1_1Chain}{Chain} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em itype} & type, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+state} & number of states, \\
+\hline
+\mbox{\texttt{ in}}  & {\em init\+\_\+flag} & flag initialization. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_ac871df0a5c2a8f52ef983e67f8f84c4f}\index{stat\_tool::Chain@{stat\_tool::Chain}!Chain@{Chain}}
+\index{Chain@{Chain}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{Chain()}{Chain()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ac871df0a5c2a8f52ef983e67f8f84c4f} 
+stat\+\_\+tool\+::\+Chain\+::\+Chain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}}}]{itype}{, }\item[{int}]{inb\+\_\+state}{, }\item[{int}]{inb\+\_\+row}{, }\item[{bool}]{init\+\_\+flag}{}\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{classstat__tool_1_1Chain}{Chain} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em itype} & type, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+state} & number of states, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+row} & number of rows of the transition probability matrix, \\
+\hline
+\mbox{\texttt{ in}}  & {\em init\+\_\+flag} & flag initialization. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_a4a52870e19a8f7f1afe44d4857b049a8}\index{stat\_tool::Chain@{stat\_tool::Chain}!Chain@{Chain}}
+\index{Chain@{Chain}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{Chain()}{Chain()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a4a52870e19a8f7f1afe44d4857b049a8} 
+stat\+\_\+tool\+::\+Chain\+::\+Chain (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&}]{chain}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1Chain_a491aad680b3de78a58d71e227a7f0423}\index{stat\_tool::Chain@{stat\_tool::Chain}!````~Chain@{\texorpdfstring{$\sim$}{\string~}Chain}}
+\index{````~Chain@{\texorpdfstring{$\sim$}{\string~}Chain}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Chain()}{\string~Chain()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a491aad680b3de78a58d71e227a7f0423} 
+stat\+\_\+tool\+::\+Chain\+::\texorpdfstring{$\sim$}{\string~}\+Chain (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor of the \doxylink{classstat__tool_1_1Chain}{Chain} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstat__tool_1_1Chain_ae68543fe77a56589e794d8d286043d9f}\index{stat\_tool::Chain@{stat\_tool::Chain}!ascii\_print@{ascii\_print}}
+\index{ascii\_print@{ascii\_print}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{ascii\_print()}{ascii\_print()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ae68543fe77a56589e794d8d286043d9f} 
+ostream \& stat\+\_\+tool\+::\+Chain\+::ascii\+\_\+print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{bool}]{file\+\_\+flag}{ = {\ttfamily false}}\end{DoxyParamCaption}) const}
+
+
+
+Writing of a \doxylink{classstat__tool_1_1Chain}{Chain} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em os} & stream, \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+\_\+flag} & file flag. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_a1ced0cead653ad5c1fad85ef2f28298e}\index{stat\_tool::Chain@{stat\_tool::Chain}!chi2\_fit@{chi2\_fit}}
+\index{chi2\_fit@{chi2\_fit}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{chi2\_fit()}{chi2\_fit()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a1ced0cead653ad5c1fad85ef2f28298e} 
+void stat\+\_\+tool\+::\+Chain\+::chi2\+\_\+fit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1ChainData}{Chain\+Data}} \&}]{chain\+\_\+data}{, }\item[{\mbox{\hyperlink{classstat__tool_1_1Test}{Test}} \&}]{test}{}\end{DoxyParamCaption}) const}
+
+
+
+Chi2 goodness of fit test for a Markov chain. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chain\+\_\+data} & reference on a \doxylink{classstat__tool_1_1ChainData}{Chain\+Data} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em test} & reference on a \doxylink{classstat__tool_1_1Test}{Test} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_ae9b0c570758e2ad5bcb25c944588a173}\index{stat\_tool::Chain@{stat\_tool::Chain}!chi2\_value\_computation@{chi2\_value\_computation}}
+\index{chi2\_value\_computation@{chi2\_value\_computation}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{chi2\_value\_computation()}{chi2\_value\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ae9b0c570758e2ad5bcb25c944588a173} 
+double stat\+\_\+tool\+::\+Chain\+::chi2\+\_\+value\+\_\+computation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1ChainData}{Chain\+Data}} \&}]{chain\+\_\+data}{}\end{DoxyParamCaption}) const}
+
+
+
+Computation of the chi2 value for a Markov chain (goodness of fit test). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chain\+\_\+data} & reference on a \doxylink{classstat__tool_1_1ChainData}{Chain\+Data} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+chi2 value. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Chain_ad9284fb54428b5a1cfe1c216675a31dd}\index{stat\_tool::Chain@{stat\_tool::Chain}!component\_computation@{component\_computation}}
+\index{component\_computation@{component\_computation}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{component\_computation()}{component\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ad9284fb54428b5a1cfe1c216675a31dd} 
+void stat\+\_\+tool\+::\+Chain\+::component\+\_\+computation (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{ilogic\+\_\+transition}{ = {\ttfamily NULL}}\end{DoxyParamCaption})}
+
+
+
+Extraction of the Markov chain classes (transient/recurrent/absorbing) from state accessibility. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ilogic\+\_\+transition} & matrix of possible transitions between states. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_aa46c7cb37bfa15b09b0e44e314e87a4a}\index{stat\_tool::Chain@{stat\_tool::Chain}!copy@{copy}}
+\index{copy@{copy}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_aa46c7cb37bfa15b09b0e44e314e87a4a} 
+void stat\+\_\+tool\+::\+Chain\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&}]{chain}{}\end{DoxyParamCaption})}
+
+
+
+Copy of a \doxylink{classstat__tool_1_1Chain}{Chain} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chain} & reference on a \doxylink{classstat__tool_1_1Chain}{Chain} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_aa8675d1ae33aa0701e9c8ed672772a43}\index{stat\_tool::Chain@{stat\_tool::Chain}!create\_cumul@{create\_cumul}}
+\index{create\_cumul@{create\_cumul}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{create\_cumul()}{create\_cumul()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_aa8675d1ae33aa0701e9c8ed672772a43} 
+void stat\+\_\+tool\+::\+Chain\+::create\+\_\+cumul (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Construction of the cumulative initial and transition distribution functions of a \doxylink{classstat__tool_1_1Chain}{Chain} object. 
+
+\Hypertarget{classstat__tool_1_1Chain_ad34f436790146f5c3a08ab47f1cfcb2d}\index{stat\_tool::Chain@{stat\_tool::Chain}!cumul\_computation@{cumul\_computation}}
+\index{cumul\_computation@{cumul\_computation}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{cumul\_computation()}{cumul\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ad34f436790146f5c3a08ab47f1cfcb2d} 
+void stat\+\_\+tool\+::\+Chain\+::cumul\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Computation of cumulative initial and transition distribution functions. 
+
+\Hypertarget{classstat__tool_1_1Chain_a19996f9118df0209e5b32d9abdff2084}\index{stat\_tool::Chain@{stat\_tool::Chain}!graph\_accessibility\_computation@{graph\_accessibility\_computation}}
+\index{graph\_accessibility\_computation@{graph\_accessibility\_computation}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{graph\_accessibility\_computation()}{graph\_accessibility\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a19996f9118df0209e5b32d9abdff2084} 
+void stat\+\_\+tool\+::\+Chain\+::graph\+\_\+accessibility\+\_\+computation (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{ilogic\+\_\+transition}{}\end{DoxyParamCaption})}
+
+
+
+Computation of the accessibility of Markov chain states (graph-\/based approach). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ilogic\+\_\+transition} & matrix of possible transitions between states. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_ac993b8fec1023bd9264d7dd4922a8098}\index{stat\_tool::Chain@{stat\_tool::Chain}!init@{init}}
+\index{init@{init}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ac993b8fec1023bd9264d7dd4922a8098} 
+void stat\+\_\+tool\+::\+Chain\+::init (\begin{DoxyParamCaption}\item[{bool}]{left\+\_\+right}{, }\item[{double}]{self\+\_\+transition}{}\end{DoxyParamCaption})}
+
+
+
+Initialization of Markov chain parameters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em left\+\_\+right} & flag on the Markov chain structure, \\
+\hline
+\mbox{\texttt{ in}}  & {\em self\+\_\+transition} & self-\/transition probability. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_a4ff539375f5858fd62edf6f78f87e1dd}\index{stat\_tool::Chain@{stat\_tool::Chain}!likelihood\_computation@{likelihood\_computation}}
+\index{likelihood\_computation@{likelihood\_computation}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{likelihood\_computation()}{likelihood\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a4ff539375f5858fd62edf6f78f87e1dd} 
+double stat\+\_\+tool\+::\+Chain\+::likelihood\+\_\+computation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1ChainData}{Chain\+Data}} \&}]{chain\+\_\+data}{, }\item[{bool}]{initial\+\_\+flag}{ = {\ttfamily true}}\end{DoxyParamCaption}) const}
+
+
+
+Computation of the log-\/likelihood of a Markov chain. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chain\+\_\+data} & reference on a \doxylink{classstat__tool_1_1ChainData}{Chain\+Data} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em initial\+\_\+flag} & flag inclusion or not of the initial distribution in the log-\/likelihood computation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+log-\/likelihood. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Chain_a9e33fae6126d9b09a990bfbf0572e957}\index{stat\_tool::Chain@{stat\_tool::Chain}!log\_computation@{log\_computation}}
+\index{log\_computation@{log\_computation}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{log\_computation()}{log\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a9e33fae6126d9b09a990bfbf0572e957} 
+void stat\+\_\+tool\+::\+Chain\+::log\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Log transform of Markov chain parameters. 
+
+\Hypertarget{classstat__tool_1_1Chain_a9f8dae4573bea6318eb86688b86fff40}\index{stat\_tool::Chain@{stat\_tool::Chain}!logic\_transition\_computation@{logic\_transition\_computation}}
+\index{logic\_transition\_computation@{logic\_transition\_computation}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{logic\_transition\_computation()}{logic\_transition\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a9f8dae4573bea6318eb86688b86fff40} 
+bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::logic\+\_\+transition\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Construction of the matrix of possible transitions between states (adjacency matrix of the graph of possible transitions). 
+
+\begin{DoxyReturn}{Returns}
+matrix of possible transitions. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Chain_a043c5b3e1428ab76fef964c0404d5527}\index{stat\_tool::Chain@{stat\_tool::Chain}!nb\_parameter\_computation@{nb\_parameter\_computation}}
+\index{nb\_parameter\_computation@{nb\_parameter\_computation}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{nb\_parameter\_computation()}{nb\_parameter\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a043c5b3e1428ab76fef964c0404d5527} 
+int stat\+\_\+tool\+::\+Chain\+::nb\+\_\+parameter\+\_\+computation (\begin{DoxyParamCaption}\item[{double}]{min\+\_\+probability}{ = {\ttfamily 0.}}\end{DoxyParamCaption}) const}
+
+
+
+Computation of the number of free transition probabilities. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em min\+\_\+probability} & minimum probability.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of free transition probabilities. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Chain_a716d50246800c3290cf860d53e8b5f5a}\index{stat\_tool::Chain@{stat\_tool::Chain}!operator=@{operator=}}
+\index{operator=@{operator=}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a716d50246800c3290cf860d53e8b5f5a} 
+\mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \& stat\+\_\+tool\+::\+Chain\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&}]{chain}{}\end{DoxyParamCaption})}
+
+
+
+Assignment operator of the \doxylink{classstat__tool_1_1Chain}{Chain} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chain} & reference on a \doxylink{classstat__tool_1_1Chain}{Chain} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1Chain}{Chain} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Chain_a2eaff8480d05756c424bd439c3696278}\index{stat\_tool::Chain@{stat\_tool::Chain}!parallel\_initial\_state@{parallel\_initial\_state}}
+\index{parallel\_initial\_state@{parallel\_initial\_state}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{parallel\_initial\_state()}{parallel\_initial\_state()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a2eaff8480d05756c424bd439c3696278} 
+bool stat\+\_\+tool\+::\+Chain\+::parallel\+\_\+initial\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Computation of the number of initial states in parallel (clustering structure). 
+
+\Hypertarget{classstat__tool_1_1Chain_afb82eeda1401ace14f8e6392abe9d613}\index{stat\_tool::Chain@{stat\_tool::Chain}!parameter\_copy@{parameter\_copy}}
+\index{parameter\_copy@{parameter\_copy}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{parameter\_copy()}{parameter\_copy()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_afb82eeda1401ace14f8e6392abe9d613} 
+void stat\+\_\+tool\+::\+Chain\+::parameter\+\_\+copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&}]{chain}{}\end{DoxyParamCaption})}
+
+
+
+Copy of Markov chain parameters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chain} & reference on a \doxylink{classstat__tool_1_1Chain}{Chain} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_a564b28178894084c45c73c804d339cd4}\index{stat\_tool::Chain@{stat\_tool::Chain}!parsing@{parsing}}
+\index{parsing@{parsing}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{parsing()}{parsing()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a564b28178894084c45c73c804d339cd4} 
+\mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::parsing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{ifstream \&}]{in\+\_\+file}{, }\item[{int \&}]{line}{, }\item[{\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}}}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Analysis of the format of a \doxylink{classstat__tool_1_1Chain}{Chain} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em in\+\_\+file} & stream, \\
+\hline
+\mbox{\texttt{ in}}  & {\em line} & reference on the file line index, \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & process type (ORDINARY/\+EQUILIBRIUM).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1Chain}{Chain} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Chain_ac3ce9d294c6062f48ab0d21c501591cd}\index{stat\_tool::Chain@{stat\_tool::Chain}!probability\_accessibility\_computation@{probability\_accessibility\_computation}}
+\index{probability\_accessibility\_computation@{probability\_accessibility\_computation}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{probability\_accessibility\_computation()}{probability\_accessibility\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ac3ce9d294c6062f48ab0d21c501591cd} 
+void stat\+\_\+tool\+::\+Chain\+::probability\+\_\+accessibility\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Computation of the accessibility of Markov chain states (probabilistic approach). 
+
+\Hypertarget{classstat__tool_1_1Chain_a5fd4ced6da0ff7731e418320f387a205}\index{stat\_tool::Chain@{stat\_tool::Chain}!remove@{remove}}
+\index{remove@{remove}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a5fd4ced6da0ff7731e418320f387a205} 
+void stat\+\_\+tool\+::\+Chain\+::remove (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruction of the data members of a \doxylink{classstat__tool_1_1Chain}{Chain} object. 
+
+\Hypertarget{classstat__tool_1_1Chain_ab428d5b2f48bd4fe70fd346ef0be4073}\index{stat\_tool::Chain@{stat\_tool::Chain}!remove\_cumul@{remove\_cumul}}
+\index{remove\_cumul@{remove\_cumul}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{remove\_cumul()}{remove\_cumul()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ab428d5b2f48bd4fe70fd346ef0be4073} 
+void stat\+\_\+tool\+::\+Chain\+::remove\+\_\+cumul (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruction of the cumulative initial and transition distribution functions of a \doxylink{classstat__tool_1_1Chain}{Chain} object. 
+
+\Hypertarget{classstat__tool_1_1Chain_a6a2c52fbc7dea131e0954d5f5a26f735}\index{stat\_tool::Chain@{stat\_tool::Chain}!spreadsheet\_print@{spreadsheet\_print}}
+\index{spreadsheet\_print@{spreadsheet\_print}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{spreadsheet\_print()}{spreadsheet\_print()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a6a2c52fbc7dea131e0954d5f5a26f735} 
+ostream \& stat\+\_\+tool\+::\+Chain\+::spreadsheet\+\_\+print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{}\end{DoxyParamCaption}) const}
+
+
+
+Writing of a \doxylink{classstat__tool_1_1Chain}{Chain} object at the spreadsheet format. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em os} & stream. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Chain_a0f7ea7f78625c2c38fc4bc433a8da22c}\index{stat\_tool::Chain@{stat\_tool::Chain}!strongly\_connected\_component\_research@{strongly\_connected\_component\_research}}
+\index{strongly\_connected\_component\_research@{strongly\_connected\_component\_research}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{strongly\_connected\_component\_research()}{strongly\_connected\_component\_research()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a0f7ea7f78625c2c38fc4bc433a8da22c} 
+bool stat\+\_\+tool\+::\+Chain\+::strongly\+\_\+connected\+\_\+component\+\_\+research (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{ilogic\+\_\+transition}{ = {\ttfamily NULL}}\end{DoxyParamCaption}) const}
+
+
+
+Determination of the strongly connected components of a Markov chain. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em ilogic\+\_\+transition} & matrix of possible transitions between states.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error status. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Chain_a73c2b6491391045f22a517c330f179d5}\index{stat\_tool::Chain@{stat\_tool::Chain}!thresholding@{thresholding}}
+\index{thresholding@{thresholding}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{thresholding()}{thresholding()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a73c2b6491391045f22a517c330f179d5} 
+void stat\+\_\+tool\+::\+Chain\+::thresholding (\begin{DoxyParamCaption}\item[{double}]{min\+\_\+probability}{, }\item[{bool}]{semi\+\_\+markov}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+Application of a threshold on the Markov chain parameters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em min\+\_\+probability} & minimum probability, \\
+\hline
+\mbox{\texttt{ in}}  & {\em semi\+\_\+markov} & flag semi-\/\+Markov chain. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classstat__tool_1_1Chain_a19e10050927d366bf827b374e10818d9}\index{stat\_tool::Chain@{stat\_tool::Chain}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a19e10050927d366bf827b374e10818d9} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&}]{chain}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classstat__tool_1_1Chain_a32b6716d0b8f1eb4e71930c8e79c97e0}\index{stat\_tool::Chain@{stat\_tool::Chain}!accessibility@{accessibility}}
+\index{accessibility@{accessibility}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{accessibility}{accessibility}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a32b6716d0b8f1eb4e71930c8e79c97e0} 
+bool\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::accessibility}
+
+
+
+state accessibility matrix 
+
+\Hypertarget{classstat__tool_1_1Chain_a74127874d7a50bef2475c92ed84324ab}\index{stat\_tool::Chain@{stat\_tool::Chain}!component@{component}}
+\index{component@{component}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{component}{component}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a74127874d7a50bef2475c92ed84324ab} 
+int\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::component}
+
+
+
+classes 
+
+\Hypertarget{classstat__tool_1_1Chain_ac0b3945c83dbde7f37b8351354a744fc}\index{stat\_tool::Chain@{stat\_tool::Chain}!component\_nb\_state@{component\_nb\_state}}
+\index{component\_nb\_state@{component\_nb\_state}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{component\_nb\_state}{component\_nb\_state}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ac0b3945c83dbde7f37b8351354a744fc} 
+int\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::component\+\_\+nb\+\_\+state}
+
+
+
+numbers of states per class 
+
+\Hypertarget{classstat__tool_1_1Chain_a302bd895ef75ba79036ecd916deb113e}\index{stat\_tool::Chain@{stat\_tool::Chain}!cumul\_initial@{cumul\_initial}}
+\index{cumul\_initial@{cumul\_initial}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{cumul\_initial}{cumul\_initial}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a302bd895ef75ba79036ecd916deb113e} 
+double\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::cumul\+\_\+initial}
+
+
+
+cumulative initial distribution function 
+
+\Hypertarget{classstat__tool_1_1Chain_a3a93f35cf2bd9cb3f5d795fcd97c2080}\index{stat\_tool::Chain@{stat\_tool::Chain}!cumul\_transition@{cumul\_transition}}
+\index{cumul\_transition@{cumul\_transition}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{cumul\_transition}{cumul\_transition}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a3a93f35cf2bd9cb3f5d795fcd97c2080} 
+double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::cumul\+\_\+transition}
+
+
+
+cumulative transition distribution functions 
+
+\Hypertarget{classstat__tool_1_1Chain_a7cd5ac2a8a9b1e739ea2bb0fbfa0c1c8}\index{stat\_tool::Chain@{stat\_tool::Chain}!initial@{initial}}
+\index{initial@{initial}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{initial}{initial}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a7cd5ac2a8a9b1e739ea2bb0fbfa0c1c8} 
+double\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::initial}
+
+
+
+initial probabilities 
+
+\Hypertarget{classstat__tool_1_1Chain_a37a875fb7c90f86cb9b72f2a77a30742}\index{stat\_tool::Chain@{stat\_tool::Chain}!nb\_component@{nb\_component}}
+\index{nb\_component@{nb\_component}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{nb\_component}{nb\_component}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a37a875fb7c90f86cb9b72f2a77a30742} 
+int stat\+\_\+tool\+::\+Chain\+::nb\+\_\+component}
+
+
+
+number of classes 
+
+\Hypertarget{classstat__tool_1_1Chain_ad123535815e2e4f9310e039c2bb305e7}\index{stat\_tool::Chain@{stat\_tool::Chain}!nb\_row@{nb\_row}}
+\index{nb\_row@{nb\_row}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{nb\_row}{nb\_row}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ad123535815e2e4f9310e039c2bb305e7} 
+int stat\+\_\+tool\+::\+Chain\+::nb\+\_\+row}
+
+
+
+number of rows of the transition probability matrix 
+
+\Hypertarget{classstat__tool_1_1Chain_acc34af02c00c2467b58647c4c23885b9}\index{stat\_tool::Chain@{stat\_tool::Chain}!nb\_state@{nb\_state}}
+\index{nb\_state@{nb\_state}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{nb\_state}{nb\_state}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_acc34af02c00c2467b58647c4c23885b9} 
+int stat\+\_\+tool\+::\+Chain\+::nb\+\_\+state}
+
+
+
+number of states 
+
+\Hypertarget{classstat__tool_1_1Chain_ab3c70734391e45bcd78b5f6490b4bb96}\index{stat\_tool::Chain@{stat\_tool::Chain}!stype@{stype}}
+\index{stype@{stype}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{stype}{stype}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_ab3c70734391e45bcd78b5f6490b4bb96} 
+\mbox{\hyperlink{namespacestat__tool_a1be004130f6e95c1e08f73d470a83629}{state\+\_\+type}}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::stype}
+
+
+
+state types (TRANSIENT/\+RECURRENT/\+ABSORBING) 
+
+\Hypertarget{classstat__tool_1_1Chain_a96445ebc728cd22d8a7fb1b26277bd16}\index{stat\_tool::Chain@{stat\_tool::Chain}!transition@{transition}}
+\index{transition@{transition}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{transition}{transition}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a96445ebc728cd22d8a7fb1b26277bd16} 
+double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Chain\+::transition}
+
+
+
+transition probability matrix 
+
+\Hypertarget{classstat__tool_1_1Chain_a0d9ab1c8bb7e547e65105272f11b718a}\index{stat\_tool::Chain@{stat\_tool::Chain}!type@{type}}
+\index{type@{type}!stat\_tool::Chain@{stat\_tool::Chain}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Chain_a0d9ab1c8bb7e547e65105272f11b718a} 
+\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}} stat\+\_\+tool\+::\+Chain\+::type}
+
+
+
+process type (ORDINARY/\+EQUILIBRIUM) 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{markovian_8h}{markovian.\+h}}\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{chain_8cpp}{chain.\+cpp}}\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{chain__algorithms_8cpp}{chain\+\_\+algorithms.\+cpp}}\end{DoxyCompactItemize}

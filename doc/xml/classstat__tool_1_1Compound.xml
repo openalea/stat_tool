@@ -1,0 +1,1249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1Compound" kind="class" language="C++" prot="public">
+    <compoundname>stat_tool::Compound</compoundname>
+    <basecompoundref refid="classstat__tool_1_1StatInterface" prot="public" virt="non-virtual">stat_tool::StatInterface</basecompoundref>
+    <basecompoundref refid="classstat__tool_1_1Distribution" prot="public" virt="non-virtual">stat_tool::Distribution</basecompoundref>
+    <includes refid="compound_8h" local="no">compound.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classstat__tool_1_1Compound_1a4b140c2efdbf49a5c39265992d544d7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class FrequencyDistribution</definition>
+        <argsstring></argsstring>
+        <name>FrequencyDistribution</name>
+        <qualifiedname>stat_tool::Compound::FrequencyDistribution</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="81" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class CompoundData</definition>
+        <argsstring></argsstring>
+        <name>CompoundData</name>
+        <qualifiedname>stat_tool::Compound::CompoundData</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="82" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classstat__tool_1_1Compound_1ab256b34650cdc4ab9769b476bee54b16" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Compound &amp;compound)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>stat_tool::Compound::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> &amp;</type>
+          <declname>compound</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="84" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="84" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstat__tool_1_1Compound_1a67eec9441fe46ac494d2c56900123f54" prot="private" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> *</type>
+        <definition>CompoundData* stat_tool::Compound::compound_data</definition>
+        <argsstring></argsstring>
+        <name>compound_data</name>
+        <qualifiedname>stat_tool::Compound::compound_data</qualifiedname>
+        <briefdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> object </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="89" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Compound_1a4b2ee5b2c2c8e9ebbc49c3b733afed71" prot="private" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+        <definition>DiscreteParametric* stat_tool::Compound::sum_distribution</definition>
+        <argsstring></argsstring>
+        <name>sum_distribution</name>
+        <qualifiedname>stat_tool::Compound::sum_distribution</qualifiedname>
+        <briefdescription>
+<para>sum distribution </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="90" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Compound_1ab4249549fcd38132ba71d5d81ab6b664" prot="private" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+        <definition>DiscreteParametric* stat_tool::Compound::distribution</definition>
+        <argsstring></argsstring>
+        <name>distribution</name>
+        <qualifiedname>stat_tool::Compound::distribution</qualifiedname>
+        <briefdescription>
+<para>basis distribution </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="91" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a01487ae5ed144aa6731f835c4e7f4d96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Compound::copy</definition>
+        <argsstring>(const Compound &amp;compound, bool data_flag=true)</argsstring>
+        <name>copy</name>
+        <qualifiedname>stat_tool::Compound::copy</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> &amp;</type>
+          <declname>compound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>data_flag</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Copy of a <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">compound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag copy of the included <ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="93" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="157" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a4afe9fdbc26280492625d6711ca1e35a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; stat_tool::Compound::ascii_write</definition>
+        <argsstring>(std::ostream &amp;os, const CompoundData *compound_histo, bool exhaustive, bool file_flag) const</argsstring>
+        <name>ascii_write</name>
+        <qualifiedname>stat_tool::Compound::ascii_write</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> *</type>
+          <declname>compound_histo</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exhaustive</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>file_flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="95" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a4fe36eeb27a7917c6e029461ba8b35f2" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; stat_tool::Compound::spreadsheet_write</definition>
+        <argsstring>(std::ostream &amp;os, const CompoundData *compound_histo) const</argsstring>
+        <name>spreadsheet_write</name>
+        <qualifiedname>stat_tool::Compound::spreadsheet_write</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> *</type>
+          <declname>compound_histo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="97" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1ad9a62fd501b86286efb1e61f3044271b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::Compound::plot_write</definition>
+        <argsstring>(const char *prefix, const char *title, const CompoundData *compound_histo) const</argsstring>
+        <name>plot_write</name>
+        <qualifiedname>stat_tool::Compound::plot_write</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> *</type>
+          <declname>compound_histo</declname>
+        </param>
+        <briefdescription>
+<para>Plot of a compound distribution and the associated frequency distributions using Gnuplot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file prefix, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>figure title, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">compound_histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>error status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="98" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="782" bodyend="966"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1ab4579edb715aee6bb5956b0919df70de" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
+        <definition>MultiPlotSet * stat_tool::Compound::get_plotable</definition>
+        <argsstring>(const CompoundData *compound_histo) const</argsstring>
+        <name>get_plotable</name>
+        <qualifiedname>stat_tool::Compound::get_plotable</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> *</type>
+          <declname>compound_histo</declname>
+        </param>
+        <briefdescription>
+<para>Plot of a compound distribution and the associated frequency distributions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">compound_histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="100" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="1007" bodyend="1208"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a734ed1d2bff74d66d581de432fcc094b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Compound::computation</definition>
+        <argsstring>(DiscreteParametric **power_dist, int min_nb_value, double cumul_threshold, bool sum_flag, bool dist_flag)</argsstring>
+        <name>computation</name>
+        <qualifiedname>stat_tool::Compound::computation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> **</type>
+          <declname>power_dist</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_nb_value</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sum_flag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dist_flag</declname>
+        </param>
+        <briefdescription>
+<para>Computation of a compound distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">power_dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the convolution powers of the the basis distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_nb_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sum_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag for the computation of the sum distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dist_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag for the computation of the basis distribution. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="102" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound_algorithms.cpp" bodystart="150" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a220a90aa31e9346a4b44db39355372a4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Compound::expectation_step</definition>
+        <argsstring>(const FrequencyDistribution &amp;histo, DiscreteParametric **power_dist, Reestimation&lt; double &gt; *sum_reestim, Reestimation&lt; double &gt; *reestim) const</argsstring>
+        <name>expectation_step</name>
+        <qualifiedname>stat_tool::Compound::expectation_step</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> **</type>
+          <declname>power_dist</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; double &gt; *</type>
+          <declname>sum_reestim</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; double &gt; *</type>
+          <declname>reestim</declname>
+        </param>
+        <briefdescription>
+<para>Computation of reestimation quantities (E-step of the EM algorithm). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">power_dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the convolution powers of the basis distribution </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sum_reestim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the reestimation quantities of the sum distribution </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reestim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the reestimation quantities of the basis distribution. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="104" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound_algorithms.cpp" bodystart="256" bodyend="379"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a1b9193218a519079e2cb5c07fc326e63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Compound::Compound</definition>
+        <argsstring>()</argsstring>
+        <name>Compound</name>
+        <qualifiedname>stat_tool::Compound::Compound</qualifiedname>
+        <briefdescription>
+<para>Default constructor of the <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="109" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a41959799028cbebb5ad4bee51efae0a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Compound::Compound</definition>
+        <argsstring>(const DiscreteParametric &amp;sum_dist, const DiscreteParametric &amp;dist, double cumul_threshold=COMPOUND_THRESHOLD)</argsstring>
+        <name>Compound</name>
+        <qualifiedname>stat_tool::Compound::Compound</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <declname>sum_dist</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+          <defval><ref refid="namespacestat__tool_1a399efc20ca37b961f5ec1ae4e125e1a5" kindref="member">COMPOUND_THRESHOLD</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sum_dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on the sum distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on the basis distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="110" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="83" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1ab95280943ad20ee57f67956f1572bf8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Compound::Compound</definition>
+        <argsstring>(const DiscreteParametric &amp;sum_dist, const DiscreteParametric &amp;dist, compound_distribution type)</argsstring>
+        <name>Compound</name>
+        <qualifiedname>stat_tool::Compound::Compound</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <declname>sum_dist</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1add3c8809830c5b44dbc3e2e3bed80698" kindref="member">compound_distribution</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sum_dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on the sum distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on the basis distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unknown distribution type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="112" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="115" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a32fbf06349802346144464feb5af00f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Compound::Compound</definition>
+        <argsstring>(const Compound &amp;compound, bool data_flag=true)</argsstring>
+        <name>Compound</name>
+        <qualifiedname>stat_tool::Compound::Compound</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> &amp;</type>
+          <declname>compound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>data_flag</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="114" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="114" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1affb4b19d0cdc39c79b50b4c29b6637a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Compound::~Compound</definition>
+        <argsstring>()</argsstring>
+        <name>~Compound</name>
+        <qualifiedname>stat_tool::Compound::~Compound</qualifiedname>
+        <briefdescription>
+<para>Destructor of the <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="116" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="178" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1aae55e3a917342624b97ff9985a6f13e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> &amp;</type>
+        <definition>Compound &amp; stat_tool::Compound::operator=</definition>
+        <argsstring>(const Compound &amp;compound)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>stat_tool::Compound::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> &amp;</type>
+          <declname>compound</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator of the <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">compound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="117" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="198" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1aaf16c6e262cb56193d69f9009d9f879f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> *</type>
+        <definition>CompoundData * stat_tool::Compound::extract_data</definition>
+        <argsstring>(StatError &amp;error) const</argsstring>
+        <name>extract_data</name>
+        <qualifiedname>stat_tool::Compound::extract_data</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+<para>Extraction of the data part of a <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="119" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="228" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1ae8a793f95299a5f4839db934549e8cdb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Compound::line_write</definition>
+        <argsstring>(std::ostream &amp;os) const</argsstring>
+        <name>line_write</name>
+        <qualifiedname>stat_tool::Compound::line_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1a7db89a0e0500b15ff2b14022d6a12a5c">line_write</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Writing on a single line of a <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="124" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="419" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1aa4849c89515b55cdabdecc845695ada8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; stat_tool::Compound::ascii_write</definition>
+        <argsstring>(std::ostream &amp;os, bool exhaustive=false) const</argsstring>
+        <name>ascii_write</name>
+        <qualifiedname>stat_tool::Compound::ascii_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1a9cc8c361520374ddcfbe45011613266c">ascii_write</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exhaustive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="126" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a6c4ab290a6518348cefd115244d3adf8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::Compound::ascii_write</definition>
+        <argsstring>(StatError &amp;error, const std::string path, bool exhaustive=false) const</argsstring>
+        <name>ascii_write</name>
+        <qualifiedname>stat_tool::Compound::ascii_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1a7ebddce7b16070eee648eb888b8c5ec4">ascii_write</reimplements>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exhaustive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="127" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1aabaca0a1b7f53f8087647628cf9c2e29" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::Compound::spreadsheet_write</definition>
+        <argsstring>(StatError &amp;error, const std::string path) const</argsstring>
+        <name>spreadsheet_write</name>
+        <qualifiedname>stat_tool::Compound::spreadsheet_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1abcc9eead01dd45344d047916210cfe8c">spreadsheet_write</reimplements>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="128" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1ac916dd4060f49cd6493e5e3dad17cb48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::Compound::plot_write</definition>
+        <argsstring>(StatError &amp;error, const char *prefix, const char *title=NULL) const</argsstring>
+        <name>plot_write</name>
+        <qualifiedname>stat_tool::Compound::plot_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1a22886aaa72572ca234cc5f27a8b25012">plot_write</reimplements>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>title</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Plot of a <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object using Gnuplot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file prefix, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>figure title.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>error status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="129" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="981" bodyend="994"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1af0baae4012ae3bb817cbd27d1f072905" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
+        <definition>MultiPlotSet * stat_tool::Compound::get_plotable</definition>
+        <argsstring>() const</argsstring>
+        <name>get_plotable</name>
+        <qualifiedname>stat_tool::Compound::get_plotable</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1a9210a878974973ea3a4a0cf209258a5e">get_plotable</reimplements>
+        <briefdescription>
+<para>Plot of a <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="130" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="1219" bodyend="1223"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a6040357b1de93ce29665ac75b07c80eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Compound::computation</definition>
+        <argsstring>(int min_nb_value=1, double cumul_threshold=COMPOUND_THRESHOLD, bool sum_flag=true, bool dist_flag=true)</argsstring>
+        <name>computation</name>
+        <qualifiedname>stat_tool::Compound::computation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>min_nb_value</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+          <defval><ref refid="namespacestat__tool_1a399efc20ca37b961f5ec1ae4e125e1a5" kindref="member">COMPOUND_THRESHOLD</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sum_flag</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>dist_flag</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Computation of a compound distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">min_nb_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sum_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag for the computation of the sum distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dist_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag for the computation of the basis distribution. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="132" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound_algorithms.cpp" bodystart="62" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a3e0b8ce852b483822cfa656abfd65e48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> *</type>
+        <definition>CompoundData * stat_tool::Compound::simulation</definition>
+        <argsstring>(StatError &amp;error, int nb_element) const</argsstring>
+        <name>simulation</name>
+        <qualifiedname>stat_tool::Compound::simulation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_element</declname>
+        </param>
+        <briefdescription>
+<para>Simulation using a compound distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nb_element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sample size.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sample generated by a compound distribution. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="135" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound_algorithms.cpp" bodystart="848" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1ab4e7902e8fd909c3c3380d2c8d29e060" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1CompoundData" kindref="compound">CompoundData</ref> *</type>
+        <definition>CompoundData * stat_tool::Compound::get_compound_data</definition>
+        <argsstring>() const</argsstring>
+        <name>get_compound_data</name>
+        <qualifiedname>stat_tool::Compound::get_compound_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="139" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a7226f4cc223cb52eebf84ddbffe743ce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+        <definition>DiscreteParametric * stat_tool::Compound::get_sum_distribution</definition>
+        <argsstring>() const</argsstring>
+        <name>get_sum_distribution</name>
+        <qualifiedname>stat_tool::Compound::get_sum_distribution</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="140" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1afb95cd155fa061a961f4a6cd99a419c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+        <definition>DiscreteParametric * stat_tool::Compound::get_distribution</definition>
+        <argsstring>() const</argsstring>
+        <name>get_distribution</name>
+        <qualifiedname>stat_tool::Compound::get_distribution</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="141" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classstat__tool_1_1Compound_1a21115c14402a3c0878dd0622ea2ae69d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> *</type>
+        <definition>Compound * stat_tool::Compound::ascii_read</definition>
+        <argsstring>(StatError &amp;error, const std::string path, double cumul_threshold=COMPOUND_THRESHOLD)</argsstring>
+        <name>ascii_read</name>
+        <qualifiedname>stat_tool::Compound::ascii_read</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+          <defval><ref refid="namespacestat__tool_1a399efc20ca37b961f5ec1ae4e125e1a5" kindref="member">COMPOUND_THRESHOLD</ref></defval>
+        </param>
+        <briefdescription>
+<para>Construction of a <ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object from a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file path, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="121" column="21" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp" bodystart="262" bodyend="408"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> distribution. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>stat_tool::Compound</label>
+        <link refid="classstat__tool_1_1Compound"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stat_tool::Distribution</label>
+        <link refid="classstat__tool_1_1Distribution"/>
+      </node>
+      <node id="2">
+        <label>stat_tool::StatInterface</label>
+        <link refid="classstat__tool_1_1StatInterface"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>stat_tool::Compound</label>
+        <link refid="classstat__tool_1_1Compound"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>compound_data</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>distribution</edgelabel>
+          <edgelabel>sum_distribution</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stat_tool::CompoundData</label>
+        <link refid="classstat__tool_1_1CompoundData"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>compound</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>frequency_distribution</edgelabel>
+          <edgelabel>sum_frequency_distribution</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stat_tool::DiscreteParametric</label>
+        <link refid="classstat__tool_1_1DiscreteParametric"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stat_tool::Distribution</label>
+        <link refid="classstat__tool_1_1Distribution"/>
+      </node>
+      <node id="5">
+        <label>stat_tool::FrequencyDistribution</label>
+        <link refid="classstat__tool_1_1FrequencyDistribution"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stat_tool::Reestimation&lt; int &gt;</label>
+        <link refid="classstat__tool_1_1Reestimation"/>
+      </node>
+      <node id="2">
+        <label>stat_tool::StatInterface</label>
+        <link refid="classstat__tool_1_1StatInterface"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" line="79" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h" bodystart="79" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1Distribution_1ae52fd301bc94d727c55a105d9636fc56" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>alloc_nb_value</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a660698714309ff3eeed93bd0852caa74" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>ascii_characteristic_print</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ac0f22cfe15b7b4d31654d89223761e33" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>ascii_print</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a18988b7cfce52764170b2e8528ba8124" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>ascii_print</name></member>
+      <member refid="classstat__tool_1_1Compound_1a21115c14402a3c0878dd0622ea2ae69d" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>ascii_read</name></member>
+      <member refid="classstat__tool_1_1Compound_1a4afe9fdbc26280492625d6711ca1e35a" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1Compound_1aa4849c89515b55cdabdecc845695ada8" prot="public" virt="virtual"><scope>stat_tool::Compound</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1Compound_1a6c4ab290a6518348cefd115244d3adf8" prot="public" virt="virtual"><scope>stat_tool::Compound</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1StatInterface_1a7571e2adbbe004af3ece0f623c69cef6" prot="public" virt="non-virtual" ambiguityscope="stat_tool::StatInterface::"><scope>stat_tool::Compound</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a55b045a0fb6aeedddc61b235fe9927f0" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>chi2_degree_of_freedom</name></member>
+      <member refid="classstat__tool_1_1Distribution_1afa053b3b7b5e43fff71afb90bbfd4476" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>chi2_fit</name></member>
+      <member refid="classstat__tool_1_1Distribution_1abb49de7f39fcaa8ae8975ab586ad5665" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>chi2_value_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a98c386aecfb6e881a53b56b7399b1331" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>complement</name></member>
+      <member refid="classstat__tool_1_1Compound_1a1b9193218a519079e2cb5c07fc326e63" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>Compound</name></member>
+      <member refid="classstat__tool_1_1Compound_1a41959799028cbebb5ad4bee51efae0a7" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>Compound</name></member>
+      <member refid="classstat__tool_1_1Compound_1ab95280943ad20ee57f67956f1572bf8a" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>Compound</name></member>
+      <member refid="classstat__tool_1_1Compound_1a32fbf06349802346144464feb5af00f9" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>Compound</name></member>
+      <member refid="classstat__tool_1_1Compound_1a67eec9441fe46ac494d2c56900123f54" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>compound_data</name></member>
+      <member refid="classstat__tool_1_1Compound_1aec8f5a62a32182a70a9424f30974e97f" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>CompoundData</name></member>
+      <member refid="classstat__tool_1_1Compound_1a734ed1d2bff74d66d581de432fcc094b" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>computation</name></member>
+      <member refid="classstat__tool_1_1Compound_1a6040357b1de93ce29665ac75b07c80eb" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a37240ce09392a27fda2295207f01dfcd" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>concentration_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ac17129541196453911bc78b8c702a648" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>concentration_function_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a5ab679ef4473022ff9a06cf1b21da333" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>convolution</name></member>
+      <member refid="classstat__tool_1_1Compound_1a01487ae5ed144aa6731f835c4e7f4d96" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>copy</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a1c9cd8f86c02ba0eb6b5cbe257b14b18" prot="public" virt="non-virtual" ambiguityscope="stat_tool::Distribution::"><scope>stat_tool::Compound</scope><name>copy</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a3744419eb8ba39f1fb02998297673824" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>cumul</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a6e954534b65518d0c58a173878151f33" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>cumul_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a7854c3e83af17605b6f1b2e08191a883" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>Distribution</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a9fa7e3d5d7dac525227c16a119dcc96f" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>Distribution</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a6f630eea7dc2b028f3a75c817dc1bbf7" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>Distribution</name></member>
+      <member refid="classstat__tool_1_1Distribution_1adb7dd4adf9fd9f3b68268e085c80d635" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>Distribution</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ab829f5277a389cba2a3f48b299602e40" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>Distribution</name></member>
+      <member refid="classstat__tool_1_1Compound_1ab4249549fcd38132ba71d5d81ab6b664" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>distribution</name></member>
+      <member refid="classstat__tool_1_1Distribution_1acf23daaa305165b02be680e5c5b33cc0" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>equal_size_copy</name></member>
+      <member refid="classstat__tool_1_1Compound_1a220a90aa31e9346a4b44db39355372a4" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>expectation_step</name></member>
+      <member refid="classstat__tool_1_1Compound_1aaf16c6e262cb56193d69f9009d9f879f" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>extract_data</name></member>
+      <member refid="classstat__tool_1_1Distribution_1aeb34d3326be794a94a0ede04f89419d5" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>first_difference_norm_computation</name></member>
+      <member refid="classstat__tool_1_1Compound_1a4b140c2efdbf49a5c39265992d544d7f" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>FrequencyDistribution</name></member>
+      <member refid="classstat__tool_1_1Compound_1ab4e7902e8fd909c3c3380d2c8d29e060" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>get_compound_data</name></member>
+      <member refid="classstat__tool_1_1Compound_1afb95cd155fa061a961f4a6cd99a419c3" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>get_distribution</name></member>
+      <member refid="classstat__tool_1_1Compound_1ab4579edb715aee6bb5956b0919df70de" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>get_plotable</name></member>
+      <member refid="classstat__tool_1_1Compound_1af0baae4012ae3bb817cbd27d1f072905" prot="public" virt="virtual"><scope>stat_tool::Compound</scope><name>get_plotable</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a5715938ecb197092a2c6df4009275bd0" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>get_plotable_distributions</name></member>
+      <member refid="classstat__tool_1_1Compound_1a7226f4cc223cb52eebf84ddbffe743ce" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>get_sum_distribution</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a0095a6fd594d7fe68dc3a12510fd7b45" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>information_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1aa14c096e39efe0854a98decbfcf4caf0" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>init</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a4b3130e650499487fbfadcce9d94cb98" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>kurtosis_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ac751ac51d2ff38df5c9ae0c5fbb29c36" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>likelihood_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ae4b56029d15e2ca1f9c4588262562fab" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>likelihood_computation</name></member>
+      <member refid="classstat__tool_1_1Compound_1ae8a793f95299a5f4839db934549e8cdb" prot="public" virt="virtual"><scope>stat_tool::Compound</scope><name>line_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a35d0e8af0079cfa735b4db46e669f226" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>log_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a54c4b0ff3c7d26a3a2e8851cccf7c2eb" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>mass</name></member>
+      <member refid="classstat__tool_1_1Distribution_1aa084196be5933a75c01ca60d7ee1286d" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>mass_copy</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a5d87a49ba8b2729cdb8301777282f75d" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>max</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ae137e701c67e5a037abfd9368881284e" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>max_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ac9f097107435a327a7b6e97f4473d8bc" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>mean</name></member>
+      <member refid="classstat__tool_1_1Distribution_1af07d6c5e0876993834b04c953e973e8a" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>mean_absolute_deviation_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a66e26d6c818f2ee584780c4f963ac1d2" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>mean_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1aed677240a3f4564d7289709039664304" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>mode_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ad462f85f1beecf86039b57e80da1bee8" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>nb_parameter</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a42619767a2549c8a459e13460acbeb1d" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>nb_value</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a8ec2e5a37ce18f58d7ce8d08961b4035" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>nb_value_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a012ec72ff1f125e77fbeb4b0ebd433cb" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>normalization_copy</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a5fa29f0fdf9c1da11fdac45ebf1658c4" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>offset</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a080436af6bb7198cedd9906593f3ce8a" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>offset_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a1a91d20813a42e0e24cf62ee7c16084b" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>operator!=</name></member>
+      <member refid="classstat__tool_1_1Compound_1ab256b34650cdc4ab9769b476bee54b16" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classstat__tool_1_1Compound_1aae55e3a917342624b97ff9985a6f13e9" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>operator=</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ab36c72a8d011579f0e25d1fd8f43a935" prot="public" virt="non-virtual" ambiguityscope="stat_tool::Distribution::"><scope>stat_tool::Compound</scope><name>operator=</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a64b3c73fda1903cdb4645b9ee7903cc0" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>operator==</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a4c8c21c7535a345f47884bd76d6feea1" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>overlap_distance_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1aba0437a71b12a7a17b7f4c499c24147f" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>penalty_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a47e61fcef8b3fe5d8117655d6b62c0a5" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plot_nb_value_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a59ed29a5a2c0a6776284db9058322129" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plot_print</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ad7c8c8fe1bd1aac6609acb78e0116771" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plot_print</name></member>
+      <member refid="classstat__tool_1_1Distribution_1af73fb2acd25d3d3faca228877543fa76" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plot_print</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a2e8ac191150bce06ee493bf2db5655f1" prot="public" virt="virtual"><scope>stat_tool::Compound</scope><name>plot_title_print</name></member>
+      <member refid="classstat__tool_1_1Compound_1ad9a62fd501b86286efb1e61f3044271b" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plot_write</name></member>
+      <member refid="classstat__tool_1_1Compound_1ac916dd4060f49cd6493e5e3dad17cb48" prot="public" virt="virtual"><scope>stat_tool::Compound</scope><name>plot_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1abe39a1653aacaae9958c52b62a914660" prot="public" virt="non-virtual" ambiguityscope="stat_tool::Distribution::"><scope>stat_tool::Compound</scope><name>plot_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a8d60d8e7fefaf3750e8fd323ef2ead58" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plotable_concentration_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ab60f9177eaf173c5a17b6d3c680ad658" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plotable_cumul_matching_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a83dc3a863a3f1254d1912b6d42d34566" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plotable_cumul_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1abe8ee9eb1633e1dca92eba8163df1d94" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plotable_mass_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a9fbb7b596c0c9935a3193559932dad7c" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>plotable_survivor_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1af3483213cd6470fcd4cb8b5e0a224864" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>print</name></member>
+      <member refid="classstat__tool_1_1Distribution_1aaa79341a81acb865cabef6e0c6d6e65d" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>quantile_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1afe626404b7ad3cc9924b28b3f0c425fe" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>second_difference_norm_computation</name></member>
+      <member refid="classstat__tool_1_1Compound_1a3e0b8ce852b483822cfa656abfd65e48" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>simulation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a17bcef28071eb1f38fdae425cefab837" prot="public" virt="non-virtual" ambiguityscope="stat_tool::Distribution::"><scope>stat_tool::Compound</scope><name>simulation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ab8d5f9739980d7f99b0816cd119f6176" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>skewness_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a9a03e7a0b92c1036949500d01d6206bc" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>spreadsheet_characteristic_print</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a5b59fe600be6ab0e076d26dee7ed9104" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>spreadsheet_print</name></member>
+      <member refid="classstat__tool_1_1Distribution_1aa545e11b54a0d72f7d98e4872fa5b9db" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>spreadsheet_print</name></member>
+      <member refid="classstat__tool_1_1Compound_1a4fe36eeb27a7917c6e029461ba8b35f2" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>spreadsheet_write</name></member>
+      <member refid="classstat__tool_1_1Compound_1aabaca0a1b7f53f8087647628cf9c2e29" prot="public" virt="virtual"><scope>stat_tool::Compound</scope><name>spreadsheet_write</name></member>
+      <member refid="classstat__tool_1_1Compound_1a4b2ee5b2c2c8e9ebbc49c3b733afed71" prot="private" virt="non-virtual"><scope>stat_tool::Compound</scope><name>sum_distribution</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ae948c376214125bbaa6ffda63d12dc15" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>survival_ascii_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a74cfea6580d5e4f91c144aff35dd9e0d" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>survival_ascii_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ab15e99ae12cd879c5e26933ac8521afc" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>survival_ascii_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a52342a6f167d7d9ac3bc17e178efa01e" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>survival_get_plotable</name></member>
+      <member refid="classstat__tool_1_1Distribution_1ad3b16d36239f988428e8e6734cd3dcbf" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>survival_plot_print</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a4e55e28bbd7fb6f32f38b517a4c09f65" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>survival_plot_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a1aee857bafad68466b6865feda415a2e" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>survival_spreadsheet_write</name></member>
+      <member refid="classstat__tool_1_1Distribution_1aa46141263388eb67483253c1cce7a600" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>survivor_function_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a2cc9e697bd2481e58f99e5023955974c" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>survivor_likelihood_computation</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a4119771c4ed3f6460ec898c0193017d0" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>truncate</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a2e5b3e823cd802de57125202f3b6400b" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>variance</name></member>
+      <member refid="classstat__tool_1_1Distribution_1a7d87d6c96d64cc7fa91925b9c3c792f2" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>variance_computation</name></member>
+      <member refid="classstat__tool_1_1Compound_1affb4b19d0cdc39c79b50b4c29b6637a4" prot="public" virt="non-virtual"><scope>stat_tool::Compound</scope><name>~Compound</name></member>
+      <member refid="classstat__tool_1_1Distribution_1affba8e105ffc1ff8281d6eec41e5696e" prot="public" virt="virtual"><scope>stat_tool::Compound</scope><name>~Distribution</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

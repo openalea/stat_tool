@@ -1,0 +1,1890 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1Reestimation" kind="class" language="C++" prot="public">
+    <compoundname>stat_tool::Reestimation</compoundname>
+    <includes refid="reestimation_8h" local="no">reestimation.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Type</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Reestimation&lt; Type &gt;::nb_value</definition>
+        <argsstring></argsstring>
+        <name>nb_value</name>
+        <qualifiedname>stat_tool::Reestimation::nb_value</qualifiedname>
+        <briefdescription>
+<para>number of values from 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="100" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Reestimation_1a3c9100385ce84d920b066f92ae4b11d0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Reestimation&lt; Type &gt;::alloc_nb_value</definition>
+        <argsstring></argsstring>
+        <name>alloc_nb_value</name>
+        <qualifiedname>stat_tool::Reestimation::alloc_nb_value</qualifiedname>
+        <briefdescription>
+<para>number of allocated values </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="101" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Reestimation&lt; Type &gt;::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>stat_tool::Reestimation::offset</qualifiedname>
+        <briefdescription>
+<para>number of values of null frequencies from 0 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="102" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" prot="public" static="no" mutable="no">
+        <type>Type</type>
+        <definition>Type stat_tool::Reestimation&lt; Type &gt;::nb_element</definition>
+        <argsstring></argsstring>
+        <name>nb_element</name>
+        <qualifiedname>stat_tool::Reestimation::nb_element</qualifiedname>
+        <briefdescription>
+<para>sample size </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="103" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" prot="public" static="no" mutable="no">
+        <type>Type</type>
+        <definition>Type stat_tool::Reestimation&lt; Type &gt;::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <qualifiedname>stat_tool::Reestimation::max</qualifiedname>
+        <briefdescription>
+<para>maximum frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="104" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Reestimation_1a3487df5dc55a1bb225ad5195c5858a43" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::mean</definition>
+        <argsstring></argsstring>
+        <name>mean</name>
+        <qualifiedname>stat_tool::Reestimation::mean</qualifiedname>
+        <briefdescription>
+<para>mean </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="105" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Reestimation_1a72284881e04f61ff919c689b867c1c94" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::variance</definition>
+        <argsstring></argsstring>
+        <name>variance</name>
+        <qualifiedname>stat_tool::Reestimation::variance</qualifiedname>
+        <briefdescription>
+<para>variance </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="106" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" prot="public" static="no" mutable="no">
+        <type>Type *</type>
+        <definition>Type* stat_tool::Reestimation&lt; Type &gt;::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <qualifiedname>stat_tool::Reestimation::frequency</qualifiedname>
+        <briefdescription>
+<para>frequency for each value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="107" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classstat__tool_1_1Reestimation_1a6e2fc30ef2abd0bfa3da51bfdc075067" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Reestimation&lt; Type &gt; &amp;histo)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>stat_tool::Reestimation::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="95" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="95" bodyend="96"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::init</definition>
+        <argsstring>(int inb_value)</argsstring>
+        <name>init</name>
+        <qualifiedname>stat_tool::Reestimation::init</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inb_value</declname>
+        </param>
+        <briefdescription>
+<para>Construction of a <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inb_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of values from 0. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="109" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="71" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a7f8cef439c9fbb030ad1617c0c0adbbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::copy</definition>
+        <argsstring>(const Reestimation&lt; Type &gt; &amp;histo)</argsstring>
+        <name>copy</name>
+        <qualifiedname>stat_tool::Reestimation::copy</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+<para>Copy of a <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="110" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="106" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a273d5c1fb586a1cb592b1e09b7d60a80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Reestimation&lt; Type &gt;::Reestimation</definition>
+        <argsstring>(int inb_value=0)</argsstring>
+        <name>Reestimation</name>
+        <qualifiedname>stat_tool::Reestimation::Reestimation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inb_value</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="112" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="112" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a17016fb55336fb34da81bfcf87627372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Reestimation&lt; Type &gt;::Reestimation</definition>
+        <argsstring>(const Reestimation&lt; Type &gt; &amp;histo)</argsstring>
+        <name>Reestimation</name>
+        <qualifiedname>stat_tool::Reestimation::Reestimation</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+<para>Constructor by copy of the <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="114" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="148" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a73510d992415d37b36edd7bdfc265f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Reestimation&lt; Type &gt;::Reestimation</definition>
+        <argsstring>(int nb_histo, const Reestimation&lt; Type &gt; **histo)</argsstring>
+        <name>Reestimation</name>
+        <qualifiedname>stat_tool::Reestimation::Reestimation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nb_histo</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; **</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+<para>Constructor by merging of the <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nb_histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> objects, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> objects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="115" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="167" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a6b69afa59b26c3b2c4b9556866406b49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Reestimation&lt; Type &gt;::~Reestimation</definition>
+        <argsstring>()</argsstring>
+        <name>~Reestimation</name>
+        <qualifiedname>stat_tool::Reestimation::~Reestimation</qualifiedname>
+        <briefdescription>
+<para>Destructor of the <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="116" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="212" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1add69f0e734ab6d20a7bfd79f2481fe6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; &amp;</type>
+        <definition>Reestimation&lt; Type &gt; &amp; stat_tool::Reestimation&lt; Type &gt;::operator=</definition>
+        <argsstring>(const Reestimation&lt; Type &gt; &amp;histo)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>stat_tool::Reestimation::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator of the <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="117" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="232" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a459b3b4e77b93b109f5ce8410f2f87dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Reestimation&lt; Type &gt;::ascii_characteristic_print</definition>
+        <argsstring>(std::ostream &amp;os, bool shape=false, bool comment_flag=false) const</argsstring>
+        <name>ascii_characteristic_print</name>
+        <qualifiedname>stat_tool::Reestimation::ascii_characteristic_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>shape</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>comment_flag</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Writing of the characteristics of a <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the writing of the shape characteristics, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">comment_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag comments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="119" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="256" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1acc321efb7ed90ab0cc87fed5b3883166" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Reestimation&lt; Type &gt;::ascii_circular_characteristic_print</definition>
+        <argsstring>(std::ostream &amp;os, bool comment_flag=false) const</argsstring>
+        <name>ascii_circular_characteristic_print</name>
+        <qualifiedname>stat_tool::Reestimation::ascii_circular_characteristic_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>comment_flag</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Writing of the characteristics of a <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> object for a circular variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">comment_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag comment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="121" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="309" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a5dbf6aced93d7db69d77b269f951c4d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Reestimation&lt; Type &gt;::print</definition>
+        <argsstring>(std::ostream &amp;os) const</argsstring>
+        <name>print</name>
+        <qualifiedname>stat_tool::Reestimation::print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Display of a <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="123" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="344" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1ae188d7e87ad2dc663dc875c19f70cc55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::nb_value_computation</definition>
+        <argsstring>()</argsstring>
+        <name>nb_value_computation</name>
+        <qualifiedname>stat_tool::Reestimation::nb_value_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the number of values from 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="125" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="376" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a0077ec2bfda1f17b0b898c5776d23a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::offset_computation</definition>
+        <argsstring>()</argsstring>
+        <name>offset_computation</name>
+        <qualifiedname>stat_tool::Reestimation::offset_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the number of values of null frequency from 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="126" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="400" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a4b70767f5443a384666ca6ac2950c5bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::nb_element_computation</definition>
+        <argsstring>()</argsstring>
+        <name>nb_element_computation</name>
+        <qualifiedname>stat_tool::Reestimation::nb_element_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the sample size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="127" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="422" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a1ad8c55d9c32a4cec2590bb9228a076e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::max_computation</definition>
+        <argsstring>()</argsstring>
+        <name>max_computation</name>
+        <qualifiedname>stat_tool::Reestimation::max_computation</qualifiedname>
+        <briefdescription>
+<para>Determination of the maximum frequency. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="128" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="442" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1af53c60692899fb8c3f007647a146a8ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::mode_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>mode_computation</name>
+        <qualifiedname>stat_tool::Reestimation::mode_computation</qualifiedname>
+        <briefdescription>
+<para>Determination of the mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>mode. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="129" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="466" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a5823aaa50d5f93903426e17652571d2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::mean_computation</definition>
+        <argsstring>()</argsstring>
+        <name>mean_computation</name>
+        <qualifiedname>stat_tool::Reestimation::mean_computation</qualifiedname>
+        <briefdescription>
+<para>Mean computation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="130" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="501" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1ae89ab8ee84cb9d2f274922c94203bb0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::quantile_computation</definition>
+        <argsstring>(double icumul=0.5) const</argsstring>
+        <name>quantile_computation</name>
+        <qualifiedname>stat_tool::Reestimation::quantile_computation</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>icumul</declname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+<para>Computation of a quantile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">icumul</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the cumulative distribution function.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>quantile. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="131" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="528" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1af06ac7743b290d877e2dbd1d7bbcb623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::variance_computation</definition>
+        <argsstring>(bool bias=false)</argsstring>
+        <name>variance_computation</name>
+        <qualifiedname>stat_tool::Reestimation::variance_computation</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>bias</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Variance computation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag bias. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="132" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="560" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1ac7c1a17e4b1e7c9bae8daad4c31131e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::mean_absolute_deviation_computation</definition>
+        <argsstring>(double location) const</argsstring>
+        <name>mean_absolute_deviation_computation</name>
+        <qualifiedname>stat_tool::Reestimation::mean_absolute_deviation_computation</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+<para>Computation of the mean absolute deviation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">location</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location measure (e.g. mean or median).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>mean absolute deviation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="134" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="602" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1adb1faf5ce02f41f298b5f1a2675fc12c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::log_geometric_mean_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>log_geometric_mean_computation</name>
+        <qualifiedname>stat_tool::Reestimation::log_geometric_mean_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the log of the geometric mean. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>log geometric mean. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="135" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="630" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a1abeb67272bae44f85d22fa09edbf387" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::skewness_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>skewness_computation</name>
+        <qualifiedname>stat_tool::Reestimation::skewness_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the coefficient of skewness. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>coefficient of skewness. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="136" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="658" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1ae34326f12f88c086dd9a75e2bc64740b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::kurtosis_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>kurtosis_computation</name>
+        <qualifiedname>stat_tool::Reestimation::kurtosis_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the excess kurtosis: excess kurtosis = coefficient of kurtosis - 3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>excess kurtosis. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="137" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="696" bodyend="720"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a0ddf3489d79f8526291b5646af142a92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::mean_direction_computation</definition>
+        <argsstring>(double *mean_direction) const</argsstring>
+        <name>mean_direction_computation</name>
+        <qualifiedname>stat_tool::Reestimation::mean_direction_computation</qualifiedname>
+        <param>
+          <type>double *</type>
+          <declname>mean_direction</declname>
+        </param>
+        <briefdescription>
+<para>Computation of the mean direction for a circular variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mean_direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the mean direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="139" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="732" bodyend="768"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a8fcd2adf6e459772f897157a45f30e3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::information_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>information_computation</name>
+        <qualifiedname>stat_tool::Reestimation::information_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the information quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>information quantity. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="141" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="780" bodyend="797"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a1fe504bc4efc297e925e544447c7ee1a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::likelihood_computation</definition>
+        <argsstring>(const Distribution &amp;dist) const</argsstring>
+        <name>likelihood_computation</name>
+        <qualifiedname>stat_tool::Reestimation::likelihood_computation</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> &amp;</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+<para>Computation of the log-likelihood of a discrete distribution for a sample. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>log-likelihood. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="142" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="811" bodyend="843"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1ae31fdabfb21a1b8732a2207d671099d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::distribution_estimation</definition>
+        <argsstring>(Distribution *pdist) const</argsstring>
+        <name>distribution_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::distribution_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
+          <declname>pdist</declname>
+          <defname>dist</defname>
+        </param>
+        <briefdescription>
+<para>Estimation of a categorical distribution on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="144" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="855" bodyend="878"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a491eee1aabb81cc6584daca1fdc979e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::penalized_likelihood_estimation</definition>
+        <argsstring>(Distribution *dist, double weight, penalty_type pen_type, double *penalty, side_effect outside) const</argsstring>
+        <name>penalized_likelihood_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::penalized_likelihood_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74c" kindref="member">penalty_type</ref></type>
+          <declname>pen_type</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>penalty</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71" kindref="member">side_effect</ref></type>
+          <declname>outside</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of a discrete distribution on the basis of a frequency distribution using a penalized likelihood estimator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>penalty weight, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pen_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>penalty type (first- or second-order difference or entropy), </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">penalty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>penalty, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">outside</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>management of side effects (zero outside the support or continuation of the distribution). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="145" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="896" bodyend="1037"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a447392433aafc633c93b762944616385" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::uniform_estimation</definition>
+        <argsstring>(DiscreteParametric *pdist, int min_inf_bound, bool min_inf_bound_flag) const</argsstring>
+        <name>uniform_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::uniform_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+          <declname>pdist</declname>
+          <defname>dist</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_inf_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>min_inf_bound_flag</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of the parameters of a uniform distribution on the basis of a frequency distribution (estimation is biased) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the distribution shift.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximized log-likelihood. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="148" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1191" bodyend="1217"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1ada98b053aa38c05762434eeb5c51bfce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::binomial_estimation</definition>
+        <argsstring>(DiscreteParametric *pdist, int min_inf_bound, bool min_inf_bound_flag) const</argsstring>
+        <name>binomial_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::binomial_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+          <declname>pdist</declname>
+          <defname>dist</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_inf_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>min_inf_bound_flag</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of the parameters of a shifted binomial distribution on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the distribution shift.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximized log-likelihood. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="149" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1054" bodyend="1174"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a83f453f9b97c60822488e55edb04dcdc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::poisson_estimation</definition>
+        <argsstring>(DiscreteParametric *pdist, int min_inf_bound, bool min_inf_bound_flag, double cumul_threshold) const</argsstring>
+        <name>poisson_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::poisson_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+          <declname>pdist</declname>
+          <defname>dist</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_inf_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>min_inf_bound_flag</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of the parameters of a shifted Poisson distribution on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the distribution shift, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximized log-likelihood. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="150" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1236" bodyend="1303"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a6e529c9f833559313b3c827fd3d2e7ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::negative_binomial_estimation</definition>
+        <argsstring>(DiscreteParametric *pdist, int min_inf_bound, bool min_inf_bound_flag, double cumul_threshold) const</argsstring>
+        <name>negative_binomial_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::negative_binomial_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+          <declname>pdist</declname>
+          <defname>dist</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_inf_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>min_inf_bound_flag</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of the parameters of a shifted negative binomial distribution on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the distribution shift, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximized log-likelihood. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="152" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1321" bodyend="1448"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a2eb4e6b4c0617a9f9bfbd0d6ebf38dd5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::geometric_poisson_estimation</definition>
+        <argsstring>(DiscreteParametric *pdist, int min_inf_bound, bool min_inf_bound_flag, double cumul_threshold) const</argsstring>
+        <name>geometric_poisson_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::geometric_poisson_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+          <declname>pdist</declname>
+          <defname>dist</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_inf_bound</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>min_inf_bound_flag</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of the parameters of a shifted Poisson geometric distribution on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the distribution shift, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximized log-likelihood. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="154" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1466" bodyend="1533"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a059264bb4d742e69d7963db7877a062b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::parametric_estimation</definition>
+        <argsstring>(DiscreteParametric *pdist, int min_inf_bound=0, bool min_inf_bound_flag=true, double cumul_threshold=CUMUL_THRESHOLD, bool geometric_poisson=false) const</argsstring>
+        <name>parametric_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::parametric_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+          <declname>pdist</declname>
+          <defname>dist</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_inf_bound</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>min_inf_bound_flag</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+          <defval><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>geometric_poisson</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Estimation of the parameters of a discrete parametric distribution (binomial, Poisson, negative binomial, Poisson geometric) on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the distribution shift, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">geometric_poisson</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the estimation of a Poisson geometric distribution.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximized log-likelihood. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="157" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1553" bodyend="1580"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a73a49b2c4c02a23ee0a511c97f647d24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Reestimation&lt; Type &gt;::type_parametric_estimation</definition>
+        <argsstring>(DiscreteParametric *pdist, int min_inf_bound=0, bool min_inf_bound_flag=true, double cumul_threshold=CUMUL_THRESHOLD, bool geometric_poisson=false) const</argsstring>
+        <name>type_parametric_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::type_parametric_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+          <declname>pdist</declname>
+          <defname>dist</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_inf_bound</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>min_inf_bound_flag</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+          <defval><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref></defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>geometric_poisson</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Estimation of the type and parameters of a discrete parametric distribution (binomial, Poisson, negative binomial, Poisson geometric) on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the distribution shift, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">geometric_poisson</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the estimation of a Poisson geometric distribution.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximized log-likelihood. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="159" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1600" bodyend="1652"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1abb4e9c7e61eefd7fb541775468bca0cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
+        <definition>DiscreteParametric * stat_tool::Reestimation&lt; Type &gt;::type_parametric_estimation</definition>
+        <argsstring>(int min_inf_bound=0, bool min_inf_bound_flag=true, double cumul_threshold=CUMUL_THRESHOLD) const</argsstring>
+        <name>type_parametric_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::type_parametric_estimation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>min_inf_bound</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>min_inf_bound_flag</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cumul_threshold</declname>
+          <defval><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref></defval>
+        </param>
+        <briefdescription>
+<para>Estimation of the type and parameters of a discrete parametric distribution (binomial, Poisson, negative binomial) on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum lower bound of the support, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_inf_bound_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the distribution shift, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cumul_threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the cumulative distribution function.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>discrete parametric distribution. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="162" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1669" bodyend="1696"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a199376f41534b96fc3c54b05af9f0e9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::equilibrium_process_combination</definition>
+        <argsstring>(const Reestimation&lt; Type &gt; *length_bias_reestim, double imean)</argsstring>
+        <name>equilibrium_process_combination</name>
+        <qualifiedname>stat_tool::Reestimation::equilibrium_process_combination</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; *</type>
+          <declname>length_bias_reestim</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>imean</declname>
+        </param>
+        <briefdescription>
+<para>Combination of the reestimation quantities of the basis time interval distribution and the length-biased distribution (equilibrium stochastic process). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">length_bias_reestim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the reestimation quantities of the length-biased distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">imean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distribution mean. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="165" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1710" bodyend="1729"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a2e8e2381b136ac48ad19eac24cc1588d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::equilibrium_process_estimation</definition>
+        <argsstring>(const Reestimation&lt; Type &gt; *length_bias_reestim, Distribution *dist, double imean) const</argsstring>
+        <name>equilibrium_process_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::equilibrium_process_estimation</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; *</type>
+          <declname>length_bias_reestim</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>imean</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of a discrete distribution on the basis of the reestimation quantities of the basis time interval distribution and the length-biased distribution (equilibrium stochastic process). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">length_bias_reestim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the reestimation quantities of the length-biased distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">imean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distribution mean. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="166" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1744" bodyend="1778"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1af73d5bc170b6aaf0ea75fd132a288dc8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::penalized_likelihood_equilibrium_process_estimation</definition>
+        <argsstring>(const Reestimation&lt; Type &gt; *length_bias_reestim, Distribution *dist, double imean, double weight, penalty_type pen_type, double *penalty, side_effect outside) const</argsstring>
+        <name>penalized_likelihood_equilibrium_process_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::penalized_likelihood_equilibrium_process_estimation</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; *</type>
+          <declname>length_bias_reestim</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>imean</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a56ee8527c1018fe56c5a7fcdba77a74c" kindref="member">penalty_type</ref></type>
+          <declname>pen_type</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>penalty</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71" kindref="member">side_effect</ref></type>
+          <declname>outside</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of a discrete distribution on the basis of the reestimation quantities of the basis time interval distribution and the length-biased distribution using a penalized likelihood estimator (equilibrium stochastic process). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">length_bias_reestim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the reestimation quantities of the length-biased distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">imean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distribution mean, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>penalty weight , </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pen_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>penalty type (first- or second-order difference or entropy), </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">penalty</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>penalty, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">outside</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>management of side effects (zero outside the support or continuation of the distribution). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="168" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1799" bodyend="1914"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1ae139afe73cff020ede0f3f6c02b93e8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::state_occupancy_estimation</definition>
+        <argsstring>(const Reestimation&lt; Type &gt; *final_run, Reestimation&lt; double &gt; *occupancy_reestim, Type *occupancy_survivor, Type *censored_occupancy_survivor, bool characteristic_computation=true)</argsstring>
+        <name>state_occupancy_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::state_occupancy_estimation</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; Type &gt; *</type>
+          <declname>final_run</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; double &gt; *</type>
+          <declname>occupancy_reestim</declname>
+        </param>
+        <param>
+          <type>Type *</type>
+          <declname>occupancy_survivor</declname>
+        </param>
+        <param>
+          <type>Type *</type>
+          <declname>censored_occupancy_survivor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>characteristic_computation</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Estimation of a state occupancy distribution using the Kaplan-Meier estimator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">final_run</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the right-censored sojourn times, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">occupancy_reestim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the reestimation quantities, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">occupancy_survivor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the survival function corresponding to the complete sojourn times, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">censored_occupancy_survivor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the survival function corresponding to the right-censored sojourn times, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">characteristic_computation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag for the computation of the characteristics of the reestimation quantities. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="173" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="1930" bodyend="1997"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1a7e5b37b4cc444e89024a3feaf6b10e5e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::gamma_estimation</definition>
+        <argsstring>(ContinuousParametric *dist, int iter) const</argsstring>
+        <name>gamma_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::gamma_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> *</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of a gamma distribution on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>continuous distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>EM iteration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="178" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="2010" bodyend="2087"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1af640ab43d7bd572328830e6bd9534c01" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::zero_inflated_gamma_estimation</definition>
+        <argsstring>(ContinuousParametric *dist, int iter) const</argsstring>
+        <name>zero_inflated_gamma_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::zero_inflated_gamma_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> *</type>
+          <declname>dist</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of a zero-inflated gamma distribution on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>continuous distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>EM iteration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="179" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="2101" bodyend="2191"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Reestimation_1ab8f1ccd8b05fda5289b4f944193c1f0d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Reestimation&lt; Type &gt;::inverse_gaussian_estimation</definition>
+        <argsstring>(ContinuousParametric *dist) const</argsstring>
+        <name>inverse_gaussian_estimation</name>
+        <qualifiedname>stat_tool::Reestimation::inverse_gaussian_estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> *</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of an inverse Gaussian distribution on the basis of a frequency distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>continuous distribution. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="180" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.hpp" bodystart="2204" bodyend="2224"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Frequency distribution with integer or real (for EM algorithms) frequencies. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Frequencies are represented as an array *frequency, with size alloc_nb_value frequency[i] is only meaningful for offset &lt;= i &lt; nb_value. For i &lt; offset, frequency[i] may be either 0 or unspecified. </para>
+    </detaileddescription>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" line="93" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/reestimation.h" bodystart="93" bodyend="181"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1Reestimation_1a3c9100385ce84d920b066f92ae4b11d0" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>alloc_nb_value</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a459b3b4e77b93b109f5ce8410f2f87dc" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>ascii_characteristic_print</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1acc321efb7ed90ab0cc87fed5b3883166" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>ascii_circular_characteristic_print</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1ada98b053aa38c05762434eeb5c51bfce" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>binomial_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a7f8cef439c9fbb030ad1617c0c0adbbf" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>copy</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1ae31fdabfb21a1b8732a2207d671099d8" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>distribution_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a199376f41534b96fc3c54b05af9f0e9b" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>equilibrium_process_combination</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a2e8e2381b136ac48ad19eac24cc1588d" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>equilibrium_process_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>frequency</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a7e5b37b4cc444e89024a3feaf6b10e5e" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>gamma_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a2eb4e6b4c0617a9f9bfbd0d6ebf38dd5" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>geometric_poisson_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a8fcd2adf6e459772f897157a45f30e3e" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>information_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>init</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1ab8f1ccd8b05fda5289b4f944193c1f0d" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>inverse_gaussian_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1ae34326f12f88c086dd9a75e2bc64740b" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>kurtosis_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a1fe504bc4efc297e925e544447c7ee1a" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>likelihood_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1adb1faf5ce02f41f298b5f1a2675fc12c" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>log_geometric_mean_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>max</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a1ad8c55d9c32a4cec2590bb9228a076e" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>max_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a3487df5dc55a1bb225ad5195c5858a43" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>mean</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1ac7c1a17e4b1e7c9bae8daad4c31131e1" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>mean_absolute_deviation_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a5823aaa50d5f93903426e17652571d2b" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>mean_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a0ddf3489d79f8526291b5646af142a92" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>mean_direction_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1af53c60692899fb8c3f007647a146a8ab" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>mode_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>nb_element</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a4b70767f5443a384666ca6ac2950c5bb" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>nb_element_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>nb_value</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1ae188d7e87ad2dc663dc875c19f70cc55" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>nb_value_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a6e529c9f833559313b3c827fd3d2e7ea" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>negative_binomial_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>offset</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a0077ec2bfda1f17b0b898c5776d23a4f" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>offset_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a6e2fc30ef2abd0bfa3da51bfdc075067" prot="private" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1add69f0e734ab6d20a7bfd79f2481fe6a" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>operator=</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a059264bb4d742e69d7963db7877a062b" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>parametric_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1af73d5bc170b6aaf0ea75fd132a288dc8" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>penalized_likelihood_equilibrium_process_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a491eee1aabb81cc6584daca1fdc979e5" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>penalized_likelihood_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a83f453f9b97c60822488e55edb04dcdc" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>poisson_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a5dbf6aced93d7db69d77b269f951c4d4" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>print</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1ae89ab8ee84cb9d2f274922c94203bb0b" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>quantile_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a273d5c1fb586a1cb592b1e09b7d60a80" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>Reestimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a17016fb55336fb34da81bfcf87627372" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>Reestimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a73510d992415d37b36edd7bdfc265f38" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>Reestimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a1abeb67272bae44f85d22fa09edbf387" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>skewness_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1ae139afe73cff020ede0f3f6c02b93e8c" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>state_occupancy_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a73a49b2c4c02a23ee0a511c97f647d24" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>type_parametric_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1abb4e9c7e61eefd7fb541775468bca0cb" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>type_parametric_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a447392433aafc633c93b762944616385" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>uniform_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a72284881e04f61ff919c689b867c1c94" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>variance</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1af06ac7743b290d877e2dbd1d7bbcb623" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>variance_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1af640ab43d7bd572328830e6bd9534c01" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>zero_inflated_gamma_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a6b69afa59b26c3b2c4b9556866406b49" prot="public" virt="non-virtual"><scope>stat_tool::Reestimation</scope><name>~Reestimation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

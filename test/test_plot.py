@@ -5,25 +5,18 @@ __version__ = "$Id$"
 try:
     from .tools import robust_path as get_shared_data
 except ImportError:
-    from tools import robust_path as get_shared_data
+    pass
 
 import openalea
 from openalea.stat_tool import _stat_tool
-from openalea.stat_tool.plot import DISABLE_PLOT, get_plotter, gnuplot
-
-from openalea.stat_tool.plot import get_plotter, gnuplot 
-from openalea.stat_tool.plot import DISABLE_PLOT
-
-
+from openalea.stat_tool.plot import get_plotter, gnuplot
 
 
 class Test:
-
     def test_plotable(self):
         p = _stat_tool.SinglePlot()
         p.add_point(_stat_tool.PlotPoint(1.0, 1.2))
         p.add_point(_stat_tool.PlotPoint(2.0, 3.2))
-
 
         assert isinstance(p, openalea.stat_tool._stat_tool.SinglePlot)
 
@@ -79,8 +72,8 @@ class Test:
 
         # test plot
         plotter = get_plotter()
-        if DISABLE_PLOT == False:
-            plotter.plot(p, "test_plot")
+        # if DISABLE_PLOT == False:
+        plotter.plot(p, "test_plot")
 
     def get_plotable(self):
         p = _stat_tool.MultiPlotSet(3)
@@ -134,8 +127,8 @@ class Test:
     def test_matplotlib(self):
         a = self.get_plotable()
         plotter = get_plotter()
-        if DISABLE_PLOT == False:
-            plotter.plot(a, "test_plot")
+        # if DISABLE_PLOT == False:
+        plotter.plot(a, "test_plot")
 
     def test_gnuplot(self):
         try:
@@ -143,10 +136,9 @@ class Test:
         except ModuleNotFoundError:
             pass
         else:
-            if DISABLE_PLOT:
-                return
+            #    if DISABLE_PLOT:
+            #        return
             a = self.get_plotable()
             plotter = gnuplot()
-            if DISABLE_PLOT == False:
-                plotter.plot(a, "test_plot")
-
+            #    if DISABLE_PLOT == False:
+            plotter.plot(a, "test_plot")

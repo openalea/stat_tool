@@ -1,0 +1,494 @@
+\doxysection{stat\+\_\+tool\+::Regression Class Reference}
+\hypertarget{classstat__tool_1_1Regression}{}\label{classstat__tool_1_1Regression}\index{stat\_tool::Regression@{stat\_tool::Regression}}
+
+
+\doxylink{classstat__tool_1_1Regression}{Regression} function.  
+
+
+
+
+{\ttfamily \#include $<$regression.\+h$>$}
+
+Inheritance diagram for stat\+\_\+tool\+::Regression\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classstat__tool_1_1Regression}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of the \doxylink{classstat__tool_1_1Regression}{Regression} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Regression_a2697430b66add46674a3abdc39d0ad3f}{Regression}} (\mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03}{parametric\+\_\+function}} iident, int explanatory\+\_\+variable, int response\+\_\+variable, const \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}} \&vec)
+\begin{DoxyCompactList}\small\item\em Construction of a \doxylink{classstat__tool_1_1Regression}{Regression} object from a \doxylink{classstat__tool_1_1Vectors}{Vectors} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Regression_a46308519148e1cf99448e83c2a5d65ac}{Regression}} (const \mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \&regression)
+\begin{DoxyCompactList}\small\item\em Constructor by copy of the \doxylink{classstat__tool_1_1Regression}{Regression} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Regression_aa6454d1661615230b9bb9497ccf6b1d7}{\texorpdfstring{$\sim$}{\string~}\+Regression}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{classstat__tool_1_1Regression}{Regression} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \& \mbox{\hyperlink{classstat__tool_1_1Regression_a18acb3516c5583e9f6c27ae6f1ef7277}{operator=}} (const \mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \&regression)
+\begin{DoxyCompactList}\small\item\em Assignment operator of the \doxylink{classstat__tool_1_1Regression}{Regression} class. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1Regression_ad3bf39fddaff0466e27791242c0d7f82}{line\+\_\+write}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Writing on a single line of a \doxylink{classstat__tool_1_1Regression}{Regression} object. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1Regression_a54b5fd8b2924a3ea4a34c8a396b45605}{ascii\+\_\+write}} (std\+::ostream \&os, bool exhaustive=false) const
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1Regression_a0c3c0a60c6ccf669c1e4113217f5f77b}{ascii\+\_\+write}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, const std\+::string path, bool exhaustive=false) const
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1Regression_a92f56d95ccea07ea80f9d079296552f7}{spreadsheet\+\_\+write}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, const std\+::string path) const
+\begin{DoxyCompactList}\small\item\em Writing of a \doxylink{classstat__tool_1_1Regression}{Regression} object in a file at the spreadsheet format. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstat__tool_1_1Regression_a1b1615f6071c980523c3beab2959c91d}{plot\+\_\+write}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, const char \texorpdfstring{$\ast$}{*}prefix, const char \texorpdfstring{$\ast$}{*}title=NULL) const
+\begin{DoxyCompactList}\small\item\em Plot of a \doxylink{classstat__tool_1_1Regression}{Regression} object using Gnuplot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Regression_a169a52da0755e7301e49106969293603}{get\+\_\+plotable}} () const
+\begin{DoxyCompactList}\small\item\em Plot of a \doxylink{classstat__tool_1_1Regression}{Regression} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Regression_ab295561b925e43f33b97991c2ba97a24}{get\+\_\+vectors}} () const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1Regression_ad911738f6c021712a7f0a61c740b7b8f}{get\+\_\+nb\+\_\+vector}} () const
+\item 
+double \mbox{\hyperlink{classstat__tool_1_1Regression_a70cc6430359fee666ccff141ca07af00}{get\+\_\+residual}} (int ivec) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classstat__tool_1_1StatInterface}{stat\+\_\+tool\+::\+Stat\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classstat__tool_1_1StatInterface_a7571e2adbbe004af3ece0f623c69cef6}{ascii\+\_\+write}} (bool exhaustive=false) const
+\begin{DoxyCompactList}\small\item\em Writing of a Structure\+Analysis object (for display on the console). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classstat__tool_1_1RegressionKernel}{stat\+\_\+tool\+::\+Regression\+Kernel}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_affb5929358c188a4d1079e7da9d086ea}{copy}} (const \mbox{\hyperlink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel}} \&)
+\begin{DoxyCompactList}\small\item\em Copy of a \doxylink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_aa041b456142195a8be69de3c08087118}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Destruction of the data members of a \doxylink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a65a34f392075ecff407dffe3577d31e4}{Regression\+Kernel}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of the \doxylink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a57a6aa5ec2a0d82ab1fd832bd976743b}{Regression\+Kernel}} (\mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03}{parametric\+\_\+function}} iident, int imin\+\_\+value, int imax\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1RegressionKernel_aa293b9442d9422a802bb330728bf44b3}{Regression\+Kernel}} (const \mbox{\hyperlink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel}} \&regression)
+\item 
+\mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a0c3836f85ef8f37cfaacaa70afda4736}{\texorpdfstring{$\sim$}{\string~}\+Regression\+Kernel}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel}} \& \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a942e7664cfac5e96a130603d0ba6d47f}{operator=}} (const \mbox{\hyperlink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel}} \&regression)
+\begin{DoxyCompactList}\small\item\em Assignment operator of the \doxylink{classstat__tool_1_1RegressionKernel}{Regression\+Kernel} class. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a182d5696579060044f97a24f4657f150}{ascii\+\_\+parameter\+\_\+print}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Writing of the regression function parameters. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_ae104c27196ec8e0646b1382bd831b426}{ascii\+\_\+formal\+\_\+print}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Formal writing of the regression function. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_ac95cfe3f3cfce1a65c0722e7cf445bc1}{ascii\+\_\+print}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Writing of the regression function. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a4c1c65af94413d4bceb15380c520def9}{spreadsheet\+\_\+print}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Writing of the regression function at the spreadsheet format. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a2113484d3900a1989c01293e694aeacc}{plot\+\_\+print}} (const char \texorpdfstring{$\ast$}{*}path) const
+\begin{DoxyCompactList}\small\item\em Writing of the regression function (Gnuplot output). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a89c52ec1dbd88eea4dcc2cc0f41d004c}{plotable\+\_\+write}} (\mbox{\hyperlink{classstat__tool_1_1SinglePlot}{Single\+Plot}} \&plot) const
+\begin{DoxyCompactList}\small\item\em Writing of the regression function for plotting. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_add8543c0d85289608970795d01b01c3d}{computation}} ()
+\begin{DoxyCompactList}\small\item\em Computation of a parametric regression function. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a26ab89b744f2797bbbadea205cee1001}{min\+\_\+computation}} () const
+\begin{DoxyCompactList}\small\item\em Computation of the minimum value of a regression function. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_ac0a868080fc7d5fbc89636955a91fd1a}{max\+\_\+computation}} () const
+\begin{DoxyCompactList}\small\item\em Computation of the maximum value of a regression function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstat__tool_1_1Regression_ae0b7293b7e0dfff09d3e99e2e415dbe3}{copy}} (const \mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \&)
+\begin{DoxyCompactList}\small\item\em Copy of a \doxylink{classstat__tool_1_1Regression}{Regression} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Regression_a9861a99ac0b9240c71a1cf93458ef630}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Destruction of the data members of a \doxylink{classstat__tool_1_1Regression}{Regression} object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1Regression_a4c24bd054d7274ad73b19c6776424d0c}{regression\+\_\+square\+\_\+sum\+\_\+computation}} () const
+\begin{DoxyCompactList}\small\item\em Computation of the variation explained by a regression function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1Regression_adcfdc8d573e0c868f74f3c933ebbf20a}{residual\+\_\+computation}} ()
+\begin{DoxyCompactList}\small\item\em Computation of the residuals. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1Regression_a50936c92123f4ef19ffb2276086faf18}{residual\+\_\+mean\+\_\+computation}} () const
+\begin{DoxyCompactList}\small\item\em Computation of the residual mean. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1Regression_a4a47f58b527e554ebd500b797b1eaf4f}{residual\+\_\+variance\+\_\+computation}} (double residual\+\_\+mean) const
+\begin{DoxyCompactList}\small\item\em Computation of the residual variance. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1Regression_a205047cbef36ab1f31972bd7067d87c4}{residual\+\_\+square\+\_\+sum\+\_\+computation}} () const
+\begin{DoxyCompactList}\small\item\em Computation of the residual square sum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Regression_afff9f8ba86ea29e1636ebe97396561bd}{vectors}}
+\begin{DoxyCompactList}\small\item\em pointer on a \doxylink{classstat__tool_1_1Vectors}{Vectors} object \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1Regression_aa12a3acd8c3abe125eb010908165e67c}{nb\+\_\+vector}}
+\begin{DoxyCompactList}\small\item\em number of individuals \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1Regression_a67e792facfa8c590858745939bad8b2e}{residual}}
+\begin{DoxyCompactList}\small\item\em residuals \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classstat__tool_1_1Regression_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1Regression_a7a56b775aa0722823ad67f79a0f87c43}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \&regression)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classstat__tool_1_1RegressionKernel}{stat\+\_\+tool\+::\+Regression\+Kernel}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03}{parametric\+\_\+function}} \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a5a2d07a3e343a309554a32b795f348a9}{ident}}
+\begin{DoxyCompactList}\small\item\em identifier of the regression function \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a961fdd0413f62162d77a917eed6878c2}{min\+\_\+value}}
+\begin{DoxyCompactList}\small\item\em minimum value \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_ac8a4ec20ea8f61ea00fbb4d0118fccc2}{max\+\_\+value}}
+\begin{DoxyCompactList}\small\item\em maximum value \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_ae2f170889606b316d19a54f221779143}{regression\+\_\+df}}
+\begin{DoxyCompactList}\small\item\em degrees of freedom regression \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_aaaa5e5f5f00ac15031f856b267c889cd}{residual\+\_\+df}}
+\begin{DoxyCompactList}\small\item\em degrees of freedom residuals \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a6fbdfa25318f5e721707c23f6eac795c}{nb\+\_\+parameter}}
+\begin{DoxyCompactList}\small\item\em number of parameters \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_afefdbce482f32223aae0a32167b251ba}{parameter}}
+\begin{DoxyCompactList}\small\item\em parameters \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a4f514ea760d61de72a002d9f12f1853c}{point}}
+\begin{DoxyCompactList}\small\item\em points \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{classstat__tool_1_1Regression}{Regression} function. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}\index{stat\_tool::Regression@{stat\_tool::Regression}!Regression@{Regression}}
+\index{Regression@{Regression}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{Regression()}{Regression()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294} 
+stat\+\_\+tool\+::\+Regression\+::\+Regression (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor of the \doxylink{classstat__tool_1_1Regression}{Regression} class. 
+
+\Hypertarget{classstat__tool_1_1Regression_a2697430b66add46674a3abdc39d0ad3f}\index{stat\_tool::Regression@{stat\_tool::Regression}!Regression@{Regression}}
+\index{Regression@{Regression}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{Regression()}{Regression()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a2697430b66add46674a3abdc39d0ad3f} 
+stat\+\_\+tool\+::\+Regression\+::\+Regression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03}{parametric\+\_\+function}}}]{iident}{, }\item[{int}]{explanatory\+\_\+variable}{, }\item[{int}]{response\+\_\+variable}{, }\item[{const \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}} \&}]{vec}{}\end{DoxyParamCaption})}
+
+
+
+Construction of a \doxylink{classstat__tool_1_1Regression}{Regression} object from a \doxylink{classstat__tool_1_1Vectors}{Vectors} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em iident} & regression function identifier, \\
+\hline
+\mbox{\texttt{ in}}  & {\em explanatory\+\_\+variable} & explanatory variable index, \\
+\hline
+\mbox{\texttt{ in}}  & {\em response\+\_\+variable} & response variable index, \\
+\hline
+\mbox{\texttt{ in}}  & {\em vec} & reference on a \doxylink{classstat__tool_1_1Vectors}{Vectors} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Regression_a46308519148e1cf99448e83c2a5d65ac}\index{stat\_tool::Regression@{stat\_tool::Regression}!Regression@{Regression}}
+\index{Regression@{Regression}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{Regression()}{Regression()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a46308519148e1cf99448e83c2a5d65ac} 
+stat\+\_\+tool\+::\+Regression\+::\+Regression (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \&}]{regression}{}\end{DoxyParamCaption})}
+
+
+
+Constructor by copy of the \doxylink{classstat__tool_1_1Regression}{Regression} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em regression} & reference on a \doxylink{classstat__tool_1_1Regression}{Regression} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Regression_aa6454d1661615230b9bb9497ccf6b1d7}\index{stat\_tool::Regression@{stat\_tool::Regression}!````~Regression@{\texorpdfstring{$\sim$}{\string~}Regression}}
+\index{````~Regression@{\texorpdfstring{$\sim$}{\string~}Regression}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Regression()}{\string~Regression()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_aa6454d1661615230b9bb9497ccf6b1d7} 
+stat\+\_\+tool\+::\+Regression\+::\texorpdfstring{$\sim$}{\string~}\+Regression (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor of the \doxylink{classstat__tool_1_1Regression}{Regression} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstat__tool_1_1Regression_a0c3c0a60c6ccf669c1e4113217f5f77b}\index{stat\_tool::Regression@{stat\_tool::Regression}!ascii\_write@{ascii\_write}}
+\index{ascii\_write@{ascii\_write}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{ascii\_write()}{ascii\_write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a0c3c0a60c6ccf669c1e4113217f5f77b} 
+bool stat\+\_\+tool\+::\+Regression\+::ascii\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{const std\+::string}]{path}{, }\item[{bool}]{exhaustive}{ = {\ttfamily false}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_a7ebddce7b16070eee648eb888b8c5ec4}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1Regression_a54b5fd8b2924a3ea4a34c8a396b45605}\index{stat\_tool::Regression@{stat\_tool::Regression}!ascii\_write@{ascii\_write}}
+\index{ascii\_write@{ascii\_write}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{ascii\_write()}{ascii\_write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a54b5fd8b2924a3ea4a34c8a396b45605} 
+std\+::ostream \& stat\+\_\+tool\+::\+Regression\+::ascii\+\_\+write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{bool}]{exhaustive}{ = {\ttfamily false}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_a9cc8c361520374ddcfbe45011613266c}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1Regression_ae0b7293b7e0dfff09d3e99e2e415dbe3}\index{stat\_tool::Regression@{stat\_tool::Regression}!copy@{copy}}
+\index{copy@{copy}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_ae0b7293b7e0dfff09d3e99e2e415dbe3} 
+void stat\+\_\+tool\+::\+Regression\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \&}]{regression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy of a \doxylink{classstat__tool_1_1Regression}{Regression} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em regression} & reference on a \doxylink{classstat__tool_1_1Regression}{Regression} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1Regression_ad911738f6c021712a7f0a61c740b7b8f}\index{stat\_tool::Regression@{stat\_tool::Regression}!get\_nb\_vector@{get\_nb\_vector}}
+\index{get\_nb\_vector@{get\_nb\_vector}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{get\_nb\_vector()}{get\_nb\_vector()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_ad911738f6c021712a7f0a61c740b7b8f} 
+int stat\+\_\+tool\+::\+Regression\+::get\+\_\+nb\+\_\+vector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1Regression_a169a52da0755e7301e49106969293603}\index{stat\_tool::Regression@{stat\_tool::Regression}!get\_plotable@{get\_plotable}}
+\index{get\_plotable@{get\_plotable}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{get\_plotable()}{get\_plotable()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a169a52da0755e7301e49106969293603} 
+\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Regression\+::get\+\_\+plotable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Plot of a \doxylink{classstat__tool_1_1Regression}{Regression} object. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set} object. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classstat__tool_1_1StatInterface_a9210a878974973ea3a4a0cf209258a5e}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1Regression_a70cc6430359fee666ccff141ca07af00}\index{stat\_tool::Regression@{stat\_tool::Regression}!get\_residual@{get\_residual}}
+\index{get\_residual@{get\_residual}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{get\_residual()}{get\_residual()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a70cc6430359fee666ccff141ca07af00} 
+double stat\+\_\+tool\+::\+Regression\+::get\+\_\+residual (\begin{DoxyParamCaption}\item[{int}]{ivec}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1Regression_ab295561b925e43f33b97991c2ba97a24}\index{stat\_tool::Regression@{stat\_tool::Regression}!get\_vectors@{get\_vectors}}
+\index{get\_vectors@{get\_vectors}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{get\_vectors()}{get\_vectors()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_ab295561b925e43f33b97991c2ba97a24} 
+\mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Regression\+::get\+\_\+vectors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1Regression_ad3bf39fddaff0466e27791242c0d7f82}\index{stat\_tool::Regression@{stat\_tool::Regression}!line\_write@{line\_write}}
+\index{line\_write@{line\_write}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{line\_write()}{line\_write()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_ad3bf39fddaff0466e27791242c0d7f82} 
+ostream \& stat\+\_\+tool\+::\+Regression\+::line\+\_\+write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writing on a single line of a \doxylink{classstat__tool_1_1Regression}{Regression} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em os} & stream. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_a7db89a0e0500b15ff2b14022d6a12a5c}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1Regression_a18acb3516c5583e9f6c27ae6f1ef7277}\index{stat\_tool::Regression@{stat\_tool::Regression}!operator=@{operator=}}
+\index{operator=@{operator=}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a18acb3516c5583e9f6c27ae6f1ef7277} 
+\mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \& stat\+\_\+tool\+::\+Regression\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \&}]{regression}{}\end{DoxyParamCaption})}
+
+
+
+Assignment operator of the \doxylink{classstat__tool_1_1Regression}{Regression} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em regression} & reference on a \doxylink{classstat__tool_1_1Regression}{Regression} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1Regression}{Regression} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Regression_a1b1615f6071c980523c3beab2959c91d}\index{stat\_tool::Regression@{stat\_tool::Regression}!plot\_write@{plot\_write}}
+\index{plot\_write@{plot\_write}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{plot\_write()}{plot\_write()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a1b1615f6071c980523c3beab2959c91d} 
+bool stat\+\_\+tool\+::\+Regression\+::plot\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{prefix}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{title}{ = {\ttfamily NULL}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Plot of a \doxylink{classstat__tool_1_1Regression}{Regression} object using Gnuplot. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em prefix} & file prefix, \\
+\hline
+\mbox{\texttt{ in}}  & {\em title} & figure title.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error status. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_a22886aaa72572ca234cc5f27a8b25012}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1Regression_a4c24bd054d7274ad73b19c6776424d0c}\index{stat\_tool::Regression@{stat\_tool::Regression}!regression\_square\_sum\_computation@{regression\_square\_sum\_computation}}
+\index{regression\_square\_sum\_computation@{regression\_square\_sum\_computation}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{regression\_square\_sum\_computation()}{regression\_square\_sum\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a4c24bd054d7274ad73b19c6776424d0c} 
+double stat\+\_\+tool\+::\+Regression\+::regression\+\_\+square\+\_\+sum\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Computation of the variation explained by a regression function. 
+
+\begin{DoxyReturn}{Returns}
+regression square sum. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Regression_a9861a99ac0b9240c71a1cf93458ef630}\index{stat\_tool::Regression@{stat\_tool::Regression}!remove@{remove}}
+\index{remove@{remove}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a9861a99ac0b9240c71a1cf93458ef630} 
+void stat\+\_\+tool\+::\+Regression\+::remove (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Destruction of the data members of a \doxylink{classstat__tool_1_1Regression}{Regression} object. 
+
+\Hypertarget{classstat__tool_1_1Regression_adcfdc8d573e0c868f74f3c933ebbf20a}\index{stat\_tool::Regression@{stat\_tool::Regression}!residual\_computation@{residual\_computation}}
+\index{residual\_computation@{residual\_computation}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{residual\_computation()}{residual\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_adcfdc8d573e0c868f74f3c933ebbf20a} 
+void stat\+\_\+tool\+::\+Regression\+::residual\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Computation of the residuals. 
+
+\Hypertarget{classstat__tool_1_1Regression_a50936c92123f4ef19ffb2276086faf18}\index{stat\_tool::Regression@{stat\_tool::Regression}!residual\_mean\_computation@{residual\_mean\_computation}}
+\index{residual\_mean\_computation@{residual\_mean\_computation}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{residual\_mean\_computation()}{residual\_mean\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a50936c92123f4ef19ffb2276086faf18} 
+double stat\+\_\+tool\+::\+Regression\+::residual\+\_\+mean\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Computation of the residual mean. 
+
+\begin{DoxyReturn}{Returns}
+residual mean. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Regression_a205047cbef36ab1f31972bd7067d87c4}\index{stat\_tool::Regression@{stat\_tool::Regression}!residual\_square\_sum\_computation@{residual\_square\_sum\_computation}}
+\index{residual\_square\_sum\_computation@{residual\_square\_sum\_computation}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{residual\_square\_sum\_computation()}{residual\_square\_sum\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a205047cbef36ab1f31972bd7067d87c4} 
+double stat\+\_\+tool\+::\+Regression\+::residual\+\_\+square\+\_\+sum\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Computation of the residual square sum. 
+
+\begin{DoxyReturn}{Returns}
+residual square sum. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Regression_a4a47f58b527e554ebd500b797b1eaf4f}\index{stat\_tool::Regression@{stat\_tool::Regression}!residual\_variance\_computation@{residual\_variance\_computation}}
+\index{residual\_variance\_computation@{residual\_variance\_computation}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{residual\_variance\_computation()}{residual\_variance\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a4a47f58b527e554ebd500b797b1eaf4f} 
+double stat\+\_\+tool\+::\+Regression\+::residual\+\_\+variance\+\_\+computation (\begin{DoxyParamCaption}\item[{double}]{residual\+\_\+mean}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Computation of the residual variance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em residual\+\_\+mean} & residual mean.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+residual variance. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1Regression_a92f56d95ccea07ea80f9d079296552f7}\index{stat\_tool::Regression@{stat\_tool::Regression}!spreadsheet\_write@{spreadsheet\_write}}
+\index{spreadsheet\_write@{spreadsheet\_write}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{spreadsheet\_write()}{spreadsheet\_write()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a92f56d95ccea07ea80f9d079296552f7} 
+bool stat\+\_\+tool\+::\+Regression\+::spreadsheet\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{const std\+::string}]{path}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writing of a \doxylink{classstat__tool_1_1Regression}{Regression} object in a file at the spreadsheet format. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em path} & file path.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error status. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_abcc9eead01dd45344d047916210cfe8c}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classstat__tool_1_1Regression_a7a56b775aa0722823ad67f79a0f87c43}\index{stat\_tool::Regression@{stat\_tool::Regression}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a7a56b775aa0722823ad67f79a0f87c43} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classstat__tool_1_1Regression}{Regression}} \&}]{regression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{classstat__tool_1_1Regression_a543d5c204cf0202ad734acf28aa597d0}\index{stat\_tool::Regression@{stat\_tool::Regression}!Vectors@{Vectors}}
+\index{Vectors@{Vectors}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{Vectors}{Vectors}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a543d5c204cf0202ad734acf28aa597d0} 
+friend class \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classstat__tool_1_1Regression_aa12a3acd8c3abe125eb010908165e67c}\index{stat\_tool::Regression@{stat\_tool::Regression}!nb\_vector@{nb\_vector}}
+\index{nb\_vector@{nb\_vector}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{nb\_vector}{nb\_vector}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_aa12a3acd8c3abe125eb010908165e67c} 
+int stat\+\_\+tool\+::\+Regression\+::nb\+\_\+vector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+number of individuals 
+
+\Hypertarget{classstat__tool_1_1Regression_a67e792facfa8c590858745939bad8b2e}\index{stat\_tool::Regression@{stat\_tool::Regression}!residual@{residual}}
+\index{residual@{residual}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{residual}{residual}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_a67e792facfa8c590858745939bad8b2e} 
+double\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Regression\+::residual\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+residuals 
+
+\Hypertarget{classstat__tool_1_1Regression_afff9f8ba86ea29e1636ebe97396561bd}\index{stat\_tool::Regression@{stat\_tool::Regression}!vectors@{vectors}}
+\index{vectors@{vectors}!stat\_tool::Regression@{stat\_tool::Regression}}
+\doxysubsubsection{\texorpdfstring{vectors}{vectors}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1Regression_afff9f8ba86ea29e1636ebe97396561bd} 
+\mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Regression\+::vectors\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+pointer on a \doxylink{classstat__tool_1_1Vectors}{Vectors} object 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{regression_8h}{regression.\+h}}\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{regression_8cpp}{regression.\+cpp}}\end{DoxyCompactItemize}

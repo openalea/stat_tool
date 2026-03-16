@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1TemplateMultiPlotSet" kind="class" language="C++" prot="public">
+    <compoundname>stat_tool::TemplateMultiPlotSet</compoundname>
+    <includes refid="plotable_8h" local="no">plotable.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Type</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstat__tool_1_1TemplateMultiPlotSet_1a068cac775749df5a6520ada1307ac18d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref> &gt;</type>
+        <definition>std::vector&lt;MultiPlot&gt; stat_tool::TemplateMultiPlotSet&lt; Type &gt;::multiplots</definition>
+        <argsstring></argsstring>
+        <name>multiplots</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::multiplots</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="171" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classstat__tool_1_1TemplateMultiPlotSet_1a10647a7f97e5acae4204bbd9d4c6e3b6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string stat_tool::TemplateMultiPlotSet&lt; Type &gt;::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="175" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1TemplateMultiPlotSet_1a5b1e08f79b1253b5b6721d3e5cc7f9b8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string stat_tool::TemplateMultiPlotSet&lt; Type &gt;::border</definition>
+        <argsstring></argsstring>
+        <name>border</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::border</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="176" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1TemplateMultiPlotSet_1ac2f3d284c90b54a5a8adc00bb80a2c13" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::TemplateMultiPlotSet&lt; Type &gt;::nb_variable</definition>
+        <argsstring></argsstring>
+        <name>nb_variable</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::nb_variable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="177" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1TemplateMultiPlotSet_1a87f401478c7a870a72dfdbbc75500d3c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; stat_tool::TemplateMultiPlotSet&lt; Type &gt;::variable_nb_viewpoint</definition>
+        <argsstring></argsstring>
+        <name>variable_nb_viewpoint</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::variable_nb_viewpoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="178" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1TemplateMultiPlotSet_1a7fc56a2ffa61145340d7674618dac396" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; stat_tool::TemplateMultiPlotSet&lt; Type &gt;::variable</definition>
+        <argsstring></argsstring>
+        <name>variable</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::variable</qualifiedname>
+        <briefdescription>
+<para>identifier / number of the variable to be displayed </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="180" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1TemplateMultiPlotSet_1addd9fe739bb55c94f0ed5bc5d8633149" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; Type &gt;</type>
+        <definition>std::vector&lt;Type&gt; stat_tool::TemplateMultiPlotSet&lt; Type &gt;::viewpoint</definition>
+        <argsstring></argsstring>
+        <name>viewpoint</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::viewpoint</qualifiedname>
+        <briefdescription>
+<para>nature of the graph, for example observation distribution... </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="182" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1TemplateMultiPlotSet_1aab187c0f9d5829aef8abb4755b6bc601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TemplateMultiPlotSet::TemplateMultiPlotSet</definition>
+        <argsstring>(int size=1)</argsstring>
+        <name>TemplateMultiPlotSet</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::TemplateMultiPlotSet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="184" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1TemplateMultiPlotSet_1abe6c526b20c1efe0625d03f89736d777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TemplateMultiPlotSet::TemplateMultiPlotSet</definition>
+        <argsstring>(int size, int inb_variable)</argsstring>
+        <name>TemplateMultiPlotSet</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::TemplateMultiPlotSet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inb_variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="186" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1TemplateMultiPlotSet_1a97845d53d076fce9a151b7451abb59a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref> &amp;</type>
+        <definition>MultiPlot &amp; stat_tool::TemplateMultiPlotSet&lt; Type &gt;::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="188" column="15" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="188" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1TemplateMultiPlotSet_1a3ceb46e9b1aec07760339b40b43504af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat_tool::TemplateMultiPlotSet&lt; Type &gt;::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="191" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="191" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1TemplateMultiPlotSet_1ab02f8a7063c34c92855a995e13cb3eb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; MultiPlot &gt;::const_iterator stat_tool::TemplateMultiPlotSet&lt; Type &gt;::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::begin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="194" column="34" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="194" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1TemplateMultiPlotSet_1ac07a4786298f45466ece01ddc2d46ff3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref> &gt;::const_iterator</type>
+        <definition>std::vector&lt; MultiPlot &gt;::const_iterator stat_tool::TemplateMultiPlotSet&lt; Type &gt;::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>stat_tool::TemplateMultiPlotSet::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="197" column="34" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="197" bodyend="198"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="169" column="13" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="170" bodyend="199"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1ab02f8a7063c34c92855a995e13cb3eb1" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>begin</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1a5b1e08f79b1253b5b6721d3e5cc7f9b8" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>border</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1ac07a4786298f45466ece01ddc2d46ff3" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>end</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1a068cac775749df5a6520ada1307ac18d" prot="private" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>multiplots</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1ac2f3d284c90b54a5a8adc00bb80a2c13" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>nb_variable</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1a97845d53d076fce9a151b7451abb59a3" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>operator[]</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1a3ceb46e9b1aec07760339b40b43504af" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>size</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1aab187c0f9d5829aef8abb4755b6bc601" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>TemplateMultiPlotSet</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1abe6c526b20c1efe0625d03f89736d777" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>TemplateMultiPlotSet</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1a10647a7f97e5acae4204bbd9d4c6e3b6" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>title</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1a7fc56a2ffa61145340d7674618dac396" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>variable</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1a87f401478c7a870a72dfdbbc75500d3c" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>variable_nb_viewpoint</name></member>
+      <member refid="classstat__tool_1_1TemplateMultiPlotSet_1addd9fe739bb55c94f0ed5bc5d8633149" prot="public" virt="non-virtual"><scope>stat_tool::TemplateMultiPlotSet</scope><name>viewpoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

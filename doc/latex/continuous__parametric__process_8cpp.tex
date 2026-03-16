@@ -1,0 +1,42 @@
+\doxysection{/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/continuous\+\_\+parametric\+\_\+process.cpp File Reference}
+\hypertarget{continuous__parametric__process_8cpp}{}\label{continuous__parametric__process_8cpp}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/continuous\_parametric\_process.cpp@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/continuous\_parametric\_process.cpp}}
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$boost/tokenizer.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/math/distributions/gamma.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/math/distributions/inverse\+\_\+gaussian.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/math/distributions/normal.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/math/special\+\_\+functions/bessel.\+hpp$>$}\newline
+{\ttfamily \#include "{}markovian.\+h"{}}\newline
+{\ttfamily \#include "{}stat\+\_\+label.\+h"{}}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacestat__tool}{stat\+\_\+tool}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{continuous__parametric__process_8cpp_a525335710b53cb064ca56b936120431e}{\+\_\+\+USE\+\_\+\+MATH\+\_\+\+DEFINES}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_abafbf0d0cb309bcb63725125d1810ee1}{stat\+\_\+tool\+::q\+\_\+q\+\_\+plot\+\_\+computation}} (double min\+\_\+value, double step, int nb\+\_\+step, double \texorpdfstring{$\ast$}{*}theoretical\+\_\+cdf, int nb\+\_\+value, double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}empirical\+\_\+cdf)
+\begin{DoxyCompactList}\small\item\em Computation of q-\/q plot. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacestat__tool_abd489bdd6dab20dc63b886619309dc0d}{stat\+\_\+tool\+::q\+\_\+q\+\_\+plot\+\_\+print}} (const char \texorpdfstring{$\ast$}{*}path, int nb\+\_\+value, double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}qqplot)
+\begin{DoxyCompactList}\small\item\em Writing of a q-\/q plot at the Gnuplot format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacestat__tool_a31d571e2692cbb1590fdfecc16a74306}{stat\+\_\+tool\+::q\+\_\+q\+\_\+plotable\+\_\+write}} (\mbox{\hyperlink{classstat__tool_1_1SinglePlot}{Single\+Plot}} \&plot, int nb\+\_\+value, double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}qqplot)
+\begin{DoxyCompactList}\small\item\em Plot of a q-\/q plot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{continuous__parametric__process_8cpp_a525335710b53cb064ca56b936120431e}\index{continuous\_parametric\_process.cpp@{continuous\_parametric\_process.cpp}!\_USE\_MATH\_DEFINES@{\_USE\_MATH\_DEFINES}}
+\index{\_USE\_MATH\_DEFINES@{\_USE\_MATH\_DEFINES}!continuous\_parametric\_process.cpp@{continuous\_parametric\_process.cpp}}
+\doxysubsubsection{\texorpdfstring{\_USE\_MATH\_DEFINES}{\_USE\_MATH\_DEFINES}}
+{\footnotesize\ttfamily \label{continuous__parametric__process_8cpp_a525335710b53cb064ca56b936120431e} 
+\#define \+\_\+\+USE\+\_\+\+MATH\+\_\+\+DEFINES}
+

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="plotable_8cpp" kind="file" language="C++">
+    <compoundname>plotable.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includes refid="stat__tools_8h" local="yes">stat_tools.h</includes>
+    <includes refid="plotable_8h" local="yes">plotable.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp</label>
+        <link refid="plotable_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>plotable.h</label>
+        <link refid="plotable_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>plotable.hpp</label>
+        <link refid="plotable_8hpp"/>
+      </node>
+      <node id="7">
+        <label>reestimation.h</label>
+        <link refid="reestimation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>reestimation.hpp</label>
+        <link refid="reestimation_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>stat_label.h</label>
+        <link refid="stat__label_8h"/>
+      </node>
+      <node id="4">
+        <label>stat_tools.h</label>
+        <link refid="stat__tools_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>boost/math/special_functions/digamma.hpp</label>
+      </node>
+      <node id="16">
+        <label>cmath</label>
+      </node>
+      <node id="3">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>iterator</label>
+      </node>
+      <node id="9">
+        <label>list</label>
+      </node>
+      <node id="5">
+        <label>random</label>
+      </node>
+      <node id="13">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>utility</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestat__tool">stat_tool</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-c++-*-</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>StructureAnalysis:<sp/>Identifying<sp/>patterns<sp/>in<sp/>plant<sp/>architecture<sp/>and<sp/>development</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>1995-2018<sp/>CIRAD<sp/>AGAP</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>File<sp/>author(s):<sp/>Samuel<sp/>Dufour-Kowalski,<sp/>Yann<sp/>Guedon<sp/>(yann.guedon@cirad.fr)</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Source$</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Id:<sp/>plotable.cpp<sp/>16835<sp/>2014-06-12<sp/>06:30:51Z<sp/>guedon<sp/>$</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Forum<sp/>for<sp/>StructureAnalysis<sp/>developers:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>Licence</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>For<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/>If<sp/>not,</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stat__tools_8h" kindref="compound">stat_tools.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="plotable_8h" kindref="compound">plotable.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestat__tool" kindref="compound">stat_tool</ref><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="classstat__tool_1_1SinglePlot_1aad4611fdd83168aecdefdcdc29641442" kindref="member">SinglePlot::SinglePlot</ref>()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1SinglePlot_1a682bad37510d0eb213c903d449773ba0" kindref="member">legend</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1SinglePlot_1af4c569acbc316a3a2731cf394202e655" kindref="member">style</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="classstat__tool_1_1SinglePlot_1aad4611fdd83168aecdefdcdc29641442" kindref="member">SinglePlot::SinglePlot</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref>&amp;<sp/>plot)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1SinglePlot_1ad77b37d5e44a4652cc32039713deedcd" kindref="member">data</ref><sp/>=<sp/>plot.data;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref><sp/>=<sp/>plot.data_and_text;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1SinglePlot_1a682bad37510d0eb213c903d449773ba0" kindref="member">legend</ref><sp/>=<sp/>plot.legend;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1SinglePlot_1af4c569acbc316a3a2731cf394202e655" kindref="member">style</ref><sp/>=<sp/>plot.style;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot_1a03aa95f8af10e8fada5674c42ed42d03" kindref="member">SinglePlot::add_point</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>data.push_back(std::pair&lt;float,<sp/>float&gt;(x,y));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1SinglePlot_1a329de66d3d0f01b7951ea6f6bcdbafe2" kindref="member">add_text</ref>(x,<sp/>y,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot_1a03aa95f8af10e8fada5674c42ed42d03" kindref="member">SinglePlot::add_point</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a6245633ff08e4a11e25a43e7173db4c6" kindref="member">PlotPoint</ref>&amp;<sp/>p)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1SinglePlot_1ad77b37d5e44a4652cc32039713deedcd" kindref="member">data</ref>.push_back(p);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot_1a329de66d3d0f01b7951ea6f6bcdbafe2" kindref="member">SinglePlot::add_text</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>text)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1a6245633ff08e4a11e25a43e7173db4c6" kindref="member">PlotPoint</ref><sp/>pt;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>pt.first<sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>pt.second<sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref>.push_back(std::pair&lt;PlotPoint,<sp/>string&gt;(pt,text));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot_1a6a1a7142d27de4aee2e74108eb8d078a" kindref="member">SinglePlot::get_x</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&gt;=<sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref>.size())</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;index<sp/>larger<sp/>than<sp/>size<sp/>of<sp/>the<sp/>data<sp/>array&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1ac23b224e3cfe061f1b65da8c9e5fb5e4" kindref="member">Label</ref><sp/>pt<sp/>=<sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref>[i];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1a6245633ff08e4a11e25a43e7173db4c6" kindref="member">PlotPoint</ref><sp/>pp;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>pp<sp/>=<sp/>pt.first;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pp.first;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot_1aa0eac3dcd5c9ba79166c02be6c06eb30" kindref="member">SinglePlot::get_y</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&gt;=<sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref>.size())</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;index<sp/>larger<sp/>than<sp/>size<sp/>of<sp/>the<sp/>data<sp/>array&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1ac23b224e3cfe061f1b65da8c9e5fb5e4" kindref="member">Label</ref><sp/>pt<sp/>=<sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref>[i];</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1a6245633ff08e4a11e25a43e7173db4c6" kindref="member">PlotPoint</ref><sp/>pp;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>pp<sp/>=<sp/>pt.first;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pp.second;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">std::string<sp/><ref refid="classstat__tool_1_1SinglePlot_1a31632080fdc6bc4969a3e1b5ddca5478" kindref="member">SinglePlot::get_label</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&gt;=<sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref>.size())</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;index<sp/>larger<sp/>than<sp/>size<sp/>of<sp/>the<sp/>data<sp/>array&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1ac23b224e3cfe061f1b65da8c9e5fb5e4" kindref="member">Label</ref><sp/>pt<sp/>=<sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref>[i];</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pt.second;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot_1a7b051d07fee0d07a5f27678f9d7ab3dd" kindref="member">SinglePlot::get_size</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref>.size();<sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot_1a110da2e3a062bee580c33dfcef1d0977" kindref="member">SinglePlot::size</ref>()</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" kindref="member">data_and_text</ref>.size();<sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><ref refid="classstat__tool_1_1MultiPlot_1a2ca1ac77cc19ba57d0a8ba4093fc4699" kindref="member">MultiPlot::MultiPlot</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1ae6ca60fcdff279544afcd91db0ee36c4" kindref="member">plots</ref><sp/>=<sp/>std::vector&lt;SinglePlot&gt;(<ref refid="classstat__tool_1_1MultiPlot_1a105f34becb52395a8126cbf08208bb05" kindref="member">size</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1af67c69703e79a8b2123b7d4dea2c9010" kindref="member">xtics</ref><sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1afd659a49b39c1bd2829f1e490928de44" kindref="member">ytics</ref><sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1a644c1a9670a782aac27c9f6cc3b72cbd" kindref="member">xrange</ref><sp/>=<sp/><ref refid="namespacestat__tool_1a4165aca3a67ff45637472f9eecabc2c3" kindref="member">Range</ref>(0.,<sp/>0.);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1aa9742ddbb66bab63591149178ce1183d" kindref="member">yrange</ref><sp/>=<sp/><ref refid="namespacestat__tool_1a4165aca3a67ff45637472f9eecabc2c3" kindref="member">Range</ref>(0.,<sp/>0.);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1a9dc132eedba657ddaf2e475502e0e978" kindref="member">grid</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1a78aeceea5648668128d414e50e531498" kindref="member">group</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><ref refid="classstat__tool_1_1MultiPlot_1a2ca1ac77cc19ba57d0a8ba4093fc4699" kindref="member">MultiPlot::MultiPlot</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref>&amp;<sp/>multiplot)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1ae6ca60fcdff279544afcd91db0ee36c4" kindref="member">plots</ref><sp/>=<sp/>multiplot.plots;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1a32ae9638510d8af1272e9e3c36872cbb" kindref="member">title</ref><sp/>=<sp/>multiplot.title;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1af67c69703e79a8b2123b7d4dea2c9010" kindref="member">xtics</ref><sp/>=<sp/>multiplot.xtics;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1afd659a49b39c1bd2829f1e490928de44" kindref="member">ytics</ref><sp/>=<sp/>multiplot.ytics;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1a644c1a9670a782aac27c9f6cc3b72cbd" kindref="member">xrange</ref><sp/>=<sp/>multiplot.xrange;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1aa9742ddbb66bab63591149178ce1183d" kindref="member">yrange</ref><sp/>=<sp/>multiplot.yrange;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1a4e6f3cf4abc21f0fc5eb72fe51ee0644" kindref="member">xlabel</ref><sp/>=<sp/>multiplot.xlabel;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1a9bf7e36dddfb97cc58e8f4af6870799c" kindref="member">ylabel</ref><sp/>=<sp/>multiplot.ylabel;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1a9dc132eedba657ddaf2e475502e0e978" kindref="member">grid</ref><sp/>=<sp/>multiplot.grid;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1MultiPlot_1a78aeceea5648668128d414e50e531498" kindref="member">group</ref><sp/>=<sp/>multiplot.group;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><ref refid="classstat__tool_1_1MultiPlot_1a2ca1ac77cc19ba57d0a8ba4093fc4699" kindref="member">MultiPlot::MultiPlot</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref><sp/>*multiplot)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">:<ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref>(*multiplot)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">SinglePlot&amp;<sp/>MultiPlot::operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>plots[index];<sp/>};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Resize<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiPlot::resize(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newsize)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>plots.<ref refid="classstat__tool_1_1MultiPlot_1a9cd7edc13ab03c325c39a99662e1aff5" kindref="member">resize</ref>(newsize);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>number<sp/>of<sp/>plots</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MultiPlot::size()</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(plots.size());</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Begin<sp/>iterator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">std::vector&lt;SinglePlot&gt;::const_iterator<sp/>MultiPlot::begin()</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>plots.begin();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>End<sp/>iterator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">std::vector&lt;SinglePlot&gt;::const_iterator<sp/>MultiPlot::end()</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>plots.end();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="199"><highlight class="comment">MultiPlotSet::MultiPlotSet(int<sp/>size,<sp/>int<sp/>inb_variable)</highlight></codeline>
+<codeline lineno="200"><highlight class="comment">:multiplots(size),<sp/>variable_nb_viewpoint(inb_variable)<sp/>,<sp/>variable(size),<sp/>viewpoint(size)</highlight></codeline>
+<codeline lineno="201"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/><sp/>nb_variable<sp/>=<sp/>inb_variable;</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="204"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp"/>
+  </compounddef>
+</doxygen>

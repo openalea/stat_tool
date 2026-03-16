@@ -1,0 +1,1202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1ContinuousParametricProcess" kind="class" language="C++" prot="public">
+    <compoundname>stat_tool::ContinuousParametricProcess</compoundname>
+    <includes refid="markovian_8h" local="no">markovian.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametricProcess_1a93dc45a7f81b3c13c3c33c7fea7c221b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::ContinuousParametricProcess::nb_state</definition>
+        <argsstring></argsstring>
+        <name>nb_state</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::nb_state</qualifiedname>
+        <briefdescription>
+<para>number of states </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="343" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametricProcess_1a72b835a78df37af462caf8b5098df124" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33" kindref="member">continuous_parametric</ref></type>
+        <definition>continuous_parametric stat_tool::ContinuousParametricProcess::ident</definition>
+        <argsstring></argsstring>
+        <name>ident</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::ident</qualifiedname>
+        <briefdescription>
+<para>identifiers of observation distributions </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="344" column="27" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametricProcess_1a4cf77f428aed0adfe6e7c46f494fef9f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool stat_tool::ContinuousParametricProcess::tied_location</definition>
+        <argsstring></argsstring>
+        <name>tied_location</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::tied_location</qualifiedname>
+        <briefdescription>
+<para>flag tied means (gamma, Gaussian) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="345" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametricProcess_1a5aae87110ab5f8ceb3ac13ea3044ba71" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool stat_tool::ContinuousParametricProcess::tied_dispersion</definition>
+        <argsstring></argsstring>
+        <name>tied_dispersion</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::tied_dispersion</qualifiedname>
+        <briefdescription>
+<para>flag tied dispersion parameters (gamma, Gaussian, von Mises) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="346" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametricProcess_1a2cf47cf4ca7041a1256bd72d2cd9c602" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double stat_tool::ContinuousParametricProcess::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::offset</qualifiedname>
+        <briefdescription>
+<para>offset for Gaussian mixture with evenly spaced means </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="347" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametricProcess_1aa30219839b2ec0a4c7b500611887f086" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacestat__tool_1a969c68639e95529b91ba762a4e7d09b4" kindref="member">angle_unit</ref></type>
+        <definition>angle_unit stat_tool::ContinuousParametricProcess::unit</definition>
+        <argsstring></argsstring>
+        <name>unit</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::unit</qualifiedname>
+        <briefdescription>
+<para>unit (degree/radian) for von Mises distributions </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="348" column="16" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametricProcess_1a21857a9f1181af0aa2afefcf6d496f7b" prot="public" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> **</type>
+        <definition>ContinuousParametric** stat_tool::ContinuousParametricProcess::observation</definition>
+        <argsstring></argsstring>
+        <name>observation</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::observation</qualifiedname>
+        <briefdescription>
+<para>continuous observation distributions </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="349" column="26" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametricProcess_1adcd5c142a2fe1584306363a093c22e5c" prot="public" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
+        <definition>Distribution* stat_tool::ContinuousParametricProcess::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::weight</qualifiedname>
+        <briefdescription>
+<para>theoretical weights of observation distributions </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="350" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametricProcess_1a9bde6deab8ab5866faa7aa2b87298b73" prot="public" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
+        <definition>Distribution* stat_tool::ContinuousParametricProcess::restoration_weight</definition>
+        <argsstring></argsstring>
+        <name>restoration_weight</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::restoration_weight</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>weights of observation distributions deduced from the restoration </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="351" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a009a91edb71817e120a4e4bd6382e95a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::ContinuousParametricProcess::copy</definition>
+        <argsstring>(const ContinuousParametricProcess &amp;process)</argsstring>
+        <name>copy</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::copy</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> &amp;</type>
+          <declname>process</declname>
+        </param>
+        <briefdescription>
+<para>Copy of a <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">process</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="354" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="146" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a15afe20e006e91a6042c546eadac327c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::ContinuousParametricProcess::remove</definition>
+        <argsstring>()</argsstring>
+        <name>remove</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::remove</qualifiedname>
+        <briefdescription>
+<para>Destruction of the data members of a <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="355" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="186" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a403f65e112263965ff56850e75f6c0d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::ContinuousParametricProcess::ContinuousParametricProcess</definition>
+        <argsstring>(int inb_state=0)</argsstring>
+        <name>ContinuousParametricProcess</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::ContinuousParametricProcess</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inb_state</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inb_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of states. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="357" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="77" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a35d0405e51c5950e12ddd8678ec6c217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::ContinuousParametricProcess::ContinuousParametricProcess</definition>
+        <argsstring>(int inb_state, ContinuousParametric **pobservation)</argsstring>
+        <name>ContinuousParametricProcess</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::ContinuousParametricProcess</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inb_state</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> **</type>
+          <declname>pobservation</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inb_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of states, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pobservation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the observation distributions. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="358" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="115" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1ab30615d8e387849653e8c0d59bdd9b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::ContinuousParametricProcess::ContinuousParametricProcess</definition>
+        <argsstring>(const ContinuousParametricProcess &amp;process)</argsstring>
+        <name>ContinuousParametricProcess</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::ContinuousParametricProcess</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> &amp;</type>
+          <declname>process</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="359" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="359" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1ae3f46e363d618e6762f0411bd378fdd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::ContinuousParametricProcess::~ContinuousParametricProcess</definition>
+        <argsstring>()</argsstring>
+        <name>~ContinuousParametricProcess</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::~ContinuousParametricProcess</qualifiedname>
+        <briefdescription>
+<para>Destructor of the <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="361" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="215" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1afc4b52257874613f19f41d5d66264e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> &amp;</type>
+        <definition>ContinuousParametricProcess &amp; stat_tool::ContinuousParametricProcess::operator=</definition>
+        <argsstring>(const ContinuousParametricProcess &amp;process)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> &amp;</type>
+          <declname>process</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator of the <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">process</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="362" column="33" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="232" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a26878f48ce8f5822f3ed0b89ef3ff480" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::ContinuousParametricProcess::ascii_print</definition>
+        <argsstring>(std::ostream &amp;os, Histogram **observation_histogram, FrequencyDistribution **observation_distribution, Histogram *marginal_histogram, FrequencyDistribution *marginal_distribution, bool exhaustive, bool file_flag, model_type model=HIDDEN_MARKOV) const</argsstring>
+        <name>ascii_print</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::ascii_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> **</type>
+          <declname>observation_histogram</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <declname>observation_distribution</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
+          <declname>marginal_histogram</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <declname>marginal_distribution</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exhaustive</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>file_flag</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8" kindref="member">model_type</ref></type>
+          <declname>model</declname>
+          <defval><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e" kindref="member">HIDDEN_MARKOV</ref></defval>
+        </param>
+        <briefdescription>
+<para>Writing of a <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">observation_histogram</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the observation histograms, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">observation_distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the observation frequency distributions, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">marginal_histogram</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the marginal histogram, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">marginal_distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the marginal frequency distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">exhaustive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag detail level, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">file_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag file, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>model type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="368" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="453" bodyend="1367"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a321011f463ee92678f6d1f7b3e325b8d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::ContinuousParametricProcess::spreadsheet_print</definition>
+        <argsstring>(std::ostream &amp;os, Histogram **observation_histogram=NULL, FrequencyDistribution **observation_distribution=NULL, Histogram *marginal_histogram=NULL, FrequencyDistribution *marginal_distribution=NULL, model_type model=HIDDEN_MARKOV) const</argsstring>
+        <name>spreadsheet_print</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::spreadsheet_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> **</type>
+          <declname>observation_histogram</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <declname>observation_distribution</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
+          <declname>marginal_histogram</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <declname>marginal_distribution</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8" kindref="member">model_type</ref></type>
+          <declname>model</declname>
+          <defval><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e" kindref="member">HIDDEN_MARKOV</ref></defval>
+        </param>
+        <briefdescription>
+<para>Writing of a <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object at the spreadsheet format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">observation_histogram</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the observation histograms, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">observation_distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the observation frequency distributions, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">marginal_histogram</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the marginal histogram, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">marginal_distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the marginal frequency distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>model type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="373" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="1383" bodyend="2326"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a396cac7e3d1bb7b742ba192709f7080f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::ContinuousParametricProcess::plot_print</definition>
+        <argsstring>(const char *prefix, const char *title, int process, Histogram **observation_histogram=NULL, FrequencyDistribution **observation_distribution=NULL, Histogram *marginal_histogram=NULL, FrequencyDistribution *marginal_distribution=NULL, int nb_value=I_DEFAULT, double **empirical_cdf=NULL, model_type model=HIDDEN_MARKOV) const</argsstring>
+        <name>plot_print</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::plot_print</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>process</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> **</type>
+          <declname>observation_histogram</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <declname>observation_distribution</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
+          <declname>marginal_histogram</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <declname>marginal_distribution</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_value</declname>
+          <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
+        </param>
+        <param>
+          <type>double **</type>
+          <declname>empirical_cdf</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8" kindref="member">model_type</ref></type>
+          <declname>model</declname>
+          <defval><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e" kindref="member">HIDDEN_MARKOV</ref></defval>
+        </param>
+        <briefdescription>
+<para>Plot of a <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object at the Gnuplot format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file prefix, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>figure title, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">process</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation process index, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">observation_histogram</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the observation histograms, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">observation_distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the observation frequency distributions, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">marginal_histogram</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the marginal histogram, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">marginal_distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the marginal frequency distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nb_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of values, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">empirical_cdf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the empirical cumulative distribution function, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>model type.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>error status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="379" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="2438" bodyend="3384"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a9179bc6f9db60ff060d26a154dce74b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::ContinuousParametricProcess::plotable_write</definition>
+        <argsstring>(MultiPlotSet &amp;plot, int &amp;index, int process, Histogram **observation_histogram=NULL, FrequencyDistribution **observation_distribution=NULL, Histogram *marginal_histogram=NULL, FrequencyDistribution *marginal_distribution=NULL, int nb_value=I_DEFAULT, double **empirical_cdf=NULL, model_type model=HIDDEN_MARKOV) const</argsstring>
+        <name>plotable_write</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::plotable_write</qualifiedname>
+        <param>
+          <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> &amp;</type>
+          <declname>plot</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>process</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> **</type>
+          <declname>observation_histogram</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <declname>observation_distribution</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
+          <declname>marginal_histogram</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <declname>marginal_distribution</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_value</declname>
+          <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
+        </param>
+        <param>
+          <type>double **</type>
+          <declname>empirical_cdf</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8" kindref="member">model_type</ref></type>
+          <declname>model</declname>
+          <defval><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e" kindref="member">HIDDEN_MARKOV</ref></defval>
+        </param>
+        <briefdescription>
+<para>Plot of a <ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">plot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref> index, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">process</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>observation process index, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">observation_histogram</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the observation histograms, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">observation_distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the observation frequency distributions, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">marginal_histogram</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the marginal histogram, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">marginal_distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the marginal frequency distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nb_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of values, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">empirical_cdf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the empirical cumulative distribution function, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>model type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="386" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="3430" bodyend="4309"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a6517e61954d6c282447028d5da74050e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat_tool::ContinuousParametricProcess::nb_parameter_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>nb_parameter_computation</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::nb_parameter_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the number of free parameters of a continuous observation process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of free parameters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="394" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="4321" bodyend="4355"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a1fc16569e49ede7c009358eb9a456993" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::ContinuousParametricProcess::mean_computation</definition>
+        <argsstring>(Distribution *pweight) const</argsstring>
+        <name>mean_computation</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::mean_computation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
+          <declname>pweight</declname>
+        </param>
+        <briefdescription>
+<para>Computation of the mean of a mixture of continuous observation distributions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pweight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the weight distribution.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>mixture mean. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="395" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="4369" bodyend="4418"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a76a89eb40695de7d0e97fc3a134c400b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::ContinuousParametricProcess::variance_computation</definition>
+        <argsstring>(Distribution *pweight, double mean=D_INF) const</argsstring>
+        <name>variance_computation</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::variance_computation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
+          <declname>pweight</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mean</declname>
+          <defval><ref refid="namespacestat__tool_1a710852f459bd0493d0eaaac065dab938" kindref="member">D_INF</ref></defval>
+        </param>
+        <briefdescription>
+<para>Computation of the variance of a mixture of continuous observation distributions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pweight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on weight distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mean.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>mixture variance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="396" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="4433" bodyend="4490"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a0a005a3bc9d5d85664651b497f747a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::ContinuousParametricProcess::select_unit</definition>
+        <argsstring>(angle_unit iunit)</argsstring>
+        <name>select_unit</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::select_unit</qualifiedname>
+        <param>
+          <type><ref refid="namespacestat__tool_1a969c68639e95529b91ba762a4e7d09b4" kindref="member">angle_unit</ref></type>
+          <declname>iunit</declname>
+        </param>
+        <briefdescription>
+<para>Choice of the unit for von Mises observation distributions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iunit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unit (DEGREE/RADIAN). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="397" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="4501" bodyend="4513"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a554d730180312eadbaee9547bcf87200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::ContinuousParametricProcess::init</definition>
+        <argsstring>(continuous_parametric iident, double min_value, double max_value, double mean, double variance)</argsstring>
+        <name>init</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::init</qualifiedname>
+        <param>
+          <type><ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33" kindref="member">continuous_parametric</ref></type>
+          <declname>iident</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min_value</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_value</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>variance</declname>
+        </param>
+        <briefdescription>
+<para>Initialization of continuous observation distributions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distribution identifier, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">min_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum value, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maximum value, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>empirical mean </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">variance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>empirical variance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="398" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="4528" bodyend="4587"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1a6c88803fcdbf677f48b554efee42764e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::ContinuousParametricProcess::interval_computation</definition>
+        <argsstring>(std::ostream &amp;os)</argsstring>
+        <name>interval_computation</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::interval_computation</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Computation of intervals on the basis of quantile and posterior probability criteria for a uniform weight distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="401" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="4599" bodyend="4948"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classstat__tool_1_1ContinuousParametricProcess_1ad141161519c8961f84c631ca907f3f52" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> *</type>
+        <definition>ContinuousParametricProcess * stat_tool::ContinuousParametricProcess::parsing</definition>
+        <argsstring>(StatError &amp;error, ifstream &amp;in_file, int &amp;line, int nb_state, model_type model, continuous_parametric last_ident=VON_MISES)</argsstring>
+        <name>parsing</name>
+        <qualifiedname>stat_tool::ContinuousParametricProcess::parsing</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>ifstream &amp;</type>
+          <declname>in_file</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_state</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8" kindref="member">model_type</ref></type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33" kindref="member">continuous_parametric</ref></type>
+          <declname>last_ident</declname>
+          <defval><ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33a48aced0c60af2f7d5099ace9159c3e6c" kindref="member">VON_MISES</ref></defval>
+        </param>
+        <briefdescription>
+<para>Analysis of the format of continuous observation distributions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">in_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on the file line index, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nb_state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of states, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>model type, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">last_ident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifier of the last distribution in the list.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1ContinuousParametricProcess" kindref="compound">ContinuousParametricProcess</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="364" column="40" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp" bodystart="259" bodyend="435"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Continuous parametric observation process. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Collection of univariate continuous parametric emission distributions. In the multivariate case, use a collection of conditionally independent ContinuousParametricProcesses observations[k] is a pointer to emission distribution for state k </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>stat_tool::ContinuousParametric</label>
+        <link refid="classstat__tool_1_1ContinuousParametric"/>
+      </node>
+      <node id="1">
+        <label>stat_tool::ContinuousParametricProcess</label>
+        <link refid="classstat__tool_1_1ContinuousParametricProcess"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>observation</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>restoration_weight</edgelabel>
+          <edgelabel>weight</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stat_tool::Distribution</label>
+        <link refid="classstat__tool_1_1Distribution"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="339" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="339" bodyend="402"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a26878f48ce8f5822f3ed0b89ef3ff480" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>ascii_print</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a403f65e112263965ff56850e75f6c0d8" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>ContinuousParametricProcess</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a35d0405e51c5950e12ddd8678ec6c217" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>ContinuousParametricProcess</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1ab30615d8e387849653e8c0d59bdd9b69" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>ContinuousParametricProcess</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a009a91edb71817e120a4e4bd6382e95a" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>copy</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a72b835a78df37af462caf8b5098df124" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>ident</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a554d730180312eadbaee9547bcf87200" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>init</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a6c88803fcdbf677f48b554efee42764e" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>interval_computation</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a1fc16569e49ede7c009358eb9a456993" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>mean_computation</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a6517e61954d6c282447028d5da74050e" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>nb_parameter_computation</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a93dc45a7f81b3c13c3c33c7fea7c221b" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>nb_state</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a21857a9f1181af0aa2afefcf6d496f7b" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>observation</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a2cf47cf4ca7041a1256bd72d2cd9c602" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>offset</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1afc4b52257874613f19f41d5d66264e06" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>operator=</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1ad141161519c8961f84c631ca907f3f52" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>parsing</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a396cac7e3d1bb7b742ba192709f7080f" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>plot_print</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a9179bc6f9db60ff060d26a154dce74b3" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>plotable_write</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a15afe20e006e91a6042c546eadac327c" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>remove</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a9bde6deab8ab5866faa7aa2b87298b73" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>restoration_weight</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a0a005a3bc9d5d85664651b497f747a93" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>select_unit</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a321011f463ee92678f6d1f7b3e325b8d" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>spreadsheet_print</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a5aae87110ab5f8ceb3ac13ea3044ba71" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>tied_dispersion</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a4cf77f428aed0adfe6e7c46f494fef9f" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>tied_location</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1aa30219839b2ec0a4c7b500611887f086" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>unit</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1a76a89eb40695de7d0e97fc3a134c400b" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>variance_computation</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1adcd5c142a2fe1584306363a093c22e5c" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>weight</name></member>
+      <member refid="classstat__tool_1_1ContinuousParametricProcess_1ae3f46e363d618e6762f0411bd378fdd8" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametricProcess</scope><name>~ContinuousParametricProcess</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

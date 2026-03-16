@@ -1,0 +1,87 @@
+\doxysection{/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/vectors.h File Reference}
+\hypertarget{vectors_8h}{}\label{vectors_8h}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/vectors.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/vectors.h}}
+{\ttfamily \#include "{}stat\+\_\+tools.\+h"{}}\newline
+{\ttfamily \#include "{}distribution.\+h"{}}\newline
+{\ttfamily \#include "{}distance\+\_\+matrix.\+h"{}}\newline
+{\ttfamily \#include "{}markovian.\+h"{}}\newline
+{\ttfamily \#include "{}continuous\+\_\+parametric\+\_\+estimation.\+hpp"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classstat__tool_1_1Vectors}{stat\+\_\+tool\+::\+Vectors}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classstat__tool_1_1Vectors}{Vectors} with integer-\/ and real-\/valued variables. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1VectorDistance}{stat\+\_\+tool\+::\+Vector\+Distance}}
+\begin{DoxyCompactList}\small\item\em Parameterization of a distance between vectors with heterogeneous variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacestat__tool}{stat\+\_\+tool}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a3271509a25642e2207d539748ed38950}{stat\+\_\+tool\+::vector\+\_\+transformation}} \{ \mbox{\hyperlink{namespacestat__tool_a3271509a25642e2207d539748ed38950af5f4f6df9f00818ea7d08607d8706316}{stat\+\_\+tool\+::\+VECTOR\+\_\+\+COPY}}
+, \mbox{\hyperlink{namespacestat__tool_a3271509a25642e2207d539748ed38950a49fab501cbf70e9b9e75ec6760fd89e0}{stat\+\_\+tool\+::\+ADD\+\_\+\+COMPONENT\+\_\+\+VARIABLE}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a96c51681600ef6ef7ce5a1b9181a8b5c}{stat\+\_\+tool\+::threshold\+\_\+direction}} \{ \mbox{\hyperlink{namespacestat__tool_a96c51681600ef6ef7ce5a1b9181a8b5ca185942ad0c661f95485cf0f27ebac845}{stat\+\_\+tool\+::\+ABOVE}}
+, \mbox{\hyperlink{namespacestat__tool_a96c51681600ef6ef7ce5a1b9181a8b5caedb1d38d4998307076336c53eca8ae61}{stat\+\_\+tool\+::\+BELOW}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_abee4ce6dd0ffd109b23169e88f56ab68}{stat\+\_\+tool\+::correlation\+\_\+type}} \{ \mbox{\hyperlink{namespacestat__tool_abee4ce6dd0ffd109b23169e88f56ab68a1e5c31f74f7d30b9836d978ffb62f074}{stat\+\_\+tool\+::\+PEARSON}}
+, \mbox{\hyperlink{namespacestat__tool_abee4ce6dd0ffd109b23169e88f56ab68a528c7fb01b2562a41f2a41c2cbcefb8f}{stat\+\_\+tool\+::\+SPEARMAN}}
+, \mbox{\hyperlink{namespacestat__tool_abee4ce6dd0ffd109b23169e88f56ab68af298a11142dfa88c8f6faf95ce9ad49b}{stat\+\_\+tool\+::\+KENDALL}}
+, \mbox{\hyperlink{namespacestat__tool_abee4ce6dd0ffd109b23169e88f56ab68ac85d7b64824c498fdb06209f0577fa5d}{stat\+\_\+tool\+::\+SPEARMAN2}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a767192bed74d2f854185cf899f5e4082}{stat\+\_\+tool\+::metric}} \{ \mbox{\hyperlink{namespacestat__tool_a767192bed74d2f854185cf899f5e4082a9de924e5599cfda745891fe2030714e2}{stat\+\_\+tool\+::\+ABSOLUTE\+\_\+\+VALUE}}
+, \mbox{\hyperlink{namespacestat__tool_a767192bed74d2f854185cf899f5e4082aa232660f4216b5d06fe1e3d748460e52}{stat\+\_\+tool\+::\+QUADRATIC}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5d}{stat\+\_\+tool\+::tying\+\_\+rule}} \{ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5dab71a3c3c9a93adc6ae872aad48a5f883}{stat\+\_\+tool\+::\+INDEPENDENT}}
+, \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5dac5072df076002db1d7d67d6612d26b8f}{stat\+\_\+tool\+::\+CONVOLUTION\+\_\+\+FACTOR}}
+, \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5da16f7cadd95ef0789f5cea6a424eabdab}{stat\+\_\+tool\+::\+SCALING\+\_\+\+FACTOR}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a22827419bdacafd3f73d1e7480c76b22}{stat\+\_\+tool\+::moving\+\_\+average\+\_\+method}} \{ \mbox{\hyperlink{namespacestat__tool_a22827419bdacafd3f73d1e7480c76b22ab709f9eb0ce8bccfdd194bfeefdff5c8}{stat\+\_\+tool\+::\+AVERAGING}}
+, \mbox{\hyperlink{namespacestat__tool_a22827419bdacafd3f73d1e7480c76b22a31f5f4467eca1adaac64da3975c22deb}{stat\+\_\+tool\+::\+LEAST\+\_\+\+SQUARES}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacestat__tool_a39c3b8d286e6227b76d30bbf9390f66a}{stat\+\_\+tool\+::identifier\+\_\+checking}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, int nb\+\_\+individual, int \texorpdfstring{$\ast$}{*}identifier)
+\begin{DoxyCompactList}\small\item\em Checking of a list of individual identifiers (unique identifiers). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacestat__tool_a89e8fd34910ecf4e1144444c33b92f63}{stat\+\_\+tool\+::selected\+\_\+identifier\+\_\+checking}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, int nb\+\_\+individual, int \texorpdfstring{$\ast$}{*}identifier, int nb\+\_\+selected\+\_\+individual, int \texorpdfstring{$\ast$}{*}selected\+\_\+identifier, const char \texorpdfstring{$\ast$}{*}data\+\_\+label)
+\begin{DoxyCompactList}\small\item\em Checking of an identifier list. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_a953a5d372db648fc5c3a55fcafb37443}{stat\+\_\+tool\+::identifier\+\_\+select}} (int nb\+\_\+individual, int \texorpdfstring{$\ast$}{*}identifier, int nb\+\_\+selected\+\_\+individual, int \texorpdfstring{$\ast$}{*}selected\+\_\+identifier, bool keep)
+\begin{DoxyCompactList}\small\item\em Selection of individuals by their identifiers. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_ae4f64e1c488c68728adadeaceba77815}{stat\+\_\+tool\+::select\+\_\+variable}} (int nb\+\_\+variable, int nb\+\_\+selected\+\_\+variable, int \texorpdfstring{$\ast$}{*}selected\+\_\+variable, bool keep)
+\begin{DoxyCompactList}\small\item\em Selection of variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a7a8f65ad1113e1c7fc00512de2aba65b}{stat\+\_\+tool\+::\+VECTOR\+\_\+\+NB\+\_\+\+VARIABLE}} = 60
+\begin{DoxyCompactList}\small\item\em maximum number of variables \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a6315249f2dc2f96f48b79472d31ca282}{stat\+\_\+tool\+::\+DISTANCE\+\_\+\+NB\+\_\+\+VECTOR}} = 2000
+\begin{DoxyCompactList}\small\item\em maximum number of vectors for the computation of a matrix of pairwise distances \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_ab16f105cb865ce3c4b774f775d572b15}{stat\+\_\+tool\+::\+SUP\+\_\+\+NORM\+\_\+\+DISTANCE\+\_\+\+NB\+\_\+\+VECTOR}} = 10
+\begin{DoxyCompactList}\small\item\em minimum number of vectors for the computation of the sup norm distance \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a72c8d36bdefd1c449f8fa78c6ed10f23}{stat\+\_\+tool\+::\+CONTINGENCY\+\_\+\+NB\+\_\+\+VALUE}} = 100
+\begin{DoxyCompactList}\small\item\em maximum number of categories for the computation of a contingency table \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a77328c04bb85a8b9ea089a7b01d8167b}{stat\+\_\+tool\+::\+DISPLAY\+\_\+\+CONTINGENCY\+\_\+\+NB\+\_\+\+VALUE}} = 20
+\begin{DoxyCompactList}\small\item\em maximum number of categories for the display of a contingency table \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a9e0495da3d699ce4aa0a04440ab0a31f}{stat\+\_\+tool\+::\+VARIANCE\+\_\+\+ANALYSIS\+\_\+\+NB\+\_\+\+VALUE}} = 100
+\begin{DoxyCompactList}\small\item\em maximum number of levels for the analysis of variance \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_aefe19d49242479939f4b61f37c0a60ab}{stat\+\_\+tool\+::\+DISPLAY\+\_\+\+CONDITIONAL\+\_\+\+NB\+\_\+\+VALUE}} = 100
+\begin{DoxyCompactList}\small\item\em maximum number of values of the display of the conditional distributions \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a538d2f07305f8d79b0a60c3fdb6ec3c7}{stat\+\_\+tool\+::\+PLOT\+\_\+\+NB\+\_\+\+VALUE}} = 30
+\begin{DoxyCompactList}\small\item\em threshold for the writing of frequencies (Gnuplot output) \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_ab04094fcb7d13aaa69ca40acd0616692}{stat\+\_\+tool\+::\+NB\+\_\+\+CATEGORY}} = 50
+\begin{DoxyCompactList}\small\item\em maximum number of categories \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a5660ee00c20d2ebf8e62f1c7e51851b0}{stat\+\_\+tool\+::\+MIN\+\_\+\+NB\+\_\+\+ASSIGNMENT}} = 1
+\begin{DoxyCompactList}\small\item\em minimum number of assignments of individuals (1st iteration of the MCEM algorithm) \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a2a53bf546d215d2b988c190368346546}{stat\+\_\+tool\+::\+MAX\+\_\+\+NB\+\_\+\+ASSIGNMENT}} = 10
+\begin{DoxyCompactList}\small\item\em maximum number of assignments of individuals (MCEM algorithm) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a1c171c288b4d9214f9c87ec33f7cab93}{stat\+\_\+tool\+::\+NB\+\_\+\+ASSIGNMENT\+\_\+\+PARAMETER}} = 1.
+\begin{DoxyCompactList}\small\item\em parameter for the number of assignments of individuals (MCEM algorithm) \end{DoxyCompactList}\end{DoxyCompactItemize}

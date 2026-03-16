@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1Test" kind="class" language="C++" prot="public">
+    <compoundname>stat_tool::Test</compoundname>
+    <includes refid="stat__tools_8h" local="no">stat_tools.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classstat__tool_1_1Test_1a20591c1170f8182fb90d2484967cd987" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacestat__tool_1a50fa429d0c57d8a72874a89fd1800836" kindref="member">test_distribution</ref></type>
+        <definition>test_distribution stat_tool::Test::ident</definition>
+        <argsstring></argsstring>
+        <name>ident</name>
+        <qualifiedname>stat_tool::Test::ident</qualifiedname>
+        <briefdescription>
+<para>identifier (Normal/Chi2/F/Student&apos;s t) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="400" column="23" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Test_1a49d37a58eabd860f49afa074b62ade47" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool stat_tool::Test::one_side</definition>
+        <argsstring></argsstring>
+        <name>one_side</name>
+        <qualifiedname>stat_tool::Test::one_side</qualifiedname>
+        <briefdescription>
+<para>one-sided/two-sided </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="401" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Test_1ab53c881fcab7591646b757d0191fd14b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Test::df1</definition>
+        <argsstring></argsstring>
+        <name>df1</name>
+        <qualifiedname>stat_tool::Test::df1</qualifiedname>
+        <briefdescription>
+<para>degrees of freedom (Chi2/F/Student&apos;s t) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="402" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Test_1a8b183bbccf2815ce7de4f204bf26000e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Test::df2</definition>
+        <argsstring></argsstring>
+        <name>df2</name>
+        <qualifiedname>stat_tool::Test::df2</qualifiedname>
+        <briefdescription>
+<para>degrees of freedom (F) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="403" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Test_1a6ed59f03756e71153dbd5a441b777e3c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double stat_tool::Test::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>stat_tool::Test::value</qualifiedname>
+        <briefdescription>
+<para>statistic value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="404" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Test_1af35342766e7803422aa6562d6bf4d14b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double stat_tool::Test::critical_probability</definition>
+        <argsstring></argsstring>
+        <name>critical_probability</name>
+        <qualifiedname>stat_tool::Test::critical_probability</qualifiedname>
+        <briefdescription>
+<para>critical probability </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="405" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classstat__tool_1_1Test_1a93423b94d79ab5df83b7d1094505b376" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Test &amp;test)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>stat_tool::Test::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> &amp;</type>
+          <declname>test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="395" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="395" bodyend="396"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1Test_1af9de7b9f8f3692f16357e654b5e58389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Test::copy</definition>
+        <argsstring>(const Test &amp;test)</argsstring>
+        <name>copy</name>
+        <qualifiedname>stat_tool::Test::copy</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> &amp;</type>
+          <declname>test</declname>
+        </param>
+        <briefdescription>
+<para>Construction by copy of a <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">test</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="407" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="195" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a53e16fea80d59dddd532c8240796450f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Test::Test</definition>
+        <argsstring>(test_distribution iident, bool ione_side=true)</argsstring>
+        <name>Test</name>
+        <qualifiedname>stat_tool::Test::Test</qualifiedname>
+        <param>
+          <type><ref refid="namespacestat__tool_1a50fa429d0c57d8a72874a89fd1800836" kindref="member">test_distribution</ref></type>
+          <declname>iident</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ione_side</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifier, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ione_side</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag one-sided/two-sided. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="409" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="67" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a0ebe738720033120156b7893bec2d3aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Test::Test</definition>
+        <argsstring>(test_distribution iident, bool ione_side, int idf1, int idf2, double ivalue)</argsstring>
+        <name>Test</name>
+        <qualifiedname>stat_tool::Test::Test</qualifiedname>
+        <param>
+          <type><ref refid="namespacestat__tool_1a50fa429d0c57d8a72874a89fd1800836" kindref="member">test_distribution</ref></type>
+          <declname>iident</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ione_side</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idf1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idf2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ivalue</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifier, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ione_side</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag one-sided/two-sided, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">idf1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degrees of freedom, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">idf2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degrees of freedom, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ivalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="410" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="91" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a13b3eb506a2ac3c1bd4f8d0c0daa18cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Test::Test</definition>
+        <argsstring>(test_distribution iident, bool ione_side, int idf1, int idf2, double ivalue, double icritical_probability)</argsstring>
+        <name>Test</name>
+        <qualifiedname>stat_tool::Test::Test</qualifiedname>
+        <param>
+          <type><ref refid="namespacestat__tool_1a50fa429d0c57d8a72874a89fd1800836" kindref="member">test_distribution</ref></type>
+          <declname>iident</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ione_side</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idf1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idf2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ivalue</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>icritical_probability</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">iident</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>identifier, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ione_side</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag one-sided/two-sided, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">idf1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degrees of freedom, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">idf2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>degrees of freedom, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ivalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">icritical_probability</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>critical probability. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="411" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="116" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a297cdf4404804fb45546d9b767fa77c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Test::Test</definition>
+        <argsstring>(const Test &amp;test)</argsstring>
+        <name>Test</name>
+        <qualifiedname>stat_tool::Test::Test</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> &amp;</type>
+          <declname>test</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="413" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="413" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a55dadf13167e4aac462087b242590184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> &amp;</type>
+        <definition>Test &amp; stat_tool::Test::operator=</definition>
+        <argsstring>(const Test &amp;test)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>stat_tool::Test::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> &amp;</type>
+          <declname>test</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator of the <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">test</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="415" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="217" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1ae0de4034c2271bd694b0ba447d2fa34c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Test::ascii_print</definition>
+        <argsstring>(std::ostream &amp;os, bool comment_flag=false, bool reference_flag=true) const</argsstring>
+        <name>ascii_print</name>
+        <qualifiedname>stat_tool::Test::ascii_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>comment_flag</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reference_flag</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Writing of the results of a test. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">comment_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag comment, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reference_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag reference result. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="417" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="238" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1ac9434e6b680d2052f77848ddc016734b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Test::spreadsheet_print</definition>
+        <argsstring>(std::ostream &amp;os, bool reference_flag=true) const</argsstring>
+        <name>spreadsheet_print</name>
+        <qualifiedname>stat_tool::Test::spreadsheet_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reference_flag</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Writing of the results of a test at the spreadsheet format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reference_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag reference result. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="419" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="366" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a71d5eefed08992900592722b2c939c07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Test::standard_normal_critical_probability_computation</definition>
+        <argsstring>()</argsstring>
+        <name>standard_normal_critical_probability_computation</name>
+        <qualifiedname>stat_tool::Test::standard_normal_critical_probability_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the critical probability from the value taken by a standard Gaussian random variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="421" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="481" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1acaee08f9fa96e9300a7570deb90573f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Test::standard_normal_value_computation</definition>
+        <argsstring>()</argsstring>
+        <name>standard_normal_value_computation</name>
+        <qualifiedname>stat_tool::Test::standard_normal_value_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the value taken by a standard Gaussian random variable from the critical probability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="422" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="503" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1ae1bab38ce7819e354b3441ef44885aed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Test::chi2_critical_probability_computation</definition>
+        <argsstring>()</argsstring>
+        <name>chi2_critical_probability_computation</name>
+        <qualifiedname>stat_tool::Test::chi2_critical_probability_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of la critical probability from the value taken by a Chi2 random variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="423" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="520" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a8a8cc1b74a6a46d08e4b9c21ca199323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Test::chi2_value_computation</definition>
+        <argsstring>()</argsstring>
+        <name>chi2_value_computation</name>
+        <qualifiedname>stat_tool::Test::chi2_value_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the value taken by a Chi2 random variable from the critical probability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="424" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="543" bodyend="556"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1acf0b5da34ffebc1a577473bdcae00657" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Test::F_critical_probability_computation</definition>
+        <argsstring>()</argsstring>
+        <name>F_critical_probability_computation</name>
+        <qualifiedname>stat_tool::Test::F_critical_probability_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the critical probability from the value taken by a F random variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="425" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="566" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a744cd74f33f9cf3fd7ec59a0b136e58a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Test::F_value_computation</definition>
+        <argsstring>()</argsstring>
+        <name>F_value_computation</name>
+        <qualifiedname>stat_tool::Test::F_value_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the value taken by a F random variable from the critical probability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="426" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="589" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a8a2b31cc3d12b3e3c5c39c3719b3e721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Test::t_critical_probability_computation</definition>
+        <argsstring>()</argsstring>
+        <name>t_critical_probability_computation</name>
+        <qualifiedname>stat_tool::Test::t_critical_probability_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the critical probability from the value taken by a Student&apos;s t-random variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="427" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="612" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Test_1a8129ecdd350a444f02f546b303a9515c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Test::t_value_computation</definition>
+        <argsstring>()</argsstring>
+        <name>t_value_computation</name>
+        <qualifiedname>stat_tool::Test::t_value_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the value taken by a Student&apos;s t-random variable from the critical probability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="428" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp" bodystart="640" bodyend="653"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> of hypothesis. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="393" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="393" bodyend="429"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1Test_1ae0de4034c2271bd694b0ba447d2fa34c" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>ascii_print</name></member>
+      <member refid="classstat__tool_1_1Test_1ae1bab38ce7819e354b3441ef44885aed" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>chi2_critical_probability_computation</name></member>
+      <member refid="classstat__tool_1_1Test_1a8a8cc1b74a6a46d08e4b9c21ca199323" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>chi2_value_computation</name></member>
+      <member refid="classstat__tool_1_1Test_1af9de7b9f8f3692f16357e654b5e58389" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>copy</name></member>
+      <member refid="classstat__tool_1_1Test_1af35342766e7803422aa6562d6bf4d14b" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>critical_probability</name></member>
+      <member refid="classstat__tool_1_1Test_1ab53c881fcab7591646b757d0191fd14b" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>df1</name></member>
+      <member refid="classstat__tool_1_1Test_1a8b183bbccf2815ce7de4f204bf26000e" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>df2</name></member>
+      <member refid="classstat__tool_1_1Test_1acf0b5da34ffebc1a577473bdcae00657" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>F_critical_probability_computation</name></member>
+      <member refid="classstat__tool_1_1Test_1a744cd74f33f9cf3fd7ec59a0b136e58a" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>F_value_computation</name></member>
+      <member refid="classstat__tool_1_1Test_1a20591c1170f8182fb90d2484967cd987" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>ident</name></member>
+      <member refid="classstat__tool_1_1Test_1a49d37a58eabd860f49afa074b62ade47" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>one_side</name></member>
+      <member refid="classstat__tool_1_1Test_1a93423b94d79ab5df83b7d1094505b376" prot="private" virt="non-virtual"><scope>stat_tool::Test</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classstat__tool_1_1Test_1a55dadf13167e4aac462087b242590184" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>operator=</name></member>
+      <member refid="classstat__tool_1_1Test_1ac9434e6b680d2052f77848ddc016734b" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>spreadsheet_print</name></member>
+      <member refid="classstat__tool_1_1Test_1a71d5eefed08992900592722b2c939c07" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>standard_normal_critical_probability_computation</name></member>
+      <member refid="classstat__tool_1_1Test_1acaee08f9fa96e9300a7570deb90573f3" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>standard_normal_value_computation</name></member>
+      <member refid="classstat__tool_1_1Test_1a8a2b31cc3d12b3e3c5c39c3719b3e721" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>t_critical_probability_computation</name></member>
+      <member refid="classstat__tool_1_1Test_1a8129ecdd350a444f02f546b303a9515c" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>t_value_computation</name></member>
+      <member refid="classstat__tool_1_1Test_1a53e16fea80d59dddd532c8240796450f" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>Test</name></member>
+      <member refid="classstat__tool_1_1Test_1a0ebe738720033120156b7893bec2d3aa" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>Test</name></member>
+      <member refid="classstat__tool_1_1Test_1a13b3eb506a2ac3c1bd4f8d0c0daa18cc" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>Test</name></member>
+      <member refid="classstat__tool_1_1Test_1a297cdf4404804fb45546d9b767fa77c2" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>Test</name></member>
+      <member refid="classstat__tool_1_1Test_1a6ed59f03756e71153dbd5a441b777e3c" prot="public" virt="non-virtual"><scope>stat_tool::Test</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

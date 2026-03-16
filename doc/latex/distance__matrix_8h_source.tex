@@ -1,0 +1,398 @@
+\doxysection{distance\+\_\+matrix.\+h}
+\hypertarget{distance__matrix_8h_source}{}\label{distance__matrix_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/distance\_matrix.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/distance\_matrix.h}}
+\mbox{\hyperlink{distance__matrix_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ \ \ \ \ StructureAnalysis:\ Identifying\ patterns\ in\ plant\ architecture\ and\ development}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Copyright\ 1995-\/2019\ CIRAD\ AGAP}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ \ File\ author(s):\ Yann\ Guedon\ (yann.guedon@cirad.fr)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Source\$}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Id\$}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Forum\ for\ StructureAnalysis\ developers:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GNU\ General\ Public\ Licence}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ modify\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ published\ by\ the\ Free\ Software\ Foundation;\ either\ version\ 2\ of}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ the\ License,\ or\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ \ \ \ \ \ \ MERCHANTABILITY\ or\ FITNESS\ For\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ \ \ \ \ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ \ \ \ \ \ \ License\ along\ with\ this\ program;\ see\ the\ file\ COPYING.\ If\ not,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ \ \ \ \ \ \ write\ to\ the\ Free\ Software\ Foundation,\ Inc.,\ 59}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Temple\ Place\ -\/\ Suite\ 330,\ Boston,\ MA\ 02111-\/1307,\ USA.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ DISTANCE\_MATRIX\_H}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ DISTANCE\_MATRIX\_H}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stat__tools_8h}{stat\_tools.h}}"{}}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestat__tool}{stat\_tool}}\ \{}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00050\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ *\ \ Constants}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_a67b2048938f9c632fbfb957ebe117498}{ASCII\_NB\_INDIVIDUAL}}\ =\ 10;\ \ \ \ \textcolor{comment}{//\ maximum\ number\ of\ individuals\ for\ displaying\ the\ results\ of}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ individual\ alignments}}
+\DoxyCodeLine{00056\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_a87264f2a88479bd1c058773ff5081649}{PLOT\_YMARGIN}}\ =\ 0.1;\ \ \ \ \ \ \ \textcolor{comment}{//\ y\ axis\ margin\ for\ the\ plotting\ of\ distances}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_a2b7c0642b0b7f19d50e3f6d7acfabf90}{DISTANCE\_ROUNDNESS}}\ =\ 1.e-\/12;\ \ \textcolor{comment}{//\ distance\ rounding}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_ae1877bb34400c3a90aa66fc41c66e2f0}{GLOBAL\_NB\_ITER}}\ =\ 20;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ number\ of\ iterations\ when\ the\ clusters\ are\ globally\ computed}}
+\DoxyCodeLine{00061\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_aaec1ee87e01375ce4ef009d2c23b18d9}{PARTITIONING\_NB\_ITER\_1}}\ =\ 50;\ \ \textcolor{comment}{//\ maximum\ number\ of\ iterations}}
+\DoxyCodeLine{00062\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_ae3ca215a37e28aa00d20af83c4e8611e}{PARTITIONING\_NB\_ITER\_2}}\ =\ 20;\ \ \textcolor{comment}{//\ maximum\ number\ of\ iterations}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eec}{matrix\_transform}}\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eecac72bd820609f4de705224dd0b1acab72}{COPY}}\ ,}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eeca222bcf0b2d9a238570fae6c0221ece7e}{SYMMETRIZATION}}\ ,}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eeca9a6ca8bba87577a87a68e887d3a65328}{UNNORMALIZATION}}}
+\DoxyCodeLine{00068\ \ \ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98}{hierarchical\_strategy}}\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98af5adf649fb26a8c67d72a3e90a8d078c}{AGGLOMERATIVE}}\ ,}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98a4ce00e1921200562c4de4dcb014c5f54}{DIVISIVE}}\ ,}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98ac4fdd2644f1559d5136106f4f6774829}{ORDERING}}}
+\DoxyCodeLine{00074\ \ \ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071}{linkage}}\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071ab1ec9dc58719e854a7bcf8d75fadb950}{NEAREST\_NEIGHBOR}}\ ,}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071a7e1c5b1bcf747eb2a703c67d6613a03d}{FARTHEST\_NEIGHBOR}}\ ,}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071a2f43bfbb38791f6d8c77a8e99fae3098}{AVERAGE\_NEIGHBOR}}}
+\DoxyCodeLine{00080\ \ \ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_a062d27e6eed91b8709c48f7d29474962}{cluster\_scale}}\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a062d27e6eed91b8709c48f7d29474962ab8dcf6668f3b517ab05bda71cbbcbdd7}{CHILD\_CLUSTER\_DISTANCE}}\ ,}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a062d27e6eed91b8709c48f7d29474962a4daf91ae84bb94bd7a4656ccf973e094}{DIAMETER}}}
+\DoxyCodeLine{00085\ \ \ \};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_a109481c329c22236137fa36fc6b2c99c}{isolation\_scale}}\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a109481c329c22236137fa36fc6b2c99caefde88edc7ed6b8857c24fca7bef1562}{INDIVIDUAL}}\ ,}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a109481c329c22236137fa36fc6b2c99ca2942ba10946ef05a47ac90fda02f8e94}{CLUSTER\_SCALE}}}
+\DoxyCodeLine{00090\ \ \ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00095\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00096\ \textcolor{comment}{\ *\ \ Class\ definition}}
+\DoxyCodeLine{00097\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \textcolor{keyword}{class\ }Clusters;}
+\DoxyCodeLine{00101\ \ \ \textcolor{keyword}{class\ }Dendrogram;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ \{}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a4091aaac7961581f1127e62da102ce49}{Clusters}};}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac5ca9538f425c1303c8e0b0b4b73f6d3}{Dendrogram}};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_afd7e6547ec9bcd3b7368bb1ea01ff2d6}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}\ \&dist\_matrix)}
+\DoxyCodeLine{00111\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ dist\_matrix.\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa4f9edf14fc1f5c9b83e62db25a73df6}{ascii\_write}}(os);\ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ protected\ :}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a0db7861c0b504c2a67c6571cefbf184b}{nb\_row}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a6ed0ab1e91a1f57c6b47a6de89107740}{nb\_column}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac05f503eb391ff4bd36c304d18053f99}{row\_identifier}};\ \ \ \ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a280897b3b5f55beeebc1c8aa7b3b6815}{column\_identifier}};\ \ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{double}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ab73d90de4270eb12ea42653f1ef24ea0}{distance}};\ \ \ \ \ \ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{int}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a36200ff65d138f78d858935981f3fa70}{length}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{double}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a6d6daa96bfbf8dafa223139764c95160}{deletion\_distance}};\ \ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{int}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af5d755ebac6d247253017ab76b4f362d}{nb\_deletion}};\ \ \ \ \ \ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{double}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_adb33aa11a8ae05817bbaabe5c927b666}{insertion\_distance}};\ \ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{int}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae33d83431caa34b6c33fb516c2d0a528}{nb\_insertion}};\ \ \ \ \ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{int}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae124d1e9672f51b3914f13cec130518e}{nb\_match}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{double}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a87f6ece480a62008e8068239a7f563e4}{substitution\_distance}};\ \ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{int}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a803694939a7ad08595bcc2408604c66b}{nb\_substitution}};\ \ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{double}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af3923868671c360a94f87efe597a7e14}{transposition\_distance}};\ \ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{int}\ **\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a2224871a9803af5847c2ceb05642be0c}{nb\_transposition}};\ \ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ad333b6c172e9c0f837e3a73396b899ae}{label\_size}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa1cfb7ffe9c3bbb2a06754499dc8c62d}{label}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a57f6c23c4719e87b945fa059876a308e}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}\ \&dist\_matrix\ ,\ \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eec}{matrix\_transform}}\ transform\ =\ \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eecac72bd820609f4de705224dd0b1acab72}{COPY}});}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae0ed54b5916f56f3c9f6e7a0ac889453}{remove}}();}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a2ef8eb477cec3645abf60534d3741c90}{property\_print}}(\textcolor{keywordtype}{double}\ **normalized\_distance\ ,\ std::ostream\ \&os\ ,}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdd}{output\_format}}\ format)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae5fd41b88da1788074cc841db1c54f6a}{cumul\_length\_computation}}(\textcolor{keywordtype}{bool}\ *row\_flag\ ,\ \textcolor{keywordtype}{bool}\ *column\_flag)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_abd6d481e67102edf7c815b139341e628}{cumul\_distance\_computation}}(\textcolor{keywordtype}{bool}\ *row\_flag\ ,\ \textcolor{keywordtype}{bool}\ *column\_flag)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9a5365475715547ba2ed440367f2edc3}{get\_plotable}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \ \ public\ :}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}();}
+\DoxyCodeLine{00147\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}(\textcolor{keywordtype}{int}\ nb\_pattern\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *ilabel\ ,\ \textcolor{keywordtype}{int}\ *pattern\_identifier\ =\ NULL);}
+\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}(\textcolor{keywordtype}{int}\ nb\_pattern\ ,\ \textcolor{keywordtype}{int}\ irow\_identifier\ ,\ \textcolor{keywordtype}{int}\ icolumn\_identifier\ ,}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *ilabel\ ,\ \textcolor{keywordtype}{int}\ *pattern\_identifier\ =\ NULL\ ,}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ substitution\_flag\ =\ \textcolor{keyword}{true}\ ,\ \textcolor{keywordtype}{bool}\ transposition\_flag\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00151\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}\ \&dist\_matrix\ ,\ \textcolor{keywordtype}{int}\ inb\_pattern\ ,}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *iidentifier\ ,\ \textcolor{keywordtype}{bool}\ keep\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00153\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}\ \&dist\_matrix\ ,\ \textcolor{keywordtype}{int}\ nb\_cluster\ ,}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *ilabel);}
+\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a415f6af2a3b4adbf0d97f801226b6863}{DistanceMatrix}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}\ \&dist\_matrix\ ,\ \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eec}{matrix\_transform}}\ transform\ =\ \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eecac72bd820609f4de705224dd0b1acab72}{COPY}})}
+\DoxyCodeLine{00156\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a57f6c23c4719e87b945fa059876a308e}{copy}}(dist\_matrix\ ,\ transform);\ \}}
+\DoxyCodeLine{00157\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{\string~DistanceMatrix}}();}
+\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{DistanceMatrix}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{DistanceMatrix}}\ \&dist\_matrix);}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{DistanceMatrix}}*\ select\_individual(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ inb\_pattern\ ,}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *iidentifier\ ,\ \textcolor{keywordtype}{bool}\ keep\ =\ \textcolor{keyword}{true})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00162\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a13509ebfd4ecd7957a11c9d442c1a475}{select\_individual}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ inb\_pattern\ ,}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<int>\ \&iidentifier\ ,\ \textcolor{keywordtype}{bool}\ keep\ =\ \textcolor{keyword}{true})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_adae0aac7e89f6968acfb1b9c4586ce7d}{symmetrize}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00165\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{DistanceMatrix}}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a32e75d6cb868b2a774cd8545c0a75b57}{unnormalize}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a3d9ff8d5002bb0203a95537e5325cf77}{line\_write}}(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa4f9edf14fc1f5c9b83e62db25a73df6}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a7c1d5710cff5e8f923b23a996eab7f43}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00171\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a732727ad1255211a1dafe4642d9790e3}{spreadsheet\_write}}(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a4425056239ab0aff3162461174558cc0}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a10e672fd277f8701b2cde489475a0779}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00174\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9a5365475715547ba2ed440367f2edc3}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a64c0d3c513f1a8f11cd42e0ff56f211b}{test\_symmetry}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a5a49aba2c3349fb68b7ebefdc32a5abc}{update}}(\textcolor{keywordtype}{int}\ irow\_identifier\ ,\ \textcolor{keywordtype}{int}\ icolumn\_identifier\ ,\ \textcolor{keywordtype}{double}\ idistance\ ,}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ alignment\_length\ ,\ \textcolor{keywordtype}{double}\ ideletion\_distance\ ,\ \textcolor{keywordtype}{int}\ inb\_deletion\ ,}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ iinsertion\_distance\ ,\ \textcolor{keywordtype}{int}\ inb\_insertion\ ,\ \textcolor{keywordtype}{int}\ inb\_match\ ,}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ isubstitution\_distance\ =\ 0.\ ,\ \textcolor{keywordtype}{int}\ inb\_substitution\ =\ 0\ ,}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ itransposition\_distance\ =\ 0.\ ,\ \textcolor{keywordtype}{int}\ inb\_transposition\ =\ 0);}
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a5a49aba2c3349fb68b7ebefdc32a5abc}{update}}(\textcolor{keywordtype}{int}\ irow\_identifier\ ,\ \textcolor{keywordtype}{int}\ icolumn\_identifier\ ,\ \textcolor{keywordtype}{double}\ idistance\ ,\ \textcolor{keywordtype}{int}\ ilength);}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a4091aaac7961581f1127e62da102ce49}{Clusters}}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9384595342d41054179d91709533c746}{partitioning}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ std::ostream\ *os\ ,\ \textcolor{keywordtype}{int}\ nb\_cluster\ ,}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *prototype\ =\ NULL\ ,\ \textcolor{keywordtype}{int}\ initialization\ =\ 1\ ,\ \textcolor{keywordtype}{int}\ algorithm\ =\ 1)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00187\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a4091aaac7961581f1127e62da102ce49}{Clusters}}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a06bcdb14aab894967814f30e291ff344}{partitioning}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ std::ostream\ *os\ ,\ \textcolor{keywordtype}{int}\ nb\_cluster\ ,}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *cluster\_nb\_pattern\ ,\ \textcolor{keywordtype}{int}\ **cluster\_pattern)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac5ca9538f425c1303c8e0b0b4b73f6d3}{Dendrogram}}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a21cbe7ddc3d075cd9fedf02beb1a5b92}{agglomerative\_hierarchical\_clustering}}(\mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98}{hierarchical\_strategy}}\ strategy\ ,}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071}{linkage}}\ criterion\ =\ \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071a2f43bfbb38791f6d8c77a8e99fae3098}{AVERAGE\_NEIGHBOR}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00192\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac5ca9538f425c1303c8e0b0b4b73f6d3}{Dendrogram}}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_abaddaf89013698a5108e168a302a1365}{divisive\_hierarchical\_clustering}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9c935c41cce7d63098cadb2a7209593d}{hierarchical\_clustering}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ std::ostream\ *os\ ,}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98}{hierarchical\_strategy}}\ strategy\ =\ \mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98af5adf649fb26a8c67d72a3e90a8d078c}{AGGLOMERATIVE}}\ ,}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071}{linkage}}\ criterion\ =\ \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071a2f43bfbb38791f6d8c77a8e99fae3098}{AVERAGE\_NEIGHBOR}}\ ,}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ path\ =\ \textcolor{stringliteral}{"{}"{}}\ ,\ \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdd}{output\_format}}\ format\ =\ \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdda57262aa8cbac90f9a8a380b8d6e2dec7}{ASCII}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{comment}{//\ class\ member\ access}}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ad2faeb3ccb849d696b529004b5996435}{get\_nb\_row}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a0db7861c0b504c2a67c6571cefbf184b}{nb\_row}};\ \}}
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9298c6104c12932be6f831e75342a196}{get\_nb\_column}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a6ed0ab1e91a1f57c6b47a6de89107740}{nb\_column}};\ \}}
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9295a89aa5cd0d68848f39671f723aaf}{get\_row\_identifier}}(\textcolor{keywordtype}{int}\ row)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac05f503eb391ff4bd36c304d18053f99}{row\_identifier}}[row];\ \}}
+\DoxyCodeLine{00204\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ab8be4b560abc632da776987a861c4855}{get\_column\_identifier}}(\textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a280897b3b5f55beeebc1c8aa7b3b6815}{column\_identifier}}[column];\ \}}
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a2c45dc5df9616088606ec19bd33fa5ec}{get\_distance}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00206\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ab73d90de4270eb12ea42653f1ef24ea0}{distance}}[row][column];\ \}}
+\DoxyCodeLine{00207\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_acfbd2e0fb513d2d54f17e48a44b16d92}{get\_length}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00208\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a36200ff65d138f78d858935981f3fa70}{length}}[row][column];\ \}}
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ab97abcfd9de486e1a38652e73ef2c0b2}{get\_deletion\_distance}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00210\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a6d6daa96bfbf8dafa223139764c95160}{deletion\_distance}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a6d6daa96bfbf8dafa223139764c95160}{deletion\_distance}}[row][column];\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ -\/\mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}};\ \}}
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af081a7c5885b0b734b39a47ebf726c2a}{get\_nb\_deletion}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00212\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af5d755ebac6d247253017ab76b4f362d}{nb\_deletion}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af5d755ebac6d247253017ab76b4f362d}{nb\_deletion}}[row][column];\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}};\ \}}
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a34f3c4468a584a004f3c15d78c135ba4}{get\_insertion\_distance}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00214\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_adb33aa11a8ae05817bbaabe5c927b666}{insertion\_distance}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_adb33aa11a8ae05817bbaabe5c927b666}{insertion\_distance}}[row][column];\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ -\/\mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}};\ \}}
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aac60ef3878a0633e3a8fe62bad61cbc9}{get\_nb\_insertion}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00216\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae33d83431caa34b6c33fb516c2d0a528}{nb\_insertion}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae33d83431caa34b6c33fb516c2d0a528}{nb\_insertion}}[row][column];\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}};\ \}}
+\DoxyCodeLine{00217\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa34117f4fc0bdc2b530be92b7892a293}{get\_nb\_match}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00218\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae124d1e9672f51b3914f13cec130518e}{nb\_match}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae124d1e9672f51b3914f13cec130518e}{nb\_match}}[row][column];\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}};\ \}}
+\DoxyCodeLine{00219\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a77942aa487cb42fc95fec3217be3cb93}{get\_substitution\_distance}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00220\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a87f6ece480a62008e8068239a7f563e4}{substitution\_distance}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a87f6ece480a62008e8068239a7f563e4}{substitution\_distance}}[row][column];\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ -\/\mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}};\ \}}
+\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa52aeada216c0091aac28272b1485e6a}{get\_nb\_substitution}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00222\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a803694939a7ad08595bcc2408604c66b}{nb\_substitution}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a803694939a7ad08595bcc2408604c66b}{nb\_substitution}}[row][column];\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}};\ \}}
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a77fc68070097fec34e297a2338d4509e}{get\_transposition\_distance}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00224\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af3923868671c360a94f87efe597a7e14}{transposition\_distance}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af3923868671c360a94f87efe597a7e14}{transposition\_distance}}[row][column];\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ -\/\mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}};\ \}}
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a89c2e672708bb7fa778507f1bfd6cbe9}{get\_nb\_transposition}}(\textcolor{keywordtype}{int}\ row\ ,\ \textcolor{keywordtype}{int}\ column)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00226\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a2224871a9803af5847c2ceb05642be0c}{nb\_transposition}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a2224871a9803af5847c2ceb05642be0c}{nb\_transposition}}[row][column];\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}};\ \}}
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac892f07822a6336dc2bb4b966c4b11dc}{get\_label\_size}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ad333b6c172e9c0f837e3a73396b899ae}{label\_size}};\ \}}
+\DoxyCodeLine{00228\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a1443a90c540e3ffeb9be49c160c235ed}{get\_label}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa1cfb7ffe9c3bbb2a06754499dc8c62d}{label}};\ \}}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9566e1ca7544795ae9261031ca300af1}{is\_deletion}}()}
+\DoxyCodeLine{00231\ \ \ \ \ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af5d755ebac6d247253017ab76b4f362d}{nb\_deletion}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a657b02740363126664434df651ded8eb}{is\_insertion}}()}
+\DoxyCodeLine{00233\ \ \ \ \ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae33d83431caa34b6c33fb516c2d0a528}{nb\_insertion}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ab5da226ef1cd45ae117ce297169e68ff}{is\_match}}()}
+\DoxyCodeLine{00235\ \ \ \ \ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae124d1e9672f51b3914f13cec130518e}{nb\_match}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af97f3e48f0a4966acc8d9bd09e8efdc9}{is\_substitution}}()}
+\DoxyCodeLine{00237\ \ \ \ \ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a803694939a7ad08595bcc2408604c66b}{nb\_substitution}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00238\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a81d1070e269a6d272c1c9354e6472055}{is\_transposition}}()}
+\DoxyCodeLine{00239\ \ \ \ \ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a2224871a9803af5847c2ceb05642be0c}{nb\_transposition}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00240\ \ \ \};}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00245\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a2cf7c48b749e280324950541edebcde7}{Clusters}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}}\ \{}
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Clusters_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}};}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a39f41a6b6cda693dba0204e389de989b}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a2cf7c48b749e280324950541edebcde7}{Clusters}}\ \&clusters)}
+\DoxyCodeLine{00250\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ clusters.\mbox{\hyperlink{classstat__tool_1_1Clusters_a93d451a9133fa9c0a89eeba75152993f}{ascii\_write}}(os);\ \}}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ private\ :}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00254\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Clusters_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}}\ *\mbox{\hyperlink{classstat__tool_1_1Clusters_ae197aedac66c2ee6badbc9335576646f}{distance\_matrix}};\ \ }
+\DoxyCodeLine{00255\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_aadea02c61566b8cab666029127bbdd2a}{nb\_pattern}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a91d4fb1270b4d3c93bb8944ab6d84968}{nb\_cluster}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00257\ \ \ \ \ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{classstat__tool_1_1Clusters_a8859207173ca3b577903bc5417f5be5a}{cluster\_nb\_pattern}};\ \ }
+\DoxyCodeLine{00258\ \ \ \ \ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{classstat__tool_1_1Clusters_a2387ee97a32d3b8bf0e1037bcd29de21}{assignment}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00259\ \ \ \ \ \textcolor{keywordtype}{double}\ **\mbox{\hyperlink{classstat__tool_1_1Clusters_a89b9c8a57c2a75609eb79821026c5e29}{pattern\_distance}};\ \ }
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{int}\ **\mbox{\hyperlink{classstat__tool_1_1Clusters_ad3fd3f2728908336c7af97d3d2bc3c05}{pattern\_length}};\ \ \ }
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00262\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a954b1c1fe5273f19a1122cc40fe1ad08}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a2cf7c48b749e280324950541edebcde7}{Clusters}}\ \&clusters);}
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_acbb72c9cd890e9a55000c96e6a3b9de7}{remove}}();}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a5cabe8b0ad15694b7ccd8a16339a994c}{get\_plotable}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00267\ \ \ \ \ \textcolor{keywordtype}{int}*\ \mbox{\hyperlink{classstat__tool_1_1Clusters_aebecf40740c8b2a4abb53a3eacc8d4c7}{pattern\_sort}}(\textcolor{keywordtype}{int}\ cluster)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00268\ }
+\DoxyCodeLine{00269\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a9ef0d62d7b599df86355a634b89a6f7a}{most\_distant\_pattern\_selection}}(\textcolor{keywordtype}{double}\ **normalized\_distance\ ,\ \textcolor{keywordtype}{int}\ ipattern)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00270\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a54d97456e69fa68daeee8a4a19d651ee}{neighbor\_pattern\_selection}}(\textcolor{keywordtype}{double}\ **normalized\_distance\ ,\ \textcolor{keywordtype}{int}\ ipattern)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00271\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a92931cf7aece3c8d9399608af4350530}{neighbor\_pattern\_cluster\_selection}}(\textcolor{keywordtype}{double}\ **normalized\_distance\ ,\ \textcolor{keywordtype}{int}\ pattern)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00272\ }
+\DoxyCodeLine{00273\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a87a5cb69092d989c4e161fe2334446e1}{max\_within\_cluster\_distance\_computation}}(\textcolor{keywordtype}{double}\ **normalized\_distance\ ,\ \textcolor{keywordtype}{int}\ cluster)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00274\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_aac539d486526fbe8094429bb66fb2f13}{min\_between\_cluster\_distance\_computation}}(\textcolor{keywordtype}{double}\ **normalized\_distance\ ,\ \textcolor{keywordtype}{int}\ cluster)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00275\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_ae84e2f86c9e257ed828bf8cb677d4d70}{isolation\_property}}(\textcolor{keywordtype}{double}\ **normalized\_distance\ ,\ \textcolor{keywordtype}{int}\ cluster\ ,}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a109481c329c22236137fa36fc6b2c99c}{isolation\_scale}}\ scale\ =\ \mbox{\hyperlink{namespacestat__tool_a109481c329c22236137fa36fc6b2c99ca2942ba10946ef05a47ac90fda02f8e94}{CLUSTER\_SCALE}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00277\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a68e2b5876f00b30f5843350f22718ad9}{between\_cluster\_distance\_computation}}(\textcolor{keywordtype}{int}\ cluster)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00278\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Clusters_aa4829be6756a944dc697593d19d80e4c}{global\_distance\_ascii\_print}}(std::ostream\ \&os);}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a4950de382ed751f5e4b44b7b3e3ca386}{prototype\_initialization\_1}}();}
+\DoxyCodeLine{00281\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_ac2902e12e7fd1b5bda1606ba15913255}{prototype\_initialization\_2}}();}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_abef9748cbf9f9848d0a0c264ee9b015e}{pattern\_distance\_update}}(\textcolor{keywordtype}{int}\ pattern\ ,\ \textcolor{keywordtype}{int}\ old\_cluster\ ,\ \textcolor{keywordtype}{int}\ new\_cluster);}
+\DoxyCodeLine{00284\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_afd61b54ccd8c46a17db411310299bb56}{algorithmic\_step\_1}}();}
+\DoxyCodeLine{00285\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_ac7d80a43d3a08af70b4e56e78916374e}{algorithmic\_step\_2}}();}
+\DoxyCodeLine{00286\ }
+\DoxyCodeLine{00287\ \ \ public\ :}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00289\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Clusters_a2cf7c48b749e280324950541edebcde7}{Clusters}}();}
+\DoxyCodeLine{00290\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Clusters_a2cf7c48b749e280324950541edebcde7}{Clusters}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}}\ \&dist\_matrix\ ,\ \textcolor{keywordtype}{int}\ inb\_cluster);}
+\DoxyCodeLine{00291\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Clusters_a2cf7c48b749e280324950541edebcde7}{Clusters}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}}\ \&dist\_matrix\ ,\ \textcolor{keywordtype}{int}\ inb\_cluster\ ,}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *icluster\_nb\_pattern\ ,\ \textcolor{keywordtype}{int}\ **cluster\_pattern);}
+\DoxyCodeLine{00293\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Clusters_aa19d4f19f6ccc749db78aff418f93376}{Clusters}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a2cf7c48b749e280324950541edebcde7}{Clusters}}\ \&clusters)}
+\DoxyCodeLine{00294\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1Clusters_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}}(clusters)\ \{\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a954b1c1fe5273f19a1122cc40fe1ad08}{copy}}(clusters);\ \}}
+\DoxyCodeLine{00295\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Clusters}{\string~Clusters}}();}
+\DoxyCodeLine{00296\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Clusters}{Clusters}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Clusters}{Clusters}}\ \&clusters);}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00298\ \ \ \ \ std::ostream\&\ line\_write(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00299\ }
+\DoxyCodeLine{00300\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a93d451a9133fa9c0a89eeba75152993f}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00301\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_ac9f381786f3d506d7c2b8ba3936cc4a7}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00302\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a7fcd08fc8452f8ad13935fda736f452b}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00303\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_ab5d5c8631df66793f6e31ca47b3410c6}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00304\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a5cabe8b0ad15694b7ccd8a16339a994c}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00305\ }
+\DoxyCodeLine{00306\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a119bb376ee67d7914843852bd771ffff}{cluster\_nb\_pattern\_computation}}();}
+\DoxyCodeLine{00307\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a051d4f336b0f4b02ee2567e7d89c41e6}{pattern\_distance\_computation}}();}
+\DoxyCodeLine{00308\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_acf3a90ee98fbbc6a69a5a784c91b14d0}{cluster\_distance\_computation\_1}}();}
+\DoxyCodeLine{00309\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_ac85473f5bc57782e0826ddfd8e4d7adb}{cluster\_distance\_computation\_2}}();}
+\DoxyCodeLine{00310\ }
+\DoxyCodeLine{00311\ \ \ \ \ \textcolor{comment}{//\ class\ member\ access}}
+\DoxyCodeLine{00312\ }
+\DoxyCodeLine{00313\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Clusters_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}}*\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a25efb6b995dd2ddfd404cd5ae3476acd}{get\_distance\_matrix}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_ae197aedac66c2ee6badbc9335576646f}{distance\_matrix}};\ \}}
+\DoxyCodeLine{00314\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a4fc374850952935256e4d2af5cb37705}{get\_nb\_pattern}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_aadea02c61566b8cab666029127bbdd2a}{nb\_pattern}};\ \}}
+\DoxyCodeLine{00315\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_ab551dffdbb938c9f1b2716d76d5bd300}{get\_nb\_cluster}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a91d4fb1270b4d3c93bb8944ab6d84968}{nb\_cluster}};\ \}}
+\DoxyCodeLine{00316\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_aff6c305f4a91ccd4d6598f03b028bbc0}{get\_cluster\_nb\_pattern}}(\textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a8859207173ca3b577903bc5417f5be5a}{cluster\_nb\_pattern}}[cluster];\ \}}
+\DoxyCodeLine{00317\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a324cc61d42344c8c4356b4e47e197b28}{get\_assignment}}(\textcolor{keywordtype}{int}\ pattern)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a2387ee97a32d3b8bf0e1037bcd29de21}{assignment}}[pattern];\ \}}
+\DoxyCodeLine{00318\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a172af84f10b7e95afd27f732f11b32f3}{get\_pattern\_distance}}(\textcolor{keywordtype}{int}\ pattern\ ,\ \textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00319\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a89b9c8a57c2a75609eb79821026c5e29}{pattern\_distance}}[pattern][cluster];\ \}}
+\DoxyCodeLine{00320\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_a4e341ca61977d44cd1f0e6a439e9c252}{get\_pattern\_length}}(\textcolor{keywordtype}{int}\ pattern\ ,\ \textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00321\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Clusters_ad3fd3f2728908336c7af97d3d2bc3c05}{pattern\_length}}[pattern][cluster];\ \}}
+\DoxyCodeLine{00322\ \ \ \};}
+\DoxyCodeLine{00323\ }
+\DoxyCodeLine{00324\ }
+\DoxyCodeLine{00326\ }
+\DoxyCodeLine{00327\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_aaca09e097641c659c531f30eb191d09e}{Dendrogram}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ \{}
+\DoxyCodeLine{00328\ }
+\DoxyCodeLine{00329\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Dendrogram_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}};}
+\DoxyCodeLine{00330\ }
+\DoxyCodeLine{00331\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a3e8ee05617856d10ed2858ab67ebcc3b}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_aaca09e097641c659c531f30eb191d09e}{Dendrogram}}\ \&dendrogram)}
+\DoxyCodeLine{00332\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ dendrogram.\mbox{\hyperlink{classstat__tool_1_1Dendrogram_a5e8d02450e64fab2b4b59784df6b438d}{ascii\_write}}(os);\ \}}
+\DoxyCodeLine{00333\ }
+\DoxyCodeLine{00334\ \ \ private\ :}
+\DoxyCodeLine{00335\ }
+\DoxyCodeLine{00336\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}}\ *\mbox{\hyperlink{classstat__tool_1_1Dendrogram_a8342f6706befb2d2c78f6612e56a5d12}{distance\_matrix}};\ \ }
+\DoxyCodeLine{00337\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a062d27e6eed91b8709c48f7d29474962}{cluster\_scale}}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_abec624f6acdc1504919eacf70124a66a}{scale}};\ \ \ \ }
+\DoxyCodeLine{00338\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a73ef79e9290e3266524090f9dcdd0435}{nb\_cluster}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00339\ \ \ \ \ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{classstat__tool_1_1Dendrogram_a9a16c40b5ebd674d5a5fd56e1dcd047c}{cluster\_nb\_pattern}};\ \ }
+\DoxyCodeLine{00340\ \ \ \ \ \textcolor{keywordtype}{int}\ **\mbox{\hyperlink{classstat__tool_1_1Dendrogram_a2372a230f4880dca2ec8700a4f0aa802}{cluster\_pattern}};\ \ }
+\DoxyCodeLine{00341\ \ \ \ \ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{classstat__tool_1_1Dendrogram_ac95dacef6fe49153e160c9dfa40cad42}{parent}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00342\ \ \ \ \ \textcolor{keywordtype}{int}\ **\mbox{\hyperlink{classstat__tool_1_1Dendrogram_ac7e80e17f981a6677df82ee24682c09b}{child}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00343\ \ \ \ \ \textcolor{keywordtype}{double}\ *\mbox{\hyperlink{classstat__tool_1_1Dendrogram_a89657b7ab6ab83e0c1022ea55229ebf6}{child\_distance}};\ \ }
+\DoxyCodeLine{00344\ \ \ \ \ \textcolor{keywordtype}{double}\ *\mbox{\hyperlink{classstat__tool_1_1Dendrogram_a246270242bdd28149dd9b15efb4a4716}{within\_cluster\_distance}};\ \ }
+\DoxyCodeLine{00345\ \ \ \ \ \textcolor{keywordtype}{double}\ *\mbox{\hyperlink{classstat__tool_1_1Dendrogram_adbee7ee93cc407f5890e98185bc08693}{between\_cluster\_distance}};\ \ }
+\DoxyCodeLine{00346\ \ \ \ \ \textcolor{keywordtype}{double}\ *\mbox{\hyperlink{classstat__tool_1_1Dendrogram_a5a737ee98a89d4356d85d8186c9cdd24}{max\_within\_cluster\_distance}};\ \ }
+\DoxyCodeLine{00347\ \ \ \ \ \textcolor{keywordtype}{double}\ *\mbox{\hyperlink{classstat__tool_1_1Dendrogram_a17d757e57a24dd13bf13528093c3a366}{min\_between\_cluster\_distance}};\ \ }
+\DoxyCodeLine{00348\ }
+\DoxyCodeLine{00349\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_ad44c03272d710651e6b816265147d2b9}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_aaca09e097641c659c531f30eb191d09e}{Dendrogram}}\ \&dendrogram);}
+\DoxyCodeLine{00350\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_ac6e7b4218a4a2e5ad235d0f79dbe86a1}{remove}}();}
+\DoxyCodeLine{00351\ }
+\DoxyCodeLine{00352\ \ \ \ \ \textcolor{keywordtype}{double}*\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a2f398ab7545e246280294f2c26a6e0e4}{distance\_ordering}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00353\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a99a070a0d26fdfdde17ebc9338e272dd}{coefficient\_computation}}(\mbox{\hyperlink{namespacestat__tool_a062d27e6eed91b8709c48f7d29474962}{cluster\_scale}}\ iscale)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00354\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a99a070a0d26fdfdde17ebc9338e272dd}{coefficient\_computation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00355\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a3ce0657933dff72cc7f48a27e0fa020f}{tree\_computation}}();}
+\DoxyCodeLine{00356\ }
+\DoxyCodeLine{00357\ \ \ public\ :}
+\DoxyCodeLine{00358\ }
+\DoxyCodeLine{00359\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_aaca09e097641c659c531f30eb191d09e}{Dendrogram}}();}
+\DoxyCodeLine{00360\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_aaca09e097641c659c531f30eb191d09e}{Dendrogram}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}}\ \&dist\_matrix\ ,\ \mbox{\hyperlink{namespacestat__tool_a062d27e6eed91b8709c48f7d29474962}{cluster\_scale}}\ iscale);}
+\DoxyCodeLine{00361\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a8d3db26ddf156e35e9a4f709435c7a7e}{Dendrogram}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_aaca09e097641c659c531f30eb191d09e}{Dendrogram}}\ \&dendrogram)}
+\DoxyCodeLine{00362\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_ad44c03272d710651e6b816265147d2b9}{copy}}(dendrogram);\ \}}
+\DoxyCodeLine{00363\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Dendrogram}{\string~Dendrogram}}();}
+\DoxyCodeLine{00364\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Dendrogram}{Dendrogram}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram}{Dendrogram}}\ \&dendrogram);}
+\DoxyCodeLine{00365\ }
+\DoxyCodeLine{00366\ \ \ \ \ std::ostream\&\ line\_write(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00367\ }
+\DoxyCodeLine{00368\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a5e8d02450e64fab2b4b59784df6b438d}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00369\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a1cfdde3d65c66100d5f720ab47f9e334}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00370\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_adfd71130175a6f8ff414e2ebdc79dcb9}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00371\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a7989da7503a766fafc6e677700af9e2e}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00372\ \textcolor{keyword}{\ \ \ \ }\{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00373\ }
+\DoxyCodeLine{00374\ \ \ \ \ \textcolor{comment}{//\ class\ member\ access}}
+\DoxyCodeLine{00375\ }
+\DoxyCodeLine{00376\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a1e937b0a167ab6fc618194afec034e94}{DistanceMatrix}}*\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a4d38f6832c9d88628e34e924de04a465}{get\_distance\_matrix}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a8342f6706befb2d2c78f6612e56a5d12}{distance\_matrix}};\ \}}
+\DoxyCodeLine{00377\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a062d27e6eed91b8709c48f7d29474962}{cluster\_scale}}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a9ab4b304ed26d5e300820cc59324f707}{get\_scale}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_abec624f6acdc1504919eacf70124a66a}{scale}};\ \}}
+\DoxyCodeLine{00378\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a8f8c9ba9c43d74c55fa9c2920fb91383}{get\_nb\_cluster}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a73ef79e9290e3266524090f9dcdd0435}{nb\_cluster}};\ \}}
+\DoxyCodeLine{00379\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a62e2d57d8ecd492e7415b3bd0239aaf0}{get\_cluster\_nb\_pattern}}(\textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a9a16c40b5ebd674d5a5fd56e1dcd047c}{cluster\_nb\_pattern}}[cluster];\ \}}
+\DoxyCodeLine{00380\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a47d7593069f8c5227542903fa8a27ea4}{get\_cluster\_pattern}}(\textcolor{keywordtype}{int}\ cluster\ ,\ \textcolor{keywordtype}{int}\ index)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a2372a230f4880dca2ec8700a4f0aa802}{cluster\_pattern}}[cluster][index];\ \}}
+\DoxyCodeLine{00381\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a9cdc3e8971635c422093c99ebc076a4b}{get\_parent}}(\textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_ac95dacef6fe49153e160c9dfa40cad42}{parent}}[cluster];\ \}}
+\DoxyCodeLine{00382\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a7599d669d8187c5bc0264cdd7667d62b}{get\_child}}(\textcolor{keywordtype}{int}\ cluster\ ,\ \textcolor{keywordtype}{int}\ index)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_ac7e80e17f981a6677df82ee24682c09b}{child}}[cluster][index];\ \}}
+\DoxyCodeLine{00383\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_ad76a222dfc7629162edd65c36a6f7526}{get\_child\_distance}}(\textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a89657b7ab6ab83e0c1022ea55229ebf6}{child\_distance}}[cluster];\ \}}
+\DoxyCodeLine{00384\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a8d69c9cfdb0c4e4e2fdb2ad7e8e34c62}{get\_within\_cluster\_distance}}(\textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a246270242bdd28149dd9b15efb4a4716}{within\_cluster\_distance}}[cluster];\ \}}
+\DoxyCodeLine{00385\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a0d231ae232460614144c2095cea2f968}{get\_between\_cluster\_distance}}(\textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_adbee7ee93cc407f5890e98185bc08693}{between\_cluster\_distance}}[cluster];\ \}}
+\DoxyCodeLine{00386\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_ae6f557853d667827c60875ae93943575}{get\_max\_within\_cluster\_distance}}(\textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a5a737ee98a89d4356d85d8186c9cdd24}{max\_within\_cluster\_distance}}[cluster];\ \}}
+\DoxyCodeLine{00387\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a72808644931f9548da2304403dda4494}{get\_min\_between\_cluster\_distance}}(\textcolor{keywordtype}{int}\ cluster)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Dendrogram_a17d757e57a24dd13bf13528093c3a366}{min\_between\_cluster\_distance}}[cluster];\ \}}
+\DoxyCodeLine{00388\ \ \ \};}
+\DoxyCodeLine{00389\ }
+\DoxyCodeLine{00390\ }
+\DoxyCodeLine{00391\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{00392\ }
+\DoxyCodeLine{00393\ }
+\DoxyCodeLine{00394\ }
+\DoxyCodeLine{00395\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

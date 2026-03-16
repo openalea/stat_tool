@@ -1,0 +1,267 @@
+\doxysection{chain\+\_\+reestimation.\+hpp}
+\hypertarget{chain__reestimation_8hpp_source}{}\label{chain__reestimation_8hpp_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/chain\_reestimation.hpp@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/chain\_reestimation.hpp}}
+\mbox{\hyperlink{chain__reestimation_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ \ \ \ \ StructureAnalysis:\ Identifying\ patterns\ in\ plant\ architecture\ and\ development}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Copyright\ 1995-\/2018\ CIRAD\ AGAP}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ \ File\ author(s):\ Yann\ Guedon\ (yann.guedon@cirad.fr)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Source\$}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Id\$}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Forum\ for\ StructureAnalysis\ developers:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GNU\ General\ Public\ Licence}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ modify\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ published\ by\ the\ Free\ Software\ Foundation;\ either\ version\ 2\ of}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ the\ License,\ or\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ \ \ \ \ \ \ MERCHANTABILITY\ or\ FITNESS\ For\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ \ \ \ \ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ \ \ \ \ \ \ License\ along\ with\ this\ program;\ see\ the\ file\ COPYING.\ If\ not,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ \ \ \ \ \ \ write\ to\ the\ Free\ Software\ Foundation,\ Inc.,\ 59}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Temple\ Place\ -\/\ Suite\ 330,\ Boston,\ MA\ 02111-\/1307,\ USA.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ CHAIN\_REESTIMATION\_C}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ CHAIN\_REESTIMATION\_C}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestat__tool}{stat\_tool}}\ \{}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00052\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00055\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation<Type>::ChainReestimation}}()}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \{}
+\DoxyCodeLine{00058\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_adc106ed762671d3b1bfe4e28dddaf29c}{type}}\ =\ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{ORDINARY}};}
+\DoxyCodeLine{00059\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}\ =\ 0;}
+\DoxyCodeLine{00060\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}}\ =\ 0;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}\ =\ NULL;}
+\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}\ =\ NULL;}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00071\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a23f63395a7891154f9aa4f726578dfdb}{ChainReestimation<Type>::init}}()}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \{}
+\DoxyCodeLine{00077\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}})\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ (\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_adc106ed762671d3b1bfe4e28dddaf29c}{type}}\ ==\ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{ORDINARY}}\ ?\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}\ :\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}});i++)\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}[i]\ =\ 0;}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ nb\_row;i++)\ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ nb\_state;j++)\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ transition[i][j]\ =\ 0;}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \}}
+\DoxyCodeLine{00091\ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00103\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00106\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation<Type>::ChainReestimation}}(\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\_type}}\ itype\ ,\ \textcolor{keywordtype}{int}\ inb\_state\ ,}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ inb\_row\ ,\ \textcolor{keywordtype}{bool}\ init\_flag)}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \{}
+\DoxyCodeLine{00110\ \ \ \textcolor{keywordtype}{int}\ i;}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_adc106ed762671d3b1bfe4e28dddaf29c}{type}}\ =\ itype;}
+\DoxyCodeLine{00114\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}\ =\ inb\_state;}
+\DoxyCodeLine{00115\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}}\ =\ inb\_row;}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_adc106ed762671d3b1bfe4e28dddaf29c}{type}})\ \{}
+\DoxyCodeLine{00118\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{ORDINARY}}\ :}
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}\ =\ \textcolor{keyword}{new}\ Type[\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}];}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00121\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811cacde805a051500eee96bdfc0e82a6a3ac}{EQUILIBRIUM}}\ :}
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}\ =\ \textcolor{keyword}{new}\ Type[\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}}];}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00124\ \ \ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}\ =\ \textcolor{keyword}{new}\ Type*[\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}}];}
+\DoxyCodeLine{00127\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}};i++)\ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}[i]\ =\ \textcolor{keyword}{new}\ Type[\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}];}
+\DoxyCodeLine{00129\ \ \ \}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \ \ \textcolor{keywordflow}{if}\ (init\_flag)\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a23f63395a7891154f9aa4f726578dfdb}{init}}();}
+\DoxyCodeLine{00133\ \ \ \}}
+\DoxyCodeLine{00134\ \}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00143\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00146\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a8e2d3ca3f5647095ceb23aabd922e3bf}{ChainReestimation<Type>::copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation<Type>}}\ \&chain\_data)}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \{}
+\DoxyCodeLine{00149\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}\ =\ chain\_data.\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}};}
+\DoxyCodeLine{00153\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}}\ =\ chain\_data.\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \textcolor{keywordflow}{if}\ (chain\_data.\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}})\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_adc106ed762671d3b1bfe4e28dddaf29c}{type}})\ \{}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{ORDINARY}}\ :\ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}\ =\ \textcolor{keyword}{new}\ Type[\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}];}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}[i]\ =\ chain\_data.\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}[i];}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00164\ \ \ \ \ \}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811cacde805a051500eee96bdfc0e82a6a3ac}{EQUILIBRIUM}}\ :\ \{}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}\ =\ \textcolor{keyword}{new}\ Type[\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}}];}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}};i++)\ \{}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}[i]\ =\ chain\_data.\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}[i];}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00172\ \ \ \ \ \}}
+\DoxyCodeLine{00173\ \ \ \ \ \}}
+\DoxyCodeLine{00174\ \ \ \}}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00177\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}\ =\ NULL;}
+\DoxyCodeLine{00178\ \ \ \}}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00180\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}\ =\ \textcolor{keyword}{new}\ Type*[\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}}];}
+\DoxyCodeLine{00181\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}};i++)\ \{}
+\DoxyCodeLine{00182\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}[i]\ =\ \textcolor{keyword}{new}\ Type[\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}];}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}[i][j]\ =\ chain\_data.\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}[i][j];}
+\DoxyCodeLine{00186\ \ \ \ \ \}}
+\DoxyCodeLine{00187\ \ \ \}}
+\DoxyCodeLine{00188\ \}}
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00195\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00198\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aaaa83cd7e227873aa0c06937318fbb14}{ChainReestimation<Type>::remove}}()}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ \{}
+\DoxyCodeLine{00201\ \ \ \textcolor{keyword}{delete}\ []\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}};}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00203\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}})\ \{}
+\DoxyCodeLine{00204\ \ \ \ \ \textcolor{keywordtype}{int}\ i;}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}};i++)\ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \textcolor{keyword}{delete}\ []\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}[i];}
+\DoxyCodeLine{00208\ \ \ \ \ \}}
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keyword}{delete}\ []\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}};}
+\DoxyCodeLine{00210\ \ \ \}}
+\DoxyCodeLine{00211\ \}}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00218\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00221\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a1213c89212818e6357647a080645eef9}{ChainReestimation<Type>::\string~ChainReestimation}}()}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \{}
+\DoxyCodeLine{00224\ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aaaa83cd7e227873aa0c06937318fbb14}{remove}}();}
+\DoxyCodeLine{00225\ \}}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00228\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00236\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00238\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00239\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation<Type>}}\&\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_afb5383372e7c666af2875e593bc0cdbd}{ChainReestimation<Type>::operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation<Type>}}\ \&chain\_data)}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \{}
+\DoxyCodeLine{00242\ \ \ \textcolor{keywordflow}{if}\ (\&chain\_data\ !=\ \textcolor{keyword}{this})\ \{}
+\DoxyCodeLine{00243\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aaaa83cd7e227873aa0c06937318fbb14}{remove}}();}
+\DoxyCodeLine{00244\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a8e2d3ca3f5647095ceb23aabd922e3bf}{copy}}(chain\_data);}
+\DoxyCodeLine{00245\ \ \ \}}
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00247\ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00248\ \}}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00251\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00257\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00260\ ostream\&\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a5660732b40cd72f923d8a22505894ee2}{ChainReestimation<Type>::print}}(ostream\ \&os)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00261\ \textcolor{keyword}{}}
+\DoxyCodeLine{00262\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00263\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ }
+\DoxyCodeLine{00266\ \ \ os\ <<\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ \mbox{\hyperlink{namespacestat__tool_a402794ded79b6eafc78781e40c23b4a8}{STAT\_label}}[\mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa7686849e54485c783f42a137f3fc4e9}{STATL\_STATES}}]\ <<\ endl;}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00268\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}})\ \{}
+\DoxyCodeLine{00269\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_adc106ed762671d3b1bfe4e28dddaf29c}{type}}\ ==\ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{ORDINARY}})\ \{}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)ninitial\ states"{}}\ <<\ endl;}
+\DoxyCodeLine{00271\ \ \ \ \ \}}
+\DoxyCodeLine{00272\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nmemories"{}}\ <<\ endl;}
+\DoxyCodeLine{00274\ \ \ \ \ \}}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00276\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ (\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_adc106ed762671d3b1bfe4e28dddaf29c}{type}}\ ==\ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{ORDINARY}}\ ?\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}}\ :\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}});i++)\ \{}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ os\ <<\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}[i]\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00278\ \ \ \ \ \}}
+\DoxyCodeLine{00279\ \ \ \}}
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00281\ \ \ os\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)ntransition"{}}\ <<\ endl;}
+\DoxyCodeLine{00282\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}};i++)\ \{}
+\DoxyCodeLine{00283\ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ os\ <<\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}[i][j]\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00285\ \ \ \ \ \}}
+\DoxyCodeLine{00286\ \ \ \ \ os\ <<\ endl;}
+\DoxyCodeLine{00287\ \ \ \}}
+\DoxyCodeLine{00288\ \ \ os\ <<\ endl;}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00290\ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00291\ \}}
+\DoxyCodeLine{00292\ }
+\DoxyCodeLine{00293\ }
+\DoxyCodeLine{00294\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00296\ }
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00298\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

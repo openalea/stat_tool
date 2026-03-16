@@ -1,0 +1,581 @@
+\doxysection{stat\+\_\+label.\+h}
+\hypertarget{stat__label_8h_source}{}\label{stat__label_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/stat\_label.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/stat\_label.h}}
+\mbox{\hyperlink{stat__label_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ \ \ \ \ StructureAnalysis:\ Identifying\ patterns\ in\ plant\ architecture\ and\ development}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Copyright\ 1995-\/2018\ CIRAD\ AGAP}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ \ File\ author(s):\ Yann\ Guedon\ (yann.guedon@cirad.fr)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Source\$}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Id\$}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Forum\ for\ StructureAnalysis\ developers:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GNU\ General\ Public\ Licence}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ modify\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ published\ by\ the\ Free\ Software\ Foundation;\ either\ version\ 2\ of}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ the\ License,\ or\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ \ \ \ \ \ \ MERCHANTABILITY\ or\ FITNESS\ For\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ \ \ \ \ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ \ \ \ \ \ \ License\ along\ with\ this\ program;\ see\ the\ file\ COPYING.\ If\ not,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ \ \ \ \ \ \ write\ to\ the\ Free\ Software\ Foundation,\ Inc.,\ 59}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Temple\ Place\ -\/\ Suite\ 330,\ Boston,\ MA\ 02111-\/1307,\ USA.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ STAT\_LABEL\_H}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ STAT\_LABEL\_H}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#if\ defined\ WIN32\ ||\ defined\ \_WIN32\ ||\ defined\ \_\_CYGWIN\_\_}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\ \ \#ifdef\ LIBSTAT\_TOOL}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ \_\_GNUC\_\_}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\ \ \ \ \ \ \#define\ EXTERN\ extern\ \_\_attribute\_\_\ ((dllexport))}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\ \ \ \ \ \ \#define\ EXTERN\ extern\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \ \#else}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ \_\_GNUC\_\_}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\ \ \ \ \ \ \#define\ EXTERN\ extern\ \_\_attribute\_\_\ ((dllimport))}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\ \ \ \ \ \ \#define\ EXTERN\ extern\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\ \ \#if\ \_\_GNUC\_\_\ >=\ 4}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\ \ \ \ \#define\ EXTERN\ extern\ \_\_attribute\_\_\ ((visibility\ ("{}default"{})))}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\ \ \#else}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\ \ \ \ \#define\ EXTERN\ extern\ }}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestat__tool}{stat\_tool}}\ \{}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00068\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00069\ \textcolor{comment}{\ *\ \ Key\ word\ identifiers\ (file\ format)}}
+\DoxyCodeLine{00070\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dd}{stat\_tool\_keyword}}\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda043d756075e1614440a6a40d596c13b2}{STATW\_INF\_BOUND}}\ ,}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda4d1be5ebed3b2e7460033dcce0a96117}{STATW\_SUP\_BOUND}}\ ,}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaf903342cf11068cb07179b79e7c557eb}{STATW\_PARAMETER}}\ ,}
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaa032f6f7dfb5b4fee78500987d1bcc15}{STATW\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaffa83c1c5c86aef06ba82291fd67c779}{STATW\_NO\_SEGMENT}}\ ,}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda241fcdf711edd2f6d283e95d62ca9da9}{STATW\_SEQUENCE\_LENGTH}}\ ,}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaae000fc63fc98ff7bf096ab1998c447d}{STATW\_SHAPE}}\ ,}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda99950b90a0084c9f861de657edfb7750}{STATW\_SCALE}}\ ,}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda61dcff78882facb148e3db7d3108e13f}{STATW\_ZERO\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaf40ea8827defea09c75ed04ca5060176}{STATW\_MEAN}}\ ,}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda39473da6f2cb2c49897384ad53f59cf7}{STATW\_STANDARD\_DEVIATION}}\ ,}
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda6240137849582d5426250296a894c49d}{STATW\_MEAN\_DIRECTION}}\ ,}
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda814e77e44ad0eaba14617b6227a02e3a}{STATW\_CONCENTRATION}}\ ,}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda121ac5b427e122efda44f9ff832f903c}{STATW\_INTERCEPT}}\ ,}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda1f7ada467af06255c21ab1f065484cf2}{STATW\_SLOPE}}\ ,}
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddab045d2fc19d9b16b2b3dda909deb97c8}{STATW\_AUTOREGRESSIVE\_COEFF}}\ ,}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda98821d145e3a788f4f807d0326f8fb51}{STATW\_MIXTURE}}\ ,}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda675f8ea4d7ded1c48068e2e2c5626bee}{STATW\_CONVOLUTION}}\ ,}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda5b99e94f84df638eae4818c81adaeafe}{STATW\_DISTRIBUTIONS}}\ ,}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda0e52d5befc9d8e141077c96fc8341bf2}{STATW\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddab2a0bf9add682436a611b1c8ceb5e31a}{STATW\_WEIGHT}}\ ,}
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda447cc05e03c0ded4bc1002b3248e3a3e}{STATW\_WEIGHTS}}\ ,}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaf3fed82a067e19b996fe996943eb3784}{STATW\_COMPONENTS}}\ ,}
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda0a9c986a5abb881a952fab625ac25be9}{STATW\_COMPONENT}}\ ,}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda1ecefaf912830b94546d985b8dd6c606}{STATW\_COMPOUND}}\ ,}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda9e3ea4d98366c925317782996db2adc3}{STATW\_SUM}}\ ,}
+\DoxyCodeLine{00103\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda8f3809b02ee54928c63544fc208dfd51}{STATW\_ELEMENTARY}}\ ,}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda1a07868f0dcc6f41924095e1852489c1}{STATW\_VARIABLE}}\ ,}
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda2e64e2cf28d22c6e67f254128f18dfe8}{STATW\_VARIABLES}}\ ,}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda14eb888e93cb2ef394bd7c5898b75098}{STATW\_DISTANCE}}\ ,}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda59911b2563c95621acd25924cdd1dee8}{STATW\_CATEGORIES}}\ ,}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda9a87cf378facaac49db21c84f77d591a}{STATW\_PERIOD}}\ ,}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda7f723fa2fa8e85ffb1fd96e4b4f17d9a}{STATW\_STATES}}\ ,}
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaa3915d01ee2144cc2ecadd6aa48c8dd9}{STATW\_INITIAL\_PROBABILITIES}}\ ,}
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddac629bb6969c8a46b7e9049d9ea9fbdad}{STATW\_TRANSITION\_PROBABILITIES}}\ ,}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda02d8158dab94d35ab0d0e5bb5d87830b}{STATW\_STATE}}\ ,}
+\DoxyCodeLine{00117\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda661b2f979f8b6bed3d1eaa578a99e9ef}{STATW\_FUNCTION}}\ ,}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddae280fb80187c16fce26d00f36bc78f9f}{STATW\_OUTPUT\_PROCESS}}\ ,}
+\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda60d381545b62d8eb3b8b4def9126811f}{STATW\_OUTPUT\_PROCESSES}}\ ,}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaa03175e85ae30a91387811cb89b3c0bc}{STATW\_NONPARAMETRIC}}\ ,\ \ \ \textcolor{comment}{//\ for\ ascending\ compatibility}}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda7b01a53918cb98ebd016411d7cb969ed}{STATW\_CATEGORICAL}}\ ,}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddafb3a0704adcb5053a974a061e393fa62}{STATW\_PARAMETRIC}}\ ,\ \ \ \textcolor{comment}{//\ for\ ascending\ compatibility}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda2cc4c663e0dd61b4e09f8f32dfffcec9}{STATW\_DISCRETE\_PARAMETRIC}}\ ,}
+\DoxyCodeLine{00129\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaba062df63d09c1dfd7ac6d7805acaada}{STATW\_CONTINUOUS\_PARAMETRIC}}\ ,}
+\DoxyCodeLine{00130\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaad4df4803a865eb5de559c338f93a708}{STATW\_OBSERVATION\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00131\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda1f5932f4e273341e6d0a57b5612ac84f}{STATW\_OBSERVATION\_MODEL}}\ ,}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddafaf06b518deec9014f0536bb8a5c441f}{STATW\_OBSERVATION\_PROBABILITIES}}\ ,\ \ \textcolor{comment}{//\ for\ ascending\ compatibility}}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda5aec4874741a306247449e2d551d85a3}{STATW\_OUTPUT}}}
+\DoxyCodeLine{00136\ \ \ \};}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[];}
+\DoxyCodeLine{00140\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a698d070e2d572858c23945b963f47305}{STAT\_discrete\_distribution\_word}}[];}
+\DoxyCodeLine{00141\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a9413bcc63acbf4e4ab271e9eb2940104}{STAT\_discrete\_distribution\_letter}}[];}
+\DoxyCodeLine{00142\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a3cd7e841f6bc6dabb7c89cd13b19f2e2}{STAT\_continuous\_distribution\_word}}[];}
+\DoxyCodeLine{00143\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a2e5df5e3a1ca4dc7cec67ecccc9c5491}{STAT\_continuous\_distribution\_letter}}[];}
+\DoxyCodeLine{00144\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a8ac3b18f4b40972db1bbc9082923568d}{STAT\_variable\_type\_word}}[];}
+\DoxyCodeLine{00145\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_af9fa33e3b600d286f395632f82135f6c}{STAT\_variable\_type\_letter}}[];}
+\DoxyCodeLine{00146\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a907cbeec04ea9845429f82c536b39521}{STAT\_distance\_word}}[];}
+\DoxyCodeLine{00147\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a448a473c85158f9d65d8dae5964e2b9c}{STAT\_criterion\_word}}[];}
+\DoxyCodeLine{00148\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a67cd188fe10b0be0d2071b920ec4e1c4}{STAT\_function\_word}}[];}
+\DoxyCodeLine{00149\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_ad5c18cde72346eb18b17c47f8fc87640}{STAT\_variable\_word}}[];}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00154\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00155\ \textcolor{comment}{\ *\ \ Label\ identifiers}}
+\DoxyCodeLine{00156\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bf}{stat\_tool\_label}}\ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa6e9e945fd10888727a0e0dc4eea00f89}{STATL\_LINE}}\ ,}
+\DoxyCodeLine{00161\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfab33ef4d6a54f8eacf4e9f7435573d529}{STATL\_WORD}}\ ,}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaec8a4391dbcc282dae2408c75c77eeda}{STATL\_HIT\_RETURN}}\ ,}
+\DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfadf0aae919bff178a0022579616d1dc5d}{STATL\_END}}\ ,}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa115a1cf06bf741ce993ae18f966b157e}{STATL\_MODEL}}\ ,}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaacb524b0f209e233da250f08bd5b63c1}{STATL\_MEAN}}\ ,}
+\DoxyCodeLine{00169\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac8372e147c5f8b39bc52de52d3a21b71}{STATL\_MEDIAN}}\ ,}
+\DoxyCodeLine{00170\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa256a4d4b126e4092bee99fdfafca5174}{STATL\_MODE}}\ ,}
+\DoxyCodeLine{00171\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa4485cb2b2625bcda3f02ff3864b8412b}{STATL\_VARIANCE}}\ ,}
+\DoxyCodeLine{00172\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa12da9b7b0f97ca04bce02740b3f21021}{STATL\_STANDARD\_DEVIATION}}\ ,}
+\DoxyCodeLine{00173\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa66ec28f0c3377045319478e78ae1fa04}{STATL\_QUANTILE}}\ ,}
+\DoxyCodeLine{00174\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa8c90f5c73078de0ebaf84fcb3c092c75}{STATL\_LOWER\_QUARTILE}}\ ,}
+\DoxyCodeLine{00175\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa2898682b45ae74b371de6946ef05edef}{STATL\_UPPER\_QUARTILE}}\ ,}
+\DoxyCodeLine{00176\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa057186f1b42746a24adfa9abb723265d}{STATL\_MEAN\_ABSOLUTE\_DEVIATION}}\ ,}
+\DoxyCodeLine{00177\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa9ab98941e1a4a25646c763b7d7e3ce7}{STATL\_VARIATION\_COEFF}}\ ,}
+\DoxyCodeLine{00178\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac04d6801f276e9655b68f761f3bb236d}{STATL\_VARIANCE\_MEAN\_RATIO}}\ ,}
+\DoxyCodeLine{00179\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa52987f9cc8d79907cea2c2cb08c5ac57}{STATL\_SKEWNESS\_COEFF}}\ ,}
+\DoxyCodeLine{00180\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa542cebede62924cfdd55bdcfaeeabf8b}{STATL\_KURTOSIS\_COEFF}}\ ,}
+\DoxyCodeLine{00181\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaac039d3948a34714d69dfc80105d24ef}{STATL\_INFORMATION}}\ ,}
+\DoxyCodeLine{00182\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaea77303506ae396e8176a159ee3ab793}{STATL\_CONCENTRATION\_COEFF}}\ ,}
+\DoxyCodeLine{00183\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa889becc5af266a28c8cf662a4f33bf0f}{STATL\_SMOOTHNESS}}\ ,}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa96a6f0c69fd87003459581698f77edda}{STATL\_MEAN\_DIRECTION}}\ ,}
+\DoxyCodeLine{00186\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfabd96a23aa8f5d05f6f4c7811a108ee91}{STATL\_MEAN\_RESULTANT\_LENGTH}}\ ,}
+\DoxyCodeLine{00187\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa41dbce7e8dafa00eaf71e08d188a055f}{STATL\_CIRCULAR\_STANDARD\_DEVIATION}}\ ,}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa5b1bbb711e1dee00aea8e567320f256a}{STATL\_MEAN\_CONFIDENCE\_INTERVAL}}\ ,}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac9da699ffad342a39bb971f89e44d03c}{STATL\_ONE\_SIDED}}\ ,}
+\DoxyCodeLine{00192\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa9c27740b1b7cad4430b6603829c723fc}{STATL\_TWO\_SIDED}}\ ,}
+\DoxyCodeLine{00193\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa2aac25d2a565e9e53b086013c3b20bbe}{STATL\_CHI2\_TEST}}\ ,}
+\DoxyCodeLine{00194\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa82c628fe95c8eef93829d1258ab2c13a}{STATL\_F\_TEST}}\ ,}
+\DoxyCodeLine{00195\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa1d41920e462230b56ffc1a0e14f129fa}{STATL\_T\_TEST}}\ ,}
+\DoxyCodeLine{00196\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa71409524345dd6cc1a88282dcf343b5b}{STATL\_WILCOXON\_MANN\_WHITNEY\_TEST}}\ ,}
+\DoxyCodeLine{00197\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa9adbe52ef03123ba7542f0b1d930b760}{STATL\_KRUSKAL\_WALLIS\_TEST}}\ ,}
+\DoxyCodeLine{00198\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfab71ae6fdd07c504d950b95f4e235204e}{STATL\_FREEDOM\_DEGREE}}\ ,}
+\DoxyCodeLine{00199\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa7dc75069179d2d5cd60a466db5952ff5}{STATL\_FREEDOM\_DEGREES}}\ ,}
+\DoxyCodeLine{00200\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfae29b36751a6df38fe5d8c9f460147b71}{STATL\_STANDARD\_NORMAL\_VALUE}}\ ,}
+\DoxyCodeLine{00201\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa64dad9c555ab1d1a85203c3767a8f6f9}{STATL\_CHI2\_VALUE}}\ ,}
+\DoxyCodeLine{00202\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa75762252ef443b6157e6fc63ad9df39}{STATL\_F\_VALUE}}\ ,}
+\DoxyCodeLine{00203\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa222d65ecfec61c38b156607fe7941ea6}{STATL\_T\_VALUE}}\ ,}
+\DoxyCodeLine{00204\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaaf154cd606b618889cdf77a9aa8c08ac}{STATL\_CRITICAL\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00205\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa661e5e94e8028da03567c447bf77fec6}{STATL\_REFERENCE}}\ ,}
+\DoxyCodeLine{00206\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfada1c481ab52f13e7e0b9d7cb19e34340}{STATL\_TEST}}\ ,}
+\DoxyCodeLine{00207\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfad81608e321d05f2f1f1b1b901be9a79d}{STATL\_MANN\_WHITNEY\_INFERIOR\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00208\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa30d4aab8920a7aa793cde5a4692e9c0e}{STATL\_MANN\_WHITNEY\_EQUAL\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00209\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfad45b56dd2b3a669950d7f2b278dd7e65}{STATL\_MANN\_WHITNEY\_SUPERIOR\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00211\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa8bfbfc043ae66bb7c171c141917abb9e}{STATL\_FIT}}\ ,}
+\DoxyCodeLine{00212\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa4914a34f425ce08bd1b11ef8c4d7423}{STATL\_LIKELIHOOD}}\ ,}
+\DoxyCodeLine{00213\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa646c861f540ace86d426dd5a84b7513f}{STATL\_NORMALIZED}}\ ,}
+\DoxyCodeLine{00214\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfae5c4d940d30cb69806152459a0bb60e1}{STATL\_MAX\_LIKELIHOOD}}\ ,}
+\DoxyCodeLine{00215\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa1dbd7bdd97f67364bd8a9ea515caeae3}{STATL\_DEVIANCE}}\ ,}
+\DoxyCodeLine{00216\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa21e3dd998592aa5fcb0b072002dd0f20}{STATL\_CLASSIFICATION\_LIKELIHOOD}}\ ,}
+\DoxyCodeLine{00217\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa6a6ebc4b5f8bb120e8848d92a8e75e9c}{STATL\_MAX\_CLASSIFICATION\_LIKELIHOOD}}\ ,}
+\DoxyCodeLine{00218\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa1256fe077f1e1b698c5301b0a0395c96}{STATL\_CLASSIFICATION\_ENTROPY}}\ ,}
+\DoxyCodeLine{00219\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa00024bf266d83d1b36e61455ee4e495f}{STATL\_FREE\_PARAMETER}}\ ,}
+\DoxyCodeLine{00220\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa89df8ea211a1c1cab875ceaecb01867d}{STATL\_FREE\_PARAMETERS}}\ ,}
+\DoxyCodeLine{00221\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa4e95b66835cc014224b1f4213622cb01}{STATL\_PENALIZED\_LIKELIHOOD}}\ ,}
+\DoxyCodeLine{00222\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa3a9b1b4fcba40f3c0c185c3ff0c4a8b2}{STATL\_ITERATION}}\ ,}
+\DoxyCodeLine{00223\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa1249dd5036befec4551b48fcacfd18c2}{STATL\_ITERATIONS}}\ ,}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa338b97da4b5334621de63cc04cfe5eb7}{STATL\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00226\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa47b6c082d2936362dbddea9f24ae44f2}{STATL\_DISTRIBUTIONS}}\ ,}
+\DoxyCodeLine{00227\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa8cd3cbca91227a766db65742c345958b}{STATL\_UNPROPER}}\ ,}
+\DoxyCodeLine{00228\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac7bb49ad544554116a70249af2b4e8fe}{STATL\_COMPLEMENTARY\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00229\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa027b1a132c1538f98a6fa6162dd459a8}{STATL\_CUMULATIVE}}\ ,}
+\DoxyCodeLine{00230\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa6335d27df9a729581609a0d5b3236a21}{STATL\_SURVIVOR}}\ ,}
+\DoxyCodeLine{00231\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaf0390579943486c576041947f98e05ff}{STATL\_FUNCTION}}\ ,}
+\DoxyCodeLine{00232\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfabe73a5f52bc9f09044ab61c5f1d8c1fc}{STATL\_MATCHING}}\ ,}
+\DoxyCodeLine{00233\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfacd9238dd9b805613d5bf3be98cdd048b}{STATL\_CONCENTRATION}}\ ,}
+\DoxyCodeLine{00234\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa46e32f5bab47140a15261109c8bbc4ea}{STATL\_CURVE}}\ ,}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfafc47d7b7064eef7091b2fc9c1907b141}{STATL\_MIXTURE}}\ ,}
+\DoxyCodeLine{00237\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfae052f7bf2293b2fd8c44eedc9cdf73aa}{STATL\_WEIGHT}}\ ,}
+\DoxyCodeLine{00238\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa2b624c28f5b8aac018d8e019dcee6f21}{STATL\_COMPONENT}}\ ,}
+\DoxyCodeLine{00239\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa7f111e873dd494bcbd3a2fa0854001f0}{STATL\_CATEGORICAL}}\ ,}
+\DoxyCodeLine{00240\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa56d747b0d70b8a92c25b33a417aa2ad3}{STATL\_DISCRETE\_PARAMETRIC}}\ ,}
+\DoxyCodeLine{00241\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa2a1ba87f30fe6db08aef89b4a6444762}{STATL\_COMPONENT\_DISTANCE}}\ ,}
+\DoxyCodeLine{00242\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa06c3523bfdf9af2b31e5f160c21fbda6}{STATL\_POSTERIOR\_ASSIGNMENT\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00243\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa1dc1c4fc3ce2c0b6fcbf92f51af8483e}{STATL\_ASSIGNMENT\_ENTROPY}}\ ,}
+\DoxyCodeLine{00244\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac7d33ee60e6a8e7846ab0ee800fea2bb}{STATL\_CONVOLUTION}}\ ,}
+\DoxyCodeLine{00245\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa27ac2c893c1464efffe02d4be947ca75}{STATL\_COMPOUND}}\ ,}
+\DoxyCodeLine{00246\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfafbe3741b1aff5e090add7f408d4a2a33}{STATL\_SUM}}\ ,}
+\DoxyCodeLine{00247\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac1d049092a125c855f69fd7d74183bf9}{STATL\_ELEMENTARY}}\ ,}
+\DoxyCodeLine{00248\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa2c463d8e51df2ad05fcb7ec31498d03b}{STATL\_DEATH\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00249\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac60ccdec3bb64ae6f762ec8b2225f9b8}{STATL\_SURVIVAL\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00250\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa432eb83b9d2ff38a095c62c5d0a0505a}{STATL\_FREQUENCY}}\ ,}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaf49207daa698a8c52777eef37b958faf}{STATL\_BACKWARD}}\ ,}
+\DoxyCodeLine{00253\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaf5e0ec5f31aca9df1cec2f56eaf5969e}{STATL\_FORWARD}}\ ,}
+\DoxyCodeLine{00254\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa018f0225eaf5d0f826e95312922523f2}{STATL\_OBSERVATION\_INTER\_EVENT}}\ ,}
+\DoxyCodeLine{00255\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa15b72d8772c62cbe1f27a0f5367cdc06}{STATL\_SOJOURN\_TIME}}\ ,}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa0a5ca17ca4c719ea356e0a75ce240066}{STATL\_FREQUENCY\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00258\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa204909acc192a51f722f67540a761c84}{STATL\_FREQUENCY\_DISTRIBUTIONS}}\ ,}
+\DoxyCodeLine{00259\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfafde56b430beb9e4b403f142268730ef3}{STATL\_HISTOGRAM}}\ ,}
+\DoxyCodeLine{00260\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaef19ef0606a7e178fe493240052042a5}{STATL\_BIN\_WIDTH}}\ ,}
+\DoxyCodeLine{00261\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa60af1c842eeaa54cd885996d823a39a6}{STATL\_SAMPLE}}\ ,}
+\DoxyCodeLine{00262\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfafc55ee91aaef6ac323c64bd9ec5d3b7e}{STATL\_SAMPLE\_SIZE}}\ ,}
+\DoxyCodeLine{00263\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfad49e41b1ffb031d3b0adab505996ddfb}{STATL\_DISSIMILARITIES}}\ ,}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa843fa698014aa5542b964352bd46f4f2}{STATL\_INFORMATION\_RATIO}}\ ,}
+\DoxyCodeLine{00266\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa1973853d261f629584769fca6783713e}{STATL\_CLUSTERING\_STEP}}\ ,}
+\DoxyCodeLine{00267\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac450180adfb5316d6cffc61a80067f47}{STATL\_CATEGORY}}\ ,}
+\DoxyCodeLine{00268\ }
+\DoxyCodeLine{00269\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa07cb7f460746690c5967d776f0cfa3cb}{STATL\_VECTOR}}\ ,}
+\DoxyCodeLine{00270\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa0668e95f97da145ab64e2ec421d9be46}{STATL\_VECTORS}}\ ,}
+\DoxyCodeLine{00271\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa25f564a6e7daed585675c410022de55b}{STATL\_NB\_VECTOR}}\ ,}
+\DoxyCodeLine{00272\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaf8a891344143d19f0e7dfce5355c5664}{STATL\_VARIABLE}}\ ,}
+\DoxyCodeLine{00273\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa3a92b4047037a8df1d13044e8912079}{STATL\_IDENTIFIER}}\ ,}
+\DoxyCodeLine{00274\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa5ad9f48897bbfac741f4df18292d8295}{STATL\_MIN\_VALUE}}\ ,}
+\DoxyCodeLine{00275\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa46910d7a284c81f39a75ddd39945930c}{STATL\_MAX\_VALUE}}\ ,}
+\DoxyCodeLine{00276\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa8659b34c301fcba47f92eb85036a4aa8}{STATL\_MARGINAL}}\ ,}
+\DoxyCodeLine{00277\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfae4d2067c91a17a2179288678179df8f3}{STATL\_VARIANCE\_COVARIANCE\_MATRIX}}\ ,}
+\DoxyCodeLine{00278\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa2738fc6c0835d936c16b87bef0c81fe3}{STATL\_CORRELATION\_MATRIX}}\ ,}
+\DoxyCodeLine{00279\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaefc6ab3c413156e874d639d5022e7f9d}{STATL\_SPEARMAN\_RANK\_CORRELATION\_MATRIX}}\ ,}
+\DoxyCodeLine{00280\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa4a65d0988a56e012a28d5777dd0d6f58}{STATL\_KENDALL\_RANK\_CORRELATION\_MATRIX}}\ ,}
+\DoxyCodeLine{00281\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa7f6fff1f69b87afb0dc87164541e1b5e}{STATL\_LIMIT\_CORRELATION\_COEFF}}\ ,}
+\DoxyCodeLine{00282\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa81909503051e5a3e193edec6bc97eacd}{STATL\_SPEARMAN\_LIMIT\_RANK\_CORRELATION\_COEFF}}\ ,}
+\DoxyCodeLine{00283\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa9a6b94428bc4f6568ace3f59fc58f90c}{STATL\_KENDALL\_LIMIT\_RANK\_CORRELATION\_COEFF}}\ ,}
+\DoxyCodeLine{00284\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa53b98c1e6e14206ae247066f407db7da}{STATL\_SUP\_NORM\_DISTANCE}}\ ,}
+\DoxyCodeLine{00285\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa27ffc105e533823a263457c45c43447}{STATL\_OVERLAP}}\ ,}
+\DoxyCodeLine{00286\ }
+\DoxyCodeLine{00287\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa8fd53d8e7e3eaafed4a85cfe908ab7d0}{STATL\_CONTINGENCY\_TABLE}}\ ,}
+\DoxyCodeLine{00288\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa16bebe74ddcade97207bd28f1034a9c}{STATL\_DEVIATION\_TABLE}}\ ,}
+\DoxyCodeLine{00289\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfabc562bedc0307e5eafb89de4f99da804}{STATL\_CHI2\_CONTRBUTION\_TABLE}}\ ,}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00291\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa4e8e1b4312ab7832cc30d84061ae7227}{STATL\_VARIANCE\_ANALYSIS}}\ ,}
+\DoxyCodeLine{00292\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa62d8a210e4b9c15e333914bd2e6a6d9b}{STATL\_VARIATION\_SOURCE}}\ ,}
+\DoxyCodeLine{00293\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa25f685fe852fbb0c36feee75f5a0166a}{STATL\_BETWEEN\_SAMPLES}}\ ,}
+\DoxyCodeLine{00294\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa0f0de40ff33c793fea5d372f94b7c0ec}{STATL\_WITHIN\_SAMPLES}}\ ,}
+\DoxyCodeLine{00295\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa1f5c9481e5ee22b30eb7a938a06e9c50}{STATL\_TOTAL}}\ ,}
+\DoxyCodeLine{00296\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa2f3fd8ab35ae771c39a61a63e504f0ad}{STATL\_SQUARE\_SUM}}\ ,}
+\DoxyCodeLine{00297\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa910f3cecbe7a2229610ad71347cb4c25}{STATL\_MEAN\_SQUARE}}\ ,}
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00299\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa1695a0c5e94661177b6cfeb3d0ea2332}{STATL\_INTERCEPT}}\ ,}
+\DoxyCodeLine{00300\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa79f55a166a195d3052c5b89637792449}{STATL\_SLOPE}}\ ,}
+\DoxyCodeLine{00301\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaebb658ff6d8c19b568113bef404c1e81}{STATL\_EXPLANATORY\_VARIABLE}}\ ,}
+\DoxyCodeLine{00302\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa16251cd6f697bb3863b0a3c1d5d3bf86}{STATL\_RESPONSE\_VARIABLE}}\ ,}
+\DoxyCodeLine{00303\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa864fbc2584530ca2a86dc6d6440b81aa}{STATL\_CORRELATION\_COEFF}}\ ,}
+\DoxyCodeLine{00304\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfadfdca0fe2480588ccf8871ef7cc5267b}{STATL\_R\_SQUARED}}\ ,}
+\DoxyCodeLine{00305\ \textcolor{comment}{//\ \ \ \ STATL\_REGRESSION\_VARIATION\_TOTAL\_VARIATION\ ,}}
+\DoxyCodeLine{00306\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa2cd2adcd88e34b0cf47435ff0200f578}{STATL\_DETERMINATION\_COEFF}}\ ,}
+\DoxyCodeLine{00307\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa165f6e3fa8e86bf2a6e194caa6bd756}{STATL\_NULL\_AUTOREGRESSIVE\_COEFF\_95\_CONFIDENCE\_LIMIT}}\ ,}
+\DoxyCodeLine{00308\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa0fe5568ba7066b0be55dcf6437c4b074}{STATL\_RESIDUAL}}\ ,}
+\DoxyCodeLine{00309\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa8a96eb2fced9cebdd0b27fc8e810651b}{STATL\_STANDARDIZED\_RESIDUAL}}\ ,}
+\DoxyCodeLine{00310\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa3695cb329f1f29e553dfcb1359be0ff0}{STATL\_LINEAR}}\ ,}
+\DoxyCodeLine{00311\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfabaa44bc85e1c0a54ebae878f4c90d7eb}{STATL\_LINEAR\_MODEL}}\ ,}
+\DoxyCodeLine{00312\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfabd1595391de7a524d6aa6b65067dfd67}{STATL\_NONPARAMETRIC}}\ ,}
+\DoxyCodeLine{00313\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa97cb57a38204bcc56eba72bf8ef7906b}{STATL\_REGRESSION}}\ ,}
+\DoxyCodeLine{00314\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa54644233591a1f6eab1778a0f18b9660}{STATL\_ESTIMATION}}\ ,}
+\DoxyCodeLine{00315\ }
+\DoxyCodeLine{00316\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa30c3b7502183fc9b9cfc3ef4b37334be}{STATL\_DISTANCE}}\ ,}
+\DoxyCodeLine{00317\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfad8017df397429611889ab0d5f178d888}{STATL\_CUMUL\_DISTANCE}}\ ,}
+\DoxyCodeLine{00318\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa839492b520d6a5046726e47b1d213e3f}{STATL\_LENGTH}}\ ,}
+\DoxyCodeLine{00319\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac4247b495e0c011c21ecbce6d1c6b39b}{STATL\_DELETION}}\ ,}
+\DoxyCodeLine{00320\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfab4ce5a7a33a7dd240f9988093a917cff}{STATL\_INSERTION}}\ ,}
+\DoxyCodeLine{00321\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaff074ff9638070133d0e0191e193ef6d}{STATL\_INDEL}}\ ,}
+\DoxyCodeLine{00322\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa0494cd31bd8ed8f64f9e8ddf23aa990a}{STATL\_MATCH}}\ ,}
+\DoxyCodeLine{00323\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaab338d25ff82b7c20fe47ac78dcaf9df}{STATL\_SUBSTITUTION}}\ ,}
+\DoxyCodeLine{00324\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa12fb20acb7fe099bdd33377fd2ec316e}{STATL\_TRANSPOSITION}}\ ,}
+\DoxyCodeLine{00325\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa54776727667015e82228df2c0304e7b0}{STATL\_RATE}}\ ,}
+\DoxyCodeLine{00326\ }
+\DoxyCodeLine{00327\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaed46eaacd41087365cac6a86031ae48a}{STATL\_MATRIX}}\ ,}
+\DoxyCodeLine{00328\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa90032c74d70252b882d2dd5fca7fdd41}{STATL\_NB\_ROW}}\ ,}
+\DoxyCodeLine{00329\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaed8c4a803e48e33095f9bebc7e051e3c}{STATL\_NB\_COLUMN}}\ ,}
+\DoxyCodeLine{00330\ }
+\DoxyCodeLine{00331\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa064ffbfeff3a6c83e52867e8fa610a21}{STATL\_SYMMETRY\_RATE}}\ ,}
+\DoxyCodeLine{00332\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfadea435517ebae1de49040c21473b25d1}{STATL\_TRIANGLE\_INEQUALITY\_RATE}}\ ,}
+\DoxyCodeLine{00333\ }
+\DoxyCodeLine{00334\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa6e0df1df779ea7d45d04384cd2aae095}{STATL\_CLUSTER}}\ ,}
+\DoxyCodeLine{00335\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa3a29ceadcc42d169dedd516ea1367b07}{STATL\_CLUSTERS}}\ ,}
+\DoxyCodeLine{00336\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfade23a9ced08f4fd276136f307a63337c}{STATL\_NEIGHBOR}}\ ,}
+\DoxyCodeLine{00337\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfae04726b4f665ba6ee20b790e744270e4}{STATL\_MOST\_DISTANT}}\ ,}
+\DoxyCodeLine{00338\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfac871637fc3da30fa4b890612b9253444}{STATL\_DIAMETER}}\ ,}
+\DoxyCodeLine{00339\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa9deb9de1503688751be2091ed025feed}{STATL\_SEPARATION}}\ ,}
+\DoxyCodeLine{00340\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa7464c940fcc578a32584b1405dac16ba}{STATL\_PATTERN\_LEVEL}}\ ,}
+\DoxyCodeLine{00341\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfab0987d666c86e282b551b7468d564a50}{STATL\_ISOLATED}}\ ,}
+\DoxyCodeLine{00342\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa2dabe05ba8967eb2a8798a81b2110f97}{STATL\_NON\_ISOLATED}}\ ,}
+\DoxyCodeLine{00343\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaf1b1178b0f5154c249999f7f01b51d58}{STATL\_WITHIN}}\ ,}
+\DoxyCodeLine{00344\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa3a47eb3d2dbe3a7e7d6718e93eb2e882}{STATL\_BETWEEN}}\ ,}
+\DoxyCodeLine{00345\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfad4eb210ba884fedef07d787988135fbe}{STATL\_RATIO}}\ ,}
+\DoxyCodeLine{00346\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa67d8baafda41a1ff9f21cdb1bb93ae5b}{STATL\_PROTOTYPE}}\ ,}
+\DoxyCodeLine{00347\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa1c108dabdf2c01a619ef9499c033c3d5}{STATL\_STEP}}\ ,}
+\DoxyCodeLine{00348\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa6bf0cf0f1d9102d3f55757dcafc873cf}{STATL\_CHILD}}\ ,}
+\DoxyCodeLine{00349\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa06582cb7a2e3011dd580fa8e6a59a252}{STATL\_COMPOSITION}}\ ,}
+\DoxyCodeLine{00350\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa02554b70121775ab112f2e6f9a7c02d5}{STATL\_CHILD\_CLUSTER\_DISTANCE\_COEFF}}\ ,}
+\DoxyCodeLine{00351\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa192adfe6c5c13999314b6b42199a175f}{STATL\_DIAMETER\_COEFF}}\ ,}
+\DoxyCodeLine{00352\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfad8802cafcf2deb8547645060782a3be2}{STATL\_DENDROGRAM\_SCALE}}\ ,}
+\DoxyCodeLine{00353\ }
+\DoxyCodeLine{00354\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfad535daf40ca3404f3a7648e919a10466}{STATL\_CLASS}}\ ,}
+\DoxyCodeLine{00355\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfad47e9558c6fb8d0f857f5b4d4091b314}{STATL\_STATE}}\ ,}
+\DoxyCodeLine{00356\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa7686849e54485c783f42a137f3fc4e9}{STATL\_STATES}}\ ,}
+\DoxyCodeLine{00357\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa138c2254049cb2065ac655b4fcb39713}{STATL\_TRANSIENT}}\ ,}
+\DoxyCodeLine{00358\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa4b878fc0e9198edeeed5bdaa1674affb}{STATL\_RECURRENT}}\ ,}
+\DoxyCodeLine{00359\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa40d1e75dff749643eeb1f6f730dd4df4}{STATL\_ABSORBING}}\ ,}
+\DoxyCodeLine{00360\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa8a3ad9e2601188b50774fce22c15d2f0}{STATL\_MEMORY}}\ ,}
+\DoxyCodeLine{00361\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa531cc10c1ee61eac7680d3148c797b05}{STATL\_STATIONARY\_PROBABILITIES}}\ ,}
+\DoxyCodeLine{00362\ }
+\DoxyCodeLine{00363\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa9feb0ab1426d8b28f293b2d6563a7a0b}{STATL\_VALUE}}\ ,}
+\DoxyCodeLine{00364\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaeb0362b5210b147988daf4292ee8f114}{STATL\_VALUES}}\ ,}
+\DoxyCodeLine{00365\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa241101698e84212f087bb792d09969f}{STATL\_OUTPUT}}\ ,}
+\DoxyCodeLine{00366\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfab2154a712bb36a5ddab6595f658ee52d}{STATL\_OUTPUT\_PROCESS}}\ ,}
+\DoxyCodeLine{00367\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfad1d70ffc4ab4ed25c691a8f7339ab58a}{STATL\_OBSERVATION}}\ ,}
+\DoxyCodeLine{00368\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfabc3dea1e2bdeb899e64ea8713520c898}{STATL\_OBSERVATION\_PROBABILITIY\_MATRIX}}\ ,}
+\DoxyCodeLine{00369\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa4aa0bc7a0f9d04013e19fcbf7c894c45}{STATL\_THEORETICAL}}\ ,}
+\DoxyCodeLine{00370\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfaa8ae9d7eb655d0dca271bfbbecc2fed7}{STATL\_RESTORATION}}\ ,}
+\DoxyCodeLine{00371\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa21944d7aa41cee304a4fcd15972e60b0}{STATL\_WEIGHTS}}\ ,}
+\DoxyCodeLine{00372\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa4a8bcdd24ac45b7e3c0409127cc6470e}{STATL\_OBSERVATION\_DISTRIBUTION\_DISTANCE}}\ ,}
+\DoxyCodeLine{00373\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa10324445beeb14f38f5a994023f9730e}{STATL\_CONSECUTIVE\_STATE\_OBSERVATION\_DISTRIBUTION\_DISTANCE}}\ ,}
+\DoxyCodeLine{00374\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3c004532d5daffc277feeada6e9173bfa197dea819ed440d0ac54e6dd184c2a4a}{STATL\_Q\_Q\_PLOT}}}
+\DoxyCodeLine{00375\ \ \ \};}
+\DoxyCodeLine{00376\ }
+\DoxyCodeLine{00377\ }
+\DoxyCodeLine{00378\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a402794ded79b6eafc78781e40c23b4a8}{STAT\_label}}[];}
+\DoxyCodeLine{00379\ }
+\DoxyCodeLine{00380\ }
+\DoxyCodeLine{00381\ }
+\DoxyCodeLine{00382\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00383\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00384\ \textcolor{comment}{\ *\ \ Identifiers\ of\ error\ messages\ for\ lexical\ analysis\ of\ files}}
+\DoxyCodeLine{00385\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00386\ }
+\DoxyCodeLine{00387\ }
+\DoxyCodeLine{00388\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402}{stat\_tool\_parsing}}\ \{}
+\DoxyCodeLine{00389\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402ad2af014ba6739bd89d7bc525c9c8501b}{STATP\_KEYWORD}}\ ,}
+\DoxyCodeLine{00390\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a57aa89707aee1a7428e45df13384df60}{STATP\_FORMAT}}\ ,}
+\DoxyCodeLine{00391\ }
+\DoxyCodeLine{00392\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a45ea6317d816975d510d9ba5e2809a87}{STATP\_DISTRIBUTION\_NAME}}\ ,}
+\DoxyCodeLine{00393\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a8aa2a5f6c135a4e271e2c6ddd0a62e64}{STATP\_PARAMETER\_NAME}}\ ,}
+\DoxyCodeLine{00394\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a93a9b243f0c2f4ba30fe19cbe6ac4e31}{STATP\_PARAMETER\_INDEX}}\ ,}
+\DoxyCodeLine{00395\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a7f7e0e6a1110d205a44808143ffa8034}{STATP\_NB\_PARAMETER}}\ ,}
+\DoxyCodeLine{00396\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402af0daf460b9b8310e00fb0331a21be864}{STATP\_SEPARATOR}}\ ,}
+\DoxyCodeLine{00397\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a27f0784a9adcc551bfa9162e17ce5866}{STATP\_PARAMETER\_VALUE}}\ ,}
+\DoxyCodeLine{00398\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402aa39daf5992e0d56aaf7537ae088b9c1a}{STATP\_PROBABILITY\_SUM}}\ ,}
+\DoxyCodeLine{00399\ }
+\DoxyCodeLine{00400\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402aede1f0dfcc87c6cd644bf22ef06f82a5}{STATP\_DATA\_TYPE}}\ ,}
+\DoxyCodeLine{00401\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a7dbb979473b111a0dc8a14ba4ef52006}{STATP\_NB\_TOKEN}}\ ,}
+\DoxyCodeLine{00402\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a9dbbf53f2db5fa8568510194209085ae}{STATP\_EMPTY\_SAMPLE}}\ ,}
+\DoxyCodeLine{00403\ }
+\DoxyCodeLine{00404\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402aaffff4dd2541b75f2e38f638e7802ce8}{STATP\_VALUE\_ORDER}}\ ,}
+\DoxyCodeLine{00405\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402ae99a87f1a9630e72faa04e8ed19db3fa}{STATP\_MAX\_VALUE}}\ ,}
+\DoxyCodeLine{00406\ }
+\DoxyCodeLine{00407\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402afbe12023368c72cf93f3a7f13181936d}{STATP\_NB\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00408\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402ad8ab3f7839908fe7d757e4d094b84586}{STATP\_DISTRIBUTION\_INDEX}}\ ,}
+\DoxyCodeLine{00409\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a3f09db22aed56569f8e1d34431f6119e}{STATP\_WEIGHT\_VALUE}}\ ,}
+\DoxyCodeLine{00410\ }
+\DoxyCodeLine{00411\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a5cfd192cb27dac729084415cdfc425e9}{STATP\_NB\_COMPONENT}}\ ,}
+\DoxyCodeLine{00412\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a0a27d1b5931441a71caf04327a8d6b17}{STATP\_COMPONENT\_INDEX}}\ ,}
+\DoxyCodeLine{00413\ }
+\DoxyCodeLine{00414\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a2632b7e52755c14c242f671e2a6a8875}{STATP\_NB\_VARIABLE}}\ ,}
+\DoxyCodeLine{00415\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a953d93b3e5e1abd78981abbb05296907}{STATP\_VARIABLE\_INDEX}}\ ,}
+\DoxyCodeLine{00416\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a701baf73a4ae791200cbec7c901c408c}{STATP\_VARIABLE\_TYPE}}\ ,}
+\DoxyCodeLine{00417\ }
+\DoxyCodeLine{00418\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a4d449ec0646b83d44e45e084210e9e67}{STATP\_NB\_CATEGORY}}\ ,}
+\DoxyCodeLine{00419\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402af19a0c91c25d1d288cbb6cfa7fc1e84a}{STATP\_LOCAL\_DISTANCE}}\ ,}
+\DoxyCodeLine{00420\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402aef0f2a32c560de1441348833f70c03cb}{STATP\_TRIANGLE\_INEQUALITY}}\ ,}
+\DoxyCodeLine{00421\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a61522e541a8c0809547a99dbfca777bc}{STATP\_PERIOD\_VALUE}}\ ,}
+\DoxyCodeLine{00422\ }
+\DoxyCodeLine{00423\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a6b78dcb86ee7e5c6348875da33f9e90e}{STATP\_NB\_STATE}}\ ,}
+\DoxyCodeLine{00424\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402af76589305bf8ba8424f68552590a2ae1}{STATP\_ORDER}}\ ,}
+\DoxyCodeLine{00425\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a51a442f880775736be5d37757b566cef}{STATP\_INITIAL\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00426\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402ab98145b3a3bd9a462469a2ebef2267ec}{STATP\_TRANSITION\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00427\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402af9b35116a88723492aed9920c306ed4f}{STATP\_CHAIN\_STRUCTURE}}\ ,}
+\DoxyCodeLine{00428\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402aff94024bdd4c185099d7168776198d98}{STATP\_IRREDUCIBLE}}\ ,}
+\DoxyCodeLine{00429\ }
+\DoxyCodeLine{00430\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402aefe9b9f314200d8029383afc1f05c78a}{STATP\_STATE\_INDEX}}\ ,}
+\DoxyCodeLine{00431\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a41b0101f6da6cd0e748a1ae100cf8f21}{STATP\_OUTPUT\_INDEX}}\ ,}
+\DoxyCodeLine{00432\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402ade1e7672be48a41b0928f63622c23a04}{STATP\_OBSERVATION\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00433\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a27cb22493dfecd90699b0bf7d01177a9}{STATP\_NB\_OBSERVATION\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00434\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402aa66166a864b5d8de3c75dfb3da101f70}{STATP\_NON\_CONSECUTIVE\_OUTPUTS}}\ ,}
+\DoxyCodeLine{00435\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a87469144dece00991945656e6174d5a9}{STATP\_OBSERVATION\_DISTRIBUTION\_OVERLAP}}\ ,}
+\DoxyCodeLine{00436\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a793f351ab8cf5c9c616b287016b87b01}{STATP\_OBSERVATION\_DISTRIBUTION\_NON\_OVERLAP}}\ ,}
+\DoxyCodeLine{00437\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a8bd26f028f90c62fb9757fe39e9dd59e}{STATP\_OBSERVATION\_DISTRIBUTION\_TYPE}}\ ,}
+\DoxyCodeLine{00438\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a354e5a0811dfe64e6bda234167eb7d00}{STATP\_NB\_OUTPUT\_PROCESS}}\ ,}
+\DoxyCodeLine{00439\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a7e822e801562c2dea063db24441d9402a97ffc9c39110e7ae85334ac366007d4a}{STATP\_OUTPUT\_PROCESS\_INDEX}}}
+\DoxyCodeLine{00440\ \ \ \};}
+\DoxyCodeLine{00441\ }
+\DoxyCodeLine{00442\ }
+\DoxyCodeLine{00443\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_a46473894c0b828c3f4c8e324edd84725}{STAT\_parsing}}[];}
+\DoxyCodeLine{00444\ }
+\DoxyCodeLine{00445\ }
+\DoxyCodeLine{00446\ }
+\DoxyCodeLine{00447\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00448\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00449\ \textcolor{comment}{\ *\ \ Identifiers\ of\ error\ messages}}
+\DoxyCodeLine{00450\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00451\ }
+\DoxyCodeLine{00452\ }
+\DoxyCodeLine{00453\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cd}{stat\_tool\_error}}\ \{}
+\DoxyCodeLine{00454\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda4459590acc133a716f696a0f4c74e45a}{STATR\_FILE\_NAME}}\ ,}
+\DoxyCodeLine{00455\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda6b3c49bb01bf54a5036ec740906fc092}{STATR\_FILE\_PREFIX}}\ ,}
+\DoxyCodeLine{00456\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda05d67c7ceafe398f42c7bd530ba220f3}{STATR\_EMPTY\_SAMPLE}}\ ,}
+\DoxyCodeLine{00457\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda4c226da015be40128927be643de764ac}{STATR\_SAMPLE\_SIZE}}\ ,}
+\DoxyCodeLine{00458\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda605caea6d926f93e7dcf151bf2042501}{STATR\_SAMPLE\_SIZES}}\ ,}
+\DoxyCodeLine{00459\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda7d129e44a272cebba570bf2c765b89a7}{STATR\_NON\_EXISTING\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00460\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda528ed3954d186f5f114a36c1e238ecf1}{STATR\_NON\_EXISTING\_FREQUENCY\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00461\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdac8539788a4985312360d259bb01867c9}{STATR\_NO\_DATA}}\ ,}
+\DoxyCodeLine{00462\ }
+\DoxyCodeLine{00463\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdab858ef225742ed5fe77302ee151525bb}{STATR\_PLOT\_NB\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00464\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda1a9ca00d2846c16bc622d4b237888659}{STATR\_PLOT\_NB\_HISTOGRAM}}\ ,}
+\DoxyCodeLine{00465\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda1e2f590a10675c792c44352543b88b3f}{STATR\_PLOT\_NULL\_VARIANCE}}\ ,}
+\DoxyCodeLine{00466\ }
+\DoxyCodeLine{00467\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda35ea256220fe9b09016679a9ea65c019}{STATR\_VALUE\_RANGE}}\ ,}
+\DoxyCodeLine{00468\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaf2ba309854eb1d8a8513cf9343dc9f5d}{STATR\_MIN\_INF\_BOUND}}\ ,}
+\DoxyCodeLine{00469\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdab52e86daebde1d90f8be808dadf1cd51}{STATR\_ESTIMATION\_FAILURE}}\ ,}
+\DoxyCodeLine{00470\ }
+\DoxyCodeLine{00471\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaf80d2850b7b071dc2f22a46e6c9e40e8}{STATR\_NB\_COMPLETE\_INTERVAL\_TOO\_SMALL}}\ ,}
+\DoxyCodeLine{00472\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda82b322cc536bb42eb163fdb158f5c935}{STATR\_COMPLETE\_MIN\_VALUE}}\ ,}
+\DoxyCodeLine{00473\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaf3aebd6a5b22c2aee5fd2c555f104a64}{STATR\_FORWARD\_MIN\_VALUE}}\ ,}
+\DoxyCodeLine{00474\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda29952cc7514662f0064e0887dba8d959}{STATR\_NO\_EVENT\_MIN\_VALUE}}\ ,}
+\DoxyCodeLine{00475\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdad3ad22a3334b5c343129b6384b072f8e}{STATR\_MEAN\_ESTIMATION}}\ ,}
+\DoxyCodeLine{00476\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda7a13f0be3f5c7dc7c1ede73bd0322e75}{STATR\_INTER\_EVENT\_SUPPORT}}\ ,}
+\DoxyCodeLine{00477\ }
+\DoxyCodeLine{00478\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdad27449538afa6f3e95420b5f879c86e1}{STATR\_DISTRIBUTION\_INDEX}}\ ,}
+\DoxyCodeLine{00479\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda134b8a105be0c6dc92d8478393f6cdae}{STATR\_FREQUENCY\_DISTRIBUTION\_INDEX}}\ ,}
+\DoxyCodeLine{00480\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaeb396dd9dca7c41128bfac887816097f}{STATR\_NB\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00481\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda0eb80fab8129b7a84feac5d3af7582a6}{STATR\_WEIGHT\_STEP}}\ ,}
+\DoxyCodeLine{00482\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaac6951a127ff6b82bebe436965177343}{STATR\_DISTRIBUTION\_FLAG}}\ ,}
+\DoxyCodeLine{00483\ }
+\DoxyCodeLine{00484\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdacb1ac57571142a94ada76b65344d7cc8}{STATR\_NOT\_PRESENT}}\ ,}
+\DoxyCodeLine{00485\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda09af363bd244773b247d78b3960de75e}{STATR\_OUTPUT\_PROCESS\_INDEX}}\ ,}
+\DoxyCodeLine{00486\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda69db6c5891b90723ffc891395c1d31e6}{STATR\_OUTPUT\_PROCESS\_TYPE}}\ ,}
+\DoxyCodeLine{00487\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdad9289f5fcd92542bc9cc69a821ff5570}{STATR\_OPTIMAL\_ASSIGNMENT}}\ ,}
+\DoxyCodeLine{00488\ }
+\DoxyCodeLine{00489\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda676bc0eee69eb5dd9721d0982c348a5e}{STATR\_VARIABLE\_NB\_VALUE}}\ ,}
+\DoxyCodeLine{00490\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdab32d4677df01e8bcd37ba3901e2aaa83}{STATR\_NB\_OUTPUT\_PROCESS}}\ ,}
+\DoxyCodeLine{00491\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda66d7a7f3d56af36b233a84d5edaede9a}{STATR\_NB\_OUTPUT}}\ ,}
+\DoxyCodeLine{00492\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdabba01f602f7da1603093e3f09aa7ad47}{STATR\_POSITIVE\_MIN\_VALUE}}\ ,}
+\DoxyCodeLine{00493\ }
+\DoxyCodeLine{00494\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaa4bb1c963bc6cadfb6580bedf107a407}{STATR\_KNOWN\_DISTRIBUTION\_MIN\_VALUE}}\ ,}
+\DoxyCodeLine{00495\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda461cfb7f041510193b5886acef69cfde}{STATR\_KNOWN\_DISTRIBUTION\_MEAN}}\ ,}
+\DoxyCodeLine{00496\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda7a14f9082f591726d248bedc91e2ed3d}{STATR\_NB\_ITERATION}}\ ,}
+\DoxyCodeLine{00497\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda0769b947e02069a1947abb63dcfde411}{STATR\_MIN\_NB\_ASSIGNMENT}}\ ,}
+\DoxyCodeLine{00498\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda11a4bf6926300b1abc574ebbd5377885}{STATR\_PENALTY\_WEIGHT}}\ ,}
+\DoxyCodeLine{00499\ }
+\DoxyCodeLine{00500\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdac6f2ebea572ff34702c2b63b63bbff50}{STATR\_CLUSTERING\_STEP}}\ ,}
+\DoxyCodeLine{00501\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda3712a3c1cd8d8d257ed8c7d704973750}{STATR\_NB\_CLASS}}\ ,}
+\DoxyCodeLine{00502\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda8b078f7e1970a6e6ede9273f9b20b1a9}{STATR\_SHIFT\_VALUE}}\ ,}
+\DoxyCodeLine{00503\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda93b388e55d0f4f9a90fd4e946c0e3dd7}{STATR\_THRESHOLD\_VALUE}}\ ,}
+\DoxyCodeLine{00504\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda20d3b84bf0669f9295c861d5d3b79511}{STATR\_ROUNDED\_VALUE}}\ ,}
+\DoxyCodeLine{00505\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda4f7760ea22a55fd48e65e9d2d3c99d74}{STATR\_SMALLER\_THAN}}\ ,}
+\DoxyCodeLine{00506\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda30cf8cb2aa7a2eca520265eebdae4334}{STATR\_GREATER\_THAN}}\ ,}
+\DoxyCodeLine{00507\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda96d70d9ae35259472448ae8a767259f6}{STATR\_NOT\_ALLOWED}}\ ,}
+\DoxyCodeLine{00508\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda29f1c53e4fe266e26bb97c5ad326dab5}{STATR\_NB\_CATEGORY}}\ ,}
+\DoxyCodeLine{00509\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda6831babc737d3179e0010447127310da}{STATR\_NON\_CONSECUTIVE\_CATEGORIES}}\ ,}
+\DoxyCodeLine{00510\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdabeec89ab8fde3737e001d697e6bb7710}{STATR\_MISSING\_CATEGORY}}\ ,}
+\DoxyCodeLine{00511\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdae157e5ca3ee724426ab8d1f67099fe7e}{STATR\_CLUSTER\_LIMIT}}\ ,}
+\DoxyCodeLine{00512\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda809e770b001fefa51e47dfd124028e75}{STATR\_INFORMATION\_RATIO}}\ ,}
+\DoxyCodeLine{00513\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda587eecfd4440e322ca3a5d103a91b2b5}{STATR\_NULL\_INFORMATION}}\ ,}
+\DoxyCodeLine{00514\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdadbfd929d6471ac003f0f97d0d7754f50}{STATR\_SCALING\_COEFF}}\ ,}
+\DoxyCodeLine{00515\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda6427dfb241da9f0c2272c3f7eb89c1b8}{STATR\_VALUE}}\ ,}
+\DoxyCodeLine{00516\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda61cd4f0ccb4511a1774112d583ae0a91}{STATR\_MIN\_VALUE}}\ ,}
+\DoxyCodeLine{00517\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda4666369d99609c0c6cadf6f566ddc493}{STATR\_MAX\_VALUE}}\ ,}
+\DoxyCodeLine{00518\ }
+\DoxyCodeLine{00519\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda40fe9100f564e9b4c9c63c9ecc298e51}{STATR\_MARGINAL\_FREQUENCY\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00520\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda400e7f66de56140477308a11e4ee6f33}{STATR\_MARGINAL\_HISTOGRAM}}\ ,}
+\DoxyCodeLine{00521\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda714b13f7e0acd007e4907ed27d1c5019}{STATR\_HISTOGRAM\_BIN\_WIDTH}}\ ,}
+\DoxyCodeLine{00522\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda407c3099b1659aa0bc227d4edbece385}{STATR\_HISTOGRAM\_MIN\_VALUE}}\ ,}
+\DoxyCodeLine{00523\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda1bc250f68f13487b492a86ef928e2dbe}{STATR\_BAD}}\ ,}
+\DoxyCodeLine{00524\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda00eda936cc0bf2674f4a36aa56860ed0}{STATR\_NB\_VECTOR}}\ ,}
+\DoxyCodeLine{00525\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdadf6b9264805b4aa84e3bc5ade29a9b64}{STATR\_NB\_VARIABLE}}\ ,}
+\DoxyCodeLine{00526\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda7aa6c10759e34ec64ad8c01b490791c9}{STATR\_NB\_SELECTED\_VARIABLE}}\ ,}
+\DoxyCodeLine{00527\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdad6374599af0ad255085410233deef738}{STATR\_NB\_SUMMED\_VARIABLE}}\ ,}
+\DoxyCodeLine{00528\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda0d3b467cb59dd5b180dcfe9b44831c13}{STATR\_VARIABLE\_TYPE}}\ ,}
+\DoxyCodeLine{00529\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda1c89e722f6aacba73f0152185d9006fc}{STATR\_VARIABLE\_INDEX}}\ ,}
+\DoxyCodeLine{00530\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdae34c14262c105fbdf06670e7ff60ed07}{STATR\_VARIABLE\_INDICES}}\ ,}
+\DoxyCodeLine{00531\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaac8d25690162a5390735f37b86c39b28}{STATR\_ALREADY\_USED}}\ ,}
+\DoxyCodeLine{00532\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda0c64b4db035d0c87e282e7d1205884c3}{STATR\_ALREADY\_SELECTED}}\ ,}
+\DoxyCodeLine{00533\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda6719b69228dc3e4c44f42347f66aee65}{STATR\_SAMPLE\_INDEX}}\ ,}
+\DoxyCodeLine{00534\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaf4baa6e9c34d3a83a0ca17f87ff7ef71}{STATR\_RANK\_CORRELATION\_COMPUTATION}}\ ,}
+\DoxyCodeLine{00535\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda0f1e4d7e627f0de1665aff67d9f15694}{STATR\_SHIFTED\_SCALED}}\ ,}
+\DoxyCodeLine{00536\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda933af12b0d58c244ad3d259afcf7ac61}{STATR\_NB\_VALUE\_PERIOD}}\ ,}
+\DoxyCodeLine{00537\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda86a98b7198e9bb3440579da9221d70ad}{STATR\_NB\_VALUE}}\ ,}
+\DoxyCodeLine{00538\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda7b936a1f9b3f7651e99dae3424266bd4}{STATR\_MISSING\_VALUE}}\ ,}
+\DoxyCodeLine{00539\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaee2fcf850969096d705c7698e0a9df67}{STATR\_LEAST\_SQUARE\_ALGORITHM}}\ ,}
+\DoxyCodeLine{00540\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda2f57678eb81437a8e9a4ea2f7b8d03fc}{STATR\_REGRESSION\_FAILURE}}\ ,}
+\DoxyCodeLine{00541\ }
+\DoxyCodeLine{00542\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdae3563c539bc079b445c1bb92827db98b}{STATR\_MATRIX\_DIMENSIONS}}\ ,}
+\DoxyCodeLine{00543\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaeae1ca601d02b9720a622ffbea9901f8}{STATR\_INFINITE\_DISTANCES}}\ ,}
+\DoxyCodeLine{00544\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdaba88bdc0a7c7c8b4226bf493ebcef5e6}{STATR\_SYMMETRICAL\_MATRIX}}\ ,}
+\DoxyCodeLine{00545\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda14abfc1d38ef9d13eedf3dc316035544}{STATR\_UNSYMMETRICAL\_MATRIX}}\ ,}
+\DoxyCodeLine{00546\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda1db136b069cc97cc1df3119275c3bcc8}{STATR\_UNNORMALIZED\_DISSIMILARITY\_MEASURES}}\ ,}
+\DoxyCodeLine{00547\ }
+\DoxyCodeLine{00548\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdabc5b341d5aa49a1c20a71ade5772a5a4}{STATR\_SYMMETRY}}\ ,}
+\DoxyCodeLine{00549\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda9514f786208403db03db16c04d585418}{STATR\_TRIANGLE\_INEQUALITY}}\ ,}
+\DoxyCodeLine{00550\ }
+\DoxyCodeLine{00551\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda0f732d913e4a6c328738cc619b55e71b}{STATR\_MATRIX\_STRUCTURE}}\ ,}
+\DoxyCodeLine{00552\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda8a4c571358ebdea528aab5ce2bfb851f}{STATR\_SQUARE\_MATRIX}}\ ,}
+\DoxyCodeLine{00553\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda5910bf5fab9393f8c9ccd1101702f5bc}{STATR\_SINGLE\_ELEMENT\_CLUSTERS}}\ ,}
+\DoxyCodeLine{00554\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda8a67207fcec2b2e815d8c5adeaad6d82}{STATR\_NB\_CLUSTER}}\ ,}
+\DoxyCodeLine{00555\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda209e36f1afe89504959985b942908953}{STATR\_PATTERN\_TYPE}}\ ,}
+\DoxyCodeLine{00556\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cdae859a53ad138be2e243551738d15c906}{STATR\_PROTOTYPE\_IDENTIFIER}}\ ,}
+\DoxyCodeLine{00557\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda49747a371a4a906f34c8cb4c1e278613}{STATR\_NUMBER}}\ ,}
+\DoxyCodeLine{00558\ }
+\DoxyCodeLine{00559\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda1f0a87a7d5726c143b0dcd90113718f0}{STATR\_NULL\_INITIAL\_PROBABILITY}}\ ,}
+\DoxyCodeLine{00560\ }
+\DoxyCodeLine{00561\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda7ea91ab9587586bd732d1f44a0c7f7c0}{STATR\_ODD}}\ ,}
+\DoxyCodeLine{00562\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda4d4da61137b1fc29edd2bc835a79f146}{STATR\_NON\_SYMMETRICAL\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00563\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda1da1da91bf4df0d4a384f0dbf0f0724b}{STATR\_UNPROPER\_DISTRIBUTION}}\ ,}
+\DoxyCodeLine{00564\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a1902d0f62db2dbed4d422262015282cda44a904895c43c7b6e83ef27a84a280fb}{STATR\_NO\_PERMUTATION}}}
+\DoxyCodeLine{00565\ \ \ \};}
+\DoxyCodeLine{00566\ }
+\DoxyCodeLine{00567\ }
+\DoxyCodeLine{00568\ \ \ \mbox{\hyperlink{stat__label_8h_a77366c1bd428629dc898e188bfd182a3}{EXTERN}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{namespacestat__tool_aaab4c71fc1f1d43db8766fda2640da88}{STAT\_error}}[];}
+\DoxyCodeLine{00569\ }
+\DoxyCodeLine{00570\ }
+\DoxyCodeLine{00571\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{00572\ }
+\DoxyCodeLine{00573\ }
+\DoxyCodeLine{00574\ }
+\DoxyCodeLine{00575\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

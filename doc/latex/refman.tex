@@ -1,0 +1,376 @@
+  % Handle batch mode
+  % to overcome problems with too many open files
+  \let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}
+  \RequirePackage{iftex}
+  \ifLuaTeX
+    \directlua{pdf.setminorversion(7)}
+  \fi
+  \ifXeTeX
+    \special{pdf:minorversion 7}
+  \fi
+  \ifPDFTeX
+    \pdfminorversion=7
+  \fi
+  % Set document class depending on configuration
+  \documentclass[twoside]{book}
+  %% moved from doxygen.sty due to workaround for LaTex 2019 version and unmaintained tabu package
+  \usepackage{ifthen}
+  \ifx\requestedLaTeXdate\undefined
+    \usepackage{array}
+  \else
+    \usepackage{array}[=2016-10-06]
+  \fi
+  %%
+  % Packages required by doxygen
+  \makeatletter
+  \providecommand\IfFormatAtLeastTF{\@ifl@t@r\fmtversion}
+  % suppress package identification of infwarerr as it contains the word "warning"
+  \let\@@protected@wlog\protected@wlog
+  \def\protected@wlog#1{\wlog{package info suppressed}}
+  \RequirePackage{infwarerr}
+  \let\protected@wlog\@@protected@wlog
+  \makeatother
+  \IfFormatAtLeastTF{2016/01/01}{}{\usepackage{fixltx2e}} % for \textsubscript
+  \ifPDFTeX
+    \IfFormatAtLeastTF{2015/01/01}{\pdfsuppresswarningpagegroup=1}{}
+  \fi
+  \usepackage{doxygen}
+  \usepackage{graphicx}
+  \iftutex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Ligatures={TeX}}
+    \usepackage{unicode-math}
+  \else
+    \usepackage[utf8]{inputenc}
+  \fi
+  \usepackage{makeidx}
+  \PassOptionsToPackage{warn}{textcomp}
+  \usepackage{textcomp}
+  \usepackage[nointegrals]{wasysym}
+  \usepackage{ifxetex}
+  % NLS support packages
+  % Define default fonts
+  % Font selection
+  \iftutex
+  \else
+    \usepackage[T1]{fontenc}
+  \fi
+  % set main and monospaced font
+  \usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\renewcommand{\familydefault}{\sfdefault}
+  \doxyallsectionsfont{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \renewcommand{\DoxyLabelFont}{%
+    \fontseries{bc}\selectfont%
+    \color{darkgray}%
+  }
+  \newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+   % Arguments of doxygenemoji:
+   % 1) ':<text>:' form of the emoji, already LaTeX-escaped
+   % 2) file with the name of the emoji without the .png extension
+   % in case image exist use this otherwise use the ':<text>:' form
+   \newcommand{\doxygenemoji}[2]{%
+     \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+   }
+  % Page & text layout
+  \usepackage{geometry}
+  \geometry{%
+    a4paper,%
+    top=2.5cm,%
+    bottom=2.5cm,%
+    left=2.5cm,%
+    right=2.5cm%
+  }
+  \usepackage{changepage}
+  % Allow a bit of overflow to go unnoticed by other means
+  \tolerance=750
+  \hfuzz=15pt
+  \hbadness=750
+  \setlength{\emergencystretch}{15pt}
+  \setlength{\parindent}{0cm}
+  \newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+  \newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+  \doxynormalparskip
+  % Redefine paragraph/subparagraph environments, using sectsty fonts
+  \makeatletter
+  \renewcommand{\paragraph}{%
+    \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@parafont%
+    }%
+  }
+  \renewcommand{\subparagraph}{%
+    \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+      \normalfont\normalsize\bfseries\SS@subparafont%
+    }%
+  }
+  \makeatother
+  \makeatletter
+  \newcommand\hrulefilll{\leavevmode\leaders\hrule\hskip 0pt plus 1filll\kern\z@}
+  \makeatother
+  % Headers & footers
+  \usepackage{fancyhdr}
+  \pagestyle{fancyplain}
+  \renewcommand{\footrulewidth}{0.4pt}
+  \fancypagestyle{fancyplain}{
+    \fancyhf{}
+    \fancyhead[LE, RO]{\bfseries\thepage}
+    \fancyhead[LO]{\bfseries\rightmark}
+    \fancyhead[RE]{\bfseries\leftmark}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Tue Feb 17 2026 09\+:28\+:47 for My Project by Doxygen }
+  }
+  \fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Tue Feb 17 2026 09\+:28\+:47 for My Project by Doxygen }
+    \renewcommand{\headrulewidth}{0pt}
+  }
+  \pagestyle{fancyplain}
+  \renewcommand{\chaptermark}[1]{%
+    \markboth{#1}{}%
+  }
+  \renewcommand{\sectionmark}[1]{%
+    \markright{\thesection\ #1}%
+  }
+  % ToC, LoF, LoT, bibliography, and index
+  % Indices & bibliography
+  \usepackage[numbers]{natbib}
+  \usepackage[titles]{tocloft}
+  \setcounter{tocdepth}{3}
+  \setcounter{secnumdepth}{5}
+  % creating indexes
+  \makeindex
+  \ifPDFTeX
+\usepackage{newunicodechar}
+  \makeatletter
+    \def\doxynewunicodechar#1#2{%
+    \@tempswafalse
+    \edef\nuc@tempa{\detokenize{#1}}%
+    \if\relax\nuc@tempa\relax
+      \nuc@emptyargerr
+    \else
+      \edef\@tempb{\expandafter\@car\nuc@tempa\@nil}%
+      \nuc@check
+      \if@tempswa
+        \@namedef{u8:\nuc@tempa}{#2}%
+      \fi
+    \fi
+  }
+  \makeatother
+  \doxynewunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \doxynewunicodechar{²}{${}^{2}$}% Superscript two
+  \doxynewunicodechar{³}{${}^{3}$}% Superscript three
+\fi
+  % Hyperlinks
+    % Hyperlinks (required, but should be loaded last)
+    \ifPDFTeX
+      \usepackage[pdftex,pagebackref=true]{hyperref}
+    \else
+      \ifXeTeX
+        \usepackage[xetex,pagebackref=true]{hyperref}
+      \else
+        \ifLuaTeX
+          \usepackage[luatex,pagebackref=true]{hyperref}
+        \else
+          \usepackage[ps2pdf,pagebackref=true]{hyperref}
+        \fi
+      \fi
+    \fi
+    \hypersetup{%
+      colorlinks=true,%
+      linkcolor=blue,%
+      citecolor=blue,%
+      unicode,%
+      pdftitle={My Project},%
+      pdfsubject={}%
+    }
+  % Custom commands used by the header
+  % Custom commands
+  \newcommand{\clearemptydoublepage}{%
+    \newpage{\pagestyle{empty}\cleardoublepage}%
+  }
+  % caption style definition
+  \usepackage{caption}
+  \captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+  % in page table of contents
+  \IfFormatAtLeastTF{2023/05/01}{\usepackage[deeplevels]{etoc}}{\usepackage[deeplevels]{etoc_doxygen}}
+  \etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+  \etocsetlevel{subsubsubsection}{4}
+  \etocsetlevel{subsubsubsubsection}{5}
+  \etocsetlevel{subsubsubsubsubsection}{6}
+  \etocsetlevel{subsubsubsubsubsubsection}{7}
+  \etocsetlevel{paragraph}{8}
+  \etocsetlevel{subparagraph}{9}
+  % prevent numbers overlap the titles in toc
+  \renewcommand{\numberline}[1]{#1~}
+% End of preamble, now comes the document contents
+%===== C O N T E N T S =====
+\begin{document}
+  \raggedbottom
+  % Titlepage & ToC
+    % To avoid duplicate page anchors due to reuse of same numbers for
+    % the index (be it as roman numbers)
+    \hypersetup{pageanchor=false,
+                bookmarksnumbered=true,
+                pdfencoding=unicode
+               }
+  \pagenumbering{alph}
+  \begin{titlepage}
+  \vspace*{7cm}
+  \begin{center}%
+  {\Large My Project}\\
+  \vspace*{1cm}
+  {\large Generated on Tue Feb 17 2026 09\+:28\+:47 for My Project by Doxygen 1.13.2}\\
+    \vspace*{0.5cm}
+    {\small Tue Feb 17 2026 09:28:47}
+  \end{center}
+  \end{titlepage}
+  \clearemptydoublepage
+  \pagenumbering{roman}
+  \tableofcontents
+  \clearemptydoublepage
+  \pagenumbering{arabic}
+  % re-enable anchors again
+  \hypersetup{pageanchor=true}
+%--- Begin generated contents ---
+\chapter{Namespace Index}
+\input{namespaces}
+\chapter{Hierarchical Index}
+\input{hierarchy}
+\chapter{Class Index}
+\input{annotated}
+\chapter{File Index}
+\input{files}
+\chapter{Namespace Documentation}
+\input{namespacestat__tool}
+\chapter{Class Documentation}
+\input{classstat__tool_1_1CategoricalProcess}
+\input{classstat__tool_1_1Chain}
+\input{classstat__tool_1_1ChainData}
+\input{classstat__tool_1_1ChainReestimation}
+\input{classstat__tool_1_1Clusters}
+\input{classstat__tool_1_1Compound}
+\input{classstat__tool_1_1CompoundData}
+\input{classstat__tool_1_1ContinuousParametric}
+\input{classstat__tool_1_1ContinuousParametricProcess}
+\input{classstat__tool_1_1Convolution}
+\input{classstat__tool_1_1ConvolutionData}
+\input{classstat__tool_1_1Curves}
+\input{classstat__tool_1_1Dendrogram}
+\input{classstat__tool_1_1DiscreteDistributionData}
+\input{classstat__tool_1_1DiscreteMixture}
+\input{classstat__tool_1_1DiscreteMixtureData}
+\input{classstat__tool_1_1DiscreteParametric}
+\input{classstat__tool_1_1DiscreteParametricModel}
+\input{classstat__tool_1_1DiscreteParametricProcess}
+\input{classstat__tool_1_1DistanceMatrix}
+\input{classstat__tool_1_1Distribution}
+\input{classstat__tool_1_1Forward}
+\input{classstat__tool_1_1FrequencyDistribution}
+\input{classstat__tool_1_1Histogram}
+\input{classstat__tool_1_1MultiPlot}
+\input{classstat__tool_1_1MultivariateMixture}
+\input{classstat__tool_1_1MultivariateMixtureData}
+\input{classstat__tool_1_1Reestimation}
+\input{classstat__tool_1_1Regression}
+\input{classstat__tool_1_1RegressionKernel}
+\input{classstat__tool_1_1SinglePlot}
+\input{classstat__tool_1_1StatError}
+\input{classstat__tool_1_1StatInterface}
+\input{classstat__tool_1_1TemplateMultiPlotSet}
+\input{classstat__tool_1_1Test}
+\input{classstat__tool_1_1VectorDistance}
+\input{classstat__tool_1_1Vectors}
+\chapter{File Documentation}
+\input{categorical__process_8cpp}
+\input{chain_8cpp}
+\input{chain__algorithms_8cpp}
+\input{chain__reestimation_8h}
+\input{chain__reestimation_8h_source}
+\input{chain__reestimation_8hpp}
+\input{chain__reestimation_8hpp_source}
+\input{clusters_8cpp}
+\input{compound_8cpp}
+\input{compound_8h}
+\input{compound_8h_source}
+\input{compound__algorithms_8cpp}
+\input{config_8h}
+\input{config_8h_source}
+\input{continuous__parametric_8cpp}
+\input{continuous__parametric__estimation_8hpp}
+\input{continuous__parametric__estimation_8hpp_source}
+\input{continuous__parametric__process_8cpp}
+\input{convolution_8cpp}
+\input{convolution_8h}
+\input{convolution_8h_source}
+\input{convolution__algorithms_8cpp}
+\input{curves_8cpp}
+\input{curves_8h}
+\input{curves_8h_source}
+\input{dendrogram_8cpp}
+\input{discrete__mixture_8cpp}
+\input{discrete__mixture_8h}
+\input{discrete__mixture_8h_source}
+\input{discrete__mixture__algorithms_8cpp}
+\input{discrete__parametric_8cpp}
+\input{discrete__parametric__process_8cpp}
+\input{distance__matrix_8cpp}
+\input{distance__matrix_8h}
+\input{distance__matrix_8h_source}
+\input{distribution_8cpp}
+\input{distribution_8h}
+\input{distribution_8h_source}
+\input{distribution__algorithms_8cpp}
+\input{distribution__reestimation_8hpp}
+\input{distribution__reestimation_8hpp_source}
+\input{frequency__distribution1_8cpp}
+\input{frequency__distribution2_8cpp}
+\input{histogram_8cpp}
+\input{interface_8cpp}
+\input{markovian_8h}
+\input{markovian_8h_source}
+\input{mixture_8cpp}
+\input{mixture_8h}
+\input{mixture_8h_source}
+\input{mixture__algorithms_8cpp}
+\input{multivariate__mixture_8cpp}
+\input{multivariate__mixture_8h}
+\input{multivariate__mixture_8h_source}
+\input{multivariate__mixture__algorithms_8cpp}
+\input{plotable_8cpp}
+\input{plotable_8h}
+\input{plotable_8h_source}
+\input{plotable_8hpp}
+\input{plotable_8hpp_source}
+\input{quantile__computation_8hpp}
+\input{quantile__computation_8hpp_source}
+\input{reestimation_8cpp}
+\input{reestimation_8h}
+\input{reestimation_8h_source}
+\input{reestimation_8hpp}
+\input{reestimation_8hpp_source}
+\input{regression_8cpp}
+\input{regression_8h}
+\input{regression_8h_source}
+\input{stat__label_8cpp}
+\input{stat__label_8h}
+\input{stat__label_8h_source}
+\input{stat__tools_8h}
+\input{stat__tools_8h_source}
+\input{test_8cpp}
+\input{vector__algorithms_8cpp}
+\input{vector__distance_8cpp}
+\input{vectors_8cpp}
+\input{vectors_8h}
+\input{vectors_8h_source}
+%--- End generated contents ---
+% Index
+  \backmatter
+  \newpage
+  \phantomsection
+  \clearemptydoublepage
+  \addcontentsline{toc}{chapter}{\indexname}
+  \printindex
+% Required for some languages (in combination with latexdocumentpre from the header)
+\end{document}

@@ -1,0 +1,198 @@
+\doxysection{compound.\+h}
+\hypertarget{compound_8h_source}{}\label{compound_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/compound.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/compound.h}}
+\mbox{\hyperlink{compound_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ \ \ \ \ StructureAnalysis:\ Identifying\ patterns\ in\ plant\ architecture\ and\ development}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Copyright\ 1995-\/2018\ CIRAD\ AGAP}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ \ File\ author(s):\ Yann\ Guedon\ (yann.guedon@cirad.fr)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Source\$}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Id\$}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Forum\ for\ StructureAnalysis\ developers:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GNU\ General\ Public\ Licence}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ modify\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ published\ by\ the\ Free\ Software\ Foundation;\ either\ version\ 2\ of}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ the\ License,\ or\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ \ \ \ \ \ \ MERCHANTABILITY\ or\ FITNESS\ For\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ \ \ \ \ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ \ \ \ \ \ \ License\ along\ with\ this\ program;\ see\ the\ file\ COPYING.\ If\ not,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ \ \ \ \ \ \ write\ to\ the\ Free\ Software\ Foundation,\ Inc.,\ 59}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Temple\ Place\ -\/\ Suite\ 330,\ Boston,\ MA\ 02111-\/1307,\ USA.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ COMPOUND\_H}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ COMPOUND\_H}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stat__tools_8h}{stat\_tools.h}}"{}}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{distribution_8h}{distribution.h}}"{}}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestat__tool}{stat\_tool}}\ \{}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ *\ \ Constants}}
+\DoxyCodeLine{00054\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_a399efc20ca37b961f5ec1ae4e125e1a5}{COMPOUND\_THRESHOLD}}\ =\ 0.99999;\ \ \textcolor{comment}{//\ threshold\ on\ the\ cumulative\ distribution\ function}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ for\ determining\ the\ upper\ bound\ of\ the\ support}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_a8a903163877c2af0d6b7e887c1c48425}{COMPOUND\_INIT\_PROBABILITY}}\ =\ 0.001;\ \ \textcolor{comment}{//\ threshold\ for\ probability\ initialization}}
+\DoxyCodeLine{00061\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_a22411b17a01d7703d0f8517ab2b1adb0}{COMPOUND\_LIKELIHOOD\_DIFF}}\ =\ 1.e-\/5;\ \ \textcolor{comment}{//\ threshold\ for\ stopping\ EM\ iterations}}
+\DoxyCodeLine{00062\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_a8d93c625c211eec85a95bd1795117335}{COMPOUND\_NB\_ITER}}\ =\ 10000;\ \ \ \ \textcolor{comment}{//\ maximum\ number\ of\ EM\ iterations}}
+\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_a8d5ffbde6212d8f7711a632dfb34bc7e}{COMPOUND\_DIFFERENCE\_WEIGHT}}\ =\ 0.5;\ \ \textcolor{comment}{//\ default\ penalty\ weight\ (1st-\/\ or\ 2nd-\/order\ difference\ cases)}}
+\DoxyCodeLine{00064\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_a2079a42e6853255ab830cea21716b05c}{COMPOUND\_ENTROPY\_WEIGHT}}\ =\ 0.1;\ \ \textcolor{comment}{//\ default\ penalty\ weight\ (entropy\ case)}}
+\DoxyCodeLine{00065\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_a50a1cd4a35022790299be50bab2ba2d4}{COMPOUND\_COEFF}}\ =\ 10;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ rounding\ coefficient\ for\ the\ estimator}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00070\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ *\ \ Class\ definition}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1CompoundData}{CompoundData}};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a1b9193218a519079e2cb5c07fc326e63}{Compound}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ ,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1Distribution_a7854c3e83af17605b6f1b2e08191a883}{Distribution}}\ \{}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Compound_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}};}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Compound_aec8f5a62a32182a70a9424f30974e97f}{CompoundData}};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Compound_ab256b34650cdc4ab9769b476bee54b16}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a1b9193218a519079e2cb5c07fc326e63}{Compound}}\ \&compound)}
+\DoxyCodeLine{00085\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ compound.\mbox{\hyperlink{classstat__tool_1_1Compound_a4afe9fdbc26280492625d6711ca1e35a}{ascii\_write}}(os\ ,\ compound.\mbox{\hyperlink{classstat__tool_1_1Compound_a67eec9441fe46ac494d2c56900123f54}{compound\_data}}\ ,\ \textcolor{keyword}{false}\ ,\ \textcolor{keyword}{false});\ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ private\ :}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Compound_aec8f5a62a32182a70a9424f30974e97f}{CompoundData}}\ *\mbox{\hyperlink{classstat__tool_1_1Compound_a67eec9441fe46ac494d2c56900123f54}{compound\_data}};\ \ }
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ *\mbox{\hyperlink{classstat__tool_1_1Compound_a4b2ee5b2c2c8e9ebbc49c3b733afed71}{sum\_distribution}};\ \ }
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ *\mbox{\hyperlink{classstat__tool_1_1Compound_ab4249549fcd38132ba71d5d81ab6b664}{distribution}};\ \ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a01487ae5ed144aa6731f835c4e7f4d96}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a1b9193218a519079e2cb5c07fc326e63}{Compound}}\ \&compound\ ,\ \textcolor{keywordtype}{bool}\ data\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Compound_a4afe9fdbc26280492625d6711ca1e35a}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Compound_aec8f5a62a32182a70a9424f30974e97f}{CompoundData}}\ *compound\_histo\ ,}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00097\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Compound_a4fe36eeb27a7917c6e029461ba8b35f2}{spreadsheet\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Compound_aec8f5a62a32182a70a9424f30974e97f}{CompoundData}}\ *compound\_histo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Compound_ad9a62fd501b86286efb1e61f3044271b}{plot\_write}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Compound_aec8f5a62a32182a70a9424f30974e97f}{CompoundData}}\ *compound\_histo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1Compound_ab4579edb715aee6bb5956b0919df70de}{get\_plotable}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Compound_aec8f5a62a32182a70a9424f30974e97f}{CompoundData}}\ *compound\_histo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a734ed1d2bff74d66d581de432fcc094b}{computation}}(\mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ **power\_dist\ ,\ \textcolor{keywordtype}{int}\ min\_nb\_value\ ,}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ ,\ \textcolor{keywordtype}{bool}\ sum\_flag\ ,\ \textcolor{keywordtype}{bool}\ dist\_flag);}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a220a90aa31e9346a4b44db39355372a4}{expectation\_step}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ \&histo\ ,\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ **power\_dist\ ,}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<double>}}\ *sum\_reestim\ ,\ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<double>}}\ *reestim)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ public\ :}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Compound_a1b9193218a519079e2cb5c07fc326e63}{Compound}}();}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Compound_a1b9193218a519079e2cb5c07fc326e63}{Compound}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ \&sum\_dist\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ \&dist\ ,}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ \mbox{\hyperlink{namespacestat__tool_a399efc20ca37b961f5ec1ae4e125e1a5}{COMPOUND\_THRESHOLD}});}
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Compound_a1b9193218a519079e2cb5c07fc326e63}{Compound}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ \&sum\_dist\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ \&dist\ ,}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_add3c8809830c5b44dbc3e2e3bed80698}{compound\_distribution}}\ type);}
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Compound_a32fbf06349802346144464feb5af00f9}{Compound}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a1b9193218a519079e2cb5c07fc326e63}{Compound}}\ \&compound\ ,\ \textcolor{keywordtype}{bool}\ data\_flag\ =\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00115\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1Distribution_a7854c3e83af17605b6f1b2e08191a883}{Distribution}}(compound)\ \{\ \mbox{\hyperlink{classstat__tool_1_1Compound_a01487ae5ed144aa6731f835c4e7f4d96}{copy}}(compound\ ,\ data\_flag);\ \}}
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Compound}{\string~Compound}}();}
+\DoxyCodeLine{00117\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Compound}{Compound}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Compound}{Compound}}\ \&compound);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData}{CompoundData}}*\ extract\_data(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1Compound}{Compound}}*\ ascii\_read(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ \mbox{\hyperlink{namespacestat__tool_a399efc20ca37b961f5ec1ae4e125e1a5}{COMPOUND\_THRESHOLD}});}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ std::ostream\&\ line\_write(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Compound_aa4849c89515b55cdabdecc845695ada8}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a6c4ab290a6518348cefd115244d3adf8}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Compound_aabaca0a1b7f53f8087647628cf9c2e29}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Compound_ad9a62fd501b86286efb1e61f3044271b}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00130\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1Compound_ab4579edb715aee6bb5956b0919df70de}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a734ed1d2bff74d66d581de432fcc094b}{computation}}(\textcolor{keywordtype}{int}\ min\_nb\_value\ =\ 1\ ,}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ \mbox{\hyperlink{namespacestat__tool_a399efc20ca37b961f5ec1ae4e125e1a5}{COMPOUND\_THRESHOLD}}\ ,}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ sum\_flag\ =\ \textcolor{keyword}{true}\ ,\ \textcolor{keywordtype}{bool}\ dist\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00135\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Compound_aec8f5a62a32182a70a9424f30974e97f}{CompoundData}}*\ \mbox{\hyperlink{classstat__tool_1_1Compound_a3e0b8ce852b483822cfa656abfd65e48}{simulation}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ nb\_element)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{comment}{//\ class\ member\ access}}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Compound_aec8f5a62a32182a70a9424f30974e97f}{CompoundData}}*\ \mbox{\hyperlink{classstat__tool_1_1Compound_ab4e7902e8fd909c3c3380d2c8d29e060}{get\_compound\_data}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a67eec9441fe46ac494d2c56900123f54}{compound\_data}};\ \}}
+\DoxyCodeLine{00140\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}*\ \mbox{\hyperlink{classstat__tool_1_1Compound_a7226f4cc223cb52eebf84ddbffe743ce}{get\_sum\_distribution}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Compound_a4b2ee5b2c2c8e9ebbc49c3b733afed71}{sum\_distribution}};\ \}}
+\DoxyCodeLine{00141\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}*\ \mbox{\hyperlink{classstat__tool_1_1Compound_afb95cd155fa061a961f4a6cd99a419c3}{get\_distribution}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Compound_ab4249549fcd38132ba71d5d81ab6b664}{distribution}};\ \}}
+\DoxyCodeLine{00142\ \ \ \};}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_aa9760999ecb82471d0f05b05a2ce6d18}{CompoundData}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ ,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1CompoundData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}};}
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1CompoundData_a2f8312e6ec4e45b24d6fd245dfcffe87}{Compound}};}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_ad86a3cb1fa45d90b847636bab2ba11c2}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_aa9760999ecb82471d0f05b05a2ce6d18}{CompoundData}}\ \&compound\_histo)}
+\DoxyCodeLine{00152\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ compound\_histo.\mbox{\hyperlink{classstat__tool_1_1CompoundData_ae5d4c01c0afe231b79736654d9ba0995}{ascii\_write}}(os\ ,\ \textcolor{keyword}{false});\ \}}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ private\ :}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a2f8312e6ec4e45b24d6fd245dfcffe87}{Compound}}\ *\mbox{\hyperlink{classstat__tool_1_1CompoundData_a5131fe4d851f11cadf72076dbaef0236}{compound}};\ \ \ \ \ }
+\DoxyCodeLine{00157\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CompoundData_a76a62a207c34b1eac10bb501e333787e}{sum\_frequency\_distribution}};\ \ \ }
+\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CompoundData_ade0b420afdb8dfdac405bde1d51d2d78}{frequency\_distribution}};\ \ \ }
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a29a1701514d846787af93d388b6b2e24}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_aa9760999ecb82471d0f05b05a2ce6d18}{CompoundData}}\ \&compound\_histo\ ,\ \textcolor{keywordtype}{bool}\ model\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ public\ :}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_aa9760999ecb82471d0f05b05a2ce6d18}{CompoundData}}();}
+\DoxyCodeLine{00165\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_aa9760999ecb82471d0f05b05a2ce6d18}{CompoundData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ \&histo\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a2f8312e6ec4e45b24d6fd245dfcffe87}{Compound}}\ \&icompound);}
+\DoxyCodeLine{00166\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_aa9760999ecb82471d0f05b05a2ce6d18}{CompoundData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a2f8312e6ec4e45b24d6fd245dfcffe87}{Compound}}\ \&icompound);}
+\DoxyCodeLine{00167\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_aae2cac817b1e8db553bc09c1dd03b234}{CompoundData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_aa9760999ecb82471d0f05b05a2ce6d18}{CompoundData}}\ \&compound\_histo\ ,\ \textcolor{keywordtype}{bool}\ model\_flag\ =\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00168\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1CompoundData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}(compound\_histo)\ \{\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a29a1701514d846787af93d388b6b2e24}{copy}}(compound\_histo\ ,\ model\_flag);\ \}}
+\DoxyCodeLine{00169\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData}{\string~CompoundData}}();}
+\DoxyCodeLine{00170\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData}{CompoundData}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData}{CompoundData}}\ \&compound\_histo);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}*\ extract(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \mbox{\hyperlink{namespacestat__tool_add3c8809830c5b44dbc3e2e3bed80698}{compound\_distribution}}\ type)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ \ \ \ \ std::ostream\&\ line\_write(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_ae5d4c01c0afe231b79736654d9ba0995}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a6016f7a0586e3c18df6bbbd5bc510b33}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a8ad361cb20b2e47e850db2927feb040a}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_ae241e085f5a4b3bec26f4c4737fc75c5}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00180\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a4a888ae2ac691e1afa4e584e7d68c378}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{comment}{//\ class\ member\ access}}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a2f8312e6ec4e45b24d6fd245dfcffe87}{Compound}}*\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a3f9fb4e9104b6e429aecdaf578831279}{get\_compound}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a5131fe4d851f11cadf72076dbaef0236}{compound}};\ \}}
+\DoxyCodeLine{00185\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}*\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a084930fcd6c082f5988fdc165d7ba1df}{get\_sum\_frequency\_distribution}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a76a62a207c34b1eac10bb501e333787e}{sum\_frequency\_distribution}};\ \}}
+\DoxyCodeLine{00186\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CompoundData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}*\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_aeec7306ed7225a8abf242e4579c52ad7}{get\_frequency\_distribution}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1CompoundData_ade0b420afdb8dfdac405bde1d51d2d78}{frequency\_distribution}};\ \}}
+\DoxyCodeLine{00187\ \ \ \};}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ }
+\DoxyCodeLine{00190\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

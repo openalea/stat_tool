@@ -20,7 +20,6 @@
 
 __version__ = "$Id$"
 
-import sys
 
 DISABLE_PLOT = False
 
@@ -29,8 +28,8 @@ DISABLE_PLOT = False
 # buildbot cannot close the windwos popped up by the method/function Plot/plot
 # So, we test if the command "python setup.py nosetests" has been used.
 # Still, using nosetests executable, windows should pop up.
-if ("nosetests" in sys.argv) or ("pytest" in sys.argv[0]):
-    DISABLE_PLOT = True
+# if ("nosetests" in sys.argv) or ("pytest" in sys.argv[0]):
+#    DISABLE_PLOT = True
 
 
 class plotter(object):

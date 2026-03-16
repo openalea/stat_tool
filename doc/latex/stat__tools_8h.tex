@@ -1,0 +1,369 @@
+\doxysection{/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/stat\+\_\+tools.h File Reference}
+\hypertarget{stat__tools_8h}{}\label{stat__tools_8h}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/stat\_tools.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/stat\_tools.h}}
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include "{}config.\+h"{}}\newline
+{\ttfamily \#include "{}reestimation.\+h"{}}\newline
+{\ttfamily \#include "{}plotable.\+h"{}}\newline
+{\ttfamily \#include "{}reestimation.\+hpp"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classstat__tool_1_1Test}{stat\+\_\+tool\+::\+Test}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classstat__tool_1_1Test}{Test} of hypothesis. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1StatError}{stat\+\_\+tool\+::\+Stat\+Error}}
+\begin{DoxyCompactList}\small\item\em Class for error management. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1StatInterface}{stat\+\_\+tool\+::\+Stat\+Interface}}
+\begin{DoxyCompactList}\small\item\em Abstract class defining a common interface. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1Distribution}{stat\+\_\+tool\+::\+Distribution}}
+\begin{DoxyCompactList}\small\item\em Discrete distribution. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{stat\+\_\+tool\+::\+Discrete\+Parametric}}
+\begin{DoxyCompactList}\small\item\em Discrete parametric distribution. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1Forward}{stat\+\_\+tool\+::\+Forward}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classstat__tool_1_1Forward}{Forward} recurrence or sojourn time distribution. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{stat\+\_\+tool\+::\+Frequency\+Distribution}}
+\begin{DoxyCompactList}\small\item\em Frequency distribution. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1ContinuousParametric}{stat\+\_\+tool\+::\+Continuous\+Parametric}}
+\begin{DoxyCompactList}\small\item\em Continuous parametric distribution. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1Histogram}{stat\+\_\+tool\+::\+Histogram}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classstat__tool_1_1Histogram}{Histogram}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacestat__tool}{stat\+\_\+tool}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{stat__tools_8h_a74e75242132eaabbc1c512488a135926}{MIN}}(x,  y)
+\item 
+\#define \mbox{\hyperlink{stat__tools_8h_aacc3ee1a7f283f8ef65cea31f4436a95}{MAX}}(x,  y)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdd}{stat\+\_\+tool\+::output\+\_\+format}} \{ \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdda57262aa8cbac90f9a8a380b8d6e2dec7}{stat\+\_\+tool\+::\+ASCII}}
+, \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdda7ce02c4f7ffef50866a9769d1d839612}{stat\+\_\+tool\+::\+SPREADSHEET}}
+, \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bddaf4f1df815815899a6436441e7a229ee1}{stat\+\_\+tool\+::\+GNUPLOT}}
+, \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdda902ac43293b5475cfbda7e1426606ff0}{stat\+\_\+tool\+::\+PLOT}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a50fa429d0c57d8a72874a89fd1800836}{stat\+\_\+tool\+::test\+\_\+distribution}} \{ \mbox{\hyperlink{namespacestat__tool_a50fa429d0c57d8a72874a89fd1800836adba9f9ab184ef0f7c77e6d0394d1919b}{stat\+\_\+tool\+::\+STANDARD\+\_\+\+NORMAL}}
+, \mbox{\hyperlink{namespacestat__tool_a50fa429d0c57d8a72874a89fd1800836a785cc817f76e1927ae1b92a5b8a183cd}{stat\+\_\+tool\+::\+CHI2}}
+, \mbox{\hyperlink{namespacestat__tool_a50fa429d0c57d8a72874a89fd1800836a3ad610f324a857d5e8c5a06837fd7b44}{stat\+\_\+tool\+::\+FISHER}}
+, \mbox{\hyperlink{namespacestat__tool_a50fa429d0c57d8a72874a89fd1800836af0bec86ad8d3c6b6adec22a1e3d97c55}{stat\+\_\+tool\+::\+STUDENT}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_abd6c99f8060d0e04a26e51684d29c71c}{stat\+\_\+tool\+::frequency\+\_\+distribution\+\_\+transformation}} \{ \mbox{\hyperlink{namespacestat__tool_abd6c99f8060d0e04a26e51684d29c71ca5f566e405b693117c6bbe70f179102af}{stat\+\_\+tool\+::\+FREQUENCY\+\_\+\+DISTRIBUTION\+\_\+\+COPY}}
+, \mbox{\hyperlink{namespacestat__tool_abd6c99f8060d0e04a26e51684d29c71ca3c52dd982c898a1ae4fb0ea65a090050}{stat\+\_\+tool\+::\+SHIFT}}
+, \mbox{\hyperlink{namespacestat__tool_abd6c99f8060d0e04a26e51684d29c71cac8f7daada832b01cdabe3f444c794a7b}{stat\+\_\+tool\+::\+CLUSTER}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_aff1878a835ad9e82d9dee4e44267d0bc}{stat\+\_\+tool\+::rounding}} \{ \mbox{\hyperlink{namespacestat__tool_aff1878a835ad9e82d9dee4e44267d0bca2b308bfaa8738a2e898642be31cf5b00}{stat\+\_\+tool\+::\+FLOOR}}
+, \mbox{\hyperlink{namespacestat__tool_aff1878a835ad9e82d9dee4e44267d0bcaf3ee90c13dab5d65851185120c0c117a}{stat\+\_\+tool\+::\+ROUND}}
+, \mbox{\hyperlink{namespacestat__tool_aff1878a835ad9e82d9dee4e44267d0bca09f832fd31d1342a56449fb83db9cb43}{stat\+\_\+tool\+::\+CEIL}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1be}{stat\+\_\+tool\+::discrete\+\_\+parametric}} \{ \newline
+\mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1bea9d581589fb4345dd675e76f3d76a9404}{stat\+\_\+tool\+::\+CATEGORICAL}}
+, \mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1beae3a95d84307e1356681373df6dfb0810}{stat\+\_\+tool\+::\+BINOMIAL}}
+, \mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1bea1fc7cd5682119ae6ce9b5a3101f05d27}{stat\+\_\+tool\+::\+POISSON}}
+, \mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1beaa23156580c52cba446f2303fe0dfa754}{stat\+\_\+tool\+::\+NEGATIVE\+\_\+\+BINOMIAL}}
+, \newline
+\mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1bea484e835d3ec813eb6aaac4e2e653941c}{stat\+\_\+tool\+::\+GEOMETRIC\+\_\+\+POISSON}}
+, \mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1bea8f0a79d89b54f22a69152fc09d88769c}{stat\+\_\+tool\+::\+UNIFORM}}
+, \mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1bead247bcb06daa6af786b3784334d05809}{stat\+\_\+tool\+::\+PRIOR\+\_\+\+SEGMENT\+\_\+\+LENGTH}}
+, \mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1beabc485663f780b7cbd2dc17d43ac8f6d7}{stat\+\_\+tool\+::\+MULTINOMIAL}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a7bd25dd8c82a08b71893f57fbb860bb0}{stat\+\_\+tool\+::distribution\+\_\+transformation}} \{ \mbox{\hyperlink{namespacestat__tool_a7bd25dd8c82a08b71893f57fbb860bb0a0573d17012c10ff6bf2a223bd504e86a}{stat\+\_\+tool\+::\+DISTRIBUTION\+\_\+\+COPY}}
+, \mbox{\hyperlink{namespacestat__tool_a7bd25dd8c82a08b71893f57fbb860bb0acb79c9ecdd37f98e5e9fb1e4f6e52e91}{stat\+\_\+tool\+::\+NORMALIZATION}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a052718384a5f3cf3c0c1b2fd1e8c49a8}{stat\+\_\+tool\+::distribution\+\_\+computation}} \{ \mbox{\hyperlink{namespacestat__tool_a052718384a5f3cf3c0c1b2fd1e8c49a8a954e3a7dcf448261e5c4d5fb807411f1}{stat\+\_\+tool\+::\+STANDARD}}
+, \mbox{\hyperlink{namespacestat__tool_a052718384a5f3cf3c0c1b2fd1e8c49a8a9e07b3dca12bbd97afff9942ba2600e5}{stat\+\_\+tool\+::\+RENEWAL}}
+, \mbox{\hyperlink{namespacestat__tool_a052718384a5f3cf3c0c1b2fd1e8c49a8a0927b182ea3c85aedd3f268da9eb4ecd}{stat\+\_\+tool\+::\+GEOMETRIC}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33}{stat\+\_\+tool\+::continuous\+\_\+parametric}} \{ \newline
+\mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33a1d206cb20701c46a98622af77e75e592}{stat\+\_\+tool\+::\+GAMMA}}
+, \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33a926760583d84e7fd2a692ab672c9b2ad}{stat\+\_\+tool\+::\+INVERSE\+\_\+\+GAUSSIAN}}
+, \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33ae397c46a5df15796f148fdfa4bf0c96f}{stat\+\_\+tool\+::\+GAUSSIAN}}
+, \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33a48aced0c60af2f7d5099ace9159c3e6c}{stat\+\_\+tool\+::\+VON\+\_\+\+MISES}}
+, \newline
+\mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33a2edf1a75d720dd4a12269e3ad6bd57ef}{stat\+\_\+tool\+::\+ZERO\+\_\+\+INFLATED\+\_\+\+GAMMA}}
+, \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33a32edddf84194aafa1491aadec090c70e}{stat\+\_\+tool\+::\+LINEAR\+\_\+\+MODEL}}
+, \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33af0090fad00a23d7120ac33dd75bc8649}{stat\+\_\+tool\+::\+AUTOREGRESSIVE\+\_\+\+MODEL}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4}{stat\+\_\+tool\+::angle\+\_\+unit}} \{ \mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4ae36b22ffced208e188501937cb588095}{stat\+\_\+tool\+::\+DEGREE}}
+, \mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4a8f0ec2d0c01e7ea3fd5c95e372e3d87c}{stat\+\_\+tool\+::\+RADIAN}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_add3c8809830c5b44dbc3e2e3bed80698}{stat\+\_\+tool\+::compound\+\_\+distribution}} \{ \mbox{\hyperlink{namespacestat__tool_add3c8809830c5b44dbc3e2e3bed80698a4c22288959d9bf904543af1b5a14ca2b}{stat\+\_\+tool\+::\+SUM}}
+, \mbox{\hyperlink{namespacestat__tool_add3c8809830c5b44dbc3e2e3bed80698a9ab7e08cb8e41a3ad0def705aff0bce2}{stat\+\_\+tool\+::\+ELEMENTARY}}
+, \mbox{\hyperlink{namespacestat__tool_add3c8809830c5b44dbc3e2e3bed80698a4d0c23bd795f452a168aeaf7ad787575}{stat\+\_\+tool\+::\+COMPOUND}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a54f24d2ad2c1bfb8454d29c167cb5a73}{stat\+\_\+tool\+::variable\+\_\+type}} \{ \mbox{\hyperlink{namespacestat__tool_a54f24d2ad2c1bfb8454d29c167cb5a73a1294e2587320592f3f95a3f46f5796c1}{stat\+\_\+tool\+::\+NOMINAL}}
+, \mbox{\hyperlink{namespacestat__tool_a54f24d2ad2c1bfb8454d29c167cb5a73a98e69687023fcb533f7d65715a95a02c}{stat\+\_\+tool\+::\+ORDINAL}}
+, \mbox{\hyperlink{namespacestat__tool_a54f24d2ad2c1bfb8454d29c167cb5a73a3368d650e8522a30efdaa74ea9e78d49}{stat\+\_\+tool\+::\+NUMERIC}}
+, \mbox{\hyperlink{namespacestat__tool_a54f24d2ad2c1bfb8454d29c167cb5a73abeb0b0f5714b678a3663ac9f107233a6}{stat\+\_\+tool\+::\+CIRCULAR}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a7b2257d880ab2c5fc777d3f4a787535f}{stat\+\_\+tool\+::log\+\_\+base}} \{ \mbox{\hyperlink{namespacestat__tool_a7b2257d880ab2c5fc777d3f4a787535fa4bebc11e190d305ea329fb7a5d331ef2}{stat\+\_\+tool\+::\+NATURAL}}
+, \mbox{\hyperlink{namespacestat__tool_a7b2257d880ab2c5fc777d3f4a787535fa83ce26edb79cf79552e20b4320afdf34}{stat\+\_\+tool\+::\+TWO}}
+, \mbox{\hyperlink{namespacestat__tool_a7b2257d880ab2c5fc777d3f4a787535fa654079c9e6a6214a763dcda4f77cfe79}{stat\+\_\+tool\+::\+TEN}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{stat\+\_\+tool\+::process\+\_\+type}} \{ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{stat\+\_\+tool\+::\+ORDINARY}}
+, \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811cacde805a051500eee96bdfc0e82a6a3ac}{stat\+\_\+tool\+::\+EQUILIBRIUM}}
+, \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca30bfc4f2ec0f460df5aa7a721120ad01}{stat\+\_\+tool\+::\+DEFAULT\+\_\+\+TYPE}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a04b4ea617088753388501cb90d89d905}{stat\+\_\+tool\+::estimation\+\_\+criterion}} \{ \mbox{\hyperlink{namespacestat__tool_a04b4ea617088753388501cb90d89d905af046ec566a8f202c90e343ab26e263d7}{stat\+\_\+tool\+::\+LIKELIHOOD}}
+, \mbox{\hyperlink{namespacestat__tool_a04b4ea617088753388501cb90d89d905af953bb9f0df6db4f2c6f785cd798427e}{stat\+\_\+tool\+::\+PENALIZED\+\_\+\+LIKELIHOOD}}
+, \mbox{\hyperlink{namespacestat__tool_a04b4ea617088753388501cb90d89d905a4f64b147ddbc84027c52304b2fecedd5}{stat\+\_\+tool\+::\+PARAMETRIC\+\_\+\+REGULARIZATION}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a3a121eff159e93418c10094cb99d96e1}{stat\+\_\+tool\+::duration\+\_\+distribution\+\_\+mean\+\_\+estimator}} \{ \mbox{\hyperlink{namespacestat__tool_a3a121eff159e93418c10094cb99d96e1abb6635011a7d163905aa7eb3657cf7c4}{stat\+\_\+tool\+::\+COMPUTED}}
+, \mbox{\hyperlink{namespacestat__tool_a3a121eff159e93418c10094cb99d96e1a736431ef7f5bc968c9303c5da1bb8255}{stat\+\_\+tool\+::\+ESTIMATED}}
+, \mbox{\hyperlink{namespacestat__tool_a3a121eff159e93418c10094cb99d96e1a1cfe079f0d5cf587567994c83a53f888}{stat\+\_\+tool\+::\+ONE\+\_\+\+STEP\+\_\+\+LATE}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a64ce2febdbc070f578dba2eb4ff9a0e6}{stat\+\_\+tool\+::censoring\+\_\+estimator}} \{ \mbox{\hyperlink{namespacestat__tool_a64ce2febdbc070f578dba2eb4ff9a0e6a2848e82ea1b030802b5a1309de005149}{stat\+\_\+tool\+::\+PARTIAL\+\_\+\+LIKELIHOOD}}
+, \mbox{\hyperlink{namespacestat__tool_a64ce2febdbc070f578dba2eb4ff9a0e6a14d8ae78d8088703ee57a730a704e4f6}{stat\+\_\+tool\+::\+COMPLETE\+\_\+\+LIKELIHOOD}}
+, \mbox{\hyperlink{namespacestat__tool_a64ce2febdbc070f578dba2eb4ff9a0e6a3bb5042c435833761431fed9cf32a46e}{stat\+\_\+tool\+::\+KAPLAN\+\_\+\+MEIER}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12}{stat\+\_\+tool\+::model\+\_\+selection\+\_\+criterion}} \{ \newline
+\mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12a04d1da3bc96434b0bfdf8e531ebc5863}{stat\+\_\+tool\+::\+AIC}}
+, \mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12afac43a654c71cd3959e3adf44fac3eab}{stat\+\_\+tool\+::\+AICc}}
+, \mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12a7ef7cdd7ff4b07089508c732ad152ab2}{stat\+\_\+tool\+::\+BIC}}
+, \mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12a7c758158bf87da049fa5d67200794edf}{stat\+\_\+tool\+::\+BICc}}
+, \newline
+\mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12addea6c763de324b72121837d06eefae5}{stat\+\_\+tool\+::\+ICL}}
+, \mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12a6f3d457dcac1148c7607291917056daf}{stat\+\_\+tool\+::\+ICLc}}
+, \mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12ada8964d86f17a15cc1d94c9191de74be}{stat\+\_\+tool\+::m\+BIC}}
+, \mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12ab88a15d94c67d8c326bccaffd1a2f59c}{stat\+\_\+tool\+::\+LIKELIHOOD\+\_\+\+SLOPE}}
+, \newline
+\mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12a524f32b4e60474a2d8887a331920ed5a}{stat\+\_\+tool\+::\+DIMENSION\+\_\+\+JUMP}}
+, \mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12a5611cb4555d984baa6cd22489f598792}{stat\+\_\+tool\+::\+SEGMENTATION\+\_\+\+LIKELIHOOD\+\_\+\+SLOPE}}
+, \mbox{\hyperlink{namespacestat__tool_a610f7a1ed08ede75c9b0a958cb490a12a8b695c839670dfb3425fba799ce81898}{stat\+\_\+tool\+::\+SEGMENTATION\+\_\+\+DIMENSION\+\_\+\+JUMP}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a7f4ac1c5642a415413d88d16efd4e25d}{stat\+\_\+tool\+::error\+\_\+type}} \{ \mbox{\hyperlink{namespacestat__tool_a7f4ac1c5642a415413d88d16efd4e25daf79623fba7652dc14209183575e07dbc}{stat\+\_\+tool\+::\+ERROR}}
+, \mbox{\hyperlink{namespacestat__tool_a7f4ac1c5642a415413d88d16efd4e25da4fde6adb6bcabd4048ac6db715cc1f8a}{stat\+\_\+tool\+::\+WARNING}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbc}{stat\+\_\+tool\+::variable\+\_\+nature}} \{ \newline
+\mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{stat\+\_\+tool\+::\+INT\+\_\+\+VALUE}}
+, \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{stat\+\_\+tool\+::\+REAL\+\_\+\+VALUE}}
+, \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca5a523a13f0582ebf9fabedf210273a01}{stat\+\_\+tool\+::\+STATE}}
+, \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbcabb572d73885e47937458b28013da4a6c}{stat\+\_\+tool\+::\+OLD\+\_\+\+INT\+\_\+\+VALUE}}
+, \newline
+\mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbcab62773399f2b2ddf603662c600254502}{stat\+\_\+tool\+::\+AUXILIARY}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacestat__tool_a70b491ba7e2e8de1e62a11e332e5a37d}{stat\+\_\+tool\+::set\+\_\+seed}} (int seed, std\+::mt19937 \&generator)
+\begin{DoxyCompactList}\small\item\em Set seed of random generator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\+\_\+\+TOOL\+\_\+\+API}} void \mbox{\hyperlink{namespacestat__tool_ace5b2521c9ace5ea440b6cd6d2382c9f}{stat\+\_\+tool\+::set\+\_\+seed}} (int seed)
+\begin{DoxyCompactList}\small\item\em Set seed of random generator. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacestat__tool_ab98bcf9f8381c9ea3324fb8e26cc8f84}{stat\+\_\+tool\+::column\+\_\+width}} (int value)
+\begin{DoxyCompactList}\small\item\em Computation of the column width for an integer value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacestat__tool_aa9ec143a7c21064da6b2365c3df91c68}{stat\+\_\+tool\+::column\+\_\+width}} (int min\+\_\+value, int max\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Computation of the column width for integer values. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacestat__tool_a28fad8ea5bd3916f643e248ea0f9ea7e}{stat\+\_\+tool\+::column\+\_\+width}} (double min\+\_\+value, double max\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Computation of a column width for real values. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacestat__tool_adf6de6af524fd3634c0eb0f038b0200c}{stat\+\_\+tool\+::column\+\_\+width}} (int nb\+\_\+value, const double \texorpdfstring{$\ast$}{*}value, double scale)
+\begin{DoxyCompactList}\small\item\em Computation of the column width for real values. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_aadc45516d747edd7ebfbf99e1ea4bd47}{stat\+\_\+tool\+::label}} (const char \texorpdfstring{$\ast$}{*}file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Extraction of a file name label (Gnuplot output). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacestat__tool_abeb7bc28f0ff187b8f38b1909a2b5e55}{stat\+\_\+tool\+::cumul\+\_\+computation}} (int nb\+\_\+value, const double \texorpdfstring{$\ast$}{*}pmass, double \texorpdfstring{$\ast$}{*}pcumul)
+\begin{DoxyCompactList}\small\item\em Computation of the cumulative distribution function of a discrete distribution. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacestat__tool_a1464812951798742fc294d814b3eff35}{stat\+\_\+tool\+::cumul\+\_\+method}} (int nb\+\_\+value, const double \texorpdfstring{$\ast$}{*}cumul, double scale)
+\begin{DoxyCompactList}\small\item\em Simulation using the cumulative distribution function. The median is used to determine the direction of the algorithm (forward from the lower bound or backward from the highest value). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacestat__tool_aabba140776fa4e45eae9077817bbb072}{stat\+\_\+tool\+::plot\+\_\+print}} (const char \texorpdfstring{$\ast$}{*}path, int nb\+\_\+dist, const \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}dist, double \texorpdfstring{$\ast$}{*}scale, int \texorpdfstring{$\ast$}{*}dist\+\_\+nb\+\_\+value, int nb\+\_\+histo, const \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}histo)
+\begin{DoxyCompactList}\small\item\em Writing of a family of a discrete distributions and a family of frequency distributions at the Gnuplot format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacestat__tool_a0f8d8ce87b264e6225f8228a89711a88}{stat\+\_\+tool\+::log\+\_\+computation}} (int nb\+\_\+value, const double \texorpdfstring{$\ast$}{*}pmass, double \texorpdfstring{$\ast$}{*}plog)
+\begin{DoxyCompactList}\small\item\em Computation of the log-\/probability mass function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a436022d50d8085854cbf73bf37bd7d76}{stat\+\_\+tool\+::\+ERROR\+\_\+\+LENGTH}} = 200
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{stat\+\_\+tool\+::\+I\+\_\+\+DEFAULT}} = -\/1
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{stat\+\_\+tool\+::\+D\+\_\+\+DEFAULT}} = -\/1.
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{stat\+\_\+tool\+::\+D\+\_\+\+INF}} = -\/1.e37
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_a69438f42880af4584b2a8a68157210ed}{stat\+\_\+tool\+::\+DOUBLE\+\_\+\+ERROR}} = 1.e-\/6
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a5320650a59906f92f92f3dc21652903a}{stat\+\_\+tool\+::\+NB\+\_\+\+CRITICAL\+\_\+\+PROBABILITY}} = 2
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_a68e05f0e54fa0f0df70b28d23540d40e}{stat\+\_\+tool\+::ref\+\_\+critical\+\_\+probability}} \mbox{[}\mbox{\hyperlink{namespacestat__tool_a5320650a59906f92f92f3dc21652903a}{NB\+\_\+\+CRITICAL\+\_\+\+PROBABILITY}}\mbox{]} = \{0.\+05 , 0.\+01\}
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_ac1eb21f66e1ce1b2056a56de826fe438}{stat\+\_\+tool\+::\+NB\+\_\+\+VALUE}} = 1000
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a846ceaf9aedff77a60b0c314d02972e2}{stat\+\_\+tool\+::\+SAMPLE\+\_\+\+NB\+\_\+\+VALUE}} = \mbox{\hyperlink{namespacestat__tool_ac1eb21f66e1ce1b2056a56de826fe438}{NB\+\_\+\+VALUE}}
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a646bc309e20b9f64c60ee4f7e3b20a99}{stat\+\_\+tool\+::\+MAX\+\_\+\+INF\+\_\+\+BOUND}} = 10000
+\begin{DoxyCompactList}\small\item\em maximum lower bound \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_ab5bf827a8722330be65fa4445aee0068}{stat\+\_\+tool\+::\+MAX\+\_\+\+DIFF\+\_\+\+BOUND}} = 10000
+\begin{DoxyCompactList}\small\item\em maximum difference between lower and upper bounds \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_aff5e05b58ec81be53d505e59f7cbd43b}{stat\+\_\+tool\+::\+MAX\+\_\+\+MEAN}} = 10000.
+\begin{DoxyCompactList}\small\item\em maximum mean \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_ad44d043fa75ac4981b74aad83356954a}{stat\+\_\+tool\+::\+MAX\+\_\+\+SEQUENCE\+\_\+\+LENGTH}} = 10000
+\begin{DoxyCompactList}\small\item\em maximum sequence length for computing prior segment length distributions \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a631f47bde553f86e57b30cb076c2e248}{stat\+\_\+tool\+::\+B\+\_\+\+PROBABILITY}} = 0.\+8
+\begin{DoxyCompactList}\small\item\em threshold for using the backward computation of the binomial probability mass function \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_acfe6f7429672cd6f34d9a6d857794dc3}{stat\+\_\+tool\+::\+B\+\_\+\+THRESHOLD}} = 1000.
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_ae6b2f53a5f773b4531cb121bbf234693}{stat\+\_\+tool\+::\+P\+\_\+\+THRESHOLD}} = 90.
+\begin{DoxyCompactList}\small\item\em threshold for using the computation in log of the Poisson probability mass function \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a07081d22b521a3134e082f8447b34353}{stat\+\_\+tool\+::\+NB\+\_\+\+THRESHOLD}} = 500.
+\begin{DoxyCompactList}\small\item\em threshold for using the computation in log of the negative binomial probability mass function \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a24929fd1472b945917163e2a36d6e384}{stat\+\_\+tool\+::\+SAMPLE\+\_\+\+NB\+\_\+\+VALUE\+\_\+\+COEFF}} = 5.
+\begin{DoxyCompactList}\small\item\em factor for deducing the number of possible values of a distribution from the number of possible values of a frequency distribution \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a6286ae37002df02fd5bddc8453cd24e3}{stat\+\_\+tool\+::\+INF\+\_\+\+BOUND\+\_\+\+MARGIN}} = 5
+\begin{DoxyCompactList}\small\item\em range of values for the lower bound \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a922519c0ec40334044fa77042ecae40f}{stat\+\_\+tool\+::\+SUP\+\_\+\+BOUND\+\_\+\+MARGIN}} = 3
+\begin{DoxyCompactList}\small\item\em range of values for the upper bound \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a5c45e6f5622562de6e12e830862d8a07}{stat\+\_\+tool\+::\+POISSON\+\_\+\+RATIO}} = 0.\+7
+\begin{DoxyCompactList}\small\item\em minimum mean/variance ratio for estimating a Poisson distribution \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a4b40c33a2342f555357d046290629363}{stat\+\_\+tool\+::\+POISSON\+\_\+\+RANGE}} = 0.\+1
+\begin{DoxyCompactList}\small\item\em range for selecting a Poisson distribution by time scaling of another discrete distribution \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a1a0e874c68e20530ad5c5dc2d257285f}{stat\+\_\+tool\+::\+NB\+\_\+\+VALUE\+\_\+\+COEFF}} = 2.
+\begin{DoxyCompactList}\small\item\em factor for deducing the number of values of a distribution from the number of values of an initial distribution \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_adb01c29828c85a6410096f04828d094d}{stat\+\_\+tool\+::\+MIN\+\_\+\+RANGE}} = 10
+\begin{DoxyCompactList}\small\item\em minimum interval of values for applying the rejection sampling method \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a948c1621334e151aa354287627d7bd0d}{stat\+\_\+tool\+::\+MAX\+\_\+\+SURFACE}} = 3.
+\begin{DoxyCompactList}\small\item\em maximum surface for applying the rejection sampling method \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a104f22cff1cd41b73439c50652ae0d76}{stat\+\_\+tool\+::\+DIST\+\_\+\+NB\+\_\+\+ELEMENT}} = 1000000
+\begin{DoxyCompactList}\small\item\em maximum sample size for simulation \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_abf2f32e51b1a579be2bc4b7acf3556d2}{stat\+\_\+tool\+::\+NB\+\_\+\+COMPLETE\+\_\+\+INTERVAL}} = 3
+\begin{DoxyCompactList}\small\item\em minimum number of complete time intervals \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_aad9b8e9d4a77fc431d10a81f34b40914}{stat\+\_\+tool\+::\+RENEWAL\+\_\+\+LIKELIHOOD\+\_\+\+DIFF}} = 1.e-\/5
+\begin{DoxyCompactList}\small\item\em threshold for stopping the EM iterations \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a923a8fc06583423b750991f046c7dd39}{stat\+\_\+tool\+::\+RENEWAL\+\_\+\+NB\+\_\+\+ITER}} = 10000
+\begin{DoxyCompactList}\small\item\em maximum number of EM iterations \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a108605667555dbe340081fda16c38e0b}{stat\+\_\+tool\+::\+RENEWAL\+\_\+\+DIFFERENCE\+\_\+\+WEIGHT}} = 0.\+5
+\begin{DoxyCompactList}\small\item\em default penalty weight (1st-\/ or 2nd-\/order difference cases) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a3fec7231195b1cab5b0d2e459d304b45}{stat\+\_\+tool\+::\+RENEWAL\+\_\+\+ENTROPY\+\_\+\+WEIGHT}} = 0.\+05
+\begin{DoxyCompactList}\small\item\em default penalty weight (entropy case) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a61f989a56ac4d305a0b692fe33d43a81}{stat\+\_\+tool\+::\+MAX\+\_\+\+VALUE\+\_\+\+COEFF}} = 10.
+\begin{DoxyCompactList}\small\item\em coefficient for deducing the maximum value of an inter-\/event distribution \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_aaa12bc88ef19d70597b991727ae1c775}{stat\+\_\+tool\+::\+CONTINUOUS\+\_\+\+POSITIVE\+\_\+\+INF\+\_\+\+BOUND}} = 1.e-\/12
+\begin{DoxyCompactList}\small\item\em inf bound of positive continuous distribution support (bug boost C++) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a48e5ef19bf7a26cd97c8a24a4166b3a8}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+TAIL}} = 1.e-\/3
+\begin{DoxyCompactList}\small\item\em gamma distribution tail \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a94124737d1c429217629f3244903fb63}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+NB\+\_\+\+STEP}} = 1000
+\begin{DoxyCompactList}\small\item\em number of steps for computing a discretized gamma distribution \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_ae603c121aa66e1c119385244b500a064}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+NB\+\_\+\+SUB\+\_\+\+STEP}} = 10
+\begin{DoxyCompactList}\small\item\em number of sub-\/steps for computing a discretized gamma distribution \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_abef7f213e0ed9452267f92f0b7550388}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+INVERSE\+\_\+\+SAMPLE\+\_\+\+SIZE\+\_\+\+FACTOR}} = 5.
+\begin{DoxyCompactList}\small\item\em factor for the gamma distribution corrected moment estimator \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_afe91440cd21d61855e5582ae7de64d74}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+MIN\+\_\+\+SHAPE\+\_\+\+PARAMETER}} = 0.\+1
+\begin{DoxyCompactList}\small\item\em minimum shape parameter (gamma distribution) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_acd8413dc292aba8bc3f3634a5c9639fc}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+DEFAULT\+\_\+\+SCALE\+\_\+\+PARAMETER}} = 1
+\begin{DoxyCompactList}\small\item\em default scale parameter (gamma distribution) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a05e6901c813049243f7dfcf58263142f}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+ZERO\+\_\+\+FREQUENCY\+\_\+\+THRESHOLD}} = 0.\+999
+\begin{DoxyCompactList}\small\item\em threshold on the zero relative frequency (gamma distribution estimation) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a4ca6204f097519e64eace5db60b2eafa}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+SHAPE\+\_\+\+PARAMETER\+\_\+\+THRESHOLD}} = 3.
+\begin{DoxyCompactList}\small\item\em threshold on the shape parameter (gamma distribution estimation) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_ac1e45fb51d0fa3b93feddbf37a994661}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+FREQUENCY\+\_\+\+THRESHOLD}} = 100.
+\begin{DoxyCompactList}\small\item\em threshold on the frequency (gamma distribution estimation) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a153b549134c04e7a8ba2b342288c3af3}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+ITERATION\+\_\+\+FACTOR}} = 0.\+5
+\begin{DoxyCompactList}\small\item\em factor (gamma distribution estimation) \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a4132dab0764f7222358fa870b11d8a6b}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+MAX\+\_\+\+NB\+\_\+\+ITERATION}} = 5
+\begin{DoxyCompactList}\small\item\em maximum number of iterations (gamma distribution estimation) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_aaa09ea0e857446ad7e9e1c88457b794e}{stat\+\_\+tool\+::\+INVERSE\+\_\+\+GAUSSIAN\+\_\+\+TAIL}} = 1.e-\/3
+\begin{DoxyCompactList}\small\item\em inverse Gaussian distribution tail \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_acde218c35c10eee2f2fbd35b0dbbaeeb}{stat\+\_\+tool\+::\+INVERSE\+\_\+\+GAUSSIAN\+\_\+\+NB\+\_\+\+STEP}} = 1000
+\begin{DoxyCompactList}\small\item\em number of steps for computing a discretized inverse Gaussian distribution \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_abf8202fc0a6b1216ae347df0b4d7f86c}{stat\+\_\+tool\+::\+INVERSE\+\_\+\+GAUSSIAN\+\_\+\+NB\+\_\+\+SUB\+\_\+\+STEP}} = 10
+\begin{DoxyCompactList}\small\item\em number of steps for computing a discretized inverse Gaussian distribution \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_ad2a33df471c4abfcb3838758c1fd8ce1}{stat\+\_\+tool\+::\+GAUSSIAN\+\_\+\+TAIL}} = 5.e-\/4
+\begin{DoxyCompactList}\small\item\em Gaussian distribution tail. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_aa4e604bb1fb9d33935efdc29768d5d1c}{stat\+\_\+tool\+::\+GAUSSIAN\+\_\+\+NB\+\_\+\+STEP}} = 1000
+\begin{DoxyCompactList}\small\item\em number of steps for computing a discretized Gaussian distribution \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a60ba14a193f45a080f19cea5a517efd6}{stat\+\_\+tool\+::\+GAUSSIAN\+\_\+\+NB\+\_\+\+SUB\+\_\+\+STEP}} = 10
+\begin{DoxyCompactList}\small\item\em number of steps for computing a discretized Gaussian distribution \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a5573606f20a1080510ebd9f0300e1757}{stat\+\_\+tool\+::\+GAUSSIAN\+\_\+\+MIN\+\_\+\+VARIATION\+\_\+\+COEFF}} = 1.e-\/3
+\begin{DoxyCompactList}\small\item\em minimum coefficient of variation (Gaussian distribution estimation) \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a2d1b3e50fedd61f2d80715e31e1f40ac}{stat\+\_\+tool\+::\+VON\+\_\+\+MISES\+\_\+\+NB\+\_\+\+STEP}} = 3600
+\begin{DoxyCompactList}\small\item\em number of steps for computing a discretized von Mises distribution \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a125a84f3f2c7ef10ec30c512af6aaae3}{stat\+\_\+tool\+::\+VON\+\_\+\+MISES\+\_\+\+NB\+\_\+\+SUB\+\_\+\+STEP}} = 10
+\begin{DoxyCompactList}\small\item\em number of steps for computing a discretized von Mises distribution \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_abc8cc77069aa538890d35ac68e30bd19}{stat\+\_\+tool\+::\+CHI2\+\_\+\+FREQUENCY}} = 2
+\begin{DoxyCompactList}\small\item\em minimum theoretical sample size for a Chi2 goodness of fit test \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_aa2b7670879bc7d60039704cae3a8ae09}{stat\+\_\+tool\+::\+MARGINAL\+\_\+\+DISTRIBUTION\+\_\+\+MAX\+\_\+\+VALUE}} = 25000
+\begin{DoxyCompactList}\small\item\em maximum value for the building of a marginal frequency distribution \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a7ba5015e5f6dcdc70b855d6a87423f2a}{stat\+\_\+tool\+::\+HISTOGRAM\+\_\+\+FREQUENCY}} = 10
+\begin{DoxyCompactList}\small\item\em average frequency for defining the bin width of an histogram \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_aae460d0a96a50c8ab4e49c6feaaa0e0a}{stat\+\_\+tool\+::\+SKEWNESS\+\_\+\+ROUNDNESS}} = 1.e-\/2
+\begin{DoxyCompactList}\small\item\em rounding on the coefficient of skewness \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a6eee2d2fce3b64b633d4b23de57bf69c}{stat\+\_\+tool\+::\+NB\+\_\+\+ERROR}} = 10
+\begin{DoxyCompactList}\small\item\em maximum number of recorded errors \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a16c06841d6e879609cf24e0bba45a36a}{stat\+\_\+tool\+::\+LINE\+\_\+\+NB\+\_\+\+CHARACTER}} = 100
+\begin{DoxyCompactList}\small\item\em number of characters per line for sequences \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a74f3c6d2b99023cc0251048eca47f232}{stat\+\_\+tool\+::\+ASCII\+\_\+\+NB\+\_\+\+VALUE}} = 15
+\begin{DoxyCompactList}\small\item\em maximum number of values (ASCII display) \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a21065e6bb7062aec23928bde88198a0e}{stat\+\_\+tool\+::\+ASCII\+\_\+\+SPACE}} = 2
+\begin{DoxyCompactList}\small\item\em number of empty spaces between 2 columns (ASCII display) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a948d2fbbb6d193eeabb3f8ce8f92257f}{stat\+\_\+tool\+::\+ASCII\+\_\+\+ROUNDNESS}} = 1.e-\/5
+\begin{DoxyCompactList}\small\item\em rounding on the cumulative distribution function for bounding a distribution (ASCII display) \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a231838e294f125b59b065a99c5655ea2}{stat\+\_\+tool\+::\+SPREADSHEET\+\_\+\+ROUNDNESS}} = 1.e-\/7
+\begin{DoxyCompactList}\small\item\em rounding on the cumulative distribution function for bounding a distribution (spreadsheet output) \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a1f9eda7542f3c98de22e69e80d5f2c02}{stat\+\_\+tool\+::\+DISPLAY\+\_\+\+NB\+\_\+\+INDIVIDUAL}} = 50
+\begin{DoxyCompactList}\small\item\em maximum number of displayed individuals \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_af266608840504266b3dd66f0e9671dd5}{stat\+\_\+tool\+::\+PLOT\+\_\+\+NB\+\_\+\+DISTRIBUTION}} = 15
+\begin{DoxyCompactList}\small\item\em maximum number of plotted distributions \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a24d31bd34b6b7f66f64b7a559663f8da}{stat\+\_\+tool\+::\+PLOT\+\_\+\+NB\+\_\+\+HISTOGRAM}} = 15
+\begin{DoxyCompactList}\small\item\em maximum number of plotted histograms \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a6c8bd1fcb24c63567dc217bcb86849d2}{stat\+\_\+tool\+::\+PLOT\+\_\+\+ROUNDNESS}} = 1.e-\/5
+\begin{DoxyCompactList}\small\item\em rounding on the cumulative distribution function for bounding a plotted distribution \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a86cb53e64e70bd662f5e4f5823b21ff0}{stat\+\_\+tool\+::\+PLOT\+\_\+\+SHIFT}} = 0.\+2
+\begin{DoxyCompactList}\small\item\em shift between 2 plotted frequency distributions \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a02ffa6e37b98db8794532da64d5d73e6}{stat\+\_\+tool\+::\+PLOT\+\_\+\+MAX\+\_\+\+SHIFT}} = 0.\+5
+\begin{DoxyCompactList}\small\item\em maximum shift between the first and last plotted frequency distributions \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{namespacestat__tool_a8c7e49a4eb112c1bd9295f5a9e56d9a8}{stat\+\_\+tool\+::\+TIC\+\_\+\+THRESHOLD}} = 10
+\begin{DoxyCompactList}\small\item\em minimum number of plotted graduations \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_ac5afdd7976a589b37286c018851d79de}{stat\+\_\+tool\+::\+PLOT\+\_\+\+MASS\+\_\+\+THRESHOLD}} = 1.e-\/3
+\begin{DoxyCompactList}\small\item\em minimum value for plotting a zero mass after the last possible value \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_ad70e7ebb79e64502eb7f4146c054b280}{stat\+\_\+tool\+::\+YSCALE}} = 1.\+1
+\begin{DoxyCompactList}\small\item\em scale factor for y axis in plots \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{namespacestat__tool_a9421b05a4d202493116591a30a7ff38b}{stat\+\_\+tool\+::\+PLOT\+\_\+\+RANGE\+\_\+\+RATIO}} = 4.
+\begin{DoxyCompactList}\small\item\em threshold for plotting from 0 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\+\_\+\+TOOL\+\_\+\+API}} std\+::mt19937 \mbox{\hyperlink{namespacestat__tool_a1a04dac25c71637d3f3210b9888590ed}{stat\+\_\+tool\+::mt}}
+\begin{DoxyCompactList}\small\item\em Random number generator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\+\_\+\+TOOL\+\_\+\+API}} std\+::uniform\+\_\+real\+\_\+distribution$<$ double $>$ \mbox{\hyperlink{namespacestat__tool_a89910564eee519ff76495e21cb5a6c2b}{stat\+\_\+tool\+::rand\+\_\+unif}}
+\begin{DoxyCompactList}\small\item\em Uniform random number generator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{stat__tools_8h_aacc3ee1a7f283f8ef65cea31f4436a95}\index{stat\_tools.h@{stat\_tools.h}!MAX@{MAX}}
+\index{MAX@{MAX}!stat\_tools.h@{stat\_tools.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \label{stat__tools_8h_aacc3ee1a7f283f8ef65cea31f4436a95} 
+\#define MAX(\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((x)\ >\ (y)\ ?\ (x)\ :\ (y))}
+
+\end{DoxyCode}
+\Hypertarget{stat__tools_8h_a74e75242132eaabbc1c512488a135926}\index{stat\_tools.h@{stat\_tools.h}!MIN@{MIN}}
+\index{MIN@{MIN}!stat\_tools.h@{stat\_tools.h}}
+\doxysubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \label{stat__tools_8h_a74e75242132eaabbc1c512488a135926} 
+\#define MIN(\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{((x)\ <\ (y)\ ?\ (x)\ :\ (y))}
+
+\end{DoxyCode}

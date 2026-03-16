@@ -1,0 +1,488 @@
+\doxysection{stat\+\_\+tool\+::Discrete\+Parametric\+Process Class Reference}
+\hypertarget{classstat__tool_1_1DiscreteParametricProcess}{}\label{classstat__tool_1_1DiscreteParametricProcess}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+
+
+Discrete parametric observation process.  
+
+
+
+
+{\ttfamily \#include $<$markovian.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_af8a364eefaed5b36f1122e56306574c8}{copy}} (const \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \&process, bool mass\+\_\+copy=false)
+\begin{DoxyCompactList}\small\item\em Copy of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_ae18cee3198aa2cb3563372ddb6ca4a64}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Destruction of the data members of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a1d3bc0b41183ae48bd37a579dc9e5dee}{Discrete\+Parametric\+Process}} (int inb\+\_\+state=0, int inb\+\_\+value=0)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_aa4d85c3b2ab54d55d3eccc38f05d9046}{Discrete\+Parametric\+Process}} (int inb\+\_\+state, \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{Discrete\+Parametric}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}pobservation)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_aaa346fc3288a4cde7d999c68c0ed9ecd}{Discrete\+Parametric\+Process}} (const \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \&process, bool mass\+\_\+copy=false)
+\item 
+\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a4cd12d167d73e5e3245bc23a48c0bd16}{\texorpdfstring{$\sim$}{\string~}\+Discrete\+Parametric\+Process}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \& \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_ad6920232cab2a83c7bf3b73b8afb1069}{operator=}} (const \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \&process)
+\begin{DoxyCompactList}\small\item\em Assignment operator of the \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} class. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_aebd317d1f08f62a226634148741d7471}{ascii\+\_\+print}} (std\+::ostream \&os, \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}empirical\+\_\+observation, \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}marginal\+\_\+distribution, bool exhaustive, bool file\+\_\+flag, \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}} model=\mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\+\_\+\+MARKOV}}) const
+\begin{DoxyCompactList}\small\item\em Writing of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a09aaacb818e2c4c0233386ed6b093567}{spreadsheet\+\_\+print}} (std\+::ostream \&os, \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}empirical\+\_\+observation=NULL, \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}marginal\+\_\+distribution=NULL, \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}} model=\mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\+\_\+\+MARKOV}}) const
+\begin{DoxyCompactList}\small\item\em Writing of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object at the spreadsheet format. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a5fa8d64f055418f2935269a533ee07c7}{plot\+\_\+print}} (const char \texorpdfstring{$\ast$}{*}prefix, const char \texorpdfstring{$\ast$}{*}title, int process, \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}empirical\+\_\+observation=NULL, \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}marginal\+\_\+distribution=NULL, \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}} model=\mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\+\_\+\+MARKOV}}) const
+\begin{DoxyCompactList}\small\item\em Plot of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object using Gnuplot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a63c7d8654b2cc88f7f7093c882cd7ff4}{plotable\+\_\+write}} (\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set}} \&plot, int \&index, int process, \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}empirical\+\_\+observation=NULL, \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}marginal\+\_\+distribution=NULL, \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}} model=\mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\+\_\+\+MARKOV}}) const
+\begin{DoxyCompactList}\small\item\em Plot of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a244521a8ffd4a1f404e6746fd66bffb9}{nb\+\_\+value\+\_\+computation}} ()
+\begin{DoxyCompactList}\small\item\em Computation of the support of the observation process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a90eb006d7f8bcc52633afc69026799fe}{state\+\_\+permutation}} (int \texorpdfstring{$\ast$}{*}permut) const
+\begin{DoxyCompactList}\small\item\em Permutation of observation distributions. The permutation validity should be checked by the calling function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a7e9db690a8dfa21f52ce058639586d5b}{nb\+\_\+parameter\+\_\+computation}} () const
+\begin{DoxyCompactList}\small\item\em Computation of the number of free parameters of a discrete parametric observation process. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_ac3000ec7db08e7bce2b6a90f864d794a}{mean\+\_\+computation}} (\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*}pweight) const
+\begin{DoxyCompactList}\small\item\em Computation of the mean of a mixture of discrete parametric observation distributions. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a6637b24b639364e6b139e42a05a7c865}{variance\+\_\+computation}} (\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*}pweight, double mean=\mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\+\_\+\+INF}}) const
+\begin{DoxyCompactList}\small\item\em Computation of the variance of a mixture of discrete parametric observation distributions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a37a4cb47faeb7abea263b42f64c6b2d7}{mixture\+\_\+computation}} (\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*}pweight)
+\begin{DoxyCompactList}\small\item\em Computation of a mixture of discrete parametric observation distributions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a740e7378c79f035ddc3a891ce481ecfb}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initialization of discrete parametric observation distributions using perturbation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a3640387260f267b49f4b6a2c094dea95}{parsing}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, ifstream \&in\+\_\+file, int \&line, int \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a75063162d67083b50bfa08c5f41aa97b}{nb\+\_\+state}}, \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}} model, double cumul\+\_\+threshold=\mbox{\hyperlink{namespacestat__tool_a960fa4d455d92bb0ea54561ce1a35524}{OBSERVATION\+\_\+\+THRESHOLD}})
+\begin{DoxyCompactList}\small\item\em Analysis of the format of discrete parametric observation distributions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a75063162d67083b50bfa08c5f41aa97b}{nb\+\_\+state}}
+\begin{DoxyCompactList}\small\item\em number of states \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_adda419dac534c4c7bb821e82f05fb9e2}{nb\+\_\+value}}
+\begin{DoxyCompactList}\small\item\em number of values \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{Discrete\+Parametric}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_aabcb6cee196db065d444963640d0b63f}{observation}}
+\begin{DoxyCompactList}\small\item\em discrete parametric observation distributions \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a40b81ca8472e286967ce327c0a6ef6ba}{weight}}
+\begin{DoxyCompactList}\small\item\em theoretical weights of observation distributions \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a5c71ef45f43271701c843fd17e412732}{mixture}}
+\begin{DoxyCompactList}\small\item\em mixture of observation distributions \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a303785b1edd861c3deb2f8374167d50e}{restoration\+\_\+weight}}
+\item 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_ab14df489a0b2f1b23a27586b415e7ddd}{restoration\+\_\+mixture}}
+\begin{DoxyCompactList}\small\item\em mixture of observation distributions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Discrete parametric observation process. 
+
+Collection of univariate discrete parametric emission distributions. In the multivariate case, use a collection of conditionally independent Discrete\+Parametric\+Processes observations\mbox{[}k\mbox{]} is a pointer to emission distribution for state k 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a1d3bc0b41183ae48bd37a579dc9e5dee}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!DiscreteParametricProcess@{DiscreteParametricProcess}}
+\index{DiscreteParametricProcess@{DiscreteParametricProcess}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{DiscreteParametricProcess()}{DiscreteParametricProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a1d3bc0b41183ae48bd37a579dc9e5dee} 
+stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::\+Discrete\+Parametric\+Process (\begin{DoxyParamCaption}\item[{int}]{inb\+\_\+state}{ = {\ttfamily 0}, }\item[{int}]{inb\+\_\+value}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em inb\+\_\+state} & number of states, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+value} & number of values. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_aa4d85c3b2ab54d55d3eccc38f05d9046}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!DiscreteParametricProcess@{DiscreteParametricProcess}}
+\index{DiscreteParametricProcess@{DiscreteParametricProcess}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{DiscreteParametricProcess()}{DiscreteParametricProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_aa4d85c3b2ab54d55d3eccc38f05d9046} 
+stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::\+Discrete\+Parametric\+Process (\begin{DoxyParamCaption}\item[{int}]{inb\+\_\+state}{, }\item[{\mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{Discrete\+Parametric}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{pobservation}{}\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em inb\+\_\+state} & number of states, \\
+\hline
+\mbox{\texttt{ in}}  & {\em pobservation} & pointer on the observation distributions. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_aaa346fc3288a4cde7d999c68c0ed9ecd}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!DiscreteParametricProcess@{DiscreteParametricProcess}}
+\index{DiscreteParametricProcess@{DiscreteParametricProcess}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{DiscreteParametricProcess()}{DiscreteParametricProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_aaa346fc3288a4cde7d999c68c0ed9ecd} 
+stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::\+Discrete\+Parametric\+Process (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \&}]{process}{, }\item[{bool}]{mass\+\_\+copy}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a4cd12d167d73e5e3245bc23a48c0bd16}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!````~DiscreteParametricProcess@{\texorpdfstring{$\sim$}{\string~}DiscreteParametricProcess}}
+\index{````~DiscreteParametricProcess@{\texorpdfstring{$\sim$}{\string~}DiscreteParametricProcess}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DiscreteParametricProcess()}{\string~DiscreteParametricProcess()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a4cd12d167d73e5e3245bc23a48c0bd16} 
+stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::\texorpdfstring{$\sim$}{\string~}\+Discrete\+Parametric\+Process (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor of the \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_aebd317d1f08f62a226634148741d7471}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!ascii\_print@{ascii\_print}}
+\index{ascii\_print@{ascii\_print}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{ascii\_print()}{ascii\_print()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_aebd317d1f08f62a226634148741d7471} 
+ostream \& stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::ascii\+\_\+print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{empirical\+\_\+observation}{, }\item[{\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}}]{marginal\+\_\+distribution}{, }\item[{bool}]{exhaustive}{, }\item[{bool}]{file\+\_\+flag}{, }\item[{\mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}}}]{model}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\+\_\+\+MARKOV}}}}\end{DoxyParamCaption}) const}
+
+
+
+Writing of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em os} & stream, \\
+\hline
+\mbox{\texttt{ in}}  & {\em empirical\+\_\+observation} & pointer on the observation frequency distributions, \\
+\hline
+\mbox{\texttt{ in}}  & {\em marginal\+\_\+distribution} & pointer on the marginal frequency distribution, \\
+\hline
+\mbox{\texttt{ in}}  & {\em exhaustive} & flag detail level, \\
+\hline
+\mbox{\texttt{ in}}  & {\em file\+\_\+flag} & flag file, \\
+\hline
+\mbox{\texttt{ in}}  & {\em model} & model type. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_af8a364eefaed5b36f1122e56306574c8}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!copy@{copy}}
+\index{copy@{copy}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_af8a364eefaed5b36f1122e56306574c8} 
+void stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \&}]{process}{, }\item[{bool}]{mass\+\_\+copy}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+Copy of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em process} & reference on a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a740e7378c79f035ddc3a891ce481ecfb}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!init@{init}}
+\index{init@{init}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a740e7378c79f035ddc3a891ce481ecfb} 
+void stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initialization of discrete parametric observation distributions using perturbation. 
+
+void \doxylink{classstat__tool_1_1DiscreteParametricProcess_a740e7378c79f035ddc3a891ce481ecfb}{Discrete\+Parametric\+Process\+::init()}
+
+\{ int i , j; double noise\+\_\+proba , \texorpdfstring{$\ast$}{*}pmass;
+
+for (i = 0;i \texorpdfstring{$<$}{<} nb\+\_\+state;i++) \{ noise\+\_\+proba = NOISE\+\_\+\+PROBABILITY \texorpdfstring{$\ast$}{*} nb\+\_\+state / nb\+\_\+value;
+
+pmass = observation\mbox{[}i\mbox{]}-\/\texorpdfstring{$>$}{>}mass; for (j = 0;j \texorpdfstring{$<$}{<} i \texorpdfstring{$\ast$}{*} nb\+\_\+value / nb\+\_\+state;j++) \{ pmass++ -\/= noise\+\_\+proba / (nb\+\_\+state -\/ 1); \} for (j = i \texorpdfstring{$\ast$}{*} nb\+\_\+value / nb\+\_\+state;j \texorpdfstring{$<$}{<} (i + 1) \texorpdfstring{$\ast$}{*} nb\+\_\+value / nb\+\_\+state;j++) \{ pmass++ += noise\+\_\+proba; \} for (j = (i + 1) \texorpdfstring{$\ast$}{*} nb\+\_\+value / nb\+\_\+state;j \texorpdfstring{$<$}{<} nb\+\_\+value;j++) \{ pmass++ -\/= noise\+\_\+proba / (nb\+\_\+state -\/ 1); \} \} \} \Hypertarget{classstat__tool_1_1DiscreteParametricProcess_ac3000ec7db08e7bce2b6a90f864d794a}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!mean\_computation@{mean\_computation}}
+\index{mean\_computation@{mean\_computation}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{mean\_computation()}{mean\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_ac3000ec7db08e7bce2b6a90f864d794a} 
+double stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::mean\+\_\+computation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*}}]{pweight}{}\end{DoxyParamCaption}) const}
+
+
+
+Computation of the mean of a mixture of discrete parametric observation distributions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pweight} & pointer on the weight distribution.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixture mean. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a37a4cb47faeb7abea263b42f64c6b2d7}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!mixture\_computation@{mixture\_computation}}
+\index{mixture\_computation@{mixture\_computation}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{mixture\_computation()}{mixture\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a37a4cb47faeb7abea263b42f64c6b2d7} 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::mixture\+\_\+computation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*}}]{pweight}{}\end{DoxyParamCaption})}
+
+
+
+Computation of a mixture of discrete parametric observation distributions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pweight} & pointer on the weight distribution.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixture of discrete parametric observation distributions. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a7e9db690a8dfa21f52ce058639586d5b}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!nb\_parameter\_computation@{nb\_parameter\_computation}}
+\index{nb\_parameter\_computation@{nb\_parameter\_computation}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{nb\_parameter\_computation()}{nb\_parameter\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a7e9db690a8dfa21f52ce058639586d5b} 
+int stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::nb\+\_\+parameter\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Computation of the number of free parameters of a discrete parametric observation process. 
+
+\begin{DoxyReturn}{Returns}
+number of free parameters. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a244521a8ffd4a1f404e6746fd66bffb9}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!nb\_value\_computation@{nb\_value\_computation}}
+\index{nb\_value\_computation@{nb\_value\_computation}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{nb\_value\_computation()}{nb\_value\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a244521a8ffd4a1f404e6746fd66bffb9} 
+void stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::nb\+\_\+value\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Computation of the support of the observation process. 
+
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_ad6920232cab2a83c7bf3b73b8afb1069}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!operator=@{operator=}}
+\index{operator=@{operator=}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_ad6920232cab2a83c7bf3b73b8afb1069} 
+\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \& stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \&}]{process}{}\end{DoxyParamCaption})}
+
+
+
+Assignment operator of the \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em process} & reference on a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a3640387260f267b49f4b6a2c094dea95}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!parsing@{parsing}}
+\index{parsing@{parsing}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{parsing()}{parsing()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a3640387260f267b49f4b6a2c094dea95} 
+\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::parsing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{ifstream \&}]{in\+\_\+file}{, }\item[{int \&}]{line}{, }\item[{int}]{nb\+\_\+state}{, }\item[{\mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}}}]{model}{, }\item[{double}]{cumul\+\_\+threshold}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a960fa4d455d92bb0ea54561ce1a35524}{OBSERVATION\+\_\+\+THRESHOLD}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Analysis of the format of discrete parametric observation distributions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em in\+\_\+file} & stream, \\
+\hline
+\mbox{\texttt{ in}}  & {\em line} & reference on the file line index, \\
+\hline
+\mbox{\texttt{ in}}  & {\em nb\+\_\+state} & number of states, \\
+\hline
+\mbox{\texttt{ in}}  & {\em model} & model type, \\
+\hline
+\mbox{\texttt{ in}}  & {\em cumul\+\_\+threshold} & threshold on the cumulative distribution functions.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a5fa8d64f055418f2935269a533ee07c7}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!plot\_print@{plot\_print}}
+\index{plot\_print@{plot\_print}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{plot\_print()}{plot\_print()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a5fa8d64f055418f2935269a533ee07c7} 
+bool stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::plot\+\_\+print (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{prefix}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{title}{, }\item[{int}]{process}{, }\item[{\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{empirical\+\_\+observation}{ = {\ttfamily NULL}, }\item[{\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}}]{marginal\+\_\+distribution}{ = {\ttfamily NULL}, }\item[{\mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}}}]{model}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\+\_\+\+MARKOV}}}}\end{DoxyParamCaption}) const}
+
+
+
+Plot of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object using Gnuplot. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em prefix} & file prefix, \\
+\hline
+\mbox{\texttt{ in}}  & {\em title} & figure title, \\
+\hline
+\mbox{\texttt{ in}}  & {\em process} & observation process index, \\
+\hline
+\mbox{\texttt{ in}}  & {\em empirical\+\_\+observation} & pointer on the observation frequency distributions, \\
+\hline
+\mbox{\texttt{ in}}  & {\em marginal\+\_\+distribution} & pointer on the marginal frequency distribution, \\
+\hline
+\mbox{\texttt{ in}}  & {\em model} & model type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error status. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a63c7d8654b2cc88f7f7093c882cd7ff4}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!plotable\_write@{plotable\_write}}
+\index{plotable\_write@{plotable\_write}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{plotable\_write()}{plotable\_write()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a63c7d8654b2cc88f7f7093c882cd7ff4} 
+void stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::plotable\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set}} \&}]{plot}{, }\item[{int \&}]{index}{, }\item[{int}]{process}{, }\item[{\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{empirical\+\_\+observation}{ = {\ttfamily NULL}, }\item[{\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}}]{marginal\+\_\+distribution}{ = {\ttfamily NULL}, }\item[{\mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}}}]{model}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\+\_\+\+MARKOV}}}}\end{DoxyParamCaption}) const}
+
+
+
+Plot of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em plot} & reference on a \doxylink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em index} & \doxylink{classstat__tool_1_1MultiPlot}{Multi\+Plot} index, \\
+\hline
+\mbox{\texttt{ in}}  & {\em process} & observation process index, \\
+\hline
+\mbox{\texttt{ in}}  & {\em empirical\+\_\+observation} & pointer on the observation frequency distributions, \\
+\hline
+\mbox{\texttt{ in}}  & {\em marginal\+\_\+distribution} & pointer on the marginal frequency distribution, \\
+\hline
+\mbox{\texttt{ in}}  & {\em model} & model type. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_ae18cee3198aa2cb3563372ddb6ca4a64}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!remove@{remove}}
+\index{remove@{remove}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_ae18cee3198aa2cb3563372ddb6ca4a64} 
+void stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::remove (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruction of the data members of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object. 
+
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a09aaacb818e2c4c0233386ed6b093567}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!spreadsheet\_print@{spreadsheet\_print}}
+\index{spreadsheet\_print@{spreadsheet\_print}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{spreadsheet\_print()}{spreadsheet\_print()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a09aaacb818e2c4c0233386ed6b093567} 
+ostream \& stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::spreadsheet\+\_\+print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{empirical\+\_\+observation}{ = {\ttfamily NULL}, }\item[{\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{Frequency\+Distribution}} \texorpdfstring{$\ast$}{*}}]{marginal\+\_\+distribution}{ = {\ttfamily NULL}, }\item[{\mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\+\_\+type}}}]{model}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\+\_\+\+MARKOV}}}}\end{DoxyParamCaption}) const}
+
+
+
+Writing of a \doxylink{classstat__tool_1_1DiscreteParametricProcess}{Discrete\+Parametric\+Process} object at the spreadsheet format. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em os} & stream, \\
+\hline
+\mbox{\texttt{ in}}  & {\em empirical\+\_\+observation} & pointer on the observation frequency distributions, \\
+\hline
+\mbox{\texttt{ in}}  & {\em marginal\+\_\+distribution} & pointer on the marginal frequency distribution, \\
+\hline
+\mbox{\texttt{ in}}  & {\em model} & model type. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a90eb006d7f8bcc52633afc69026799fe}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!state\_permutation@{state\_permutation}}
+\index{state\_permutation@{state\_permutation}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{state\_permutation()}{state\_permutation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a90eb006d7f8bcc52633afc69026799fe} 
+void stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::state\+\_\+permutation (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{permut}{}\end{DoxyParamCaption}) const}
+
+
+
+Permutation of observation distributions. The permutation validity should be checked by the calling function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em permut} & permutation. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a6637b24b639364e6b139e42a05a7c865}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!variance\_computation@{variance\_computation}}
+\index{variance\_computation@{variance\_computation}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{variance\_computation()}{variance\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a6637b24b639364e6b139e42a05a7c865} 
+double stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::variance\+\_\+computation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}} \texorpdfstring{$\ast$}{*}}]{pweight}{, }\item[{double}]{mean}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\+\_\+\+INF}}}}\end{DoxyParamCaption}) const}
+
+
+
+Computation of the variance of a mixture of discrete parametric observation distributions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pweight} & pointer on the weight distribution, \\
+\hline
+\mbox{\texttt{ in}}  & {\em mean} & mean.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixture variance. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a5c71ef45f43271701c843fd17e412732}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!mixture@{mixture}}
+\index{mixture@{mixture}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{mixture}{mixture}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a5c71ef45f43271701c843fd17e412732} 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::mixture}
+
+
+
+mixture of observation distributions 
+
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a75063162d67083b50bfa08c5f41aa97b}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!nb\_state@{nb\_state}}
+\index{nb\_state@{nb\_state}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{nb\_state}{nb\_state}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a75063162d67083b50bfa08c5f41aa97b} 
+int stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::nb\+\_\+state}
+
+
+
+number of states 
+
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_adda419dac534c4c7bb821e82f05fb9e2}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!nb\_value@{nb\_value}}
+\index{nb\_value@{nb\_value}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{nb\_value}{nb\_value}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_adda419dac534c4c7bb821e82f05fb9e2} 
+int stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::nb\+\_\+value}
+
+
+
+number of values 
+
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_aabcb6cee196db065d444963640d0b63f}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!observation@{observation}}
+\index{observation@{observation}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{observation}{observation}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_aabcb6cee196db065d444963640d0b63f} 
+\mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{Discrete\+Parametric}}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::observation}
+
+
+
+discrete parametric observation distributions 
+
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_ab14df489a0b2f1b23a27586b415e7ddd}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!restoration\_mixture@{restoration\_mixture}}
+\index{restoration\_mixture@{restoration\_mixture}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{restoration\_mixture}{restoration\_mixture}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_ab14df489a0b2f1b23a27586b415e7ddd} 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::restoration\+\_\+mixture}
+
+
+
+mixture of observation distributions 
+
+\Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a303785b1edd861c3deb2f8374167d50e}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!restoration\_weight@{restoration\_weight}}
+\index{restoration\_weight@{restoration\_weight}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{restoration\_weight}{restoration\_weight}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a303785b1edd861c3deb2f8374167d50e} 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::restoration\+\_\+weight}
+
+weights of observation distributions deduced from the restoration \Hypertarget{classstat__tool_1_1DiscreteParametricProcess_a40b81ca8472e286967ce327c0a6ef6ba}\index{stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}!weight@{weight}}
+\index{weight@{weight}!stat\_tool::DiscreteParametricProcess@{stat\_tool::DiscreteParametricProcess}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DiscreteParametricProcess_a40b81ca8472e286967ce327c0a6ef6ba} 
+\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Discrete\+Parametric\+Process\+::weight}
+
+
+
+theoretical weights of observation distributions 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{markovian_8h}{markovian.\+h}}\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{discrete__parametric__process_8cpp}{discrete\+\_\+parametric\+\_\+process.\+cpp}}\end{DoxyCompactItemize}

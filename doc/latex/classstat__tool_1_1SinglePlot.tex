@@ -1,0 +1,177 @@
+\doxysection{stat\+\_\+tool\+::Single\+Plot Class Reference}
+\hypertarget{classstat__tool_1_1SinglePlot}{}\label{classstat__tool_1_1SinglePlot}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+
+
+{\ttfamily \#include $<$plotable.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstat__tool_1_1SinglePlot_aad4611fdd83168aecdefdcdc29641442}{Single\+Plot}} ()
+\item 
+\mbox{\hyperlink{classstat__tool_1_1SinglePlot_aed6b428486915d84babd3700ec702ced}{Single\+Plot}} (const \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{Single\+Plot}} \&plot)
+\item 
+void \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a03aa95f8af10e8fada5674c42ed42d03}{add\+\_\+point}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a43bb84ed0d0ee2ccbdafe30de2ef5048}{add\+\_\+point}} (const \mbox{\hyperlink{namespacestat__tool_a6245633ff08e4a11e25a43e7173db4c6}{Plot\+Point}} \&p)
+\item 
+void \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a329de66d3d0f01b7951ea6f6bcdbafe2}{add\+\_\+text}} (float x, float y, const std\+::string \&p)
+\item 
+float \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a6a1a7142d27de4aee2e74108eb8d078a}{get\+\_\+x}} (int)
+\item 
+float \mbox{\hyperlink{classstat__tool_1_1SinglePlot_aa0eac3dcd5c9ba79166c02be6c06eb30}{get\+\_\+y}} (int)
+\item 
+std\+::string \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a31632080fdc6bc4969a3e1b5ddca5478}{get\+\_\+label}} (int)
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a7b051d07fee0d07a5f27678f9d7ab3dd}{get\+\_\+size}} ()
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a110da2e3a062bee580c33dfcef1d0977}{size}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstat__tool_1_1SinglePlot_ab594a9e2a670148ba1205727b5be61fc}{Points}} \mbox{\hyperlink{classstat__tool_1_1SinglePlot_ad77b37d5e44a4652cc32039713deedcd}{data}}
+\item 
+\mbox{\hyperlink{classstat__tool_1_1SinglePlot_a79c4bd869cb5ef335bcf0ee3304aaaf1}{Labels}} \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a1447d81551a5a851e50d322b08531b4b}{data\+\_\+and\+\_\+text}}
+\item 
+std\+::string \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a682bad37510d0eb213c903d449773ba0}{legend}}
+\item 
+std\+::string \mbox{\hyperlink{classstat__tool_1_1SinglePlot_af4c569acbc316a3a2731cf394202e655}{style}}
+\item 
+std\+::string \mbox{\hyperlink{classstat__tool_1_1SinglePlot_afd17bec5281424bfa46ba6cc5fae4079}{color}}
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a39b0dc39b4269adde188b42edea0480d}{label}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{namespacestat__tool_a6245633ff08e4a11e25a43e7173db4c6}{Plot\+Point}} $>$ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_ab594a9e2a670148ba1205727b5be61fc}{Points}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{namespacestat__tool_ac23b224e3cfe061f1b65da8c9e5fb5e4}{Label}} $>$ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a79c4bd869cb5ef335bcf0ee3304aaaf1}{Labels}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{classstat__tool_1_1SinglePlot_a79c4bd869cb5ef335bcf0ee3304aaaf1}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!Labels@{Labels}}
+\index{Labels@{Labels}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{Labels}{Labels}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a79c4bd869cb5ef335bcf0ee3304aaaf1} 
+typedef std\+::vector$<$\mbox{\hyperlink{namespacestat__tool_ac23b224e3cfe061f1b65da8c9e5fb5e4}{Label}}$>$ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a79c4bd869cb5ef335bcf0ee3304aaaf1}{stat\+\_\+tool\+::\+Single\+Plot\+::\+Labels}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_ab594a9e2a670148ba1205727b5be61fc}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!Points@{Points}}
+\index{Points@{Points}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{Points}{Points}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_ab594a9e2a670148ba1205727b5be61fc} 
+typedef std\+::vector$<$\mbox{\hyperlink{namespacestat__tool_a6245633ff08e4a11e25a43e7173db4c6}{Plot\+Point}}$>$ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_ab594a9e2a670148ba1205727b5be61fc}{stat\+\_\+tool\+::\+Single\+Plot\+::\+Points}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstat__tool_1_1SinglePlot_aad4611fdd83168aecdefdcdc29641442}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!SinglePlot@{SinglePlot}}
+\index{SinglePlot@{SinglePlot}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{SinglePlot()}{SinglePlot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_aad4611fdd83168aecdefdcdc29641442} 
+stat\+\_\+tool\+::\+Single\+Plot\+::\+Single\+Plot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_aed6b428486915d84babd3700ec702ced}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!SinglePlot@{SinglePlot}}
+\index{SinglePlot@{SinglePlot}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{SinglePlot()}{SinglePlot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_aed6b428486915d84babd3700ec702ced} 
+stat\+\_\+tool\+::\+Single\+Plot\+::\+Single\+Plot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{Single\+Plot}} \&}]{plot}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstat__tool_1_1SinglePlot_a43bb84ed0d0ee2ccbdafe30de2ef5048}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!add\_point@{add\_point}}
+\index{add\_point@{add\_point}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{add\_point()}{add\_point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a43bb84ed0d0ee2ccbdafe30de2ef5048} 
+void stat\+\_\+tool\+::\+Single\+Plot\+::add\+\_\+point (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacestat__tool_a6245633ff08e4a11e25a43e7173db4c6}{Plot\+Point}} \&}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_a03aa95f8af10e8fada5674c42ed42d03}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!add\_point@{add\_point}}
+\index{add\_point@{add\_point}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{add\_point()}{add\_point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a03aa95f8af10e8fada5674c42ed42d03} 
+void stat\+\_\+tool\+::\+Single\+Plot\+::add\+\_\+point (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_a329de66d3d0f01b7951ea6f6bcdbafe2}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!add\_text@{add\_text}}
+\index{add\_text@{add\_text}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{add\_text()}{add\_text()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a329de66d3d0f01b7951ea6f6bcdbafe2} 
+void stat\+\_\+tool\+::\+Single\+Plot\+::add\+\_\+text (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{const std\+::string \&}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_a31632080fdc6bc4969a3e1b5ddca5478}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!get\_label@{get\_label}}
+\index{get\_label@{get\_label}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{get\_label()}{get\_label()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a31632080fdc6bc4969a3e1b5ddca5478} 
+std\+::string stat\+\_\+tool\+::\+Single\+Plot\+::get\+\_\+label (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_a7b051d07fee0d07a5f27678f9d7ab3dd}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a7b051d07fee0d07a5f27678f9d7ab3dd} 
+int stat\+\_\+tool\+::\+Single\+Plot\+::get\+\_\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_a6a1a7142d27de4aee2e74108eb8d078a}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!get\_x@{get\_x}}
+\index{get\_x@{get\_x}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{get\_x()}{get\_x()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a6a1a7142d27de4aee2e74108eb8d078a} 
+float stat\+\_\+tool\+::\+Single\+Plot\+::get\+\_\+x (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_aa0eac3dcd5c9ba79166c02be6c06eb30}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!get\_y@{get\_y}}
+\index{get\_y@{get\_y}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{get\_y()}{get\_y()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_aa0eac3dcd5c9ba79166c02be6c06eb30} 
+float stat\+\_\+tool\+::\+Single\+Plot\+::get\+\_\+y (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_a110da2e3a062bee580c33dfcef1d0977}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!size@{size}}
+\index{size@{size}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a110da2e3a062bee580c33dfcef1d0977} 
+int stat\+\_\+tool\+::\+Single\+Plot\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classstat__tool_1_1SinglePlot_afd17bec5281424bfa46ba6cc5fae4079}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!color@{color}}
+\index{color@{color}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_afd17bec5281424bfa46ba6cc5fae4079} 
+std\+::string stat\+\_\+tool\+::\+Single\+Plot\+::color}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_ad77b37d5e44a4652cc32039713deedcd}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!data@{data}}
+\index{data@{data}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_ad77b37d5e44a4652cc32039713deedcd} 
+\mbox{\hyperlink{classstat__tool_1_1SinglePlot_ab594a9e2a670148ba1205727b5be61fc}{Points}} stat\+\_\+tool\+::\+Single\+Plot\+::data}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_a1447d81551a5a851e50d322b08531b4b}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!data\_and\_text@{data\_and\_text}}
+\index{data\_and\_text@{data\_and\_text}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{data\_and\_text}{data\_and\_text}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a1447d81551a5a851e50d322b08531b4b} 
+\mbox{\hyperlink{classstat__tool_1_1SinglePlot_a79c4bd869cb5ef335bcf0ee3304aaaf1}{Labels}} stat\+\_\+tool\+::\+Single\+Plot\+::data\+\_\+and\+\_\+text}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_a39b0dc39b4269adde188b42edea0480d}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!label@{label}}
+\index{label@{label}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{label}{label}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a39b0dc39b4269adde188b42edea0480d} 
+bool stat\+\_\+tool\+::\+Single\+Plot\+::label}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_a682bad37510d0eb213c903d449773ba0}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!legend@{legend}}
+\index{legend@{legend}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{legend}{legend}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_a682bad37510d0eb213c903d449773ba0} 
+std\+::string stat\+\_\+tool\+::\+Single\+Plot\+::legend}
+
+\Hypertarget{classstat__tool_1_1SinglePlot_af4c569acbc316a3a2731cf394202e655}\index{stat\_tool::SinglePlot@{stat\_tool::SinglePlot}!style@{style}}
+\index{style@{style}!stat\_tool::SinglePlot@{stat\_tool::SinglePlot}}
+\doxysubsubsection{\texorpdfstring{style}{style}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1SinglePlot_af4c569acbc316a3a2731cf394202e655} 
+std\+::string stat\+\_\+tool\+::\+Single\+Plot\+::style}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{plotable_8h}{plotable.\+h}}\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{plotable_8cpp}{plotable.\+cpp}}\end{DoxyCompactItemize}

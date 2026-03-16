@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_491d72bf7e41a9f56ee4d2be43f68c92" kind="dir">
+    <compoundname>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool</compoundname>
+    <innerfile refid="categorical__process_8cpp">categorical_process.cpp</innerfile>
+    <innerfile refid="chain_8cpp">chain.cpp</innerfile>
+    <innerfile refid="chain__algorithms_8cpp">chain_algorithms.cpp</innerfile>
+    <innerfile refid="chain__reestimation_8h">chain_reestimation.h</innerfile>
+    <innerfile refid="chain__reestimation_8hpp">chain_reestimation.hpp</innerfile>
+    <innerfile refid="clusters_8cpp">clusters.cpp</innerfile>
+    <innerfile refid="compound_8cpp">compound.cpp</innerfile>
+    <innerfile refid="compound_8h">compound.h</innerfile>
+    <innerfile refid="compound__algorithms_8cpp">compound_algorithms.cpp</innerfile>
+    <innerfile refid="config_8h">config.h</innerfile>
+    <innerfile refid="continuous__parametric_8cpp">continuous_parametric.cpp</innerfile>
+    <innerfile refid="continuous__parametric__estimation_8hpp">continuous_parametric_estimation.hpp</innerfile>
+    <innerfile refid="continuous__parametric__process_8cpp">continuous_parametric_process.cpp</innerfile>
+    <innerfile refid="convolution_8cpp">convolution.cpp</innerfile>
+    <innerfile refid="convolution_8h">convolution.h</innerfile>
+    <innerfile refid="convolution__algorithms_8cpp">convolution_algorithms.cpp</innerfile>
+    <innerfile refid="curves_8cpp">curves.cpp</innerfile>
+    <innerfile refid="curves_8h">curves.h</innerfile>
+    <innerfile refid="dendrogram_8cpp">dendrogram.cpp</innerfile>
+    <innerfile refid="discrete__mixture_8cpp">discrete_mixture.cpp</innerfile>
+    <innerfile refid="discrete__mixture_8h">discrete_mixture.h</innerfile>
+    <innerfile refid="discrete__mixture__algorithms_8cpp">discrete_mixture_algorithms.cpp</innerfile>
+    <innerfile refid="discrete__parametric_8cpp">discrete_parametric.cpp</innerfile>
+    <innerfile refid="discrete__parametric__process_8cpp">discrete_parametric_process.cpp</innerfile>
+    <innerfile refid="distance__matrix_8cpp">distance_matrix.cpp</innerfile>
+    <innerfile refid="distance__matrix_8h">distance_matrix.h</innerfile>
+    <innerfile refid="distribution_8cpp">distribution.cpp</innerfile>
+    <innerfile refid="distribution_8h">distribution.h</innerfile>
+    <innerfile refid="distribution__algorithms_8cpp">distribution_algorithms.cpp</innerfile>
+    <innerfile refid="distribution__reestimation_8hpp">distribution_reestimation.hpp</innerfile>
+    <innerfile refid="frequency__distribution1_8cpp">frequency_distribution1.cpp</innerfile>
+    <innerfile refid="frequency__distribution2_8cpp">frequency_distribution2.cpp</innerfile>
+    <innerfile refid="histogram_8cpp">histogram.cpp</innerfile>
+    <innerfile refid="interface_8cpp">interface.cpp</innerfile>
+    <innerfile refid="markovian_8h">markovian.h</innerfile>
+    <innerfile refid="mixture_8cpp">mixture.cpp</innerfile>
+    <innerfile refid="mixture_8h">mixture.h</innerfile>
+    <innerfile refid="mixture__algorithms_8cpp">mixture_algorithms.cpp</innerfile>
+    <innerfile refid="multivariate__mixture_8cpp">multivariate_mixture.cpp</innerfile>
+    <innerfile refid="multivariate__mixture_8h">multivariate_mixture.h</innerfile>
+    <innerfile refid="multivariate__mixture__algorithms_8cpp">multivariate_mixture_algorithms.cpp</innerfile>
+    <innerfile refid="plotable_8cpp">plotable.cpp</innerfile>
+    <innerfile refid="plotable_8h">plotable.h</innerfile>
+    <innerfile refid="plotable_8hpp">plotable.hpp</innerfile>
+    <innerfile refid="quantile__computation_8hpp">quantile_computation.hpp</innerfile>
+    <innerfile refid="reestimation_8cpp">reestimation.cpp</innerfile>
+    <innerfile refid="reestimation_8h">reestimation.h</innerfile>
+    <innerfile refid="reestimation_8hpp">reestimation.hpp</innerfile>
+    <innerfile refid="regression_8cpp">regression.cpp</innerfile>
+    <innerfile refid="regression_8h">regression.h</innerfile>
+    <innerfile refid="stat__label_8cpp">stat_label.cpp</innerfile>
+    <innerfile refid="stat__label_8h">stat_label.h</innerfile>
+    <innerfile refid="stat__tools_8h">stat_tools.h</innerfile>
+    <innerfile refid="test_8cpp">test.cpp</innerfile>
+    <innerfile refid="vector__algorithms_8cpp">vector_algorithms.cpp</innerfile>
+    <innerfile refid="vector__distance_8cpp">vector_distance.cpp</innerfile>
+    <innerfile refid="vectors_8cpp">vectors.cpp</innerfile>
+    <innerfile refid="vectors_8h">vectors.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/"/>
+  </compounddef>
+</doxygen>

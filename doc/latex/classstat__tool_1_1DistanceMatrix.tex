@@ -1,0 +1,1070 @@
+\doxysection{stat\+\_\+tool\+::Distance\+Matrix Class Reference}
+\hypertarget{classstat__tool_1_1DistanceMatrix}{}\label{classstat__tool_1_1DistanceMatrix}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+
+
+Distance matrix.  
+
+
+
+
+{\ttfamily \#include $<$distance\+\_\+matrix.\+h$>$}
+
+Inheritance diagram for stat\+\_\+tool\+::Distance\+Matrix\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classstat__tool_1_1DistanceMatrix}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}{Distance\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a11b011d05ba967eba7ada20022444870}{Distance\+Matrix}} (int nb\+\_\+pattern, const char \texorpdfstring{$\ast$}{*}ilabel, int \texorpdfstring{$\ast$}{*}pattern\+\_\+identifier=NULL)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac6845bf1ec0e3e3b8df398b48e883fa5}{Distance\+Matrix}} (int nb\+\_\+pattern, int irow\+\_\+identifier, int icolumn\+\_\+identifier, const char \texorpdfstring{$\ast$}{*}ilabel, int \texorpdfstring{$\ast$}{*}pattern\+\_\+identifier=NULL, bool substitution\+\_\+flag=true, bool transposition\+\_\+flag=false)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a589f8669c7f84a1224b63bbdabf6c6e8}{Distance\+Matrix}} (const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&dist\+\_\+matrix, int inb\+\_\+pattern, int \texorpdfstring{$\ast$}{*}iidentifier, bool keep=true)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a4af5ca4f470c42dc6dac9eede7c1eafc}{Distance\+Matrix}} (const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&dist\+\_\+matrix, int nb\+\_\+cluster, const char \texorpdfstring{$\ast$}{*}ilabel)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a415f6af2a3b4adbf0d97f801226b6863}{Distance\+Matrix}} (const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&dist\+\_\+matrix, \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eec}{matrix\+\_\+transform}} transform=\mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eecac72bd820609f4de705224dd0b1acab72}{COPY}})
+\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a59f5ef3bab1447ce11da802f07e298f3}{\texorpdfstring{$\sim$}{\string~}\+Distance\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \& \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a43602d9d14304f41aa6f83b4e193128d}{operator=}} (const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&dist\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Assignment operator of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a08cafe33175b9de54de79bbe0bf04ba2}{select\+\_\+individual}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, int inb\+\_\+pattern, int \texorpdfstring{$\ast$}{*}iidentifier, bool keep=true) const
+\begin{DoxyCompactList}\small\item\em Selection of individuals by their identifiers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a13509ebfd4ecd7957a11c9d442c1a475}{select\+\_\+individual}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, int inb\+\_\+pattern, std\+::vector$<$ int $>$ \&iidentifier, bool keep=true) const
+\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_adae0aac7e89f6968acfb1b9c4586ce7d}{symmetrize}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error) const
+\begin{DoxyCompactList}\small\item\em Symmetrization of a distance matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a32e75d6cb868b2a774cd8545c0a75b57}{unnormalize}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error) const
+\begin{DoxyCompactList}\small\item\em Unnormalization of a distance matrix. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a3d9ff8d5002bb0203a95537e5325cf77}{line\+\_\+write}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Writing on a single line of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa4f9edf14fc1f5c9b83e62db25a73df6}{ascii\+\_\+write}} (std\+::ostream \&os, bool exhaustive=false) const
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a7c1d5710cff5e8f923b23a996eab7f43}{ascii\+\_\+write}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, const std\+::string path, bool exhaustive=false) const
+\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a732727ad1255211a1dafe4642d9790e3}{spreadsheet\+\_\+write}} (std\+::ostream \&os) const
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a4425056239ab0aff3162461174558cc0}{spreadsheet\+\_\+write}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, const std\+::string path) const
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a10e672fd277f8701b2cde489475a0779}{plot\+\_\+write}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, const char \texorpdfstring{$\ast$}{*}prefix, const char \texorpdfstring{$\ast$}{*}title=NULL) const
+\begin{DoxyCompactList}\small\item\em Plot of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object using Gnuplot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_adfecbe4c03130af4dce1ac451c3503de}{get\+\_\+plotable}} () const
+\begin{DoxyCompactList}\small\item\em Plot of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a64c0d3c513f1a8f11cd42e0ff56f211b}{test\+\_\+symmetry}} () const
+\begin{DoxyCompactList}\small\item\em \doxylink{classstat__tool_1_1Test}{Test} of the symmetry of a distance matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a5a49aba2c3349fb68b7ebefdc32a5abc}{update}} (int irow\+\_\+identifier, int icolumn\+\_\+identifier, double idistance, int alignment\+\_\+length, double ideletion\+\_\+distance, int inb\+\_\+deletion, double iinsertion\+\_\+distance, int inb\+\_\+insertion, int inb\+\_\+match, double isubstitution\+\_\+distance=0., int inb\+\_\+substitution=0, double itransposition\+\_\+distance=0., int inb\+\_\+transposition=0)
+\begin{DoxyCompactList}\small\item\em Update of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object with the result of the alignment of 2 structures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a867d2a640e0ce6a93f5a015f5d5bdedf}{update}} (int irow\+\_\+identifier, int icolumn\+\_\+identifier, double idistance, int ilength)
+\begin{DoxyCompactList}\small\item\em Update of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object with the result of a comparison. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Clusters}{Clusters}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9384595342d41054179d91709533c746}{partitioning}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, std\+::ostream \texorpdfstring{$\ast$}{*}os, int nb\+\_\+cluster, int \texorpdfstring{$\ast$}{*}prototype=NULL, int initialization=1, int algorithm=1) const
+\item 
+\mbox{\hyperlink{classstat__tool_1_1Clusters}{Clusters}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a06bcdb14aab894967814f30e291ff344}{partitioning}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, std\+::ostream \texorpdfstring{$\ast$}{*}os, int nb\+\_\+cluster, int \texorpdfstring{$\ast$}{*}cluster\+\_\+nb\+\_\+pattern, int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}cluster\+\_\+pattern) const
+\item 
+\mbox{\hyperlink{classstat__tool_1_1Dendrogram}{Dendrogram}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a21cbe7ddc3d075cd9fedf02beb1a5b92}{agglomerative\+\_\+hierarchical\+\_\+clustering}} (\mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98}{hierarchical\+\_\+strategy}} strategy, \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071}{linkage}} criterion=\mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071a2f43bfbb38791f6d8c77a8e99fae3098}{AVERAGE\+\_\+\+NEIGHBOR}}) const
+\begin{DoxyCompactList}\small\item\em Agglomerative hierarchical clustering algorithm (Kaufman \& Rousseeuw, pp. 199-\/208). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1Dendrogram}{Dendrogram}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_abaddaf89013698a5108e168a302a1365}{divisive\+\_\+hierarchical\+\_\+clustering}} () const
+\begin{DoxyCompactList}\small\item\em Divisive hierarchical clustering algorithm (Kaufman \& Rousseeuw, pp. 253-\/259). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9c935c41cce7d63098cadb2a7209593d}{hierarchical\+\_\+clustering}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, std\+::ostream \texorpdfstring{$\ast$}{*}os, \mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98}{hierarchical\+\_\+strategy}} strategy=\mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98af5adf649fb26a8c67d72a3e90a8d078c}{AGGLOMERATIVE}}, \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071}{linkage}} criterion=\mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071a2f43bfbb38791f6d8c77a8e99fae3098}{AVERAGE\+\_\+\+NEIGHBOR}}, const std\+::string path="{}"{}, \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdd}{output\+\_\+format}} format=\mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdda57262aa8cbac90f9a8a380b8d6e2dec7}{ASCII}}) const
+\begin{DoxyCompactList}\small\item\em Hierarchical clustering algorithms. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ad2faeb3ccb849d696b529004b5996435}{get\+\_\+nb\+\_\+row}} () const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9298c6104c12932be6f831e75342a196}{get\+\_\+nb\+\_\+column}} () const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9295a89aa5cd0d68848f39671f723aaf}{get\+\_\+row\+\_\+identifier}} (int row) const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ab8be4b560abc632da776987a861c4855}{get\+\_\+column\+\_\+identifier}} (int column) const
+\item 
+double \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a2c45dc5df9616088606ec19bd33fa5ec}{get\+\_\+distance}} (int row, int column) const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_acfbd2e0fb513d2d54f17e48a44b16d92}{get\+\_\+length}} (int row, int column) const
+\item 
+double \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ab97abcfd9de486e1a38652e73ef2c0b2}{get\+\_\+deletion\+\_\+distance}} (int row, int column) const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af081a7c5885b0b734b39a47ebf726c2a}{get\+\_\+nb\+\_\+deletion}} (int row, int column) const
+\item 
+double \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a34f3c4468a584a004f3c15d78c135ba4}{get\+\_\+insertion\+\_\+distance}} (int row, int column) const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aac60ef3878a0633e3a8fe62bad61cbc9}{get\+\_\+nb\+\_\+insertion}} (int row, int column) const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa34117f4fc0bdc2b530be92b7892a293}{get\+\_\+nb\+\_\+match}} (int row, int column) const
+\item 
+double \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a77942aa487cb42fc95fec3217be3cb93}{get\+\_\+substitution\+\_\+distance}} (int row, int column) const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa52aeada216c0091aac28272b1485e6a}{get\+\_\+nb\+\_\+substitution}} (int row, int column) const
+\item 
+double \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a77fc68070097fec34e297a2338d4509e}{get\+\_\+transposition\+\_\+distance}} (int row, int column) const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a89c2e672708bb7fa778507f1bfd6cbe9}{get\+\_\+nb\+\_\+transposition}} (int row, int column) const
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac892f07822a6336dc2bb4b966c4b11dc}{get\+\_\+label\+\_\+size}} () const
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a1443a90c540e3ffeb9be49c160c235ed}{get\+\_\+label}} () const
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9566e1ca7544795ae9261031ca300af1}{is\+\_\+deletion}} ()
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a657b02740363126664434df651ded8eb}{is\+\_\+insertion}} ()
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ab5da226ef1cd45ae117ce297169e68ff}{is\+\_\+match}} ()
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af97f3e48f0a4966acc8d9bd09e8efdc9}{is\+\_\+substitution}} ()
+\item 
+bool \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a81d1070e269a6d272c1c9354e6472055}{is\+\_\+transposition}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classstat__tool_1_1StatInterface}{stat\+\_\+tool\+::\+Stat\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classstat__tool_1_1StatInterface_a7571e2adbbe004af3ece0f623c69cef6}{ascii\+\_\+write}} (bool exhaustive=false) const
+\begin{DoxyCompactList}\small\item\em Writing of a Structure\+Analysis object (for display on the console). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a57f6c23c4719e87b945fa059876a308e}{copy}} (const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&dist\+\_\+matrix, \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eec}{matrix\+\_\+transform}} transform=\mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eecac72bd820609f4de705224dd0b1acab72}{COPY}})
+\begin{DoxyCompactList}\small\item\em Copy of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae0ed54b5916f56f3c9f6e7a0ac889453}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Destruction of the data members of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a2ef8eb477cec3645abf60534d3741c90}{property\+\_\+print}} (double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}normalized\+\_\+distance, std\+::ostream \&os, \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdd}{output\+\_\+format}} format) const
+\begin{DoxyCompactList}\small\item\em Writing of distance matrix properties. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae5fd41b88da1788074cc841db1c54f6a}{cumul\+\_\+length\+\_\+computation}} (bool \texorpdfstring{$\ast$}{*}row\+\_\+flag, bool \texorpdfstring{$\ast$}{*}column\+\_\+flag) const
+\begin{DoxyCompactList}\small\item\em Computation of a cumulative length. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_abd6d481e67102edf7c815b139341e628}{cumul\+\_\+distance\+\_\+computation}} (bool \texorpdfstring{$\ast$}{*}row\+\_\+flag, bool \texorpdfstring{$\ast$}{*}column\+\_\+flag) const
+\begin{DoxyCompactList}\small\item\em Computation of a cumulative distance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a9a5365475715547ba2ed440367f2edc3}{get\+\_\+plotable}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error) const
+\begin{DoxyCompactList}\small\item\em Plot of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a0db7861c0b504c2a67c6571cefbf184b}{nb\+\_\+row}}
+\begin{DoxyCompactList}\small\item\em number of rows \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a6ed0ab1e91a1f57c6b47a6de89107740}{nb\+\_\+column}}
+\begin{DoxyCompactList}\small\item\em number of columns \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac05f503eb391ff4bd36c304d18053f99}{row\+\_\+identifier}}
+\begin{DoxyCompactList}\small\item\em row identifiers \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a280897b3b5f55beeebc1c8aa7b3b6815}{column\+\_\+identifier}}
+\begin{DoxyCompactList}\small\item\em column identifiers \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ab73d90de4270eb12ea42653f1ef24ea0}{distance}}
+\begin{DoxyCompactList}\small\item\em distances \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a36200ff65d138f78d858935981f3fa70}{length}}
+\begin{DoxyCompactList}\small\item\em lengths \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a6d6daa96bfbf8dafa223139764c95160}{deletion\+\_\+distance}}
+\begin{DoxyCompactList}\small\item\em deletion distances \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af5d755ebac6d247253017ab76b4f362d}{nb\+\_\+deletion}}
+\begin{DoxyCompactList}\small\item\em numbers of deletions \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_adb33aa11a8ae05817bbaabe5c927b666}{insertion\+\_\+distance}}
+\begin{DoxyCompactList}\small\item\em insertion distances \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae33d83431caa34b6c33fb516c2d0a528}{nb\+\_\+insertion}}
+\begin{DoxyCompactList}\small\item\em numbers of insertions \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ae124d1e9672f51b3914f13cec130518e}{nb\+\_\+match}}
+\begin{DoxyCompactList}\small\item\em numbers of matches \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a87f6ece480a62008e8068239a7f563e4}{substitution\+\_\+distance}}
+\begin{DoxyCompactList}\small\item\em substitution distances \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a803694939a7ad08595bcc2408604c66b}{nb\+\_\+substitution}}
+\begin{DoxyCompactList}\small\item\em numbers of substitutions \end{DoxyCompactList}\item 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_af3923868671c360a94f87efe597a7e14}{transposition\+\_\+distance}}
+\begin{DoxyCompactList}\small\item\em transposition distances \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a2224871a9803af5847c2ceb05642be0c}{nb\+\_\+transposition}}
+\begin{DoxyCompactList}\small\item\em numbers of transpositions \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ad333b6c172e9c0f837e3a73396b899ae}{label\+\_\+size}}
+\begin{DoxyCompactList}\small\item\em label size \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_aa1cfb7ffe9c3bbb2a06754499dc8c62d}{label}}
+\begin{DoxyCompactList}\small\item\em label \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_a4091aaac7961581f1127e62da102ce49}{Clusters}}
+\item 
+class \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_ac5ca9538f425c1303c8e0b0b4b73f6d3}{Dendrogram}}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix_afd7e6547ec9bcd3b7368bb1ea01ff2d6}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&dist\+\_\+matrix)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Distance matrix. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!DistanceMatrix@{DistanceMatrix}}
+\index{DistanceMatrix@{DistanceMatrix}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{DistanceMatrix()}{DistanceMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a75c69c459dfd91094df29a0147415e92} 
+stat\+\_\+tool\+::\+Distance\+Matrix\+::\+Distance\+Matrix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a11b011d05ba967eba7ada20022444870}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!DistanceMatrix@{DistanceMatrix}}
+\index{DistanceMatrix@{DistanceMatrix}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{DistanceMatrix()}{DistanceMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a11b011d05ba967eba7ada20022444870} 
+stat\+\_\+tool\+::\+Distance\+Matrix\+::\+Distance\+Matrix (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+pattern}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{ilabel}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{pattern\+\_\+identifier}{ = {\ttfamily NULL}}\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nb\+\_\+pattern} & number of individuals, \\
+\hline
+\mbox{\texttt{ in}}  & {\em ilabel} & label, \\
+\hline
+\mbox{\texttt{ in}}  & {\em pattern\+\_\+identifier} & individual identifiers, \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ac6845bf1ec0e3e3b8df398b48e883fa5}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!DistanceMatrix@{DistanceMatrix}}
+\index{DistanceMatrix@{DistanceMatrix}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{DistanceMatrix()}{DistanceMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ac6845bf1ec0e3e3b8df398b48e883fa5} 
+stat\+\_\+tool\+::\+Distance\+Matrix\+::\+Distance\+Matrix (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+pattern}{, }\item[{int}]{irow\+\_\+identifier}{, }\item[{int}]{icolumn\+\_\+identifier}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{ilabel}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{pattern\+\_\+identifier}{ = {\ttfamily NULL}, }\item[{bool}]{substitution\+\_\+flag}{ = {\ttfamily true}, }\item[{bool}]{transposition\+\_\+flag}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nb\+\_\+pattern} & number of individuals, \\
+\hline
+\mbox{\texttt{ in}}  & {\em irow\+\_\+identifier} & row identifier, \\
+\hline
+\mbox{\texttt{ in}}  & {\em icolumn\+\_\+identifier} & column identifier, \\
+\hline
+\mbox{\texttt{ in}}  & {\em ilabel} & label, \\
+\hline
+\mbox{\texttt{ in}}  & {\em pattern\+\_\+identifier} & individual identifiers, \\
+\hline
+\mbox{\texttt{ in}}  & {\em substitution\+\_\+flag} & flag substitution edit operation, \\
+\hline
+\mbox{\texttt{ in}}  & {\em transposition\+\_\+flag} & flag transposition edit operation. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a589f8669c7f84a1224b63bbdabf6c6e8}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!DistanceMatrix@{DistanceMatrix}}
+\index{DistanceMatrix@{DistanceMatrix}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{DistanceMatrix()}{DistanceMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a589f8669c7f84a1224b63bbdabf6c6e8} 
+stat\+\_\+tool\+::\+Distance\+Matrix\+::\+Distance\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&}]{dist\+\_\+matrix}{, }\item[{int}]{inb\+\_\+pattern}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{iidentifier}{, }\item[{bool}]{keep}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dist\+\_\+matrix} & reference on a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+pattern} & number of selected individuals, \\
+\hline
+\mbox{\texttt{ in}}  & {\em iidentifier} & identifiers of selected individuals, \\
+\hline
+\mbox{\texttt{ in}}  & {\em keep} & flag for keeping or rejecting the selected individuals. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a4af5ca4f470c42dc6dac9eede7c1eafc}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!DistanceMatrix@{DistanceMatrix}}
+\index{DistanceMatrix@{DistanceMatrix}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{DistanceMatrix()}{DistanceMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a4af5ca4f470c42dc6dac9eede7c1eafc} 
+stat\+\_\+tool\+::\+Distance\+Matrix\+::\+Distance\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&}]{dist\+\_\+matrix}{, }\item[{int}]{nb\+\_\+cluster}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{ilabel}{}\end{DoxyParamCaption})}
+
+
+
+Constructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dist\+\_\+matrix} & reference on a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em nb\+\_\+cluster} & number of clusters, \\
+\hline
+\mbox{\texttt{ in}}  & {\em ilabel} & label. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a415f6af2a3b4adbf0d97f801226b6863}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!DistanceMatrix@{DistanceMatrix}}
+\index{DistanceMatrix@{DistanceMatrix}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{DistanceMatrix()}{DistanceMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a415f6af2a3b4adbf0d97f801226b6863} 
+stat\+\_\+tool\+::\+Distance\+Matrix\+::\+Distance\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&}]{dist\+\_\+matrix}{, }\item[{\mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eec}{matrix\+\_\+transform}}}]{transform}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eecac72bd820609f4de705224dd0b1acab72}{COPY}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a59f5ef3bab1447ce11da802f07e298f3}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!````~DistanceMatrix@{\texorpdfstring{$\sim$}{\string~}DistanceMatrix}}
+\index{````~DistanceMatrix@{\texorpdfstring{$\sim$}{\string~}DistanceMatrix}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DistanceMatrix()}{\string~DistanceMatrix()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a59f5ef3bab1447ce11da802f07e298f3} 
+stat\+\_\+tool\+::\+Distance\+Matrix\+::\texorpdfstring{$\sim$}{\string~}\+Distance\+Matrix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a21cbe7ddc3d075cd9fedf02beb1a5b92}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!agglomerative\_hierarchical\_clustering@{agglomerative\_hierarchical\_clustering}}
+\index{agglomerative\_hierarchical\_clustering@{agglomerative\_hierarchical\_clustering}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{agglomerative\_hierarchical\_clustering()}{agglomerative\_hierarchical\_clustering()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a21cbe7ddc3d075cd9fedf02beb1a5b92} 
+\mbox{\hyperlink{classstat__tool_1_1Dendrogram}{Dendrogram}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::agglomerative\+\_\+hierarchical\+\_\+clustering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98}{hierarchical\+\_\+strategy}}}]{strategy}{, }\item[{\mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071}{linkage}}}]{criterion}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071a2f43bfbb38791f6d8c77a8e99fae3098}{AVERAGE\+\_\+\+NEIGHBOR}}}}\end{DoxyParamCaption}) const}
+
+
+
+Agglomerative hierarchical clustering algorithm (Kaufman \& Rousseeuw, pp. 199-\/208). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em strategy} & algorithm type, \\
+\hline
+\mbox{\texttt{ in}}  & {\em criterion} & cluster merging criterion.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1Dendrogram}{Dendrogram} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a7c1d5710cff5e8f923b23a996eab7f43}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!ascii\_write@{ascii\_write}}
+\index{ascii\_write@{ascii\_write}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{ascii\_write()}{ascii\_write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a7c1d5710cff5e8f923b23a996eab7f43} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::ascii\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{const std\+::string}]{path}{, }\item[{bool}]{exhaustive}{ = {\ttfamily false}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_a7ebddce7b16070eee648eb888b8c5ec4}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_aa4f9edf14fc1f5c9b83e62db25a73df6}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!ascii\_write@{ascii\_write}}
+\index{ascii\_write@{ascii\_write}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{ascii\_write()}{ascii\_write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_aa4f9edf14fc1f5c9b83e62db25a73df6} 
+std\+::ostream \& stat\+\_\+tool\+::\+Distance\+Matrix\+::ascii\+\_\+write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{bool}]{exhaustive}{ = {\ttfamily false}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_a9cc8c361520374ddcfbe45011613266c}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a57f6c23c4719e87b945fa059876a308e}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!copy@{copy}}
+\index{copy@{copy}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a57f6c23c4719e87b945fa059876a308e} 
+void stat\+\_\+tool\+::\+Distance\+Matrix\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&}]{dist\+\_\+matrix}{, }\item[{\mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eec}{matrix\+\_\+transform}}}]{transform}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a3cd5a1a92c269bd47669da230e0f9eecac72bd820609f4de705224dd0b1acab72}{COPY}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Copy of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dist\+\_\+matrix} & reference on a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em transform} & matrix transform (COPY/\+SYMMETRIZATION/\+UNNORMALIZATION). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_abd6d481e67102edf7c815b139341e628}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!cumul\_distance\_computation@{cumul\_distance\_computation}}
+\index{cumul\_distance\_computation@{cumul\_distance\_computation}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{cumul\_distance\_computation()}{cumul\_distance\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_abd6d481e67102edf7c815b139341e628} 
+double stat\+\_\+tool\+::\+Distance\+Matrix\+::cumul\+\_\+distance\+\_\+computation (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\ast$}{*}}]{row\+\_\+flag}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{column\+\_\+flag}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Computation of a cumulative distance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row\+\_\+flag} & flag on the rows, \\
+\hline
+\mbox{\texttt{ in}}  & {\em column\+\_\+flag} & flag on the columns.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cumulative distance. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ae5fd41b88da1788074cc841db1c54f6a}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!cumul\_length\_computation@{cumul\_length\_computation}}
+\index{cumul\_length\_computation@{cumul\_length\_computation}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{cumul\_length\_computation()}{cumul\_length\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ae5fd41b88da1788074cc841db1c54f6a} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::cumul\+\_\+length\+\_\+computation (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\ast$}{*}}]{row\+\_\+flag}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{column\+\_\+flag}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Computation of a cumulative length. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row\+\_\+flag} & flag on the rows, \\
+\hline
+\mbox{\texttt{ in}}  & {\em column\+\_\+flag} & flag on the columns.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cumulative length. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_abaddaf89013698a5108e168a302a1365}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!divisive\_hierarchical\_clustering@{divisive\_hierarchical\_clustering}}
+\index{divisive\_hierarchical\_clustering@{divisive\_hierarchical\_clustering}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{divisive\_hierarchical\_clustering()}{divisive\_hierarchical\_clustering()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_abaddaf89013698a5108e168a302a1365} 
+\mbox{\hyperlink{classstat__tool_1_1Dendrogram}{Dendrogram}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::divisive\+\_\+hierarchical\+\_\+clustering (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Divisive hierarchical clustering algorithm (Kaufman \& Rousseeuw, pp. 253-\/259). 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1Dendrogram}{Dendrogram} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ab8be4b560abc632da776987a861c4855}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_column\_identifier@{get\_column\_identifier}}
+\index{get\_column\_identifier@{get\_column\_identifier}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_column\_identifier()}{get\_column\_identifier()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ab8be4b560abc632da776987a861c4855} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+column\+\_\+identifier (\begin{DoxyParamCaption}\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ab97abcfd9de486e1a38652e73ef2c0b2}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_deletion\_distance@{get\_deletion\_distance}}
+\index{get\_deletion\_distance@{get\_deletion\_distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_deletion\_distance()}{get\_deletion\_distance()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ab97abcfd9de486e1a38652e73ef2c0b2} 
+double stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+deletion\+\_\+distance (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a2c45dc5df9616088606ec19bd33fa5ec}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_distance@{get\_distance}}
+\index{get\_distance@{get\_distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_distance()}{get\_distance()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a2c45dc5df9616088606ec19bd33fa5ec} 
+double stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+distance (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a34f3c4468a584a004f3c15d78c135ba4}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_insertion\_distance@{get\_insertion\_distance}}
+\index{get\_insertion\_distance@{get\_insertion\_distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_insertion\_distance()}{get\_insertion\_distance()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a34f3c4468a584a004f3c15d78c135ba4} 
+double stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+insertion\+\_\+distance (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a1443a90c540e3ffeb9be49c160c235ed}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_label@{get\_label}}
+\index{get\_label@{get\_label}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_label()}{get\_label()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a1443a90c540e3ffeb9be49c160c235ed} 
+char \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+label (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ac892f07822a6336dc2bb4b966c4b11dc}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_label\_size@{get\_label\_size}}
+\index{get\_label\_size@{get\_label\_size}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_label\_size()}{get\_label\_size()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ac892f07822a6336dc2bb4b966c4b11dc} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+label\+\_\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_acfbd2e0fb513d2d54f17e48a44b16d92}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_length@{get\_length}}
+\index{get\_length@{get\_length}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_length()}{get\_length()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_acfbd2e0fb513d2d54f17e48a44b16d92} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+length (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a9298c6104c12932be6f831e75342a196}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_nb\_column@{get\_nb\_column}}
+\index{get\_nb\_column@{get\_nb\_column}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_nb\_column()}{get\_nb\_column()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a9298c6104c12932be6f831e75342a196} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+nb\+\_\+column (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_af081a7c5885b0b734b39a47ebf726c2a}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_nb\_deletion@{get\_nb\_deletion}}
+\index{get\_nb\_deletion@{get\_nb\_deletion}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_nb\_deletion()}{get\_nb\_deletion()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_af081a7c5885b0b734b39a47ebf726c2a} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+nb\+\_\+deletion (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_aac60ef3878a0633e3a8fe62bad61cbc9}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_nb\_insertion@{get\_nb\_insertion}}
+\index{get\_nb\_insertion@{get\_nb\_insertion}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_nb\_insertion()}{get\_nb\_insertion()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_aac60ef3878a0633e3a8fe62bad61cbc9} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+nb\+\_\+insertion (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_aa34117f4fc0bdc2b530be92b7892a293}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_nb\_match@{get\_nb\_match}}
+\index{get\_nb\_match@{get\_nb\_match}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_nb\_match()}{get\_nb\_match()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_aa34117f4fc0bdc2b530be92b7892a293} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+nb\+\_\+match (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ad2faeb3ccb849d696b529004b5996435}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_nb\_row@{get\_nb\_row}}
+\index{get\_nb\_row@{get\_nb\_row}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_nb\_row()}{get\_nb\_row()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ad2faeb3ccb849d696b529004b5996435} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+nb\+\_\+row (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_aa52aeada216c0091aac28272b1485e6a}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_nb\_substitution@{get\_nb\_substitution}}
+\index{get\_nb\_substitution@{get\_nb\_substitution}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_nb\_substitution()}{get\_nb\_substitution()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_aa52aeada216c0091aac28272b1485e6a} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+nb\+\_\+substitution (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a89c2e672708bb7fa778507f1bfd6cbe9}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_nb\_transposition@{get\_nb\_transposition}}
+\index{get\_nb\_transposition@{get\_nb\_transposition}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_nb\_transposition()}{get\_nb\_transposition()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a89c2e672708bb7fa778507f1bfd6cbe9} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+nb\+\_\+transposition (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_adfecbe4c03130af4dce1ac451c3503de}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_plotable@{get\_plotable}}
+\index{get\_plotable@{get\_plotable}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_plotable()}{get\_plotable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_adfecbe4c03130af4dce1ac451c3503de} 
+\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+plotable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Plot of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set} object. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classstat__tool_1_1StatInterface_a9210a878974973ea3a4a0cf209258a5e}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a9a5365475715547ba2ed440367f2edc3}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_plotable@{get\_plotable}}
+\index{get\_plotable@{get\_plotable}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_plotable()}{get\_plotable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a9a5365475715547ba2ed440367f2edc3} 
+\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+plotable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Plot of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{Multi\+Plot\+Set} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a9295a89aa5cd0d68848f39671f723aaf}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_row\_identifier@{get\_row\_identifier}}
+\index{get\_row\_identifier@{get\_row\_identifier}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_row\_identifier()}{get\_row\_identifier()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a9295a89aa5cd0d68848f39671f723aaf} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+row\+\_\+identifier (\begin{DoxyParamCaption}\item[{int}]{row}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a77942aa487cb42fc95fec3217be3cb93}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_substitution\_distance@{get\_substitution\_distance}}
+\index{get\_substitution\_distance@{get\_substitution\_distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_substitution\_distance()}{get\_substitution\_distance()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a77942aa487cb42fc95fec3217be3cb93} 
+double stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+substitution\+\_\+distance (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a77fc68070097fec34e297a2338d4509e}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!get\_transposition\_distance@{get\_transposition\_distance}}
+\index{get\_transposition\_distance@{get\_transposition\_distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_transposition\_distance()}{get\_transposition\_distance()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a77fc68070097fec34e297a2338d4509e} 
+double stat\+\_\+tool\+::\+Distance\+Matrix\+::get\+\_\+transposition\+\_\+distance (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{column}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a9c935c41cce7d63098cadb2a7209593d}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!hierarchical\_clustering@{hierarchical\_clustering}}
+\index{hierarchical\_clustering@{hierarchical\_clustering}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{hierarchical\_clustering()}{hierarchical\_clustering()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a9c935c41cce7d63098cadb2a7209593d} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::hierarchical\+\_\+clustering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{std\+::ostream \texorpdfstring{$\ast$}{*}}]{os}{, }\item[{\mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98}{hierarchical\+\_\+strategy}}}]{strategy}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_ac05bbb0fcb0c0d7daf5f86f949cc6d98af5adf649fb26a8c67d72a3e90a8d078c}{AGGLOMERATIVE}}}, }\item[{\mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071}{linkage}}}]{criterion}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a8443f2c8d2e18849dd5bb05ae8b57071a2f43bfbb38791f6d8c77a8e99fae3098}{AVERAGE\+\_\+\+NEIGHBOR}}}, }\item[{const std\+::string}]{path}{ = {\ttfamily "{}"{}}, }\item[{\mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdd}{output\+\_\+format}}}]{format}{ = {\ttfamily \mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdda57262aa8cbac90f9a8a380b8d6e2dec7}{ASCII}}}}\end{DoxyParamCaption}) const}
+
+
+
+Hierarchical clustering algorithms. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em os} & stream for displaying the hierarchical clustering results, \\
+\hline
+\mbox{\texttt{ in}}  & {\em strategy} & algorithm type (AGGLOMERATIVE/\+DIVISIVE/\+ORDERING), \\
+\hline
+\mbox{\texttt{ in}}  & {\em criterion} & cluster merging criterion (agglomerative algorithm), \\
+\hline
+\mbox{\texttt{ in}}  & {\em path} & file path, \\
+\hline
+\mbox{\texttt{ in}}  & {\em format} & output format (ASCII/\+SPREADSHEET).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1Dendrogram}{Dendrogram} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a9566e1ca7544795ae9261031ca300af1}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!is\_deletion@{is\_deletion}}
+\index{is\_deletion@{is\_deletion}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{is\_deletion()}{is\_deletion()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a9566e1ca7544795ae9261031ca300af1} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::is\+\_\+deletion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a657b02740363126664434df651ded8eb}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!is\_insertion@{is\_insertion}}
+\index{is\_insertion@{is\_insertion}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{is\_insertion()}{is\_insertion()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a657b02740363126664434df651ded8eb} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::is\+\_\+insertion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ab5da226ef1cd45ae117ce297169e68ff}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!is\_match@{is\_match}}
+\index{is\_match@{is\_match}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{is\_match()}{is\_match()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ab5da226ef1cd45ae117ce297169e68ff} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::is\+\_\+match (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_af97f3e48f0a4966acc8d9bd09e8efdc9}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!is\_substitution@{is\_substitution}}
+\index{is\_substitution@{is\_substitution}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{is\_substitution()}{is\_substitution()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_af97f3e48f0a4966acc8d9bd09e8efdc9} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::is\+\_\+substitution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a81d1070e269a6d272c1c9354e6472055}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!is\_transposition@{is\_transposition}}
+\index{is\_transposition@{is\_transposition}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{is\_transposition()}{is\_transposition()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a81d1070e269a6d272c1c9354e6472055} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::is\+\_\+transposition (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a3d9ff8d5002bb0203a95537e5325cf77}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!line\_write@{line\_write}}
+\index{line\_write@{line\_write}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{line\_write()}{line\_write()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a3d9ff8d5002bb0203a95537e5325cf77} 
+ostream \& stat\+\_\+tool\+::\+Distance\+Matrix\+::line\+\_\+write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Writing on a single line of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em os} & stream. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_a7db89a0e0500b15ff2b14022d6a12a5c}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a43602d9d14304f41aa6f83b4e193128d}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!operator=@{operator=}}
+\index{operator=@{operator=}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a43602d9d14304f41aa6f83b4e193128d} 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \& stat\+\_\+tool\+::\+Distance\+Matrix\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&}]{dist\+\_\+matrix}{}\end{DoxyParamCaption})}
+
+
+
+Assignment operator of the \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dist\+\_\+matrix} & reference on a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a06bcdb14aab894967814f30e291ff344}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!partitioning@{partitioning}}
+\index{partitioning@{partitioning}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{partitioning()}{partitioning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a06bcdb14aab894967814f30e291ff344} 
+\mbox{\hyperlink{classstat__tool_1_1Clusters}{Clusters}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::partitioning (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{std\+::ostream \texorpdfstring{$\ast$}{*}}]{os}{, }\item[{int}]{nb\+\_\+cluster}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{cluster\+\_\+nb\+\_\+pattern}{, }\item[{int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{cluster\+\_\+pattern}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a9384595342d41054179d91709533c746}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!partitioning@{partitioning}}
+\index{partitioning@{partitioning}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{partitioning()}{partitioning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a9384595342d41054179d91709533c746} 
+\mbox{\hyperlink{classstat__tool_1_1Clusters}{Clusters}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::partitioning (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{std\+::ostream \texorpdfstring{$\ast$}{*}}]{os}{, }\item[{int}]{nb\+\_\+cluster}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{prototype}{ = {\ttfamily NULL}, }\item[{int}]{initialization}{ = {\ttfamily 1}, }\item[{int}]{algorithm}{ = {\ttfamily 1}}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a10e672fd277f8701b2cde489475a0779}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!plot\_write@{plot\_write}}
+\index{plot\_write@{plot\_write}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{plot\_write()}{plot\_write()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a10e672fd277f8701b2cde489475a0779} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::plot\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{prefix}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{title}{ = {\ttfamily NULL}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Plot of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object using Gnuplot. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em prefix} & file prefix, \\
+\hline
+\mbox{\texttt{ in}}  & {\em title} & figure title.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error status. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_a22886aaa72572ca234cc5f27a8b25012}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a2ef8eb477cec3645abf60534d3741c90}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!property\_print@{property\_print}}
+\index{property\_print@{property\_print}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{property\_print()}{property\_print()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a2ef8eb477cec3645abf60534d3741c90} 
+ostream \& stat\+\_\+tool\+::\+Distance\+Matrix\+::property\+\_\+print (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{normalized\+\_\+distance}{, }\item[{std\+::ostream \&}]{os}{, }\item[{\mbox{\hyperlink{namespacestat__tool_a4b3f5a0c2b820314d07db4a4a6a71bdd}{output\+\_\+format}}}]{format}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Writing of distance matrix properties. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em normalized\+\_\+distance} & pointer on the normalized distance matrix, \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em os} & stream, \\
+\hline
+\mbox{\texttt{ in}}  & {\em format} & output format (ASCII/\+SPREADSHEET). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ae0ed54b5916f56f3c9f6e7a0ac889453}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!remove@{remove}}
+\index{remove@{remove}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ae0ed54b5916f56f3c9f6e7a0ac889453} 
+void stat\+\_\+tool\+::\+Distance\+Matrix\+::remove (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Destruction of the data members of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a08cafe33175b9de54de79bbe0bf04ba2}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!select\_individual@{select\_individual}}
+\index{select\_individual@{select\_individual}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{select\_individual()}{select\_individual()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a08cafe33175b9de54de79bbe0bf04ba2} 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::select\+\_\+individual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{int}]{inb\+\_\+pattern}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{iidentifier}{, }\item[{bool}]{keep}{ = {\ttfamily true}}\end{DoxyParamCaption}) const}
+
+
+
+Selection of individuals by their identifiers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+pattern} & number of individuals, \\
+\hline
+\mbox{\texttt{ in}}  & {\em iidentifier} & individual identifiers, \\
+\hline
+\mbox{\texttt{ in}}  & {\em keep} & flag for keeping or rejecting the selected individuals.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a13509ebfd4ecd7957a11c9d442c1a475}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!select\_individual@{select\_individual}}
+\index{select\_individual@{select\_individual}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{select\_individual()}{select\_individual()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a13509ebfd4ecd7957a11c9d442c1a475} 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::select\+\_\+individual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{int}]{inb\+\_\+pattern}{, }\item[{std\+::vector$<$ int $>$ \&}]{iidentifier}{, }\item[{bool}]{keep}{ = {\ttfamily true}}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a4425056239ab0aff3162461174558cc0}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!spreadsheet\_write@{spreadsheet\_write}}
+\index{spreadsheet\_write@{spreadsheet\_write}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{spreadsheet\_write()}{spreadsheet\_write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a4425056239ab0aff3162461174558cc0} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::spreadsheet\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{, }\item[{const std\+::string}]{path}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classstat__tool_1_1StatInterface_abcc9eead01dd45344d047916210cfe8c}{stat\+\_\+tool\+::\+Stat\+Interface}}.
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a732727ad1255211a1dafe4642d9790e3}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!spreadsheet\_write@{spreadsheet\_write}}
+\index{spreadsheet\_write@{spreadsheet\_write}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{spreadsheet\_write()}{spreadsheet\_write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a732727ad1255211a1dafe4642d9790e3} 
+std\+::ostream \& stat\+\_\+tool\+::\+Distance\+Matrix\+::spreadsheet\+\_\+write (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_adae0aac7e89f6968acfb1b9c4586ce7d}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!symmetrize@{symmetrize}}
+\index{symmetrize@{symmetrize}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{symmetrize()}{symmetrize()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_adae0aac7e89f6968acfb1b9c4586ce7d} 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::symmetrize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{}\end{DoxyParamCaption}) const}
+
+
+
+Symmetrization of a distance matrix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a64c0d3c513f1a8f11cd42e0ff56f211b}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!test\_symmetry@{test\_symmetry}}
+\index{test\_symmetry@{test\_symmetry}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{test\_symmetry()}{test\_symmetry()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a64c0d3c513f1a8f11cd42e0ff56f211b} 
+bool stat\+\_\+tool\+::\+Distance\+Matrix\+::test\+\_\+symmetry (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\doxylink{classstat__tool_1_1Test}{Test} of the symmetry of a distance matrix. 
+
+\begin{DoxyReturn}{Returns}
+flag symmetric matrix or not. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a32e75d6cb868b2a774cd8545c0a75b57}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!unnormalize@{unnormalize}}
+\index{unnormalize@{unnormalize}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{unnormalize()}{unnormalize()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a32e75d6cb868b2a774cd8545c0a75b57} 
+\mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::unnormalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&}]{error}{}\end{DoxyParamCaption}) const}
+
+
+
+Unnormalization of a distance matrix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em error} & reference on a \doxylink{classstat__tool_1_1StatError}{Stat\+Error} object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object. 
+\end{DoxyReturn}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a5a49aba2c3349fb68b7ebefdc32a5abc}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!update@{update}}
+\index{update@{update}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a5a49aba2c3349fb68b7ebefdc32a5abc} 
+void stat\+\_\+tool\+::\+Distance\+Matrix\+::update (\begin{DoxyParamCaption}\item[{int}]{irow\+\_\+identifier}{, }\item[{int}]{icolumn\+\_\+identifier}{, }\item[{double}]{idistance}{, }\item[{int}]{alignment\+\_\+length}{, }\item[{double}]{ideletion\+\_\+distance}{, }\item[{int}]{inb\+\_\+deletion}{, }\item[{double}]{iinsertion\+\_\+distance}{, }\item[{int}]{inb\+\_\+insertion}{, }\item[{int}]{inb\+\_\+match}{, }\item[{double}]{isubstitution\+\_\+distance}{ = {\ttfamily 0.}, }\item[{int}]{inb\+\_\+substitution}{ = {\ttfamily 0}, }\item[{double}]{itransposition\+\_\+distance}{ = {\ttfamily 0.}, }\item[{int}]{inb\+\_\+transposition}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Update of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object with the result of the alignment of 2 structures. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em irow\+\_\+identifier} & row identifier (1st individual), \\
+\hline
+\mbox{\texttt{ in}}  & {\em icolumn\+\_\+identifier} & column identifier (2nd individual), \\
+\hline
+\mbox{\texttt{ in}}  & {\em idistance} & distance, \\
+\hline
+\mbox{\texttt{ in}}  & {\em alignment\+\_\+length} & alignment length, \\
+\hline
+\mbox{\texttt{ in}}  & {\em ideletion\+\_\+distance} & deletion distance, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+deletion} & number of deletions, \\
+\hline
+\mbox{\texttt{ in}}  & {\em iinsertion\+\_\+distance} & insertion distance, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+insertion} & number of insertions, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+match} & number of matches, \\
+\hline
+\mbox{\texttt{ in}}  & {\em isubstitution\+\_\+distance} & substitution distance, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+substitution} & number of substitutions, \\
+\hline
+\mbox{\texttt{ in}}  & {\em itransposition\+\_\+distance} & transposition distance, \\
+\hline
+\mbox{\texttt{ in}}  & {\em inb\+\_\+transposition} & number of transpositions. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a867d2a640e0ce6a93f5a015f5d5bdedf}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!update@{update}}
+\index{update@{update}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a867d2a640e0ce6a93f5a015f5d5bdedf} 
+void stat\+\_\+tool\+::\+Distance\+Matrix\+::update (\begin{DoxyParamCaption}\item[{int}]{irow\+\_\+identifier}{, }\item[{int}]{icolumn\+\_\+identifier}{, }\item[{double}]{idistance}{, }\item[{int}]{ilength}{}\end{DoxyParamCaption})}
+
+
+
+Update of a \doxylink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix} object with the result of a comparison. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em irow\+\_\+identifier} & row identifier (1st individual), \\
+\hline
+\mbox{\texttt{ in}}  & {\em icolumn\+\_\+identifier} & column identifier (2nd individual), \\
+\hline
+\mbox{\texttt{ in}}  & {\em idistance} & distance, \\
+\hline
+\mbox{\texttt{ in}}  & {\em ilength} & length. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a4091aaac7961581f1127e62da102ce49}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!Clusters@{Clusters}}
+\index{Clusters@{Clusters}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{Clusters}{Clusters}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a4091aaac7961581f1127e62da102ce49} 
+friend class \mbox{\hyperlink{classstat__tool_1_1Clusters}{Clusters}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ac5ca9538f425c1303c8e0b0b4b73f6d3}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!Dendrogram@{Dendrogram}}
+\index{Dendrogram@{Dendrogram}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{Dendrogram}{Dendrogram}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ac5ca9538f425c1303c8e0b0b4b73f6d3} 
+friend class \mbox{\hyperlink{classstat__tool_1_1Dendrogram}{Dendrogram}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_afd7e6547ec9bcd3b7368bb1ea01ff2d6}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_afd7e6547ec9bcd3b7368bb1ea01ff2d6} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classstat__tool_1_1DistanceMatrix}{Distance\+Matrix}} \&}]{dist\+\_\+matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a280897b3b5f55beeebc1c8aa7b3b6815}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!column\_identifier@{column\_identifier}}
+\index{column\_identifier@{column\_identifier}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{column\_identifier}{column\_identifier}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a280897b3b5f55beeebc1c8aa7b3b6815} 
+int\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::column\+\_\+identifier\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+column identifiers 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a6d6daa96bfbf8dafa223139764c95160}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!deletion\_distance@{deletion\_distance}}
+\index{deletion\_distance@{deletion\_distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{deletion\_distance}{deletion\_distance}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a6d6daa96bfbf8dafa223139764c95160} 
+double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::deletion\+\_\+distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+deletion distances 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ab73d90de4270eb12ea42653f1ef24ea0}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!distance@{distance}}
+\index{distance@{distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ab73d90de4270eb12ea42653f1ef24ea0} 
+double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+distances 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_adb33aa11a8ae05817bbaabe5c927b666}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!insertion\_distance@{insertion\_distance}}
+\index{insertion\_distance@{insertion\_distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{insertion\_distance}{insertion\_distance}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_adb33aa11a8ae05817bbaabe5c927b666} 
+double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::insertion\+\_\+distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+insertion distances 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_aa1cfb7ffe9c3bbb2a06754499dc8c62d}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!label@{label}}
+\index{label@{label}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{label}{label}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_aa1cfb7ffe9c3bbb2a06754499dc8c62d} 
+char\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::label\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+label 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ad333b6c172e9c0f837e3a73396b899ae}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!label\_size@{label\_size}}
+\index{label\_size@{label\_size}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{label\_size}{label\_size}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ad333b6c172e9c0f837e3a73396b899ae} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::label\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+label size 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a36200ff65d138f78d858935981f3fa70}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!length@{length}}
+\index{length@{length}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a36200ff65d138f78d858935981f3fa70} 
+int\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::length\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+lengths 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a6ed0ab1e91a1f57c6b47a6de89107740}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!nb\_column@{nb\_column}}
+\index{nb\_column@{nb\_column}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{nb\_column}{nb\_column}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a6ed0ab1e91a1f57c6b47a6de89107740} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::nb\+\_\+column\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+number of columns 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_af5d755ebac6d247253017ab76b4f362d}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!nb\_deletion@{nb\_deletion}}
+\index{nb\_deletion@{nb\_deletion}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{nb\_deletion}{nb\_deletion}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_af5d755ebac6d247253017ab76b4f362d} 
+int\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::nb\+\_\+deletion\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+numbers of deletions 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ae33d83431caa34b6c33fb516c2d0a528}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!nb\_insertion@{nb\_insertion}}
+\index{nb\_insertion@{nb\_insertion}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{nb\_insertion}{nb\_insertion}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ae33d83431caa34b6c33fb516c2d0a528} 
+int\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::nb\+\_\+insertion\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+numbers of insertions 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ae124d1e9672f51b3914f13cec130518e}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!nb\_match@{nb\_match}}
+\index{nb\_match@{nb\_match}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{nb\_match}{nb\_match}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ae124d1e9672f51b3914f13cec130518e} 
+int\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::nb\+\_\+match\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+numbers of matches 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a0db7861c0b504c2a67c6571cefbf184b}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!nb\_row@{nb\_row}}
+\index{nb\_row@{nb\_row}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{nb\_row}{nb\_row}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a0db7861c0b504c2a67c6571cefbf184b} 
+int stat\+\_\+tool\+::\+Distance\+Matrix\+::nb\+\_\+row\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+number of rows 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a803694939a7ad08595bcc2408604c66b}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!nb\_substitution@{nb\_substitution}}
+\index{nb\_substitution@{nb\_substitution}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{nb\_substitution}{nb\_substitution}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a803694939a7ad08595bcc2408604c66b} 
+int\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::nb\+\_\+substitution\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+numbers of substitutions 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a2224871a9803af5847c2ceb05642be0c}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!nb\_transposition@{nb\_transposition}}
+\index{nb\_transposition@{nb\_transposition}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{nb\_transposition}{nb\_transposition}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a2224871a9803af5847c2ceb05642be0c} 
+int\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::nb\+\_\+transposition\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+numbers of transpositions 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_ac05f503eb391ff4bd36c304d18053f99}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!row\_identifier@{row\_identifier}}
+\index{row\_identifier@{row\_identifier}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{row\_identifier}{row\_identifier}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_ac05f503eb391ff4bd36c304d18053f99} 
+int\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::row\+\_\+identifier\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+row identifiers 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_a87f6ece480a62008e8068239a7f563e4}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!substitution\_distance@{substitution\_distance}}
+\index{substitution\_distance@{substitution\_distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{substitution\_distance}{substitution\_distance}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_a87f6ece480a62008e8068239a7f563e4} 
+double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::substitution\+\_\+distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+substitution distances 
+
+\Hypertarget{classstat__tool_1_1DistanceMatrix_af3923868671c360a94f87efe597a7e14}\index{stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}!transposition\_distance@{transposition\_distance}}
+\index{transposition\_distance@{transposition\_distance}!stat\_tool::DistanceMatrix@{stat\_tool::DistanceMatrix}}
+\doxysubsubsection{\texorpdfstring{transposition\_distance}{transposition\_distance}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1DistanceMatrix_af3923868671c360a94f87efe597a7e14} 
+double\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} stat\+\_\+tool\+::\+Distance\+Matrix\+::transposition\+\_\+distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+transposition distances 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{distance__matrix_8h}{distance\+\_\+matrix.\+h}}\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{dendrogram_8cpp}{dendrogram.\+cpp}}\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{distance__matrix_8cpp}{distance\+\_\+matrix.\+cpp}}\end{DoxyCompactItemize}

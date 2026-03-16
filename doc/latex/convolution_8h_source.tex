@@ -1,0 +1,201 @@
+\doxysection{convolution.\+h}
+\hypertarget{convolution_8h_source}{}\label{convolution_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/convolution.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/convolution.h}}
+\mbox{\hyperlink{convolution_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ \ \ \ \ StructureAnalysis:\ Identifying\ patterns\ in\ plant\ architecture\ and\ development}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Copyright\ 1995-\/2019\ CIRAD\ AGAP}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ \ File\ author(s):\ Yann\ Guedon\ (yann.guedon@cirad.fr)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Source\$}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Id\$}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Forum\ for\ StructureAnalysis\ developers:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GNU\ General\ Public\ Licence}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ modify\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ published\ by\ the\ Free\ Software\ Foundation;\ either\ version\ 2\ of}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ the\ License,\ or\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ \ \ \ \ \ \ MERCHANTABILITY\ or\ FITNESS\ For\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ \ \ \ \ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ \ \ \ \ \ \ License\ along\ with\ this\ program;\ see\ the\ file\ COPYING.\ If\ not,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ \ \ \ \ \ \ write\ to\ the\ Free\ Software\ Foundation,\ Inc.,\ 59}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Temple\ Place\ -\/\ Suite\ 330,\ Boston,\ MA\ 02111-\/1307,\ USA.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ CONVOLUTION\_H}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ CONVOLUTION\_H}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stat__tools_8h}{stat\_tools.h}}"{}}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{distribution_8h}{distribution.h}}"{}}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestat__tool}{stat\_tool}}\ \{}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ *\ \ Constants}}
+\DoxyCodeLine{00054\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_ac6d4838bd3e431c97ca098c5144214e6}{CONVOLUTION\_NB\_DISTRIBUTION}}\ =\ 10;\ \ \textcolor{comment}{//\ maximum\ number\ of\ elementary\ distributions}}
+\DoxyCodeLine{00058\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_af4547c21f4b13f2eff91f0f830b1ae37}{CONVOLUTION\_THRESHOLD}}\ =\ 0.9999;\ \ \textcolor{comment}{//\ threshold\ on\ the\ cumulative\ distribution\ function}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ for\ determining\ the\ upper\ bound\ of\ the\ support}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_abe51eaa16cd475438546bec333ac9aa3}{CONVOLUTION\_INIT\_PROBABILITY}}\ =\ 0.001;\ \ \textcolor{comment}{//\ threshold\ for\ probability\ initialization}}
+\DoxyCodeLine{00062\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_a03df11abd7e97ce63d2c170f824e3d97}{CONVOLUTION\_LIKELIHOOD\_DIFF}}\ =\ 1.e-\/5;\ \ \textcolor{comment}{//\ threshold\ for\ stopping\ EM\ iterations}}
+\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_ae9c4b387029b5c93f91e0b2816c13d45}{CONVOLUTION\_NB\_ITER}}\ =\ 10000;\ \ \textcolor{comment}{//\ maximum\ number\ of\ EM\ iterations}}
+\DoxyCodeLine{00064\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_ab94edaba481d463ad6f75f5e0d56155f}{CONVOLUTION\_DIFFERENCE\_WEIGHT}}\ =\ 0.5;\ \ \textcolor{comment}{//\ default\ penalty\ weight\ (1st-\/\ or\ 2nd-\/order\ difference\ cases)}}
+\DoxyCodeLine{00065\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_a221c29e73376099ac04bf7c4911a785a}{CONVOLUTION\_ENTROPY\_WEIGHT}}\ =\ 0.1;\ \ \textcolor{comment}{//\ default\ penalty\ weight\ (entropy\ case)}}
+\DoxyCodeLine{00066\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_aea9a9de465caf7f35d491f484e571a05}{CONVOLUTION\_COEFF}}\ =\ 10;\ \ \ \ \ \ \textcolor{comment}{//\ rounding\ coefficient\ for\ the\ estimator}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ *\ \ Class\ definition}}
+\DoxyCodeLine{00073\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1ConvolutionData}{ConvolutionData}};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a6334057f01372778a818c267e65c1338}{Convolution}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ ,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1Distribution_a7854c3e83af17605b6f1b2e08191a883}{Distribution}}\ \{}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Convolution_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}};}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Convolution_ade4c49347957957cc00e46333247e55c}{ConvolutionData}};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ae09a783c3a4974c7be092ab292bcc9fd}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a6334057f01372778a818c267e65c1338}{Convolution}}\ \&convol)}
+\DoxyCodeLine{00086\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ convol.\mbox{\hyperlink{classstat__tool_1_1Convolution_a61cbfa23017dc9472566e09b0714cf9f}{ascii\_write}}(os\ ,\ convol.\mbox{\hyperlink{classstat__tool_1_1Convolution_a3d06666e25068c26b792605d88f79de7}{convolution\_data}}\ ,\ \textcolor{keyword}{false}\ ,\ \textcolor{keyword}{false});\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ private\ :}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution_ade4c49347957957cc00e46333247e55c}{ConvolutionData}}\ *\mbox{\hyperlink{classstat__tool_1_1Convolution_a3d06666e25068c26b792605d88f79de7}{convolution\_data}};\ \ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a5df06b56a312f8f911d3019a35b8af51}{nb\_distribution}};\ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ **\mbox{\hyperlink{classstat__tool_1_1Convolution_a2083095aa8235f8c523b3f7f7eb88d0b}{distribution}};\ \ }
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ab720999a1378fc77d28ad61c7c5ff908}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a6334057f01372778a818c267e65c1338}{Convolution}}\ \&convol\ ,\ \textcolor{keywordtype}{bool}\ data\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ab2bedadac87224eab2c867d3c22f042b}{remove}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a61cbfa23017dc9472566e09b0714cf9f}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ade4c49347957957cc00e46333247e55c}{ConvolutionData}}\ *convol\_histo\ ,}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00099\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Convolution_aca08d01e47c6b76dba4dfd49a803f4de}{spreadsheet\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ade4c49347957957cc00e46333247e55c}{ConvolutionData}}\ *convol\_histo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a69ee53dca0a87e9bf9fcec0351852057}{plot\_write}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ade4c49347957957cc00e46333247e55c}{ConvolutionData}}\ *convol\_histo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1Convolution_aac5cfe6081c33cca9bedbde09f68b127}{get\_plotable}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ade4c49347957957cc00e46333247e55c}{ConvolutionData}}\ *convol\_histo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a792eaf47f0bc70be80925d1b24b6e79f}{expectation\_step}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ \&histo\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Distribution_a7854c3e83af17605b6f1b2e08191a883}{Distribution}}\ **partial\_convol\ ,}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<double>}}\ **reestim)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ public\ :}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution_a6334057f01372778a818c267e65c1338}{Convolution}}();}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution_a6334057f01372778a818c267e65c1338}{Convolution}}(\textcolor{keywordtype}{int}\ nb\_dist\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ **pdist);}
+\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution_a320f0f8eae4fca2bac25375162e931fc}{Convolution}}(\textcolor{keywordtype}{int}\ nb\_dist\ ,\ \textcolor{keyword}{const}\ std::vector<DiscreteParametric>\ \&idist);}
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution_a6334057f01372778a818c267e65c1338}{Convolution}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ \&known\_dist\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ \&unknown\_dist);}
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution_ad10b80a56fc520a080b6829e9914c5fd}{Convolution}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a6334057f01372778a818c267e65c1338}{Convolution}}\ \&convol\ ,\ \textcolor{keywordtype}{bool}\ data\_flag\ =\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00114\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1Distribution_a7854c3e83af17605b6f1b2e08191a883}{Distribution}}(convol)\ \{\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ab720999a1378fc77d28ad61c7c5ff908}{copy}}(convol\ ,\ data\_flag);\ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution}{\string~Convolution}}();}
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution}{Convolution}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Convolution}{Convolution}}\ \&convol);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}*\ extract(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData}{ConvolutionData}}*\ extract\_data(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1Convolution}{Convolution}}*\ build(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ nb\_dist\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ **dist);}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a6334057f01372778a818c267e65c1338}{Convolution}}*\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a69b01b84118d9a13b66a17404667f0df}{build}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::vector<DiscreteParametric>\ \&dist);}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a6334057f01372778a818c267e65c1338}{Convolution}}*\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ab35bb985fed119a8a31f87655b0581f1}{ascii\_read}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ \mbox{\hyperlink{namespacestat__tool_af4547c21f4b13f2eff91f0f830b1ae37}{CONVOLUTION\_THRESHOLD}});}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a83f3914f088950d7bd5a31f5378d0460}{line\_write}}(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a7093e7c568468bfc9c4651c9be932ea0}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a2f18a95d197169d1cb9c65ee84cf55de}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a24207ee86708d3068aa8590a9f4c62c7}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a69ee53dca0a87e9bf9fcec0351852057}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00132\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1Convolution_aac5cfe6081c33cca9bedbde09f68b127}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ac9cc9a17f1a2bcf9039e7694df481ad2}{computation}}(\textcolor{keywordtype}{int}\ min\_nb\_value\ =\ 1\ ,\ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ \mbox{\hyperlink{namespacestat__tool_af4547c21f4b13f2eff91f0f830b1ae37}{CONVOLUTION\_THRESHOLD}}\ ,}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ *dist\_flag\ =\ NULL);}
+\DoxyCodeLine{00136\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution_ade4c49347957957cc00e46333247e55c}{ConvolutionData}}*\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a48297e34c0af15710a49829b3b6d6d8b}{simulation}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ nb\_element)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{comment}{//\ class\ member\ access}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Convolution_ade4c49347957957cc00e46333247e55c}{ConvolutionData}}*\ \mbox{\hyperlink{classstat__tool_1_1Convolution_ad6b07ba078aea86e0460fee3e60ef838}{get\_convolution\_data}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a3d06666e25068c26b792605d88f79de7}{convolution\_data}};\ \}}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a3bcc5b25d83cacff8140d2275081175b}{get\_nb\_distribution}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a5df06b56a312f8f911d3019a35b8af51}{nb\_distribution}};\ \}}
+\DoxyCodeLine{00142\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}*\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a962393ed17cb8f587ccdeb7f20e5b527}{get\_distribution}}(\textcolor{keywordtype}{int}\ index)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Convolution_a2083095aa8235f8c523b3f7f7eb88d0b}{distribution}}[index];\ \}}
+\DoxyCodeLine{00143\ \ \ \};}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a0a87da1220cd1a68351a65d4d94524f3}{ConvolutionData}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ ,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ \{}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}};}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a270f44672ddc02df262594f6a0dd1472}{Convolution}};}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a4a66423afb42658964e984bb3ae120c6}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a0a87da1220cd1a68351a65d4d94524f3}{ConvolutionData}}\ \&convol\_histo)}
+\DoxyCodeLine{00154\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ convol\_histo.\mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a0f588f21571aeb7c5f842c1de5509d03}{ascii\_write}}(os\ ,\ \textcolor{keyword}{false});\ \}}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ private\ :}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a270f44672ddc02df262594f6a0dd1472}{Convolution}}\ *\mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a6bb154dd2730c7a7bce84898f4f36f6f}{convolution}};\ \ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a51112a9b4ec2753ed9f0992f28d833c7}{nb\_distribution}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ **\mbox{\hyperlink{classstat__tool_1_1ConvolutionData_ac0dc30f83e8891ff7d1d2f81127dd444}{frequency\_distribution}};\ \ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_ac3a4b81246a2dc34d1179c7d5aa2b78a}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a0a87da1220cd1a68351a65d4d94524f3}{ConvolutionData}}\ \&convol\_histo\ ,\ \textcolor{keywordtype}{bool}\ model\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a3ea2961b6bfe7457f1cd7b7d97f8cff7}{remove}}();}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ public\ :}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a0a87da1220cd1a68351a65d4d94524f3}{ConvolutionData}}();}
+\DoxyCodeLine{00168\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a0a87da1220cd1a68351a65d4d94524f3}{ConvolutionData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ \&histo\ ,\ \textcolor{keywordtype}{int}\ nb\_dist);}
+\DoxyCodeLine{00169\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a0a87da1220cd1a68351a65d4d94524f3}{ConvolutionData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a270f44672ddc02df262594f6a0dd1472}{Convolution}}\ \&convol);}
+\DoxyCodeLine{00170\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a50c8c49438cbd85ec016844f6187ef4a}{ConvolutionData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a0a87da1220cd1a68351a65d4d94524f3}{ConvolutionData}}\ \&convol\_histo\ ,\ \textcolor{keywordtype}{bool}\ model\_flag\ =\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00171\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}(convol\_histo)\ \{\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_ac3a4b81246a2dc34d1179c7d5aa2b78a}{copy}}(convol\_histo\ ,\ model\_flag);\ \}}
+\DoxyCodeLine{00172\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData}{\string~ConvolutionData}}();}
+\DoxyCodeLine{00173\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData}{ConvolutionData}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData}{ConvolutionData}}\ \&convol\_histo);}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}*\ extract(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ std::ostream\&\ line\_write(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a0f588f21571aeb7c5f842c1de5509d03}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a6105b5f76f73e772a2ff609de7da576b}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a9c840f2997a2237c273f5326701cf57c}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a7ba504b5a14f96dc55e5b0adcea67ec0}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00183\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_aa3492aa5d7cb0f7839014d2e4acce2ff}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \ \ \ \ \textcolor{comment}{//\ class\ member\ access}}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a270f44672ddc02df262594f6a0dd1472}{Convolution}}*\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a6cce8f165dae4827cdeb55a76b096178}{get\_convolution}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a6bb154dd2730c7a7bce84898f4f36f6f}{convolution}};\ \}}
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a86bbfd2936c74777654809d3e6536e0e}{get\_nb\_distribution}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a51112a9b4ec2753ed9f0992f28d833c7}{nb\_distribution}};\ \}}
+\DoxyCodeLine{00189\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}*\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_aba7a3977b568d42aff0f6dd329175210}{get\_frequency\_distribution}}(\textcolor{keywordtype}{int}\ index)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1ConvolutionData_ac0dc30f83e8891ff7d1d2f81127dd444}{frequency\_distribution}}[index];\ \}}
+\DoxyCodeLine{00190\ \ \ \};}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

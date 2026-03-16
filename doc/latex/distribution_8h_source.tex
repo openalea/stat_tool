@@ -1,0 +1,181 @@
+\doxysection{distribution.\+h}
+\hypertarget{distribution_8h_source}{}\label{distribution_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/distribution.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/distribution.h}}
+\mbox{\hyperlink{distribution_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ \ \ \ \ StructureAnalysis:\ Identifying\ patterns\ in\ plant\ architecture\ and\ development}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Copyright\ 1995-\/2019\ CIRAD\ AGAP}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ \ File\ author(s):\ Yann\ Guedon\ (yann.guedon@cirad.fr)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Source\$}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Id\$}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Forum\ for\ StructureAnalysis\ developers:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GNU\ General\ Public\ Licence}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ modify\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ published\ by\ the\ Free\ Software\ Foundation;\ either\ version\ 2\ of}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ the\ License,\ or\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ \ \ \ \ \ \ MERCHANTABILITY\ or\ FITNESS\ For\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ \ \ \ \ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ \ \ \ \ \ \ License\ along\ with\ this\ program;\ see\ the\ file\ COPYING.\ If\ not,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ \ \ \ \ \ \ write\ to\ the\ Free\ Software\ Foundation,\ Inc.,\ 59}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Temple\ Place\ -\/\ Suite\ 330,\ Boston,\ MA\ 02111-\/1307,\ USA.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ DISTRIBUTION\_H}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ DISTRIBUTION\_H}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stat__tools_8h}{stat\_tools.h}}"{}}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestat__tool}{stat\_tool}}\ \{}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_af9e03464a2605820f3a2a9fb72a8fc2d}{DiscreteParametricModel}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ ,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric_a993562dd20b4e3e1c0ec1e688db2c14a}{DiscreteParametric}}\ \{}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad242f504bb80cb2c709269b3eda4edbf}{Distribution}};\ \ \textcolor{comment}{//\ Hack\ for\ Windows}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad749567f82a528afc6ba9a3a9bacdae7}{DiscreteDistributionData}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a667b59a69f29a2b6acbf5342d71133e6}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_af9e03464a2605820f3a2a9fb72a8fc2d}{DiscreteParametricModel}}\ \&dist)}
+\DoxyCodeLine{00059\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ dist.\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_af73023ccae63fa3957145068c9fe1f7b}{ascii\_write}}(os\ ,\ dist.\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a2cbc7b13595aeff86a67c6a39c4115b5}{frequency\_distribution}}\ ,\ \textcolor{keyword}{false}\ ,\ \textcolor{keyword}{false});\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ private\ :}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad749567f82a528afc6ba9a3a9bacdae7}{DiscreteDistributionData}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a2cbc7b13595aeff86a67c6a39c4115b5}{frequency\_distribution}};\ \ \textcolor{comment}{//\ pointer\ on\ a\ DiscreteDistributionData\ object}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_af73023ccae63fa3957145068c9fe1f7b}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad749567f82a528afc6ba9a3a9bacdae7}{DiscreteDistributionData}}\ *histo\ ,}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a8928e3c77a351fec00f0ee176f98f694}{spreadsheet\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad749567f82a528afc6ba9a3a9bacdae7}{DiscreteDistributionData}}\ *histo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a82110efbcbe82ae24f44f4dc496cceba}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad749567f82a528afc6ba9a3a9bacdae7}{DiscreteDistributionData}}\ *histo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a01892cddac5fdcf2f243eadbf5594965}{get\_plotable}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad749567f82a528afc6ba9a3a9bacdae7}{DiscreteDistributionData}}\ *histo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ public\ :}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_af9e03464a2605820f3a2a9fb72a8fc2d}{DiscreteParametricModel}}(\textcolor{keywordtype}{int}\ inb\_value\ =\ 0\ ,\ \mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1be}{discrete\_parametric}}\ iident\ =\ \mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1bea9d581589fb4345dd675e76f3d76a9404}{CATEGORICAL}}\ ,}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ iinf\_bound\ =\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}}\ ,\ \textcolor{keywordtype}{int}\ isup\_bound\ =\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}}\ ,}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ iparameter\ =\ \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{D\_DEFAULT}},\ \textcolor{keywordtype}{double}\ iprobability\ =\ \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{D\_DEFAULT}})}
+\DoxyCodeLine{00077\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1DiscreteParametric_a993562dd20b4e3e1c0ec1e688db2c14a}{DiscreteParametric}}(inb\_value\ ,\ iident\ ,\ iinf\_bound\ ,\ isup\_bound\ ,\ iparameter\ ,\ iprobability)}
+\DoxyCodeLine{00078\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a2cbc7b13595aeff86a67c6a39c4115b5}{frequency\_distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ac2396694642f234577a0329c83b290c2}{DiscreteParametricModel}}(\mbox{\hyperlink{namespacestat__tool_ab32adb2d4c1e13f7aadbcb9fef4db1be}{discrete\_parametric}}\ iident\ ,\ \textcolor{keywordtype}{int}\ iinf\_bound\ ,\ \textcolor{keywordtype}{int}\ isup\_bound\ ,}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ iparameter\ ,\ \textcolor{keywordtype}{double}\ iprobability\ ,}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ \mbox{\hyperlink{namespacestat__tool_ad4d38b02123065463dd289f1adbaf8c2}{CUMUL\_THRESHOLD}})}
+\DoxyCodeLine{00082\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1DiscreteParametric_a993562dd20b4e3e1c0ec1e688db2c14a}{DiscreteParametric}}(iident\ ,\ iinf\_bound\ ,\ isup\_bound\ ,\ iparameter\ ,\ iprobability\ ,\ cumul\_threshold)}
+\DoxyCodeLine{00083\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a2cbc7b13595aeff86a67c6a39c4115b5}{frequency\_distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a95b3102bce8d4096308e21984a1e3afe}{DiscreteParametricModel}}(\textcolor{keywordtype}{int}\ iinf\_bound\ ,\ \textcolor{keywordtype}{int}\ ino\_segment\ ,\ \textcolor{keywordtype}{int}\ isequence\_length)}
+\DoxyCodeLine{00085\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1DiscreteParametric_a993562dd20b4e3e1c0ec1e688db2c14a}{DiscreteParametric}}(iinf\_bound\ ,\ ino\_segment\ ,\ isequence\_length)}
+\DoxyCodeLine{00086\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a2cbc7b13595aeff86a67c6a39c4115b5}{frequency\_distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ \&histo);}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a16d38f0cf5282a268da9dcadd1715a03}{DiscreteParametricModel}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad242f504bb80cb2c709269b3eda4edbf}{Distribution}}\ \&dist)}
+\DoxyCodeLine{00089\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1DiscreteParametric_a993562dd20b4e3e1c0ec1e688db2c14a}{DiscreteParametric}}(dist)\ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a2cbc7b13595aeff86a67c6a39c4115b5}{frequency\_distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00090\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a5631d7bda6843f9a9263eb6c67dc786b}{DiscreteParametricModel}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric_a993562dd20b4e3e1c0ec1e688db2c14a}{DiscreteParametric}}\ \&dist)}
+\DoxyCodeLine{00091\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1DiscreteParametric_a993562dd20b4e3e1c0ec1e688db2c14a}{DiscreteParametric}}(dist)\ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a2cbc7b13595aeff86a67c6a39c4115b5}{frequency\_distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ \&dist\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *histo);}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ \&dist\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *histo);}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}\ \&dist\ ,\ \textcolor{keywordtype}{bool}\ data\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{\string~DiscreteParametricModel}}();}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}\ \&dist);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}*\ extract\_data(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}*\ ascii\_read(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ \mbox{\hyperlink{namespacestat__tool_ad4d38b02123065463dd289f1adbaf8c2}{CUMUL\_THRESHOLD}});}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ std::ostream\&\ line\_write(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_aa8cc27e167a74b155caa98fcaeedb491}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ab0065cab370c50ac0328bb0ccf1b28d4}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_aecd274ec81effdb72b749b29e800ce32}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a82110efbcbe82ae24f44f4dc496cceba}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a01892cddac5fdcf2f243eadbf5594965}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad749567f82a528afc6ba9a3a9bacdae7}{DiscreteDistributionData}}*\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a988832322c265f180ac7bbaec2f722f5}{simulation}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ nb\_element)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_ad749567f82a528afc6ba9a3a9bacdae7}{DiscreteDistributionData}}*\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_aef161d2a7f6cbada4d1ada4c057debf6}{get\_frequency\_distribution}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel_a2cbc7b13595aeff86a67c6a39c4115b5}{frequency\_distribution}};\ \}}
+\DoxyCodeLine{00114\ \ \ \};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \textcolor{comment}{//\ \(\backslash\)brief\ Frequency\ distribution\ (discrete\ histogram)}}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_aacd336304ce761712170cd1ed16d1316}{DiscreteDistributionData}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ ,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}\ \{}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_ac4c863ff1083b9d33f4937c9bbee4202}{DiscreteParametricModel}};}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a808f4dd2303df5f9d091792dcb38ed65}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_aacd336304ce761712170cd1ed16d1316}{DiscreteDistributionData}}\ \&histo)}
+\DoxyCodeLine{00124\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ histo.\mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a4622f3812693ca1c09191539c6d7efb3}{ascii\_write}}(os);\ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ private\ :}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_ac4c863ff1083b9d33f4937c9bbee4202}{DiscreteParametricModel}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a87773548e72be6ebd6f5f0159bfbefda}{distribution}};\ \ \textcolor{comment}{//\ pointer\ on\ a\ DiscreteParametricModel\ object}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a4622f3812693ca1c09191539c6d7efb3}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ public\ :}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_aacd336304ce761712170cd1ed16d1316}{DiscreteDistributionData}}(\textcolor{keywordtype}{int}\ inb\_value\ =\ 0)}
+\DoxyCodeLine{00135\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}(inb\_value)\ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a87773548e72be6ebd6f5f0159bfbefda}{distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00136\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a5956a65776c1f55ad113770b81f9420c}{DiscreteDistributionData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ \&dist)}
+\DoxyCodeLine{00137\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}(dist)\ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a87773548e72be6ebd6f5f0159bfbefda}{distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00138\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a95d41611388d786d5aec2962150a2de2}{DiscreteDistributionData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}\ \&histo)}
+\DoxyCodeLine{00139\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}(histo)\ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a87773548e72be6ebd6f5f0159bfbefda}{distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00140\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a60e9052e8e18603f50aed5eaa9bbea9e}{DiscreteDistributionData}}(\textcolor{keywordtype}{int}\ inb\_element\ ,\ \textcolor{keywordtype}{int}\ *ielement)}
+\DoxyCodeLine{00141\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}(inb\_element\ ,\ ielement)\ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a87773548e72be6ebd6f5f0159bfbefda}{distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00142\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a22ffe42b694417f32a16903b3232fdc5}{DiscreteDistributionData}}(\textcolor{keyword}{const}\ std::vector<int>\ \&ielement)}
+\DoxyCodeLine{00143\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}(ielement)\ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a87773548e72be6ebd6f5f0159bfbefda}{distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00144\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a539e4fb2cdd9c94da3dcf8ba5aa71f8c}{DiscreteDistributionData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}\ \&histo\ ,}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_abd6c99f8060d0e04a26e51684d29c71c}{frequency\_distribution\_transformation}}\ transform\ ,}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ param\ ,\ \mbox{\hyperlink{namespacestat__tool_aff1878a835ad9e82d9dee4e44267d0bc}{rounding}}\ mode\ =\ \mbox{\hyperlink{namespacestat__tool_aff1878a835ad9e82d9dee4e44267d0bca2b308bfaa8738a2e898642be31cf5b00}{FLOOR}})}
+\DoxyCodeLine{00147\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}(histo\ ,\ transform\ ,\ param\ ,\ mode)\ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a87773548e72be6ebd6f5f0159bfbefda}{distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a574d01def0938aa7127404a76c6b85cd}{DiscreteDistributionData}}(\textcolor{keywordtype}{int}\ nb\_histo\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}\ **phisto)}
+\DoxyCodeLine{00149\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution_affb9f130a506c8bf2ef3f0b36d79ba71}{FrequencyDistribution}}(nb\_histo\ ,\ phisto)\ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a87773548e72be6ebd6f5f0159bfbefda}{distribution}}\ =\ NULL;\ \}}
+\DoxyCodeLine{00150\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ \&histo\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *dist);}
+\DoxyCodeLine{00151\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ \&histo\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ *dist);}
+\DoxyCodeLine{00152\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}\ \&histo\ ,\ \textcolor{keywordtype}{bool}\ model\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00153\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{\string~DiscreteDistributionData}}();}
+\DoxyCodeLine{00154\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}\ \&histo);}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricModel}{DiscreteParametricModel}}*\ extract\_model(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData}{DiscreteDistributionData}}*\ ascii\_read(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path);}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ std::ostream\&\ line\_write(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_aa9b7627a40a150b57de432069574efca}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_ac2eaeaf7ca7f932ff3a70569aab5422c}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_af8c0206a197e468f630d019c795dd6e4}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a2f6b8f4be00091ee6a1b3127d6711570}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00166\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_af32cd4ee1d5e633e027555ff0c5133e9}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}*\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a2dd9704a00d6916c8048840dada86a09}{get\_distribution}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteDistributionData_a87773548e72be6ebd6f5f0159bfbefda}{distribution}};\ \}}
+\DoxyCodeLine{00169\ \ \ \};}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

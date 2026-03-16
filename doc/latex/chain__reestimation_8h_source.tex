@@ -1,0 +1,97 @@
+\doxysection{chain\+\_\+reestimation.\+h}
+\hypertarget{chain__reestimation_8h_source}{}\label{chain__reestimation_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/chain\_reestimation.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/chain\_reestimation.h}}
+\mbox{\hyperlink{chain__reestimation_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ \ \ \ \ StructureAnalysis:\ Identifying\ patterns\ in\ plant\ architecture\ and\ development}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Copyright\ 1995-\/2018\ CIRAD\ AGAP}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ \ File\ author(s):\ Yann\ Guedon\ (yann.guedon@cirad.fr)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Source\$}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Id\$}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Forum\ for\ StructureAnalysis\ developers:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GNU\ General\ Public\ Licence}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ modify\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ published\ by\ the\ Free\ Software\ Foundation;\ either\ version\ 2\ of}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ the\ License,\ or\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ \ \ \ \ \ \ MERCHANTABILITY\ or\ FITNESS\ For\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ \ \ \ \ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ \ \ \ \ \ \ License\ along\ with\ this\ program;\ see\ the\ file\ COPYING.\ If\ not,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ \ \ \ \ \ \ write\ to\ the\ Free\ Software\ Foundation,\ Inc.,\ 59}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Temple\ Place\ -\/\ Suite\ 330,\ Boston,\ MA\ 02111-\/1307,\ USA.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ CHAIN\_REESTIMATION\_H}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ CHAIN\_REESTIMATION\_H}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestat__tool}{stat\_tool}}\ \{}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00049\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00050\ \textcolor{comment}{\ *\ \ Class\ definition}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00057\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation}}\ \{}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aaf6289e4b288410c68fe9b2b1324b977}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation<Type>}}\ \&chain\_data)}
+\DoxyCodeLine{00060\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ chain\_data.\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a5660732b40cd72f923d8a22505894ee2}{print}}(os);\ \}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ public\ :}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\_type}}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_adc106ed762671d3b1bfe4e28dddaf29c}{type}};\ \ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\_state}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\_row}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ Type\ *\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \ \ Type\ **\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}};\ \ \ \ \ \ }
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a23f63395a7891154f9aa4f726578dfdb}{init}}();}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a8e2d3ca3f5647095ceb23aabd922e3bf}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation<Type>}}\ \&chain\_data);}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aaaa83cd7e227873aa0c06937318fbb14}{remove}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation}}();}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation}}(\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\_type}}\ itype\ ,\ \textcolor{keywordtype}{int}\ inb\_state\ ,\ \textcolor{keywordtype}{int}\ inb\_row\ ,\ \textcolor{keywordtype}{bool}\ init\_flag\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ad6a1fa42225445c78f3a7bfa7fcad903}{ChainReestimation}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation<Type>}}\ \&chain\_data)}
+\DoxyCodeLine{00077\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a8e2d3ca3f5647095ceb23aabd922e3bf}{copy}}(chain\_data);\ \}}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a1213c89212818e6357647a080645eef9}{\string~ChainReestimation}}();}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{ChainReestimation<Type>}}\&\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_afb5383372e7c666af2875e593bc0cdbd}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{ChainReestimation<Type>}}\ \&chain\_data);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a5660732b40cd72f923d8a22505894ee2}{print}}(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00082\ \ \ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{chain__reestimation_8hpp}{chain\_reestimation.hpp}}"{}}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

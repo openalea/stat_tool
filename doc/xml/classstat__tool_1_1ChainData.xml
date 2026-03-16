@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1ChainData" kind="class" language="C++" prot="public">
+    <compoundname>stat_tool::ChainData</compoundname>
+    <basecompoundref refid="classstat__tool_1_1ChainReestimation" prot="public" virt="non-virtual">stat_tool::ChainReestimation&lt; int &gt;</basecompoundref>
+    <includes refid="markovian_8h" local="no">markovian.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1ChainData_1afb78bfcb288c721edf058339fdbb49cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::ChainData::ChainData</definition>
+        <argsstring>(process_type itype, int inb_state, int inb_row, bool init_flag=false)</argsstring>
+        <name>ChainData</name>
+        <qualifiedname>stat_tool::ChainData::ChainData</qualifiedname>
+        <param>
+          <type><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811c" kindref="member">process_type</ref></type>
+          <declname>itype</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inb_state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inb_row</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>init_flag</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="200" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="200" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ChainData_1ac1a54bf6886ae7b24c37f81471afa9f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::ChainData::ChainData</definition>
+        <argsstring>(const ChainData &amp;chain_data)</argsstring>
+        <name>ChainData</name>
+        <qualifiedname>stat_tool::ChainData::ChainData</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1ChainData" kindref="compound">ChainData</ref> &amp;</type>
+          <declname>chain_data</declname>
+        </param>
+        <briefdescription>
+<para>Constructor by copy of the <ref refid="classstat__tool_1_1ChainData" kindref="compound">ChainData</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">chain_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1ChainData" kindref="compound">ChainData</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="202" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain.cpp" bodystart="921" bodyend="925"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ChainData_1a844b081752d191de236611abf6ef1553" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat_tool::ChainData::nb_parameter_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>nb_parameter_computation</name>
+        <qualifiedname>stat_tool::ChainData::nb_parameter_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the number of free transition probabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>number of free transition probabilities. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="204" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" bodystart="1094" bodyend="1115"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1ChainData_1adc88ca56068838edfd809b42e740d748" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::ChainData::estimation</definition>
+        <argsstring>(Chain &amp;chain) const</argsstring>
+        <name>estimation</name>
+        <qualifiedname>stat_tool::ChainData::estimation</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1Chain" kindref="compound">Chain</ref> &amp;</type>
+          <declname>chain</declname>
+        </param>
+        <briefdescription>
+<para>Estimation of first-order Markov chain parameters on the basis of initial state and transition frequencies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">chain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Chain" kindref="compound">Chain</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="206" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" bodystart="1039" bodyend="1083"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data structure corresponding to a Markov chain. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>stat_tool::ChainData</label>
+        <link refid="classstat__tool_1_1ChainData"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stat_tool::ChainReestimation&lt; int &gt;</label>
+        <link refid="classstat__tool_1_1ChainReestimation"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>stat_tool::ChainData</label>
+        <link refid="classstat__tool_1_1ChainData"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stat_tool::ChainReestimation&lt; int &gt;</label>
+        <link refid="classstat__tool_1_1ChainReestimation"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="197" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="197" bodyend="207"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1ChainData_1afb78bfcb288c721edf058339fdbb49cc" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>ChainData</name></member>
+      <member refid="classstat__tool_1_1ChainData_1ac1a54bf6886ae7b24c37f81471afa9f4" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>ChainData</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>ChainReestimation</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1a5e6193f39f334fa033c75b62d44e71f7" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>ChainReestimation</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1ad6a1fa42225445c78f3a7bfa7fcad903" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>ChainReestimation</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>copy</name></member>
+      <member refid="classstat__tool_1_1ChainData_1adc88ca56068838edfd809b42e740d748" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>estimation</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1a23f63395a7891154f9aa4f726578dfdb" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>init</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>initial</name></member>
+      <member refid="classstat__tool_1_1ChainData_1a844b081752d191de236611abf6ef1553" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>nb_parameter_computation</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>nb_row</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>nb_state</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1afb5383372e7c666af2875e593bc0cdbd" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>operator=</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>print</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1aaaa83cd7e227873aa0c06937318fbb14" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>remove</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>transition</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>type</name></member>
+      <member refid="classstat__tool_1_1ChainReestimation_1a1213c89212818e6357647a080645eef9" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>~ChainReestimation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

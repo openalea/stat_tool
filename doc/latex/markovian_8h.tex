@@ -1,0 +1,102 @@
+\doxysection{/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/markovian.h File Reference}
+\hypertarget{markovian_8h}{}\label{markovian_8h}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/markovian.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/markovian.h}}
+{\ttfamily \#include "{}stat\+\_\+tools.\+h"{}}\newline
+{\ttfamily \#include "{}chain\+\_\+reestimation.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classstat__tool_1_1Chain}{stat\+\_\+tool\+::\+Chain}}
+\begin{DoxyCompactList}\small\item\em Markov chain. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1ChainData}{stat\+\_\+tool\+::\+Chain\+Data}}
+\begin{DoxyCompactList}\small\item\em Data structure corresponding to a Markov chain. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{stat\+\_\+tool\+::\+Categorical\+Process}}
+\begin{DoxyCompactList}\small\item\em Categorical observation process. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{stat\+\_\+tool\+::\+Discrete\+Parametric\+Process}}
+\begin{DoxyCompactList}\small\item\em Discrete parametric observation process. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{stat\+\_\+tool\+::\+Continuous\+Parametric\+Process}}
+\begin{DoxyCompactList}\small\item\em Continuous parametric observation process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacestat__tool}{stat\+\_\+tool}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a1be004130f6e95c1e08f73d470a83629}{stat\+\_\+tool\+::state\+\_\+type}} \{ \mbox{\hyperlink{namespacestat__tool_a1be004130f6e95c1e08f73d470a83629ac6748603362b4fbc78032972ccce63cf}{stat\+\_\+tool\+::\+TRANSIENT}}
+, \mbox{\hyperlink{namespacestat__tool_a1be004130f6e95c1e08f73d470a83629a8f25c8a2f52b96883dfb4922726aa724}{stat\+\_\+tool\+::\+RECURRENT}}
+, \mbox{\hyperlink{namespacestat__tool_a1be004130f6e95c1e08f73d470a83629a0b8abd0c9c56ca4ce7bd8ab40a7e2a58}{stat\+\_\+tool\+::\+ABSORBING}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{stat\+\_\+tool\+::model\+\_\+type}} \{ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ab4cabab9aed338d72844e686e8c4fa9a}{stat\+\_\+tool\+::\+MIXTURE}}
+, \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{stat\+\_\+tool\+::\+HIDDEN\+\_\+\+MARKOV}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_af9145dc172728843c886432bac6f1ab8}{stat\+\_\+tool\+::observation\+\_\+process}} \{ \mbox{\hyperlink{namespacestat__tool_af9145dc172728843c886432bac6f1ab8a39aa635b7c787751355b6e2b93d02432}{stat\+\_\+tool\+::\+CATEGORICAL\+\_\+\+PROCESS}}
+, \mbox{\hyperlink{namespacestat__tool_af9145dc172728843c886432bac6f1ab8af665cbff14ce8a66dffbbf1b3d76065c}{stat\+\_\+tool\+::\+DISCRETE\+\_\+\+PARAMETRIC}}
+, \mbox{\hyperlink{namespacestat__tool_af9145dc172728843c886432bac6f1ab8af745506874fa60fa3351ce0e6803cf99}{stat\+\_\+tool\+::\+CONTINUOUS\+\_\+\+PARAMETRIC}}
+, \mbox{\hyperlink{namespacestat__tool_af9145dc172728843c886432bac6f1ab8a13e8dbda0874b543ff58fe8685612571}{stat\+\_\+tool\+::\+DEFAULT\+\_\+\+PROCESS}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a4e40c343d427e41a48fe58a70aa2ca85}{stat\+\_\+tool\+::count\+\_\+pattern}} \{ \mbox{\hyperlink{namespacestat__tool_a4e40c343d427e41a48fe58a70aa2ca85a01140dfd1adcb1f11245a1d3a62a4284}{stat\+\_\+tool\+::\+RUN}}
+, \mbox{\hyperlink{namespacestat__tool_a4e40c343d427e41a48fe58a70aa2ca85aeba5072d72a1cca85c032c47a1014c96}{stat\+\_\+tool\+::\+OCCURRENCE}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacestat__tool_a279fa578dc2f49887f1a195c15b9c738}{stat\+\_\+tool\+::latent\+\_\+structure\+\_\+algorithm}} \{ \newline
+\mbox{\hyperlink{namespacestat__tool_a279fa578dc2f49887f1a195c15b9c738a76dc4ef9b3458d9537a0e3fcceff45ff}{stat\+\_\+tool\+::\+NO\+\_\+\+LATENT\+\_\+\+STRUCTURE}}
+, \mbox{\hyperlink{namespacestat__tool_a279fa578dc2f49887f1a195c15b9c738a9cb92f7380a3f18220cf66e0ee71b0f4}{stat\+\_\+tool\+::\+FORWARD}}
+, \mbox{\hyperlink{namespacestat__tool_a279fa578dc2f49887f1a195c15b9c738a76f9e0ed95aade22edaf7d6cdd465d9f}{stat\+\_\+tool\+::\+VITERBI}}
+, \mbox{\hyperlink{namespacestat__tool_a279fa578dc2f49887f1a195c15b9c738a1bf391fb7711604e371df7deff7f78a7}{stat\+\_\+tool\+::\+GENERALIZED\+\_\+\+VITERBI}}
+, \newline
+\mbox{\hyperlink{namespacestat__tool_a279fa578dc2f49887f1a195c15b9c738a8759c160bef0480c79fcb9eff958a8e2}{stat\+\_\+tool\+::\+FORWARD\+\_\+\+BACKWARD\+\_\+\+SAMPLING}}
+, \mbox{\hyperlink{namespacestat__tool_a279fa578dc2f49887f1a195c15b9c738a152ab18b9b7777f719d5d97846ccd4d7}{stat\+\_\+tool\+::\+FORWARD\+\_\+\+DYNAMIC\+\_\+\+PROGRAMMING}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacestat__tool_a0f8d8ce87b264e6225f8228a89711a88}{stat\+\_\+tool\+::log\+\_\+computation}} (int nb\+\_\+value, const double \texorpdfstring{$\ast$}{*}pmass, double \texorpdfstring{$\ast$}{*}plog)
+\begin{DoxyCompactList}\small\item\em Computation of the log-\/probability mass function. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespacestat__tool_ae86e2a437546a41a8e6002cd9023a3c1}{stat\+\_\+tool\+::von\+\_\+mises\+\_\+concentration\+\_\+computation}} (double mean\+\_\+direction)
+\begin{DoxyCompactList}\small\item\em Computation of the concentration parameter of a von Mises distribution on the basis of the mean direction (Mardia \& Jupp, 2000; pp. 85-\/86). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_ad154e977482820dba300c70fceadd6ea}{stat\+\_\+tool\+::\+NB\+\_\+\+STATE}} = 100
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a92e2d6ea5204f8712b9749d2acc9e88d}{stat\+\_\+tool\+::\+ORDER}} = 8
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_a9efe749b1ea51e1a0d0f6b14698e9148}{stat\+\_\+tool\+::\+MIN\+\_\+\+PROBABILITY}} = 1.e-\/5
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_a83b4f6fa98d8466e6c5640cd46fddc91}{stat\+\_\+tool\+::\+THRESHOLDING\+\_\+\+FACTOR}} = 0.\+8
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a7919820d88a4d6207772ac91411941ec}{stat\+\_\+tool\+::\+NB\+\_\+\+PARAMETER}} = 100000
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a182feede630c534b64020b66eb426b4c}{stat\+\_\+tool\+::\+NB\+\_\+\+OUTPUT\+\_\+\+PROCESS}} = 15
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_ab0da3f786f4a15ff2551f289a4894d03}{stat\+\_\+tool\+::\+NB\+\_\+\+OUTPUT}} = 25
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_a960fa4d455d92bb0ea54561ce1a35524}{stat\+\_\+tool\+::\+OBSERVATION\+\_\+\+THRESHOLD}} = 0.\+999
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_ae643fa65ec9806310e127f2a269d6c03}{stat\+\_\+tool\+::\+ACCESSIBILITY\+\_\+\+THRESHOLD}} = 1.e-\/6
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a0356ce173d03c779b7820589561f5891}{stat\+\_\+tool\+::\+ACCESSIBILITY\+\_\+\+LENGTH}} = 100
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_ac35eb9171b32bf918b9d9929de180af8}{stat\+\_\+tool\+::\+NOISE\+\_\+\+PROBABILITY}} = 0.\+05
+\item 
+const double \mbox{\hyperlink{namespacestat__tool_a549878edf0bb53b01ff30b1d55b487a9}{stat\+\_\+tool\+::\+MEAN\+\_\+\+SHIFT\+\_\+\+COEFF}} = 0.\+1
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a52140a1b9385acd7f0320e4452e7a749}{stat\+\_\+tool\+::\+MIN\+\_\+\+NB\+\_\+\+ELEMENT}} = 10
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a9fedb2562d0e1c2f70fdc343f72dcdd0}{stat\+\_\+tool\+::\+OBSERVATION\+\_\+\+COEFF}} = 10
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a21a2f0e6aee12950e984154f28967f0d}{stat\+\_\+tool\+::\+GAMMA\+\_\+\+MAX\+\_\+\+NB\+\_\+\+DECIMAL}} = 6
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a34c642aa022dfb7190802c79b0d0ccce}{stat\+\_\+tool\+::\+INVERSE\+\_\+\+GAUSSIAN\+\_\+\+MAX\+\_\+\+NB\+\_\+\+DECIMAL}} = 6
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a8338875b9004f92e4113305f9235ea73}{stat\+\_\+tool\+::\+GAUSSIAN\+\_\+\+MAX\+\_\+\+NB\+\_\+\+DECIMAL}} = 6
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_ab38a8795dd80712da51ac445d9f90469}{stat\+\_\+tool\+::\+DEGREE\+\_\+\+DECIMAL\+\_\+\+SCALE}} = 10
+\item 
+const int \mbox{\hyperlink{namespacestat__tool_a6e14e4b5a839ff9db010d77198d48a04}{stat\+\_\+tool\+::\+RADIAN\+\_\+\+DECIMAL\+\_\+\+SCALE}} = 1000
+\end{DoxyCompactItemize}

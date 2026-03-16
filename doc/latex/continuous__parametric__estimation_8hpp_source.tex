@@ -1,0 +1,1632 @@
+\doxysection{continuous\+\_\+parametric\+\_\+estimation.\+hpp}
+\hypertarget{continuous__parametric__estimation_8hpp_source}{}\label{continuous__parametric__estimation_8hpp_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/continuous\_parametric\_estimation.hpp@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/continuous\_parametric\_estimation.hpp}}
+\mbox{\hyperlink{continuous__parametric__estimation_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ \ \ \ \ StructureAnalysis:\ Identifying\ patterns\ in\ plant\ architecture\ and\ development}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Copyright\ 1995-\/2018\ CIRAD\ AGAP}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ \ File\ author(s):\ Yann\ Guedon\ (yann.guedon@cirad.fr)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Source\$}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Id:\ continuous\_distribution\_estimation.hpp\ 12646\ 2012-\/08-\/03\ 08:12:47Z\ guedon\ \$}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Forum\ for\ StructureAnalysis\ developers:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GNU\ General\ Public\ Licence}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ modify\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ published\ by\ the\ Free\ Software\ Foundation;\ either\ version\ 2\ of}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ the\ License,\ or\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ \ \ \ \ \ \ MERCHANTABILITY\ or\ FITNESS\ For\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ \ \ \ \ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ \ \ \ \ \ \ License\ along\ with\ this\ program;\ see\ the\ file\ COPYING.\ If\ not,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ \ \ \ \ \ \ write\ to\ the\ Free\ Software\ Foundation,\ Inc.,\ 59}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Temple\ Place\ -\/\ Suite\ 330,\ Boston,\ MA\ 02111-\/1307,\ USA.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ CONTINUOUS\_PARAMETRIC\_ESTIMATION\_HPP}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ CONTINUOUS\_PARAMETRIC\_ESTIMATION\_HPP}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ \_USE\_MATH\_DEFINES\ }\textcolor{comment}{//\ for\ C++\ win\ to\ get\ M\_PI\ in\ cmath}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#include\ <boost/math/special\_functions/digamma.hpp>}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#include\ <boost/math/distributions/gamma.hpp>}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{markovian_8h}{markovian.h}}"{}}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vectors_8h}{vectors.h}}"{}}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{stat__label_8h}{stat\_label.h}}"{}}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00054\ \textcolor{keyword}{using\ namespace\ }boost::math;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestat__tool}{stat\_tool}}\ \{}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_ae86e2a437546a41a8e6002cd9023a3c1}{von\_mises\_concentration\_computation}}(\textcolor{keywordtype}{double}\ mean\_direction);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00073\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Vectors_aa8effc710834313d8006624591fe136a}{Vectors::gamma\_estimation}}(Type\ **component\_vector\_count\ ,\ \textcolor{keywordtype}{int}\ variable\ ,}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ *process\ ,\ \textcolor{keywordtype}{int}\ iter)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00078\ \textcolor{keyword}{}}
+\DoxyCodeLine{00079\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00080\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{double}\ buff\ ,\ diff\ ,\ log\_geometric\_mean\ ,\ *zero\_mass\ ,\ *bmean;}
+\DoxyCodeLine{00082\ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ *variance;}
+\DoxyCodeLine{00083\ \ \ Type\ *component\_frequency;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ component\_frequency\ =\ \textcolor{keyword}{new}\ Type[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00087\ \ \ zero\_mass\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00088\ \ \ bmean\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00089\ \ \ variance\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ zero\_mass[i]\ =\ 0.;}
+\DoxyCodeLine{00093\ \ \ \ \ bmean[i]\ =\ 0.;}
+\DoxyCodeLine{00094\ \ \ \ \ component\_frequency[i]\ =\ 0;}
+\DoxyCodeLine{00095\ \ \ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ ==\ 0)\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ zero\_mass[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable];}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00110\ \ \ \ \ \}}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00112\ \ \ \}}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ ==\ 0.)\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ zero\_mass[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable];}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \}}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00127\ \ \ \}}
+\DoxyCodeLine{00128\ \ \ \}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ bmean[i]\ /=\ component\_frequency[i];}
+\DoxyCodeLine{00133\ \ \ \ \ \}}
+\DoxyCodeLine{00134\ \ \ \ \ variance[i]\ =\ 0.;}
+\DoxyCodeLine{00135\ \ \ \}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ variance[j]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00145\ \ \ \ \ \}}
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00147\ \ \ \}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ variance[j]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00155\ \ \ \ \ \}}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00157\ \ \ \}}
+\DoxyCodeLine{00158\ \ \ \}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00161\ \textcolor{comment}{//\ \ \ \ if\ (component\_frequency[i]\ >\ 0)\ \{}}
+\DoxyCodeLine{00162\ \textcolor{comment}{//\ \ \ \ \ \ variance[i]\ /=\ component\_frequency[i];}}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 1)\ \{}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ variance[i]\ /=\ (component\_frequency[i]\ -\/\ 1);}
+\DoxyCodeLine{00165\ \ \ \ \ \}}
+\DoxyCodeLine{00166\ \ \ \}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#\ \ \ ifdef\ DEBUG}}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordflow}{if}\ ((iter\ >=\ 5)\ \&\&\ (component\_frequency[i]\ >\ 0))\ \{}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}\ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda0a9c986a5abb881a952fab625ac25be9}{STATW\_COMPONENT}}]\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ i\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ <<\ zero\_mass[i]\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ component\_frequency[i]\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ <<\ zero\_mass[i]\ /\ component\_frequency[i]\ <<\ endl;}
+\DoxyCodeLine{00175\ \ \ \ \ \}}
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#\ \ \ endif}}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{comment}{//\ \ \ \ if\ (component\_frequency[i]\ >\ 0)\ \{}}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 1)\ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (zero\_mass[i]\ /\ component\_frequency[i]\ >\ \mbox{\hyperlink{namespacestat__tool_a05e6901c813049243f7dfcf58263142f}{GAMMA\_ZERO\_FREQUENCY\_THRESHOLD}})\ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ 0;}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{D\_DEFAULT}};}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (variance[i]\ >\ 0.)\ \{}
+\DoxyCodeLine{00187\ \textcolor{comment}{/*\ \ \ \ \ \ \ \ \ \ if\ (sqrtl(variance[i])\ <\ bmean[i]\ *\ GAMMA\_VARIATION\_COEFF\_THRESHOLD)\ \{}}
+\DoxyCodeLine{00188\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ variance[i]\ =\ bmean[i]\ *\ bmean[i]\ *\ GAMMA\_VARIATION\_COEFF\_THRESHOLD\ *\ GAMMA\_VARIATION\_COEFF\_THRESHOLD;}}
+\DoxyCodeLine{00189\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00190\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ process-\/>observation[i]-\/>shape\ =\ bmean[i]\ *\ bmean[i]\ /\ variance[i];}}
+\DoxyCodeLine{00191\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ process-\/>observation[i]-\/>scale\ =\ variance[i]\ /\ bmean[i];\ */}}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Hawang\ \&\ Huang\ (2012),\ Ann.\ Inst.\ Statist.\ Math.\ 54(4),\ 840-\/847}}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ buff\ =\ bmean[i]\ *\ bmean[i]\ /\ variance[i];}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (buff\ >\ \mbox{\hyperlink{namespacestat__tool_abef7f213e0ed9452267f92f0b7550388}{GAMMA\_INVERSE\_SAMPLE\_SIZE\_FACTOR}}\ /\ (\textcolor{keywordtype}{double})component\_frequency[i])\ \{}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ buff\ -\/\ 1.\ /\ (double)component\_frequency[i];}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ buff;}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00202\ \textcolor{comment}{/*\ \ \ \ \ \ \ \ \ \ if\ (process-\/>observation[i]-\/>shape\ <\ GAMMA\_MIN\_SHAPE\_PARAMETER)\ \{}}
+\DoxyCodeLine{00203\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ process-\/>observation[i]-\/>shape\ =\ GAMMA\_MIN\_SHAPE\_PARAMETER;}}
+\DoxyCodeLine{00204\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \}\ */}}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ bmean[i]\ /\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}};}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ \textcolor{preprocessor}{\#\ \ \ \ \ \ \ \ \ ifdef\ MESSAGE}}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (buff\ <=\ \mbox{\hyperlink{namespacestat__tool_abef7f213e0ed9452267f92f0b7550388}{GAMMA\_INVERSE\_SAMPLE\_SIZE\_FACTOR}}\ /\ (\textcolor{keywordtype}{double})component\_frequency[i])\ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}\ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda0a9c986a5abb881a952fab625ac25be9}{STATW\_COMPONENT}}]\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ i\ <<\ \textcolor{stringliteral}{"{}\ \ \ "{}}}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaae000fc63fc98ff7bf096ab1998c447d}{STATW\_SHAPE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ "{}}}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda99950b90a0084c9f861de657edfb7750}{STATW\_SCALE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ <<\ \textcolor{stringliteral}{"{}\ |\ \ "{}};}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ boost::math::gamma\_distribution<double>\ dist(process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ ,\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}});}
+\DoxyCodeLine{00214\ }
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ pdf(dist\ ,\ 0.)\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ pdf(dist\ ,\ \mbox{\hyperlink{namespacestat__tool_aaa12bc88ef19d70597b991727ae1c775}{CONTINUOUS\_POSITIVE\_INF\_BOUND}})\ <<\ \textcolor{stringliteral}{"{}\ |\ \ "{}}}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ cdf(dist\ ,\ 0.)\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ cdf(dist\ ,\ \mbox{\hyperlink{namespacestat__tool_aaa12bc88ef19d70597b991727ae1c775}{CONTINUOUS\_POSITIVE\_INF\_BOUND}})\ <<\ endl;}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00218\ \textcolor{preprocessor}{\#\ \ \ \ \ \ \ \ \ endif}}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ >=\ \mbox{\hyperlink{namespacestat__tool_a4ca6204f097519e64eace5db60b2eafa}{GAMMA\_SHAPE\_PARAMETER\_THRESHOLD}})\ \&\&}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (component\_frequency[i]\ <\ \mbox{\hyperlink{namespacestat__tool_ac1e45fb51d0fa3b93feddbf37a994661}{GAMMA\_FREQUENCY\_THRESHOLD}}))\ \{}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \textcolor{preprocessor}{\#\ \ \ \ \ \ \ \ \ \ \ ifdef\ DEBUG}}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda0a9c986a5abb881a952fab625ac25be9}{STATW\_COMPONENT}}]\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ i\ <<\ \textcolor{stringliteral}{"{}\ \ \ "{}}}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaae000fc63fc98ff7bf096ab1998c447d}{STATW\_SHAPE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ "{}}}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda99950b90a0084c9f861de657edfb7750}{STATW\_SCALE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}};}
+\DoxyCodeLine{00227\ \textcolor{preprocessor}{\#\ \ \ \ \ \ \ \ \ \ \ endif}}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ log\_geometric\_mean\ =\ 0.;}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00232\ }
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};j++)\ \{}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[j][variable]\ >\ 0)\ \{}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ log\_geometric\_mean\ +=\ component\_vector\_count[j][i]\ *\ log(\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[j][variable]);}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};j++)\ \{}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[j][variable]\ >\ 0.)\ \{}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ log\_geometric\_mean\ +=\ component\_vector\_count[j][i]\ *\ log(\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[j][variable]);}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ log\_geometric\_mean\ /=\ (component\_frequency[i]\ -\/\ zero\_mass[i]);}
+\DoxyCodeLine{00253\ \textcolor{comment}{/*\ \ \ \ \ \ \ \ \ \ \ \ j\ =\ 0;\ \ \ to\ be\ reworked}}
+\DoxyCodeLine{00254\ \textcolor{comment}{}}
+\DoxyCodeLine{00255\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ do\ \{}}
+\DoxyCodeLine{00256\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ process-\/>observation[i]-\/>scale\ =\ exp(log\_geometric\_mean\ -\/\ digamma(process-\/>observation[i]-\/>shape));}}
+\DoxyCodeLine{00257\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ process-\/>observation[i]-\/>shape\ =\ bmean[i]\ /\ process-\/>observation[i]-\/>scale;}}
+\DoxyCodeLine{00258\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ j++;}}
+\DoxyCodeLine{00259\ \textcolor{comment}{}}
+\DoxyCodeLine{00260\ \textcolor{comment}{\#\ \ \ \ \ \ \ \ \ \ \ \ \ ifdef\ DEBUG}}
+\DoxyCodeLine{00261\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ STAT\_word[STATW\_SHAPE]\ <<\ "{}\ :\ "{}\ <<\ process-\/>observation[i]-\/>shape\ <<\ "{}\ \ \ "{}}}
+\DoxyCodeLine{00262\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ STAT\_word[STATW\_SCALE]\ <<\ "{}\ :\ "{}\ <<\ process-\/>observation[i]-\/>scale\ <<\ endl;}}
+\DoxyCodeLine{00263\ \textcolor{comment}{\#\ \ \ \ \ \ \ \ \ \ \ \ \ endif}}
+\DoxyCodeLine{00264\ \textcolor{comment}{}}
+\DoxyCodeLine{00265\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00266\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ while\ (j\ <\ MIN(GAMMA\_ITERATION\_FACTOR\ *\ iter\ ,\ GAMMA\_MAX\_NB\_ITERATION));\ */}}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ approximations\ Johnson,\ Kotz\ \&\ Balakrishnan,\ Continuous\ Univariate\ Distributions,\ vol.\ 1,\ 2nd\ ed.,\ pp.\ 361-\/362}}
+\DoxyCodeLine{00269\ }
+\DoxyCodeLine{00270\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ process-\/>observation[i]-\/>shape\ =\ bmean[i]\ /\ (2\ *\ (bmean[i]\ -\/\ exp(log\_geometric\_mean)))\ -\/\ 1./12.;}}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \ \ \ \ diff\ =\ log(bmean[i])\ -\/\ log\_geometric\_mean;}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ (1\ +\ sqrt(1\ +\ 4\ *\ diff\ /\ 3))\ /\ (4\ *\ diff);}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ bmean[i]\ /\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}};}
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00275\ \textcolor{preprocessor}{\#\ \ \ \ \ \ \ \ \ \ \ ifdef\ DEBUG}}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}\ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaae000fc63fc98ff7bf096ab1998c447d}{STATW\_SHAPE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ "{}}}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda99950b90a0084c9f861de657edfb7750}{STATW\_SCALE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ <<\ endl;}
+\DoxyCodeLine{00278\ \textcolor{preprocessor}{\#\ \ \ \ \ \ \ \ \ \ \ endif}}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ \mbox{\hyperlink{namespacestat__tool_afe91440cd21d61855e5582ae7de64d74}{GAMMA\_MIN\_SHAPE\_PARAMETER}};}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ \mbox{\hyperlink{namespacestat__tool_acd8413dc292aba8bc3f3634a5c9639fc}{GAMMA\_DEFAULT\_SCALE\_PARAMETER}};}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00288\ \ \ \ \ \}}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00290\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00291\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{D\_DEFAULT}};}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{D\_DEFAULT}};}
+\DoxyCodeLine{00293\ \ \ \ \ \}}
+\DoxyCodeLine{00294\ \ \ \}}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00296\ \ \ \textcolor{keyword}{delete}\ []\ component\_frequency;}
+\DoxyCodeLine{00297\ \ \ \textcolor{keyword}{delete}\ []\ zero\_mass;}
+\DoxyCodeLine{00298\ \ \ \textcolor{keyword}{delete}\ []\ bmean;}
+\DoxyCodeLine{00299\ \ \ \textcolor{keyword}{delete}\ []\ variance;}
+\DoxyCodeLine{00300\ \}}
+\DoxyCodeLine{00301\ }
+\DoxyCodeLine{00302\ }
+\DoxyCodeLine{00303\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00314\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00315\ }
+\DoxyCodeLine{00316\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00317\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a89d07f324762ed524ff262bf45fed073}{Vectors::tied\_gamma\_estimation}}(Type\ **component\_vector\_count\ ,\ \textcolor{keywordtype}{int}\ variable\ ,}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ *process\ ,}
+\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5d}{tying\_rule}}\ variance\_factor\ ,\ \textcolor{keywordtype}{int}\ iter)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00320\ \textcolor{keyword}{}}
+\DoxyCodeLine{00321\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00322\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{00323\ \ \ \textcolor{keywordtype}{double}\ buff\ ,\ diff\ ,\ log\_geometric\_mean\ ,\ *bmean\ ,\ *factor;}
+\DoxyCodeLine{00324\ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ variance;}
+\DoxyCodeLine{00325\ \ \ Type\ *component\_frequency;}
+\DoxyCodeLine{00326\ }
+\DoxyCodeLine{00327\ }
+\DoxyCodeLine{00328\ \ \ component\_frequency\ =\ \textcolor{keyword}{new}\ Type[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00329\ \ \ bmean\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00330\ \ \ factor\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00332\ \ \ \textcolor{keywordflow}{if}\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a4cf77f428aed0adfe6e7c46f494fef9f}{tied\_location}})\ \{}
+\DoxyCodeLine{00333\ \ \ \ \ bmean[0]\ =\ 0.;}
+\DoxyCodeLine{00334\ \ \ \ \ component\_frequency[0]\ =\ 0.;}
+\DoxyCodeLine{00335\ }
+\DoxyCodeLine{00336\ \ \ \ \ factor[0]\ =\ 1.;}
+\DoxyCodeLine{00337\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ factor[i]\ =\ factor[i\ -\/\ 1]\ *\ 2;}
+\DoxyCodeLine{00339\ \ \ \ \ \}}
+\DoxyCodeLine{00340\ }
+\DoxyCodeLine{00341\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00342\ }
+\DoxyCodeLine{00343\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00346\ \ \ \ \ \ \ \ \ \ \ bmean[0]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ /\ factor[j];}
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00351\ \ \ \ \ \}}
+\DoxyCodeLine{00352\ }
+\DoxyCodeLine{00353\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \ \ bmean[0]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ /\ factor[j];}
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00360\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00361\ \ \ \ \ \}}
+\DoxyCodeLine{00362\ \ \ \ \ \}}
+\DoxyCodeLine{00363\ }
+\DoxyCodeLine{00364\ \ \ \ \ bmean[0]\ /=\ component\_frequency[0];}
+\DoxyCodeLine{00365\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00366\ \ \ \ \ \ \ bmean[i]\ =\ bmean[0]\ *\ factor[i];}
+\DoxyCodeLine{00367\ \ \ \ \ \}}
+\DoxyCodeLine{00368\ }
+\DoxyCodeLine{00369\ \ \ \ \ \textcolor{keywordflow}{if}\ (variance\_factor\ ==\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5da16f7cadd95ef0789f5cea6a424eabdab}{SCALING\_FACTOR}})\ \{}
+\DoxyCodeLine{00370\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00371\ \ \ \ \ \ \ \ \ factor[i]\ *=\ factor[i];}
+\DoxyCodeLine{00372\ \textcolor{comment}{//\ \ \ \ \ \ \ \ factor[i]\ =\ factor[i\ -\/\ 1]\ *\ 4;}}
+\DoxyCodeLine{00373\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00374\ \ \ \ \ \}}
+\DoxyCodeLine{00375\ \ \ \}}
+\DoxyCodeLine{00376\ }
+\DoxyCodeLine{00377\ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00378\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ bmean[i]\ =\ 0.;}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ component\_frequency[i]\ =\ 0;}
+\DoxyCodeLine{00381\ \ \ \ \ \}}
+\DoxyCodeLine{00382\ }
+\DoxyCodeLine{00383\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00384\ }
+\DoxyCodeLine{00385\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00386\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable];}
+\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00391\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00393\ \ \ \ \ \}}
+\DoxyCodeLine{00394\ }
+\DoxyCodeLine{00395\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00397\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable];}
+\DoxyCodeLine{00399\ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00403\ \ \ \ \ \}}
+\DoxyCodeLine{00404\ \ \ \ \ \}}
+\DoxyCodeLine{00405\ }
+\DoxyCodeLine{00406\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00407\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{00408\ \ \ \ \ \ \ \ \ bmean[i]\ /=\ component\_frequency[i];}
+\DoxyCodeLine{00409\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00410\ \ \ \ \ \}}
+\DoxyCodeLine{00411\ }
+\DoxyCodeLine{00412\ \ \ \ \ \textcolor{keywordflow}{switch}\ (variance\_factor)\ \{}
+\DoxyCodeLine{00413\ }
+\DoxyCodeLine{00414\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5dac5072df076002db1d7d67d6612d26b8f}{CONVOLUTION\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00415\ \ \ \ \ \ \ factor[0]\ =\ 1.;}
+\DoxyCodeLine{00416\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{00418\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ bmean[i]\ /\ bmean[0];}
+\DoxyCodeLine{00419\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00420\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ 1.;}
+\DoxyCodeLine{00422\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00423\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00425\ \ \ \ \ \}}
+\DoxyCodeLine{00426\ }
+\DoxyCodeLine{00427\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5da16f7cadd95ef0789f5cea6a424eabdab}{SCALING\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00428\ \ \ \ \ \ \ factor[0]\ =\ 1.;}
+\DoxyCodeLine{00429\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00430\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{00431\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ (bmean[i]\ *\ bmean[i])\ /\ (bmean[0]\ *\ bmean[0]);}
+\DoxyCodeLine{00432\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00433\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00434\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ 1.;}
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00436\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00437\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00438\ \ \ \ \ \}}
+\DoxyCodeLine{00439\ \ \ \ \ \}}
+\DoxyCodeLine{00440\ }
+\DoxyCodeLine{00441\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00442\ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_frequency[i];}
+\DoxyCodeLine{00443\ \ \ \ \ \}}
+\DoxyCodeLine{00444\ \ \ \}}
+\DoxyCodeLine{00445\ }
+\DoxyCodeLine{00446\ \ \ variance\ =\ 0.;}
+\DoxyCodeLine{00447\ }
+\DoxyCodeLine{00448\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00449\ }
+\DoxyCodeLine{00450\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00451\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ variance\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff\ /\ factor[j];}
+\DoxyCodeLine{00455\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00456\ \ \ \ \ \}}
+\DoxyCodeLine{00457\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00458\ \ \ \}}
+\DoxyCodeLine{00459\ }
+\DoxyCodeLine{00460\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00461\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00462\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00463\ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{00464\ \ \ \ \ \ \ \ \ variance\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff\ /\ factor[j];}
+\DoxyCodeLine{00465\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00466\ \ \ \ \ \}}
+\DoxyCodeLine{00467\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00468\ \ \ \}}
+\DoxyCodeLine{00469\ \ \ \}}
+\DoxyCodeLine{00470\ }
+\DoxyCodeLine{00471\ \textcolor{comment}{//\ \ variance\ /=\ component\_frequency[0];}}
+\DoxyCodeLine{00472\ \ \ variance\ /=\ (component\_frequency[0]\ -\/\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}});}
+\DoxyCodeLine{00473\ }
+\DoxyCodeLine{00474\ \ \ \textcolor{keywordflow}{switch}\ (variance\_factor)\ \{}
+\DoxyCodeLine{00475\ }
+\DoxyCodeLine{00476\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5dac5072df076002db1d7d67d6612d26b8f}{CONVOLUTION\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00477\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ bmean[0]\ *\ bmean[0]\ /\ variance;}
+\DoxyCodeLine{00478\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ variance\ /\ bmean[0];}
+\DoxyCodeLine{00479\ }
+\DoxyCodeLine{00480\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00481\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ *\ factor[i];}
+\DoxyCodeLine{00482\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}};}
+\DoxyCodeLine{00483\ \ \ \ \ \}}
+\DoxyCodeLine{00484\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00485\ \ \ \}}
+\DoxyCodeLine{00486\ }
+\DoxyCodeLine{00487\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5da16f7cadd95ef0789f5cea6a424eabdab}{SCALING\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00488\ \ \ \ \ \textcolor{keywordflow}{if}\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a4cf77f428aed0adfe6e7c46f494fef9f}{tied\_location}})\ \{}
+\DoxyCodeLine{00489\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ bmean[0]\ *\ bmean[0]\ /\ variance;}
+\DoxyCodeLine{00490\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ variance\ /\ bmean[0];}
+\DoxyCodeLine{00491\ }
+\DoxyCodeLine{00492\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00493\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}};}
+\DoxyCodeLine{00494\ \textcolor{comment}{//\ \ \ \ \ \ \ \ factor[i]\ =\ sqrt(factor[i]);}}
+\DoxyCodeLine{00495\ \ \ \ \ \ \ \ \ factor[i]\ =\ factor[i\ -\/\ 1]\ *\ 2;}
+\DoxyCodeLine{00496\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ *\ factor[i];}
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00498\ \ \ \ \ \}}
+\DoxyCodeLine{00499\ }
+\DoxyCodeLine{00500\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00501\ \textcolor{comment}{//\ \ \ \ \ \ process-\/>observation[0]-\/>shape\ =\ bmean[0]\ *\ bmean[0]\ /\ variance;}}
+\DoxyCodeLine{00502\ \textcolor{comment}{//\ \ \ \ \ \ process-\/>observation[0]-\/>scale\ =\ variance\ /\ bmean[0];}}
+\DoxyCodeLine{00503\ }
+\DoxyCodeLine{00504\ \ \ \ \ \ \ \textcolor{comment}{//\ Hawang\ \&\ Huang\ (2012),\ Ann.\ Inst.\ Statist.\ Math.\ 54(4),\ 840-\/847}}
+\DoxyCodeLine{00505\ }
+\DoxyCodeLine{00506\ \ \ \ \ \ \ buff\ =\ bmean[0]\ *\ bmean[0]\ /\ variance;}
+\DoxyCodeLine{00507\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (buff\ >\ \mbox{\hyperlink{namespacestat__tool_abef7f213e0ed9452267f92f0b7550388}{GAMMA\_INVERSE\_SAMPLE\_SIZE\_FACTOR}}\ /\ (\textcolor{keywordtype}{double})component\_frequency[0])\ \{}
+\DoxyCodeLine{00508\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ buff\ -\/\ 1.\ /\ (double)component\_frequency[0];}
+\DoxyCodeLine{00509\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00510\ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00511\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ buff;}
+\DoxyCodeLine{00512\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00513\ \textcolor{comment}{/*\ \ \ \ \ \ if\ (process-\/>observation[0]-\/>shape\ <\ GAMMA\_MIN\_SHAPE\_PARAMETER)\ \{}}
+\DoxyCodeLine{00514\ \textcolor{comment}{\ \ \ \ \ \ \ \ process-\/>observation[0]-\/>shape\ =\ GAMMA\_MIN\_SHAPE\_PARAMETER;}}
+\DoxyCodeLine{00515\ \textcolor{comment}{\ \ \ \ \ \ \}\ */}}
+\DoxyCodeLine{00516\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ bmean[0]\ /\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}};}
+\DoxyCodeLine{00517\ }
+\DoxyCodeLine{00518\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00519\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}};}
+\DoxyCodeLine{00520\ \textcolor{comment}{//\ \ \ \ \ \ \ \ factor[i]\ =\ sqrt(factor[i]);}}
+\DoxyCodeLine{00521\ \ \ \ \ \ \ \ \ factor[i]\ =\ bmean[i]\ /\ bmean[0];}
+\DoxyCodeLine{00522\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ *\ factor[i];}
+\DoxyCodeLine{00523\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00524\ \ \ \ \ \}}
+\DoxyCodeLine{00525\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00526\ \ \ \}}
+\DoxyCodeLine{00527\ \ \ \}}
+\DoxyCodeLine{00528\ }
+\DoxyCodeLine{00529\ \ \ \textcolor{keywordflow}{if}\ ((process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ >=\ \mbox{\hyperlink{namespacestat__tool_a4ca6204f097519e64eace5db60b2eafa}{GAMMA\_SHAPE\_PARAMETER\_THRESHOLD}})\ \&\&}
+\DoxyCodeLine{00530\ \ \ \ \ \ \ (component\_frequency[0]\ <\ \mbox{\hyperlink{namespacestat__tool_ac1e45fb51d0fa3b93feddbf37a994661}{GAMMA\_FREQUENCY\_THRESHOLD}}))\ \{}
+\DoxyCodeLine{00531\ \ \ \ \ log\_geometric\_mean\ =\ 0.;}
+\DoxyCodeLine{00532\ \textcolor{comment}{//\ \ \ \ component\_frequency[0]\ =\ 0.;}}
+\DoxyCodeLine{00533\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00534\ \ \ \ \ \ \ component\_frequency[i]\ =\ 0;}
+\DoxyCodeLine{00535\ \ \ \ \ \}}
+\DoxyCodeLine{00536\ }
+\DoxyCodeLine{00537\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00538\ }
+\DoxyCodeLine{00539\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00540\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00541\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00542\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ >\ 0)\ \{}
+\DoxyCodeLine{00543\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ log\_geometric\_mean\ +=\ component\_vector\_count[i][j]\ *\ log(int\_vector[i][variable]\ /\ factor[j]);}}
+\DoxyCodeLine{00544\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}}
+\DoxyCodeLine{00545\ \ \ \ \ \ \ \ \ \ \ \ \ log\_geometric\_mean\ +=\ component\_vector\_count[i][j]\ *\ log(\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]);}
+\DoxyCodeLine{00546\ \ \ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00547\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00548\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00549\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00550\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00551\ \ \ \ \ \}}
+\DoxyCodeLine{00552\ }
+\DoxyCodeLine{00553\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00554\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00555\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00556\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ >\ 0.)\ \{}
+\DoxyCodeLine{00557\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ log\_geometric\_mean\ +=\ component\_vector\_count[i][j]\ *\ log(real\_vector[i][variable]\ /\ factor[j]);}}
+\DoxyCodeLine{00558\ \textcolor{comment}{//\ \ \ \ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}}
+\DoxyCodeLine{00559\ \ \ \ \ \ \ \ \ \ \ \ \ log\_geometric\_mean\ +=\ component\_vector\_count[i][j]\ *\ log(\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]);}
+\DoxyCodeLine{00560\ \ \ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00561\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00562\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00563\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00564\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00565\ \ \ \ \ \}}
+\DoxyCodeLine{00566\ \ \ \ \ \}}
+\DoxyCodeLine{00567\ }
+\DoxyCodeLine{00568\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00569\ \ \ \ \ \ \ log\_geometric\_mean\ -\/=\ component\_frequency[i]\ *\ log(factor[i]);}
+\DoxyCodeLine{00570\ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_frequency[i];}
+\DoxyCodeLine{00571\ \ \ \ \ \}}
+\DoxyCodeLine{00572\ \ \ \ \ log\_geometric\_mean\ /=\ component\_frequency[0];}
+\DoxyCodeLine{00573\ }
+\DoxyCodeLine{00574\ \textcolor{preprocessor}{\#\ \ \ ifdef\ MESSAGE}}
+\DoxyCodeLine{00575\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}\ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaae000fc63fc98ff7bf096ab1998c447d}{STATW\_SHAPE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ "{}}}
+\DoxyCodeLine{00576\ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda99950b90a0084c9f861de657edfb7750}{STATW\_SCALE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ <<\ endl;}
+\DoxyCodeLine{00577\ \textcolor{preprocessor}{\#\ \ \ endif}}
+\DoxyCodeLine{00578\ }
+\DoxyCodeLine{00579\ \ \ \ \ \textcolor{comment}{//\ approximations\ Johnson,\ Kotz\ \&\ Balakrishnan,\ Continuous\ Univariate\ Distributions,\ vol.\ 1,\ 2nd\ ed.,\ pp.\ 361-\/362}}
+\DoxyCodeLine{00580\ }
+\DoxyCodeLine{00581\ \textcolor{comment}{//\ \ \ \ process-\/>observation[0]-\/>shape\ =\ bmean[0]\ /\ (2\ *\ (bmean[0]\ -\/\ exp(log\_geometric\_mean)))\ -\/\ 1./12.;}}
+\DoxyCodeLine{00582\ \ \ \ \ diff\ =\ log(bmean[0])\ -\/\ log\_geometric\_mean;}
+\DoxyCodeLine{00583\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ (1\ +\ sqrt(1\ +\ 4\ *\ diff\ /\ 3))\ /\ (4\ *\ diff);}
+\DoxyCodeLine{00584\ }
+\DoxyCodeLine{00585\ \textcolor{preprocessor}{\#\ \ \ ifdef\ DEBUG}}
+\DoxyCodeLine{00586\ \ \ \ \ cout\ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaae000fc63fc98ff7bf096ab1998c447d}{STATW\_SHAPE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ <<\ endl;}
+\DoxyCodeLine{00587\ \textcolor{preprocessor}{\#\ \ \ endif}}
+\DoxyCodeLine{00588\ }
+\DoxyCodeLine{00589\ \ \ \ \ i\ =\ 0;}
+\DoxyCodeLine{00590\ }
+\DoxyCodeLine{00591\ \textcolor{comment}{/*\ \ \ \ do\ \{}}
+\DoxyCodeLine{00592\ \textcolor{comment}{\ \ \ \ \ \ process-\/>observation[0]-\/>scale\ =\ exp(log\_geometric\_mean\ -\/\ digamma(process-\/>observation[0]-\/>shape));}}
+\DoxyCodeLine{00593\ \textcolor{comment}{\ \ \ \ \ \ process-\/>observation[0]-\/>shape\ =\ bmean[0]\ /\ process-\/>observation[0]-\/>scale;}}
+\DoxyCodeLine{00594\ \textcolor{comment}{\ \ \ \ \ \ i++;}}
+\DoxyCodeLine{00595\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00596\ \textcolor{comment}{\ \ \ \ while\ (i\ <\ MIN(GAMMA\_ITERATION\_FACTOR\ *\ iter\ ,\ GAMMA\_MAX\_NB\_ITERATION));\ */}}
+\DoxyCodeLine{00597\ }
+\DoxyCodeLine{00598\ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{00599\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ *\ (log(process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}})\ -\/}
+\DoxyCodeLine{00600\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ digamma(process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}))\ /\ diff;}
+\DoxyCodeLine{00601\ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{00602\ }
+\DoxyCodeLine{00603\ \textcolor{preprocessor}{\#\ \ \ \ \ ifdef\ DEBUG}}
+\DoxyCodeLine{00604\ \ \ \ \ \ \ cout\ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaae000fc63fc98ff7bf096ab1998c447d}{STATW\_SHAPE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ <<\ endl;}
+\DoxyCodeLine{00605\ \textcolor{preprocessor}{\#\ \ \ \ \ endif}}
+\DoxyCodeLine{00606\ }
+\DoxyCodeLine{00607\ \ \ \ \ \}}
+\DoxyCodeLine{00608\ \ \ \ \ \textcolor{keywordflow}{while}\ (i\ <\ \mbox{\hyperlink{stat__tools_8h_a74e75242132eaabbc1c512488a135926}{MIN}}(\mbox{\hyperlink{namespacestat__tool_a153b549134c04e7a8ba2b342288c3af3}{GAMMA\_ITERATION\_FACTOR}}\ *\ iter\ ,\ \mbox{\hyperlink{namespacestat__tool_a4132dab0764f7222358fa870b11d8a6b}{GAMMA\_MAX\_NB\_ITERATION}}));}
+\DoxyCodeLine{00609\ }
+\DoxyCodeLine{00610\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ bmean[0]\ /\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}};}
+\DoxyCodeLine{00611\ }
+\DoxyCodeLine{00612\ \textcolor{preprocessor}{\#\ \ \ ifdef\ DEBUG}}
+\DoxyCodeLine{00613\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}\ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03ddaae000fc63fc98ff7bf096ab1998c447d}{STATW\_SHAPE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ "{}}}
+\DoxyCodeLine{00614\ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{namespacestat__tool_a1ad357ec2c6af8469514f0e404137a1b}{STAT\_word}}[\mbox{\hyperlink{namespacestat__tool_a1dc39bd5c4faf9b8314007abdc8c03dda99950b90a0084c9f861de657edfb7750}{STATW\_SCALE}}]\ <<\ \textcolor{stringliteral}{"{}\ :\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ <<\ endl;}
+\DoxyCodeLine{00615\ \textcolor{preprocessor}{\#\ \ \ endif}}
+\DoxyCodeLine{00616\ }
+\DoxyCodeLine{00617\ \ \ \ \ \textcolor{keywordflow}{switch}\ (variance\_factor)\ \{}
+\DoxyCodeLine{00618\ }
+\DoxyCodeLine{00619\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5dac5072df076002db1d7d67d6612d26b8f}{CONVOLUTION\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00620\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00621\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ *\ factor[i];}
+\DoxyCodeLine{00622\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}};}
+\DoxyCodeLine{00623\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00624\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00625\ \ \ \ \ \}}
+\DoxyCodeLine{00626\ }
+\DoxyCodeLine{00627\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5da16f7cadd95ef0789f5cea6a424eabdab}{SCALING\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00628\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00629\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a7dcf88ea2e0c57f1eac697cfa901d7f9}{shape}};}
+\DoxyCodeLine{00630\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ *\ factor[i];}
+\DoxyCodeLine{00631\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00632\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00633\ \ \ \ \ \}}
+\DoxyCodeLine{00634\ \ \ \ \ \}}
+\DoxyCodeLine{00635\ \ \ \}}
+\DoxyCodeLine{00636\ }
+\DoxyCodeLine{00637\ \ \ \textcolor{keyword}{delete}\ []\ component\_frequency;}
+\DoxyCodeLine{00638\ \ \ \textcolor{keyword}{delete}\ []\ bmean;}
+\DoxyCodeLine{00639\ \ \ \textcolor{keyword}{delete}\ []\ factor;}
+\DoxyCodeLine{00640\ \}}
+\DoxyCodeLine{00641\ }
+\DoxyCodeLine{00642\ }
+\DoxyCodeLine{00643\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00651\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00652\ }
+\DoxyCodeLine{00653\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00654\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a294218c9addbdbcb13398780313d715b}{Vectors::inverse\_gaussian\_estimation}}(Type\ **component\_vector\_count\ ,\ \textcolor{keywordtype}{int}\ variable\ ,}
+\DoxyCodeLine{00655\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ *process)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00656\ \textcolor{keyword}{}}
+\DoxyCodeLine{00657\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00658\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{00659\ \ \ \textcolor{keywordtype}{double}\ *bmean\ ,\ *inverse\_scale;}
+\DoxyCodeLine{00660\ \ \ Type\ *component\_frequency;}
+\DoxyCodeLine{00661\ }
+\DoxyCodeLine{00662\ }
+\DoxyCodeLine{00663\ \ \ component\_frequency\ =\ \textcolor{keyword}{new}\ Type[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00664\ \ \ bmean\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00665\ }
+\DoxyCodeLine{00666\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00667\ \ \ \ \ bmean[i]\ =\ 0.;}
+\DoxyCodeLine{00668\ \ \ \ \ component\_frequency[i]\ =\ 0;}
+\DoxyCodeLine{00669\ \ \ \}}
+\DoxyCodeLine{00670\ }
+\DoxyCodeLine{00671\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00672\ }
+\DoxyCodeLine{00673\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00674\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00675\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00676\ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable];}
+\DoxyCodeLine{00677\ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00678\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00679\ \ \ \ \ \}}
+\DoxyCodeLine{00680\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00681\ \ \ \}}
+\DoxyCodeLine{00682\ }
+\DoxyCodeLine{00683\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00684\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00685\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00686\ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable];}
+\DoxyCodeLine{00687\ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00688\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00689\ \ \ \ \ \}}
+\DoxyCodeLine{00690\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00691\ \ \ \}}
+\DoxyCodeLine{00692\ \ \ \}}
+\DoxyCodeLine{00693\ }
+\DoxyCodeLine{00694\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00695\ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{00696\ \ \ \ \ \ \ bmean[i]\ /=\ component\_frequency[i];}
+\DoxyCodeLine{00697\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ bmean[i];}
+\DoxyCodeLine{00698\ \ \ \ \ \}}
+\DoxyCodeLine{00699\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00700\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{D\_DEFAULT}};}
+\DoxyCodeLine{00701\ \ \ \ \ \}}
+\DoxyCodeLine{00702\ \ \ \}}
+\DoxyCodeLine{00703\ }
+\DoxyCodeLine{00704\ \ \ inverse\_scale\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00705\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00706\ \ \ \ \ inverse\_scale[i]\ =\ 0.;}
+\DoxyCodeLine{00707\ \ \ \}}
+\DoxyCodeLine{00708\ }
+\DoxyCodeLine{00709\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00710\ }
+\DoxyCodeLine{00711\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00712\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00713\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00714\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((bmean[j]\ >\ 0.)\ \&\&\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ >\ 0))\ \{}
+\DoxyCodeLine{00715\ \ \ \ \ \ \ \ \ \ \ inverse\_scale[j]\ +=\ component\_vector\_count[i][j]\ *\ (1.\ /\ (double)\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ 1.\ /\ bmean[j]);}
+\DoxyCodeLine{00716\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00717\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00718\ \ \ \ \ \}}
+\DoxyCodeLine{00719\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00720\ \ \ \}}
+\DoxyCodeLine{00721\ }
+\DoxyCodeLine{00722\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00723\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00724\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00725\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((bmean[j]\ >\ 0.)\ \&\&\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ >\ 0.))\ \{}
+\DoxyCodeLine{00726\ \ \ \ \ \ \ \ \ \ \ inverse\_scale[j]\ +=\ component\_vector\_count[i][j]\ *\ (1.\ /\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ 1.\ /\ bmean[j]);}
+\DoxyCodeLine{00727\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00728\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00729\ \ \ \ \ \}}
+\DoxyCodeLine{00730\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00731\ \ \ \}}
+\DoxyCodeLine{00732\ \ \ \}}
+\DoxyCodeLine{00733\ }
+\DoxyCodeLine{00734\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00735\ \ \ \ \ \textcolor{keywordflow}{if}\ (inverse\_scale[i]\ >\ 0.)\ \{}
+\DoxyCodeLine{00736\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ component\_frequency[i]\ /\ inverse\_scale[i];}
+\DoxyCodeLine{00737\ \ \ \ \ \}}
+\DoxyCodeLine{00738\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00739\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{D\_DEFAULT}};}
+\DoxyCodeLine{00740\ \ \ \ \ \}}
+\DoxyCodeLine{00741\ \ \ \}}
+\DoxyCodeLine{00742\ }
+\DoxyCodeLine{00743\ \ \ \textcolor{keyword}{delete}\ []\ component\_frequency;}
+\DoxyCodeLine{00744\ \ \ \textcolor{keyword}{delete}\ []\ bmean;}
+\DoxyCodeLine{00745\ \ \ \textcolor{keyword}{delete}\ []\ inverse\_scale;}
+\DoxyCodeLine{00746\ \}}
+\DoxyCodeLine{00747\ }
+\DoxyCodeLine{00748\ }
+\DoxyCodeLine{00749\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00759\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{00760\ }
+\DoxyCodeLine{00761\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{00762\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a27fb21a020e06bb767d4c9282641273b}{Vectors::tied\_inverse\_gaussian\_estimation}}(Type\ **component\_vector\_count\ ,\ \textcolor{keywordtype}{int}\ variable\ ,}
+\DoxyCodeLine{00763\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ *process\ ,}
+\DoxyCodeLine{00764\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5d}{tying\_rule}}\ variance\_factor)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00765\ \textcolor{keyword}{}}
+\DoxyCodeLine{00766\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00767\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{00768\ \ \ \textcolor{keywordtype}{double}\ inverse\_scale\ ,\ *bmean\ ,\ *factor;}
+\DoxyCodeLine{00769\ \ \ Type\ *component\_frequency;}
+\DoxyCodeLine{00770\ }
+\DoxyCodeLine{00771\ \ \ \textcolor{keywordtype}{double}\ inverse\_scale2;}
+\DoxyCodeLine{00772\ }
+\DoxyCodeLine{00773\ }
+\DoxyCodeLine{00774\ \ \ component\_frequency\ =\ \textcolor{keyword}{new}\ Type[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00775\ \ \ bmean\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00776\ \ \ factor\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{00777\ }
+\DoxyCodeLine{00778\ \ \ \textcolor{keywordflow}{if}\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a4cf77f428aed0adfe6e7c46f494fef9f}{tied\_location}})\ \{}
+\DoxyCodeLine{00779\ \ \ \ \ bmean[0]\ =\ 0.;}
+\DoxyCodeLine{00780\ \ \ \ \ component\_frequency[0]\ =\ 0.;}
+\DoxyCodeLine{00781\ }
+\DoxyCodeLine{00782\ \ \ \ \ factor[0]\ =\ 1.;}
+\DoxyCodeLine{00783\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00784\ \ \ \ \ \ \ factor[i]\ =\ factor[i\ -\/\ 1]\ *\ 2;}
+\DoxyCodeLine{00785\ \ \ \ \ \}}
+\DoxyCodeLine{00786\ }
+\DoxyCodeLine{00787\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00788\ }
+\DoxyCodeLine{00789\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00790\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00791\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00792\ \ \ \ \ \ \ \ \ \ \ bmean[0]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ /\ factor[j];}
+\DoxyCodeLine{00793\ \ \ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00794\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00795\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00796\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00797\ \ \ \ \ \}}
+\DoxyCodeLine{00798\ }
+\DoxyCodeLine{00799\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00800\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00801\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00802\ \ \ \ \ \ \ \ \ \ \ bmean[0]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ /\ factor[j];}
+\DoxyCodeLine{00803\ \ \ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00804\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00805\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00806\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00807\ \ \ \ \ \}}
+\DoxyCodeLine{00808\ \ \ \ \ \}}
+\DoxyCodeLine{00809\ }
+\DoxyCodeLine{00810\ \ \ \ \ bmean[0]\ /=\ component\_frequency[0];}
+\DoxyCodeLine{00811\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ bmean[0];}
+\DoxyCodeLine{00812\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00813\ \ \ \ \ \ \ bmean[i]\ =\ bmean[0]\ *\ factor[i];}
+\DoxyCodeLine{00814\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ bmean[i];}
+\DoxyCodeLine{00815\ \ \ \ \ \}}
+\DoxyCodeLine{00816\ }
+\DoxyCodeLine{00817\ \ \ \ \ \textcolor{keywordflow}{if}\ (variance\_factor\ ==\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5dac5072df076002db1d7d67d6612d26b8f}{CONVOLUTION\_FACTOR}})\ \{}
+\DoxyCodeLine{00818\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00819\ \textcolor{comment}{//\ \ \ \ \ \ \ \ factor[i]\ =\ factor[i\ -\/\ 1]\ *\ 4;}}
+\DoxyCodeLine{00820\ \ \ \ \ \ \ \ \ factor[i]\ *=\ factor[i];}
+\DoxyCodeLine{00821\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00822\ \ \ \ \ \}}
+\DoxyCodeLine{00823\ }
+\DoxyCodeLine{00824\ \ \ \ \ inverse\_scale\ =\ 0.;}
+\DoxyCodeLine{00825\ }
+\DoxyCodeLine{00826\ \ \ \ \ \textcolor{keywordflow}{switch}\ (variance\_factor)\ \{}
+\DoxyCodeLine{00827\ }
+\DoxyCodeLine{00828\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5dac5072df076002db1d7d67d6612d26b8f}{CONVOLUTION\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00829\ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00830\ }
+\DoxyCodeLine{00831\ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00832\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00833\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00834\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((bmean[j]\ >\ 0.)\ \&\&\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ >\ 0))\ \{}
+\DoxyCodeLine{00835\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ (double)\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ 2.\ /\ bmean[j]\ +}
+\DoxyCodeLine{00836\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ /\ (bmean[j]\ *\ bmean[j]));}
+\DoxyCodeLine{00837\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00838\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00839\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00840\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00841\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00842\ }
+\DoxyCodeLine{00843\ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00844\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00845\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00846\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((bmean[j]\ >\ 0.)\ \&\&\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ >\ 0.))\ \{}
+\DoxyCodeLine{00847\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ 2.\ /\ bmean[j]\ +}
+\DoxyCodeLine{00848\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ /\ (bmean[j]\ *\ bmean[j]));}
+\DoxyCodeLine{00849\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00850\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00851\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00852\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00853\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00854\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00855\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00856\ \ \ \ \ \}}
+\DoxyCodeLine{00857\ }
+\DoxyCodeLine{00858\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5da16f7cadd95ef0789f5cea6a424eabdab}{SCALING\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00859\ \ \ \ \ \ \ inverse\_scale2\ =\ 0.;}
+\DoxyCodeLine{00860\ }
+\DoxyCodeLine{00861\ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00862\ }
+\DoxyCodeLine{00863\ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00864\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00865\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00866\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((bmean[j]\ >\ 0.)\ \&\&\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ >\ 0))\ \{}
+\DoxyCodeLine{00867\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ (double)\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ 1.\ /\ bmean[j]);}
+\DoxyCodeLine{00868\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale2\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ (double)\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ 2.\ /\ bmean[j]\ +}
+\DoxyCodeLine{00869\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ /\ (bmean[j]\ *\ bmean[j]));}
+\DoxyCodeLine{00870\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00871\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00872\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00873\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00874\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00875\ }
+\DoxyCodeLine{00876\ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00877\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00878\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00879\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((bmean[j]\ >\ 0.)\ \&\&\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ >\ 0.))\ \{}
+\DoxyCodeLine{00880\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ 1.\ /\ bmean[j]);}
+\DoxyCodeLine{00881\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale2\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ 2.\ /\ bmean[j]\ +}
+\DoxyCodeLine{00882\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ /\ (bmean[j]\ *\ bmean[j]));}
+\DoxyCodeLine{00883\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00884\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00885\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00886\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00887\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00888\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00889\ }
+\DoxyCodeLine{00890\ \textcolor{preprocessor}{\#\ \ \ \ \ ifdef\ MESSAGE}}
+\DoxyCodeLine{00891\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((inverse\_scale2\ <\ inverse\_scale\ -\/\ \mbox{\hyperlink{namespacestat__tool_a69438f42880af4584b2a8a68157210ed}{DOUBLE\_ERROR}})\ ||\ (inverse\_scale2\ >\ inverse\_scale\ +\ \mbox{\hyperlink{namespacestat__tool_a69438f42880af4584b2a8a68157210ed}{DOUBLE\_ERROR}}))\ \{}
+\DoxyCodeLine{00892\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nERROR:\ "{}}\ <<\ inverse\_scale\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}\ <<\ inverse\_scale2\ <<\ endl;}
+\DoxyCodeLine{00893\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00894\ \textcolor{preprocessor}{\#\ \ \ \ \ endif}}
+\DoxyCodeLine{00895\ }
+\DoxyCodeLine{00896\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00897\ \ \ \ \ \}}
+\DoxyCodeLine{00898\ \ \ \ \ \}}
+\DoxyCodeLine{00899\ \ \ \}}
+\DoxyCodeLine{00900\ }
+\DoxyCodeLine{00901\ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00902\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00903\ \ \ \ \ \ \ bmean[i]\ =\ 0.;}
+\DoxyCodeLine{00904\ \ \ \ \ \ \ component\_frequency[i]\ =\ 0;}
+\DoxyCodeLine{00905\ \ \ \ \ \}}
+\DoxyCodeLine{00906\ }
+\DoxyCodeLine{00907\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00908\ }
+\DoxyCodeLine{00909\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00910\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00911\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00912\ \ \ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable];}
+\DoxyCodeLine{00913\ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00914\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00915\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00916\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00917\ \ \ \ \ \}}
+\DoxyCodeLine{00918\ }
+\DoxyCodeLine{00919\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00920\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00921\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00922\ \ \ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable];}
+\DoxyCodeLine{00923\ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{00924\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00925\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00926\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00927\ \ \ \ \ \}}
+\DoxyCodeLine{00928\ \ \ \ \ \}}
+\DoxyCodeLine{00929\ }
+\DoxyCodeLine{00930\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00931\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{00932\ \ \ \ \ \ \ \ \ bmean[i]\ /=\ component\_frequency[i];}
+\DoxyCodeLine{00933\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ bmean[i];}
+\DoxyCodeLine{00934\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00935\ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00936\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{D\_DEFAULT}};}
+\DoxyCodeLine{00937\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00938\ \ \ \ \ \}}
+\DoxyCodeLine{00939\ }
+\DoxyCodeLine{00940\ \ \ \ \ \textcolor{keywordflow}{switch}\ (variance\_factor)\ \{}
+\DoxyCodeLine{00941\ }
+\DoxyCodeLine{00942\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5dac5072df076002db1d7d67d6612d26b8f}{CONVOLUTION\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00943\ \ \ \ \ \ \ factor[0]\ =\ 1.;}
+\DoxyCodeLine{00944\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00945\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{00946\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ (bmean[i]\ *\ bmean[i])\ /\ (bmean[0]\ *\ bmean[0]);}
+\DoxyCodeLine{00947\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00948\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00949\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ 1.;}
+\DoxyCodeLine{00950\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00951\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00952\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00953\ \ \ \ \ \}}
+\DoxyCodeLine{00954\ }
+\DoxyCodeLine{00955\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5da16f7cadd95ef0789f5cea6a424eabdab}{SCALING\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{00956\ \ \ \ \ \ \ factor[0]\ =\ 1.;}
+\DoxyCodeLine{00957\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{00958\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{00959\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ bmean[i]\ /\ bmean[0];}
+\DoxyCodeLine{00960\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00961\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00962\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ 1.;}
+\DoxyCodeLine{00963\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00964\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00965\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00966\ \ \ \ \ \}}
+\DoxyCodeLine{00967\ \ \ \ \ \}}
+\DoxyCodeLine{00968\ }
+\DoxyCodeLine{00969\ \ \ \ \ inverse\_scale\ =\ 0.;}
+\DoxyCodeLine{00970\ \ \ \ \ inverse\_scale2\ =\ 0.;}
+\DoxyCodeLine{00971\ }
+\DoxyCodeLine{00972\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{00973\ }
+\DoxyCodeLine{00974\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00975\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00976\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00977\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((bmean[j]\ >\ 0.)\ \&\&\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ >\ 0))\ \{}
+\DoxyCodeLine{00978\ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ (double)\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ 1.\ /\ bmean[j]);}
+\DoxyCodeLine{00979\ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale2\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ (double)\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ 2.\ /\ bmean[j]\ +}
+\DoxyCodeLine{00980\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ /\ (bmean[j]\ *\ bmean[j]));}
+\DoxyCodeLine{00981\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00982\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00983\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00984\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00985\ \ \ \ \ \}}
+\DoxyCodeLine{00986\ }
+\DoxyCodeLine{00987\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{00988\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{00989\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{00990\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((bmean[j]\ >\ 0.)\ \&\&\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ >\ 0.))\ \{}
+\DoxyCodeLine{00991\ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ 1\ /\ bmean[j]);}
+\DoxyCodeLine{00992\ \ \ \ \ \ \ \ \ \ \ \ \ inverse\_scale2\ +=\ component\_vector\_count[i][j]\ *\ factor[j]\ *\ (1.\ /\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ 2.\ /\ bmean[j]\ +}
+\DoxyCodeLine{00993\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ /\ (bmean[j]\ *\ bmean[j]));}
+\DoxyCodeLine{00994\ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00995\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00996\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00997\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00998\ \ \ \ \ \}}
+\DoxyCodeLine{00999\ \ \ \ \ \}}
+\DoxyCodeLine{01000\ }
+\DoxyCodeLine{01001\ \textcolor{preprocessor}{\#\ \ \ ifdef\ MESSAGE}}
+\DoxyCodeLine{01002\ \textcolor{comment}{/*\ \ \ \ cout\ <<\ "{}\(\backslash\)n"{};}}
+\DoxyCodeLine{01003\ \textcolor{comment}{\ \ \ \ for\ (i\ =\ 1;i\ <\ process-\/>nb\_state;i++)\ \{}}
+\DoxyCodeLine{01004\ \textcolor{comment}{\ \ \ \ \ \ cout\ <<\ factor[i];}}
+\DoxyCodeLine{01005\ \textcolor{comment}{\ \ \ \ \ \ if\ (variance\_factor\ ==\ CONVOLUTION\_FACTOR)\ \{}}
+\DoxyCodeLine{01006\ \textcolor{comment}{\ \ \ \ \ \ \ \ cout\ <<\ "{}\ ("{}\ <<\ sqrt(factor[i])\ <<\ "{})"{};}}
+\DoxyCodeLine{01007\ \textcolor{comment}{\ \ \ \ \ \ \}}}
+\DoxyCodeLine{01008\ \textcolor{comment}{\ \ \ \ \ \ if\ (i\ <\ process-\/>nb\_state\ -\/\ 1)\ \{}}
+\DoxyCodeLine{01009\ \textcolor{comment}{\ \ \ \ \ \ \ \ cout\ <<\ "{},\ "{};}}
+\DoxyCodeLine{01010\ \textcolor{comment}{\ \ \ \ \ \ \}}}
+\DoxyCodeLine{01011\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{01012\ \textcolor{comment}{\ \ \ \ cout\ <<\ endl;\ */}}
+\DoxyCodeLine{01013\ }
+\DoxyCodeLine{01014\ \ \ \ \ \textcolor{keywordflow}{if}\ ((inverse\_scale2\ <\ inverse\_scale\ -\/\ \mbox{\hyperlink{namespacestat__tool_a69438f42880af4584b2a8a68157210ed}{DOUBLE\_ERROR}})\ ||\ (inverse\_scale2\ >\ inverse\_scale\ +\ \mbox{\hyperlink{namespacestat__tool_a69438f42880af4584b2a8a68157210ed}{DOUBLE\_ERROR}}))\ \{}
+\DoxyCodeLine{01015\ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nERROR:\ "{}}\ <<\ inverse\_scale\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}\ <<\ inverse\_scale2\ <<\ endl;}
+\DoxyCodeLine{01016\ \ \ \ \ \}}
+\DoxyCodeLine{01017\ \textcolor{preprocessor}{\#\ \ \ endif}}
+\DoxyCodeLine{01018\ }
+\DoxyCodeLine{01019\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01020\ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_frequency[i];}
+\DoxyCodeLine{01021\ \ \ \ \ \}}
+\DoxyCodeLine{01022\ \ \ \}}
+\DoxyCodeLine{01023\ }
+\DoxyCodeLine{01024\ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ component\_frequency[0]\ /\ inverse\_scale;}
+\DoxyCodeLine{01025\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01026\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a6a5cb1585cb99375f44f873900609ec4}{scale}}\ *\ factor[i];}
+\DoxyCodeLine{01027\ \ \ \}}
+\DoxyCodeLine{01028\ }
+\DoxyCodeLine{01029\ \ \ \textcolor{keyword}{delete}\ []\ component\_frequency;}
+\DoxyCodeLine{01030\ \ \ \textcolor{keyword}{delete}\ []\ bmean;}
+\DoxyCodeLine{01031\ \ \ \textcolor{keyword}{delete}\ []\ factor;}
+\DoxyCodeLine{01032\ \}}
+\DoxyCodeLine{01033\ }
+\DoxyCodeLine{01034\ }
+\DoxyCodeLine{01035\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{01043\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{01044\ }
+\DoxyCodeLine{01045\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{01046\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Vectors_afee8ee272ac2fcdd3a3bd39eb0f9c654}{Vectors::gaussian\_estimation}}(Type\ **component\_vector\_count\ ,\ \textcolor{keywordtype}{int}\ variable\ ,}
+\DoxyCodeLine{01047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ *process)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{01048\ \textcolor{keyword}{}}
+\DoxyCodeLine{01049\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{01050\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{01051\ \ \ \textcolor{keywordtype}{double}\ diff\ ,\ *bmean;}
+\DoxyCodeLine{01052\ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ *variance;}
+\DoxyCodeLine{01053\ \ \ Type\ *component\_frequency;}
+\DoxyCodeLine{01054\ }
+\DoxyCodeLine{01055\ }
+\DoxyCodeLine{01056\ \ \ component\_frequency\ =\ \textcolor{keyword}{new}\ Type[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01057\ \ \ bmean\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01058\ }
+\DoxyCodeLine{01059\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01060\ \ \ \ \ bmean[i]\ =\ 0.;}
+\DoxyCodeLine{01061\ \ \ \ \ component\_frequency[i]\ =\ 0;}
+\DoxyCodeLine{01062\ \ \ \}}
+\DoxyCodeLine{01063\ }
+\DoxyCodeLine{01064\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01065\ }
+\DoxyCodeLine{01066\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01067\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01068\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01069\ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable];}
+\DoxyCodeLine{01070\ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01071\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01072\ \ \ \ \ \}}
+\DoxyCodeLine{01073\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01074\ \ \ \}}
+\DoxyCodeLine{01075\ }
+\DoxyCodeLine{01076\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01077\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01078\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01079\ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable];}
+\DoxyCodeLine{01080\ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01081\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01082\ \ \ \ \ \}}
+\DoxyCodeLine{01083\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01084\ \ \ \}}
+\DoxyCodeLine{01085\ \ \ \}}
+\DoxyCodeLine{01086\ }
+\DoxyCodeLine{01087\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01088\ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{01089\ \ \ \ \ \ \ bmean[i]\ /=\ component\_frequency[i];}
+\DoxyCodeLine{01090\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ bmean[i];}
+\DoxyCodeLine{01091\ \ \ \ \ \}}
+\DoxyCodeLine{01092\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01093\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ \mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}};}
+\DoxyCodeLine{01094\ \ \ \ \ \}}
+\DoxyCodeLine{01095\ \ \ \}}
+\DoxyCodeLine{01096\ }
+\DoxyCodeLine{01097\ \ \ \textcolor{keywordflow}{if}\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a5aae87110ab5f8ceb3ac13ea3044ba71}{tied\_dispersion}})\ \{}
+\DoxyCodeLine{01098\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01099\ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_frequency[i];}
+\DoxyCodeLine{01100\ \ \ \ \ \}}
+\DoxyCodeLine{01101\ }
+\DoxyCodeLine{01102\ \ \ \ \ variance\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}[1];}
+\DoxyCodeLine{01103\ \ \ \ \ variance[0]\ =\ 0.;}
+\DoxyCodeLine{01104\ }
+\DoxyCodeLine{01105\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01106\ }
+\DoxyCodeLine{01107\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01108\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01110\ \ \ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{01111\ \ \ \ \ \ \ \ \ \ \ variance[0]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01112\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01113\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01114\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01115\ \ \ \ \ \}}
+\DoxyCodeLine{01116\ }
+\DoxyCodeLine{01117\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01118\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01119\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01120\ \ \ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{01121\ \ \ \ \ \ \ \ \ \ \ variance[0]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01122\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01123\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01124\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01125\ \ \ \ \ \}}
+\DoxyCodeLine{01126\ \ \ \ \ \}}
+\DoxyCodeLine{01127\ }
+\DoxyCodeLine{01128\ \textcolor{comment}{//\ \ \ \ variance[0]\ /=\ component\_frequency[0];}}
+\DoxyCodeLine{01129\ \ \ \ \ variance[0]\ /=\ (component\_frequency[0]\ -\/\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}});}
+\DoxyCodeLine{01130\ }
+\DoxyCodeLine{01131\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ sqrtl(variance[0]);}
+\DoxyCodeLine{01132\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01133\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}};}
+\DoxyCodeLine{01134\ \ \ \ \ \}}
+\DoxyCodeLine{01135\ \ \ \}}
+\DoxyCodeLine{01136\ }
+\DoxyCodeLine{01137\ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01138\ \ \ \ \ variance\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01139\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01140\ \ \ \ \ \ \ variance[i]\ =\ 0.;}
+\DoxyCodeLine{01141\ \ \ \ \ \}}
+\DoxyCodeLine{01142\ }
+\DoxyCodeLine{01143\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01144\ }
+\DoxyCodeLine{01145\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01146\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01147\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01148\ \ \ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{01149\ \ \ \ \ \ \ \ \ \ \ variance[j]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01150\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01151\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01152\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01153\ \ \ \ \ \}}
+\DoxyCodeLine{01154\ }
+\DoxyCodeLine{01155\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01156\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01157\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01158\ \ \ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{01159\ \ \ \ \ \ \ \ \ \ \ variance[j]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01160\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01161\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01162\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01163\ \ \ \ \ \}}
+\DoxyCodeLine{01164\ \ \ \ \ \}}
+\DoxyCodeLine{01165\ }
+\DoxyCodeLine{01166\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01167\ \textcolor{comment}{//\ \ \ \ \ \ if\ (component\_frequency[i]\ >\ 0)\ \{}}
+\DoxyCodeLine{01168\ \textcolor{comment}{//\ \ \ \ \ \ \ \ variance[i]\ /=\ component\_frequency[i];}}
+\DoxyCodeLine{01169\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 1)\ \{}
+\DoxyCodeLine{01170\ \ \ \ \ \ \ \ \ variance[i]\ /=\ (component\_frequency[i]\ -\/\ 1);}
+\DoxyCodeLine{01171\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ sqrtl(variance[i]);}
+\DoxyCodeLine{01172\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ !=\ 0.)\ \&\&}
+\DoxyCodeLine{01173\ \ \ \ \ \ \ \ \ \ \ \ \ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ /\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ <\ \mbox{\hyperlink{namespacestat__tool_a5573606f20a1080510ebd9f0300e1757}{GAUSSIAN\_MIN\_VARIATION\_COEFF}}))\ \{}
+\DoxyCodeLine{01174\ \ \ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ *\ \mbox{\hyperlink{namespacestat__tool_a5573606f20a1080510ebd9f0300e1757}{GAUSSIAN\_MIN\_VARIATION\_COEFF}};}
+\DoxyCodeLine{01175\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01176\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01177\ \ \ \ \ \}}
+\DoxyCodeLine{01178\ \ \ \}}
+\DoxyCodeLine{01179\ }
+\DoxyCodeLine{01180\ \ \ \textcolor{keyword}{delete}\ []\ component\_frequency;}
+\DoxyCodeLine{01181\ \ \ \textcolor{keyword}{delete}\ []\ bmean;}
+\DoxyCodeLine{01182\ \ \ \textcolor{keyword}{delete}\ []\ variance;}
+\DoxyCodeLine{01183\ \}}
+\DoxyCodeLine{01184\ }
+\DoxyCodeLine{01185\ }
+\DoxyCodeLine{01186\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{01194\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{01195\ }
+\DoxyCodeLine{01196\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{01197\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a6d4ae189606b2d26fcb6ac813cb826ab}{Vectors::tied\_gaussian\_estimation}}(Type\ **component\_vector\_count\ ,\ \textcolor{keywordtype}{int}\ variable\ ,}
+\DoxyCodeLine{01198\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ *process)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{01199\ \textcolor{keyword}{}}
+\DoxyCodeLine{01200\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{01201\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{01202\ \ \ \textcolor{keywordtype}{double}\ old\_offset\ ,\ diff\ ,\ *bmean;}
+\DoxyCodeLine{01203\ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ *variance;}
+\DoxyCodeLine{01204\ \ \ Type\ *component\_frequency;}
+\DoxyCodeLine{01205\ }
+\DoxyCodeLine{01206\ }
+\DoxyCodeLine{01207\ \ \ bmean\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[2];}
+\DoxyCodeLine{01208\ \ \ component\_frequency\ =\ \textcolor{keyword}{new}\ Type[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01209\ }
+\DoxyCodeLine{01210\ \ \ old\_offset\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a2cf47cf4ca7041a1256bd72d2cd9c602}{offset}};}
+\DoxyCodeLine{01211\ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a2cf47cf4ca7041a1256bd72d2cd9c602}{offset}}\ =\ 0.;}
+\DoxyCodeLine{01212\ \ \ bmean[0]\ =\ 0.;}
+\DoxyCodeLine{01213\ \ \ component\_frequency[0]\ =\ 0;}
+\DoxyCodeLine{01214\ \ \ bmean[1]\ =\ 0.;}
+\DoxyCodeLine{01215\ \ \ component\_frequency[1]\ =\ 0;}
+\DoxyCodeLine{01216\ }
+\DoxyCodeLine{01217\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01218\ }
+\DoxyCodeLine{01219\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01220\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01221\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1;j++)\ \{}
+\DoxyCodeLine{01222\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a2cf47cf4ca7041a1256bd72d2cd9c602}{offset}}\ +=\ component\_vector\_count[i][j]\ *\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[j]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ -\/\ old\_offset));}
+\DoxyCodeLine{01223\ \ \ \ \ \ \ \ \ bmean[0]\ +=\ component\_vector\_count[i][j]\ *\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ old\_offset)\ /\ (j\ +\ 1);}
+\DoxyCodeLine{01224\ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01225\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01226\ }
+\DoxyCodeLine{01227\ \ \ \ \ \ \ bmean[1]\ +=\ component\_vector\_count[i][process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable];}
+\DoxyCodeLine{01228\ \ \ \ \ \ \ component\_frequency[1]\ +=\ component\_vector\_count[i][process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1];}
+\DoxyCodeLine{01229\ \ \ \ \ \}}
+\DoxyCodeLine{01230\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01231\ \ \ \}}
+\DoxyCodeLine{01232\ }
+\DoxyCodeLine{01233\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01234\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01235\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1;j++)\ \{}
+\DoxyCodeLine{01236\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a2cf47cf4ca7041a1256bd72d2cd9c602}{offset}}\ +=\ component\_vector\_count[i][j]\ *\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[j]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ -\/\ old\_offset));}
+\DoxyCodeLine{01237\ \ \ \ \ \ \ \ \ bmean[0]\ +=\ component\_vector\_count[i][j]\ *\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ old\_offset)\ /\ (j\ +\ 1);}
+\DoxyCodeLine{01238\ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01239\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01240\ }
+\DoxyCodeLine{01241\ \ \ \ \ \ \ bmean[1]\ +=\ component\_vector\_count[i][process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable];}
+\DoxyCodeLine{01242\ \ \ \ \ \ \ component\_frequency[1]\ +=\ component\_vector\_count[i][process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1];}
+\DoxyCodeLine{01243\ \ \ \ \ \}}
+\DoxyCodeLine{01244\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01245\ \ \ \}}
+\DoxyCodeLine{01246\ \ \ \}}
+\DoxyCodeLine{01247\ }
+\DoxyCodeLine{01248\ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a2cf47cf4ca7041a1256bd72d2cd9c602}{offset}}\ /=\ component\_frequency[0];}
+\DoxyCodeLine{01249\ }
+\DoxyCodeLine{01250\ \ \ bmean[0]\ /=\ component\_frequency[0];}
+\DoxyCodeLine{01251\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1;i++)\ \{}
+\DoxyCodeLine{01252\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a2cf47cf4ca7041a1256bd72d2cd9c602}{offset}}\ +\ (i\ +\ 1)\ *\ bmean[0];}
+\DoxyCodeLine{01253\ \ \ \}}
+\DoxyCodeLine{01254\ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ bmean[1]\ /\ component\_frequency[1];}
+\DoxyCodeLine{01255\ }
+\DoxyCodeLine{01256\ \ \ \textcolor{keywordflow}{if}\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a5aae87110ab5f8ceb3ac13ea3044ba71}{tied\_dispersion}})\ \{}
+\DoxyCodeLine{01257\ \ \ \ \ variance\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}[2];}
+\DoxyCodeLine{01258\ \ \ \ \ variance[0]\ =\ 0.;}
+\DoxyCodeLine{01259\ \ \ \ \ variance[1]\ =\ 0.;}
+\DoxyCodeLine{01260\ }
+\DoxyCodeLine{01261\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01262\ }
+\DoxyCodeLine{01263\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01264\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01265\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1;j++)\ \{}
+\DoxyCodeLine{01266\ \ \ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[j]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}};}
+\DoxyCodeLine{01267\ \ \ \ \ \ \ \ \ \ \ variance[0]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01268\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01269\ }
+\DoxyCodeLine{01270\ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}};}
+\DoxyCodeLine{01271\ \ \ \ \ \ \ \ \ variance[1]\ +=\ component\_vector\_count[i][process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01272\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01273\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01274\ \ \ \ \ \}}
+\DoxyCodeLine{01275\ }
+\DoxyCodeLine{01276\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01277\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01278\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1;j++)\ \{}
+\DoxyCodeLine{01279\ \ \ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[j]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}};}
+\DoxyCodeLine{01280\ \ \ \ \ \ \ \ \ \ \ variance[0]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01281\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01282\ }
+\DoxyCodeLine{01283\ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}};}
+\DoxyCodeLine{01284\ \ \ \ \ \ \ \ \ variance[1]\ +=\ component\_vector\_count[i][process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01285\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01286\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01287\ \ \ \ \ \}}
+\DoxyCodeLine{01288\ \ \ \ \ \}}
+\DoxyCodeLine{01289\ }
+\DoxyCodeLine{01290\ \textcolor{comment}{//\ \ \ \ variance[0]\ /=\ component\_frequency[0];}}
+\DoxyCodeLine{01291\ \ \ \ \ variance[0]\ /=\ (component\_frequency[0]\ -\/\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1));}
+\DoxyCodeLine{01292\ }
+\DoxyCodeLine{01293\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ sqrtl(variance[0]);}
+\DoxyCodeLine{01294\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1;i++)\ \{}
+\DoxyCodeLine{01295\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}};}
+\DoxyCodeLine{01296\ \ \ \ \ \}}
+\DoxyCodeLine{01297\ }
+\DoxyCodeLine{01298\ \textcolor{comment}{//\ \ \ \ variance[1]\ /=\ component\_frequency[1];}}
+\DoxyCodeLine{01299\ \ \ \ \ variance[1]\ /=\ (component\_frequency[1]\ -\/\ 1);}
+\DoxyCodeLine{01300\ \ \ \ \ \textcolor{keywordflow}{if}\ (sqrtl(variance[1])\ >\ 2\ *\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}})\ \{}
+\DoxyCodeLine{01301\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}\ -\/\ 1]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ sqrtl(variance[1]);}
+\DoxyCodeLine{01302\ \ \ \ \ \}}
+\DoxyCodeLine{01303\ }
+\DoxyCodeLine{01304\ \textcolor{preprocessor}{\#\ \ \ ifdef\ MESSAGE}}
+\DoxyCodeLine{01305\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}TEST:\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a2cf47cf4ca7041a1256bd72d2cd9c602}{offset}}\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ bmean[0]\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ <<\ endl;}
+\DoxyCodeLine{01306\ \textcolor{preprocessor}{\#\ \ \ endif}}
+\DoxyCodeLine{01307\ }
+\DoxyCodeLine{01308\ \ \ \}}
+\DoxyCodeLine{01309\ }
+\DoxyCodeLine{01310\ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01311\ \ \ \ \ variance\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01312\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01313\ \ \ \ \ \ \ variance[i]\ =\ 0.;}
+\DoxyCodeLine{01314\ \ \ \ \ \ \ component\_frequency[i]\ =\ 0;}
+\DoxyCodeLine{01315\ \ \ \ \ \}}
+\DoxyCodeLine{01316\ }
+\DoxyCodeLine{01317\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01318\ }
+\DoxyCodeLine{01319\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01320\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01321\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01322\ \ \ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[j]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}};}
+\DoxyCodeLine{01323\ \ \ \ \ \ \ \ \ \ \ variance[j]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01324\ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01325\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01326\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01327\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01328\ \ \ \ \ \}}
+\DoxyCodeLine{01329\ }
+\DoxyCodeLine{01330\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01331\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01332\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01333\ \ \ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[j]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}};}
+\DoxyCodeLine{01334\ \ \ \ \ \ \ \ \ \ \ variance[j]\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff;}
+\DoxyCodeLine{01335\ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01336\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01337\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01338\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01339\ \ \ \ \ \}}
+\DoxyCodeLine{01340\ \ \ \ \ \}}
+\DoxyCodeLine{01341\ }
+\DoxyCodeLine{01342\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01343\ \textcolor{comment}{//\ \ \ \ \ \ if\ (component\_frequency[i]\ >\ 0)\ \{}}
+\DoxyCodeLine{01344\ \textcolor{comment}{//\ \ \ \ \ \ \ \ variance[i]\ /=\ component\_frequency[i];}}
+\DoxyCodeLine{01345\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 1)\ \{}
+\DoxyCodeLine{01346\ \ \ \ \ \ \ \ \ variance[i]\ /=\ (component\_frequency[i]\ -\/\ 1);}
+\DoxyCodeLine{01347\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ sqrtl(variance[i]);}
+\DoxyCodeLine{01348\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ !=\ 0.)\ \&\&}
+\DoxyCodeLine{01349\ \ \ \ \ \ \ \ \ \ \ \ \ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ /\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ <\ \mbox{\hyperlink{namespacestat__tool_a5573606f20a1080510ebd9f0300e1757}{GAUSSIAN\_MIN\_VARIATION\_COEFF}}))\ \{}
+\DoxyCodeLine{01350\ \ \ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ *\ \mbox{\hyperlink{namespacestat__tool_a5573606f20a1080510ebd9f0300e1757}{GAUSSIAN\_MIN\_VARIATION\_COEFF}};}
+\DoxyCodeLine{01351\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01352\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01353\ \ \ \ \ \}}
+\DoxyCodeLine{01354\ \ \ \}}
+\DoxyCodeLine{01355\ }
+\DoxyCodeLine{01356\ \ \ \textcolor{keyword}{delete}\ []\ component\_frequency;}
+\DoxyCodeLine{01357\ \ \ \textcolor{keyword}{delete}\ []\ bmean;}
+\DoxyCodeLine{01358\ \ \ \textcolor{keyword}{delete}\ []\ variance;}
+\DoxyCodeLine{01359\ \}}
+\DoxyCodeLine{01360\ }
+\DoxyCodeLine{01361\ }
+\DoxyCodeLine{01362\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{01372\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{01373\ }
+\DoxyCodeLine{01374\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{01375\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a6d4ae189606b2d26fcb6ac813cb826ab}{Vectors::tied\_gaussian\_estimation}}(Type\ **component\_vector\_count\ ,\ \textcolor{keywordtype}{int}\ variable\ ,}
+\DoxyCodeLine{01376\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ *process\ ,}
+\DoxyCodeLine{01377\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5d}{tying\_rule}}\ variance\_factor)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{01378\ \textcolor{keyword}{}}
+\DoxyCodeLine{01379\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{01380\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{01381\ \ \ \textcolor{keywordtype}{double}\ diff\ ,\ *bmean\ ,\ *factor;}
+\DoxyCodeLine{01382\ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ variance;}
+\DoxyCodeLine{01383\ \ \ Type\ *component\_frequency;}
+\DoxyCodeLine{01384\ }
+\DoxyCodeLine{01385\ }
+\DoxyCodeLine{01386\ \ \ component\_frequency\ =\ \textcolor{keyword}{new}\ Type[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01387\ \ \ bmean\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01388\ \ \ factor\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01389\ }
+\DoxyCodeLine{01390\ \ \ \textcolor{keywordflow}{if}\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a4cf77f428aed0adfe6e7c46f494fef9f}{tied\_location}})\ \{}
+\DoxyCodeLine{01391\ \ \ \ \ bmean[0]\ =\ 0.;}
+\DoxyCodeLine{01392\ \ \ \ \ component\_frequency[0]\ =\ 0.;}
+\DoxyCodeLine{01393\ }
+\DoxyCodeLine{01394\ \ \ \ \ factor[0]\ =\ 1.;}
+\DoxyCodeLine{01395\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01396\ \ \ \ \ \ \ factor[i]\ =\ factor[i\ -\/\ 1]\ *\ 2;}
+\DoxyCodeLine{01397\ \ \ \ \ \}}
+\DoxyCodeLine{01398\ }
+\DoxyCodeLine{01399\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01400\ }
+\DoxyCodeLine{01401\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01402\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01403\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01404\ \ \ \ \ \ \ \ \ \ \ bmean[0]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ /\ factor[j];}
+\DoxyCodeLine{01405\ \ \ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01406\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01407\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01408\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01409\ \ \ \ \ \}}
+\DoxyCodeLine{01410\ }
+\DoxyCodeLine{01411\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01412\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01413\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01414\ \ \ \ \ \ \ \ \ \ \ bmean[0]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ /\ factor[j];}
+\DoxyCodeLine{01415\ \ \ \ \ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01416\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01417\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01418\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01419\ \ \ \ \ \}}
+\DoxyCodeLine{01420\ \ \ \ \ \}}
+\DoxyCodeLine{01421\ }
+\DoxyCodeLine{01422\ \ \ \ \ bmean[0]\ /=\ component\_frequency[0];}
+\DoxyCodeLine{01423\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ bmean[0];}
+\DoxyCodeLine{01424\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01425\ \ \ \ \ \ \ bmean[i]\ =\ bmean[0]\ *\ factor[i];}
+\DoxyCodeLine{01426\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ bmean[i];}
+\DoxyCodeLine{01427\ \ \ \ \ \}}
+\DoxyCodeLine{01428\ }
+\DoxyCodeLine{01429\ \ \ \ \ \textcolor{keywordflow}{if}\ (variance\_factor\ ==\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5da16f7cadd95ef0789f5cea6a424eabdab}{SCALING\_FACTOR}})\ \{}
+\DoxyCodeLine{01430\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01431\ \textcolor{comment}{//\ \ \ \ \ \ \ \ factor[i]\ =\ factor[i\ -\/\ 1]\ *\ 4;}}
+\DoxyCodeLine{01432\ \ \ \ \ \ \ \ \ factor[i]\ *=\ factor[i];}
+\DoxyCodeLine{01433\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01434\ \ \ \ \ \}}
+\DoxyCodeLine{01435\ \ \ \}}
+\DoxyCodeLine{01436\ }
+\DoxyCodeLine{01437\ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01438\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01439\ \ \ \ \ \ \ bmean[i]\ =\ 0.;}
+\DoxyCodeLine{01440\ \ \ \ \ \ \ component\_frequency[i]\ =\ 0;}
+\DoxyCodeLine{01441\ \ \ \ \ \}}
+\DoxyCodeLine{01442\ }
+\DoxyCodeLine{01443\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01444\ }
+\DoxyCodeLine{01445\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01446\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01447\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01448\ \ \ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable];}
+\DoxyCodeLine{01449\ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01450\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01451\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01452\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01453\ \ \ \ \ \}}
+\DoxyCodeLine{01454\ }
+\DoxyCodeLine{01455\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01456\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01457\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01458\ \ \ \ \ \ \ \ \ \ \ bmean[j]\ +=\ component\_vector\_count[i][j]\ *\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable];}
+\DoxyCodeLine{01459\ \ \ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01460\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01461\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01462\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01463\ \ \ \ \ \}}
+\DoxyCodeLine{01464\ \ \ \ \ \}}
+\DoxyCodeLine{01465\ }
+\DoxyCodeLine{01466\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01467\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{01468\ \ \ \ \ \ \ \ \ bmean[i]\ /=\ component\_frequency[i];}
+\DoxyCodeLine{01469\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ bmean[i];}
+\DoxyCodeLine{01470\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01471\ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01472\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ \mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}};}
+\DoxyCodeLine{01473\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01474\ \ \ \ \ \}}
+\DoxyCodeLine{01475\ }
+\DoxyCodeLine{01476\ \ \ \ \ \textcolor{keywordflow}{switch}\ (variance\_factor)\ \{}
+\DoxyCodeLine{01477\ }
+\DoxyCodeLine{01478\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5dac5072df076002db1d7d67d6612d26b8f}{CONVOLUTION\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{01479\ \ \ \ \ \ \ factor[0]\ =\ 1.;}
+\DoxyCodeLine{01480\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01481\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{01482\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ bmean[i]\ /\ bmean[0];}
+\DoxyCodeLine{01483\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01484\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01485\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ 1.;}
+\DoxyCodeLine{01486\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01487\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01488\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01489\ \ \ \ \ \}}
+\DoxyCodeLine{01490\ }
+\DoxyCodeLine{01491\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a182f5f487c163698e503d500a7472f5da16f7cadd95ef0789f5cea6a424eabdab}{SCALING\_FACTOR}}\ :\ \{}
+\DoxyCodeLine{01492\ \ \ \ \ \ \ factor[0]\ =\ 1.;}
+\DoxyCodeLine{01493\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01494\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{01495\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ (bmean[i]\ *\ bmean[i])\ /\ (bmean[0]\ *\ bmean[0]);}
+\DoxyCodeLine{01496\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01497\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01498\ \ \ \ \ \ \ \ \ \ \ factor[i]\ =\ 1.;}
+\DoxyCodeLine{01499\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01500\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01501\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01502\ \ \ \ \ \}}
+\DoxyCodeLine{01503\ \ \ \ \ \}}
+\DoxyCodeLine{01504\ }
+\DoxyCodeLine{01505\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01506\ \ \ \ \ \ \ component\_frequency[0]\ +=\ component\_frequency[i];}
+\DoxyCodeLine{01507\ \ \ \ \ \}}
+\DoxyCodeLine{01508\ \ \ \}}
+\DoxyCodeLine{01509\ }
+\DoxyCodeLine{01510\ \ \ variance\ =\ 0.;}
+\DoxyCodeLine{01511\ }
+\DoxyCodeLine{01512\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01513\ }
+\DoxyCodeLine{01514\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01515\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01516\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01517\ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{01518\ \ \ \ \ \ \ \ \ variance\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff\ /\ factor[j];}
+\DoxyCodeLine{01519\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01520\ \ \ \ \ \}}
+\DoxyCodeLine{01521\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01522\ \ \ \}}
+\DoxyCodeLine{01523\ }
+\DoxyCodeLine{01524\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01525\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01526\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01527\ \ \ \ \ \ \ \ \ diff\ =\ \mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ -\/\ bmean[j];}
+\DoxyCodeLine{01528\ \ \ \ \ \ \ \ \ variance\ +=\ component\_vector\_count[i][j]\ *\ diff\ *\ diff\ /\ factor[j];}
+\DoxyCodeLine{01529\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01530\ \ \ \ \ \}}
+\DoxyCodeLine{01531\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01532\ \ \ \}}
+\DoxyCodeLine{01533\ \ \ \}}
+\DoxyCodeLine{01534\ }
+\DoxyCodeLine{01535\ \textcolor{comment}{//\ \ variance\ /=\ component\_frequency[0];}}
+\DoxyCodeLine{01536\ \ \ variance\ /=\ (component\_frequency[0]\ -\/\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}});}
+\DoxyCodeLine{01537\ }
+\DoxyCodeLine{01538\ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[0]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ sqrtl(variance);}
+\DoxyCodeLine{01539\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 1;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01540\ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ sqrtl(variance\ *\ factor[i]);}
+\DoxyCodeLine{01541\ \ \ \}}
+\DoxyCodeLine{01542\ }
+\DoxyCodeLine{01543\ \ \ \textcolor{keyword}{delete}\ []\ component\_frequency;}
+\DoxyCodeLine{01544\ \ \ \textcolor{keyword}{delete}\ []\ bmean;}
+\DoxyCodeLine{01545\ \ \ \textcolor{keyword}{delete}\ []\ factor;}
+\DoxyCodeLine{01546\ \}}
+\DoxyCodeLine{01547\ }
+\DoxyCodeLine{01548\ }
+\DoxyCodeLine{01549\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{01557\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{01558\ }
+\DoxyCodeLine{01559\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
+\DoxyCodeLine{01560\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Vectors_aed59b2243e70ee94ae2d971a23f36ada}{Vectors::von\_mises\_estimation}}(Type\ **component\_vector\_count\ ,\ \textcolor{keywordtype}{int}\ variable\ ,}
+\DoxyCodeLine{01561\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ *process)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{01562\ \textcolor{keyword}{}}
+\DoxyCodeLine{01563\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{01564\ \ \ \textcolor{keywordtype}{int}\ i\ ,\ j;}
+\DoxyCodeLine{01565\ \ \ \textcolor{keywordtype}{double}\ buff\ ,\ global\_mean\_direction\ ,\ concentration\ ,\ **mean\_direction;}
+\DoxyCodeLine{01566\ \ \ Type\ *component\_frequency;}
+\DoxyCodeLine{01567\ }
+\DoxyCodeLine{01568\ }
+\DoxyCodeLine{01569\ \ \ component\_frequency\ =\ \textcolor{keyword}{new}\ Type[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01570\ \ \ mean\_direction\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}*[process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}}];}
+\DoxyCodeLine{01571\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01572\ \ \ \ \ mean\_direction[i]\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{double}[4];}
+\DoxyCodeLine{01573\ \ \ \}}
+\DoxyCodeLine{01574\ }
+\DoxyCodeLine{01575\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01576\ \ \ \ \ mean\_direction[i][0]\ =\ 0.;}
+\DoxyCodeLine{01577\ \ \ \ \ mean\_direction[i][1]\ =\ 0.;}
+\DoxyCodeLine{01578\ }
+\DoxyCodeLine{01579\ \ \ \ \ component\_frequency[i]\ =\ 0;}
+\DoxyCodeLine{01580\ \ \ \}}
+\DoxyCodeLine{01581\ }
+\DoxyCodeLine{01582\ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classstat__tool_1_1Vectors_a91487c44e60073dfd8cc10676ff50d78}{type}}[variable])\ \{}
+\DoxyCodeLine{01583\ }
+\DoxyCodeLine{01584\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256}{INT\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01585\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01586\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01587\ \ \ \ \ \ \ \ \ mean\_direction[j][0]\ +=\ component\_vector\_count[i][j]\ *\ cos(\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ *\ \mbox{\hyperlink{reestimation_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}}\ /\ 180);}
+\DoxyCodeLine{01588\ \ \ \ \ \ \ \ \ mean\_direction[j][1]\ +=\ component\_vector\_count[i][j]\ *\ sin(\mbox{\hyperlink{classstat__tool_1_1Vectors_a191b0afda8e6f4f39910107245aff28a}{int\_vector}}[i][variable]\ *\ \mbox{\hyperlink{reestimation_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}}\ /\ 180);}
+\DoxyCodeLine{01589\ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01590\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01591\ \ \ \ \ \}}
+\DoxyCodeLine{01592\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01593\ \ \ \}}
+\DoxyCodeLine{01594\ }
+\DoxyCodeLine{01595\ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_aad1723437ec333a77ad22fe7b332adbca35af009be7ee475fe3fa94165abcfcdf}{REAL\_VALUE}}\ :\ \{}
+\DoxyCodeLine{01596\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ \mbox{\hyperlink{classstat__tool_1_1Vectors_a34f5103c4763530c499be90040699cdf}{nb\_vector}};i++)\ \{}
+\DoxyCodeLine{01597\ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (j\ =\ 0;j\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};j++)\ \{}
+\DoxyCodeLine{01598\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_aa30219839b2ec0a4c7b500611887f086}{unit}})\ \{}
+\DoxyCodeLine{01599\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4ae36b22ffced208e188501937cb588095}{DEGREE}}\ :}
+\DoxyCodeLine{01600\ \ \ \ \ \ \ \ \ \ \ mean\_direction[j][0]\ +=\ component\_vector\_count[i][j]\ *\ cos(\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ *\ \mbox{\hyperlink{reestimation_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}}\ /\ 180);}
+\DoxyCodeLine{01601\ \ \ \ \ \ \ \ \ \ \ mean\_direction[j][1]\ +=\ component\_vector\_count[i][j]\ *\ sin(\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]\ *\ \mbox{\hyperlink{reestimation_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}}\ /\ 180);}
+\DoxyCodeLine{01602\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01603\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4a8f0ec2d0c01e7ea3fd5c95e372e3d87c}{RADIAN}}\ :}
+\DoxyCodeLine{01604\ \ \ \ \ \ \ \ \ \ \ mean\_direction[j][0]\ +=\ component\_vector\_count[i][j]\ *\ cos(\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]);}
+\DoxyCodeLine{01605\ \ \ \ \ \ \ \ \ \ \ mean\_direction[j][1]\ +=\ component\_vector\_count[i][j]\ *\ sin(\mbox{\hyperlink{classstat__tool_1_1Vectors_ac34b45141d47a4c15e33d4a1b66bd16c}{real\_vector}}[i][variable]);}
+\DoxyCodeLine{01606\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01607\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01608\ }
+\DoxyCodeLine{01609\ \ \ \ \ \ \ \ \ component\_frequency[j]\ +=\ component\_vector\_count[i][j];}
+\DoxyCodeLine{01610\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01611\ \ \ \ \ \}}
+\DoxyCodeLine{01612\ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{01613\ \ \ \}}
+\DoxyCodeLine{01614\ \ \ \}}
+\DoxyCodeLine{01615\ }
+\DoxyCodeLine{01616\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01617\ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{01618\ \ \ \ \ \ \ mean\_direction[i][0]\ /=\ component\_frequency[i];}
+\DoxyCodeLine{01619\ \ \ \ \ \ \ mean\_direction[i][1]\ /=\ component\_frequency[i];}
+\DoxyCodeLine{01620\ }
+\DoxyCodeLine{01621\ \ \ \ \ \ \ mean\_direction[i][2]\ =\ sqrt(mean\_direction[i][0]\ *\ mean\_direction[i][0]\ +}
+\DoxyCodeLine{01622\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mean\_direction[i][1]\ *\ mean\_direction[i][1]);}
+\DoxyCodeLine{01623\ }
+\DoxyCodeLine{01624\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mean\_direction[i][2]\ >\ 0.)\ \{}
+\DoxyCodeLine{01625\ \ \ \ \ \ \ \ \ mean\_direction[i][3]\ =\ atan(mean\_direction[i][1]\ /\ mean\_direction[i][0]);}
+\DoxyCodeLine{01626\ }
+\DoxyCodeLine{01627\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (mean\_direction[i][0]\ <\ 0.)\ \{}
+\DoxyCodeLine{01628\ \ \ \ \ \ \ \ \ \ \ mean\_direction[i][3]\ +=\ \mbox{\hyperlink{reestimation_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}};}
+\DoxyCodeLine{01629\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01630\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (mean\_direction[i][1]\ <\ 0.)\ \{}
+\DoxyCodeLine{01631\ \ \ \ \ \ \ \ \ \ \ mean\_direction[i][3]\ +=\ 2\ *\ \mbox{\hyperlink{reestimation_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}};}
+\DoxyCodeLine{01632\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01633\ }
+\DoxyCodeLine{01634\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_aa30219839b2ec0a4c7b500611887f086}{unit}}\ ==\ \mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4ae36b22ffced208e188501937cb588095}{DEGREE}})\ \{}
+\DoxyCodeLine{01635\ \ \ \ \ \ \ \ \ \ \ mean\_direction[i][3]\ *=\ (180\ /\ \mbox{\hyperlink{reestimation_8hpp_ae71449b1cc6e6250b91f539153a7a0d3}{M\_PI}});}
+\DoxyCodeLine{01636\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01637\ }
+\DoxyCodeLine{01638\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ mean\_direction[i][3];}
+\DoxyCodeLine{01639\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01640\ }
+\DoxyCodeLine{01641\ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01642\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ \mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}};}
+\DoxyCodeLine{01643\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01644\ \ \ \ \ \}}
+\DoxyCodeLine{01645\ }
+\DoxyCodeLine{01646\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01647\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a02bf96b6d207aceaca9662a489a373cf}{location}}\ =\ \mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}};}
+\DoxyCodeLine{01648\ \ \ \ \ \}}
+\DoxyCodeLine{01649\ \ \ \}}
+\DoxyCodeLine{01650\ }
+\DoxyCodeLine{01651\ \ \ \textcolor{keywordflow}{if}\ (process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a5aae87110ab5f8ceb3ac13ea3044ba71}{tied\_dispersion}})\ \{}
+\DoxyCodeLine{01652\ \ \ \ \ global\_mean\_direction\ =\ 0.;}
+\DoxyCodeLine{01653\ \ \ \ \ buff\ =\ 0.;}
+\DoxyCodeLine{01654\ }
+\DoxyCodeLine{01655\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01656\ \ \ \ \ \ \ global\_mean\_direction\ +=\ component\_frequency[i]\ *\ mean\_direction[i][2];}
+\DoxyCodeLine{01657\ \ \ \ \ \ \ buff\ +=\ component\_frequency[i];}
+\DoxyCodeLine{01658\ \ \ \ \ \}}
+\DoxyCodeLine{01659\ \ \ \ \ concentration\ =\ \mbox{\hyperlink{namespacestat__tool_ae86e2a437546a41a8e6002cd9023a3c1}{von\_mises\_concentration\_computation}}(global\_mean\_direction\ /\ buff);}
+\DoxyCodeLine{01660\ }
+\DoxyCodeLine{01661\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01662\ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ concentration;}
+\DoxyCodeLine{01663\ \ \ \ \ \}}
+\DoxyCodeLine{01664\ \ \ \}}
+\DoxyCodeLine{01665\ }
+\DoxyCodeLine{01666\ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01667\ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01668\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (component\_frequency[i]\ >\ 0)\ \{}
+\DoxyCodeLine{01669\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ \mbox{\hyperlink{namespacestat__tool_ae86e2a437546a41a8e6002cd9023a3c1}{von\_mises\_concentration\_computation}}(mean\_direction[i][2]);}
+\DoxyCodeLine{01670\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01671\ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{01672\ \ \ \ \ \ \ \ \ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}}[i]-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametric_a84a353be909c60c0f95616325371f870}{dispersion}}\ =\ \mbox{\hyperlink{namespacestat__tool_a854b76a447951646c7c5479f8deb1955}{D\_DEFAULT}};}
+\DoxyCodeLine{01673\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{01674\ \ \ \ \ \}}
+\DoxyCodeLine{01675\ \ \ \}}
+\DoxyCodeLine{01676\ }
+\DoxyCodeLine{01677\ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;i\ <\ process-\/>\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};i++)\ \{}
+\DoxyCodeLine{01678\ \ \ \ \ \textcolor{keyword}{delete}\ []\ mean\_direction[i];}
+\DoxyCodeLine{01679\ \ \ \}}
+\DoxyCodeLine{01680\ \ \ \textcolor{keyword}{delete}\ []\ mean\_direction;}
+\DoxyCodeLine{01681\ }
+\DoxyCodeLine{01682\ \ \ \textcolor{keyword}{delete}\ []\ component\_frequency;}
+\DoxyCodeLine{01683\ \}}
+\DoxyCodeLine{01684\ }
+\DoxyCodeLine{01685\ }
+\DoxyCodeLine{01686\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{01687\ }
+\DoxyCodeLine{01688\ }
+\DoxyCodeLine{01689\ }
+\DoxyCodeLine{01690\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

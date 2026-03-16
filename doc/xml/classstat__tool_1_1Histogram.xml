@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1Histogram" kind="class" language="C++" prot="public">
+    <compoundname>stat_tool::Histogram</compoundname>
+    <includes refid="stat__tools_8h" local="no">stat_tools.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classstat__tool_1_1Histogram_1af9258e0084fb29376d364a71067b689e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Histogram::nb_element</definition>
+        <argsstring></argsstring>
+        <name>nb_element</name>
+        <qualifiedname>stat_tool::Histogram::nb_element</qualifiedname>
+        <briefdescription>
+<para>sample size </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1072" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1072" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Histogram_1a44f75a33e38a06354ce481065cdff12e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Histogram::nb_bin</definition>
+        <argsstring></argsstring>
+        <name>nb_bin</name>
+        <qualifiedname>stat_tool::Histogram::nb_bin</qualifiedname>
+        <briefdescription>
+<para>number of bins </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1073" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1073" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Histogram_1a2346d5be01a9a6a7302f863a86460e1f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double stat_tool::Histogram::bin_width</definition>
+        <argsstring></argsstring>
+        <name>bin_width</name>
+        <qualifiedname>stat_tool::Histogram::bin_width</qualifiedname>
+        <briefdescription>
+<para>constant bin width </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1074" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1074" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Histogram_1ae66903308348f6812f4fd901314994cf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Histogram::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <qualifiedname>stat_tool::Histogram::max</qualifiedname>
+        <briefdescription>
+<para>maximum value in frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1075" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1075" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Histogram_1a1e854917dd48d643b545ffef5d0ebc56" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* stat_tool::Histogram::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <qualifiedname>stat_tool::Histogram::frequency</qualifiedname>
+        <briefdescription>
+<para>frequency for each bin </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1076" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1076" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Histogram_1a2def5f5c155998550c7edefef288026c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Histogram::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>stat_tool::Histogram::type</qualifiedname>
+        <briefdescription>
+<para>variable type (INT_VALUE/REAL_VALUE) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1077" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Histogram_1a0d1e717ad01ad58617467dec2fbbebc5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double stat_tool::Histogram::min_value</definition>
+        <argsstring></argsstring>
+        <name>min_value</name>
+        <qualifiedname>stat_tool::Histogram::min_value</qualifiedname>
+        <briefdescription>
+<para>minimum value of support </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1078" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1078" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Histogram_1a97308edbdc77c8efb5613d40e4f12f7b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double stat_tool::Histogram::max_value</definition>
+        <argsstring></argsstring>
+        <name>max_value</name>
+        <qualifiedname>stat_tool::Histogram::max_value</qualifiedname>
+        <briefdescription>
+<para>maximum value of support </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1079" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1079" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1a245f2570a93b3236b7e0a9b3348fd3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Histogram::copy</definition>
+        <argsstring>(const Histogram &amp;histo)</argsstring>
+        <name>copy</name>
+        <qualifiedname>stat_tool::Histogram::copy</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+<para>Copy of an <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on an <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1081" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="137" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1ae3deac3bee45246f6cd421b23b424e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Histogram::Histogram</definition>
+        <argsstring>(int inb_bin=0, bool init_flag=true)</argsstring>
+        <name>Histogram</name>
+        <qualifiedname>stat_tool::Histogram::Histogram</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inb_bin</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>init_flag</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Construction of an <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inb_bin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of bins, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">init_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag initialization. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1083" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="64" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1afa09be31ec353dab297f765fdecba62c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Histogram::Histogram</definition>
+        <argsstring>(const FrequencyDistribution &amp;histo)</argsstring>
+        <name>Histogram</name>
+        <qualifiedname>stat_tool::Histogram::Histogram</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+<para>Construction of an <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> object from a <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1084" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="102" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1aff89e21306c7bc8d9803f0f537324427" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Histogram::Histogram</definition>
+        <argsstring>(const Histogram &amp;histo)</argsstring>
+        <name>Histogram</name>
+        <qualifiedname>stat_tool::Histogram::Histogram</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1085" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1085" bodyend="1086"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1acc16ccca22755641776baa22b0a1ef71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Histogram::~Histogram</definition>
+        <argsstring>()</argsstring>
+        <name>~Histogram</name>
+        <qualifiedname>stat_tool::Histogram::~Histogram</qualifiedname>
+        <briefdescription>
+<para>Destructor of the <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1087" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="166" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1a744dd46bf0508ab9125a790b4828092d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> &amp;</type>
+        <definition>Histogram &amp; stat_tool::Histogram::operator=</definition>
+        <argsstring>(const Histogram &amp;histo)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>stat_tool::Histogram::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator of the <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on an <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1088" column="15" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="183" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1aa41a2f70a338c01d53237439eb3c8f9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Histogram::ascii_print</definition>
+        <argsstring>(std::ostream &amp;os, bool comment_flag=false) const</argsstring>
+        <name>ascii_print</name>
+        <qualifiedname>stat_tool::Histogram::ascii_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>comment_flag</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Writing of an histogram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">comment_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag comment. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1090" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="241" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1a2c1f719074e6d3c7c9fd85bbdd3e1073" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Histogram::spreadsheet_print</definition>
+        <argsstring>(std::ostream &amp;os) const</argsstring>
+        <name>spreadsheet_print</name>
+        <qualifiedname>stat_tool::Histogram::spreadsheet_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Writing of an histogram at the spreadsheet format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1091" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="293" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1aa2ffb0bc648e6e65328b7fd1e223d157" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::Histogram::plot_print</definition>
+        <argsstring>(const char *path) const</argsstring>
+        <name>plot_print</name>
+        <qualifiedname>stat_tool::Histogram::plot_print</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Writing of an histogram at the Gnuplot format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file path.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>error status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1092" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="330" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1acf087d3bc6cae9b167f0812ea97ce664" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Histogram::plotable_write</definition>
+        <argsstring>(SinglePlot &amp;plot) const</argsstring>
+        <name>plotable_write</name>
+        <qualifiedname>stat_tool::Histogram::plotable_write</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref> &amp;</type>
+          <declname>plot</declname>
+        </param>
+        <briefdescription>
+<para>Writing of an histogram at the plotable format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">plot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1093" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="371" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1ab91da04124e718ae78f5d0de3d28063d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Histogram::max_computation</definition>
+        <argsstring>()</argsstring>
+        <name>max_computation</name>
+        <qualifiedname>stat_tool::Histogram::max_computation</qualifiedname>
+        <briefdescription>
+<para>Determination of the maximum bin frequency for an histogram. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1095" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="402" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Histogram_1ad3033ae4237117dfc32917b7d91df35b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * stat_tool::Histogram::cumul_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>cumul_computation</name>
+        <qualifiedname>stat_tool::Histogram::cumul_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of a cumulative distribution function from an histogram. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>cumulative distribution function. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1096" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="425" bodyend="440"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> are represented as an array *frequency, with size nb_bin </para>
+    </detaileddescription>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1068" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1068" bodyend="1097"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1Histogram_1aa41a2f70a338c01d53237439eb3c8f9c" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>ascii_print</name></member>
+      <member refid="classstat__tool_1_1Histogram_1a2346d5be01a9a6a7302f863a86460e1f" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>bin_width</name></member>
+      <member refid="classstat__tool_1_1Histogram_1a245f2570a93b3236b7e0a9b3348fd3ff" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>copy</name></member>
+      <member refid="classstat__tool_1_1Histogram_1ad3033ae4237117dfc32917b7d91df35b" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>cumul_computation</name></member>
+      <member refid="classstat__tool_1_1Histogram_1a1e854917dd48d643b545ffef5d0ebc56" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>frequency</name></member>
+      <member refid="classstat__tool_1_1Histogram_1ae3deac3bee45246f6cd421b23b424e51" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>Histogram</name></member>
+      <member refid="classstat__tool_1_1Histogram_1afa09be31ec353dab297f765fdecba62c" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>Histogram</name></member>
+      <member refid="classstat__tool_1_1Histogram_1aff89e21306c7bc8d9803f0f537324427" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>Histogram</name></member>
+      <member refid="classstat__tool_1_1Histogram_1ae66903308348f6812f4fd901314994cf" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>max</name></member>
+      <member refid="classstat__tool_1_1Histogram_1ab91da04124e718ae78f5d0de3d28063d" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>max_computation</name></member>
+      <member refid="classstat__tool_1_1Histogram_1a97308edbdc77c8efb5613d40e4f12f7b" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>max_value</name></member>
+      <member refid="classstat__tool_1_1Histogram_1a0d1e717ad01ad58617467dec2fbbebc5" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>min_value</name></member>
+      <member refid="classstat__tool_1_1Histogram_1a44f75a33e38a06354ce481065cdff12e" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>nb_bin</name></member>
+      <member refid="classstat__tool_1_1Histogram_1af9258e0084fb29376d364a71067b689e" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>nb_element</name></member>
+      <member refid="classstat__tool_1_1Histogram_1a744dd46bf0508ab9125a790b4828092d" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>operator=</name></member>
+      <member refid="classstat__tool_1_1Histogram_1aa2ffb0bc648e6e65328b7fd1e223d157" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>plot_print</name></member>
+      <member refid="classstat__tool_1_1Histogram_1acf087d3bc6cae9b167f0812ea97ce664" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>plotable_write</name></member>
+      <member refid="classstat__tool_1_1Histogram_1a2c1f719074e6d3c7c9fd85bbdd3e1073" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>spreadsheet_print</name></member>
+      <member refid="classstat__tool_1_1Histogram_1a2def5f5c155998550c7edefef288026c" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>type</name></member>
+      <member refid="classstat__tool_1_1Histogram_1acc16ccca22755641776baa22b0a1ef71" prot="public" virt="non-virtual"><scope>stat_tool::Histogram</scope><name>~Histogram</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

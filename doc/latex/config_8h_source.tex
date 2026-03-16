@@ -1,0 +1,27 @@
+\doxysection{config.\+h}
+\hypertarget{config_8h_source}{}\label{config_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/config.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/config.h}}
+\mbox{\hyperlink{config_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#if\ defined\ WIN32\ ||\ defined\ \_WIN32\ ||\ defined\ \_\_CYGWIN\_\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\ \ \#ifdef\ STAT\_TOOL\_MAKEDLL}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ \_\_GNUC\_\_}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\ \ \ \ \ \ \#define\ STAT\_TOOL\_API\ \_\_attribute\_\_\ ((dllexport))}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \ \ \ \ \ \#define\ STAT\_TOOL\_API\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\ \ \#else}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ \_\_GNUC\_\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \ \ \ \ \ \#define\ STAT\_TOOL\_API\ \_\_attribute\_\_\ ((dllimport))}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \ \ \#define\ STAT\_TOOL\_API\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \#if\ \_\_GNUC\_\_\ >=\ 4}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#define\ STAT\_TOOL\_API\ \_\_attribute\_\_\ ((visibility\ ("{}default"{})))}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \#else}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#define\ STAT\_TOOL\_API}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

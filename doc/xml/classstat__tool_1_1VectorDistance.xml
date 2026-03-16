@@ -1,0 +1,1002 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1VectorDistance" kind="class" language="C++" prot="public">
+    <compoundname>stat_tool::VectorDistance</compoundname>
+    <basecompoundref refid="classstat__tool_1_1StatInterface" prot="public" virt="non-virtual">stat_tool::StatInterface</basecompoundref>
+    <includes refid="vectors_8h" local="no">vectors.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classstat__tool_1_1VectorDistance_1a543d5c204cf0202ad734acf28aa597d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Vectors</definition>
+        <argsstring></argsstring>
+        <name>Vectors</name>
+        <qualifiedname>stat_tool::VectorDistance::Vectors</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1Vectors" kindref="compound">Vectors</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="463" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classstat__tool_1_1VectorDistance_1acefea666850d37edd4d95b324b53da15" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const VectorDistance &amp;param)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>stat_tool::VectorDistance::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> &amp;</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="465" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="465" bodyend="466"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstat__tool_1_1VectorDistance_1a0db15e7baaeca6c6b605f2c6cfa4fd00" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::VectorDistance::nb_variable</definition>
+        <argsstring></argsstring>
+        <name>nb_variable</name>
+        <qualifiedname>stat_tool::VectorDistance::nb_variable</qualifiedname>
+        <briefdescription>
+<para>number of variables </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="470" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1VectorDistance_1ad157dd9d7f4a481f87ae63147559378c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacestat__tool_1a767192bed74d2f854185cf899f5e4082" kindref="member">metric</ref></type>
+        <definition>metric stat_tool::VectorDistance::distance_type</definition>
+        <argsstring></argsstring>
+        <name>distance_type</name>
+        <qualifiedname>stat_tool::VectorDistance::distance_type</qualifiedname>
+        <briefdescription>
+<para>distance type (ABSOLUTE_VALUE/QUADRATIC) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="471" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1VectorDistance_1aa5d2180931df5fcc22e7e2b80cdadb54" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacestat__tool_1a54f24d2ad2c1bfb8454d29c167cb5a73" kindref="member">variable_type</ref> *</type>
+        <definition>variable_type* stat_tool::VectorDistance::var_type</definition>
+        <argsstring></argsstring>
+        <name>var_type</name>
+        <qualifiedname>stat_tool::VectorDistance::var_type</qualifiedname>
+        <briefdescription>
+<para>variable types (NOMINAL/ORDINAL/NUMERIC/CIRCULAR) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="472" column="19" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1VectorDistance_1a0e315dc79a6f9df9c7b274c0b01148b3" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* stat_tool::VectorDistance::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <qualifiedname>stat_tool::VectorDistance::weight</qualifiedname>
+        <briefdescription>
+<para>weight of each variable </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="473" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1VectorDistance_1a7653e373576dab7c96f5c9991c23387e" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* stat_tool::VectorDistance::dispersion</definition>
+        <argsstring></argsstring>
+        <name>dispersion</name>
+        <qualifiedname>stat_tool::VectorDistance::dispersion</qualifiedname>
+        <briefdescription>
+<para>dispersion quantities for the standardization </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="474" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1VectorDistance_1a48c8f90fa18edef9bb2b286d81ddf837" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* stat_tool::VectorDistance::nb_value</definition>
+        <argsstring></argsstring>
+        <name>nb_value</name>
+        <qualifiedname>stat_tool::VectorDistance::nb_value</qualifiedname>
+        <briefdescription>
+<para>number of values for each variable </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="475" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1VectorDistance_1a614c99bf32666bf8a2380bd31dad43b7" prot="private" static="no" mutable="no">
+        <type>double ***</type>
+        <definition>double*** stat_tool::VectorDistance::category_distance</definition>
+        <argsstring></argsstring>
+        <name>category_distance</name>
+        <qualifiedname>stat_tool::VectorDistance::category_distance</qualifiedname>
+        <briefdescription>
+<para>matrices of distances between categories (for categorical variables) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="476" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1VectorDistance_1a995295ad30a12fb162a47c18da97bb18" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* stat_tool::VectorDistance::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <qualifiedname>stat_tool::VectorDistance::period</qualifiedname>
+        <briefdescription>
+<para>periods (for circular variables) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="477" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a93d5147761576454cbdff73b948cdeb0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::VectorDistance::copy</definition>
+        <argsstring>(const VectorDistance &amp;param)</argsstring>
+        <name>copy</name>
+        <qualifiedname>stat_tool::VectorDistance::copy</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> &amp;</type>
+          <declname>param</declname>
+          <defname>vector_dist</defname>
+        </param>
+        <briefdescription>
+<para>Copy of a <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vector_dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="479" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="208" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a0ccf946c3792e7fd6f09bca2203ebe09" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::VectorDistance::remove</definition>
+        <argsstring>()</argsstring>
+        <name>remove</name>
+        <qualifiedname>stat_tool::VectorDistance::remove</qualifiedname>
+        <briefdescription>
+<para>Destruction of data members of a <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="480" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="265" bodyend="290"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a8cccd1694f32601083843f53f2c899b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::VectorDistance::VectorDistance</definition>
+        <argsstring>()</argsstring>
+        <name>VectorDistance</name>
+        <qualifiedname>stat_tool::VectorDistance::VectorDistance</qualifiedname>
+        <briefdescription>
+<para>Default constructor of the <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="484" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="65" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a431d59497b625d40e718a12794bde7f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::VectorDistance::VectorDistance</definition>
+        <argsstring>(int inb_variable, variable_type *ivar_type, double *iweight, metric idistance_type=ABSOLUTE_VALUE)</argsstring>
+        <name>VectorDistance</name>
+        <qualifiedname>stat_tool::VectorDistance::VectorDistance</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inb_variable</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a54f24d2ad2c1bfb8454d29c167cb5a73" kindref="member">variable_type</ref> *</type>
+          <declname>ivar_type</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>iweight</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a767192bed74d2f854185cf899f5e4082" kindref="member">metric</ref></type>
+          <declname>idistance_type</declname>
+          <defval><ref refid="namespacestat__tool_1a767192bed74d2f854185cf899f5e4082a9de924e5599cfda745891fe2030714e2" kindref="member">ABSOLUTE_VALUE</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inb_variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of variables, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ivar_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable types, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">iweight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable weights, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">idistance_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance type (ABSOLUTE_VALUE/QUADRATIC). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="485" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="93" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1abca200b140da50885171a68ced48bec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::VectorDistance::VectorDistance</definition>
+        <argsstring>(int inb_variable, metric idistance_type, variable_type *ivar_type, double *iweight, int *inb_value, double ***icategory_distance, int *iperiod)</argsstring>
+        <name>VectorDistance</name>
+        <qualifiedname>stat_tool::VectorDistance::VectorDistance</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inb_variable</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a767192bed74d2f854185cf899f5e4082" kindref="member">metric</ref></type>
+          <declname>idistance_type</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1a54f24d2ad2c1bfb8454d29c167cb5a73" kindref="member">variable_type</ref> *</type>
+          <declname>ivar_type</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>iweight</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>inb_value</declname>
+        </param>
+        <param>
+          <type>double ***</type>
+          <declname>icategory_distance</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>iperiod</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inb_variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of variables, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">idistance_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance type (ABSOLUTE_VALUE/QUADRATIC), </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ivar_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable types, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">iweight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable weights, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inb_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of categories (for categorical variables), </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">icategory_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>between-category distance matrices (for categorical variables), </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">iperiod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>periods (for circular variables). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="487" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="148" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1ab3d979301d9f2c76d3476dfec912b593" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::VectorDistance::VectorDistance</definition>
+        <argsstring>(const VectorDistance &amp;vector_dist)</argsstring>
+        <name>VectorDistance</name>
+        <qualifiedname>stat_tool::VectorDistance::VectorDistance</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> &amp;</type>
+          <declname>vector_dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="490" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="490" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a84cecb046bb78bfcec5f97719e9e5f6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::VectorDistance::~VectorDistance</definition>
+        <argsstring>()</argsstring>
+        <name>~VectorDistance</name>
+        <qualifiedname>stat_tool::VectorDistance::~VectorDistance</qualifiedname>
+        <briefdescription>
+<para>Destructor of the <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="492" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="299" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a6abb8950003c3c0fb77a9779ce1a67eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> &amp;</type>
+        <definition>VectorDistance &amp; stat_tool::VectorDistance::operator=</definition>
+        <argsstring>(const VectorDistance &amp;vector_dist)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>stat_tool::VectorDistance::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> &amp;</type>
+          <declname>vector_dist</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator of the <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vector_dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="493" column="20" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="316" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a8fac36bd923ce191a64da8311ea653b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::VectorDistance::line_write</definition>
+        <argsstring>(std::ostream &amp;os) const</argsstring>
+        <name>line_write</name>
+        <qualifiedname>stat_tool::VectorDistance::line_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1a7db89a0e0500b15ff2b14022d6a12a5c">line_write</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Writing on a single line of a <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="497" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="941" bodyend="950"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1aed405f1a2e7fdbcef2937f3c54b1cf42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; stat_tool::VectorDistance::ascii_write</definition>
+        <argsstring>(std::ostream &amp;os, bool exhaustive=false) const</argsstring>
+        <name>ascii_write</name>
+        <qualifiedname>stat_tool::VectorDistance::ascii_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1a9cc8c361520374ddcfbe45011613266c">ascii_write</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exhaustive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="499" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a9680d56486d82a192f1d517d610121c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::VectorDistance::ascii_write</definition>
+        <argsstring>(StatError &amp;error, const std::string path, bool exhaustive=false) const</argsstring>
+        <name>ascii_write</name>
+        <qualifiedname>stat_tool::VectorDistance::ascii_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1a7ebddce7b16070eee648eb888b8c5ec4">ascii_write</reimplements>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exhaustive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="503" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1ae9677500c5966ec582c96afa33316768" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::VectorDistance::spreadsheet_write</definition>
+        <argsstring>(StatError &amp;error, const std::string path) const</argsstring>
+        <name>spreadsheet_write</name>
+        <qualifiedname>stat_tool::VectorDistance::spreadsheet_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1abcc9eead01dd45344d047916210cfe8c">spreadsheet_write</reimplements>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="504" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="1065" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a5b4b203f3c106f5ab8ecfe9657fa5809" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::VectorDistance::plot_write</definition>
+        <argsstring>(StatError &amp;error, const char *prefix, const char *title=NULL) const</argsstring>
+        <name>plot_write</name>
+        <qualifiedname>stat_tool::VectorDistance::plot_write</qualifiedname>
+        <reimplements refid="classstat__tool_1_1StatInterface_1a22886aaa72572ca234cc5f27a8b25012">plot_write</reimplements>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>title</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="505" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="1077" bodyend="1087"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a26531a0a52af84c61f06bba7dc88ea12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * stat_tool::VectorDistance::max_category_distance_computation</definition>
+        <argsstring>(int variable) const</argsstring>
+        <name>max_category_distance_computation</name>
+        <qualifiedname>stat_tool::VectorDistance::max_category_distance_computation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+<para>Computation of the maximum distance for each category. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable index.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximum distances. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="507" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="1100" bodyend="1121"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1ab3a9fe15b889e6493bff91b4021ceeba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::VectorDistance::dispersion_update</definition>
+        <argsstring>(int variable, double idispersion) const</argsstring>
+        <name>dispersion_update</name>
+        <qualifiedname>stat_tool::VectorDistance::dispersion_update</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>idispersion</declname>
+        </param>
+        <briefdescription>
+<para>Update of the standardization quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable index, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">idispersion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable dispersion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="509" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="1133" bodyend="1137"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1adf2312bbf53ef0f1ab401ad52f70511a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::VectorDistance::dispersion_computation</definition>
+        <argsstring>(int variable, const FrequencyDistribution *marginal_distribution, double *rank=NULL) const</argsstring>
+        <name>dispersion_computation</name>
+        <qualifiedname>stat_tool::VectorDistance::dispersion_computation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <declname>marginal_distribution</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>rank</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Computation of the standardization quantity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable index, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">marginal_distribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>marginal frequency distribution, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ranks. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="510" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="1150" bodyend="1315"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1afa33100cc78ba6b177cf16a26b4b5ec4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat_tool::VectorDistance::get_nb_variable</definition>
+        <argsstring>() const</argsstring>
+        <name>get_nb_variable</name>
+        <qualifiedname>stat_tool::VectorDistance::get_nb_variable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="515" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="515" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1af046c2a89063a80f63ffccdc036b2a06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacestat__tool_1a767192bed74d2f854185cf899f5e4082" kindref="member">metric</ref></type>
+        <definition>metric stat_tool::VectorDistance::get_distance_type</definition>
+        <argsstring>() const</argsstring>
+        <name>get_distance_type</name>
+        <qualifiedname>stat_tool::VectorDistance::get_distance_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="516" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="516" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a30234df4a1de859a9566928d6fd9ccd2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacestat__tool_1a54f24d2ad2c1bfb8454d29c167cb5a73" kindref="member">variable_type</ref></type>
+        <definition>variable_type stat_tool::VectorDistance::get_var_type</definition>
+        <argsstring>(int variable) const</argsstring>
+        <name>get_var_type</name>
+        <qualifiedname>stat_tool::VectorDistance::get_var_type</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="517" column="19" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="517" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a57fe40132ba64b4107c62535c327b74f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::VectorDistance::get_weight</definition>
+        <argsstring>(int variable) const</argsstring>
+        <name>get_weight</name>
+        <qualifiedname>stat_tool::VectorDistance::get_weight</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="518" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="518" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a0ddc403fba643c8b4262b41b0dfbeef5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::VectorDistance::get_dispersion</definition>
+        <argsstring>(int variable) const</argsstring>
+        <name>get_dispersion</name>
+        <qualifiedname>stat_tool::VectorDistance::get_dispersion</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="519" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="519" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a8afa9107c6497c3e0c7d97fe478e38a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat_tool::VectorDistance::get_nb_value</definition>
+        <argsstring>(int variable) const</argsstring>
+        <name>get_nb_value</name>
+        <qualifiedname>stat_tool::VectorDistance::get_nb_value</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="520" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="520" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1ab83a1a9b16aaa2f10bc0f490b7bb0fd1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double **</type>
+        <definition>double ** stat_tool::VectorDistance::get_category_distance</definition>
+        <argsstring>(int variable) const</argsstring>
+        <name>get_category_distance</name>
+        <qualifiedname>stat_tool::VectorDistance::get_category_distance</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="521" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="521" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1acfc3e4b0de5b5d745fbf5b53e8075578" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::VectorDistance::get_category_distance</definition>
+        <argsstring>(int variable, int category1, int category2) const</argsstring>
+        <name>get_category_distance</name>
+        <qualifiedname>stat_tool::VectorDistance::get_category_distance</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>category1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>category2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="522" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="522" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a4dcb7ff50d7cb41e42a0de50c0d23e2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat_tool::VectorDistance::get_period</definition>
+        <argsstring>(int variable) const</argsstring>
+        <name>get_period</name>
+        <qualifiedname>stat_tool::VectorDistance::get_period</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>variable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="524" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="524" bodyend="524"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classstat__tool_1_1VectorDistance_1a312e607fa62a48757a1a0c97a8a64d8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> *</type>
+        <definition>VectorDistance * stat_tool::VectorDistance::ascii_read</definition>
+        <argsstring>(StatError &amp;error, const std::string path)</argsstring>
+        <name>ascii_read</name>
+        <qualifiedname>stat_tool::VectorDistance::ascii_read</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Construction of a <ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> object from a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file path.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="495" column="27" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="339" bodyend="930"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parameterization of a distance between vectors with heterogeneous variables. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>stat_tool::StatInterface</label>
+        <link refid="classstat__tool_1_1StatInterface"/>
+      </node>
+      <node id="1">
+        <label>stat_tool::VectorDistance</label>
+        <link refid="classstat__tool_1_1VectorDistance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>stat_tool::StatInterface</label>
+        <link refid="classstat__tool_1_1StatInterface"/>
+      </node>
+      <node id="1">
+        <label>stat_tool::VectorDistance</label>
+        <link refid="classstat__tool_1_1VectorDistance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" line="461" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h" bodystart="461" bodyend="525"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1VectorDistance_1a312e607fa62a48757a1a0c97a8a64d8b" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>ascii_read</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1aed405f1a2e7fdbcef2937f3c54b1cf42" prot="public" virt="virtual"><scope>stat_tool::VectorDistance</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a9680d56486d82a192f1d517d610121c3" prot="public" virt="virtual"><scope>stat_tool::VectorDistance</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1StatInterface_1a7571e2adbbe004af3ece0f623c69cef6" prot="public" virt="non-virtual" ambiguityscope="stat_tool::StatInterface::"><scope>stat_tool::VectorDistance</scope><name>ascii_write</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a614c99bf32666bf8a2380bd31dad43b7" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>category_distance</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a93d5147761576454cbdff73b948cdeb0" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>copy</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a7653e373576dab7c96f5c9991c23387e" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>dispersion</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1adf2312bbf53ef0f1ab401ad52f70511a" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>dispersion_computation</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1ab3a9fe15b889e6493bff91b4021ceeba" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>dispersion_update</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1ad157dd9d7f4a481f87ae63147559378c" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>distance_type</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1ab83a1a9b16aaa2f10bc0f490b7bb0fd1" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>get_category_distance</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1acfc3e4b0de5b5d745fbf5b53e8075578" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>get_category_distance</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a0ddc403fba643c8b4262b41b0dfbeef5" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>get_dispersion</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1af046c2a89063a80f63ffccdc036b2a06" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>get_distance_type</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a8afa9107c6497c3e0c7d97fe478e38a7" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>get_nb_value</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1afa33100cc78ba6b177cf16a26b4b5ec4" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>get_nb_variable</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a4dcb7ff50d7cb41e42a0de50c0d23e2d" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>get_period</name></member>
+      <member refid="classstat__tool_1_1StatInterface_1a9210a878974973ea3a4a0cf209258a5e" prot="public" virt="virtual"><scope>stat_tool::VectorDistance</scope><name>get_plotable</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a30234df4a1de859a9566928d6fd9ccd2" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>get_var_type</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a57fe40132ba64b4107c62535c327b74f" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>get_weight</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a8fac36bd923ce191a64da8311ea653b2" prot="public" virt="virtual"><scope>stat_tool::VectorDistance</scope><name>line_write</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a26531a0a52af84c61f06bba7dc88ea12" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>max_category_distance_computation</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a48c8f90fa18edef9bb2b286d81ddf837" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>nb_value</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a0db15e7baaeca6c6b605f2c6cfa4fd00" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>nb_variable</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1acefea666850d37edd4d95b324b53da15" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a6abb8950003c3c0fb77a9779ce1a67eb" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>operator=</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a995295ad30a12fb162a47c18da97bb18" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>period</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a5b4b203f3c106f5ab8ecfe9657fa5809" prot="public" virt="virtual"><scope>stat_tool::VectorDistance</scope><name>plot_write</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a0ccf946c3792e7fd6f09bca2203ebe09" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>remove</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1ae9677500c5966ec582c96afa33316768" prot="public" virt="virtual"><scope>stat_tool::VectorDistance</scope><name>spreadsheet_write</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1aa5d2180931df5fcc22e7e2b80cdadb54" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>var_type</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a8cccd1694f32601083843f53f2c899b2" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>VectorDistance</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a431d59497b625d40e718a12794bde7f4" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>VectorDistance</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1abca200b140da50885171a68ced48bec4" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>VectorDistance</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1ab3d979301d9f2c76d3476dfec912b593" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>VectorDistance</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a543d5c204cf0202ad734acf28aa597d0" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>Vectors</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a0e315dc79a6f9df9c7b274c0b01148b3" prot="private" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>weight</name></member>
+      <member refid="classstat__tool_1_1VectorDistance_1a84cecb046bb78bfcec5f97719e9e5f6f" prot="public" virt="non-virtual"><scope>stat_tool::VectorDistance</scope><name>~VectorDistance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,171 @@
+\doxysection{regression.\+h}
+\hypertarget{regression_8h_source}{}\label{regression_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/regression.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/regression.h}}
+\mbox{\hyperlink{regression_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ \ \ \ \ StructureAnalysis:\ Identifying\ patterns\ in\ plant\ architecture\ and\ development}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Copyright\ 1995-\/2018\ CIRAD\ AGAP}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ \ \ \ \ \ File\ author(s):\ Yann\ Guedon\ (yann.guedon@cirad.fr)}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Source\$}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \$Id\$}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Forum\ for\ StructureAnalysis\ developers:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GNU\ General\ Public\ Licence}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \ \ \ \ \ \ modify\ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \ \ \ \ \ \ published\ by\ the\ Free\ Software\ Foundation;\ either\ version\ 2\ of}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \ \ \ \ \ \ the\ License,\ or\ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ *\ \ \ \ \ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ *\ \ \ \ \ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ *\ \ \ \ \ \ \ MERCHANTABILITY\ or\ FITNESS\ For\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ *\ \ \ \ \ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ *\ \ \ \ \ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ *\ \ \ \ \ \ \ License\ along\ with\ this\ program;\ see\ the\ file\ COPYING.\ If\ not,}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ *\ \ \ \ \ \ \ write\ to\ the\ Free\ Software\ Foundation,\ Inc.,\ 59}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ *\ \ \ \ \ \ \ Temple\ Place\ -\/\ Suite\ 330,\ Boston,\ MA\ 02111-\/1307,\ USA.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00034\ \textcolor{comment}{\ *\ \ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#ifndef\ REGRESSION\_H}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ REGRESSION\_H}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vectors_8h}{vectors.h}}"{}}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestat__tool}{stat\_tool}}\ \{}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ *\ \ Constants}}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_aff9bb3dc04dd4bd548547d16cb09d7fe}{REGRESSION\_NB\_VECTOR}}\ =\ 10000;\ \ \textcolor{comment}{//\ maximum\ number\ of\ individuals\ for\ the\ nonparametric\ regression}}
+\DoxyCodeLine{00057\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacestat__tool_aaad4f32d346d1a2aa4a9e4c438ff4965}{NEIGHBORHOOD}}\ =\ 3;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ minimum\ neighborhood\ on\ the\ values\ of\ the\ explanatory\ variable}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03}{parametric\_function}}\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03a658eec084c04055b11f4da0e11510988}{LINEAR\_FUNCTION}}\ ,}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03a773a3fd02aff7596c20a2f6e1d0a7729}{LOGISTIC}}\ ,}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03acf505eb5822a8bfe7412e8851d1d573d}{MONOMOLECULAR}}\ ,}
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03ae0713a669f0004d019949448f23cac7d}{NONPARAMETRIC\_FUNCTION}}\ ,}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03a1ddf86f0bde1cb12d7fe54939d177dfa}{CONSTANT\_FUNCTION}}}
+\DoxyCodeLine{00065\ \ \ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{comment}{/****************************************************************}}
+\DoxyCodeLine{00070\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ *\ \ Class\ definition}}
+\DoxyCodeLine{00072\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a65a34f392075ecff407dffe3577d31e4}{RegressionKernel}}\ \{}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ public\ :}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03}{parametric\_function}}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a5a2d07a3e343a309554a32b795f348a9}{ident}};\ \ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a961fdd0413f62162d77a917eed6878c2}{min\_value}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_ac8a4ec20ea8f61ea00fbb4d0118fccc2}{max\_value}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_ae2f170889606b316d19a54f221779143}{regression\_df}};\ \ \ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_aaaa5e5f5f00ac15031f856b267c889cd}{residual\_df}};\ \ \ \ \ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a6fbdfa25318f5e721707c23f6eac795c}{nb\_parameter}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{double}\ *\mbox{\hyperlink{classstat__tool_1_1RegressionKernel_afefdbce482f32223aae0a32167b251ba}{parameter}};\ \ \ \ \ \ }
+\DoxyCodeLine{00088\ \textcolor{comment}{//\ \ \ \ double\ step;\ \ \ \ \ \ \ \ \ \ \ \ \ step\ for\ representing\ the\ regression\ function}}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{double}\ *\mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a4f514ea760d61de72a002d9f12f1853c}{point}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_affb5929358c188a4d1079e7da9d086ea}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a65a34f392075ecff407dffe3577d31e4}{RegressionKernel}}\&);}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_aa041b456142195a8be69de3c08087118}{remove}}();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a65a34f392075ecff407dffe3577d31e4}{RegressionKernel}}();}
+\DoxyCodeLine{00095\ \textcolor{comment}{//\ \ \ \ RegressionKernel(parametric\_function\ iident\ ,\ double\ imin\_value\ ,\ double\ imax\_value\ ,\ double\ istep\ =\ 1);}}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a65a34f392075ecff407dffe3577d31e4}{RegressionKernel}}(\mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03}{parametric\_function}}\ iident\ ,\ \textcolor{keywordtype}{int}\ imin\_value\ ,\ \textcolor{keywordtype}{int}\ imax\_value);}
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_aa293b9442d9422a802bb330728bf44b3}{RegressionKernel}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a65a34f392075ecff407dffe3577d31e4}{RegressionKernel}}\ \&regression)\ \{\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_affb5929358c188a4d1079e7da9d086ea}{copy}}(regression);\ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel}{\string~RegressionKernel}}();}
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel}{RegressionKernel}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel}{RegressionKernel}}\ \&regression);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ std::ostream\&\ ascii\_parameter\_print(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00102\ \ \ \ \ std::ostream\&\ ascii\_formal\_print(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ \ \ \ \ std::ostream\&\ ascii\_print(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00104\ \ \ \ \ std::ostream\&\ spreadsheet\_print(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_aabba140776fa4e45eae9077817bbb072}{plot\_print}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_write(\mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}\ \&plot)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ computation();}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{double}\ min\_computation()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{double}\ max\_computation()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ \ \ \};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ ,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1RegressionKernel_a65a34f392075ecff407dffe3577d31e4}{RegressionKernel}}\ \{}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Regression_a543d5c204cf0202ad734acf28aa597d0}{Vectors}};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Regression_a7a56b775aa0722823ad67f79a0f87c43}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}}\ \&regression)}
+\DoxyCodeLine{00121\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ regression.\mbox{\hyperlink{classstat__tool_1_1Regression_a54b5fd8b2924a3ea4a34c8a396b45605}{ascii\_write}}(os);\ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \ \ private\ :}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Regression_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}\ *\mbox{\hyperlink{classstat__tool_1_1Regression_afff9f8ba86ea29e1636ebe97396561bd}{vectors}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Regression_aa12a3acd8c3abe125eb010908165e67c}{nb\_vector}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{double}\ *\mbox{\hyperlink{classstat__tool_1_1Regression_a67e792facfa8c590858745939bad8b2e}{residual}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Regression_ae0b7293b7e0dfff09d3e99e2e415dbe3}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}}\&);}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a9861a99ac0b9240c71a1cf93458ef630}{remove}}();}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a4c24bd054d7274ad73b19c6776424d0c}{regression\_square\_sum\_computation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Regression_adcfdc8d573e0c868f74f3c933ebbf20a}{residual\_computation}}();}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a50936c92123f4ef19ffb2276086faf18}{residual\_mean\_computation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a4a47f58b527e554ebd500b797b1eaf4f}{residual\_variance\_computation}}(\textcolor{keywordtype}{double}\ residual\_mean)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a205047cbef36ab1f31972bd7067d87c4}{residual\_square\_sum\_computation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00137\ \ \ \ \ }
+\DoxyCodeLine{00138\ \ \ public\ :}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}}();}
+\DoxyCodeLine{00141\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}}(\mbox{\hyperlink{namespacestat__tool_a855384acbe67cf6c6dafad97f3205e03}{parametric\_function}}\ iident\ ,\ \textcolor{keywordtype}{int}\ explanatory\_variable\ ,}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ response\_variable\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}\ \&vec);}
+\DoxyCodeLine{00143\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}}\ \&regression);}
+\DoxyCodeLine{00144\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{\string~Regression}}();}
+\DoxyCodeLine{00145\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}}\&\ \mbox{\hyperlink{classstat__tool_1_1Regression_a18acb3516c5583e9f6c27ae6f1ef7277}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a65c18badbee7659a65d7cadb44ca4294}{Regression}}\ \&regression);}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Regression_ad3bf39fddaff0466e27791242c0d7f82}{line\_write}}(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Regression_a54b5fd8b2924a3ea4a34c8a396b45605}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a0c3c0a60c6ccf669c1e4113217f5f77b}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a92f56d95ccea07ea80f9d079296552f7}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a1b1615f6071c980523c3beab2959c91d}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00153\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1Regression_a169a52da0755e7301e49106969293603}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{comment}{//\ class\ member\ access}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Regression_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}*\ \mbox{\hyperlink{classstat__tool_1_1Regression_ab295561b925e43f33b97991c2ba97a24}{get\_vectors}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Regression_afff9f8ba86ea29e1636ebe97396561bd}{vectors}};\ \}}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Regression_ad911738f6c021712a7f0a61c740b7b8f}{get\_nb\_vector}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Regression_aa12a3acd8c3abe125eb010908165e67c}{nb\_vector}};\ \}}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a70cc6430359fee666ccff141ca07af00}{get\_residual}}(\textcolor{keywordtype}{int}\ ivec)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1Regression_a67e792facfa8c590858745939bad8b2e}{residual}}[ivec];\ \}}
+\DoxyCodeLine{00160\ \ \ \};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

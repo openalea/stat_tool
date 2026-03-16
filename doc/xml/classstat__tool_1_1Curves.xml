@@ -1,0 +1,937 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="classstat__tool_1_1Curves" kind="class" language="C++" prot="public">
+    <compoundname>stat_tool::Curves</compoundname>
+    <includes refid="curves_8h" local="no">curves.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classstat__tool_1_1Curves_1a6245e984f4355337331e204ca9ab5a73" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Curves::nb_curve</definition>
+        <argsstring></argsstring>
+        <name>nb_curve</name>
+        <qualifiedname>stat_tool::Curves::nb_curve</qualifiedname>
+        <briefdescription>
+<para>number of curves </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="82" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Curves_1a5a8fd60278dcf263745ef246b38df945" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Curves::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <qualifiedname>stat_tool::Curves::length</qualifiedname>
+        <briefdescription>
+<para>curve length </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="83" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Curves_1a9914d5d17d4f4010b74537179d1e4189" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stat_tool::Curves::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <qualifiedname>stat_tool::Curves::offset</qualifiedname>
+        <briefdescription>
+<para>index of the beginning of the curves </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="84" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Curves_1a5077a2b2fa61641f7f6c327863acbbc6" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* stat_tool::Curves::index_parameter</definition>
+        <argsstring></argsstring>
+        <name>index_parameter</name>
+        <qualifiedname>stat_tool::Curves::index_parameter</qualifiedname>
+        <briefdescription>
+<para>explicit index parameters </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="85" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Curves_1a58875b2857387fdd319c3943c069c74f" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* stat_tool::Curves::frequency</definition>
+        <argsstring></argsstring>
+        <name>frequency</name>
+        <qualifiedname>stat_tool::Curves::frequency</qualifiedname>
+        <briefdescription>
+<para>frequency for each index </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="86" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstat__tool_1_1Curves_1af08bc181370d227a298559e90eafb339" prot="public" static="no" mutable="no">
+        <type>double **</type>
+        <definition>double** stat_tool::Curves::point</definition>
+        <argsstring></argsstring>
+        <name>point</name>
+        <qualifiedname>stat_tool::Curves::point</qualifiedname>
+        <briefdescription>
+<para>curves </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="87" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classstat__tool_1_1Curves_1acd3a4229574dd778b6501b37682a2c72" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Curves &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>stat_tool::Curves::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="78" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1ab67d9fe5436b098d517ce1b99f7f8482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Curves::copy</definition>
+        <argsstring>(const Curves &amp;)</argsstring>
+        <name>copy</name>
+        <qualifiedname>stat_tool::Curves::copy</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+          <defname>curves</defname>
+        </param>
+        <briefdescription>
+<para>Copy of a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">curves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="89" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="222" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a773f61a498040aabab77342a537e9af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Curves::smooth</definition>
+        <argsstring>(const Curves &amp;curves, int max_frequency)</argsstring>
+        <name>smooth</name>
+        <qualifiedname>stat_tool::Curves::smooth</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+          <declname>curves</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_frequency</declname>
+        </param>
+        <briefdescription>
+<para>Copy of a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object with curve smoothing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">curves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the frequencies for the smoothing. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="90" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="276" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1aa49ec22f9f2c6077a4ffe222de48950f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Curves::remove</definition>
+        <argsstring>()</argsstring>
+        <name>remove</name>
+        <qualifiedname>stat_tool::Curves::remove</qualifiedname>
+        <briefdescription>
+<para>Destruction of data members of a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="91" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="393" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a19d298f6004f302089845ffc9f31ebcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Curves::Curves</definition>
+        <argsstring>()</argsstring>
+        <name>Curves</name>
+        <qualifiedname>stat_tool::Curves::Curves</qualifiedname>
+        <briefdescription>
+<para>Default constructor of the <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="93" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="58" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1ae110cd5b3e595c691dba108a2b05fddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Curves::Curves</definition>
+        <argsstring>(int inb_curve, int ilength, bool frequency_flag=false, bool index_parameter_flag=false, bool init_flag=true)</argsstring>
+        <name>Curves</name>
+        <qualifiedname>stat_tool::Curves::Curves</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>inb_curve</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ilength</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>frequency_flag</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>index_parameter_flag</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>init_flag</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inb_curve</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of curves, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ilength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>curve length, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">frequency_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the frequencies, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">index_parameter_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag on the index parameters, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">init_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag initialization. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="94" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="82" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1af29a6eac9840b002ef289a4cd059ddfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Curves::Curves</definition>
+        <argsstring>(const Curves &amp;curves, curve_transformation transform=CURVE_COPY, int max_frequency=MAX_FREQUENCY)</argsstring>
+        <name>Curves</name>
+        <qualifiedname>stat_tool::Curves::Curves</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+          <declname>curves</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacestat__tool_1ab0aa13ab6ed39d60f719959072b14d49" kindref="member">curve_transformation</ref></type>
+          <declname>transform</declname>
+          <defval><ref refid="namespacestat__tool_1ab0aa13ab6ed39d60f719959072b14d49a9d869ee3bd7ad0e49e14f6706f4d8410" kindref="member">CURVE_COPY</ref></defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_frequency</declname>
+          <defval><ref refid="namespacestat__tool_1a05d317883bf0b7829301680d605a2403" kindref="member">MAX_FREQUENCY</ref></defval>
+        </param>
+        <briefdescription>
+<para>Constructor by copy of the <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">curves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of transform (CURVE_COPY/SMOOTHING), </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">max_frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold on the frequencies for the smoothing. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="96" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="369" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1aee7bc3158cbb6a648a536c97b04426c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Curves::Curves</definition>
+        <argsstring>(const Distribution &amp;dist)</argsstring>
+        <name>Curves</name>
+        <qualifiedname>stat_tool::Curves::Curves</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> &amp;</type>
+          <declname>dist</declname>
+        </param>
+        <briefdescription>
+<para>Construction of a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object from a <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="98" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="135" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a0bcf1fbfca29b9ccf839732c655a2c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Curves::Curves</definition>
+        <argsstring>(const FrequencyDistribution &amp;histo)</argsstring>
+        <name>Curves</name>
+        <qualifiedname>stat_tool::Curves::Curves</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <declname>histo</declname>
+        </param>
+        <briefdescription>
+<para>Construction of a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object from a <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">histo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="99" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="185" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a298272586d761f9e4dfda31d7ce27aa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>stat_tool::Curves::~Curves</definition>
+        <argsstring>()</argsstring>
+        <name>~Curves</name>
+        <qualifiedname>stat_tool::Curves::~Curves</qualifiedname>
+        <briefdescription>
+<para>Destructor of the <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="100" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="416" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a51723c702972aca3e328eb66d85e52a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+        <definition>Curves &amp; stat_tool::Curves::operator=</definition>
+        <argsstring>(const Curves &amp;curves)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>stat_tool::Curves::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+          <declname>curves</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator of the <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">curves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="101" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="433" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a27df707957a0411307f2c8273bf80892" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Curves::ascii_print</definition>
+        <argsstring>(std::ostream &amp;os, bool file_flag=false, const Curves *curves=NULL) const</argsstring>
+        <name>ascii_print</name>
+        <qualifiedname>stat_tool::Curves::ascii_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>file_flag</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
+          <declname>curves</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Writing of 2 families of curves of the same length. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">file_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag file, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">curves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="103" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="455" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1af68c5899791fe3e3d75e437a72862399" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>ostream &amp; stat_tool::Curves::spreadsheet_print</definition>
+        <argsstring>(std::ostream &amp;os, const Curves *curves=NULL) const</argsstring>
+        <name>spreadsheet_print</name>
+        <qualifiedname>stat_tool::Curves::spreadsheet_print</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
+          <declname>curves</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Writing of 2 families of curves of the same length at the spreadsheet format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">curves</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="105" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="548" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a01c5e820db9d78400d7d13728ce1f510" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat_tool::Curves::plot_length_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>plot_length_computation</name>
+        <qualifiedname>stat_tool::Curves::plot_length_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the curve length to be plotted (Gnuplot output). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>curve length. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="106" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="590" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a15a69cdb202c90d2d556d0864d94feec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::Curves::plot_print</definition>
+        <argsstring>(const char *path, int ilength=I_DEFAULT, const Curves *curves_0=NULL, const Curves *curves_1=NULL) const</argsstring>
+        <name>plot_print</name>
+        <qualifiedname>stat_tool::Curves::plot_print</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ilength</declname>
+          <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
+          <declname>curves_0</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
+          <declname>curves_1</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Writing of 2 families of curves at the Gnuplot format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file path, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ilength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>curve length, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">curves_0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">curves_1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>error status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="107" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="622" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a1c5bf8600cf252c375df8ff596ab3dda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool stat_tool::Curves::plot_print_standard_residual</definition>
+        <argsstring>(const char *path, double *standard_residual=NULL) const</argsstring>
+        <name>plot_print_standard_residual</name>
+        <qualifiedname>stat_tool::Curves::plot_print_standard_residual</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>standard_residual</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Writing of a curve and the corresponding standardized residuals at the Gnuplot format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file path, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">standard_residual</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer on the standardized residuals.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>error status. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="109" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="932" bodyend="957"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a80b928a1dd049fe52b8d849e97763afc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Curves::plotable_write</definition>
+        <argsstring>(int index, SinglePlot &amp;plot) const</argsstring>
+        <name>plotable_write</name>
+        <qualifiedname>stat_tool::Curves::plotable_write</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref> &amp;</type>
+          <declname>plot</declname>
+        </param>
+        <briefdescription>
+<para>Writing of a curve. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>curve index, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">plot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="110" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="675" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a3963becdf4d2c62c43c3cc84bc6788ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Curves::plotable_write</definition>
+        <argsstring>(MultiPlot &amp;plot) const</argsstring>
+        <name>plotable_write</name>
+        <qualifiedname>stat_tool::Curves::plotable_write</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref> &amp;</type>
+          <declname>plot</declname>
+        </param>
+        <briefdescription>
+<para>Writing of the curve family. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">plot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1MultiPlot" kindref="compound">MultiPlot</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="111" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="703" bodyend="724"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1aeab9a0e7d5738fbee9a74327ecd57864" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stat_tool::Curves::plotable_frequency_write</definition>
+        <argsstring>(SinglePlot &amp;plot) const</argsstring>
+        <name>plotable_frequency_write</name>
+        <qualifiedname>stat_tool::Curves::plotable_frequency_write</qualifiedname>
+        <param>
+          <type><ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref> &amp;</type>
+          <declname>plot</declname>
+        </param>
+        <briefdescription>
+<para>Writing of frequencies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">plot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reference on a <ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="112" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="735" bodyend="752"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1acb2b10add6b30582f625b482a0dd679d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat_tool::Curves::max_frequency_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>max_frequency_computation</name>
+        <qualifiedname>stat_tool::Curves::max_frequency_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the maximum frequency of a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>maximum frequency. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="114" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="809" bodyend="828"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a91059b28277db02390ecccb0b98bb2ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat_tool::Curves::nb_element_computation</definition>
+        <argsstring>() const</argsstring>
+        <name>nb_element_computation</name>
+        <qualifiedname>stat_tool::Curves::nb_element_computation</qualifiedname>
+        <briefdescription>
+<para>Computation of the cumulative frequency of a <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>cumulative frequency. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="115" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="839" bodyend="856"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a4a1d93d90c9af6dedcca8c932a620cc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Curves::mean_computation</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>mean_computation</name>
+        <qualifiedname>stat_tool::Curves::mean_computation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Computation of the curve mean. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>curve index.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>mean. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="116" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="869" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="classstat__tool_1_1Curves_1a5e3dc11269e2824635d56997c67b1da7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double stat_tool::Curves::total_square_sum_computation</definition>
+        <argsstring>(int index, double mean) const</argsstring>
+        <name>total_square_sum_computation</name>
+        <qualifiedname>stat_tool::Curves::total_square_sum_computation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mean</declname>
+        </param>
+        <briefdescription>
+<para>Computation of the total variation for a curve. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>curve index, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mean.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>total variation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="117" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="902" bodyend="918"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Family of curves with frequencies. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="76" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="76" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classstat__tool_1_1Curves_1a27df707957a0411307f2c8273bf80892" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>ascii_print</name></member>
+      <member refid="classstat__tool_1_1Curves_1ab67d9fe5436b098d517ce1b99f7f8482" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>copy</name></member>
+      <member refid="classstat__tool_1_1Curves_1a19d298f6004f302089845ffc9f31ebcb" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>Curves</name></member>
+      <member refid="classstat__tool_1_1Curves_1ae110cd5b3e595c691dba108a2b05fddd" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>Curves</name></member>
+      <member refid="classstat__tool_1_1Curves_1af29a6eac9840b002ef289a4cd059ddfc" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>Curves</name></member>
+      <member refid="classstat__tool_1_1Curves_1aee7bc3158cbb6a648a536c97b04426c4" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>Curves</name></member>
+      <member refid="classstat__tool_1_1Curves_1a0bcf1fbfca29b9ccf839732c655a2c4b" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>Curves</name></member>
+      <member refid="classstat__tool_1_1Curves_1a58875b2857387fdd319c3943c069c74f" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>frequency</name></member>
+      <member refid="classstat__tool_1_1Curves_1a5077a2b2fa61641f7f6c327863acbbc6" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>index_parameter</name></member>
+      <member refid="classstat__tool_1_1Curves_1a5a8fd60278dcf263745ef246b38df945" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>length</name></member>
+      <member refid="classstat__tool_1_1Curves_1acb2b10add6b30582f625b482a0dd679d" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>max_frequency_computation</name></member>
+      <member refid="classstat__tool_1_1Curves_1a4a1d93d90c9af6dedcca8c932a620cc4" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>mean_computation</name></member>
+      <member refid="classstat__tool_1_1Curves_1a6245e984f4355337331e204ca9ab5a73" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>nb_curve</name></member>
+      <member refid="classstat__tool_1_1Curves_1a91059b28277db02390ecccb0b98bb2ca" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>nb_element_computation</name></member>
+      <member refid="classstat__tool_1_1Curves_1a9914d5d17d4f4010b74537179d1e4189" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>offset</name></member>
+      <member refid="classstat__tool_1_1Curves_1acd3a4229574dd778b6501b37682a2c72" prot="private" virt="non-virtual"><scope>stat_tool::Curves</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classstat__tool_1_1Curves_1a51723c702972aca3e328eb66d85e52a6" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>operator=</name></member>
+      <member refid="classstat__tool_1_1Curves_1a01c5e820db9d78400d7d13728ce1f510" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>plot_length_computation</name></member>
+      <member refid="classstat__tool_1_1Curves_1a15a69cdb202c90d2d556d0864d94feec" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>plot_print</name></member>
+      <member refid="classstat__tool_1_1Curves_1a1c5bf8600cf252c375df8ff596ab3dda" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>plot_print_standard_residual</name></member>
+      <member refid="classstat__tool_1_1Curves_1aeab9a0e7d5738fbee9a74327ecd57864" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>plotable_frequency_write</name></member>
+      <member refid="classstat__tool_1_1Curves_1a80b928a1dd049fe52b8d849e97763afc" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>plotable_write</name></member>
+      <member refid="classstat__tool_1_1Curves_1a3963becdf4d2c62c43c3cc84bc6788ed" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>plotable_write</name></member>
+      <member refid="classstat__tool_1_1Curves_1af08bc181370d227a298559e90eafb339" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>point</name></member>
+      <member refid="classstat__tool_1_1Curves_1aa49ec22f9f2c6077a4ffe222de48950f" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>remove</name></member>
+      <member refid="classstat__tool_1_1Curves_1a773f61a498040aabab77342a537e9af7" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>smooth</name></member>
+      <member refid="classstat__tool_1_1Curves_1af68c5899791fe3e3d75e437a72862399" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>spreadsheet_print</name></member>
+      <member refid="classstat__tool_1_1Curves_1a5e3dc11269e2824635d56997c67b1da7" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>total_square_sum_computation</name></member>
+      <member refid="classstat__tool_1_1Curves_1a298272586d761f9e4dfda31d7ce27aa5" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>~Curves</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

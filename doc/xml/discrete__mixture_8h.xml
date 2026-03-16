@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="discrete__mixture_8h" kind="file" language="C++">
+    <compoundname>discrete_mixture.h</compoundname>
+    <includes refid="stat__tools_8h" local="yes">stat_tools.h</includes>
+    <includes refid="distribution_8h" local="yes">distribution.h</includes>
+    <includedby refid="discrete__mixture_8cpp" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture.cpp</includedby>
+    <includedby refid="discrete__mixture__algorithms_8cpp" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp</includedby>
+    <includedby refid="multivariate__mixture_8cpp" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp</includedby>
+    <includedby refid="multivariate__mixture__algorithms_8cpp" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="1">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture.h</label>
+        <link refid="discrete__mixture_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>distribution.h</label>
+        <link refid="distribution_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>plotable.h</label>
+        <link refid="plotable_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>plotable.hpp</label>
+        <link refid="plotable_8hpp"/>
+      </node>
+      <node id="5">
+        <label>reestimation.h</label>
+        <link refid="reestimation_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>reestimation.hpp</label>
+        <link refid="reestimation_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>stat_label.h</label>
+        <link refid="stat__label_8h"/>
+      </node>
+      <node id="2">
+        <label>stat_tools.h</label>
+        <link refid="stat__tools_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>boost/math/special_functions/digamma.hpp</label>
+      </node>
+      <node id="15">
+        <label>cmath</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>iterator</label>
+      </node>
+      <node id="8">
+        <label>list</label>
+      </node>
+      <node id="3">
+        <label>random</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>utility</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture.cpp</label>
+        <link refid="discrete__mixture_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture.h</label>
+        <link refid="discrete__mixture_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp</label>
+        <link refid="discrete__mixture__algorithms_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp</label>
+        <link refid="multivariate__mixture_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp</label>
+        <link refid="multivariate__mixture__algorithms_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classstat__tool_1_1DiscreteMixture" prot="public">stat_tool::DiscreteMixture</innerclass>
+    <innerclass refid="classstat__tool_1_1DiscreteMixtureData" prot="public">stat_tool::DiscreteMixtureData</innerclass>
+    <innernamespace refid="namespacestat__tool">stat_tool</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>-*-c++-*-</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>StructureAnalysis:<sp/>Identifying<sp/>patterns<sp/>in<sp/>plant<sp/>architecture<sp/>and<sp/>development</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Copyright<sp/>1995-2019<sp/>CIRAD<sp/>AGAP</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>File<sp/>author(s):<sp/>Yann<sp/>Guedon<sp/>(yann.guedon@cirad.fr)</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Source$</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>$Id:<sp/>discrete_mixture.h<sp/>18442<sp/>2015-07-29<sp/>09:35:54Z<sp/>guedon<sp/>$</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Forum<sp/>for<sp/>StructureAnalysis<sp/>developers:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>Licence</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>For<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>program;<sp/>see<sp/>the<sp/>file<sp/>COPYING.<sp/>If<sp/>not,</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/>59</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DISCRETE_MIXTURE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISCRETE_MIXTURE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stat__tools_8h" kindref="compound">stat_tools.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="distribution_8h" kindref="compound">distribution.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestat__tool" kindref="compound">stat_tool</ref><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/><sp/>Constants</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="namespacestat__tool_1afe03a7fe0a16dcde5cd3b38e673d2342" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1afe03a7fe0a16dcde5cd3b38e673d2342" kindref="member">DISCRETE_MIXTURE_NB_COMPONENT</ref><sp/>=<sp/>100;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>maximum<sp/>number<sp/>of<sp/>components</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="namespacestat__tool_1a59bb0f8c86973722b752bbcd6a3fcac8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a59bb0f8c86973722b752bbcd6a3fcac8" kindref="member">NEGATIVE_BINOMIAL_PARAMETER</ref><sp/>=<sp/>20.;<sp/><sp/></highlight><highlight class="comment">//<sp/>initial<sp/>parameter<sp/>for<sp/>a<sp/>negative<sp/>binomial<sp/>distribution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="namespacestat__tool_1a30834d355121af9860873e72308f5fe7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a30834d355121af9860873e72308f5fe7" kindref="member">MIN_WEIGHT_STEP</ref><sp/>=<sp/>0.1;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>minimum<sp/>step<sp/>for<sp/>weight<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespacestat__tool_1a8b12ef045ebda3a5f979efd712d417a6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a8b12ef045ebda3a5f979efd712d417a6" kindref="member">MAX_WEIGHT_STEP</ref><sp/>=<sp/>0.5;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>maximum<sp/>step<sp/>for<sp/>weight<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="namespacestat__tool_1a83da463ad02863e48474ea172da933d1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a83da463ad02863e48474ea172da933d1" kindref="member">DISCRETE_MIXTURE_COEFF</ref><sp/>=<sp/>2;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rounding<sp/>coefficient<sp/>for<sp/>the<sp/>estimator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="namespacestat__tool_1abdd83c4ead871467acf38b91453f0ab9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1abdd83c4ead871467acf38b91453f0ab9" kindref="member">DISCRETE_MIXTURE_LIKELIHOOD_DIFF</ref><sp/>=<sp/>1.e-5;<sp/><sp/></highlight><highlight class="comment">//<sp/>threshold<sp/>for<sp/>stopping<sp/>the<sp/>EM<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="namespacestat__tool_1a5a3be2b6e0a0c565c4aa42d25a448225" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a5a3be2b6e0a0c565c4aa42d25a448225" kindref="member">DISCRETE_MIXTURE_NB_ITER</ref><sp/>=<sp/>500;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>maximum<sp/>number<sp/>of<sp/>EM<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/>Class<sp/>definition</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1DiscreteMixtureData" kindref="compound">DiscreteMixtureData</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classstat__tool_1_1DiscreteMixture" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1aff9f1eb755d5988dcad01d04e48f9d9a" kindref="member">STAT_TOOL_API</ref><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1StatInterface" kindref="compound">StatInterface</ref><sp/>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution_1a7854c3e83af17605b6f1b2e08191a883" kindref="member">Distribution</ref><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classstat__tool_1_1DiscreteMixture_1a4b140c2efdbf49a5c39265992d544d7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1DiscreteMixture_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>;</highlight></codeline>
+<codeline lineno="81" refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>friend<sp/>class<sp/>MultivariateMixtureData;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classstat__tool_1_1DiscreteMixture_1a12e1e15b65fad162a37b2a7d84456296" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1DiscreteMixture_1a12e1e15b65fad162a37b2a7d84456296" kindref="member">MultivariateMixture</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classstat__tool_1_1DiscreteMixture_1a5469cd48656712efec92a9d7b9c7d176" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a5469cd48656712efec92a9d7b9c7d176" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref><sp/>&amp;mixt)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mixt.<ref refid="classstat__tool_1_1DiscreteMixture_1acbb0e17a826afb19119a959af940f2c7" kindref="member">ascii_write</ref>(os<sp/>,<sp/>mixt.<ref refid="classstat__tool_1_1DiscreteMixture_1a8d54a968db0cd419a06487c93945f4bf" kindref="member">mixture_data</ref><sp/>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"><sp/>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>private<sp/>:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classstat__tool_1_1DiscreteMixture_1a8d54a968db0cd419a06487c93945f4bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref><sp/>*<ref refid="classstat__tool_1_1DiscreteMixture_1a8d54a968db0cd419a06487c93945f4bf" kindref="member">mixture_data</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="classstat__tool_1_1DiscreteMixture_1a7749e2341e185988d74a9a85501e22c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a7749e2341e185988d74a9a85501e22c5" kindref="member">nb_component</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="classstat__tool_1_1DiscreteMixture_1a37d33f2813868b442449cf8d01f04008" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>*<ref refid="classstat__tool_1_1DiscreteMixture_1a37d33f2813868b442449cf8d01f04008" kindref="member">weight</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="classstat__tool_1_1DiscreteMixture_1ae8fc357bf799f9018c0fe054918c6359" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>**<ref refid="classstat__tool_1_1DiscreteMixture_1ae8fc357bf799f9018c0fe054918c6359" kindref="member">component</ref>;<sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a21c6d60d726c1aba58e1138c4d279eb7" kindref="member">copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref><sp/>&amp;mixt<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>data_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a44554d7e862b64ba5a78551b0191c651" kindref="member">remove</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classstat__tool_1_1DiscreteMixture_1acbb0e17a826afb19119a959af940f2c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1acbb0e17a826afb19119a959af940f2c7" kindref="member">ascii_write</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref><sp/>*mixt_histo<sp/>,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>file_flag)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100" refid="classstat__tool_1_1DiscreteMixture_1a3d0889425f17a506689ff331fc7b36ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a3d0889425f17a506689ff331fc7b36ef" kindref="member">spreadsheet_write</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref><sp/>*mixt_histo)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1ad6537c0c8c9fe0faae5211527d76ae77" kindref="member">plot_write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*title<sp/>,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref><sp/>*mixt_histo)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a24f343e90308e4bf6258a6ab90b03e6a" kindref="member">get_plotable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref><sp/>*mixt_histo)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1ac9c40af1463f9c20b2e8a24b895b15d4" kindref="member">nb_parameter_computation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a00e24cfe8ba838fdedc19262b673d9e2" kindref="member">penalty_computation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a1b4dc067db177e9f3a1728776f66b392" kindref="member">init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>&amp;histo<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*estimate<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound<sp/>,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>component_flag);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a6bbf01e9a9f8abd3c9a190dfebee8261" kindref="member">expectation_step</ref>(<ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref><sp/>*mixt_histo<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_element)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1af1c8589d239ae371dca83771fe7408fe" kindref="member">variance_correction</ref>(<ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref><sp/>*mixt_histo<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*estimate<sp/>,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_inf_bound)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a0a126aa993e2cdf27ff3c36e081b9303" kindref="member">component_order_test</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>public<sp/>:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_component<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*pweight<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>**pcomponent);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref><sp/>&amp;mixt<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*component_flag<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_value);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_component<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>**pcomponent);</highlight></codeline>
+<codeline lineno="121" refid="classstat__tool_1_1DiscreteMixture_1ae036789e2ae929fbb55e9f977773048b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1ae036789e2ae929fbb55e9f977773048b" kindref="member">DiscreteMixture</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_component<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;iweight<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;DiscreteParametric&gt;<sp/>&amp;icomponent);</highlight></codeline>
+<codeline lineno="122" refid="classstat__tool_1_1DiscreteMixture_1a9f2cb97a238c6bb39abb94614c97472e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a9f2cb97a238c6bb39abb94614c97472e" kindref="member">DiscreteMixture</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref><sp/>&amp;mixt<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>data_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>:<ref refid="classstat__tool_1_1Distribution_1a7854c3e83af17605b6f1b2e08191a883" kindref="member">Distribution</ref>(mixt)<sp/>{<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a21c6d60d726c1aba58e1138c4d279eb7" kindref="member">copy</ref>(mixt<sp/>,<sp/>data_flag);<sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">~DiscreteMixture</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref><sp/>&amp;mixt);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametricModel" kindref="compound">DiscreteParametricModel</ref>*<sp/>extract(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData" kindref="compound">DiscreteMixtureData</ref>*<sp/>extract_data(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref>*<sp/>build(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_component<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*weight<sp/>,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref><sp/>**component);</highlight></codeline>
+<codeline lineno="132" refid="classstat__tool_1_1DiscreteMixture_1ac81ea4305d2b4c48f29cbf3492ee1e50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1ac81ea4305d2b4c48f29cbf3492ee1e50" kindref="member">build</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;<ref refid="classstat__tool_1_1DiscreteMixture_1a37d33f2813868b442449cf8d01f04008" kindref="member">weight</ref><sp/>,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;DiscreteParametric&gt;<sp/>&amp;<ref refid="classstat__tool_1_1DiscreteMixture_1ae8fc357bf799f9018c0fe054918c6359" kindref="member">component</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1afa6201cce5a3f4f9169a432505acc82f" kindref="member">DiscreteMixture</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1aca0e711fd097f893d173663638312243" kindref="member">ascii_read</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path<sp/>,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold<sp/>=<sp/><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a66dcbe96f22181d3db36b402bc4441f1" kindref="member">line_write</ref>(std::ostream<sp/>&amp;os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classstat__tool_1_1DiscreteMixture_1a3508e01246983c274268fd17ead3a64d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a3508e01246983c274268fd17ead3a64d" kindref="member">ascii_write</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140" refid="classstat__tool_1_1DiscreteMixture_1ad5e36b01d5099f4bd895c74eb8a905ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1ad5e36b01d5099f4bd895c74eb8a905ea" kindref="member">ascii_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141" refid="classstat__tool_1_1DiscreteMixture_1a90af67e0f17a29d1cacf1e9adbfa21ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a90af67e0f17a29d1cacf1e9adbfa21ae" kindref="member">spreadsheet_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1ad6537c0c8c9fe0faae5211527d76ae77" kindref="member">plot_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*title<sp/>=<sp/>NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a24f343e90308e4bf6258a6ab90b03e6a" kindref="member">get_plotable</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a54d5561d2a46c5b03c3a7bec7747324d" kindref="member">computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_nb_value<sp/>=<sp/>1<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cumul_threshold<sp/>=<sp/><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref><sp/>,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>component_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1ac9a06ba249a5e7f2adca54b6f8f160ad" kindref="member">likelihood_computation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref><sp/>&amp;mixt_histo)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1aaa09f41a95fe98f30db1f0a3f5f34122" kindref="member">simulation</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_element)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>member<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classstat__tool_1_1DiscreteMixture_1acdef432f9e2c902badbf40028ac8b77f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a8d687173856185da0bf7f0452b9bfe81" kindref="member">DiscreteMixtureData</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1acdef432f9e2c902badbf40028ac8b77f" kindref="member">get_mixture_data</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a8d54a968db0cd419a06487c93945f4bf" kindref="member">mixture_data</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="153" refid="classstat__tool_1_1DiscreteMixture_1af0b079b61974bacc4a4d63bb4ecd8870" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1af0b079b61974bacc4a4d63bb4ecd8870" kindref="member">get_nb_component</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a7749e2341e185988d74a9a85501e22c5" kindref="member">nb_component</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="154" refid="classstat__tool_1_1DiscreteMixture_1ad1408a73dfeed31d774ad7c583123fcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1ad1408a73dfeed31d774ad7c583123fcb" kindref="member">get_weight</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a37d33f2813868b442449cf8d01f04008" kindref="member">weight</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="155" refid="classstat__tool_1_1DiscreteMixture_1a142c91eb65cb297b704f0bfaf1ff96b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixture_1a142c91eb65cb297b704f0bfaf1ff96b7" kindref="member">get_component</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixture_1ae8fc357bf799f9018c0fe054918c6359" kindref="member">component</ref>[index];<sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="classstat__tool_1_1DiscreteMixtureData" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="config_8h_1aff9f1eb755d5988dcad01d04e48f9d9a" kindref="member">STAT_TOOL_API</ref><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a755f1162716c140b0d292b6444cfae5a" kindref="member">DiscreteMixtureData</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1StatInterface" kindref="compound">StatInterface</ref><sp/>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>;</highlight></codeline>
+<codeline lineno="164" refid="classstat__tool_1_1DiscreteMixtureData_1a7f8b6ad9561102af1493505c8e79f753" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1DiscreteMixtureData_1a7f8b6ad9561102af1493505c8e79f753" kindref="member">DiscreteMixture</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>friend<sp/>class<sp/>MultivariateMixtureData;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>friend<sp/>class<sp/>MultivariateMixture;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classstat__tool_1_1DiscreteMixtureData_1ab8bec7e0c4637040e000f0d1acc1c61e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1ab8bec7e0c4637040e000f0d1acc1c61e" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a755f1162716c140b0d292b6444cfae5a" kindref="member">DiscreteMixtureData</ref><sp/>&amp;mixt_histo)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mixt_histo.<ref refid="classstat__tool_1_1DiscreteMixtureData_1a2eb253ac02e93941ed286ef921f7f167" kindref="member">ascii_write</ref>(os<sp/>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>private<sp/>:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="classstat__tool_1_1DiscreteMixtureData_1a20f0edee3222f854e3b6e87d99fb3106" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a7f8b6ad9561102af1493505c8e79f753" kindref="member">DiscreteMixture</ref><sp/>*<ref refid="classstat__tool_1_1DiscreteMixtureData_1a20f0edee3222f854e3b6e87d99fb3106" kindref="member">mixture</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="classstat__tool_1_1DiscreteMixtureData_1a8323a02ecd1713e7d82fe888e25a46d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a8323a02ecd1713e7d82fe888e25a46d5" kindref="member">nb_component</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175" refid="classstat__tool_1_1DiscreteMixtureData_1ac78978612b0c45687cd820fa6f66b258" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>*<ref refid="classstat__tool_1_1DiscreteMixtureData_1ac78978612b0c45687cd820fa6f66b258" kindref="member">weight</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="176" refid="classstat__tool_1_1DiscreteMixtureData_1a56891c3d2c67dd67f6673183aff0331d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>**<ref refid="classstat__tool_1_1DiscreteMixtureData_1a56891c3d2c67dd67f6673183aff0331d" kindref="member">component</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a85995d72232480dfde47a1ddf028598b" kindref="member">copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a755f1162716c140b0d292b6444cfae5a" kindref="member">DiscreteMixtureData</ref><sp/>&amp;mixt_histo<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>model_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a31c44a5b3ca74c6bcaafedfee833e6a2" kindref="member">remove</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>public<sp/>:</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a755f1162716c140b0d292b6444cfae5a" kindref="member">DiscreteMixtureData</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a755f1162716c140b0d292b6444cfae5a" kindref="member">DiscreteMixtureData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>&amp;histo<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_component);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a755f1162716c140b0d292b6444cfae5a" kindref="member">DiscreteMixtureData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref><sp/>&amp;histo<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a7f8b6ad9561102af1493505c8e79f753" kindref="member">DiscreteMixture</ref><sp/>*pmixture);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a755f1162716c140b0d292b6444cfae5a" kindref="member">DiscreteMixtureData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a7f8b6ad9561102af1493505c8e79f753" kindref="member">DiscreteMixture</ref><sp/>&amp;mixt);</highlight></codeline>
+<codeline lineno="187" refid="classstat__tool_1_1DiscreteMixtureData_1acd9019e6354fc0688c02b8b5a65b0298" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1acd9019e6354fc0688c02b8b5a65b0298" kindref="member">DiscreteMixtureData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a755f1162716c140b0d292b6444cfae5a" kindref="member">DiscreteMixtureData</ref><sp/>&amp;mixt_histo<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>model_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>:<ref refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>(mixt_histo)<sp/>{<sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a85995d72232480dfde47a1ddf028598b" kindref="member">copy</ref>(mixt_histo<sp/>,<sp/>model_flag);<sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData" kindref="compound">~DiscreteMixtureData</ref>();</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData" kindref="compound">DiscreteMixtureData</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData" kindref="compound">DiscreteMixtureData</ref><sp/>&amp;mixt_histo);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref>*<sp/>extract(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/>line_write(std::ostream<sp/>&amp;os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="classstat__tool_1_1DiscreteMixtureData_1a2eb253ac02e93941ed286ef921f7f167" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a2eb253ac02e93941ed286ef921f7f167" kindref="member">ascii_write</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197" refid="classstat__tool_1_1DiscreteMixtureData_1a590ca3384ade4faf54dfd1b1ad2fbb90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a590ca3384ade4faf54dfd1b1ad2fbb90" kindref="member">ascii_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1afe70b420bb849137ffe4d5582a764792" kindref="member">spreadsheet_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>path)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a4095c0301afde882346cfeecef9e88b3" kindref="member">plot_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*title<sp/>=<sp/>NULL)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a3426aa4f24ccdb6cd00832012a225464" kindref="member">get_plotable</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a59dc774415b8124ede220ef6a468ca94" kindref="member">information_computation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>member<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="classstat__tool_1_1DiscreteMixtureData_1a001337ad53db8a70aacfe65ca9546595" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a7f8b6ad9561102af1493505c8e79f753" kindref="member">DiscreteMixture</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a001337ad53db8a70aacfe65ca9546595" kindref="member">get_mixture</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a20f0edee3222f854e3b6e87d99fb3106" kindref="member">mixture</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="207" refid="classstat__tool_1_1DiscreteMixtureData_1a9f34892fff00a000aeb131788bc641e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a9f34892fff00a000aeb131788bc641e2" kindref="member">get_nb_component</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a8323a02ecd1713e7d82fe888e25a46d5" kindref="member">nb_component</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="208" refid="classstat__tool_1_1DiscreteMixtureData_1a0f7084d11b708d860b32bb7755bb086a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a0f7084d11b708d860b32bb7755bb086a" kindref="member">get_weight</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1ac78978612b0c45687cd820fa6f66b258" kindref="member">weight</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="209" refid="classstat__tool_1_1DiscreteMixtureData_1a29a7f3637e1f8f1a7d586adffbb8d2a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" kindref="member">FrequencyDistribution</ref>*<sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a29a7f3637e1f8f1a7d586adffbb8d2a5" kindref="member">get_component</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DiscreteMixtureData_1a56891c3d2c67dd67f6673183aff0331d" kindref="member">component</ref>[index];<sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture.h"/>
+  </compounddef>
+</doxygen>

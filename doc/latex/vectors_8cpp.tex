@@ -1,0 +1,43 @@
+\doxysection{/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/vectors.cpp File Reference}
+\hypertarget{vectors_8cpp}{}\label{vectors_8cpp}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/vectors.cpp@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/vectors.cpp}}
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$boost/tokenizer.\+hpp$>$}\newline
+{\ttfamily \#include "{}quantile\+\_\+computation.\+hpp"{}}\newline
+{\ttfamily \#include "{}vectors.\+h"{}}\newline
+{\ttfamily \#include "{}stat\+\_\+label.\+h"{}}\newline
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacestat__tool}{stat\+\_\+tool}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{vectors_8cpp_a525335710b53cb064ca56b936120431e}{\+\_\+\+USE\+\_\+\+MATH\+\_\+\+DEFINES}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacestat__tool_a39c3b8d286e6227b76d30bbf9390f66a}{stat\+\_\+tool\+::identifier\+\_\+checking}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, int nb\+\_\+individual, int \texorpdfstring{$\ast$}{*}identifier)
+\begin{DoxyCompactList}\small\item\em Checking of a list of individual identifiers (unique identifiers). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacestat__tool_a89e8fd34910ecf4e1144444c33b92f63}{stat\+\_\+tool\+::selected\+\_\+identifier\+\_\+checking}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, int nb\+\_\+individual, int \texorpdfstring{$\ast$}{*}identifier, int nb\+\_\+selected\+\_\+individual, int \texorpdfstring{$\ast$}{*}selected\+\_\+identifier, const char \texorpdfstring{$\ast$}{*}data\+\_\+label)
+\begin{DoxyCompactList}\small\item\em Checking of an identifier list. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_a953a5d372db648fc5c3a55fcafb37443}{stat\+\_\+tool\+::identifier\+\_\+select}} (int nb\+\_\+individual, int \texorpdfstring{$\ast$}{*}identifier, int nb\+\_\+selected\+\_\+individual, int \texorpdfstring{$\ast$}{*}selected\+\_\+identifier, bool keep)
+\begin{DoxyCompactList}\small\item\em Selection of individuals by their identifiers. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_ae4f64e1c488c68728adadeaceba77815}{stat\+\_\+tool\+::select\+\_\+variable}} (int nb\+\_\+variable, int nb\+\_\+selected\+\_\+variable, int \texorpdfstring{$\ast$}{*}selected\+\_\+variable, bool keep)
+\begin{DoxyCompactList}\small\item\em Selection of variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{vectors_8cpp_a525335710b53cb064ca56b936120431e}\index{vectors.cpp@{vectors.cpp}!\_USE\_MATH\_DEFINES@{\_USE\_MATH\_DEFINES}}
+\index{\_USE\_MATH\_DEFINES@{\_USE\_MATH\_DEFINES}!vectors.cpp@{vectors.cpp}}
+\doxysubsubsection{\texorpdfstring{\_USE\_MATH\_DEFINES}{\_USE\_MATH\_DEFINES}}
+{\footnotesize\ttfamily \label{vectors_8cpp_a525335710b53cb064ca56b936120431e} 
+\#define \+\_\+\+USE\+\_\+\+MATH\+\_\+\+DEFINES}
+

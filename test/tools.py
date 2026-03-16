@@ -7,21 +7,26 @@ author: Thomas Cokelaer, Thomas.Cokelaer@inria.fr
 __version__ = "$Id$"
 
 import os
+import sys
 
-from openalea.stat_tool import Simulate
-from openalea.stat_tool.output import Display, Save
 import openalea.stat_tool.plot
-from openalea.stat_tool.distribution import set_seed
 
+# !!! Do not plot in nosetests !!!
+# buildbot cannot close the windwos popped up by the method/function Plot/plot
+# So, we test if the command "python setup.py nosetests" has been used.
+# Still, using nosetests executable, windows should pop up.
+if ("nosetests" in sys.argv) or ("pytest" in sys.argv[0]):
+    DISABLE_PLOT = openalea.stat_tool.plot.DISABLE_PLOT = True
+else:
+    DISABLE_PLOT = openalea.stat_tool.plot.DISABLE_PLOT = False
 
-DISABLE_PLOT = openalea.stat_tool.plot.DISABLE_PLOT = True
-
+# DISABLE_PLOT = openalea.stat_tool.plot.DISABLE_PLOT = True
 from pathlib import Path
 
 import openalea.stat_tool as st
-from openalea.stat_tool import get_shared_data
-
-
+from openalea.stat_tool import Simulate, get_shared_data
+from openalea.stat_tool.distribution import set_seed
+from openalea.stat_tool.output import Display, Save
 
 def runTestClass(myclass):
     functions = [x for x in dir(myclass) if x.startswith("test")]

@@ -1,0 +1,128 @@
+\doxysection{stat\+\_\+tool\+::Chain\+Data Class Reference}
+\hypertarget{classstat__tool_1_1ChainData}{}\label{classstat__tool_1_1ChainData}\index{stat\_tool::ChainData@{stat\_tool::ChainData}}
+
+
+Data structure corresponding to a Markov chain.  
+
+
+
+
+{\ttfamily \#include $<$markovian.\+h$>$}
+
+Inheritance diagram for stat\+\_\+tool\+::Chain\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classstat__tool_1_1ChainData}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstat__tool_1_1ChainData_afb78bfcb288c721edf058339fdbb49cc}{Chain\+Data}} (\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}} itype, int inb\+\_\+state, int inb\+\_\+row, bool init\+\_\+flag=false)
+\item 
+\mbox{\hyperlink{classstat__tool_1_1ChainData_ac1a54bf6886ae7b24c37f81471afa9f4}{Chain\+Data}} (const \mbox{\hyperlink{classstat__tool_1_1ChainData}{Chain\+Data}} \&chain\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Constructor by copy of the \doxylink{classstat__tool_1_1ChainData}{Chain\+Data} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1ChainData_a844b081752d191de236611abf6ef1553}{nb\+\_\+parameter\+\_\+computation}} () const
+\begin{DoxyCompactList}\small\item\em Computation of the number of free transition probabilities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1ChainData_adc88ca56068838edfd809b42e740d748}{estimation}} (\mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&chain) const
+\begin{DoxyCompactList}\small\item\em Estimation of first-\/order Markov chain parameters on the basis of initial state and transition frequencies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{stat\+\_\+tool\+::\+Chain\+Reestimation$<$ int $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a23f63395a7891154f9aa4f726578dfdb}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initialization of a \doxylink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a8e2d3ca3f5647095ceb23aabd922e3bf}{copy}} (const \mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation}}$<$ int $>$ \&chain\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Copy of a \doxylink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aaaa83cd7e227873aa0c06937318fbb14}{remove}} ()
+\begin{DoxyCompactList}\small\item\em Destruction of the data members of a \doxylink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{Chain\+Reestimation}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of a \doxylink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a5e6193f39f334fa033c75b62d44e71f7}{Chain\+Reestimation}} (\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}} itype, int inb\+\_\+state, int inb\+\_\+row, bool init\+\_\+flag=false)
+\begin{DoxyCompactList}\small\item\em Constructor of the \doxylink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ad6a1fa42225445c78f3a7bfa7fcad903}{Chain\+Reestimation}} (const \mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation}}$<$ int $>$ \&chain\+\_\+data)
+\item 
+\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a1213c89212818e6357647a080645eef9}{\texorpdfstring{$\sim$}{\string~}\+Chain\+Reestimation}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \doxylink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation}}$<$ int $>$ \& \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_afb5383372e7c666af2875e593bc0cdbd}{operator=}} (const \mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation}}$<$ int $>$ \&chain\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Assignment operator of the \doxylink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation} class. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a5660732b40cd72f923d8a22505894ee2}{print}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Writing of a \doxylink{classstat__tool_1_1ChainReestimation}{Chain\+Reestimation} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{stat\+\_\+tool\+::\+Chain\+Reestimation$<$ int $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}} \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_adc106ed762671d3b1bfe4e28dddaf29c}{type}}
+\begin{DoxyCompactList}\small\item\em process type (ORDINARY/\+EQUILIBRIUM) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a6624ae3c721e02a33a58a8dfad8d2599}{nb\+\_\+state}}
+\begin{DoxyCompactList}\small\item\em number of states \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa08dd752877d04e544f63d4b93680c23}{nb\+\_\+row}}
+\begin{DoxyCompactList}\small\item\em number of rows of the transition frequency matrix \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_a2e0d8344eced38fdb68db508f839c181}{initial}}
+\begin{DoxyCompactList}\small\item\em initial state frequencies \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_ab2cc2cd52bf72ebc96a084073c3aa934}{transition}}
+\begin{DoxyCompactList}\small\item\em transition frequency matrix \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Data structure corresponding to a Markov chain. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classstat__tool_1_1ChainData_afb78bfcb288c721edf058339fdbb49cc}\index{stat\_tool::ChainData@{stat\_tool::ChainData}!ChainData@{ChainData}}
+\index{ChainData@{ChainData}!stat\_tool::ChainData@{stat\_tool::ChainData}}
+\doxysubsubsection{\texorpdfstring{ChainData()}{ChainData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1ChainData_afb78bfcb288c721edf058339fdbb49cc} 
+stat\+\_\+tool\+::\+Chain\+Data\+::\+Chain\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\+\_\+type}}}]{itype}{, }\item[{int}]{inb\+\_\+state}{, }\item[{int}]{inb\+\_\+row}{, }\item[{bool}]{init\+\_\+flag}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{classstat__tool_1_1ChainData_ac1a54bf6886ae7b24c37f81471afa9f4}\index{stat\_tool::ChainData@{stat\_tool::ChainData}!ChainData@{ChainData}}
+\index{ChainData@{ChainData}!stat\_tool::ChainData@{stat\_tool::ChainData}}
+\doxysubsubsection{\texorpdfstring{ChainData()}{ChainData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1ChainData_ac1a54bf6886ae7b24c37f81471afa9f4} 
+stat\+\_\+tool\+::\+Chain\+Data\+::\+Chain\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstat__tool_1_1ChainData}{Chain\+Data}} \&}]{chain\+\_\+data}{}\end{DoxyParamCaption})}
+
+
+
+Constructor by copy of the \doxylink{classstat__tool_1_1ChainData}{Chain\+Data} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chain\+\_\+data} & reference on a \doxylink{classstat__tool_1_1ChainData}{Chain\+Data} object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classstat__tool_1_1ChainData_adc88ca56068838edfd809b42e740d748}\index{stat\_tool::ChainData@{stat\_tool::ChainData}!estimation@{estimation}}
+\index{estimation@{estimation}!stat\_tool::ChainData@{stat\_tool::ChainData}}
+\doxysubsubsection{\texorpdfstring{estimation()}{estimation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1ChainData_adc88ca56068838edfd809b42e740d748} 
+void stat\+\_\+tool\+::\+Chain\+Data\+::estimation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}} \&}]{chain}{}\end{DoxyParamCaption}) const}
+
+
+
+Estimation of first-\/order Markov chain parameters on the basis of initial state and transition frequencies. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chain} & reference on a \doxylink{classstat__tool_1_1Chain}{Chain} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classstat__tool_1_1ChainData_a844b081752d191de236611abf6ef1553}\index{stat\_tool::ChainData@{stat\_tool::ChainData}!nb\_parameter\_computation@{nb\_parameter\_computation}}
+\index{nb\_parameter\_computation@{nb\_parameter\_computation}!stat\_tool::ChainData@{stat\_tool::ChainData}}
+\doxysubsubsection{\texorpdfstring{nb\_parameter\_computation()}{nb\_parameter\_computation()}}
+{\footnotesize\ttfamily \label{classstat__tool_1_1ChainData_a844b081752d191de236611abf6ef1553} 
+int stat\+\_\+tool\+::\+Chain\+Data\+::nb\+\_\+parameter\+\_\+computation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Computation of the number of free transition probabilities. 
+
+\begin{DoxyReturn}{Returns}
+number of free transition probabilities. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{markovian_8h}{markovian.\+h}}\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{chain_8cpp}{chain.\+cpp}}\item 
+/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/\mbox{\hyperlink{chain__algorithms_8cpp}{chain\+\_\+algorithms.\+cpp}}\end{DoxyCompactItemize}
