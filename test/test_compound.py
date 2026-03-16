@@ -6,7 +6,7 @@
 
 __version__ = "$Id$"
 
-from .tools import interface, robust_path as get_shared_data
+from .tools import DISABLE_PLOT, interface, robust_path as get_shared_data
 
 from openalea.stat_tool.compound import Compound
 from openalea.stat_tool.data_transform import ExtractDistribution

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1Curves" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::Curves</compoundname>
     <includes refid="curves_8h" local="no">curves.h</includes>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classstat__tool_1_1Curves_1a6245e984f4355337331e204ca9ab5a73" prot="public" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Curves::nb_curve</definition>
         <argsstring></argsstring>
         <name>nb_curve</name>
@@ -17,10 +17,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="82" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="82" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="82" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Curves_1a5a8fd60278dcf263745ef246b38df945" prot="public" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Curves::length</definition>
         <argsstring></argsstring>
         <name>length</name>
@@ -32,10 +32,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="83" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="83" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="83" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Curves_1a9914d5d17d4f4010b74537179d1e4189" prot="public" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Curves::offset</definition>
         <argsstring></argsstring>
         <name>offset</name>
@@ -47,10 +47,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="84" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="84" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="84" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Curves_1a5077a2b2fa61641f7f6c327863acbbc6" prot="public" static="no" mutable="no">
-        <type>int *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
         <definition>int* stat_tool::Curves::index_parameter</definition>
         <argsstring></argsstring>
         <name>index_parameter</name>
@@ -62,10 +62,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="85" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="85" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="85" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Curves_1a58875b2857387fdd319c3943c069c74f" prot="public" static="no" mutable="no">
-        <type>int *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
         <definition>int* stat_tool::Curves::frequency</definition>
         <argsstring></argsstring>
         <name>frequency</name>
@@ -77,10 +77,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="86" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="86" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="86" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Curves_1af08bc181370d227a298559e90eafb339" prot="public" static="no" mutable="no">
-        <type>double **</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
         <definition>double** stat_tool::Curves::point</definition>
         <argsstring></argsstring>
         <name>point</name>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="87" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="87" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="87" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="87" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="friend">
@@ -106,7 +106,7 @@
           <type>std::ostream &amp;</type>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -114,18 +114,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="78" column="12"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="78" column="12"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="classstat__tool_1_1Curves_1ab67d9fe5436b098d517ce1b99f7f8482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Curves::copy</definition>
         <argsstring>(const Curves &amp;)</argsstring>
         <name>copy</name>
         <qualifiedname>stat_tool::Curves::copy</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
           <defname>curves</defname>
         </param>
         <briefdescription>
@@ -145,20 +145,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="89" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="222" bodyend="264"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="89" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="222" bodyend="264"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a773f61a498040aabab77342a537e9af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Curves::smooth</definition>
         <argsstring>(const Curves &amp;curves, int max_frequency)</argsstring>
         <name>smooth</name>
         <qualifiedname>stat_tool::Curves::smooth</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
           <declname>curves</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>max_frequency</declname>
         </param>
         <briefdescription>
@@ -186,10 +186,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="90" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="276" bodyend="356"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="90" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="276" bodyend="356"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1aa49ec22f9f2c6077a4ffe222de48950f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Curves::remove</definition>
         <argsstring>()</argsstring>
         <name>remove</name>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="91" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="393" bodyend="407"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="91" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="393" bodyend="407"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a19d298f6004f302089845ffc9f31ebcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="93" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="58" bodyend="67"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="93" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="58" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1ae110cd5b3e595c691dba108a2b05fddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -225,27 +225,27 @@
         <name>Curves</name>
         <qualifiedname>stat_tool::Curves::Curves</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_curve</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>ilength</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>frequency_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>index_parameter_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>init_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <briefdescription>
 <para>Constructor of the <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> class. </para>
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="94" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="82" bodyend="124"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="94" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="82" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1af29a6eac9840b002ef289a4cd059ddfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -305,7 +305,7 @@
         <name>Curves</name>
         <qualifiedname>stat_tool::Curves::Curves</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
           <declname>curves</declname>
         </param>
         <param>
@@ -314,7 +314,7 @@
           <defval><ref refid="namespacestat__tool_1ab0aa13ab6ed39d60f719959072b14d49a9d869ee3bd7ad0e49e14f6706f4d8410" kindref="member">CURVE_COPY</ref></defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>max_frequency</declname>
           <defval><ref refid="namespacestat__tool_1a05d317883bf0b7829301680d605a2403" kindref="member">MAX_FREQUENCY</ref></defval>
         </param>
@@ -351,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="96" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="369" bodyend="384"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="96" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="369" bodyend="384"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1aee7bc3158cbb6a648a536c97b04426c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -360,7 +360,7 @@
         <name>Curves</name>
         <qualifiedname>stat_tool::Curves::Curves</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> &amp;</type>
           <declname>dist</declname>
         </param>
         <briefdescription>
@@ -380,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="98" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="135" bodyend="174"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="98" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="135" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a0bcf1fbfca29b9ccf839732c655a2c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -389,7 +389,7 @@
         <name>Curves</name>
         <qualifiedname>stat_tool::Curves::Curves</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>histo</declname>
         </param>
         <briefdescription>
@@ -409,7 +409,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="99" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="185" bodyend="211"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="99" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="185" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a298272586d761f9e4dfda31d7ce27aa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -424,7 +424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="100" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="416" bodyend="420"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="100" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="416" bodyend="420"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a51723c702972aca3e328eb66d85e52a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
@@ -433,7 +433,7 @@
         <name>operator=</name>
         <qualifiedname>stat_tool::Curves::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> &amp;</type>
           <declname>curves</declname>
         </param>
         <briefdescription>
@@ -455,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="101" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="433" bodyend="442"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="101" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="433" bodyend="442"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a27df707957a0411307f2c8273bf80892" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -468,14 +468,14 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>file_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
           <declname>curves</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of 2 families of curves of the same length. </para>
@@ -510,7 +510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="103" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="455" bodyend="536"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="103" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="455" bodyend="536"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1af68c5899791fe3e3d75e437a72862399" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -523,9 +523,9 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
           <declname>curves</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of 2 families of curves of the same length at the spreadsheet format. </para>
@@ -552,10 +552,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="105" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="548" bodyend="579"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="105" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="548" bodyend="579"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a01c5e820db9d78400d7d13728ce1f510" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Curves::plot_length_computation</definition>
         <argsstring>() const</argsstring>
         <name>plot_length_computation</name>
@@ -570,32 +570,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="106" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="590" bodyend="606"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="106" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="590" bodyend="606"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a15a69cdb202c90d2d556d0864d94feec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Curves::plot_print</definition>
         <argsstring>(const char *path, int ilength=I_DEFAULT, const Curves *curves_0=NULL, const Curves *curves_1=NULL) const</argsstring>
         <name>plot_print</name>
         <qualifiedname>stat_tool::Curves::plot_print</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>ilength</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
           <declname>curves_0</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Curves" kindref="compound">Curves</ref> *</type>
           <declname>curves_1</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of 2 families of curves at the Gnuplot format. </para>
@@ -640,22 +640,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="107" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="622" bodyend="663"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="107" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="622" bodyend="663"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a1c5bf8600cf252c375df8ff596ab3dda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Curves::plot_print_standard_residual</definition>
         <argsstring>(const char *path, double *standard_residual=NULL) const</argsstring>
         <name>plot_print_standard_residual</name>
         <qualifiedname>stat_tool::Curves::plot_print_standard_residual</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>double *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
           <declname>standard_residual</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of a curve and the corresponding standardized residuals at the Gnuplot format. </para>
@@ -684,16 +684,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="109" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="932" bodyend="957"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="109" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="932" bodyend="957"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a80b928a1dd049fe52b8d849e97763afc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Curves::plotable_write</definition>
         <argsstring>(int index, SinglePlot &amp;plot) const</argsstring>
         <name>plotable_write</name>
         <qualifiedname>stat_tool::Curves::plotable_write</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>index</declname>
         </param>
         <param>
@@ -725,10 +725,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="110" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="675" bodyend="692"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="110" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="675" bodyend="692"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a3963becdf4d2c62c43c3cc84bc6788ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Curves::plotable_write</definition>
         <argsstring>(MultiPlot &amp;plot) const</argsstring>
         <name>plotable_write</name>
@@ -754,10 +754,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="111" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="703" bodyend="724"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="111" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="703" bodyend="724"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1aeab9a0e7d5738fbee9a74327ecd57864" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Curves::plotable_frequency_write</definition>
         <argsstring>(SinglePlot &amp;plot) const</argsstring>
         <name>plotable_frequency_write</name>
@@ -783,10 +783,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="112" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="735" bodyend="752"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="112" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="735" bodyend="752"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1acb2b10add6b30582f625b482a0dd679d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Curves::max_frequency_computation</definition>
         <argsstring>() const</argsstring>
         <name>max_frequency_computation</name>
@@ -801,10 +801,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="114" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="809" bodyend="828"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="114" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="809" bodyend="828"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a91059b28277db02390ecccb0b98bb2ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Curves::nb_element_computation</definition>
         <argsstring>() const</argsstring>
         <name>nb_element_computation</name>
@@ -819,16 +819,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="115" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="839" bodyend="856"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="115" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="839" bodyend="856"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a4a1d93d90c9af6dedcca8c932a620cc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Curves::mean_computation</definition>
         <argsstring>(int index) const</argsstring>
         <name>mean_computation</name>
         <qualifiedname>stat_tool::Curves::mean_computation</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>index</declname>
         </param>
         <briefdescription>
@@ -850,20 +850,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="116" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="869" bodyend="888"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="116" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="869" bodyend="888"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Curves_1a5e3dc11269e2824635d56997c67b1da7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Curves::total_square_sum_computation</definition>
         <argsstring>(int index, double mean) const</argsstring>
         <name>total_square_sum_computation</name>
         <qualifiedname>stat_tool::Curves::total_square_sum_computation</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>index</declname>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>mean</declname>
         </param>
         <briefdescription>
@@ -893,7 +893,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="117" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="902" bodyend="918"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="117" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp" bodystart="902" bodyend="918"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -901,7 +901,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" line="76" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="76" bodyend="118"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" line="76" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h" bodystart="76" bodyend="118"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1Curves_1a27df707957a0411307f2c8273bf80892" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>ascii_print</name></member>
       <member refid="classstat__tool_1_1Curves_1ab67d9fe5436b098d517ce1b99f7f8482" prot="public" virt="non-virtual"><scope>stat_tool::Curves</scope><name>copy</name></member>

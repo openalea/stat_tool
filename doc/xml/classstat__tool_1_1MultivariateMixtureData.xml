@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1MultivariateMixtureData" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::MultivariateMixtureData</compoundname>
     <basecompoundref refid="classstat__tool_1_1Vectors" prot="public" virt="non-virtual">stat_tool::Vectors</basecompoundref>
     <includes refid="multivariate__mixture_8h" local="no">multivariate_mixture.h</includes>
     <sectiondef kind="friend">
       <memberdef kind="friend" id="classstat__tool_1_1MultivariateMixtureData_1a4b140c2efdbf49a5c39265992d544d7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>class</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">class</ref></type>
         <definition>friend class FrequencyDistribution</definition>
         <argsstring></argsstring>
         <name>FrequencyDistribution</name>
@@ -20,10 +20,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="211" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="211" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="211" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="211" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classstat__tool_1_1MultivariateMixtureData_1a12e1e15b65fad162a37b2a7d84456296" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>class</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">class</ref></type>
         <definition>friend class MultivariateMixture</definition>
         <argsstring></argsstring>
         <name>MultivariateMixture</name>
@@ -37,10 +37,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="212" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="212" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="212" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="212" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classstat__tool_1_1MultivariateMixtureData_1a543d5c204cf0202ad734acf28aa597d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>class</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">class</ref></type>
         <definition>friend class Vectors</definition>
         <argsstring></argsstring>
         <name>Vectors</name>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="213" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="213" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="213" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classstat__tool_1_1MultivariateMixtureData_1a637a22eb7d2ddb1a28e32324709efe1d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -67,7 +67,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1MultivariateMixtureData" kindref="compound">MultivariateMixtureData</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1MultivariateMixtureData" kindref="compound">MultivariateMixtureData</ref> &amp;</type>
           <declname>mixt_data</declname>
         </param>
         <briefdescription>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="215" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="215" bodyend="216"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="215" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="215" bodyend="216"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -92,10 +92,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="220" column="25" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="220" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="220" column="25" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1MultivariateMixtureData_1a3c0f0fb9637baf627b2813851d06cc84" prot="private" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::MultivariateMixtureData::nb_component</definition>
         <argsstring></argsstring>
         <name>nb_component</name>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="221" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="221" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="221" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1MultivariateMixtureData_1abe6b65dd974e8fe5f8858823745312a4" prot="private" static="no" mutable="no">
         <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="222" column="27" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="222" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="222" column="27" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1MultivariateMixtureData_1a2a50ad61425b1ecc9bc066e1eb995b84" prot="private" static="no" mutable="no">
         <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> ***</type>
@@ -138,24 +138,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="224" column="27" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="224" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="224" column="27" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="224" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a679b1c6d4f7715d261e89db1daa1d03d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::MultivariateMixtureData::copy</definition>
         <argsstring>(const MultivariateMixtureData &amp;mixt_data, bool model_flag=true)</argsstring>
         <name>copy</name>
         <qualifiedname>stat_tool::MultivariateMixtureData::copy</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1MultivariateMixtureData" kindref="compound">MultivariateMixtureData</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1MultivariateMixtureData" kindref="compound">MultivariateMixtureData</ref> &amp;</type>
           <declname>mixt_data</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>model_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -163,10 +163,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="226" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2220" bodyend="2247"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="226" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2220" bodyend="2247"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a3ad110b0790ce6dec153a92107dc9efd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::MultivariateMixtureData::remove</definition>
         <argsstring>()</argsstring>
         <name>remove</name>
@@ -177,16 +177,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="227" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2256" bodyend="2280"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="227" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2256" bodyend="2280"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1afeac53d4c2b56495410ef85de0cc5860" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::MultivariateMixtureData::state_permutation</definition>
         <argsstring>(int *perm)</argsstring>
         <name>state_permutation</name>
         <qualifiedname>stat_tool::MultivariateMixtureData::state_permutation</qualifiedname>
         <param>
-          <type>int *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
           <declname>perm</declname>
         </param>
         <briefdescription>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="230" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2290" bodyend="2333"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="230" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2290" bodyend="2333"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="234" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2130" bodyend="2136"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="234" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2130" bodyend="2136"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1ad7ad09decd46669b8aa07c65990bc751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -221,11 +221,11 @@
         <name>MultivariateMixtureData</name>
         <qualifiedname>stat_tool::MultivariateMixtureData::MultivariateMixtureData</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Vectors" kindref="compound">Vectors</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Vectors" kindref="compound">Vectors</ref> &amp;</type>
           <declname>vec</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_component</declname>
         </param>
         <briefdescription>
@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="235" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2148" bodyend="2178"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="235" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2148" bodyend="2178"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a9d0b6d0476cc7cc90670d6651b9aa256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -243,7 +243,7 @@
         <name>MultivariateMixtureData</name>
         <qualifiedname>stat_tool::MultivariateMixtureData::MultivariateMixtureData</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1MultivariateMixture" kindref="compound">MultivariateMixture</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1MultivariateMixture" kindref="compound">MultivariateMixture</ref> &amp;</type>
           <declname>mixt</declname>
         </param>
         <briefdescription>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="236" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2189" bodyend="2208"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="236" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2189" bodyend="2208"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a6607462c34c0b96046fdfdd886a96a4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -261,13 +261,13 @@
         <name>MultivariateMixtureData</name>
         <qualifiedname>stat_tool::MultivariateMixtureData::MultivariateMixtureData</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1MultivariateMixtureData" kindref="compound">MultivariateMixtureData</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1MultivariateMixtureData" kindref="compound">MultivariateMixtureData</ref> &amp;</type>
           <declname>mixt_data</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>model_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -275,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="237" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="237" bodyend="238"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="237" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="237" bodyend="238"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a379d6805ede67b1c0bccb1a2426ee949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -289,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="239" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2342" bodyend="2346"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="239" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2342" bodyend="2346"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1ac242c9dff610a2f935d30f668c9a1538" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1MultivariateMixtureData" kindref="compound">MultivariateMixtureData</ref> &amp;</type>
@@ -298,7 +298,7 @@
         <name>operator=</name>
         <qualifiedname>stat_tool::MultivariateMixtureData::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1MultivariateMixtureData" kindref="compound">MultivariateMixtureData</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1MultivariateMixtureData" kindref="compound">MultivariateMixtureData</ref> &amp;</type>
           <declname>mixt_data</declname>
         </param>
         <briefdescription>
@@ -307,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="240" column="29" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2357" bodyend="2368"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="240" column="29" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2357" bodyend="2368"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1ac69509f79bbcf0582a22d0f1ad9ee904" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -320,11 +320,11 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>variable</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>index</declname>
         </param>
         <briefdescription>
@@ -333,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="242" column="30" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2380" bodyend="2422"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="242" column="30" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2380" bodyend="2422"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a61aa8e70cb37f07ac54e99620089d91e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -346,7 +346,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>variable</declname>
         </param>
         <briefdescription>
@@ -355,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="243" column="30" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2435" bodyend="2464"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="243" column="30" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2435" bodyend="2464"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1ab89752c3ea4012157c87ed61586b771e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -374,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="245" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2474" bodyend="2482"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="245" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2474" bodyend="2482"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1aa03b6bd704f886debab5a1bedb3dcab9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -388,9 +388,9 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -398,10 +398,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="247" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="247" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a60dc82362413e92bba8c2d5271b4ead5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::MultivariateMixtureData::ascii_write</definition>
         <argsstring>(StatError &amp;error, std::string path, bool exhaustive=false) const</argsstring>
         <name>ascii_write</name>
@@ -416,9 +416,9 @@
           <declname>path</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -426,10 +426,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="248" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2513" bodyend="2537"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="248" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2513" bodyend="2537"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a0f14cf8513855b3943c7d087488dbfdc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::MultivariateMixtureData::spreadsheet_write</definition>
         <argsstring>(StatError &amp;error, const char *path) const</argsstring>
         <name>spreadsheet_write</name>
@@ -439,7 +439,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>path</declname>
         </param>
         <briefdescription>
@@ -448,10 +448,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="250" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2548" bodyend="2571"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="250" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2548" bodyend="2571"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a297753432721adef11b5239431582882" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::MultivariateMixtureData::plot_write</definition>
         <argsstring>(StatError &amp;error, const char *prefix, const char *title=0) const</argsstring>
         <name>plot_write</name>
@@ -462,11 +462,11 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>prefix</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>title</declname>
           <defval>0</defval>
         </param>
@@ -476,7 +476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="251" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2583" bodyend="2601"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="251" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2583" bodyend="2601"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a335bc23509add422b33723c2d2145815" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
@@ -491,10 +491,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="253" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2610" bodyend="2624"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="253" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp" bodystart="2610" bodyend="2624"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a8c6b127fde933523e2fe305fc904e2ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::MultivariateMixtureData::information_computation</definition>
         <argsstring>() const</argsstring>
         <name>information_computation</name>
@@ -505,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="255" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp" bodystart="116" bodyend="144"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="255" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp" bodystart="116" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a2274302769158ad990e707cf290bec8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1MultivariateMixture" kindref="compound">MultivariateMixture</ref> *</type>
@@ -519,10 +519,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="259" column="25" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="259" bodyend="259"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="259" column="25" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="259" bodyend="259"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1ad426967b7a242cfe06cf146cf8fcd6b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::MultivariateMixtureData::get_nb_component</definition>
         <argsstring>() const</argsstring>
         <name>get_nb_component</name>
@@ -533,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="260" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="260" bodyend="260"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="260" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="260" bodyend="260"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a4e6c28909c93a99da41fd9b16f373609" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
@@ -547,7 +547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="261" column="27" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="261" bodyend="261"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="261" column="27" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="261" bodyend="261"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1MultivariateMixtureData_1a9ae524a0f5c763a5c876c6f8f07d5069" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
@@ -556,11 +556,11 @@
         <name>get_component</name>
         <qualifiedname>stat_tool::MultivariateMixtureData::get_component</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>variable</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>index</declname>
         </param>
         <briefdescription>
@@ -569,7 +569,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="262" column="27" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="262" bodyend="262"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="262" column="27" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="262" bodyend="262"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -595,6 +595,10 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="5">
+        <label>stat_tool::Reestimation&lt; int &gt;</label>
+        <link refid="classstat__tool_1_1Reestimation"/>
+      </node>
       <node id="11">
         <label>stat_tool::CategoricalProcess</label>
         <link refid="classstat__tool_1_1CategoricalProcess"/>
@@ -670,10 +674,6 @@
           <edgelabel>weight</edgelabel>
         </childnode>
       </node>
-      <node id="5">
-        <label>stat_tool::Reestimation&lt; int &gt;</label>
-        <link refid="classstat__tool_1_1Reestimation"/>
-      </node>
       <node id="3">
         <label>stat_tool::StatInterface</label>
         <link refid="classstat__tool_1_1StatInterface"/>
@@ -691,7 +691,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="209" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="209" bodyend="263"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" line="209" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h" bodystart="209" bodyend="263"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1Vectors_1ab6498605cc90bd57c8b47ae536d721f9" prot="protected" virt="non-virtual"><scope>stat_tool::MultivariateMixtureData</scope><name>add_state_variable</name></member>
       <member refid="classstat__tool_1_1Vectors_1afff306499368c13dd24e04ff28ea2e92" prot="public" virt="virtual"><scope>stat_tool::MultivariateMixtureData</scope><name>ascii_data_write</name></member>

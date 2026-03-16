@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="chain__algorithms_8cpp" kind="file" language="C++">
     <compoundname>chain_algorithms.cpp</compoundname>
     <includes local="no">cmath</includes>
@@ -8,7 +8,7 @@
     <includes refid="stat__label_8h" local="yes">stat_label.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp</label>
         <link refid="chain__algorithms_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" line="38" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" line="38" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" bodystart="38" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -198,7 +198,7 @@
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1ac993b8fec1023bd9264d7dd4922a8098" kindref="member">Chain::init</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>left_right<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>self_transition)</highlight></codeline>
@@ -299,7 +299,7 @@
 <codeline lineno="157"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight></codeline>
 <codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">**<sp/><ref refid="classstat__tool_1_1Chain_1a9f8dae4573bea6318eb86688b86fff40" kindref="member">Chain::logic_transition_computation</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -328,10 +328,10 @@
 <codeline lineno="192"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight></codeline>
 <codeline lineno="194"><highlight class="normal"></highlight></codeline>
-<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight></codeline>
-<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a0f7ea7f78625c2c38fc4bc433a8da22c" kindref="member">Chain::strongly_connected_component_research</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>**ilogic_transition)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a0f7ea7f78625c2c38fc4bc433a8da22c" kindref="member">Chain::strongly_connected_component_research</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>**ilogic_transition)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="207"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="208"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status<sp/>=<sp/>true<sp/>,<sp/>**logic_transition;</highlight></codeline>
@@ -450,7 +450,7 @@
 <codeline lineno="322"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="323"><highlight class="normal"></highlight></codeline>
 <codeline lineno="324"><highlight class="normal"></highlight></codeline>
-<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="331"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="332"><highlight class="normal"></highlight></codeline>
 <codeline lineno="333"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a19996f9118df0209e5b32d9abdff2084" kindref="member">Chain::graph_accessibility_computation</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>**ilogic_transition)</highlight></codeline>
@@ -575,7 +575,7 @@
 <codeline lineno="452"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="453"><highlight class="normal"></highlight></codeline>
 <codeline lineno="454"><highlight class="normal"></highlight></codeline>
-<codeline lineno="455"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="459"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="460"><highlight class="normal"></highlight></codeline>
 <codeline lineno="461"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1ac3ce9d294c6062f48ab0d21c501591cd" kindref="member">Chain::probability_accessibility_computation</ref>()</highlight></codeline>
@@ -719,7 +719,7 @@
 <codeline lineno="599"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="600"><highlight class="normal"></highlight></codeline>
 <codeline lineno="601"><highlight class="normal"></highlight></codeline>
-<codeline lineno="602"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="609"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="610"><highlight class="normal"></highlight></codeline>
 <codeline lineno="611"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1ad9284fb54428b5a1cfe1c216675a31dd" kindref="member">Chain::component_computation</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>**ilogic_transition)</highlight></codeline>
@@ -829,7 +829,7 @@
 <codeline lineno="715"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="716"><highlight class="normal"></highlight></codeline>
 <codeline lineno="717"><highlight class="normal"></highlight></codeline>
-<codeline lineno="718"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="722"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="723"><highlight class="normal"></highlight></codeline>
 <codeline lineno="724"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a2eaff8480d05756c424bd439c3696278" kindref="member">Chain::parallel_initial_state</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -859,11 +859,11 @@
 <codeline lineno="748"><highlight class="normal"><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nN.o.<sp/>initial<sp/>states<sp/>in<sp/>parallel:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>nb_initial_state<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="749"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="750"><highlight class="normal"></highlight></codeline>
-<codeline lineno="751"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(nb_initial_state<sp/>&gt;<sp/>1<sp/>?<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(nb_initial_state<sp/>&gt;<sp/>1<sp/>?<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>:<sp/>false);</highlight></codeline>
 <codeline lineno="752"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="753"><highlight class="normal"></highlight></codeline>
 <codeline lineno="754"><highlight class="normal"></highlight></codeline>
-<codeline lineno="755"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="755"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="762"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="763"><highlight class="normal"></highlight></codeline>
 <codeline lineno="764"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a73c2b6491391045f22a517c330f179d5" kindref="member">Chain::thresholding</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>min_probability<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>semi_markov)</highlight></codeline>
@@ -962,10 +962,10 @@
 <codeline lineno="857"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="858"><highlight class="normal"></highlight></codeline>
 <codeline lineno="859"><highlight class="normal"></highlight></codeline>
-<codeline lineno="860"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="860"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="870"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="871"><highlight class="normal"></highlight></codeline>
-<codeline lineno="872"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a4ff539375f5858fd62edf6f78f87e1dd" kindref="member">Chain::likelihood_computation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainData" kindref="compound">ChainData</ref><sp/>&amp;chain_data<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initial_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a4ff539375f5858fd62edf6f78f87e1dd" kindref="member">Chain::likelihood_computation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ChainData<sp/>&amp;chain_data<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initial_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="873"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="874"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="875"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>,<sp/>j;</highlight></codeline>
@@ -1018,7 +1018,7 @@
 <codeline lineno="922"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="923"><highlight class="normal"></highlight></codeline>
 <codeline lineno="924"><highlight class="normal"></highlight></codeline>
-<codeline lineno="925"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="925"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="933"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="934"><highlight class="normal"></highlight></codeline>
 <codeline lineno="935"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a043c5b3e1428ab76fef964c0404d5527" kindref="member">Chain::nb_parameter_computation</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>min_probability)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1041,10 +1041,10 @@
 <codeline lineno="952"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="953"><highlight class="normal"></highlight></codeline>
 <codeline lineno="954"><highlight class="normal"></highlight></codeline>
-<codeline lineno="955"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="955"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="963"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="964"><highlight class="normal"></highlight></codeline>
-<codeline lineno="965"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1ae9b0c570758e2ad5bcb25c944588a173" kindref="member">Chain::chi2_value_computation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainData" kindref="compound">ChainData</ref><sp/>&amp;chain_data)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="965"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1ae9b0c570758e2ad5bcb25c944588a173" kindref="member">Chain::chi2_value_computation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ChainData<sp/>&amp;chain_data)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="966"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="967"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="968"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>,<sp/>j;</highlight></codeline>
@@ -1087,10 +1087,10 @@
 <codeline lineno="1005"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1006"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1007"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1008"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1008"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1015"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1016"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1017"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a1ced0cead653ad5c1fad85ef2f28298e" kindref="member">Chain::chi2_fit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainData" kindref="compound">ChainData</ref><sp/>&amp;chain_data<sp/>,<sp/><ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref><sp/>&amp;test)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Chain_1a1ced0cead653ad5c1fad85ef2f28298e" kindref="member">Chain::chi2_fit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ChainData<sp/>&amp;chain_data<sp/>,<sp/>Test<sp/>&amp;test)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1018"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1019"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="1020"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((chain_data.nb_state<sp/>==<sp/><ref refid="classstat__tool_1_1Chain_1acc34af02c00c2467b58647c4c23885b9" kindref="member">nb_state</ref>)<sp/>||<sp/>(chain_data.nb_row<sp/>==<sp/><ref refid="classstat__tool_1_1Chain_1ad123535815e2e4f9310e039c2bb305e7" kindref="member">nb_row</ref>))<sp/>{</highlight></codeline>
@@ -1103,10 +1103,10 @@
 <codeline lineno="1027"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1028"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1029"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1030"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1030"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1037"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1038"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1039"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainData_1adc88ca56068838edfd809b42e740d748" kindref="member">ChainData::estimation</ref>(<ref refid="classstat__tool_1_1Chain" kindref="compound">Chain</ref><sp/>&amp;chain)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1039"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainData_1adc88ca56068838edfd809b42e740d748" kindref="member">ChainData::estimation</ref>(Chain<sp/>&amp;chain)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1040"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1041"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="1042"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>,<sp/>j;</highlight></codeline>
@@ -1153,7 +1153,7 @@
 <codeline lineno="1083"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1084"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1085"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1086"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1086"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1092"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1093"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1094"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainData_1a844b081752d191de236611abf6ef1553" kindref="member">ChainData::nb_parameter_computation</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1182,6 +1182,6 @@
 <codeline lineno="1117"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1118"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp"/>
   </compounddef>
 </doxygen>

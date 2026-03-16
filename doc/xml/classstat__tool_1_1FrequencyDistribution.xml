@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1FrequencyDistribution" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::FrequencyDistribution</compoundname>
     <basecompoundref refid="classstat__tool_1_1Reestimation" prot="public" virt="non-virtual">stat_tool::Reestimation&lt; int &gt;</basecompoundref>
@@ -16,7 +16,7 @@
         <name>FrequencyDistribution</name>
         <qualifiedname>stat_tool::FrequencyDistribution::FrequencyDistribution</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_value</declname>
           <defval>0</defval>
         </param>
@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="788" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="788" bodyend="789"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="788" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="788" bodyend="789"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a4ee0838a8bf469c90b7637ebf284a56b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -35,7 +35,7 @@
         <name>FrequencyDistribution</name>
         <qualifiedname>stat_tool::FrequencyDistribution::FrequencyDistribution</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> &amp;</type>
           <declname>dist</declname>
         </param>
         <briefdescription>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="790" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="790" bodyend="791"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="790" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="790" bodyend="791"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a1188370bf715d8328421f1212f925e69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -53,11 +53,11 @@
         <name>FrequencyDistribution</name>
         <qualifiedname>stat_tool::FrequencyDistribution::FrequencyDistribution</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_element</declname>
         </param>
         <param>
-          <type>int *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
           <declname>ielement</declname>
         </param>
         <briefdescription>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="792" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="68" bodyend="100"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="792" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="68" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1aad2ed98ed1af6a4b4668103d55a37cd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -94,7 +94,7 @@
         <name>FrequencyDistribution</name>
         <qualifiedname>stat_tool::FrequencyDistribution::FrequencyDistribution</qualifiedname>
         <param>
-          <type>const std::vector&lt; int &gt; &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::vector&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> &gt; &amp;</type>
           <declname>ielement</declname>
         </param>
         <briefdescription>
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="793" column="5"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="793" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a44fed9f35a3ca94b0768ee117ebc453e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -112,11 +112,11 @@
         <name>FrequencyDistribution</name>
         <qualifiedname>stat_tool::FrequencyDistribution::FrequencyDistribution</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>histo</declname>
         </param>
         <briefdescription>
@@ -125,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="794" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="794" bodyend="795"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="794" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="794" bodyend="795"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a93b6c9ba4d253e881c3491e81bbb013e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -134,7 +134,7 @@
         <name>FrequencyDistribution</name>
         <qualifiedname>stat_tool::FrequencyDistribution::FrequencyDistribution</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>histo</declname>
         </param>
         <param>
@@ -142,7 +142,7 @@
           <declname>transform</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>param</declname>
         </param>
         <param>
@@ -191,16 +191,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="796" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="275" bodyend="291"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="796" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="275" bodyend="291"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ac03717c2b26da199ae02fa22685f3a4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::operator==</definition>
         <argsstring>(const FrequencyDistribution &amp;) const</argsstring>
         <name>operator==</name>
         <qualifiedname>stat_tool::FrequencyDistribution::operator==</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <defname>histo</defname>
         </param>
         <briefdescription>
@@ -222,16 +222,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="800" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="304" bodyend="326"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="800" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="304" bodyend="326"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1acaefdc9d03524957c7739f009d3e2ed6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::operator!=</definition>
         <argsstring>(const FrequencyDistribution &amp;histo) const</argsstring>
         <name>operator!=</name>
         <qualifiedname>stat_tool::FrequencyDistribution::operator!=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>histo</declname>
         </param>
         <briefdescription>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="801" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="801" bodyend="801"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="801" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="801" bodyend="801"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ade2a0cc6e572a7830c854049bc9afa73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -253,14 +253,14 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>comment_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>cumul_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of a frequency distribution. </para>
@@ -295,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="803" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="871" bodyend="918"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="803" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="871" bodyend="918"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a1331859235315edb720976788557edf1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -308,11 +308,11 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>file_flag</declname>
         </param>
         <briefdescription>
@@ -321,7 +321,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="804" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="804" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a970abc4287a51f0cee40639704cb3d9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -334,9 +334,9 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>shape</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of the characteristics of a frequency distribution at the spreadsheet format. </para>
@@ -363,7 +363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="805" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1016" bodyend="1041"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="805" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1016" bodyend="1041"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1acb63bec5fac90a5398f36bd9fc5fad6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -392,7 +392,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="806" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1053" bodyend="1072"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="806" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1053" bodyend="1072"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ada860eb82ca0189ad12ced7caf21219f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -405,14 +405,14 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>cumul_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>concentration_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of a frequency distribution at the spreadsheet format. </para>
@@ -447,27 +447,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="807" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1085" bodyend="1123"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="807" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1085" bodyend="1123"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1aa735c6bcca196e3b07291e4caa08dea0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::plot_print</definition>
         <argsstring>(const char *path, int nb_histo=0, const FrequencyDistribution **histo=NULL) const</argsstring>
         <name>plot_print</name>
         <qualifiedname>stat_tool::FrequencyDistribution::plot_print</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>histo</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of a family of frequency distributions at the Gnuplot format. </para>
@@ -504,28 +504,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="809" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1191" bodyend="1235"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="809" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1191" bodyend="1235"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a3e252f65020ccdecf255704d36c7f567" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::plot_print</definition>
         <argsstring>(const char *path, double *cumul, double *concentration, double shift=0.) const</argsstring>
         <name>plot_print</name>
         <qualifiedname>stat_tool::FrequencyDistribution::plot_print</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>double *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
           <declname>cumul</declname>
         </param>
         <param>
-          <type>double *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
           <declname>concentration</declname>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>shift</declname>
           <defval>0.</defval>
         </param>
@@ -572,20 +572,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="811" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1139" bodyend="1176"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="811" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1139" bodyend="1176"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ac0d5b5db265fd621adc6b8704c411ea8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::survival_plot_print</definition>
         <argsstring>(const char *path, double *survivor) const</argsstring>
         <name>survival_plot_print</name>
         <qualifiedname>stat_tool::FrequencyDistribution::survival_plot_print</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>double *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
           <declname>survivor</declname>
         </param>
         <briefdescription>
@@ -615,7 +615,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="814" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1554" bodyend="1572"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="814" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1554" bodyend="1572"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1acd8ce929fb6df80124d9fd5155a2a302" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -633,10 +633,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="815" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="815" bodyend="816"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="815" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="815" bodyend="816"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a5e0612139b591c43ec4f2b3e0b823299" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::plotable_frequency_write</definition>
         <argsstring>(SinglePlot &amp;plot) const</argsstring>
         <name>plotable_frequency_write</name>
@@ -662,10 +662,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="818" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1246" bodyend="1256"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="818" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1246" bodyend="1256"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1aa945b33bfde3a8b6766ae32785637cb3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::plotable_mass_write</definition>
         <argsstring>(SinglePlot &amp;plot) const</argsstring>
         <name>plotable_mass_write</name>
@@ -691,10 +691,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="819" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1267" bodyend="1279"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="819" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1267" bodyend="1279"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a958d23850a599c481a429cd7c01154aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::plotable_cumul_write</definition>
         <argsstring>(SinglePlot &amp;plot, double *icumul=NULL, double scale=D_DEFAULT) const</argsstring>
         <name>plotable_cumul_write</name>
@@ -704,12 +704,12 @@
           <declname>plot</declname>
         </param>
         <param>
-          <type>double *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
           <declname>icumul</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>scale</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -746,10 +746,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="820" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1292" bodyend="1314"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="820" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1292" bodyend="1314"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a24529bf129dc44fc2e33a9d50cdc6784" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::plotable_cumul_matching_write</definition>
         <argsstring>(SinglePlot &amp;plot, int reference_offset, int reference_nb_value, double *reference_cumul, double *icumul=NULL) const</argsstring>
         <name>plotable_cumul_matching_write</name>
@@ -759,21 +759,21 @@
           <declname>plot</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>reference_offset</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>reference_nb_value</declname>
         </param>
         <param>
-          <type>double *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
           <declname>reference_cumul</declname>
         </param>
         <param>
-          <type>double *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
           <declname>icumul</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of the matching of a cumulative distribution function with a reference cumulative distribution function. </para>
@@ -824,10 +824,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="822" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1330" bodyend="1360"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="822" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1330" bodyend="1360"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ac63c6ae3cc1551d0f59fe7ae5dbe6fbc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::plotable_concentration_write</definition>
         <argsstring>(SinglePlot &amp;plot, double *icumul=NULL, double scale=D_DEFAULT) const</argsstring>
         <name>plotable_concentration_write</name>
@@ -837,12 +837,12 @@
           <declname>plot</declname>
         </param>
         <param>
-          <type>double *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
           <declname>icumul</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>scale</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -879,10 +879,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="825" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1373" bodyend="1399"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="825" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1373" bodyend="1399"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a9f79375676e78616b18bf085e129941d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::plotable_survivor_write</definition>
         <argsstring>(SinglePlot &amp;plot) const</argsstring>
         <name>plotable_survivor_write</name>
@@ -908,16 +908,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="827" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1737" bodyend="1751"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="827" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1737" bodyend="1751"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a8abb0b0a79d10d92d14e9b89e0d937a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double * stat_tool::FrequencyDistribution::cumul_computation</definition>
         <argsstring>(double scale=D_DEFAULT) const</argsstring>
         <name>cumul_computation</name>
         <qualifiedname>stat_tool::FrequencyDistribution::cumul_computation</qualifiedname>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>scale</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -940,10 +940,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="829" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1877" bodyend="1899"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="829" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1877" bodyend="1899"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a62673fbc9a23bb2835d87fc3fc9561ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::FrequencyDistribution::concentration_computation</definition>
         <argsstring>() const</argsstring>
         <name>concentration_computation</name>
@@ -958,16 +958,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="830" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1988" bodyend="2030"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="830" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1988" bodyend="2030"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1aed0036e28d0213775a00fb7fa5007626" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double * stat_tool::FrequencyDistribution::survivor_function_computation</definition>
         <argsstring>(double scale=D_DEFAULT) const</argsstring>
         <name>survivor_function_computation</name>
         <qualifiedname>stat_tool::FrequencyDistribution::survivor_function_computation</qualifiedname>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>scale</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -990,16 +990,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="832" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1912" bodyend="1934"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="832" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1912" bodyend="1934"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a58c4f14a5082355e77ac79f1e5571970" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double * stat_tool::FrequencyDistribution::concentration_function_computation</definition>
         <argsstring>(double scale=D_DEFAULT) const</argsstring>
         <name>concentration_function_computation</name>
         <qualifiedname>stat_tool::FrequencyDistribution::concentration_function_computation</qualifiedname>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>scale</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -1022,7 +1022,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="833" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1947" bodyend="1977"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="833" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1947" bodyend="1977"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a1f488fc8a1b67bf1d658cc4ac31fffa6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref> *</type>
@@ -1031,11 +1031,11 @@
         <name>kruskal_wallis_test</name>
         <qualifiedname>stat_tool::FrequencyDistribution::kruskal_wallis_test</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>ihisto</declname>
         </param>
         <briefdescription>
@@ -1065,7 +1065,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="835" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="626" bodyend="692"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="835" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="626" bodyend="692"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a18fdf8559b0edf15d3553aa9d3dc8849" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -1078,11 +1078,11 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>ihisto</declname>
         </param>
         <param>
@@ -1090,7 +1090,7 @@
           <declname>type</declname>
         </param>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>dissimilarity</declname>
         </param>
         <briefdescription>
@@ -1099,10 +1099,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="837" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="837" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a93018cbd267176fbd049d4f2602b6468" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::dissimilarity_ascii_write</definition>
         <argsstring>(StatError &amp;error, const std::string path, int nb_histo, const FrequencyDistribution **ihisto, variable_type type, double **dissimilarity) const</argsstring>
         <name>dissimilarity_ascii_write</name>
@@ -1112,15 +1112,15 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>ihisto</declname>
         </param>
         <param>
@@ -1128,7 +1128,7 @@
           <declname>type</declname>
         </param>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>dissimilarity</declname>
         </param>
         <briefdescription>
@@ -1137,10 +1137,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="840" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="840" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a72780bd663ffa9ce12aeb10f8c3ba320" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::dissimilarity_spreadsheet_write</definition>
         <argsstring>(StatError &amp;error, const std::string path, int nb_histo, const FrequencyDistribution **ihisto, variable_type type, double **dissimilarity) const</argsstring>
         <name>dissimilarity_spreadsheet_write</name>
@@ -1150,15 +1150,15 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>ihisto</declname>
         </param>
         <param>
@@ -1166,7 +1166,7 @@
           <declname>type</declname>
         </param>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>dissimilarity</declname>
         </param>
         <briefdescription>
@@ -1228,20 +1228,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="843" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="381" bodyend="612"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="843" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="381" bodyend="612"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1abefb048963e6fcbf9f6de56f57c7d941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::update</definition>
         <argsstring>(const Reestimation&lt; double &gt; *reestim, int inb_element)</argsstring>
         <name>update</name>
         <qualifiedname>stat_tool::FrequencyDistribution::update</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; double &gt; *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> &gt; *</type>
           <declname>reestim</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_element</declname>
         </param>
         <briefdescription>
@@ -1269,7 +1269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="847" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2043" bodyend="2104"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="847" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2043" bodyend="2104"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1aa6a182894d1fab33c74ea5d8b3f32c3a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
@@ -1278,7 +1278,7 @@
         <name>frequency_scale</name>
         <qualifiedname>stat_tool::FrequencyDistribution::frequency_scale</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_element</declname>
         </param>
         <briefdescription>
@@ -1300,10 +1300,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="848" column="27" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2118" bodyend="2179"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="848" column="27" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2118" bodyend="2179"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ac1bc73586a99b0765d6a45441675976b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double * stat_tool::FrequencyDistribution::rank_computation</definition>
         <argsstring>() const</argsstring>
         <name>rank_computation</name>
@@ -1318,16 +1318,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="849" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2190" bodyend="2205"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="849" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2190" bodyend="2205"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ad8010dcd54488d494b66ebe508172561" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::FrequencyDistribution::cumulative_distribution_function_computation</definition>
         <argsstring>(double **cdf) const</argsstring>
         <name>cumulative_distribution_function_computation</name>
         <qualifiedname>stat_tool::FrequencyDistribution::cumulative_distribution_function_computation</qualifiedname>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>cdf</declname>
         </param>
         <briefdescription>
@@ -1349,10 +1349,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="850" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2218" bodyend="2241"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="850" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2218" bodyend="2241"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a3960e1e0bdb33b481892eeaa13dba855" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::FrequencyDistribution::min_interval_computation</definition>
         <argsstring>() const</argsstring>
         <name>min_interval_computation</name>
@@ -1367,7 +1367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="851" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2252" bodyend="2272"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="851" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2252" bodyend="2272"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ab0d144e15486cca854b765086e04e01d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
@@ -1380,17 +1380,17 @@
           <declname>ident</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>cumul_threshold</declname>
           <defval><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref></defval>
         </param>
@@ -1437,20 +1437,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="853" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1414" bodyend="1442"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="853" column="24" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1414" bodyend="1442"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a2080f00866710b10cf1bfbe65eaebd06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::FrequencyDistribution::likelihood_computation</definition>
         <argsstring>(const ContinuousParametric &amp;dist, int min_interval=I_DEFAULT) const</argsstring>
         <name>likelihood_computation</name>
         <qualifiedname>stat_tool::FrequencyDistribution::likelihood_computation</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> &amp;</type>
           <declname>dist</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_interval</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
@@ -1481,7 +1481,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="856" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2286" bodyend="2320"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="856" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="2286" bodyend="2320"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ad4aecc2c60afc85b6aa1ee83537213a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -1490,11 +1490,11 @@
         <name>merge</name>
         <qualifiedname>stat_tool::FrequencyDistribution::merge</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_sample</declname>
         </param>
         <param>
-          <type>const std::vector&lt; <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &gt; &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::vector&lt; <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &gt; &amp;</type>
           <declname>ihisto</declname>
         </param>
         <briefdescription>
@@ -1524,20 +1524,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="859" column="30" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="340" bodyend="365"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="859" column="30" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="340" bodyend="365"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1aaecdefa8f9ecc1d4185b1bb77884322a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::shift</definition>
         <argsstring>(const FrequencyDistribution &amp;histo, int shift_param)</argsstring>
         <name>shift</name>
         <qualifiedname>stat_tool::FrequencyDistribution::shift</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>histo</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>shift_param</declname>
         </param>
         <briefdescription>
@@ -1565,20 +1565,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="861" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="155" bodyend="183"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="861" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="155" bodyend="183"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ab1078ddd6374d94832b81fef32547f2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::cluster</definition>
         <argsstring>(const FrequencyDistribution &amp;histo, int step, rounding mode)</argsstring>
         <name>cluster</name>
         <qualifiedname>stat_tool::FrequencyDistribution::cluster</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>histo</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>step</declname>
         </param>
         <param>
@@ -1618,7 +1618,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="862" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="196" bodyend="261"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="862" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="196" bodyend="261"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a7b1c74b78795e85850c3460802bc99be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -1631,7 +1631,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>shift_param</declname>
         </param>
         <briefdescription>
@@ -1661,7 +1661,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="864" column="30" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="379" bodyend="400"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="864" column="30" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="379" bodyend="400"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ac0a6277b9f7a3421a86c62b8f8fa06e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -1674,7 +1674,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>step</declname>
         </param>
         <param>
@@ -1717,7 +1717,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="865" column="30" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="415" bodyend="434"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="865" column="30" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="415" bodyend="434"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a2e38861888381d62b9c7fdf295e60518" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -1730,7 +1730,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>ratio</declname>
         </param>
         <param>
@@ -1743,7 +1743,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="866" column="30"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="866" column="30"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a09da7f50cbcd5c5f11a2b614b1cf6690" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -1756,11 +1756,11 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_class</declname>
         </param>
         <param>
-          <type>int *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
           <declname>ilimit</declname>
         </param>
         <briefdescription>
@@ -1798,7 +1798,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="867" column="30" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="565" bodyend="626"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="867" column="30" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="565" bodyend="626"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a32eb0eac0dd0b442590dfb55bed07319" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -1811,11 +1811,11 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_class</declname>
         </param>
         <param>
-          <type>std::vector&lt; int &gt; &amp;</type>
+          <type>std::vector&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> &gt; &amp;</type>
           <declname>ilimit</declname>
         </param>
         <briefdescription>
@@ -1824,7 +1824,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="868" column="30"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="868" column="30"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a103128379011d25c4bf337dba6807522" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -1837,7 +1837,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
           <declname>category</declname>
         </param>
         <briefdescription>
@@ -1867,7 +1867,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="869" column="30" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="660" bodyend="750"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="869" column="30" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="660" bodyend="750"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a9af5a4cff56f0caa08ab241b62acf162" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -1880,7 +1880,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>std::vector&lt; int &gt; &amp;</type>
+          <type>std::vector&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> &gt; &amp;</type>
           <declname>category</declname>
         </param>
         <briefdescription>
@@ -1889,7 +1889,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="870" column="30"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="870" column="30"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a96cb0d6acd7e8fe6c18da7d9301013b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteDistributionData" kindref="compound">DiscreteDistributionData</ref> *</type>
@@ -1902,17 +1902,17 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_value</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>max_value</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>keep</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <briefdescription>
 <para>Selection of a range of values. </para>
@@ -1957,10 +1957,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="871" column="30" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="785" bodyend="858"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="871" column="30" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="785" bodyend="858"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a0a92cab9c5f68974a137270513d288b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::ascii_write</definition>
         <argsstring>(StatError &amp;error, const std::string path) const</argsstring>
         <name>ascii_write</name>
@@ -1970,7 +1970,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <briefdescription>
@@ -1979,10 +1979,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="874" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="874" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a18a9868c92c18d3ecde1b951cd3c38de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::plot_write</definition>
         <argsstring>(StatError &amp;error, const char *prefix, int nb_histo, const FrequencyDistribution **ihisto, const char *title) const</argsstring>
         <name>plot_write</name>
@@ -1992,19 +1992,19 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>prefix</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>ihisto</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>title</declname>
         </param>
         <briefdescription>
@@ -2065,7 +2065,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="876" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="1149" bodyend="1543"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="876" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="1149" bodyend="1543"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1aade78507857ca7669e07ae090fdec4cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
@@ -2077,13 +2077,13 @@
 <para>Plot of a frequency distribution. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object. </para>
+<para><simplesect kind="return"><para>MultiPlotSet object. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="879" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="1893" bodyend="1899"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="879" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="1893" bodyend="1899"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a466c1f4b292a057ca3983ec0cdf25317" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
@@ -2096,11 +2096,11 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>ihisto</declname>
         </param>
         <briefdescription>
@@ -2145,7 +2145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="880" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="1562" bodyend="1882"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="880" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="1562" bodyend="1882"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1aa7a081d8cad39b386fa334477980bcb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -2163,7 +2163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="883" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="883" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1aa117a974a58b92617bff35ebd6da6c6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -2181,10 +2181,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="884" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1445" bodyend="1454"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="884" column="17" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1445" bodyend="1454"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a1dd9a93a5384d0882a571f06cd58912d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::survival_ascii_write</definition>
         <argsstring>(StatError &amp;error, const std::string path) const</argsstring>
         <name>survival_ascii_write</name>
@@ -2194,7 +2194,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <briefdescription>
@@ -2203,10 +2203,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="885" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="885" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a25713b9d63c0677a1d0446026158040a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::survival_spreadsheet_write</definition>
         <argsstring>(StatError &amp;error, const std::string path) const</argsstring>
         <name>survival_spreadsheet_write</name>
@@ -2216,7 +2216,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <briefdescription>
@@ -2246,10 +2246,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="886" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1504" bodyend="1539"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="886" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1504" bodyend="1539"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a4fd3466758d2ae8db107c5cabf755ae2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::survival_plot_write</definition>
         <argsstring>(StatError &amp;error, const char *prefix, const char *title=NULL) const</argsstring>
         <name>survival_plot_write</name>
@@ -2259,13 +2259,13 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>prefix</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>title</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Computation of the survival rates from a frequency distribution and plot of the result using Gnuplot. </para>
@@ -2302,7 +2302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="887" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1588" bodyend="1725"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="887" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1588" bodyend="1725"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1abdad9027ee7c4309e35b16138c3cdc78" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
@@ -2333,10 +2333,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="889" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1765" bodyend="1863"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="889" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp" bodystart="1765" bodyend="1863"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a6237d9a46386f47b7ccc27c7f93567da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::comparison</definition>
         <argsstring>(StatError &amp;error, std::ostream *os, int nb_histo, const FrequencyDistribution **ihisto, variable_type type, const std::string path=NULL, output_format format=ASCII) const</argsstring>
         <name>comparison</name>
@@ -2350,11 +2350,11 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>ihisto</declname>
         </param>
         <param>
@@ -2362,9 +2362,9 @@
           <declname>type</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
           <type><ref refid="namespacestat__tool_1a4b3f5a0c2b820314d07db4a4a6a71bdd" kindref="member">output_format</ref></type>
@@ -2377,10 +2377,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="891" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="891" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a7a22893606debabe83d28baf6963bfec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::comparison</definition>
         <argsstring>(StatError &amp;error, std::ostream *os, int nb_histo, const std::vector&lt; FrequencyDistribution &gt; &amp;ihisto, variable_type type, const std::string path=NULL, output_format format=ASCII) const</argsstring>
         <name>comparison</name>
@@ -2394,11 +2394,11 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_histo</declname>
         </param>
         <param>
-          <type>const std::vector&lt; <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &gt; &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::vector&lt; <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &gt; &amp;</type>
           <declname>ihisto</declname>
         </param>
         <param>
@@ -2406,9 +2406,9 @@
           <declname>type</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
           <type><ref refid="namespacestat__tool_1a4b3f5a0c2b820314d07db4a4a6a71bdd" kindref="member">output_format</ref></type>
@@ -2421,10 +2421,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="894" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="894" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a21dccf82477c81bbb9f57e5bc41980ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::F_comparison</definition>
         <argsstring>(std::ostream &amp;os, const FrequencyDistribution &amp;histo) const</argsstring>
         <name>F_comparison</name>
@@ -2434,7 +2434,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>histo</declname>
         </param>
         <briefdescription>
@@ -2462,10 +2462,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="898" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="936" bodyend="957"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="898" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="936" bodyend="957"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1adf9e12793308834fc8e7cec25b9e7c0d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::FrequencyDistribution::t_comparison</definition>
         <argsstring>(std::ostream &amp;os, const FrequencyDistribution &amp;histo) const</argsstring>
         <name>t_comparison</name>
@@ -2475,7 +2475,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>histo</declname>
         </param>
         <briefdescription>
@@ -2503,10 +2503,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="899" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="969" bodyend="1010"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="899" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="969" bodyend="1010"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a09946ce1646d2b21606ff4c3cc589c5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::FrequencyDistribution::wilcoxon_mann_whitney_comparison</definition>
         <argsstring>(StatError &amp;error, std::ostream &amp;os, const FrequencyDistribution &amp;ihisto) const</argsstring>
         <name>wilcoxon_mann_whitney_comparison</name>
@@ -2520,7 +2520,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>ihisto</declname>
         </param>
         <briefdescription>
@@ -2558,7 +2558,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="900" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="1025" bodyend="1128"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="900" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp" bodystart="1025" bodyend="1128"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ab66913f041c301742ebb4d8f9ef3de66" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteParametricModel" kindref="compound">DiscreteParametricModel</ref> *</type>
@@ -2571,7 +2571,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>idist</declname>
         </param>
         <briefdescription>
@@ -2601,7 +2601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="903" column="29" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1379" bodyend="1398"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="903" column="29" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1379" bodyend="1398"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a80f70660d01dc5aefd35da851d2c4b1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteParametricModel" kindref="compound">DiscreteParametricModel</ref> *</type>
@@ -2618,17 +2618,17 @@
           <declname>ident</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>cumul_threshold</declname>
           <defval><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref></defval>
         </param>
@@ -2683,7 +2683,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="905" column="29" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1459" bodyend="1509"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="905" column="29" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1459" bodyend="1509"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1acccb13698261deba666167542cac05c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteParametricModel" kindref="compound">DiscreteParametricModel</ref> *</type>
@@ -2696,17 +2696,17 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>cumul_threshold</declname>
           <defval><ref refid="namespacestat__tool_1ad4d38b02123065463dd289f1adbaf8c2" kindref="member">CUMUL_THRESHOLD</ref></defval>
         </param>
@@ -2753,7 +2753,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="908" column="29" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1525" bodyend="1575"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="908" column="29" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1525" bodyend="1575"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ab2d2689e78188ec9583d99963b0d5c49" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> *</type>
@@ -2766,30 +2766,30 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> &amp;</type>
           <declname>imixt</declname>
         </param>
         <param>
-          <type>bool *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref> *</type>
           <declname>estimate</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>mixt_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>component_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight_step</declname>
           <defval>0.1</defval>
         </param>
@@ -2860,7 +2860,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="912" column="21" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp" bodystart="515" bodyend="718"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="912" column="21" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp" bodystart="515" bodyend="718"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1abe2e92c3cd5581991aaa8d1a80a03b5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> *</type>
@@ -2873,26 +2873,26 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> &amp;</type>
           <declname>imixt</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>mixt_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>component_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight_step</declname>
           <defval>0.1</defval>
         </param>
@@ -2955,7 +2955,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="915" column="21" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp" bodystart="736" bodyend="754"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="915" column="21" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp" bodystart="736" bodyend="754"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a1669131a9715b942484b8691ec377de7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> *</type>
@@ -2968,7 +2968,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_component</declname>
         </param>
         <param>
@@ -2976,22 +2976,22 @@
           <declname>ident</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>mixt_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>component_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight_step</declname>
           <defval>0.1</defval>
         </param>
@@ -3062,7 +3062,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="918" column="21" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp" bodystart="773" bodyend="811"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="918" column="21" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp" bodystart="773" bodyend="811"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ae4cb72c30f1a93a831f3f527fa2268cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> *</type>
@@ -3075,7 +3075,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_component</declname>
         </param>
         <param>
@@ -3083,22 +3083,22 @@
           <declname>ident</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>mixt_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>component_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight_step</declname>
           <defval>0.1</defval>
         </param>
@@ -3108,7 +3108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="921" column="21"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="921" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1ab33f9d570fbfc2455e5e1d8fa51bcba8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> *</type>
@@ -3125,11 +3125,11 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_nb_component</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>max_nb_component</declname>
         </param>
         <param>
@@ -3137,19 +3137,19 @@
           <declname>ident</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>mixt_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>component_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
           <type><ref refid="namespacestat__tool_1a610f7a1ed08ede75c9b0a958cb490a12" kindref="member">model_selection_criterion</ref></type>
@@ -3157,7 +3157,7 @@
           <defval><ref refid="namespacestat__tool_1a610f7a1ed08ede75c9b0a958cb490a12a7c758158bf87da049fa5d67200794edf" kindref="member">BICc</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight_step</declname>
           <defval>0.1</defval>
         </param>
@@ -3167,7 +3167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="924" column="21"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="924" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a4d5f7f23a8d578dbd7e61e04267ebcc5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteMixture" kindref="compound">DiscreteMixture</ref> *</type>
@@ -3184,11 +3184,11 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_nb_component</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>max_nb_component</declname>
         </param>
         <param>
@@ -3196,19 +3196,19 @@
           <declname>ident</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>mixt_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>component_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <param>
           <type><ref refid="namespacestat__tool_1a610f7a1ed08ede75c9b0a958cb490a12" kindref="member">model_selection_criterion</ref></type>
@@ -3216,7 +3216,7 @@
           <defval><ref refid="namespacestat__tool_1a610f7a1ed08ede75c9b0a958cb490a12a7c758158bf87da049fa5d67200794edf" kindref="member">BICc</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight_step</declname>
           <defval>0.1</defval>
         </param>
@@ -3226,7 +3226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="929" column="21"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="929" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a15650a445aecb52ef9f95fb9eebf2413" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> *</type>
@@ -3243,11 +3243,11 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>known_dist</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>unknown_dist</declname>
         </param>
         <param>
@@ -3256,12 +3256,12 @@
           <defval><ref refid="namespacestat__tool_1a04b4ea617088753388501cb90d89d905af046ec566a8f202c90e343ab26e263d7" kindref="member">LIKELIHOOD</ref></defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_iter</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -3281,7 +3281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="935" column="17"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="935" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a4fdb129217986944ebb708dcfad4e2a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> *</type>
@@ -3298,11 +3298,11 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>known_dist</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
         </param>
         <param>
@@ -3311,12 +3311,12 @@
           <defval><ref refid="namespacestat__tool_1a04b4ea617088753388501cb90d89d905af046ec566a8f202c90e343ab26e263d7" kindref="member">LIKELIHOOD</ref></defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_iter</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -3336,7 +3336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="939" column="17"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="939" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a113a41c51cfbced87c74cd2e19ea12d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> *</type>
@@ -3353,11 +3353,11 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>sum_dist</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>dist</declname>
         </param>
         <param>
@@ -3370,12 +3370,12 @@
           <defval><ref refid="namespacestat__tool_1a04b4ea617088753388501cb90d89d905af046ec566a8f202c90e343ab26e263d7" kindref="member">LIKELIHOOD</ref></defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_iter</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -3395,7 +3395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="944" column="14"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="944" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a32172d7e0ede2f03bf5fc8c03c3bffd8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Compound" kindref="compound">Compound</ref> *</type>
@@ -3412,7 +3412,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>known_dist</declname>
         </param>
         <param>
@@ -3420,7 +3420,7 @@
           <declname>type</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_inf_bound</declname>
           <defval>0</defval>
         </param>
@@ -3430,12 +3430,12 @@
           <defval><ref refid="namespacestat__tool_1a04b4ea617088753388501cb90d89d905af046ec566a8f202c90e343ab26e263d7" kindref="member">LIKELIHOOD</ref></defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_iter</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -3455,7 +3455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="949" column="14"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="949" column="14"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a673971213f418db2017be342d9ea3d74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteParametricModel" kindref="compound">DiscreteParametricModel</ref> *</type>
@@ -3472,19 +3472,19 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>backward</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>forward</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
           <declname>no_event</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>iinter_event</declname>
         </param>
         <param>
@@ -3493,7 +3493,7 @@
           <defval><ref refid="namespacestat__tool_1a04b4ea617088753388501cb90d89d905af046ec566a8f202c90e343ab26e263d7" kindref="member">LIKELIHOOD</ref></defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_iter</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
@@ -3503,7 +3503,7 @@
           <defval><ref refid="namespacestat__tool_1a3a121eff159e93418c10094cb99d96e1abb6635011a7d163905aa7eb3657cf7c4" kindref="member">COMPUTED</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -3518,7 +3518,7 @@
           <defval><ref refid="namespacestat__tool_1a397da4791daae99925c87ddad5f30b71ae2a71b1b375d518dc415d8e54e69bd07" kindref="member">ZERO</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>iinter_event_mean</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -3528,7 +3528,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="955" column="29"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="955" column="29"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1FrequencyDistribution_1a7fca56f794c7031519b9eb802ada7727" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteParametricModel" kindref="compound">DiscreteParametricModel</ref> *</type>
@@ -3545,15 +3545,15 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>backward</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>forward</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
           <declname>no_event</declname>
         </param>
         <param>
@@ -3562,7 +3562,7 @@
           <defval><ref refid="namespacestat__tool_1a04b4ea617088753388501cb90d89d905af046ec566a8f202c90e343ab26e263d7" kindref="member">LIKELIHOOD</ref></defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_iter</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
@@ -3572,7 +3572,7 @@
           <defval><ref refid="namespacestat__tool_1a3a121eff159e93418c10094cb99d96e1abb6635011a7d163905aa7eb3657cf7c4" kindref="member">COMPUTED</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>weight</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -3592,7 +3592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="964" column="29"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="964" column="29"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -3601,6 +3601,10 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
+      <node id="2">
+        <label>stat_tool::Reestimation&lt; int &gt;</label>
+        <link refid="classstat__tool_1_1Reestimation"/>
+      </node>
       <node id="3">
         <label>stat_tool::CompoundData</label>
         <link refid="classstat__tool_1_1CompoundData"/>
@@ -3631,24 +3635,20 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="2">
         <label>stat_tool::Reestimation&lt; int &gt;</label>
         <link refid="classstat__tool_1_1Reestimation"/>
       </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="1">
         <label>stat_tool::FrequencyDistribution</label>
         <link refid="classstat__tool_1_1FrequencyDistribution"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
-        <label>stat_tool::Reestimation&lt; int &gt;</label>
-        <link refid="classstat__tool_1_1Reestimation"/>
-      </node>
     </collaborationgraph>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="784" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="784" bodyend="972"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="784" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="784" bodyend="972"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1Reestimation_1a3c9100385ce84d920b066f92ae4b11d0" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>alloc_nb_value</name></member>
       <member refid="classstat__tool_1_1Reestimation_1a459b3b4e77b93b109f5ce8410f2f87dc" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>ascii_characteristic_print</name></member>
@@ -3707,7 +3707,7 @@
       <member refid="classstat__tool_1_1FrequencyDistribution_1a1f488fc8a1b67bf1d658cc4ac31fffa6" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>kruskal_wallis_test</name></member>
       <member refid="classstat__tool_1_1Reestimation_1ae34326f12f88c086dd9a75e2bc64740b" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>kurtosis_computation</name></member>
       <member refid="classstat__tool_1_1FrequencyDistribution_1a2080f00866710b10cf1bfbe65eaebd06" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>likelihood_computation</name></member>
-      <member refid="classstat__tool_1_1Reestimation_1a1fe504bc4efc297e925e544447c7ee1a" prot="public" virt="non-virtual" ambiguityscope="stat_tool::Reestimation&lt; int &gt;::"><scope>stat_tool::FrequencyDistribution</scope><name>likelihood_computation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a1fe504bc4efc297e925e544447c7ee1a" prot="public" virt="non-virtual" ambiguityscope="Reestimation&lt; int &gt;::"><scope>stat_tool::FrequencyDistribution</scope><name>likelihood_computation</name></member>
       <member refid="classstat__tool_1_1Reestimation_1adb1faf5ce02f41f298b5f1a2675fc12c" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>log_geometric_mean_computation</name></member>
       <member refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>max</name></member>
       <member refid="classstat__tool_1_1Reestimation_1a1ad8c55d9c32a4cec2590bb9228a076e" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>max_computation</name></member>
@@ -3730,7 +3730,7 @@
       <member refid="classstat__tool_1_1FrequencyDistribution_1ac03717c2b26da199ae02fa22685f3a4a" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>operator==</name></member>
       <member refid="classstat__tool_1_1FrequencyDistribution_1ab0d144e15486cca854b765086e04e01d" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>parametric_estimation</name></member>
       <member refid="classstat__tool_1_1FrequencyDistribution_1a80f70660d01dc5aefd35da851d2c4b1c" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>parametric_estimation</name></member>
-      <member refid="classstat__tool_1_1Reestimation_1a059264bb4d742e69d7963db7877a062b" prot="public" virt="non-virtual" ambiguityscope="stat_tool::Reestimation&lt; int &gt;::"><scope>stat_tool::FrequencyDistribution</scope><name>parametric_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a059264bb4d742e69d7963db7877a062b" prot="public" virt="non-virtual" ambiguityscope="Reestimation&lt; int &gt;::"><scope>stat_tool::FrequencyDistribution</scope><name>parametric_estimation</name></member>
       <member refid="classstat__tool_1_1Reestimation_1af73d5bc170b6aaf0ea75fd132a288dc8" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>penalized_likelihood_equilibrium_process_estimation</name></member>
       <member refid="classstat__tool_1_1Reestimation_1a491eee1aabb81cc6584daca1fdc979e5" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>penalized_likelihood_estimation</name></member>
       <member refid="classstat__tool_1_1FrequencyDistribution_1aa735c6bcca196e3b07291e4caa08dea0" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>plot_print</name></member>
@@ -3769,8 +3769,8 @@
       <member refid="classstat__tool_1_1FrequencyDistribution_1a103128379011d25c4bf337dba6807522" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>transcode</name></member>
       <member refid="classstat__tool_1_1FrequencyDistribution_1a9af5a4cff56f0caa08ab241b62acf162" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>transcode</name></member>
       <member refid="classstat__tool_1_1FrequencyDistribution_1acccb13698261deba666167542cac05c4" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>type_parametric_estimation</name></member>
-      <member refid="classstat__tool_1_1Reestimation_1a73a49b2c4c02a23ee0a511c97f647d24" prot="public" virt="non-virtual" ambiguityscope="stat_tool::Reestimation&lt; int &gt;::"><scope>stat_tool::FrequencyDistribution</scope><name>type_parametric_estimation</name></member>
-      <member refid="classstat__tool_1_1Reestimation_1abb4e9c7e61eefd7fb541775468bca0cb" prot="public" virt="non-virtual" ambiguityscope="stat_tool::Reestimation&lt; int &gt;::"><scope>stat_tool::FrequencyDistribution</scope><name>type_parametric_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1a73a49b2c4c02a23ee0a511c97f647d24" prot="public" virt="non-virtual" ambiguityscope="Reestimation&lt; int &gt;::"><scope>stat_tool::FrequencyDistribution</scope><name>type_parametric_estimation</name></member>
+      <member refid="classstat__tool_1_1Reestimation_1abb4e9c7e61eefd7fb541775468bca0cb" prot="public" virt="non-virtual" ambiguityscope="Reestimation&lt; int &gt;::"><scope>stat_tool::FrequencyDistribution</scope><name>type_parametric_estimation</name></member>
       <member refid="classstat__tool_1_1Reestimation_1a447392433aafc633c93b762944616385" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>uniform_estimation</name></member>
       <member refid="classstat__tool_1_1FrequencyDistribution_1abefb048963e6fcbf9f6de56f57c7d941" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>update</name></member>
       <member refid="classstat__tool_1_1FrequencyDistribution_1a96cb0d6acd7e8fe6c18da7d9301013b4" prot="public" virt="non-virtual"><scope>stat_tool::FrequencyDistribution</scope><name>value_select</name></member>

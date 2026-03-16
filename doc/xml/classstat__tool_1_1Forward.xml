@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1Forward" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::Forward</compoundname>
     <basecompoundref refid="classstat__tool_1_1DiscreteParametric" prot="public" virt="non-virtual">stat_tool::DiscreteParametric</basecompoundref>
@@ -12,7 +12,7 @@
         <name>Forward</name>
         <qualifiedname>stat_tool::Forward::Forward</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_value</declname>
           <defval>0</defval>
         </param>
@@ -22,22 +22,22 @@
           <defval><ref refid="namespacestat__tool_1ab32adb2d4c1e13f7aadbcb9fef4db1bea9d581589fb4345dd675e76f3d76a9404" kindref="member">CATEGORICAL</ref></defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>iinf_bound</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>isup_bound</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>iparameter</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>iprobability</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="763" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="763" bodyend="766"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="763" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="763" bodyend="766"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Forward_1af65ef15a64e25cc4644fc7bb03342307" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -56,11 +56,11 @@
         <name>Forward</name>
         <qualifiedname>stat_tool::Forward::Forward</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>dist</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>ialloc_nb_value</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="767" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="767" bodyend="768"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="767" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="767" bodyend="768"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Forward_1afcf876a00378e7904cd0e60715fcc298" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -79,11 +79,11 @@
         <name>Forward</name>
         <qualifiedname>stat_tool::Forward::Forward</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Forward" kindref="compound">Forward</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Forward" kindref="compound">Forward</ref> &amp;</type>
           <declname>forward</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>ialloc_nb_value</declname>
           <defval><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref></defval>
         </param>
@@ -93,16 +93,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="769" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="769" bodyend="770"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="769" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="769" bodyend="770"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Forward_1a575e350778557be5c442f8426088701b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Forward::computation</definition>
         <argsstring>(const DiscreteParametric &amp;dist)</argsstring>
         <name>computation</name>
         <qualifiedname>stat_tool::Forward::computation</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>dist</declname>
         </param>
         <briefdescription>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="772" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1077" bodyend="1108"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="772" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp" bodystart="1077" bodyend="1108"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -166,7 +166,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="759" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="759" bodyend="773"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="759" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="759" bodyend="773"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1Distribution_1ae52fd301bc94d727c55a105d9636fc56" prot="public" virt="non-virtual"><scope>stat_tool::Forward</scope><name>alloc_nb_value</name></member>
       <member refid="classstat__tool_1_1Distribution_1a660698714309ff3eeed93bd0852caa74" prot="public" virt="non-virtual"><scope>stat_tool::Forward</scope><name>ascii_characteristic_print</name></member>

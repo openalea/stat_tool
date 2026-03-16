@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="mixture__algorithms_8cpp" kind="file" language="C++">
     <compoundname>mixture_algorithms.cpp</compoundname>
     <briefdescription>
@@ -59,15 +59,15 @@
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//namespace<sp/>stat_tool<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>concentration<sp/>parameter<sp/>of<sp/>a<sp/>von<sp/>Mises<sp/>distribution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>concentration<sp/>parameter<sp/>of<sp/>a<sp/>von<sp/>Mises<sp/>distribution</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>on<sp/>the<sp/>basis<sp/>of<sp/>the<sp/>mean<sp/>direction<sp/>(Mardia<sp/>&amp;<sp/>Jupp,<sp/>2000;<sp/>pp.<sp/>85-86).</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>mean_direction<sp/>mean<sp/>direction.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>concentration<sp/>parameter.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>von_mises_concentration_computation(double<sp/>mean_direction)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -104,13 +104,13 @@
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>concentration;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>information<sp/>quantity<sp/>of<sp/>a<sp/>MixtureData<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>information<sp/>quantity<sp/>of<sp/>a<sp/>MixtureData<sp/>object</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in<sp/>the<sp/>case<sp/>of<sp/>discrete<sp/>observed<sp/>variables.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/>information<sp/>quantity.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="110"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>MixtureData::classification_information_computation()<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -152,15 +152,15 @@
 <codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>information;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>log-likelihood<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>multivariate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="155"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>log-likelihood<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>multivariate</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>distributions<sp/>for<sp/>individuals<sp/>assigned<sp/>to<sp/>components.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>vec<sp/>reference<sp/>on<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log-likelihood.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="163"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>Mixture::classification_likelihood_computation(const<sp/>MixtureData<sp/>&amp;vec)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -260,16 +260,16 @@
 <codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>likelihood;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="261"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>log-likelihood<sp/>of<sp/>a<sp/>mixture<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="266"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>log-likelihood<sp/>of<sp/>a<sp/>mixture<sp/>of</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>multivariate<sp/>distributions<sp/>for<sp/>a<sp/>sample<sp/>of<sp/>observed<sp/>vectors.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>vec<sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>Vectors<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>index<sp/>vector<sp/>index.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="271"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log-likelihood.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="273"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="275"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>Mixture::likelihood_computation(const<sp/>Vectors<sp/>&amp;vec<sp/>,<sp/>int<sp/>index)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="277"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -365,8 +365,8 @@
 <codeline lineno="368"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>likelihood;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="369"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="370"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="371"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="374"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>multivariate<sp/>mixture<sp/>of<sp/>distributions<sp/>using<sp/>the<sp/>EM<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="374"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>multivariate<sp/>mixture<sp/>of<sp/>distributions<sp/>using<sp/>the<sp/>EM<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="375"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="376"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="377"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>os<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>for<sp/>displaying<sp/>estimation<sp/>intermediate<sp/>results,</highlight><highlight class="normal"></highlight></codeline>
@@ -378,8 +378,8 @@
 <codeline lineno="383"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_iter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>iterations.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="384"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="385"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="386"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="388"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="388"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="389"><highlight class="normal"></highlight><highlight class="comment">//Mixture*<sp/>Vectors::mixture_estimation(StatError<sp/>&amp;error<sp/>,<sp/>ostream<sp/>*os<sp/>,<sp/>const<sp/>Mixture<sp/>&amp;imixt<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="390"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>known_component<sp/>,<sp/>bool<sp/>common_dispersion<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="391"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tying_rule<sp/>variance_factor<sp/>,<sp/>bool<sp/>assignment<sp/>,<sp/>int<sp/>nb_iter)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
@@ -701,8 +701,8 @@
 <codeline lineno="707"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;nb_element_computation();</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="708"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;max_computation();</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="709"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;mean_computation();</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="710"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;variance_computation(true);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="712"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;variance_computation(true);</highlight></codeline>
+<codeline lineno="712"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="713"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="714"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(mixt-&gt;discrete_parametric_process[i])<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="715"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>mixt-&gt;nb_component;j++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
@@ -760,8 +760,8 @@
 <codeline lineno="767"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buff<sp/>+=<sp/>observation_reestim[i][j]-&gt;nb_element;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="768"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="769"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="770"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>variance<sp/>/=<sp/>buff;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="772"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="770"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>variance<sp/>/=<sp/>buff;</highlight></codeline>
+<codeline lineno="772"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="773"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>mixt-&gt;nb_component;j++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="774"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixt-&gt;continuous_parametric_process[i]-&gt;observation[j]-&gt;dispersion<sp/>=<sp/>sqrt(variance);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="775"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
@@ -1006,8 +1006,8 @@
 <codeline lineno="1014"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>mixt-&gt;nb_component;j++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1015"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixt-&gt;categorical_process[i]-&gt;observation[j]-&gt;cumul_computation();</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1016"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1017"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixt-&gt;categorical_process[i]-&gt;observation[j]-&gt;max_computation();</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1020"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixt-&gt;categorical_process[i]-&gt;observation[j]-&gt;max_computation();</highlight></codeline>
+<codeline lineno="1020"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1021"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1022"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1023"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
@@ -1016,8 +1016,8 @@
 <codeline lineno="1026"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1027"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>vec-&gt;likelihood<sp/>=<sp/>mixt-&gt;likelihood_computation(*this);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1028"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1029"><highlight class="normal"></highlight><highlight class="comment">//#<sp/><sp/><sp/><sp/><sp/>ifdef<sp/>DEBUG</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1031"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;iteration<sp/>&quot;<sp/>&lt;&lt;<sp/>iter<sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1029"><highlight class="normal"></highlight><highlight class="comment">//#<sp/><sp/><sp/><sp/><sp/>ifdef<sp/>DEBUG</highlight></codeline>
+<codeline lineno="1031"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;iteration<sp/>&quot;<sp/>&lt;&lt;<sp/>iter<sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1032"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>STAT_label[STATL_LIKELIHOOD]<sp/>&lt;&lt;<sp/>&quot;:<sp/>&quot;<sp/>&lt;&lt;<sp/>vec-&gt;likelihood<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1033"><highlight class="normal"></highlight><highlight class="comment">//#<sp/><sp/><sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1034"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -1059,8 +1059,8 @@
 <codeline lineno="1070"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>mixt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1071"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1072"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1073"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1076"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>univariate<sp/>Gaussian<sp/>distributions<sp/>with</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1073"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1076"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>univariate<sp/>Gaussian<sp/>distributions<sp/>with</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1077"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>evenly<sp/>spaced<sp/>means<sp/>using<sp/>the<sp/>EM<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1078"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1079"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
@@ -1074,8 +1074,8 @@
 <codeline lineno="1087"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_iter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>iterations.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1088"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1089"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1090"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1092"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1090"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1092"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1093"><highlight class="normal"></highlight><highlight class="comment">//Mixture*<sp/>Vectors::mixture_estimation(StatError<sp/>&amp;error<sp/>,<sp/>ostream<sp/>*os<sp/>,<sp/>int<sp/>nb_component<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1094"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>offset<sp/>,<sp/>double<sp/>mean<sp/>,<sp/>double<sp/>standard_deviation<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1095"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>common_dispersion<sp/>,<sp/>bool<sp/>assignment<sp/>,<sp/>int<sp/>nb_iter)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
@@ -1102,8 +1102,8 @@
 <codeline lineno="1116"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>mixt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1117"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1118"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1119"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>univariate<sp/>gamma,<sp/>inverse<sp/>Gaussian<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1119"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1122"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>univariate<sp/>gamma,<sp/>inverse<sp/>Gaussian<sp/>or</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1123"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gaussian<sp/>distributions<sp/>with<sp/>tied<sp/>parameters<sp/>using<sp/>the<sp/>EM<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1124"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1125"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
@@ -1119,8 +1119,8 @@
 <codeline lineno="1135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_iter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>iterations.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1136"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1137"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1138"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1140"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1138"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1140"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1141"><highlight class="normal"></highlight><highlight class="comment">//Mixture*<sp/>Vectors::mixture_estimation(StatError<sp/>&amp;error<sp/>,<sp/>ostream<sp/>*os<sp/>,<sp/>int<sp/>nb_component<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1142"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>ident<sp/>,<sp/>double<sp/>mean<sp/>,<sp/>double<sp/>standard_deviation<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1143"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>tied_mean<sp/>,<sp/>tying_rule<sp/>variance_factor<sp/>,</highlight><highlight class="normal"></highlight></codeline>
@@ -1152,8 +1152,8 @@
 <codeline lineno="1169"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>mixt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1170"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1171"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1172"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1175"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>multivariate<sp/>mixture<sp/>of<sp/>distributions<sp/>using<sp/>the<sp/>MCEM<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1172"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1175"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>multivariate<sp/>mixture<sp/>of<sp/>distributions<sp/>using<sp/>the<sp/>MCEM<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1176"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1177"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1178"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>os<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream<sp/>for<sp/>displaying<sp/>estimation<sp/>intermediate<sp/>results,</highlight><highlight class="normal"></highlight></codeline>
@@ -1168,8 +1168,8 @@
 <codeline lineno="1187"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_iter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>iterations.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1188"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1189"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1192"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1192"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1193"><highlight class="normal"></highlight><highlight class="comment">//Mixture*<sp/>Vectors::mixture_stochastic_estimation(StatError<sp/>&amp;error<sp/>,<sp/>ostream<sp/>*os<sp/>,<sp/>const<sp/>Mixture<sp/>&amp;imixt<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1194"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>known_component<sp/>,<sp/>bool<sp/>common_dispersion<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1195"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tying_rule<sp/>variance_factor<sp/>,<sp/>int<sp/>min_nb_assignment<sp/>,</highlight><highlight class="normal"></highlight></codeline>
@@ -1369,8 +1369,8 @@
 <codeline lineno="1389"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1390"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nb_assignment<sp/>=<sp/>max_nb_assignment;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1391"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1392"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1394"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exp(-parameter<sp/>*<sp/>iter));<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1392"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1394"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exp(-parameter<sp/>*<sp/>iter));<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1395"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1396"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>iter++;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1397"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -1510,8 +1510,8 @@
 <codeline lineno="1531"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;nb_element_computation();</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1532"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;max_computation();</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1533"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;mean_computation();</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1534"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;variance_computation(true);</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1536"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1534"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_reestim[i][j]-&gt;variance_computation(true);</highlight></codeline>
+<codeline lineno="1536"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1537"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1538"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(mixt-&gt;discrete_parametric_process[i])<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1539"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>mixt-&gt;nb_component;j++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
@@ -1569,8 +1569,8 @@
 <codeline lineno="1591"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buff<sp/>+=<sp/>observation_reestim[i][j]-&gt;nb_element;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1592"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1593"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1594"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>variance<sp/>/=<sp/>buff;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1596"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1594"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>variance<sp/>/=<sp/>buff;</highlight></codeline>
+<codeline lineno="1596"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1597"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>mixt-&gt;nb_component;j++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1598"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixt-&gt;continuous_parametric_process[i]-&gt;observation[j]-&gt;dispersion<sp/>=<sp/>sqrt(variance);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1599"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
@@ -1816,8 +1816,8 @@
 <codeline lineno="1839"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>mixt-&gt;nb_component;j++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1840"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixt-&gt;categorical_process[i]-&gt;observation[j]-&gt;cumul_computation();</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1841"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1842"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixt-&gt;categorical_process[i]-&gt;observation[j]-&gt;max_computation();</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1845"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1842"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixt-&gt;categorical_process[i]-&gt;observation[j]-&gt;max_computation();</highlight></codeline>
+<codeline lineno="1845"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1846"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1847"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1848"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
@@ -1826,8 +1826,8 @@
 <codeline lineno="1851"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1852"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>vec-&gt;likelihood<sp/>=<sp/>mixt-&gt;likelihood_computation(*this);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1853"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1854"><highlight class="normal"></highlight><highlight class="comment">//#<sp/><sp/><sp/><sp/><sp/>ifdef<sp/>DEBUG</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1856"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;iteration<sp/>&quot;<sp/>&lt;&lt;<sp/>iter<sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1854"><highlight class="normal"></highlight><highlight class="comment">//#<sp/><sp/><sp/><sp/><sp/>ifdef<sp/>DEBUG</highlight></codeline>
+<codeline lineno="1856"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;iteration<sp/>&quot;<sp/>&lt;&lt;<sp/>iter<sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1857"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>STAT_label[STATL_LIKELIHOOD]<sp/>&lt;&lt;<sp/>&quot;:<sp/>&quot;<sp/>&lt;&lt;<sp/>vec-&gt;likelihood<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1858"><highlight class="normal"></highlight><highlight class="comment">//#<sp/><sp/><sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1859"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -1862,8 +1862,8 @@
 <codeline lineno="1888"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>mixt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1889"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1890"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1891"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1894"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>univariate<sp/>Gaussian<sp/>distributions<sp/>with</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1891"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1894"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>univariate<sp/>Gaussian<sp/>distributions<sp/>with</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1895"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>evenly<sp/>spaced<sp/>means<sp/>using<sp/>the<sp/>MCEM<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1896"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1897"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
@@ -1880,8 +1880,8 @@
 <codeline lineno="1908"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_iter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>iterations.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1909"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1910"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1911"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1913"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1911"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1913"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1914"><highlight class="normal"></highlight><highlight class="comment">//Mixture*<sp/>Vectors::mixture_stochastic_estimation(StatError<sp/>&amp;error<sp/>,<sp/>ostream<sp/>*os<sp/>,<sp/>int<sp/>nb_component<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1915"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>offset<sp/>,<sp/>double<sp/>mean<sp/>,<sp/>double<sp/>standard_deviation<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1916"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>common_dispersion<sp/>,<sp/>int<sp/>min_nb_assignment<sp/>,<sp/>int<sp/>max_nb_assignment<sp/>,</highlight><highlight class="normal"></highlight></codeline>
@@ -1910,8 +1910,8 @@
 <codeline lineno="1939"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>mixt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1940"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1941"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1942"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1945"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>univariate<sp/>gamma,<sp/>inverse<sp/>Gaussian<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1942"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1945"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Estimation<sp/>of<sp/>a<sp/>mixture<sp/>of<sp/>univariate<sp/>gamma,<sp/>inverse<sp/>Gaussian<sp/>or</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1946"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gaussian<sp/>distributions<sp/>with<sp/>tied<sp/>parameters<sp/>using<sp/>the<sp/>MCEM<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1947"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1948"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
@@ -1930,8 +1930,8 @@
 <codeline lineno="1961"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_iter<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>iterations.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1962"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1963"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1964"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1966"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1964"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1966"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1967"><highlight class="normal"></highlight><highlight class="comment">//Mixture*<sp/>Vectors::mixture_stochastic_estimation(StatError<sp/>&amp;error<sp/>,<sp/>ostream<sp/>*os<sp/>,<sp/>int<sp/>nb_component<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1968"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>ident<sp/>,<sp/>double<sp/>mean<sp/>,<sp/>double<sp/>standard_deviation<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1969"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>tied_mean<sp/>,<sp/>tying_rule<sp/>variance_factor<sp/>,</highlight><highlight class="normal"></highlight></codeline>
@@ -1961,15 +1961,15 @@
 <codeline lineno="1993"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>mixt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1994"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1995"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1996"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1999"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Assignment<sp/>of<sp/>the<sp/>individuals<sp/>to<sp/>the<sp/>most<sp/>probable<sp/>component<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1996"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1999"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Assignment<sp/>of<sp/>the<sp/>individuals<sp/>to<sp/>the<sp/>most<sp/>probable<sp/>component<sp/>of</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2000"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>multivariate<sp/>mixture<sp/>of<sp/>distributions<sp/>and<sp/>computation<sp/>of</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2001"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>associated<sp/>posterior<sp/>probabilities<sp/>and<sp/>entropies</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2002"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2003"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>vec<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>MixtureData<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2004"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>assignment<sp/>flag<sp/>on<sp/>the<sp/>assignment<sp/>of<sp/>individuals<sp/>to<sp/>components.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2005"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2007"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2005"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2007"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2008"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>Mixture::individual_assignment(MixtureData<sp/>&amp;vec<sp/>,<sp/>bool<sp/>assignment)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2009"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2010"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2076,15 +2076,15 @@
 <codeline lineno="2111"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>delete<sp/>[]<sp/>component_proba;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2112"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2113"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2114"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2117"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Simulation<sp/>using<sp/>a<sp/>multivariate<sp/>mixture<sp/>of<sp/>distributions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2114"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2117"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Simulation<sp/>using<sp/>a<sp/>multivariate<sp/>mixture<sp/>of<sp/>distributions.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2119"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2120"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_vector<sp/>sample<sp/>size.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2123"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2125"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2123"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2125"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2126"><highlight class="normal"></highlight><highlight class="comment">//MixtureData*<sp/>Mixture::simulation(StatError<sp/>&amp;error<sp/>,<sp/>int<sp/>nb_vector)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2127"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2128"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2312,6 +2312,6 @@
 <codeline lineno="2350"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2351"><highlight class="normal"></highlight><highlight class="comment">//};<sp/><sp/>//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/mixture_algorithms.cpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/mixture_algorithms.cpp"/>
   </compounddef>
 </doxygen>

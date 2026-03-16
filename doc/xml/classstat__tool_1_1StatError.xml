@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1StatError" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::StatError</compoundname>
     <includes refid="stat__tools_8h" local="no">stat_tools.h</includes>
     <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classstat__tool_1_1StatError_1a05808ce4c430f9ea8ca51e7be613d16d" prot="private" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::StatError::nb_error</definition>
         <argsstring></argsstring>
         <name>nb_error</name>
@@ -17,10 +17,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="441" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="441" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="441" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="441" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1StatError_1ad30a4eab7ee482f2ab3c8f45d667928d" prot="private" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::StatError::max_nb_error</definition>
         <argsstring></argsstring>
         <name>max_nb_error</name>
@@ -32,10 +32,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="442" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="442" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="442" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="442" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1StatError_1a0dd6abed89de42baaeb49e6a63881a38" prot="private" static="no" mutable="no">
-        <type>int *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
         <definition>int* stat_tool::StatError::line</definition>
         <argsstring></argsstring>
         <name>line</name>
@@ -47,10 +47,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="443" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="443" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="443" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="443" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1StatError_1a2fc3ec946d515633652be79d76d1b6c9" prot="private" static="no" mutable="no">
-        <type>int *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
         <definition>int* stat_tool::StatError::column</definition>
         <argsstring></argsstring>
         <name>column</name>
@@ -62,10 +62,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="444" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="444" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="444" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="444" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1StatError_1affd269c2b7ab1460126de794d6548164" prot="private" static="no" mutable="no">
-        <type>char **</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> **</type>
         <definition>char** stat_tool::StatError::label</definition>
         <argsstring></argsstring>
         <name>label</name>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="445" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="445" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="445" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="445" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="friend">
@@ -92,7 +92,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref> &amp;</type>
           <declname>error</declname>
         </param>
         <briefdescription>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="436" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="436" bodyend="437"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="436" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="436" bodyend="437"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -112,7 +112,7 @@
         <name>StatError</name>
         <qualifiedname>stat_tool::StatError::StatError</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>imax_nb_error</declname>
           <defval><ref refid="namespacestat__tool_1a6eee2d2fce3b64b633d4b23de57bf69c" kindref="member">NB_ERROR</ref></defval>
         </param>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="449" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="61" bodyend="77"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="449" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="61" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1StatError_1a253801d0f9dad46cd0f68b60f41623a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="450" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="86" bodyend="101"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="450" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="86" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1StatError_1a5ef3d04a6df66d73acb874dc8fde3980" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="452" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="103" bodyend="110"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="452" column="17" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="103" bodyend="110"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1StatError_1acea6c0208cba966f64f599ac1cee65ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -190,10 +190,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="453" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="453" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1StatError_1ac373c953ef7aae1f14a746493f77ada6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::StatError::init</definition>
         <argsstring>()</argsstring>
         <name>init</name>
@@ -204,25 +204,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="455" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="455" bodyend="455"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="455" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="455" bodyend="455"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1StatError_1a166f54f45091ed8f61d661551657a98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::StatError::update</definition>
         <argsstring>(const char *ilabel, int iline=0, int icolumn=0)</argsstring>
         <name>update</name>
         <qualifiedname>stat_tool::StatError::update</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>ilabel</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>iline</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>icolumn</declname>
           <defval>0</defval>
         </param>
@@ -259,29 +259,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="456" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="164" bodyend="173"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="456" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="164" bodyend="173"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1StatError_1ac25caddff9173ff1d3268a0910d334d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::StatError::correction_update</definition>
         <argsstring>(const char *ilabel, const char *correction, int iline=0, int icolumn=0)</argsstring>
         <name>correction_update</name>
         <qualifiedname>stat_tool::StatError::correction_update</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>ilabel</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>correction</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>iline</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>icolumn</declname>
           <defval>0</defval>
         </param>
@@ -326,29 +326,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="457" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="187" bodyend="202"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="457" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="187" bodyend="202"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1StatError_1a8c66f37b31b98aec698d98f338abdf98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::StatError::correction_update</definition>
         <argsstring>(const char *ilabel, int correction, int iline=0, int icolumn=0)</argsstring>
         <name>correction_update</name>
         <qualifiedname>stat_tool::StatError::correction_update</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>ilabel</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>correction</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>iline</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>icolumn</declname>
           <defval>0</defval>
         </param>
@@ -393,10 +393,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="459" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="216" bodyend="231"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="459" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/interface.cpp" bodystart="216" bodyend="231"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1StatError_1a222ddc62350b28d16265576af867bb7b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::StatError::get_nb_error</definition>
         <argsstring>() const</argsstring>
         <name>get_nb_error</name>
@@ -407,10 +407,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="464" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="464" bodyend="464"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="464" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="464" bodyend="464"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1StatError_1a91c33d5cfa4a071d080d835cc6bd7f00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::StatError::get_max_nb_error</definition>
         <argsstring>() const</argsstring>
         <name>get_max_nb_error</name>
@@ -421,7 +421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="465" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="465" bodyend="465"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="465" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="465" bodyend="465"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -429,7 +429,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="434" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="434" bodyend="466"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="434" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="434" bodyend="466"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1StatError_1a5ef3d04a6df66d73acb874dc8fde3980" prot="public" virt="non-virtual"><scope>stat_tool::StatError</scope><name>ascii_write</name></member>
       <member refid="classstat__tool_1_1StatError_1acea6c0208cba966f64f599ac1cee65ea" prot="public" virt="non-virtual"><scope>stat_tool::StatError</scope><name>ascii_write</name></member>

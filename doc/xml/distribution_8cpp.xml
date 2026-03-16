@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="distribution_8cpp" kind="file" language="C++">
     <compoundname>distribution.cpp</compoundname>
     <includes local="no">cmath</includes>
@@ -22,7 +22,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution.cpp</label>
         <link refid="distribution_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution.cpp" line="38" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution.cpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution.cpp" line="38" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution.cpp" bodystart="38" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -212,10 +212,10 @@
 <codeline lineno="55"><highlight class="normal"><ref refid="config_8h_1aff9f1eb755d5988dcad01d04e48f9d9a" kindref="member">STAT_TOOL_API</ref><sp/>std::mt19937<sp/><ref refid="namespacestat__tool_1a1a04dac25c71637d3f3210b9888590ed" kindref="member">mt</ref>(0);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><ref refid="config_8h_1aff9f1eb755d5988dcad01d04e48f9d9a" kindref="member">STAT_TOOL_API</ref><sp/>std::uniform_real_distribution&lt;double&gt;<sp/><ref refid="namespacestat__tool_1a89910564eee519ff76495e21cb5a6c2b" kindref="member">rand_unif</ref>(0.0,<sp/>1.0);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution_1aa084196be5933a75c01ca60d7ee1286d" kindref="member">Distribution::mass_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref><sp/>&amp;dist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_value)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution_1aa084196be5933a75c01ca60d7ee1286d" kindref="member">Distribution::mass_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_value)</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
@@ -225,12 +225,12 @@
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a42619767a2549c8a459e13460acbeb1d" kindref="member">nb_value</ref><sp/>=<sp/>inb_value;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a42619767a2549c8a459e13460acbeb1d" kindref="member">nb_value</ref><sp/>=<sp/>dist.nb_value;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1ae52fd301bc94d727c55a105d9636fc56" kindref="member">alloc_nb_value</ref><sp/>=<sp/>dist.alloc_nb_value;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a42619767a2549c8a459e13460acbeb1d" kindref="member">nb_value</ref><sp/>=<sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1ae52fd301bc94d727c55a105d9636fc56" kindref="member">alloc_nb_value</ref><sp/>=<sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1a3c9100385ce84d920b066f92ae4b11d0" kindref="member">alloc_nb_value</ref>;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((inb_value<sp/>==<sp/><ref refid="namespacestat__tool_1a690b48cd617f438850a33320f5faa03b" kindref="member">I_DEFAULT</ref>)<sp/>&amp;&amp;<sp/>(dist.alloc_nb_value<sp/>&gt;<sp/>dist.nb_value))<sp/>{</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a5fa29f0fdf9c1da11fdac45ebf1658c4" kindref="member">offset</ref><sp/>=<sp/>dist.offset;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1ae52fd301bc94d727c55a105d9636fc56" kindref="member">alloc_nb_value</ref><sp/>=<sp/>dist.alloc_nb_value;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a5fa29f0fdf9c1da11fdac45ebf1658c4" kindref="member">offset</ref><sp/>=<sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1ae52fd301bc94d727c55a105d9636fc56" kindref="member">alloc_nb_value</ref><sp/>=<sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1a3c9100385ce84d920b066f92ae4b11d0" kindref="member">alloc_nb_value</ref>;</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Distribution_1a54c4b0ff3c7d26a3a2e8851cccf7c2eb" kindref="member">mass</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/><ref refid="classstat__tool_1_1Distribution_1a54c4b0ff3c7d26a3a2e8851cccf7c2eb" kindref="member">mass</ref>;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a54c4b0ff3c7d26a3a2e8851cccf7c2eb" kindref="member">mass</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">[<ref refid="classstat__tool_1_1Distribution_1ae52fd301bc94d727c55a105d9636fc56" kindref="member">alloc_nb_value</ref>];</highlight></codeline>
@@ -247,22 +247,22 @@
 <codeline lineno="98"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution_1acf23daaa305165b02be680e5c5b33cc0" kindref="member">Distribution::equal_size_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref><sp/>&amp;dist)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution_1acf23daaa305165b02be680e5c5b33cc0" kindref="member">Distribution::equal_size_copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist)</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a42619767a2549c8a459e13460acbeb1d" kindref="member">nb_value</ref><sp/>=<sp/>dist.nb_value;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a42619767a2549c8a459e13460acbeb1d" kindref="member">nb_value</ref><sp/>=<sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref>;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a5fa29f0fdf9c1da11fdac45ebf1658c4" kindref="member">offset</ref><sp/>=<sp/>dist.offset;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a5d87a49ba8b2729cdb8301777282f75d" kindref="member">max</ref><sp/>=<sp/>dist.max;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a5fa29f0fdf9c1da11fdac45ebf1658c4" kindref="member">offset</ref><sp/>=<sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a5d87a49ba8b2729cdb8301777282f75d" kindref="member">max</ref><sp/>=<sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" kindref="member">max</ref>;</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a98c386aecfb6e881a53b56b7399b1331" kindref="member">complement</ref><sp/>=<sp/>dist.complement;</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1ac9f097107435a327a7b6e97f4473d8bc" kindref="member">mean</ref><sp/>=<sp/>dist.mean;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a2e5b3e823cd802de57125202f3b6400b" kindref="member">variance</ref><sp/>=<sp/>dist.variance;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1ac9f097107435a327a7b6e97f4473d8bc" kindref="member">mean</ref><sp/>=<sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1a3487df5dc55a1bb225ad5195c5858a43" kindref="member">mean</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1a2e5b3e823cd802de57125202f3b6400b" kindref="member">variance</ref><sp/>=<sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1a72284881e04f61ff919c689b867c1c94" kindref="member">variance</ref>;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Distribution_1ad462f85f1beecf86039b57e80da1bee8" kindref="member">nb_parameter</ref><sp/>=<sp/>dist.nb_parameter;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="classstat__tool_1_1Distribution_1a42619767a2549c8a459e13460acbeb1d" kindref="member">nb_value</ref>;i++)<sp/>{</highlight></codeline>
@@ -272,7 +272,7 @@
 <codeline lineno="129"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Distribution_1aa14c096e39efe0854a98decbfcf4caf0" kindref="member">Distribution::init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_value)</highlight></codeline>
@@ -308,7 +308,7 @@
 <codeline lineno="170"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="180"><highlight class="normal"></highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><ref refid="classstat__tool_1_1Distribution_1a7854c3e83af17605b6f1b2e08191a883" kindref="member">Distribution::Distribution</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_value)</highlight></codeline>
@@ -321,7 +321,7 @@
 <codeline lineno="188"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
-<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
 <codeline lineno="200"><highlight class="normal">Distribution::Distribution(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_value<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*imass)</highlight></codeline>
@@ -354,7 +354,7 @@
 <codeline lineno="227"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight></codeline>
-<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight></codeline>
 <codeline lineno="240"><highlight class="normal">Distribution::Distribution(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaling_coeff)</highlight></codeline>
@@ -406,7 +406,7 @@
 <codeline lineno="286"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"></highlight></codeline>
 <codeline lineno="288"><highlight class="normal"></highlight></codeline>
-<codeline lineno="289"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="295"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="296"><highlight class="normal"></highlight></codeline>
 <codeline lineno="297"><highlight class="normal">Distribution::Distribution(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FrequencyDistribution<sp/>&amp;histo)</highlight></codeline>
@@ -428,7 +428,7 @@
 <codeline lineno="313"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"></highlight></codeline>
 <codeline lineno="315"><highlight class="normal"></highlight></codeline>
-<codeline lineno="316"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="323"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="324"><highlight class="normal"></highlight></codeline>
 <codeline lineno="325"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::copy(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ialloc_nb_value)</highlight></codeline>
@@ -487,7 +487,7 @@
 <codeline lineno="378"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="379"><highlight class="normal"></highlight></codeline>
 <codeline lineno="380"><highlight class="normal"></highlight></codeline>
-<codeline lineno="381"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="387"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="388"><highlight class="normal"></highlight></codeline>
 <codeline lineno="389"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::normalization_copy(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist)</highlight></codeline>
@@ -524,7 +524,7 @@
 <codeline lineno="420"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="421"><highlight class="normal"></highlight></codeline>
 <codeline lineno="422"><highlight class="normal"></highlight></codeline>
-<codeline lineno="423"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="431"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="432"><highlight class="normal"></highlight></codeline>
 <codeline lineno="433"><highlight class="normal">Distribution::Distribution(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist<sp/>,<sp/>distribution_transformation<sp/>transform<sp/>,</highlight></codeline>
@@ -547,7 +547,7 @@
 <codeline lineno="450"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="451"><highlight class="normal"></highlight></codeline>
 <codeline lineno="452"><highlight class="normal"></highlight></codeline>
-<codeline lineno="453"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="457"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="458"><highlight class="normal"></highlight></codeline>
 <codeline lineno="459"><highlight class="normal">Distribution::~Distribution()</highlight></codeline>
@@ -564,7 +564,7 @@
 <codeline lineno="470"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="471"><highlight class="normal"></highlight></codeline>
 <codeline lineno="472"><highlight class="normal"></highlight></codeline>
-<codeline lineno="473"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="481"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="482"><highlight class="normal"></highlight></codeline>
 <codeline lineno="483"><highlight class="normal">Distribution&amp;<sp/>Distribution::operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist)</highlight></codeline>
@@ -586,7 +586,7 @@
 <codeline lineno="499"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="500"><highlight class="normal"></highlight></codeline>
 <codeline lineno="501"><highlight class="normal"></highlight></codeline>
-<codeline lineno="502"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="510"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="511"><highlight class="normal"></highlight></codeline>
 <codeline lineno="512"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Distribution::operator==(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -613,7 +613,7 @@
 <codeline lineno="533"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="534"><highlight class="normal"></highlight></codeline>
 <codeline lineno="535"><highlight class="normal"></highlight></codeline>
-<codeline lineno="536"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="544"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="545"><highlight class="normal"></highlight></codeline>
 <codeline lineno="546"><highlight class="normal">ostream&amp;<sp/>Distribution::ascii_characteristic_print(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shape<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>comment_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -653,7 +653,7 @@
 <codeline lineno="580"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="581"><highlight class="normal"></highlight></codeline>
 <codeline lineno="582"><highlight class="normal"></highlight></codeline>
-<codeline lineno="583"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="591"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="592"><highlight class="normal"></highlight></codeline>
 <codeline lineno="593"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a70b491ba7e2e8de1e62a11e332e5a37d" kindref="member">set_seed</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed,<sp/>std::mt19937<sp/>&amp;generator)</highlight></codeline>
@@ -667,7 +667,7 @@
 <codeline lineno="601"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1a70b491ba7e2e8de1e62a11e332e5a37d" kindref="member">set_seed</ref>(seed,<sp/>mt);</highlight></codeline>
 <codeline lineno="602"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="603"><highlight class="normal"></highlight></codeline>
-<codeline lineno="604"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="604"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="612"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="613"><highlight class="normal"></highlight></codeline>
 <codeline lineno="614"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1ab98bcf9f8381c9ea3324fb8e26cc8f84" kindref="member">column_width</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
@@ -679,7 +679,7 @@
 <codeline lineno="620"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="621"><highlight class="normal"></highlight></codeline>
 <codeline lineno="622"><highlight class="normal"></highlight></codeline>
-<codeline lineno="623"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="632"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="633"><highlight class="normal"></highlight></codeline>
 <codeline lineno="634"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1ab98bcf9f8381c9ea3324fb8e26cc8f84" kindref="member">column_width</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_value<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_value)</highlight></codeline>
@@ -707,7 +707,7 @@
 <codeline lineno="656"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="657"><highlight class="normal"></highlight></codeline>
 <codeline lineno="658"><highlight class="normal"></highlight></codeline>
-<codeline lineno="659"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="669"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="670"><highlight class="normal"></highlight></codeline>
 <codeline lineno="671"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1ab98bcf9f8381c9ea3324fb8e26cc8f84" kindref="member">column_width</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_value<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*value<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale)</highlight></codeline>
@@ -730,7 +730,7 @@
 <codeline lineno="688"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="689"><highlight class="normal"></highlight></codeline>
 <codeline lineno="690"><highlight class="normal"></highlight></codeline>
-<codeline lineno="691"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="701"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="702"><highlight class="normal"></highlight></codeline>
 <codeline lineno="703"><highlight class="normal">ostream&amp;<sp/>Distribution::ascii_print(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>comment_flag<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cumul_flag<sp/>,</highlight></codeline>
@@ -749,7 +749,7 @@
 <codeline lineno="716"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>frequency<sp/>distribution<sp/>and<sp/>the<sp/>number<sp/>of<sp/>values</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="717"><highlight class="normal"></highlight></codeline>
 <codeline lineno="718"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo)<sp/>{</highlight></codeline>
-<codeline lineno="719"><highlight class="normal"><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>histo-&gt;nb_element<sp/>/<sp/>(1.<sp/>-<sp/>complement);</highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>histo-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref><sp/>/<sp/>(1.<sp/>-<sp/>complement);</highlight></codeline>
 <codeline lineno="720"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cumul_flag)<sp/>{</highlight></codeline>
 <codeline lineno="721"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_cumul<sp/>=<sp/>histo-&gt;cumul_computation(scale);</highlight></codeline>
 <codeline lineno="722"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -766,7 +766,7 @@
 <codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="734"><highlight class="normal"></highlight></codeline>
 <codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo)<sp/>&amp;&amp;<sp/>(histo-&gt;nb_value<sp/>&gt;<sp/>ascii_nb_value))<sp/>{</highlight></codeline>
-<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ascii_nb_value<sp/>=<sp/>histo-&gt;nb_value;</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ascii_nb_value<sp/>=<sp/>histo-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref>;</highlight></codeline>
 <codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="738"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="739"><highlight class="normal"></highlight></codeline>
@@ -794,7 +794,7 @@
 <codeline lineno="761"><highlight class="normal"></highlight></codeline>
 <codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo)<sp/>{</highlight></codeline>
 <codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>histo-&gt;nb_value)<sp/>{</highlight></codeline>
-<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/>histo-&gt;frequency[i];</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/>histo-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>[i];</highlight></codeline>
 <codeline lineno="765"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
@@ -830,7 +830,7 @@
 <codeline lineno="797"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="798"><highlight class="normal"></highlight></codeline>
 <codeline lineno="799"><highlight class="normal"></highlight></codeline>
-<codeline lineno="800"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="800"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="813"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="814"><highlight class="normal"></highlight></codeline>
 <codeline lineno="815"><highlight class="normal">ostream&amp;<sp/>Distribution::ascii_print(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_dist<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>**dist<sp/>,</highlight></codeline>
@@ -852,7 +852,7 @@
 <codeline lineno="831"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>frequency<sp/>distribution<sp/>and<sp/>the<sp/>number<sp/>of<sp/>values</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="832"><highlight class="normal"></highlight></codeline>
 <codeline lineno="833"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo)<sp/>{</highlight></codeline>
-<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>histo-&gt;nb_element<sp/>/<sp/>(1.<sp/>-<sp/>complement);</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>histo-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref><sp/>/<sp/>(1.<sp/>-<sp/>complement);</highlight></codeline>
 <codeline lineno="835"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cumul_flag)<sp/>{</highlight></codeline>
 <codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_cumul<sp/>=<sp/>histo-&gt;cumul_computation(scale);</highlight></codeline>
 <codeline lineno="837"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -864,7 +864,7 @@
 <codeline lineno="843"><highlight class="normal"></highlight></codeline>
 <codeline lineno="844"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/>nb_dist;i++)<sp/>{</highlight></codeline>
 <codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist[i]-&gt;nb_value<sp/>&gt;<sp/>ascii_nb_value)<sp/>{</highlight></codeline>
-<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ascii_nb_value<sp/>=<sp/>dist[i]-&gt;nb_value;</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ascii_nb_value<sp/>=<sp/>dist[i]-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref>;</highlight></codeline>
 <codeline lineno="847"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="848"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="849"><highlight class="normal"></highlight></codeline>
@@ -896,7 +896,7 @@
 <codeline lineno="875"><highlight class="normal"></highlight></codeline>
 <codeline lineno="876"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo)<sp/>{</highlight></codeline>
 <codeline lineno="877"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>histo-&gt;nb_value)<sp/>{</highlight></codeline>
-<codeline lineno="878"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/>histo-&gt;frequency[i];</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/>histo-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>[i];</highlight></codeline>
 <codeline lineno="879"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="881"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
@@ -958,7 +958,7 @@
 <codeline lineno="937"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="938"><highlight class="normal"></highlight></codeline>
 <codeline lineno="939"><highlight class="normal"></highlight></codeline>
-<codeline lineno="940"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="940"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="947"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="948"><highlight class="normal"></highlight></codeline>
 <codeline lineno="949"><highlight class="normal">ostream&amp;<sp/>Distribution::spreadsheet_characteristic_print(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shape)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -989,7 +989,7 @@
 <codeline lineno="974"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="975"><highlight class="normal"></highlight></codeline>
 <codeline lineno="976"><highlight class="normal"></highlight></codeline>
-<codeline lineno="977"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="977"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="987"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="988"><highlight class="normal"></highlight></codeline>
 <codeline lineno="989"><highlight class="normal">ostream&amp;<sp/>Distribution::spreadsheet_print(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cumul_flag<sp/>,</highlight></codeline>
@@ -1010,7 +1010,7 @@
 <codeline lineno="1004"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>frequency<sp/>distribution,<sp/>the<sp/>concentration<sp/>functions<sp/>and<sp/>the<sp/>number<sp/>of<sp/>values</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1005"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1006"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo)<sp/>{</highlight></codeline>
-<codeline lineno="1007"><highlight class="normal"><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>histo-&gt;nb_element<sp/>/<sp/>(1.<sp/>-<sp/>complement);</highlight></codeline>
+<codeline lineno="1007"><highlight class="normal"><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>histo-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref><sp/>/<sp/>(1.<sp/>-<sp/>complement);</highlight></codeline>
 <codeline lineno="1008"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cumul_flag)<sp/>{</highlight></codeline>
 <codeline lineno="1009"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_cumul<sp/>=<sp/>histo-&gt;cumul_computation(scale);</highlight></codeline>
 <codeline lineno="1010"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1094,7 +1094,7 @@
 <codeline lineno="1088"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1089"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1090"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1091"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1091"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1104"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1105"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1106"><highlight class="normal">ostream&amp;<sp/>Distribution::spreadsheet_print(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_dist<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>**dist<sp/>,</highlight></codeline>
@@ -1184,7 +1184,7 @@
 <codeline lineno="1190"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1191"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1192"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1193"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1193"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1201"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1202"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1203"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Distribution::plot_nb_value_computation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FrequencyDistribution<sp/>*histo)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1209,7 +1209,7 @@
 <codeline lineno="1222"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1223"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1224"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1225"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1225"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1235"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1236"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1237"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Distribution::plot_print(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*concentration<sp/>,</highlight></codeline>
@@ -1245,7 +1245,7 @@
 <codeline lineno="1267"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1268"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1269"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1270"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1270"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1280"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1281"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1282"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Distribution::plot_print(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FrequencyDistribution<sp/>*histo)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1289,7 +1289,7 @@
 <codeline lineno="1320"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1321"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1322"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1323"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1323"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1338"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1339"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1340"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1aabba140776fa4e45eae9077817bbb072" kindref="member">plot_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_dist<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>**dist<sp/>,</highlight></codeline>
@@ -1376,7 +1376,7 @@
 <codeline lineno="1421"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1422"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1423"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1424"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1424"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1437"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1438"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1439"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a3cd83947928384f388f9849b00b838ad" kindref="member">cumul_matching_plot_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_cumul<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*offset<sp/>,</highlight></codeline>
@@ -1425,7 +1425,7 @@
 <codeline lineno="1482"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1483"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1484"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1485"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1485"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1493"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1494"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1495"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="namespacestat__tool_1aadc45516d747edd7ebfbf99e1ea4bd47" kindref="member">label</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*file_name)</highlight></codeline>
@@ -1452,7 +1452,7 @@
 <codeline lineno="1516"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1517"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1518"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1519"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1519"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1534"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1535"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1536"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Distribution::plot_write(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_dist<sp/>,</highlight></codeline>
@@ -1462,7 +1462,7 @@
 <codeline lineno="1540"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
 <codeline lineno="1541"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1542"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1543"><highlight class="normal"><sp/><sp/>error.init();</highlight></codeline>
+<codeline lineno="1543"><highlight class="normal"><sp/><sp/>error.<ref refid="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" kindref="member">init</ref>();</highlight></codeline>
 <codeline lineno="1544"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1545"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nb_dist<sp/>&gt;<sp/>PLOT_NB_DISTRIBUTION)<sp/>{</highlight></codeline>
 <codeline lineno="1546"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -1509,8 +1509,8 @@
 <codeline lineno="1587"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/>nb_dist;i++)<sp/>{</highlight></codeline>
 <codeline lineno="1588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>data_file_name[i]<sp/>&lt;&lt;<sp/>prefix<sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.dat&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1589"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>poffset[i]<sp/>=<sp/>dist[i]-&gt;offset;</highlight></codeline>
-<codeline lineno="1591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pnb_value[i]<sp/>=<sp/>dist[i]-&gt;nb_value;</highlight></codeline>
+<codeline lineno="1590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>poffset[i]<sp/>=<sp/>dist[i]-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="1591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pnb_value[i]<sp/>=<sp/>dist[i]-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref>;</highlight></codeline>
 <codeline lineno="1592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pcumul[i]<sp/>=<sp/>dist[i]-&gt;cumul;</highlight></codeline>
 <codeline lineno="1593"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>computation<sp/>of<sp/>the<sp/>concentration<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
@@ -1525,13 +1525,13 @@
 <codeline lineno="1603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_nb_value<sp/>=<sp/>plot_nb_value;</highlight></codeline>
 <codeline lineno="1604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist[i]-&gt;max<sp/>&gt;<sp/>max)<sp/>{</highlight></codeline>
-<codeline lineno="1606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max<sp/>=<sp/>dist[i]-&gt;max;</highlight></codeline>
+<codeline lineno="1606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max<sp/>=<sp/>dist[i]-&gt;<ref refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" kindref="member">max</ref>;</highlight></codeline>
 <codeline lineno="1607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1608"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist[i]-&gt;variance<sp/>&gt;<sp/>0.)<sp/>{</highlight></codeline>
 <codeline lineno="1610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cumul_concentration_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1611"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist[i]-&gt;nb_value<sp/>-<sp/>dist[i]-&gt;offset<sp/>&gt;<sp/>max_range)<sp/>{</highlight></codeline>
-<codeline lineno="1612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_range<sp/>=<sp/>dist[i]-&gt;nb_value<sp/>-<sp/>dist[i]-&gt;offset;</highlight></codeline>
+<codeline lineno="1612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_range<sp/>=<sp/>dist[i]-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>dist[i]-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="1613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference_matching<sp/>=<sp/>i;</highlight></codeline>
 <codeline lineno="1614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist[i]-&gt;complement<sp/>&lt;<sp/>min_complement)<sp/>{</highlight></codeline>
@@ -1744,7 +1744,7 @@
 <codeline lineno="1822"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1823"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1824"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1825"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1825"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1832"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1833"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1834"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::plotable_mass_write(SinglePlot<sp/>&amp;plot<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1763,7 +1763,7 @@
 <codeline lineno="1847"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1848"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1849"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1850"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1850"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1856"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1857"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1858"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::plotable_cumul_write(SinglePlot<sp/>&amp;plot)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1778,7 +1778,7 @@
 <codeline lineno="1867"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1868"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1869"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1870"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1870"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1878"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1879"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1880"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::plotable_cumul_matching_write(SinglePlot<sp/>&amp;plot<sp/>,</highlight></codeline>
@@ -1801,7 +1801,7 @@
 <codeline lineno="1897"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1898"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1899"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1900"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1900"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1906"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1907"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1908"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::plotable_concentration_write(SinglePlot<sp/>&amp;plot)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1822,7 +1822,7 @@
 <codeline lineno="1923"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1924"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1925"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1926"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1926"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1939"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1940"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1941"><highlight class="normal"><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/>Distribution::get_plotable_distributions(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_dist<sp/>,</highlight></codeline>
@@ -1832,7 +1832,7 @@
 <codeline lineno="1945"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref><sp/>*plot_set;</highlight></codeline>
 <codeline lineno="1946"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1947"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1948"><highlight class="normal"><sp/><sp/>error.init();</highlight></codeline>
+<codeline lineno="1948"><highlight class="normal"><sp/><sp/>error.<ref refid="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" kindref="member">init</ref>();</highlight></codeline>
 <codeline lineno="1949"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1950"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nb_dist<sp/>&gt;<sp/>PLOT_NB_DISTRIBUTION)<sp/>{</highlight></codeline>
 <codeline lineno="1951"><highlight class="normal"><sp/><sp/><sp/><sp/>plot_set<sp/>=<sp/>NULL;</highlight></codeline>
@@ -1872,13 +1872,13 @@
 <codeline lineno="1985"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmax<sp/>=<sp/>plot_nb_value;</highlight></codeline>
 <codeline lineno="1986"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1987"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist[i]-&gt;max<sp/>&gt;<sp/>ymax)<sp/>{</highlight></codeline>
-<codeline lineno="1988"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ymax<sp/>=<sp/>dist[i]-&gt;max;</highlight></codeline>
+<codeline lineno="1988"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ymax<sp/>=<sp/>dist[i]-&gt;<ref refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" kindref="member">max</ref>;</highlight></codeline>
 <codeline lineno="1989"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1990"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1991"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist[i]-&gt;variance<sp/>&gt;<sp/>0.)<sp/>{</highlight></codeline>
 <codeline lineno="1992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cumul_concentration_nb_dist++;</highlight></codeline>
 <codeline lineno="1993"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist[i]-&gt;nb_value<sp/>-<sp/>dist[i]-&gt;offset<sp/>&gt;<sp/>max_range)<sp/>{</highlight></codeline>
-<codeline lineno="1994"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_range<sp/>=<sp/>dist[i]-&gt;nb_value<sp/>-<sp/>dist[i]-&gt;offset;</highlight></codeline>
+<codeline lineno="1994"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max_range<sp/>=<sp/>dist[i]-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>dist[i]-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="1995"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference_matching<sp/>=<sp/>i;</highlight></codeline>
 <codeline lineno="1996"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1997"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dist[i]-&gt;complement<sp/>&lt;<sp/>min_complement)<sp/>{</highlight></codeline>
@@ -1904,7 +1904,7 @@
 <codeline lineno="2017"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="2018"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>plot.title<sp/>=<sp/><ref refid="namespacestat__tool_1a402794ded79b6eafc78781e40c23b4a8" kindref="member">STAT_label</ref>[<ref refid="namespacestat__tool_1a3c004532d5daffc277feeada6e9173bfa47b6c082d2936362dbddea9f24ae44f2" kindref="member">STATL_DISTRIBUTIONS</ref>];</highlight></codeline>
 <codeline lineno="2019"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="2020"><highlight class="normal"><sp/><sp/><sp/><sp/>plot.<ref refid="classstat__tool_1_1TemplateMultiPlotSet_1a5b1e08f79b1253b5b6721d3e5cc7f9b8" kindref="member">border</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;15<sp/>lw<sp/>0&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="2020"><highlight class="normal"><sp/><sp/><sp/><sp/>plot.border<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;15<sp/>lw<sp/>0&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2021"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2022"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>probability<sp/>mass<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2023"><highlight class="normal"></highlight></codeline>
@@ -2045,7 +2045,7 @@
 <codeline lineno="2158"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2159"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2161"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2161"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2167"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2168"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2169"><highlight class="normal"><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/>Distribution::get_plotable()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2057,7 +2057,7 @@
 <codeline lineno="2175"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2176"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2177"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2178"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2178"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2185"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2186"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2187"><highlight class="normal">ostream&amp;<sp/>Distribution::survival_ascii_write(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2084,7 +2084,7 @@
 <codeline lineno="2208"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2209"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2210"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2211"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2211"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2218"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2219"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2220"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Distribution::survival_ascii_write()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2099,7 +2099,7 @@
 <codeline lineno="2229"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2230"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2231"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2232"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2232"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2242"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2243"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2244"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Distribution::survival_ascii_write(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2125,7 +2125,7 @@
 <codeline lineno="2264"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2265"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2266"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2267"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2267"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2277"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2278"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2279"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Distribution::survival_spreadsheet_write(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2165,7 +2165,7 @@
 <codeline lineno="2313"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2314"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2315"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2316"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2316"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2326"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2327"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2328"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Distribution::survival_plot_print(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*survivor)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2188,7 +2188,7 @@
 <codeline lineno="2345"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2346"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2347"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2348"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2348"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2359"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2360"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2361"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Distribution::survival_plot_write(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,</highlight></codeline>
@@ -2288,7 +2288,7 @@
 <codeline lineno="2455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_file<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;set<sp/>xtics<sp/>0,1&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="2456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2457"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_file<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;plot<sp/>[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>survival_rate-&gt;offset<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>survival_rate-&gt;length<sp/>-<sp/>1</highlight></codeline>
+<codeline lineno="2458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_file<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;plot<sp/>[&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>survival_rate-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>survival_rate-&gt;length<sp/>-<sp/>1</highlight></codeline>
 <codeline lineno="2459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]<sp/>[0:1]<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespacestat__tool_1aadc45516d747edd7ebfbf99e1ea4bd47" kindref="member">label</ref>((data_file_name[1].str()).c_str())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>using<sp/>1<sp/>title<sp/>\&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="namespacestat__tool_1a402794ded79b6eafc78781e40c23b4a8" kindref="member">STAT_label</ref>[<ref refid="namespacestat__tool_1a3c004532d5daffc277feeada6e9173bfa2c463d8e51df2ad05fcb7ec31498d03b" kindref="member">STATL_DEATH_PROBABILITY</ref>]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>with<sp/>linespoints,\\&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="2461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_file<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespacestat__tool_1aadc45516d747edd7ebfbf99e1ea4bd47" kindref="member">label</ref>((data_file_name[1].str()).c_str())<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>using<sp/>2<sp/>title<sp/>\&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -2313,7 +2313,7 @@
 <codeline lineno="2480"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2481"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2482"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2483"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2483"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2489"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2490"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2491"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::plotable_survivor_write(SinglePlot<sp/>&amp;plot)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2333,7 +2333,7 @@
 <codeline lineno="2505"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2506"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2507"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2508"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2508"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2517"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2518"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2519"><highlight class="normal"><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/>Distribution::survival_get_plotable(StatError<sp/>&amp;error)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2342,7 +2342,7 @@
 <codeline lineno="2522"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref><sp/>*plot_set;</highlight></codeline>
 <codeline lineno="2523"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2524"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2525"><highlight class="normal"><sp/><sp/>error.init();</highlight></codeline>
+<codeline lineno="2525"><highlight class="normal"><sp/><sp/>error.<ref refid="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" kindref="member">init</ref>();</highlight></codeline>
 <codeline lineno="2526"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2527"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(variance<sp/>==<sp/>0.)<sp/>{</highlight></codeline>
 <codeline lineno="2528"><highlight class="normal"><sp/><sp/><sp/><sp/>plot_set<sp/>=<sp/>NULL;</highlight></codeline>
@@ -2359,7 +2359,7 @@
 <codeline lineno="2539"><highlight class="normal"><sp/><sp/><sp/><sp/>plot_set<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>(2);</highlight></codeline>
 <codeline lineno="2540"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref><sp/>&amp;plot<sp/>=<sp/>*plot_set;</highlight></codeline>
 <codeline lineno="2541"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2542"><highlight class="normal"><sp/><sp/><sp/><sp/>plot.<ref refid="classstat__tool_1_1TemplateMultiPlotSet_1a10647a7f97e5acae4204bbd9d4c6e3b6" kindref="member">title</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Survival<sp/>analysis&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="2542"><highlight class="normal"><sp/><sp/><sp/><sp/>plot.title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Survival<sp/>analysis&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2543"><highlight class="normal"><sp/><sp/><sp/><sp/>plot.border<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;15<sp/>lw<sp/>0&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2544"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2545"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>probability<sp/>mass<sp/>function<sp/>and<sp/>survivor<sp/>function</highlight><highlight class="normal"></highlight></codeline>
@@ -2424,7 +2424,7 @@
 <codeline lineno="2604"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2605"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2606"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2607"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2607"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2613"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2614"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2615"><highlight class="normal">ostream&amp;<sp/>Distribution::print(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2457,7 +2457,7 @@
 <codeline lineno="2642"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2643"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2644"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2645"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2645"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2652"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2653"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2654"><highlight class="normal">ostream&amp;<sp/><ref refid="namespacestat__tool_1a45b6bca024abdc6167449ec283a45416" kindref="member">operator&lt;&lt;</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist)</highlight></codeline>
@@ -2469,7 +2469,7 @@
 <codeline lineno="2660"><highlight class="normal"><sp/><sp/>nb_digits<sp/>=<sp/>os.precision(5);</highlight></codeline>
 <codeline lineno="2661"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2662"><highlight class="normal"><sp/><sp/>os<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="2663"><highlight class="normal"><sp/><sp/>dist.print(os);</highlight></codeline>
+<codeline lineno="2663"><highlight class="normal"><sp/><sp/>dist.<ref refid="classstat__tool_1_1Reestimation_1a5dbf6aced93d7db69d77b269f951c4d4" kindref="member">print</ref>(os);</highlight></codeline>
 <codeline lineno="2664"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2665"><highlight class="normal"><sp/><sp/>os.precision(nb_digits);</highlight></codeline>
 <codeline lineno="2666"><highlight class="normal"></highlight></codeline>
@@ -2477,7 +2477,7 @@
 <codeline lineno="2668"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2669"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2670"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2671"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2671"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2675"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2676"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2677"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::nb_value_computation()</highlight></codeline>
@@ -2495,7 +2495,7 @@
 <codeline lineno="2689"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2690"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2691"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2692"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2692"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2696"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2697"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2698"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::offset_computation()</highlight></codeline>
@@ -2513,7 +2513,7 @@
 <codeline lineno="2710"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2711"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2712"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2713"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2713"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2717"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2718"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2719"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::max_computation()</highlight></codeline>
@@ -2531,7 +2531,7 @@
 <codeline lineno="2731"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2732"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2733"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2734"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2734"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2740"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2741"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2742"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::mode_computation()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2561,7 +2561,7 @@
 <codeline lineno="2766"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2767"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2768"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2769"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2769"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2773"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2774"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2775"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::mean_computation()</highlight></codeline>
@@ -2580,7 +2580,7 @@
 <codeline lineno="2788"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2789"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2790"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2791"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2791"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2799"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2800"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2801"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::quantile_computation(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>icumul)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2606,7 +2606,7 @@
 <codeline lineno="2821"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2822"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2823"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2824"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2824"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2828"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2829"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2830"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::variance_computation()</highlight></codeline>
@@ -2632,7 +2632,7 @@
 <codeline lineno="2850"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2851"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2852"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2853"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2853"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2861"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2862"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2863"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::mean_absolute_deviation_computation(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>location)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2652,7 +2652,7 @@
 <codeline lineno="2877"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2878"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2879"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2880"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2880"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2886"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2887"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2888"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::skewness_computation()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2682,7 +2682,7 @@
 <codeline lineno="2912"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2913"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2914"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2915"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2915"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2922"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2923"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2924"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::kurtosis_computation()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2712,7 +2712,7 @@
 <codeline lineno="2948"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2949"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2950"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2951"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2951"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2957"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2958"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2959"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::information_computation()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2741,7 +2741,7 @@
 <codeline lineno="2982"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2983"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2984"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2985"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2985"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2991"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2992"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2993"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::first_difference_norm_computation()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2763,7 +2763,7 @@
 <codeline lineno="3009"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3010"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3011"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3012"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3012"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3018"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3019"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3020"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::second_difference_norm_computation()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2792,7 +2792,7 @@
 <codeline lineno="3043"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3044"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3045"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3046"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3046"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3054"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3055"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3056"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a87e6d21e3ef747df8e7a21eecd255023" kindref="member">cumul_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_value<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*pmass<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*pcumul)</highlight></codeline>
@@ -2809,7 +2809,7 @@
 <codeline lineno="3067"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3068"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3069"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3070"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3070"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3074"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3075"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3076"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::cumul_computation()</highlight></codeline>
@@ -2825,7 +2825,7 @@
 <codeline lineno="3086"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3087"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3088"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3089"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3089"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3095"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3096"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3097"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>Distribution::survivor_function_computation()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2848,7 +2848,7 @@
 <codeline lineno="3114"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3115"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3117"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3117"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3123"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3125"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>Distribution::concentration_function_computation()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2878,7 +2878,7 @@
 <codeline lineno="3149"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3150"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3152"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3152"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3158"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3159"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3160"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::concentration_computation()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2924,7 +2924,7 @@
 <codeline lineno="3200"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3201"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3202"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3203"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3203"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3209"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3210"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3211"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Distribution::overlap_distance_computation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Distribution<sp/>&amp;dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2943,7 +2943,7 @@
 <codeline lineno="3224"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3225"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3226"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3227"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3227"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3235"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3236"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3237"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a0f8d8ce87b264e6225f8228a89711a88" kindref="member">log_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_value<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*pmass<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*plog)</highlight></codeline>
@@ -2965,7 +2965,7 @@
 <codeline lineno="3253"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3254"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3255"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3256"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3256"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3260"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3261"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3262"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Distribution::log_computation()</highlight></codeline>
@@ -2977,6 +2977,6 @@
 <codeline lineno="3268"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3269"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution.cpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution.cpp"/>
   </compounddef>
 </doxygen>

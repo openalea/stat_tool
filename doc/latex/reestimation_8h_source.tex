@@ -1,5 +1,5 @@
 \doxysection{reestimation.\+h}
-\hypertarget{reestimation_8h_source}{}\label{reestimation_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/reestimation.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/reestimation.h}}
+\hypertarget{reestimation_8h_source}{}\label{reestimation_8h_source}\index{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/reestimation.h@{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/reestimation.h}}
 \mbox{\hyperlink{reestimation_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
@@ -87,11 +87,10 @@
 \DoxyCodeLine{00083\ \ \ \textcolor{keyword}{class\ }ContinuousParametric;}
 \DoxyCodeLine{00084\ }
 \DoxyCodeLine{00086\ }
-\DoxyCodeLine{00091\ }
 \DoxyCodeLine{00092\ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Type>}
-\DoxyCodeLine{00093\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Reestimation_a273d5c1fb586a1cb592b1e09b7d60a80}{Reestimation}}\ \{}
+\DoxyCodeLine{00093\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation}}\ \{}
 \DoxyCodeLine{00094\ }
-\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a6e2fc30ef2abd0bfa3da51bfdc075067}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a273d5c1fb586a1cb592b1e09b7d60a80}{Reestimation<Type>}}\ \&histo)}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a6e2fc30ef2abd0bfa3da51bfdc075067}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<Type>}}\ \&histo)}
 \DoxyCodeLine{00096\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ histo.\mbox{\hyperlink{classstat__tool_1_1Reestimation_a5dbf6aced93d7db69d77b269f951c4d4}{print}}(os);\ \}}
 \DoxyCodeLine{00097\ }
 \DoxyCodeLine{00098\ \ \ public\ :}
@@ -106,12 +105,12 @@
 \DoxyCodeLine{00107\ \ \ \ \ Type\ *\mbox{\hyperlink{classstat__tool_1_1Reestimation_ab39d09d1fade5114e3587473afc2675a}{frequency}};\ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00108\ }
 \DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a36c4fd931fa4ad34d0216737e66838a1}{init}}(\textcolor{keywordtype}{int}\ inb\_value);}
-\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a7f8cef439c9fbb030ad1617c0c0adbbf}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a273d5c1fb586a1cb592b1e09b7d60a80}{Reestimation<Type>}}\ \&histo);}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a7f8cef439c9fbb030ad1617c0c0adbbf}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<Type>}}\ \&histo);}
 \DoxyCodeLine{00111\ }
 \DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a273d5c1fb586a1cb592b1e09b7d60a80}{Reestimation}}(\textcolor{keywordtype}{int}\ inb\_value\ =\ 0)\ :\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a4a70ddcaf4e957710920e5fb61c944b6}{nb\_value}}(0),\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a3c9100385ce84d920b066f92ae4b11d0}{alloc\_nb\_value}}(0),\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_aaec99ffd77d22ea865f02c2b31ea504f}{offset}}(0),}
 \DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation_afcf2401d30d1848338994abb0d268c3d}{nb\_element}}(0),\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a858f8d310c5fbc6fa5949400061b20c1}{max}}(0),\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a3487df5dc55a1bb225ad5195c5858a43}{mean}}(-\/1),\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a72284881e04f61ff919c689b867c1c94}{variance}}(-\/1),\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_ab39d09d1fade5114e3587473afc2675a}{frequency}}(NULL)\ \{\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a36c4fd931fa4ad34d0216737e66838a1}{init}}(inb\_value);\ \}}
-\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a273d5c1fb586a1cb592b1e09b7d60a80}{Reestimation}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<Type>}}\ \&histo);}
-\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a273d5c1fb586a1cb592b1e09b7d60a80}{Reestimation}}(\textcolor{keywordtype}{int}\ nb\_histo\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<Type>}}\ **histo);}
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<Type>}}\ \&histo);}
+\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation}}(\textcolor{keywordtype}{int}\ nb\_histo\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<Type>}}\ **histo);}
 \DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation_a6b69afa59b26c3b2c4b9556866406b49}{\string~Reestimation}}();}
 \DoxyCodeLine{00117\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<Type>}}\&\ \mbox{\hyperlink{classstat__tool_1_1Reestimation_add69f0e734ab6d20a7bfd79f2481fe6a}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Reestimation}{Reestimation<Type>}}\ \&histo);}
 \DoxyCodeLine{00118\ }

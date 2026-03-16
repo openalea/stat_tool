@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1Dendrogram" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::Dendrogram</compoundname>
     <basecompoundref refid="classstat__tool_1_1StatInterface" prot="public" virt="non-virtual">stat_tool::StatInterface</basecompoundref>
     <includes refid="distance__matrix_8h" local="no">distance_matrix.h</includes>
     <sectiondef kind="friend">
       <memberdef kind="friend" id="classstat__tool_1_1Dendrogram_1a1e937b0a167ab6fc618194afec034e94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>class</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">class</ref></type>
         <definition>friend class DistanceMatrix</definition>
         <argsstring></argsstring>
         <name>DistanceMatrix</name>
@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="329" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="329" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="329" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="329" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classstat__tool_1_1Dendrogram_1a3e8ee05617856d10ed2858ab67ebcc3b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -33,7 +33,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Dendrogram" kindref="compound">Dendrogram</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Dendrogram" kindref="compound">Dendrogram</ref> &amp;</type>
           <declname>dendrogram</declname>
         </param>
         <briefdescription>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="331" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="331" bodyend="332"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="331" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="331" bodyend="332"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="336" column="20" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="336" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="336" column="20" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="336" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1abec624f6acdc1504919eacf70124a66a" prot="private" static="no" mutable="no">
         <type><ref refid="namespacestat__tool_1a062d27e6eed91b8709c48f7d29474962" kindref="member">cluster_scale</ref></type>
@@ -74,10 +74,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="337" column="19" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="337" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="337" column="19" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="337" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1a73ef79e9290e3266524090f9dcdd0435" prot="private" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Dendrogram::nb_cluster</definition>
         <argsstring></argsstring>
         <name>nb_cluster</name>
@@ -89,10 +89,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="338" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="338" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="338" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="338" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1a9a16c40b5ebd674d5a5fd56e1dcd047c" prot="private" static="no" mutable="no">
-        <type>int *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
         <definition>int* stat_tool::Dendrogram::cluster_nb_pattern</definition>
         <argsstring></argsstring>
         <name>cluster_nb_pattern</name>
@@ -104,10 +104,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="339" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="339" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="339" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="339" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1a2372a230f4880dca2ec8700a4f0aa802" prot="private" static="no" mutable="no">
-        <type>int **</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> **</type>
         <definition>int** stat_tool::Dendrogram::cluster_pattern</definition>
         <argsstring></argsstring>
         <name>cluster_pattern</name>
@@ -119,10 +119,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="340" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="340" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="340" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="340" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1ac95dacef6fe49153e160c9dfa40cad42" prot="private" static="no" mutable="no">
-        <type>int *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
         <definition>int* stat_tool::Dendrogram::parent</definition>
         <argsstring></argsstring>
         <name>parent</name>
@@ -134,10 +134,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="341" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="341" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="341" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="341" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1ac7e80e17f981a6677df82ee24682c09b" prot="private" static="no" mutable="no">
-        <type>int **</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> **</type>
         <definition>int** stat_tool::Dendrogram::child</definition>
         <argsstring></argsstring>
         <name>child</name>
@@ -149,10 +149,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="342" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="342" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="342" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="342" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1a89657b7ab6ab83e0c1022ea55229ebf6" prot="private" static="no" mutable="no">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double* stat_tool::Dendrogram::child_distance</definition>
         <argsstring></argsstring>
         <name>child_distance</name>
@@ -164,10 +164,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="343" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="343" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="343" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="343" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1a246270242bdd28149dd9b15efb4a4716" prot="private" static="no" mutable="no">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double* stat_tool::Dendrogram::within_cluster_distance</definition>
         <argsstring></argsstring>
         <name>within_cluster_distance</name>
@@ -179,10 +179,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="344" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="344" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="344" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="344" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1adbee7ee93cc407f5890e98185bc08693" prot="private" static="no" mutable="no">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double* stat_tool::Dendrogram::between_cluster_distance</definition>
         <argsstring></argsstring>
         <name>between_cluster_distance</name>
@@ -194,10 +194,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="345" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="345" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="345" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="345" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1a5a737ee98a89d4356d85d8186c9cdd24" prot="private" static="no" mutable="no">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double* stat_tool::Dendrogram::max_within_cluster_distance</definition>
         <argsstring></argsstring>
         <name>max_within_cluster_distance</name>
@@ -209,10 +209,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="346" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="346" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="346" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="346" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Dendrogram_1a17d757e57a24dd13bf13528093c3a366" prot="private" static="no" mutable="no">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double* stat_tool::Dendrogram::min_between_cluster_distance</definition>
         <argsstring></argsstring>
         <name>min_between_cluster_distance</name>
@@ -224,18 +224,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="347" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="347" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="347" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="347" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1ad44c03272d710651e6b816265147d2b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Dendrogram::copy</definition>
         <argsstring>(const Dendrogram &amp;dendrogram)</argsstring>
         <name>copy</name>
         <qualifiedname>stat_tool::Dendrogram::copy</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Dendrogram" kindref="compound">Dendrogram</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Dendrogram" kindref="compound">Dendrogram</ref> &amp;</type>
           <declname>dendrogram</declname>
         </param>
         <briefdescription>
@@ -255,10 +255,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="349" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="159" bodyend="224"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="349" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="159" bodyend="224"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1ac6e7b4218a4a2e5ad235d0f79dbe86a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Dendrogram::remove</definition>
         <argsstring>()</argsstring>
         <name>remove</name>
@@ -270,10 +270,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="350" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="233" bodyend="264"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="350" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="233" bodyend="264"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a2f398ab7545e246280294f2c26a6e0e4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double * stat_tool::Dendrogram::distance_ordering</definition>
         <argsstring>() const</argsstring>
         <name>distance_ordering</name>
@@ -288,10 +288,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="352" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="343" bodyend="388"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="352" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="343" bodyend="388"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a99a070a0d26fdfdde17ebc9338e272dd" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Dendrogram::coefficient_computation</definition>
         <argsstring>(cluster_scale iscale) const</argsstring>
         <name>coefficient_computation</name>
@@ -319,10 +319,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="353" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="797" bodyend="825"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="353" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="797" bodyend="825"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a63cbcb1df5283afec2c7b4ec40f04bfa" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Dendrogram::coefficient_computation</definition>
         <argsstring>() const</argsstring>
         <name>coefficient_computation</name>
@@ -337,10 +337,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="354" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="836" bodyend="840"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="354" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="836" bodyend="840"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a3ce0657933dff72cc7f48a27e0fa020f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Dendrogram::tree_computation</definition>
         <argsstring>()</argsstring>
         <name>tree_computation</name>
@@ -352,7 +352,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="355" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="757" bodyend="784"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="355" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="757" bodyend="784"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -369,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="359" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="64" bodyend="83"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="359" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="64" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a9790e39dbc34194017412859d9bf7ebb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -378,7 +378,7 @@
         <name>Dendrogram</name>
         <qualifiedname>stat_tool::Dendrogram::Dendrogram</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref> &amp;</type>
           <declname>dist_matrix</declname>
         </param>
         <param>
@@ -410,7 +410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="360" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="95" bodyend="148"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="360" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="95" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a8d3db26ddf156e35e9a4f709435c7a7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -419,7 +419,7 @@
         <name>Dendrogram</name>
         <qualifiedname>stat_tool::Dendrogram::Dendrogram</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Dendrogram" kindref="compound">Dendrogram</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Dendrogram" kindref="compound">Dendrogram</ref> &amp;</type>
           <declname>dendrogram</declname>
         </param>
         <briefdescription>
@@ -428,7 +428,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="361" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="361" bodyend="362"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="361" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="361" bodyend="362"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a0959fdcdef9b52601753dcb9687da5fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -443,7 +443,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="363" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="273" bodyend="277"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="363" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="273" bodyend="277"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a98360fbf758caadaf1fbbfafb59e3051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Dendrogram" kindref="compound">Dendrogram</ref> &amp;</type>
@@ -452,7 +452,7 @@
         <name>operator=</name>
         <qualifiedname>stat_tool::Dendrogram::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Dendrogram" kindref="compound">Dendrogram</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Dendrogram" kindref="compound">Dendrogram</ref> &amp;</type>
           <declname>dendrogram</declname>
         </param>
         <briefdescription>
@@ -474,7 +474,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="364" column="16" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="290" bodyend="299"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="364" column="16" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="290" bodyend="299"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a3416f7ddfbb87a8bfccec05dfe82727e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -504,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="366" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="310" bodyend="332"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="366" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="310" bodyend="332"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a5e8d02450e64fab2b4b59784df6b438d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -518,9 +518,9 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -528,10 +528,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="368" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="368" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a1cfdde3d65c66100d5f720ab47f9e334" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Dendrogram::ascii_write</definition>
         <argsstring>(StatError &amp;error, const std::string path, bool exhaustive=false) const</argsstring>
         <name>ascii_write</name>
@@ -542,13 +542,13 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -556,10 +556,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="369" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="369" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1adfd71130175a6f8ff414e2ebdc79dcb9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Dendrogram::spreadsheet_write</definition>
         <argsstring>(StatError &amp;error, const std::string path) const</argsstring>
         <name>spreadsheet_write</name>
@@ -570,7 +570,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <briefdescription>
@@ -600,10 +600,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="370" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="667" bodyend="748"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="370" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp" bodystart="667" bodyend="748"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a7989da7503a766fafc6e677700af9e2e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Dendrogram::plot_write</definition>
         <argsstring>(StatError &amp;error, const char *prefix, const char *title=NULL) const</argsstring>
         <name>plot_write</name>
@@ -614,13 +614,13 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>prefix</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>title</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -628,7 +628,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="371" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="371" bodyend="372"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="371" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="371" bodyend="372"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a4d38f6832c9d88628e34e924de04a465" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref> *</type>
@@ -642,7 +642,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="376" column="20" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="376" bodyend="376"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="376" column="20" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="376" bodyend="376"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a9ab4b304ed26d5e300820cc59324f707" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacestat__tool_1a062d27e6eed91b8709c48f7d29474962" kindref="member">cluster_scale</ref></type>
@@ -656,10 +656,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="377" column="19" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="377" bodyend="377"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="377" column="19" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="377" bodyend="377"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a8f8c9ba9c43d74c55fa9c2920fb91383" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Dendrogram::get_nb_cluster</definition>
         <argsstring>() const</argsstring>
         <name>get_nb_cluster</name>
@@ -670,16 +670,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="378" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="378" bodyend="378"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="378" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="378" bodyend="378"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a62e2d57d8ecd492e7415b3bd0239aaf0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Dendrogram::get_cluster_nb_pattern</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>get_cluster_nb_pattern</name>
         <qualifiedname>stat_tool::Dendrogram::get_cluster_nb_pattern</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -688,20 +688,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="379" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="379" bodyend="379"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="379" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="379" bodyend="379"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a47d7593069f8c5227542903fa8a27ea4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Dendrogram::get_cluster_pattern</definition>
         <argsstring>(int cluster, int index) const</argsstring>
         <name>get_cluster_pattern</name>
         <qualifiedname>stat_tool::Dendrogram::get_cluster_pattern</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>index</declname>
         </param>
         <briefdescription>
@@ -710,16 +710,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="380" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="380" bodyend="380"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="380" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="380" bodyend="380"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a9cdc3e8971635c422093c99ebc076a4b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Dendrogram::get_parent</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>get_parent</name>
         <qualifiedname>stat_tool::Dendrogram::get_parent</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -728,20 +728,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="381" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="381" bodyend="381"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="381" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="381" bodyend="381"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a7599d669d8187c5bc0264cdd7667d62b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Dendrogram::get_child</definition>
         <argsstring>(int cluster, int index) const</argsstring>
         <name>get_child</name>
         <qualifiedname>stat_tool::Dendrogram::get_child</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>index</declname>
         </param>
         <briefdescription>
@@ -750,16 +750,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="382" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="382" bodyend="382"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="382" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="382" bodyend="382"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1ad76a222dfc7629162edd65c36a6f7526" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Dendrogram::get_child_distance</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>get_child_distance</name>
         <qualifiedname>stat_tool::Dendrogram::get_child_distance</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -768,16 +768,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="383" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="383" bodyend="383"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="383" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="383" bodyend="383"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a8d69c9cfdb0c4e4e2fdb2ad7e8e34c62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Dendrogram::get_within_cluster_distance</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>get_within_cluster_distance</name>
         <qualifiedname>stat_tool::Dendrogram::get_within_cluster_distance</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -786,16 +786,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="384" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="384" bodyend="384"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="384" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="384" bodyend="384"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a0d231ae232460614144c2095cea2f968" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Dendrogram::get_between_cluster_distance</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>get_between_cluster_distance</name>
         <qualifiedname>stat_tool::Dendrogram::get_between_cluster_distance</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -804,16 +804,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="385" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="385" bodyend="385"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="385" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="385" bodyend="385"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1ae6f557853d667827c60875ae93943575" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Dendrogram::get_max_within_cluster_distance</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>get_max_within_cluster_distance</name>
         <qualifiedname>stat_tool::Dendrogram::get_max_within_cluster_distance</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -822,16 +822,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="386" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="386" bodyend="386"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="386" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="386" bodyend="386"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Dendrogram_1a72808644931f9548da2304403dda4494" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Dendrogram::get_min_between_cluster_distance</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>get_min_between_cluster_distance</name>
         <qualifiedname>stat_tool::Dendrogram::get_min_between_cluster_distance</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -840,7 +840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="387" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="387" bodyend="387"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="387" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="387" bodyend="387"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -881,7 +881,7 @@
         <link refid="classstat__tool_1_1StatInterface"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="327" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="327" bodyend="388"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="327" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="327" bodyend="388"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1Dendrogram_1a5e8d02450e64fab2b4b59784df6b438d" prot="public" virt="virtual"><scope>stat_tool::Dendrogram</scope><name>ascii_write</name></member>
       <member refid="classstat__tool_1_1Dendrogram_1a1cfdde3d65c66100d5f720ab47f9e334" prot="public" virt="virtual"><scope>stat_tool::Dendrogram</scope><name>ascii_write</name></member>

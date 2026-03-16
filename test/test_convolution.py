@@ -6,7 +6,7 @@
 
 __version__ = "$Id$"
 
-from .tools import interface, runTestClass
+from .tools import DISABLE_PLOT, interface, runTestClass
 
 from openalea.stat_tool import Convolution, Estimate
 from openalea.stat_tool.data_transform import ExtractDistribution

@@ -1,5 +1,5 @@
 \doxysection{plotable.\+h}
-\hypertarget{plotable_8h_source}{}\label{plotable_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/plotable.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/plotable.h}}
+\hypertarget{plotable_8h_source}{}\label{plotable_8h_source}\index{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/plotable.h@{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/plotable.h}}
 \mbox{\hyperlink{plotable_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
@@ -78,7 +78,7 @@
 \DoxyCodeLine{00074\ }
 \DoxyCodeLine{00075\ \ \ \textcolor{comment}{//\ Class\ SinglePlot:\ list\ of\ (X,\ Y)\ pair\ with\ properties}}
 \DoxyCodeLine{00076\ }
-\DoxyCodeLine{00077\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_aad4611fdd83168aecdefdcdc29641442}{SinglePlot}}}
+\DoxyCodeLine{00077\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}}
 \DoxyCodeLine{00078\ \ \ \{}
 \DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{typedef}\ std::vector<PlotPoint>\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_ab594a9e2a670148ba1205727b5be61fc}{Points}};}
 \DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{typedef}\ std::vector<Label>\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a79c4bd869cb5ef335bcf0ee3304aaaf1}{Labels}};}
@@ -110,19 +110,19 @@
 \DoxyCodeLine{00106\ \ \ \ \ }
 \DoxyCodeLine{00107\ \ \ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00108\ }
-\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_aad4611fdd83168aecdefdcdc29641442}{SinglePlot}}();}
-\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_aad4611fdd83168aecdefdcdc29641442}{SinglePlot}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_aad4611fdd83168aecdefdcdc29641442}{SinglePlot}}\&\ plot);}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}();}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}\&\ plot);}
 \DoxyCodeLine{00111\ }
-\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a03aa95f8af10e8fada5674c42ed42d03}{add\_point}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
-\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a03aa95f8af10e8fada5674c42ed42d03}{add\_point}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespacestat__tool_a6245633ff08e4a11e25a43e7173db4c6}{PlotPoint}}\&\ p);}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ add\_point(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{void}\ add\_point(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespacestat__tool_a6245633ff08e4a11e25a43e7173db4c6}{PlotPoint}}\&\ p);}
 \DoxyCodeLine{00114\ \ \ }
 \DoxyCodeLine{00115\ \ \ \ \ \textcolor{comment}{//\ related\ to\ the\ label\ mode}}
-\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a329de66d3d0f01b7951ea6f6bcdbafe2}{add\_text}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keyword}{const}\ std::string\&\ p);\ \ \ }
-\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a6a1a7142d27de4aee2e74108eb8d078a}{get\_x}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_aa0eac3dcd5c9ba79166c02be6c06eb30}{get\_y}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{00119\ \ \ \ \ std::string\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a31632080fdc6bc4969a3e1b5ddca5478}{get\_label}}(\textcolor{keywordtype}{int});}
-\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a7b051d07fee0d07a5f27678f9d7ab3dd}{get\_size}}();\ }
-\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot_a110da2e3a062bee580c33dfcef1d0977}{size}}();}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ add\_text(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keyword}{const}\ std::string\&\ p);\ \ \ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{float}\ get\_x(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{float}\ get\_y(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00119\ \ \ \ \ std::string\ get\_label(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{int}\ get\_size();\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{int}\ size();}
 \DoxyCodeLine{00122\ }
 \DoxyCodeLine{00123\ \ \ \ \ \textcolor{comment}{//\ Points::const\_iterator\ begin()}}
 \DoxyCodeLine{00124\ \ \ \ \ \textcolor{comment}{//\ \{\ return\ data\_and\_text.begin();\ \};}}
@@ -134,7 +134,7 @@
 \DoxyCodeLine{00130\ }
 \DoxyCodeLine{00131\ \ \ \textcolor{comment}{//\ Class\ MultiPlot:\ set\ of\ SinglePlot}}
 \DoxyCodeLine{00132\ }
-\DoxyCodeLine{00133\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a2ca1ac77cc19ba57d0a8ba4093fc4699}{MultiPlot}}}
+\DoxyCodeLine{00133\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot}{MultiPlot}}}
 \DoxyCodeLine{00134\ \ \ \{}
 \DoxyCodeLine{00135\ \ \ \ \ std::vector<SinglePlot>\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_ae6ca60fcdff279544afcd91db0ee36c4}{plots}};}
 \DoxyCodeLine{00136\ \ \ \ \ }
@@ -155,22 +155,22 @@
 \DoxyCodeLine{00151\ }
 \DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a78aeceea5648668128d414e50e531498}{group}};\ \textcolor{comment}{//\ Window\ id\ (default\ is\ 0)}}
 \DoxyCodeLine{00153\ }
-\DoxyCodeLine{00154\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a2ca1ac77cc19ba57d0a8ba4093fc4699}{MultiPlot}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a105f34becb52395a8126cbf08208bb05}{size}}\ =\ 1);}
-\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a2ca1ac77cc19ba57d0a8ba4093fc4699}{MultiPlot}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a2ca1ac77cc19ba57d0a8ba4093fc4699}{MultiPlot}}\&\ multiplot);}
-\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a2ca1ac77cc19ba57d0a8ba4093fc4699}{MultiPlot}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a2ca1ac77cc19ba57d0a8ba4093fc4699}{MultiPlot}}\ *multiplot);}
+\DoxyCodeLine{00154\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultiPlot}{MultiPlot}}(\textcolor{keywordtype}{int}\ size\ =\ 1);}
+\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultiPlot}{MultiPlot}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot}{MultiPlot}}\&\ multiplot);}
+\DoxyCodeLine{00156\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultiPlot}{MultiPlot}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot}{MultiPlot}}\ *multiplot);}
 \DoxyCodeLine{00157\ }
-\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}\&\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_aa9de721dcbc91659d0a6b1e0af9fd879}{operator[]}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}\&\ operator[](\textcolor{keywordtype}{int}\ index);}
 \DoxyCodeLine{00159\ }
-\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a9cd7edc13ab03c325c39a99662e1aff5}{resize}}(\textcolor{keywordtype}{int}\ newsize);}
-\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a105f34becb52395a8126cbf08208bb05}{size}}();}
-\DoxyCodeLine{00162\ \ \ \ \ std::vector<SinglePlot>::const\_iterator\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_a536dd7f90c3b65a01c102b3635c0bea0}{begin}}();}
-\DoxyCodeLine{00163\ \ \ \ \ std::vector<SinglePlot>::const\_iterator\ \mbox{\hyperlink{classstat__tool_1_1MultiPlot_abf2b4712bbb1c255cc1f9f0cd1cd8329}{end}}();}
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{void}\ resize(\textcolor{keywordtype}{int}\ newsize);}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{int}\ size();}
+\DoxyCodeLine{00162\ \ \ \ \ std::vector<SinglePlot>::const\_iterator\ begin();}
+\DoxyCodeLine{00163\ \ \ \ \ std::vector<SinglePlot>::const\_iterator\ end();}
 \DoxyCodeLine{00164\ \ \ \};}
 \DoxyCodeLine{00165\ }
 \DoxyCodeLine{00166\ }
 \DoxyCodeLine{00167\ \ \ \textcolor{comment}{//\ Class\ MultiPlotSet:\ list\ of\ MultiPlot}}
 \DoxyCodeLine{00168\ }
-\DoxyCodeLine{00169\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_aab187c0f9d5829aef8abb4755b6bc601}{TemplateMultiPlotSet}}}
+\DoxyCodeLine{00169\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ Type>\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet}{TemplateMultiPlotSet}}}
 \DoxyCodeLine{00170\ \ \ \{}
 \DoxyCodeLine{00171\ \ \ \ \ std::vector<MultiPlot>\ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_a068cac775749df5a6520ada1307ac18d}{multiplots}};}
 \DoxyCodeLine{00172\ }
@@ -183,9 +183,9 @@
 \DoxyCodeLine{00180\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_a7fc56a2ffa61145340d7674618dac396}{variable}};}
 \DoxyCodeLine{00182\ \ \ \ \ std::vector<Type>\ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_addd9fe739bb55c94f0ed5bc5d8633149}{viewpoint}};}
 \DoxyCodeLine{00183\ }
-\DoxyCodeLine{00184\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_aab187c0f9d5829aef8abb4755b6bc601}{TemplateMultiPlotSet}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_a3ceb46e9b1aec07760339b40b43504af}{size}}\ =\ 1);}
+\DoxyCodeLine{00184\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet}{TemplateMultiPlotSet}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_a3ceb46e9b1aec07760339b40b43504af}{size}}\ =\ 1);}
 \DoxyCodeLine{00185\ }
-\DoxyCodeLine{00186\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_abe6c526b20c1efe0625d03f89736d777}{TemplateMultiPlotSet}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_a3ceb46e9b1aec07760339b40b43504af}{size}},\ \textcolor{keywordtype}{int}\ inb\_variable);}
+\DoxyCodeLine{00186\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet}{TemplateMultiPlotSet}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_a3ceb46e9b1aec07760339b40b43504af}{size}},\ \textcolor{keywordtype}{int}\ inb\_variable);}
 \DoxyCodeLine{00187\ }
 \DoxyCodeLine{00188\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultiPlot}{MultiPlot}}\&\ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_a97845d53d076fce9a151b7451abb59a3}{operator[]}}(\textcolor{keywordtype}{int}\ index)}
 \DoxyCodeLine{00189\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet_a068cac775749df5a6520ada1307ac18d}{multiplots}}[index];\ \};}

@@ -53,7 +53,7 @@ class interface:
     :Usage:
     In your test file, add::
 
-        >>> from .tools import interface
+        >>> from .tools import DISABLE_PLOT, interface
 
     Then, if we consider the Compound class case, create a class as follows::
 

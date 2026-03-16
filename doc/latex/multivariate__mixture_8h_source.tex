@@ -1,5 +1,5 @@
 \doxysection{multivariate\+\_\+mixture.\+h}
-\hypertarget{multivariate__mixture_8h_source}{}\label{multivariate__mixture_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/multivariate\_mixture.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/multivariate\_mixture.h}}
+\hypertarget{multivariate__mixture_8h_source}{}\label{multivariate__mixture_8h_source}\index{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/multivariate\_mixture.h@{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/multivariate\_mixture.h}}
 \mbox{\hyperlink{multivariate__mixture_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
@@ -69,72 +69,72 @@
 \DoxyCodeLine{00065\ }
 \DoxyCodeLine{00066\ }
 \DoxyCodeLine{00067\ \ \ \textcolor{comment}{//\ \(\backslash\)brief\ Multivariate\ mixture\ of\ discrete\ distributions}}
-\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ \{}
+\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1StatInterface}{StatInterface}}\ \{}
 \DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}};}
-\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a543d5c204cf0202ad734acf28aa597d0}{Vectors}};}
-\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a046bcaec61c1223f901e383342773ac7}{MultivariateMixtureData}};}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}};}
 \DoxyCodeLine{00081\ }
-\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_ae7351cc8925e01bda5f8c892cb08b782}{multivariate\_mixture\_building}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a0a64997a9d12edaa44b87861c8c4c6f6}{nb\_component}}\ ,}
-\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_variable,\ \textcolor{keywordtype}{double}\ *\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_abd51ce733256e0811f00d66bb08a667f}{weight}},}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}*\ \mbox{\hyperlink{namespacestat__tool_a2cd992551e4a0b0d59e95775e935d18e}{multivariate\_mixture\_building}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ nb\_component\ ,}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_variable,\ \textcolor{keywordtype}{double}\ *weight,}
 \DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\ **ppcomponent,}
 \DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\ **pnpcomponent);}
-\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_af29f1fd87c4604921113a8850b83bc27}{multivariate\_mixture\_ascii\_read}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ \&path\ ,}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}*\ \mbox{\hyperlink{namespacestat__tool_a78257d03aa54ce4da283c0861ada085b}{multivariate\_mixture\_ascii\_read}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ \&path\ ,}
 \DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold);}
-\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8a0a85d58b251984595b65d26f4d1c33}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}\ \&mixt)}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8a0a85d58b251984595b65d26f4d1c33}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}\ \&mixt)}
 \DoxyCodeLine{00089\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ mixt.\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_aeb7dce91f2c73af170fa0e790de93423}{ascii\_write}}(os\ ,\ mixt.\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a2b30173cc1c207b003d429eeb4a2ba80}{mixture\_data}}\ ,\ \textcolor{keyword}{false}\ ,\ \textcolor{keyword}{false});\ \}}
 \DoxyCodeLine{00090\ }
 \DoxyCodeLine{00091\ \ \ private\ :}
 \DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a046bcaec61c1223f901e383342773ac7}{MultivariateMixtureData}}\ *\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a2b30173cc1c207b003d429eeb4a2ba80}{mixture\_data}};\ \ }
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ *\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a2b30173cc1c207b003d429eeb4a2ba80}{mixture\_data}};\ \ }
 \DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a0a64997a9d12edaa44b87861c8c4c6f6}{nb\_component}};\ \ \ \ \ \ \ }
 \DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a449ba91b33839ea5683760b56d70e7f3}{nb\_var}};\ \ \ \ \ \ \ }
 \DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ *\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_abd51ce733256e0811f00d66bb08a667f}{weight}};\ \ \ \ \ }
 \DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\ **\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a43c6ba4d54d5fdfc1fa32762e0cc87ea}{pcomponent}};\ }
 \DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\ **\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a838323a70c160e6cfaa2716a57bdaa84}{npcomponent}};\ }
 \DoxyCodeLine{00099\ }
-\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a070bf249c27d9506603e0cabb5ea2519}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}\ \&mixt\ ,\ \textcolor{keywordtype}{bool}\ data\_flag\ =\ \textcolor{keyword}{true});}
-\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_abf1b3d8f271b8c7719640e0c2aabdf88}{remove}}();}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ copy(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}\ \&mixt\ ,\ \textcolor{keywordtype}{bool}\ data\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ remove();}
 \DoxyCodeLine{00102\ }
-\DoxyCodeLine{00103\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_aeb7dce91f2c73af170fa0e790de93423}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a046bcaec61c1223f901e383342773ac7}{MultivariateMixtureData}}\ *mixt\_data\ ,}
+\DoxyCodeLine{00103\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_aeb7dce91f2c73af170fa0e790de93423}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ *mixt\_data\ ,}
 \DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00105\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_af975a07dace9a1abb7d354e689efc006}{spreadsheet\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a046bcaec61c1223f901e383342773ac7}{MultivariateMixtureData}}\ *mixt\_data)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a2c09c9bebd9c65a0058e1798c642bb42}{plot\_write}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a046bcaec61c1223f901e383342773ac7}{MultivariateMixtureData}}\ *mixt\_data)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a7d710728ac506ab3e4e5c1300757493b}{get\_plotable}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a046bcaec61c1223f901e383342773ac7}{MultivariateMixtureData}}\ *mixt\_data)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_af975a07dace9a1abb7d354e689efc006}{spreadsheet\_write}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ *mixt\_data)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{bool}\ plot\_write(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ *mixt\_data)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet}{MultiPlotSet}}*\ get\_plotable(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ *mixt\_data)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00109\ }
-\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a29e3914c3721a213ffb9614662e268ba}{nb\_parameter\_computation}}(\textcolor{keywordtype}{double}\ min\_probability)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a207c32f78f52107a70e694f2fbd6cd9b}{penalty\_computation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_parameter\_computation(\textcolor{keywordtype}{double}\ min\_probability)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{double}\ penalty\_computation()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00112\ }
-\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a03552d91d93d3fb7e0eaeee65c9fe3ab}{get\_output\_conditional\_distribution}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}\ \&mixt\_data,}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ get\_output\_conditional\_distribution(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}\ \&mixt\_data,}
 \DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}**\ \&output\_cond,}
-\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_a0f8d8ce87b264e6225f8228a89711a88}{log\_computation}}=\textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ log\_computation=\textcolor{keyword}{false})\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00118\ }
-\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_aa483554e0ebc2af464d0b9a7901254e8}{get\_posterior\_distribution}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}\ \&mixt\_data,}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ get\_posterior\_distribution(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}\ \&mixt\_data,}
 \DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}**\ output\_cond,}
 \DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}**\ \&posterior\_dist)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00123\ }
-\DoxyCodeLine{00125\ \ \ \ \ std::vector<int>*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a2e2fe87a4e993d1a32479e26ca53b328}{state\_computation}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}\ \&vec,\ }
+\DoxyCodeLine{00125\ \ \ \ \ std::vector<int>*\ state\_computation(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}\ \&vec,\ }
 \DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}**\ \&posterior\_dist,}
-\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ algorithm=\mbox{\hyperlink{namespacestat__tool_a279fa578dc2f49887f1a195c15b9c738a76f9e0ed95aade22edaf7d6cdd465d9f}{VITERBI}},\ \textcolor{keywordtype}{int}\ index=\mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ algorithm=VITERBI,\ \textcolor{keywordtype}{int}\ index=I\_DEFAULT)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00128\ }
-\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_ab3199f9a507c9d9e652ade0baa868af6}{init}}();}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ init();}
 \DoxyCodeLine{00131\ }
 \DoxyCodeLine{00132\ \ \ public\ :}
 \DoxyCodeLine{00133\ }
-\DoxyCodeLine{00134\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}();}
-\DoxyCodeLine{00135\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}(\textcolor{keywordtype}{int}\ inb\_component\ ,\ \textcolor{keywordtype}{double}\ *pweight\ ,\ \textcolor{keywordtype}{int}\ inb\_variable,}
+\DoxyCodeLine{00134\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}();}
+\DoxyCodeLine{00135\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}(\textcolor{keywordtype}{int}\ inb\_component\ ,\ \textcolor{keywordtype}{double}\ *pweight\ ,\ \textcolor{keywordtype}{int}\ inb\_variable,}
 \DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\ **ppcomponent,}
 \DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\ **pnpcomponent);}
-\DoxyCodeLine{00138\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}(\textcolor{keywordtype}{int}\ inb\_component\ ,\ \textcolor{keywordtype}{int}\ inb\_variable,}
+\DoxyCodeLine{00138\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}(\textcolor{keywordtype}{int}\ inb\_component\ ,\ \textcolor{keywordtype}{int}\ inb\_variable,}
 \DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\ **ppcomponent,}
 \DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\ **pnpcomponent);}
-\DoxyCodeLine{00141\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}\ \&mixt\ ,\ \textcolor{keywordtype}{bool}\ *variable\_flag\ ,}
+\DoxyCodeLine{00141\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}\ \&mixt\ ,\ \textcolor{keywordtype}{bool}\ *variable\_flag\ ,}
 \DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ inb\_variable);}
-\DoxyCodeLine{00143\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}(\textcolor{keywordtype}{int}\ inb\_component,\ \textcolor{keywordtype}{int}\ inb\_variable,\ \textcolor{keywordtype}{int}\ *nb\_value,}
+\DoxyCodeLine{00143\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}(\textcolor{keywordtype}{int}\ inb\_component,\ \textcolor{keywordtype}{int}\ inb\_variable,\ \textcolor{keywordtype}{int}\ *nb\_value,}
 \DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ *force\_param=NULL);}
-\DoxyCodeLine{00145\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_ae898cbbfe66b451ff4a945f1cfb5174a}{MultivariateMixture}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a8314dc7b5aea17d7277a0316599d0e0d}{MultivariateMixture}}\ \&mixt\ ,\ \textcolor{keywordtype}{bool}\ data\_flag\ =\ \textcolor{keyword}{true})}
-\DoxyCodeLine{00146\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a070bf249c27d9506603e0cabb5ea2519}{copy}}(mixt\ ,\ data\_flag);\ \}}
+\DoxyCodeLine{00145\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_ae898cbbfe66b451ff4a945f1cfb5174a}{MultivariateMixture}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}\ \&mixt\ ,\ \textcolor{keywordtype}{bool}\ data\_flag\ =\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00146\ \ \ \ \ \{\ copy(mixt\ ,\ data\_flag);\ \}}
 \DoxyCodeLine{00147\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{\string~MultivariateMixture}}();}
 \DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}\ \&mixt);}
 \DoxyCodeLine{00149\ }
@@ -150,29 +150,29 @@
 \DoxyCodeLine{00163\ \ \ \ \ std::ostream\&\ line\_write(std::ostream\ \&os)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00164\ }
 \DoxyCodeLine{00165\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_ab252390a47e0f4821b5f02e106f4d131}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_aeb7dce91f2c73af170fa0e790de93423}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ std::string\ path\ ,}
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{bool}\ ascii\_write(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ std::string\ path\ ,}
 \DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_af975a07dace9a1abb7d354e689efc006}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ std::string\ path)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a2c09c9bebd9c65a0058e1798c642bb42}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{bool}\ spreadsheet\_write(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ std::string\ path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordtype}{bool}\ plot\_write(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,}
 \DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ 0)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00171\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a7d710728ac506ab3e4e5c1300757493b}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00171\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet}{MultiPlotSet}}*\ get\_plotable()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00172\ }
-\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_af70913264e6d9c5806e67d4e3f55b333}{likelihood\_computation}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}\ \&mixt\_data,}
-\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_a0f8d8ce87b264e6225f8228a89711a88}{log\_computation}}=\textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{double}\ likelihood\_computation(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}\ \&mixt\_data,}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ log\_computation=\textcolor{keyword}{false})\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00175\ }
-\DoxyCodeLine{00176\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a046bcaec61c1223f901e383342773ac7}{MultivariateMixtureData}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_ac674d3fbaaf69ec532dd6f62df76da9c}{simulation}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ nb\_element)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00176\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}*\ simulation(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keywordtype}{int}\ nb\_element)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00177\ }
-\DoxyCodeLine{00179\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a046bcaec61c1223f901e383342773ac7}{MultivariateMixtureData}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_aaaa3b63e004e7d43314ad404a852dca7}{cluster}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}\ \&vec,}
-\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ algorithm=\mbox{\hyperlink{namespacestat__tool_a279fa578dc2f49887f1a195c15b9c738a76f9e0ed95aade22edaf7d6cdd465d9f}{VITERBI}},\ \textcolor{keywordtype}{bool}\ add\_state\_entropy=\textcolor{keyword}{false})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00179\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}*\ cluster(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}\ \&vec,}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ algorithm=VITERBI,\ \textcolor{keywordtype}{bool}\ add\_state\_entropy=\textcolor{keyword}{false})\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00181\ }
-\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_ac666ee290acf1b608e5a940c62ba3678}{is\_parametric}}(\textcolor{keywordtype}{int}\ ivariable)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_parametric(\textcolor{keywordtype}{int}\ ivariable)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00184\ }
 \DoxyCodeLine{00185\ \ \ \ \ \textcolor{comment}{//\ Access\ to\ class\ members}}
 \DoxyCodeLine{00186\ }
-\DoxyCodeLine{00187\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a046bcaec61c1223f901e383342773ac7}{MultivariateMixtureData}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_ae9a60e0b2d0cd01fe62faf4dd8a63740}{get\_mixture\_data}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a2b30173cc1c207b003d429eeb4a2ba80}{mixture\_data}};\ \}}
-\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a158fac8ad79d6d7a5a3912c5a5efdf70}{get\_nb\_component}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a0a64997a9d12edaa44b87861c8c4c6f6}{nb\_component}};\ \}}
-\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a179a8de7d120c66087c5ece1f89adf31}{get\_nb\_variable}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a449ba91b33839ea5683760b56d70e7f3}{nb\_var}};\ \}}
-\DoxyCodeLine{00190\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a4371c4cd3b7fd8953358cab3d01223ba}{get\_weight}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_abd51ce733256e0811f00d66bb08a667f}{weight}};\ \}}
+\DoxyCodeLine{00187\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_ae9a60e0b2d0cd01fe62faf4dd8a63740}{get\_mixture\_data}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mixture\_data;\ \}}
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a158fac8ad79d6d7a5a3912c5a5efdf70}{get\_nb\_component}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nb\_component;\ \}}
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a179a8de7d120c66087c5ece1f89adf31}{get\_nb\_variable}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nb\_var;\ \}}
+\DoxyCodeLine{00190\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture_a4371c4cd3b7fd8953358cab3d01223ba}{get\_weight}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ weight;\ \}}
 \DoxyCodeLine{00191\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}*\ get\_parametric\_process(\textcolor{keywordtype}{int}\ variable)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00192\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}*\ get\_categorical\_process(\textcolor{keywordtype}{int}\ variable)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00193\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}*\ get\_parametric\_component(\textcolor{keywordtype}{int}\ variable,\ \textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
@@ -184,41 +184,41 @@
 \DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_variable,\ \textcolor{keywordtype}{double}\ *weight,}
 \DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DiscreteParametricProcess\ **ppcomponent,}
 \DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CategoricalProcess\ **pnpcomponent);}
-\DoxyCodeLine{00202\ \ \ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ MultivariateMixture*\ \mbox{\hyperlink{namespacestat__tool_a0c74f4d79ab7a8d898ba9c5c84c39660}{multivariate\_mixture\_ascii\_read}}(StatError\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ \&path\ ,}
+\DoxyCodeLine{00202\ \ \ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ MultivariateMixture*\ \mbox{\hyperlink{namespacestat__tool_a78257d03aa54ce4da283c0861ada085b}{multivariate\_mixture\_ascii\_read}}(StatError\ \&error\ ,\ \textcolor{keyword}{const}\ std::string\ \&path\ ,}
 \DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ \mbox{\hyperlink{namespacestat__tool_ad4d38b02123065463dd289f1adbaf8c2}{CUMUL\_THRESHOLD}});}
 \DoxyCodeLine{00204\ }
 \DoxyCodeLine{00205\ }
 \DoxyCodeLine{00206\ }
 \DoxyCodeLine{00207\ \ \ \textcolor{comment}{//\ \(\backslash\)brief\ Data\ structure\ associated\ with\ multivariate\ mixture}}
 \DoxyCodeLine{00208\ }
-\DoxyCodeLine{00209\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_acbb3b8441bff5824a1544aa0a9b7b409}{MultivariateMixtureData}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}\ \{}
+\DoxyCodeLine{00209\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}\ \{}
 \DoxyCodeLine{00210\ }
-\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}};}
-\DoxyCodeLine{00212\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a12e1e15b65fad162a37b2a7d84456296}{MultivariateMixture}};}
-\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a543d5c204cf0202ad734acf28aa597d0}{Vectors}};}
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}};}
+\DoxyCodeLine{00212\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}};}
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}};}
 \DoxyCodeLine{00214\ }
-\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a637a22eb7d2ddb1a28e32324709efe1d}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_acbb3b8441bff5824a1544aa0a9b7b409}{MultivariateMixtureData}}\ \&mixt\_data)}
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a637a22eb7d2ddb1a28e32324709efe1d}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ \&mixt\_data)}
 \DoxyCodeLine{00216\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ mixt\_data.\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_aa03b6bd704f886debab5a1bedb3dcab9}{ascii\_write}}(os\ ,\ \textcolor{keyword}{false});\ \}}
 \DoxyCodeLine{00217\ }
 \DoxyCodeLine{00218\ \ \ private\ :}
 \DoxyCodeLine{00219\ }
-\DoxyCodeLine{00220\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a12e1e15b65fad162a37b2a7d84456296}{MultivariateMixture}}\ *\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a20f60a3a02f6b5f3d80a00800eeac3a2}{mixture}};\ \ }
+\DoxyCodeLine{00220\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}\ *\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a20f60a3a02f6b5f3d80a00800eeac3a2}{mixture}};\ \ }
 \DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a3c0f0fb9637baf627b2813851d06cc84}{nb\_component}};\ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00222\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ *\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_abe6b65dd974e8fe5f8858823745312a4}{weight}};\ \ \ \ \ \ }
-\DoxyCodeLine{00224\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}\ ***\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a2a50ad61425b1ecc9bc066e1eb995b84}{component}};\ \ \textcolor{comment}{//\ empirical\ emission\ distribution\ for\ each\ variable}}
+\DoxyCodeLine{00222\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_abe6b65dd974e8fe5f8858823745312a4}{weight}};\ \ \ \ \ \ }
+\DoxyCodeLine{00224\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ ***\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a2a50ad61425b1ecc9bc066e1eb995b84}{component}};\ \ \textcolor{comment}{//\ empirical\ emission\ distribution\ for\ each\ variable}}
 \DoxyCodeLine{00225\ }
-\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a679b1c6d4f7715d261e89db1daa1d03d}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_acbb3b8441bff5824a1544aa0a9b7b409}{MultivariateMixtureData}}\ \&mixt\_data\ ,\ \textcolor{keywordtype}{bool}\ model\_flag\ =\ \textcolor{keyword}{true});}
-\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a3ad110b0790ce6dec153a92107dc9efd}{remove}}();}
+\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keywordtype}{void}\ copy(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ \&mixt\_data\ ,\ \textcolor{keywordtype}{bool}\ model\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keywordtype}{void}\ remove();}
 \DoxyCodeLine{00228\ }
-\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_afeac53d4c2b56495410ef85de0cc5860}{state\_permutation}}(\textcolor{keywordtype}{int}\ *perm);}
+\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordtype}{void}\ state\_permutation(\textcolor{keywordtype}{int}\ *perm);}
 \DoxyCodeLine{00231\ }
 \DoxyCodeLine{00232\ \ \ public\ :}
 \DoxyCodeLine{00233\ }
-\DoxyCodeLine{00234\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_acbb3b8441bff5824a1544aa0a9b7b409}{MultivariateMixtureData}}();}
-\DoxyCodeLine{00235\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_acbb3b8441bff5824a1544aa0a9b7b409}{MultivariateMixtureData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}\ \&vec,\ \textcolor{keywordtype}{int}\ inb\_component);}
-\DoxyCodeLine{00236\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_acbb3b8441bff5824a1544aa0a9b7b409}{MultivariateMixtureData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a12e1e15b65fad162a37b2a7d84456296}{MultivariateMixture}}\ \&mixt);}
-\DoxyCodeLine{00237\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a6607462c34c0b96046fdfdd886a96a4b}{MultivariateMixtureData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_acbb3b8441bff5824a1544aa0a9b7b409}{MultivariateMixtureData}}\ \&mixt\_data\ ,\ \textcolor{keywordtype}{bool}\ model\_flag\ =\ \textcolor{keyword}{true})}
-\DoxyCodeLine{00238\ \ \ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a543d5c204cf0202ad734acf28aa597d0}{Vectors}}(mixt\_data)\ \{\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a679b1c6d4f7715d261e89db1daa1d03d}{copy}}(mixt\_data\ ,\ model\_flag);\ \}}
+\DoxyCodeLine{00234\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}();}
+\DoxyCodeLine{00235\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}\ \&vec,\ \textcolor{keywordtype}{int}\ inb\_component);}
+\DoxyCodeLine{00236\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}\ \&mixt);}
+\DoxyCodeLine{00237\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a6607462c34c0b96046fdfdd886a96a4b}{MultivariateMixtureData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ \&mixt\_data\ ,\ \textcolor{keywordtype}{bool}\ model\_flag\ =\ \textcolor{keyword}{true})}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1Vectors}{Vectors}}(mixt\_data)\ \{\ copy(mixt\_data\ ,\ model\_flag);\ \}}
 \DoxyCodeLine{00239\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{\string~MultivariateMixtureData}}();}
 \DoxyCodeLine{00240\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData}{MultivariateMixtureData}}\ \&mixt\_data);}
 \DoxyCodeLine{00241\ }
@@ -228,21 +228,21 @@
 \DoxyCodeLine{00245\ \ \ \ \ std::ostream\&\ line\_write(std::ostream\ \&os)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00246\ }
 \DoxyCodeLine{00247\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_aa03b6bd704f886debab5a1bedb3dcab9}{ascii\_write}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00248\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_aa03b6bd704f886debab5a1bedb3dcab9}{ascii\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ std::string\ path\ ,}
+\DoxyCodeLine{00248\ \ \ \ \ \textcolor{keywordtype}{bool}\ ascii\_write(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ std::string\ path\ ,}
 \DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ =\ \textcolor{keyword}{false})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00250\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a0f14cf8513855b3943c7d087488dbfdc}{spreadsheet\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00251\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a297753432721adef11b5239431582882}{plot\_write}}(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,}
+\DoxyCodeLine{00250\ \ \ \ \ \textcolor{keywordtype}{bool}\ spreadsheet\_write(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00251\ \ \ \ \ \textcolor{keywordtype}{bool}\ plot\_write(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,}
 \DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ =\ 0)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00253\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a335bc23509add422b33723c2d2145815}{get\_plotable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00253\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet}{MultiPlotSet}}*\ get\_plotable()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00254\ }
-\DoxyCodeLine{00255\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a8c6b127fde933523e2fe305fc904e2ac}{information\_computation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00255\ \ \ \ \ \textcolor{keywordtype}{double}\ information\_computation()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00256\ }
 \DoxyCodeLine{00257\ \ \ \ \ \textcolor{comment}{//\ access\ to\ class\ members}}
 \DoxyCodeLine{00258\ }
-\DoxyCodeLine{00259\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a12e1e15b65fad162a37b2a7d84456296}{MultivariateMixture}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a2274302769158ad990e707cf290bec8f}{get\_mixture}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a20f60a3a02f6b5f3d80a00800eeac3a2}{mixture}};\ \}}
-\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_ad426967b7a242cfe06cf146cf8fcd6b9}{get\_nb\_component}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a3c0f0fb9637baf627b2813851d06cc84}{nb\_component}};\ \}}
-\DoxyCodeLine{00261\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a4e6c28909c93a99da41fd9b16f373609}{get\_weight}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_abe6b65dd974e8fe5f8858823745312a4}{weight}};\ \}}
-\DoxyCodeLine{00262\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a4b140c2efdbf49a5c39265992d544d7f}{FrequencyDistribution}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a9ae524a0f5c763a5c876c6f8f07d5069}{get\_component}}(\textcolor{keywordtype}{int}\ variable,\ \textcolor{keywordtype}{int}\ index)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a2a50ad61425b1ecc9bc066e1eb995b84}{component}}[variable][index];\ \}}
+\DoxyCodeLine{00259\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixture}{MultivariateMixture}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a2274302769158ad990e707cf290bec8f}{get\_mixture}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mixture;\ \}}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_ad426967b7a242cfe06cf146cf8fcd6b9}{get\_nb\_component}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nb\_component;\ \}}
+\DoxyCodeLine{00261\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a4e6c28909c93a99da41fd9b16f373609}{get\_weight}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ weight;\ \}}
+\DoxyCodeLine{00262\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}*\ \mbox{\hyperlink{classstat__tool_1_1MultivariateMixtureData_a9ae524a0f5c763a5c876c6f8f07d5069}{get\_component}}(\textcolor{keywordtype}{int}\ variable,\ \textcolor{keywordtype}{int}\ index)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ component[variable][index];\ \}}
 \DoxyCodeLine{00263\ \ \ \};}
 \DoxyCodeLine{00264\ }
 \DoxyCodeLine{00265\ }

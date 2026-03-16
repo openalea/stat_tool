@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1SinglePlot" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::SinglePlot</compoundname>
     <includes refid="plotable_8h" local="no">plotable.h</includes>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="79" column="25" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="79" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="79" column="25" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="classstat__tool_1_1SinglePlot_1a79c4bd869cb5ef335bcf0ee3304aaaf1" prot="private" static="no">
         <type>std::vector&lt; <ref refid="namespacestat__tool_1ac23b224e3cfe061f1b65da8c9e5fb5e4" kindref="member">Label</ref> &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="80" column="25" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="80" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="80" column="25" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="80" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-attrib">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="84" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="84" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="84" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1SinglePlot_1a1447d81551a5a851e50d322b08531b4b" prot="public" static="no" mutable="no">
         <type><ref refid="classstat__tool_1_1SinglePlot_1a79c4bd869cb5ef335bcf0ee3304aaaf1" kindref="member">Labels</ref></type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="85" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="85" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="85" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1SinglePlot_1a682bad37510d0eb213c903d449773ba0" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="86" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="86" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="86" column="17" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1SinglePlot_1af4c569acbc316a3a2731cf394202e655" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="87" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="87" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="87" column="17" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1SinglePlot_1afd17bec5281424bfa46ba6cc5fae4079" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -102,10 +102,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="94" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="94" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="94" column="17" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1SinglePlot_1a39b0dc39b4269adde188b42edea0480d" prot="public" static="no" mutable="no">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::SinglePlot::label</definition>
         <argsstring></argsstring>
         <name>label</name>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="104" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="104" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="104" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="104" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="109" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="52" bodyend="56"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="109" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="52" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1SinglePlot_1aed6b428486915d84babd3700ec702ced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -141,7 +141,7 @@
         <name>SinglePlot</name>
         <qualifiedname>stat_tool::SinglePlot::SinglePlot</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref> &amp;</type>
           <declname>plot</declname>
         </param>
         <briefdescription>
@@ -150,20 +150,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="110" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="58" bodyend="64"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="110" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="58" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1SinglePlot_1a03aa95f8af10e8fada5674c42ed42d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::SinglePlot::add_point</definition>
         <argsstring>(float x, float y)</argsstring>
         <name>add_point</name>
         <qualifiedname>stat_tool::SinglePlot::add_point</qualifiedname>
         <param>
-          <type>float</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">float</ref></type>
           <declname>x</declname>
         </param>
         <param>
-          <type>float</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">float</ref></type>
           <declname>y</declname>
         </param>
         <briefdescription>
@@ -172,16 +172,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="112" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="66" bodyend="70"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="112" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="66" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1SinglePlot_1a43bb84ed0d0ee2ccbdafe30de2ef5048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::SinglePlot::add_point</definition>
         <argsstring>(const PlotPoint &amp;p)</argsstring>
         <name>add_point</name>
         <qualifiedname>stat_tool::SinglePlot::add_point</qualifiedname>
         <param>
-          <type>const <ref refid="namespacestat__tool_1a6245633ff08e4a11e25a43e7173db4c6" kindref="member">PlotPoint</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="namespacestat__tool_1a6245633ff08e4a11e25a43e7173db4c6" kindref="member">PlotPoint</ref> &amp;</type>
           <declname>p</declname>
         </param>
         <briefdescription>
@@ -190,24 +190,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="113" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="72" bodyend="75"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="113" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="72" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1SinglePlot_1a329de66d3d0f01b7951ea6f6bcdbafe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::SinglePlot::add_text</definition>
         <argsstring>(float x, float y, const std::string &amp;p)</argsstring>
         <name>add_text</name>
         <qualifiedname>stat_tool::SinglePlot::add_text</qualifiedname>
         <param>
-          <type>float</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">float</ref></type>
           <declname>x</declname>
         </param>
         <param>
-          <type>float</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">float</ref></type>
           <declname>y</declname>
         </param>
         <param>
-          <type>const std::string &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string &amp;</type>
           <declname>p</declname>
         </param>
         <briefdescription>
@@ -216,16 +216,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="116" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="77" bodyend="83"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="116" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="77" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1SinglePlot_1a6a1a7142d27de4aee2e74108eb8d078a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>float</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">float</ref></type>
         <definition>float stat_tool::SinglePlot::get_x</definition>
         <argsstring>(int)</argsstring>
         <name>get_x</name>
         <qualifiedname>stat_tool::SinglePlot::get_x</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <defname>i</defname>
         </param>
         <briefdescription>
@@ -234,16 +234,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="117" column="11" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="85" bodyend="98"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="117" column="11" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="85" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1SinglePlot_1aa0eac3dcd5c9ba79166c02be6c06eb30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>float</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">float</ref></type>
         <definition>float stat_tool::SinglePlot::get_y</definition>
         <argsstring>(int)</argsstring>
         <name>get_y</name>
         <qualifiedname>stat_tool::SinglePlot::get_y</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <defname>i</defname>
         </param>
         <briefdescription>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="118" column="11" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="100" bodyend="113"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="118" column="11" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="100" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1SinglePlot_1a31632080fdc6bc4969a3e1b5ddca5478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -261,7 +261,7 @@
         <name>get_label</name>
         <qualifiedname>stat_tool::SinglePlot::get_label</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <defname>i</defname>
         </param>
         <briefdescription>
@@ -270,10 +270,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="119" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="115" bodyend="125"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="119" column="17" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="115" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1SinglePlot_1a7b051d07fee0d07a5f27678f9d7ab3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::SinglePlot::get_size</definition>
         <argsstring>()</argsstring>
         <name>get_size</name>
@@ -284,10 +284,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="120" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="127" bodyend="127"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="120" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="127" bodyend="127"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1SinglePlot_1a110da2e3a062bee580c33dfcef1d0977" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::SinglePlot::size</definition>
         <argsstring>()</argsstring>
         <name>size</name>
@@ -298,14 +298,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="121" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="129" bodyend="132"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="121" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp" bodystart="129" bodyend="132"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" line="77" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="78" bodyend="128"/>
+    <collaborationgraph>
+      <node id="1">
+        <label>stat_tool::SinglePlot</label>
+        <link refid="classstat__tool_1_1SinglePlot"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>color</edgelabel>
+          <edgelabel>legend</edgelabel>
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" line="77" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h" bodystart="78" bodyend="128"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1SinglePlot_1a03aa95f8af10e8fada5674c42ed42d03" prot="public" virt="non-virtual"><scope>stat_tool::SinglePlot</scope><name>add_point</name></member>
       <member refid="classstat__tool_1_1SinglePlot_1a43bb84ed0d0ee2ccbdafe30de2ef5048" prot="public" virt="non-virtual"><scope>stat_tool::SinglePlot</scope><name>add_point</name></member>

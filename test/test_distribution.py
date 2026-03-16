@@ -3,7 +3,7 @@
 
 __version__ = "$Id$"
 
-from .tools import interface
+from .tools import DISABLE_PLOT, interface
 
 from openalea.stat_tool._stat_tool import _DiscreteParametricModel
 

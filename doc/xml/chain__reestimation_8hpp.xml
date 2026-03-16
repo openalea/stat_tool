@@ -1,53 +1,53 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="chain__reestimation_8hpp" kind="file" language="C++">
     <compoundname>chain_reestimation.hpp</compoundname>
-    <includedby refid="chain__reestimation_8h" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h</includedby>
+    <includedby refid="chain__reestimation_8h" local="yes">/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h</includedby>
     <invincdepgraph>
       <node id="4">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/categorical_process.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/categorical_process.cpp</label>
         <link refid="categorical__process_8cpp"/>
       </node>
       <node id="5">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain.cpp</label>
         <link refid="chain_8cpp"/>
       </node>
       <node id="6">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp</label>
         <link refid="chain__algorithms_8cpp"/>
       </node>
       <node id="2">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h</label>
         <link refid="chain__reestimation_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp</label>
         <link refid="chain__reestimation_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="9">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp</label>
         <link refid="continuous__parametric_8cpp"/>
       </node>
       <node id="7">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_estimation.hpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric_estimation.hpp</label>
         <link refid="continuous__parametric__estimation_8hpp"/>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="18">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp</label>
         <link refid="continuous__parametric__process_8cpp"/>
       </node>
       <node id="19">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp</label>
         <link refid="discrete__parametric__process_8cpp"/>
       </node>
       <node id="3">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h</label>
         <link refid="markovian_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
@@ -71,15 +71,15 @@
         </childnode>
       </node>
       <node id="10">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/mixture.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/mixture.h</label>
         <link refid="mixture_8h"/>
       </node>
       <node id="11">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp</label>
         <link refid="multivariate__mixture_8cpp"/>
       </node>
       <node id="20">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h</label>
         <link refid="multivariate__mixture_8h"/>
         <childnode refid="11" relation="include">
         </childnode>
@@ -87,33 +87,33 @@
         </childnode>
       </node>
       <node id="12">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp</label>
         <link refid="multivariate__mixture__algorithms_8cpp"/>
       </node>
       <node id="14">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp</label>
         <link refid="regression_8cpp"/>
       </node>
       <node id="13">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h</label>
         <link refid="regression_8h"/>
         <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="15">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_algorithms.cpp</label>
         <link refid="vector__algorithms_8cpp"/>
       </node>
       <node id="16">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_distance.cpp</label>
         <link refid="vector__distance_8cpp"/>
       </node>
       <node id="17">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vectors.cpp</label>
         <link refid="vectors_8cpp"/>
       </node>
       <node id="8">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vectors.h</label>
         <link refid="vectors_8h"/>
         <childnode refid="9" relation="include">
         </childnode>
@@ -188,35 +188,35 @@
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
 <codeline lineno="55" refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" refkind="member"><highlight class="normal"><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation&lt;Type&gt;::ChainReestimation</ref>()</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" kindref="member">type</ref><sp/>=<sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref>;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>type<sp/>=<sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>nb_state<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>nb_row<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref><sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>initial<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>transition<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref>;</highlight></codeline>
 <codeline lineno="64"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="71" refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" refkind="member"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="72" refid="classstat__tool_1_1ChainReestimation_1aaaa83cd7e227873aa0c06937318fbb14" refkind="member"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
 <codeline lineno="74" refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a23f63395a7891154f9aa4f726578dfdb" kindref="member">ChainReestimation&lt;Type&gt;::init</ref>()</highlight></codeline>
 <codeline lineno="75" refid="classstat__tool_1_1ChainReestimation_1a5e6193f39f334fa033c75b62d44e71f7" refkind="member"><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>,<sp/>j;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>,<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref>;</highlight></codeline>
 <codeline lineno="78" refid="classstat__tool_1_1ChainReestimation_1a1213c89212818e6357647a080645eef9" refkind="member"><highlight class="normal"></highlight></codeline>
 <codeline lineno="79" refid="classstat__tool_1_1ChainReestimation_1afb5383372e7c666af2875e593bc0cdbd" refkind="member"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="81" refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/>(<ref refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" kindref="member">type</ref><sp/>==<sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref><sp/>?<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref><sp/>:<sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>);i++)<sp/>{</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(initial)<sp/>{</highlight></codeline>
+<codeline lineno="81" refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>&lt;<sp/>(type<sp/>==<sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref><sp/>?<sp/>nb_state<sp/>:<sp/>nb_row);<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>initial[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>]<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
@@ -228,69 +228,69 @@
 <codeline lineno="91"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
-<codeline lineno="106" refid="classstat__tool_1_1ChainReestimation_1a5e6193f39f334fa033c75b62d44e71f7" refkind="member"><highlight class="normal"><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation&lt;Type&gt;::ChainReestimation</ref>(<ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811c" kindref="member">process_type</ref><sp/>itype<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_state<sp/>,</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_row<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init_flag)</highlight></codeline>
+<codeline lineno="106" refid="classstat__tool_1_1ChainReestimation_1a5e6193f39f334fa033c75b62d44e71f7" refkind="member"><highlight class="normal"><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation&lt;Type&gt;::ChainReestimation</ref>(<ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811c" kindref="member">process_type</ref><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">itype</ref><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">inb_state</ref><sp/>,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">inb_row</ref><sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">init_flag</ref>)</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>;</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" kindref="member">type</ref><sp/>=<sp/>itype;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref><sp/>=<sp/>inb_state;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref><sp/>=<sp/>inb_row;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>type<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">itype</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>nb_state<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">inb_state</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>nb_row<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">inb_row</ref>;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type)<sp/>{</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref><sp/>:</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type[<ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref>];</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>initial<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref>[nb_state];</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811cacde805a051500eee96bdfc0e82a6a3ac" kindref="member">EQUILIBRIUM</ref><sp/>:</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type[<ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>];</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>initial<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref>[nb_row];</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type*[<ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>];</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>;i++)<sp/>{</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>[i]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type[<ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref>];</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>transition<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref>*[nb_row];</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>&lt;<sp/>nb_row;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>transition[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref>[nb_state];</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(init_flag)<sp/>{</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a23f63395a7891154f9aa4f726578dfdb" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">init_flag</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" kindref="member">init</ref>();</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="134"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
-<codeline lineno="146" refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" kindref="member">ChainReestimation&lt;Type&gt;::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;chain_data)</highlight></codeline>
+<codeline lineno="146" refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" kindref="member">ChainReestimation&lt;Type&gt;::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>)</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>,<sp/>j;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>,<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref>;</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref><sp/>=<sp/>chain_data.<ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref>;</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref><sp/>=<sp/>chain_data.<ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>nb_state<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>.nb_state;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>nb_row<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>.nb_row;</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(chain_data.<ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" kindref="member">type</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>.initial)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type)<sp/>{</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref><sp/>:<sp/>{</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type[<ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref>];</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref>;i++)<sp/>{</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>[i]<sp/>=<sp/>chain_data.<ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>[i];</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>initial<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref>[nb_state];</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>&lt;<sp/>nb_state;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initial[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>]<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>.initial[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>];</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811cacde805a051500eee96bdfc0e82a6a3ac" kindref="member">EQUILIBRIUM</ref><sp/>:<sp/>{</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type[<ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>];</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>;i++)<sp/>{</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>[i]<sp/>=<sp/>chain_data.<ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>[i];</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>initial<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref>[nb_row];</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>&lt;<sp/>nb_row;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initial[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>]<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>.initial[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>];</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -298,102 +298,102 @@
 <codeline lineno="174"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"></highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>initial<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref>;</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type*[<ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>];</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>;i++)<sp/>{</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>[i]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Type[<ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref>];</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>transition<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref>*[nb_row];</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>&lt;<sp/>nb_row;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>transition[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref>[nb_state];</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref>;j++)<sp/>{</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>[i][j]<sp/>=<sp/>chain_data.<ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>[i][j];</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref><sp/>&lt;<sp/>nb_state;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>transition[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>][<ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref>]<sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>.transition[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>][<ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref>];</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="187"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="188"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
-<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="196"><highlight class="normal"></highlight></codeline>
 <codeline lineno="197"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
 <codeline lineno="198" refid="classstat__tool_1_1ChainReestimation_1aaaa83cd7e227873aa0c06937318fbb14" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aaaa83cd7e227873aa0c06937318fbb14" kindref="member">ChainReestimation&lt;Type&gt;::remove</ref>()</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
 <codeline lineno="200"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>initial;</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight></codeline>
-<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(transition)<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>;</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>;i++)<sp/>{</highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/><ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>[i];</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>&lt;<sp/>nb_row;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>transition[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>];</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/><ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>transition;</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="211"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="219"><highlight class="normal"></highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
 <codeline lineno="221" refid="classstat__tool_1_1ChainReestimation_1a1213c89212818e6357647a080645eef9" refkind="member"><highlight class="normal"><ref refid="classstat__tool_1_1ChainReestimation_1a1213c89212818e6357647a080645eef9" kindref="member">ChainReestimation&lt;Type&gt;::~ChainReestimation</ref>()</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"></highlight></codeline>
 <codeline lineno="223"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aaaa83cd7e227873aa0c06937318fbb14" kindref="member">remove</ref>();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>remove();</highlight></codeline>
 <codeline lineno="225"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"></highlight></codeline>
 <codeline lineno="227"><highlight class="normal"></highlight></codeline>
-<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="237"><highlight class="normal"></highlight></codeline>
 <codeline lineno="238"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
-<codeline lineno="239" refid="classstat__tool_1_1ChainReestimation_1afb5383372e7c666af2875e593bc0cdbd" refkind="member"><highlight class="normal"><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation&lt;Type&gt;</ref>&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1afb5383372e7c666af2875e593bc0cdbd" kindref="member">ChainReestimation&lt;Type&gt;::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;chain_data)</highlight></codeline>
+<codeline lineno="239" refid="classstat__tool_1_1ChainReestimation_1afb5383372e7c666af2875e593bc0cdbd" refkind="member"><highlight class="normal"><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref>&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1afb5383372e7c666af2875e593bc0cdbd" kindref="member">ChainReestimation&lt;Type&gt;::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>)</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"></highlight></codeline>
 <codeline lineno="241"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;chain_data<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aaaa83cd7e227873aa0c06937318fbb14" kindref="member">remove</ref>();</highlight></codeline>
-<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" kindref="member">copy</ref>(chain_data);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref><sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>remove();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation_1a7f8cef439c9fbb030ad1617c0c0adbbf" kindref="member">copy</ref>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>);</highlight></codeline>
 <codeline lineno="245"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="246"><highlight class="normal"></highlight></codeline>
 <codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="248"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="249"><highlight class="normal"></highlight></codeline>
 <codeline lineno="250"><highlight class="normal"></highlight></codeline>
-<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="258"><highlight class="normal"></highlight></codeline>
 <codeline lineno="259"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
-<codeline lineno="260" refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" refkind="member"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" kindref="member">ChainReestimation&lt;Type&gt;::print</ref>(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="260" refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" refkind="member"><highlight class="normal"><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ostream</ref>&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" kindref="member">ChainReestimation&lt;Type&gt;::print</ref>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">ostream</ref><sp/>&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="261"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="262"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>,<sp/>j;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>,<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref>;</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"></highlight></codeline>
 <codeline lineno="265"><highlight class="normal"></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/>os<sp/>&lt;&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespacestat__tool_1a402794ded79b6eafc78781e40c23b4a8" kindref="member">STAT_label</ref>[<ref refid="namespacestat__tool_1a3c004532d5daffc277feeada6e9173bfaa7686849e54485c783f42a137f3fc4e9" kindref="member">STATL_STATES</ref>]<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref><sp/>&lt;&lt;<sp/>nb_state<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespacestat__tool_1a402794ded79b6eafc78781e40c23b4a8" kindref="member">STAT_label</ref>[<ref refid="namespacestat__tool_1a3c004532d5daffc277feeada6e9173bfaa7686849e54485c783f42a137f3fc4e9" kindref="member">STATL_STATES</ref>]<sp/>&lt;&lt;<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">endl</ref>;</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"></highlight></codeline>
-<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" kindref="member">type</ref><sp/>==<sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\ninitial<sp/>states&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(initial)<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\ninitial<sp/>states&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">endl</ref>;</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nmemories&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nmemories&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">endl</ref>;</highlight></codeline>
 <codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"></highlight></codeline>
-<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/>(<ref refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" kindref="member">type</ref><sp/>==<sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref><sp/>?<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref><sp/>:<sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>);i++)<sp/>{</highlight></codeline>
-<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>[i]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>&lt;<sp/>(type<sp/>==<sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5" kindref="member">ORDINARY</ref><sp/>?<sp/>nb_state<sp/>:<sp/>nb_row);<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref><sp/>&lt;&lt;<sp/>initial[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"></highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\ntransition&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>;i++)<sp/>{</highlight></codeline>
-<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref>;j++)<sp/>{</highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>[i][j]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n\ntransition&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">endl</ref>;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref><sp/>&lt;<sp/>nb_row;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref><sp/>=<sp/>0;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref><sp/>&lt;<sp/>nb_state;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref><sp/>&lt;&lt;<sp/>transition[<ref refid="classstat__tool_1_1Reestimation" kindref="compound">i</ref>][<ref refid="classstat__tool_1_1Reestimation" kindref="compound">j</ref>]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref><sp/>&lt;&lt;<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">endl</ref>;</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="288"><highlight class="normal"><sp/><sp/>os<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref><sp/>&lt;&lt;<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">endl</ref>;</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"></highlight></codeline>
-<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref>;</highlight></codeline>
 <codeline lineno="291"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"></highlight></codeline>
 <codeline lineno="293"><highlight class="normal"></highlight></codeline>
@@ -403,6 +403,6 @@
 <codeline lineno="297"><highlight class="normal"></highlight></codeline>
 <codeline lineno="298"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp"/>
   </compounddef>
 </doxygen>

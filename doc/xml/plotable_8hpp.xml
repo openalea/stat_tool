@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="plotable_8hpp" kind="file" language="C++">
     <compoundname>plotable.hpp</compoundname>
-    <includedby refid="plotable_8h" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h</includedby>
+    <includedby refid="plotable_8h" local="yes">/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h</includedby>
     <invincdepgraph>
       <node id="40">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/categorical_process.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/categorical_process.cpp</label>
         <link refid="categorical__process_8cpp"/>
       </node>
       <node id="41">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain.cpp</label>
         <link refid="chain_8cpp"/>
       </node>
       <node id="42">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp</label>
         <link refid="chain__algorithms_8cpp"/>
       </node>
       <node id="21">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp</label>
         <link refid="clusters_8cpp"/>
       </node>
       <node id="6">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/compound.cpp</label>
         <link refid="compound_8cpp"/>
       </node>
       <node id="5">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/compound.h</label>
         <link refid="compound_8h"/>
         <childnode refid="6" relation="include">
         </childnode>
@@ -33,29 +33,29 @@
         </childnode>
       </node>
       <node id="7">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/compound_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/compound_algorithms.cpp</label>
         <link refid="compound__algorithms_8cpp"/>
       </node>
       <node id="25">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp</label>
         <link refid="continuous__parametric_8cpp"/>
       </node>
       <node id="26">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_estimation.hpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric_estimation.hpp</label>
         <link refid="continuous__parametric__estimation_8hpp"/>
         <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="43">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp</label>
         <link refid="continuous__parametric__process_8cpp"/>
       </node>
       <node id="9">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp</label>
         <link refid="convolution_8cpp"/>
       </node>
       <node id="8">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h</label>
         <link refid="convolution_8h"/>
         <childnode refid="9" relation="include">
         </childnode>
@@ -63,15 +63,15 @@
         </childnode>
       </node>
       <node id="10">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution_algorithms.cpp</label>
         <link refid="convolution__algorithms_8cpp"/>
       </node>
       <node id="12">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.cpp</label>
         <link refid="curves_8cpp"/>
       </node>
       <node id="11">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/curves.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/curves.h</label>
         <link refid="curves_8h"/>
         <childnode refid="12" relation="include">
         </childnode>
@@ -81,15 +81,15 @@
         </childnode>
       </node>
       <node id="22">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/dendrogram.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/dendrogram.cpp</label>
         <link refid="dendrogram_8cpp"/>
       </node>
       <node id="16">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_mixture.cpp</label>
         <link refid="discrete__mixture_8cpp"/>
       </node>
       <node id="15">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_mixture.h</label>
         <link refid="discrete__mixture_8h"/>
         <childnode refid="16" relation="include">
         </childnode>
@@ -101,23 +101,23 @@
         </childnode>
       </node>
       <node id="17">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_mixture_algorithms.cpp</label>
         <link refid="discrete__mixture__algorithms_8cpp"/>
       </node>
       <node id="34">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric.cpp</label>
         <link refid="discrete__parametric_8cpp"/>
       </node>
       <node id="44">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp</label>
         <link refid="discrete__parametric__process_8cpp"/>
       </node>
       <node id="23">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.cpp</label>
         <link refid="distance__matrix_8cpp"/>
       </node>
       <node id="20">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h</label>
         <link refid="distance__matrix_8h"/>
         <childnode refid="21" relation="include">
         </childnode>
@@ -129,11 +129,11 @@
         </childnode>
       </node>
       <node id="13">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution.cpp</label>
         <link refid="distribution_8cpp"/>
       </node>
       <node id="33">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution.h</label>
         <link refid="distribution_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
@@ -157,27 +157,27 @@
         </childnode>
       </node>
       <node id="35">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distribution_algorithms.cpp</label>
         <link refid="distribution__algorithms_8cpp"/>
       </node>
       <node id="14">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution1.cpp</label>
         <link refid="frequency__distribution1_8cpp"/>
       </node>
       <node id="36">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/frequency_distribution2.cpp</label>
         <link refid="frequency__distribution2_8cpp"/>
       </node>
       <node id="37">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/histogram.cpp</label>
         <link refid="histogram_8cpp"/>
       </node>
       <node id="38">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/interface.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/interface.cpp</label>
         <link refid="interface_8cpp"/>
       </node>
       <node id="39">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h</label>
         <link refid="markovian_8h"/>
         <childnode refid="40" relation="include">
         </childnode>
@@ -201,15 +201,15 @@
         </childnode>
       </node>
       <node id="27">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/mixture.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/mixture.h</label>
         <link refid="mixture_8h"/>
       </node>
       <node id="18">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp</label>
         <link refid="multivariate__mixture_8cpp"/>
       </node>
       <node id="45">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h</label>
         <link refid="multivariate__mixture_8h"/>
         <childnode refid="18" relation="include">
         </childnode>
@@ -217,15 +217,15 @@
         </childnode>
       </node>
       <node id="19">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp</label>
         <link refid="multivariate__mixture__algorithms_8cpp"/>
       </node>
       <node id="3">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.cpp</label>
         <link refid="plotable_8cpp"/>
       </node>
       <node id="2">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.h</label>
         <link refid="plotable_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -233,23 +233,23 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.hpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.hpp</label>
         <link refid="plotable_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="29">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp</label>
         <link refid="regression_8cpp"/>
       </node>
       <node id="28">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h</label>
         <link refid="regression_8h"/>
         <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="4">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h</label>
         <link refid="stat__tools_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
@@ -283,23 +283,23 @@
         </childnode>
       </node>
       <node id="46">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/test.cpp</label>
         <link refid="test_8cpp"/>
       </node>
       <node id="30">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_algorithms.cpp</label>
         <link refid="vector__algorithms_8cpp"/>
       </node>
       <node id="31">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_distance.cpp</label>
         <link refid="vector__distance_8cpp"/>
       </node>
       <node id="32">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vectors.cpp</label>
         <link refid="vectors_8cpp"/>
       </node>
       <node id="24">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vectors.h</label>
         <link refid="vectors_8h"/>
         <childnode refid="25" relation="include">
         </childnode>
@@ -366,18 +366,18 @@
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PLOTABLE_TCC</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLOTABLE_TCC</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>type&gt;<sp/>TemplateMultiPlotSet&lt;type&gt;::TemplateMultiPlotSet(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="41" refid="classstat__tool_1_1TemplateMultiPlotSet_1aab187c0f9d5829aef8abb4755b6bc601" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>type&gt;<sp/><ref refid="classstat__tool_1_1TemplateMultiPlotSet" kindref="compound">TemplateMultiPlotSet&lt;type&gt;::TemplateMultiPlotSet</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
 <codeline lineno="42"><highlight class="normal">:multiplots(size)</highlight></codeline>
 <codeline lineno="43"><highlight class="normal">{};</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>type&gt;<sp/>TemplateMultiPlotSet&lt;type&gt;::TemplateMultiPlotSet(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_variable)</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">:multiplots(size),<sp/>variable_nb_viewpoint(inb_variable)<sp/>,<sp/>variable(size),<sp/>viewpoint(size)</highlight></codeline>
+<codeline lineno="45" refid="classstat__tool_1_1TemplateMultiPlotSet_1abe6c526b20c1efe0625d03f89736d777" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>type&gt;<sp/><ref refid="classstat__tool_1_1TemplateMultiPlotSet_1aab187c0f9d5829aef8abb4755b6bc601" kindref="member">TemplateMultiPlotSet&lt;type&gt;::TemplateMultiPlotSet</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">inb_variable</ref>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">:multiplots(size),<sp/>variable_nb_viewpoint(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">inb_variable</ref>)<sp/>,<sp/>variable(size),<sp/>viewpoint(size)</highlight></codeline>
 <codeline lineno="47"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/>nb_variable<sp/>=<sp/>inb_variable;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1TemplateMultiPlotSet_1ac2f3d284c90b54a5a8adc00bb80a2c13" kindref="member">nb_variable</ref><sp/>=<sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">inb_variable</ref>;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/plotable.hpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/plotable.hpp"/>
   </compounddef>
 </doxygen>

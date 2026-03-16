@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="test_8cpp" kind="file" language="C++">
     <compoundname>test.cpp</compoundname>
     <includes local="no">boost/math/distributions/normal.hpp</includes>
@@ -70,7 +70,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/test.cpp</label>
         <link refid="test_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -188,7 +188,7 @@
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><ref refid="classstat__tool_1_1Test_1a53e16fea80d59dddd532c8240796450f" kindref="member">Test::Test</ref>(<ref refid="namespacestat__tool_1a50fa429d0c57d8a72874a89fd1800836" kindref="member">test_distribution</ref><sp/>iident<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ione_side)</highlight></codeline>
@@ -203,7 +203,7 @@
 <codeline lineno="76"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><ref refid="classstat__tool_1_1Test_1a53e16fea80d59dddd532c8240796450f" kindref="member">Test::Test</ref>(<ref refid="namespacestat__tool_1a50fa429d0c57d8a72874a89fd1800836" kindref="member">test_distribution</ref><sp/>iident<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ione_side<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idf1<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idf2<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ivalue)</highlight></codeline>
@@ -218,7 +218,7 @@
 <codeline lineno="100"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><ref refid="classstat__tool_1_1Test_1a53e16fea80d59dddd532c8240796450f" kindref="member">Test::Test</ref>(<ref refid="namespacestat__tool_1a50fa429d0c57d8a72874a89fd1800836" kindref="member">test_distribution</ref><sp/>iident<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ione_side<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idf1<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idf2<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ivalue<sp/>,</highlight></codeline>
@@ -292,10 +292,10 @@
 <codeline lineno="184"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"></highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
-<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="194"><highlight class="normal"></highlight></codeline>
-<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1af9de7b9f8f3692f16357e654b5e58389" kindref="member">Test::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref><sp/>&amp;test)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1af9de7b9f8f3692f16357e654b5e58389" kindref="member">Test::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Test<sp/>&amp;test)</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"></highlight></codeline>
 <codeline lineno="197"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Test_1a20591c1170f8182fb90d2484967cd987" kindref="member">ident</ref><sp/>=<sp/>test.ident;</highlight></codeline>
@@ -307,10 +307,10 @@
 <codeline lineno="204"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight></codeline>
 <codeline lineno="206"><highlight class="normal"></highlight></codeline>
-<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="216"><highlight class="normal"></highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref>&amp;<sp/><ref refid="classstat__tool_1_1Test_1a55dadf13167e4aac462087b242590184" kindref="member">Test::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test" kindref="compound">Test</ref><sp/>&amp;test)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">Test&amp;<sp/><ref refid="classstat__tool_1_1Test_1a55dadf13167e4aac462087b242590184" kindref="member">Test::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Test<sp/>&amp;test)</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"></highlight></codeline>
 <codeline lineno="219"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;test<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -321,7 +321,7 @@
 <codeline lineno="225"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"></highlight></codeline>
 <codeline lineno="227"><highlight class="normal"></highlight></codeline>
-<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="237"><highlight class="normal"></highlight></codeline>
 <codeline lineno="238"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1Test_1ae0de4034c2271bd694b0ba447d2fa34c" kindref="member">Test::ascii_print</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>comment_flag<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reference_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -443,7 +443,7 @@
 <codeline lineno="354"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="355"><highlight class="normal"></highlight></codeline>
 <codeline lineno="356"><highlight class="normal"></highlight></codeline>
-<codeline lineno="357"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="364"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="365"><highlight class="normal"></highlight></codeline>
 <codeline lineno="366"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1Test_1ac9434e6b680d2052f77848ddc016734b" kindref="member">Test::spreadsheet_print</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reference_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -554,7 +554,7 @@
 <codeline lineno="471"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="472"><highlight class="normal"></highlight></codeline>
 <codeline lineno="473"><highlight class="normal"></highlight></codeline>
-<codeline lineno="474"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="479"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="480"><highlight class="normal"></highlight></codeline>
 <codeline lineno="481"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1a71d5eefed08992900592722b2c939c07" kindref="member">Test::standard_normal_critical_probability_computation</ref>()</highlight></codeline>
@@ -572,7 +572,7 @@
 <codeline lineno="493"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="494"><highlight class="normal"></highlight></codeline>
 <codeline lineno="495"><highlight class="normal"></highlight></codeline>
-<codeline lineno="496"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="501"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="502"><highlight class="normal"></highlight></codeline>
 <codeline lineno="503"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1acaee08f9fa96e9300a7570deb90573f3" kindref="member">Test::standard_normal_value_computation</ref>()</highlight></codeline>
@@ -585,7 +585,7 @@
 <codeline lineno="510"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="511"><highlight class="normal"></highlight></codeline>
 <codeline lineno="512"><highlight class="normal"></highlight></codeline>
-<codeline lineno="513"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="518"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="519"><highlight class="normal"></highlight></codeline>
 <codeline lineno="520"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1ae1bab38ce7819e354b3441ef44885aed" kindref="member">Test::chi2_critical_probability_computation</ref>()</highlight></codeline>
@@ -604,7 +604,7 @@
 <codeline lineno="533"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="534"><highlight class="normal"></highlight></codeline>
 <codeline lineno="535"><highlight class="normal"></highlight></codeline>
-<codeline lineno="536"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="541"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="542"><highlight class="normal"></highlight></codeline>
 <codeline lineno="543"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1a8a8cc1b74a6a46d08e4b9c21ca199323" kindref="member">Test::chi2_value_computation</ref>()</highlight></codeline>
@@ -623,7 +623,7 @@
 <codeline lineno="556"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="557"><highlight class="normal"></highlight></codeline>
 <codeline lineno="558"><highlight class="normal"></highlight></codeline>
-<codeline lineno="559"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="564"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="565"><highlight class="normal"></highlight></codeline>
 <codeline lineno="566"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1acf0b5da34ffebc1a577473bdcae00657" kindref="member">Test::F_critical_probability_computation</ref>()</highlight></codeline>
@@ -642,7 +642,7 @@
 <codeline lineno="579"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="580"><highlight class="normal"></highlight></codeline>
 <codeline lineno="581"><highlight class="normal"></highlight></codeline>
-<codeline lineno="582"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="587"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="588"><highlight class="normal"></highlight></codeline>
 <codeline lineno="589"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1a744cd74f33f9cf3fd7ec59a0b136e58a" kindref="member">Test::F_value_computation</ref>()</highlight></codeline>
@@ -661,7 +661,7 @@
 <codeline lineno="602"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="603"><highlight class="normal"></highlight></codeline>
 <codeline lineno="604"><highlight class="normal"></highlight></codeline>
-<codeline lineno="605"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="610"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="611"><highlight class="normal"></highlight></codeline>
 <codeline lineno="612"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1a8a2b31cc3d12b3e3c5c39c3719b3e721" kindref="member">Test::t_critical_probability_computation</ref>()</highlight></codeline>
@@ -685,7 +685,7 @@
 <codeline lineno="630"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="631"><highlight class="normal"></highlight></codeline>
 <codeline lineno="632"><highlight class="normal"></highlight></codeline>
-<codeline lineno="633"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="638"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="639"><highlight class="normal"></highlight></codeline>
 <codeline lineno="640"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Test_1a8129ecdd350a444f02f546b303a9515c" kindref="member">Test::t_value_computation</ref>()</highlight></codeline>
@@ -706,6 +706,6 @@
 <codeline lineno="655"><highlight class="normal"></highlight></codeline>
 <codeline lineno="656"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/test.cpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/test.cpp"/>
   </compounddef>
 </doxygen>

@@ -3,7 +3,7 @@
 :Author: Thomas Cokelaer, Thomas.Cokelaer@inria.fr
 
 """
-from .tools import interface, runTestClass
+from .tools import DISABLE_PLOT, interface, runTestClass
 
 from openalea.stat_tool.vectors import VectorDistance
 

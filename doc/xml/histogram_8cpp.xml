@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="histogram_8cpp" kind="file" language="C++">
     <compoundname>histogram.cpp</compoundname>
     <includes local="no">cmath</includes>
@@ -14,7 +14,7 @@
         <link refid="config_8h"/>
       </node>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/histogram.cpp</label>
         <link refid="histogram_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" line="38" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/histogram.cpp" line="38" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/histogram.cpp" bodystart="38" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -197,7 +197,7 @@
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><ref refid="classstat__tool_1_1Histogram_1ae3deac3bee45246f6cd421b23b424e51" kindref="member">Histogram::Histogram</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_bin<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init_flag)</highlight></codeline>
@@ -230,54 +230,54 @@
 <codeline lineno="91"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><ref refid="classstat__tool_1_1Histogram_1ae3deac3bee45246f6cd421b23b424e51" kindref="member">Histogram::Histogram</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref><sp/>&amp;histo)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><ref refid="classstat__tool_1_1Histogram_1ae3deac3bee45246f6cd421b23b424e51" kindref="member">Histogram::Histogram</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FrequencyDistribution<sp/>&amp;histo)</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>,<sp/>j;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1af9258e0084fb29376d364a71067b689e" kindref="member">nb_element</ref><sp/>=<sp/>histo.nb_element;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1ae66903308348f6812f4fd901314994cf" kindref="member">max</ref><sp/>=<sp/>histo.max;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1af9258e0084fb29376d364a71067b689e" kindref="member">nb_element</ref><sp/>=<sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1ae66903308348f6812f4fd901314994cf" kindref="member">max</ref><sp/>=<sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" kindref="member">max</ref>;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a2346d5be01a9a6a7302f863a86460e1f" kindref="member">bin_width</ref><sp/>=<sp/>histo.min_interval_computation();</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a44f75a33e38a06354ce481065cdff12e" kindref="member">nb_bin</ref><sp/>=<sp/>(histo.nb_value<sp/>-<sp/>1<sp/>-<sp/>histo.offset)<sp/>/<sp/><ref refid="classstat__tool_1_1Histogram_1a2346d5be01a9a6a7302f863a86460e1f" kindref="member">bin_width</ref><sp/>+<sp/>1;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a1e854917dd48d643b545ffef5d0ebc56" kindref="member">frequency</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[<ref refid="classstat__tool_1_1Histogram_1a44f75a33e38a06354ce481065cdff12e" kindref="member">nb_bin</ref>];</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>histo.offset;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/><ref refid="classstat__tool_1_1Histogram_1a44f75a33e38a06354ce481065cdff12e" kindref="member">nb_bin</ref>;j++)<sp/>{</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a1e854917dd48d643b545ffef5d0ebc56" kindref="member">frequency</ref>[j]<sp/>=<sp/>histo.frequency[i];</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a1e854917dd48d643b545ffef5d0ebc56" kindref="member">frequency</ref>[j]<sp/>=<sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>[i];</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>i<sp/>+=<sp/><ref refid="classstat__tool_1_1Histogram_1a2346d5be01a9a6a7302f863a86460e1f" kindref="member">bin_width</ref>;</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a2def5f5c155998550c7edefef288026c" kindref="member">type</ref><sp/>=<sp/><ref refid="namespacestat__tool_1aad1723437ec333a77ad22fe7b332adbca7c351cc826bfed4d2c632eb491c2d256" kindref="member">INT_VALUE</ref>;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a0d1e717ad01ad58617467dec2fbbebc5" kindref="member">min_value</ref><sp/>=<sp/>histo.offset;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a97308edbdc77c8efb5613d40e4f12f7b" kindref="member">max_value</ref><sp/>=<sp/>histo.nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a0d1e717ad01ad58617467dec2fbbebc5" kindref="member">min_value</ref><sp/>=<sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a97308edbdc77c8efb5613d40e4f12f7b" kindref="member">max_value</ref><sp/>=<sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="126"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram_1a245f2570a93b3236b7e0a9b3348fd3ff" kindref="member">Histogram::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref><sp/>&amp;histo)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram_1a245f2570a93b3236b7e0a9b3348fd3ff" kindref="member">Histogram::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Histogram<sp/>&amp;histo)</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>
 <codeline lineno="139"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1af9258e0084fb29376d364a71067b689e" kindref="member">nb_element</ref><sp/>=<sp/>histo.nb_element;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1af9258e0084fb29376d364a71067b689e" kindref="member">nb_element</ref><sp/>=<sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>;</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a44f75a33e38a06354ce481065cdff12e" kindref="member">nb_bin</ref><sp/>=<sp/>histo.nb_bin;</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a2346d5be01a9a6a7302f863a86460e1f" kindref="member">bin_width</ref><sp/>=<sp/>histo.bin_width;</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1ae66903308348f6812f4fd901314994cf" kindref="member">max</ref><sp/>=<sp/>histo.max;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1ae66903308348f6812f4fd901314994cf" kindref="member">max</ref><sp/>=<sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1a858f8d310c5fbc6fa5949400061b20c1" kindref="member">max</ref>;</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a1e854917dd48d643b545ffef5d0ebc56" kindref="member">frequency</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[<ref refid="classstat__tool_1_1Histogram_1a44f75a33e38a06354ce481065cdff12e" kindref="member">nb_bin</ref>];</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/><ref refid="classstat__tool_1_1Histogram_1a44f75a33e38a06354ce481065cdff12e" kindref="member">nb_bin</ref>;i++)<sp/>{</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a1e854917dd48d643b545ffef5d0ebc56" kindref="member">frequency</ref>[i]<sp/>=<sp/>histo.frequency[i];</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a1e854917dd48d643b545ffef5d0ebc56" kindref="member">frequency</ref>[i]<sp/>=<sp/>histo.<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>[i];</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
 <codeline lineno="154"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Histogram_1a2def5f5c155998550c7edefef288026c" kindref="member">type</ref><sp/>=<sp/>histo.type;</highlight></codeline>
@@ -286,7 +286,7 @@
 <codeline lineno="157"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><ref refid="classstat__tool_1_1Histogram_1acc16ccca22755641776baa22b0a1ef71" kindref="member">Histogram::~Histogram</ref>()</highlight></codeline>
@@ -296,10 +296,10 @@
 <codeline lineno="170"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref>&amp;<sp/><ref refid="classstat__tool_1_1Histogram_1a744dd46bf0508ab9125a790b4828092d" kindref="member">Histogram::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref><sp/>&amp;histo)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">Histogram&amp;<sp/><ref refid="classstat__tool_1_1Histogram_1a744dd46bf0508ab9125a790b4828092d" kindref="member">Histogram::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Histogram<sp/>&amp;histo)</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"></highlight></codeline>
 <codeline lineno="185"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;histo<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -312,7 +312,7 @@
 <codeline lineno="193"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"></highlight></codeline>
 <codeline lineno="195"><highlight class="normal"></highlight></codeline>
-<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="206"><highlight class="normal"></highlight></codeline>
 <codeline lineno="207"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1ab98bcf9f8381c9ea3324fb8e26cc8f84" kindref="member">column_width</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>min_value<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_value)</highlight></codeline>
@@ -340,7 +340,7 @@
 <codeline lineno="229"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight></codeline>
 <codeline lineno="231"><highlight class="normal"></highlight></codeline>
-<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="240"><highlight class="normal"></highlight></codeline>
 <codeline lineno="241"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1Histogram_1aa41a2f70a338c01d53237439eb3c8f9c" kindref="member">Histogram::ascii_print</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>comment_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -387,7 +387,7 @@
 <codeline lineno="282"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="283"><highlight class="normal"></highlight></codeline>
 <codeline lineno="284"><highlight class="normal"></highlight></codeline>
-<codeline lineno="285"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="291"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="292"><highlight class="normal"></highlight></codeline>
 <codeline lineno="293"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1Histogram_1a2c1f719074e6d3c7c9fd85bbdd3e1073" kindref="member">Histogram::spreadsheet_print</ref>(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -417,7 +417,7 @@
 <codeline lineno="317"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"></highlight></codeline>
 <codeline lineno="319"><highlight class="normal"></highlight></codeline>
-<codeline lineno="320"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="328"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="329"><highlight class="normal"></highlight></codeline>
 <codeline lineno="330"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram_1aa2ffb0bc648e6e65328b7fd1e223d157" kindref="member">Histogram::plot_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -453,10 +453,10 @@
 <codeline lineno="360"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="361"><highlight class="normal"></highlight></codeline>
 <codeline lineno="362"><highlight class="normal"></highlight></codeline>
-<codeline lineno="363"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="369"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="370"><highlight class="normal"></highlight></codeline>
-<codeline lineno="371"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram_1acf087d3bc6cae9b167f0812ea97ce664" kindref="member">Histogram::plotable_write</ref>(<ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref><sp/>&amp;plot)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram_1acf087d3bc6cae9b167f0812ea97ce664" kindref="member">Histogram::plotable_write</ref>(SinglePlot<sp/>&amp;plot)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="372"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="373"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="374"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
@@ -481,7 +481,7 @@
 <codeline lineno="393"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="394"><highlight class="normal"></highlight></codeline>
 <codeline lineno="395"><highlight class="normal"></highlight></codeline>
-<codeline lineno="396"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="400"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="401"><highlight class="normal"></highlight></codeline>
 <codeline lineno="402"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram_1ab91da04124e718ae78f5d0de3d28063d" kindref="member">Histogram::max_computation</ref>()</highlight></codeline>
@@ -499,7 +499,7 @@
 <codeline lineno="414"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="415"><highlight class="normal"></highlight></codeline>
 <codeline lineno="416"><highlight class="normal"></highlight></codeline>
-<codeline lineno="417"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="423"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="424"><highlight class="normal"></highlight></codeline>
 <codeline lineno="425"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="classstat__tool_1_1Histogram_1ad3033ae4237117dfc32917b7d91df35b" kindref="member">Histogram::cumul_computation</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -522,6 +522,6 @@
 <codeline lineno="442"><highlight class="normal"></highlight></codeline>
 <codeline lineno="443"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/histogram.cpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/histogram.cpp"/>
   </compounddef>
 </doxygen>

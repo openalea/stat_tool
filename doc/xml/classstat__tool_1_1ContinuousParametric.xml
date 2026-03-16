@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1ContinuousParametric" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::ContinuousParametric</compoundname>
     <includes refid="stat__tools_8h" local="no">stat_tools.h</includes>
@@ -17,10 +17,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="986" column="27" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="986" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="986" column="27" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="986" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a7dcf88ea2e0c57f1eac697cfa901d7f9" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::shape</definition>
         <argsstring></argsstring>
         <name>shape</name>
@@ -32,10 +32,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="988" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="988" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="988" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="988" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a02bf96b6d207aceaca9662a489a373cf" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::location</definition>
         <argsstring></argsstring>
         <name>location</name>
@@ -47,10 +47,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="989" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="989" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="989" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="989" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a9d9710aa2297d3f6f7240dbce7af5fbd" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::intercept</definition>
         <argsstring></argsstring>
         <name>intercept</name>
@@ -62,10 +62,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="990" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="990" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="990" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="990" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a1df276919add2b58ccfaf4443ea14027" prot="public" static="no" mutable="no">
-        <type>union <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">stat_tool::ContinuousParametric</ref></type>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a21b75557481ae3055e7d660994a822a1" prot="public" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">union</ref> <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">stat_tool::ContinuousParametric</ref></type>
         <definition>union stat_tool::ContinuousParametric stat_tool::ContinuousParametric</definition>
         <argsstring></argsstring>
         <name></name>
@@ -76,10 +76,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="991" column="5"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="991" column="5"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a6a5cb1585cb99375f44f873900609ec4" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::scale</definition>
         <argsstring></argsstring>
         <name>scale</name>
@@ -91,10 +91,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="993" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="993" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="993" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="993" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a84a353be909c60c0f95616325371f870" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::dispersion</definition>
         <argsstring></argsstring>
         <name>dispersion</name>
@@ -106,10 +106,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="994" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="994" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="994" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="994" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1aa246c3edb578e9d0c374fa6f1763941e" prot="public" static="no" mutable="no">
-        <type>union <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">stat_tool::ContinuousParametric</ref></type>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1ae92b9d4536800884194a5b66c43c91f6" prot="public" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">union</ref> <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">stat_tool::ContinuousParametric</ref></type>
         <definition>union stat_tool::ContinuousParametric stat_tool::ContinuousParametric</definition>
         <argsstring></argsstring>
         <name></name>
@@ -120,10 +120,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="995" column="5"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="995" column="5"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a4b4e49ac0b568635d650ecfd51026cc7" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::zero_probability</definition>
         <argsstring></argsstring>
         <name>zero_probability</name>
@@ -135,10 +135,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="997" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="997" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="997" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="997" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a92701a7ddce8da7fe61c9749391d6ebe" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::slope</definition>
         <argsstring></argsstring>
         <name>slope</name>
@@ -150,10 +150,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="998" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="998" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="998" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="998" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1aa1dc55e81fa329ad5d4747faa207fe5c" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::autoregressive_coeff</definition>
         <argsstring></argsstring>
         <name>autoregressive_coeff</name>
@@ -165,10 +165,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="999" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="999" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="999" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="999" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1ac346972608ccff08c7ffd1aeb38c5f09" prot="public" static="no" mutable="no">
-        <type>union <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">stat_tool::ContinuousParametric</ref></type>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a0bc624dc6fa1380294d529191d809f59" prot="public" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">union</ref> <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">stat_tool::ContinuousParametric</ref></type>
         <definition>union stat_tool::ContinuousParametric stat_tool::ContinuousParametric</definition>
         <argsstring></argsstring>
         <name></name>
@@ -179,10 +179,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1000" column="5"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1000" column="5"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::min_value</definition>
         <argsstring></argsstring>
         <name>min_value</name>
@@ -194,10 +194,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1001" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1001" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1001" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1001" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::max_value</definition>
         <argsstring></argsstring>
         <name>max_value</name>
@@ -209,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1002" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1002" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1002" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1002" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1acafc68119ab666c0d3f1ef5925c8f9e7" prot="public" static="no" mutable="no">
         <type><ref refid="namespacestat__tool_1a969c68639e95529b91ba762a4e7d09b4" kindref="member">angle_unit</ref></type>
@@ -224,10 +224,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1003" column="16" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1003" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1003" column="16" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1003" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a7d7ffe45f87cd8a7ee61809c112bea1a" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::slope_standard_deviation</definition>
         <argsstring></argsstring>
         <name>slope_standard_deviation</name>
@@ -239,10 +239,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1004" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1004" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1004" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1004" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a61380690f9a2d4945e1b52176c70f1ce" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::sample_size</definition>
         <argsstring></argsstring>
         <name>sample_size</name>
@@ -254,10 +254,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1005" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1005" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1005" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1005" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1aa3bb471c93d944e749e4d9bb7f7285cf" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::correlation</definition>
         <argsstring></argsstring>
         <name>correlation</name>
@@ -269,10 +269,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1007" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1007" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1007" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1007" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a0138fc7e39e8e257e1f08cc522855b82" prot="public" static="no" mutable="no">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::determination_coeff</definition>
         <argsstring></argsstring>
         <name>determination_coeff</name>
@@ -284,10 +284,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1008" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1008" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1008" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1008" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1a2bfaeaef284d580aa291543ecf984411" prot="public" static="no" mutable="no">
-        <type>union <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">stat_tool::ContinuousParametric</ref></type>
+      <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1ab5f2583bef4c9e4dcba2223a7a07ac13" prot="public" static="no" mutable="no">
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">union</ref> <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">stat_tool::ContinuousParametric</ref></type>
         <definition>union stat_tool::ContinuousParametric stat_tool::ContinuousParametric</definition>
         <argsstring></argsstring>
         <name></name>
@@ -298,10 +298,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1009" column="5"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1009" column="5"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ContinuousParametric_1ab046dfbbfae7e3401b8b3b9ff1c50979" prot="public" static="no" mutable="no">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double* stat_tool::ContinuousParametric::cumul</definition>
         <argsstring></argsstring>
         <name>cumul</name>
@@ -313,18 +313,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1010" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1010" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1010" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1010" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a5e9874de97d0e285fd02182295d16f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::ContinuousParametric::copy</definition>
         <argsstring>(const ContinuousParametric &amp;dist)</argsstring>
         <name>copy</name>
         <qualifiedname>stat_tool::ContinuousParametric::copy</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> &amp;</type>
           <declname>dist</declname>
         </param>
         <briefdescription>
@@ -344,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1012" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="110" bodyend="140"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1012" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="110" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1ae62d6c1cc9fa506543603de360aa7f89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -358,17 +358,17 @@
           <defval><ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33ae397c46a5df15796f148fdfa4bf0c96f" kindref="member">GAUSSIAN</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>ilocation</declname>
           <defval><ref refid="namespacestat__tool_1a710852f459bd0493d0eaaac065dab938" kindref="member">D_INF</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>idispersion</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>izero_probability</declname>
           <defval><ref refid="namespacestat__tool_1a854b76a447951646c7c5479f8deb1955" kindref="member">D_DEFAULT</ref></defval>
         </param>
@@ -426,7 +426,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1014" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="80" bodyend="99"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1014" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="80" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1ad8a96c5e619795348d9ba39e31f66bc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -435,7 +435,7 @@
         <name>ContinuousParametric</name>
         <qualifiedname>stat_tool::ContinuousParametric::ContinuousParametric</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> &amp;</type>
           <declname>dist</declname>
         </param>
         <briefdescription>
@@ -444,7 +444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1017" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1017" bodyend="1018"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1017" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1017" bodyend="1018"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a692864a932bdf1ddfa8c69282f6448c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -459,7 +459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1019" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="149" bodyend="153"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1019" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="149" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a0032621c17b107ce9a0d08924982d0bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> &amp;</type>
@@ -468,7 +468,7 @@
         <name>operator=</name>
         <qualifiedname>stat_tool::ContinuousParametric::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref> &amp;</type>
           <defname>dist</defname>
         </param>
         <briefdescription>
@@ -490,7 +490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1020" column="26" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="166" bodyend="175"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1020" column="26" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="166" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a15deb35d8be42ab2b34d185fa970c7a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -503,9 +503,9 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>file_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of the parameters of a continuous distribution. </para>
@@ -532,7 +532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1025" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="580" bodyend="700"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1025" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="580" bodyend="700"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a31369a6b66a26811bcc254296784accb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -545,9 +545,9 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>file_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of the characteristics of a continuous distribution. </para>
@@ -574,7 +574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1026" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="712" bodyend="829"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1026" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="712" bodyend="829"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1afeff26c2280fc2aec7a4353563f7f28b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -587,24 +587,24 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>file_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>cumul_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
           <declname>histo1</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
           <declname>histo2</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of a continuous distribution. </para>
@@ -655,7 +655,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1028" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="844" bodyend="1201"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1028" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="844" bodyend="1201"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1ab065df5beca7ec2c65e67da9de8f5177" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -684,7 +684,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1031" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1212" bodyend="1306"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1031" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1212" bodyend="1306"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a30a0132721b4387e1bcc1f6d8f580b95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -697,19 +697,19 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>cumul_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
           <declname>histo1</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
           <declname>histo2</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of a continuous distribution at the spreadsheet format. </para>
@@ -752,7 +752,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1032" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1418" bodyend="1729"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1032" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1418" bodyend="1729"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a870214ca57c583d0a879e79cd03380aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -781,7 +781,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1035" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1317" bodyend="1404"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1035" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1317" bodyend="1404"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1af47cbbb1e1635d66a745948231bcdbb2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -810,27 +810,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1036" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1740" bodyend="1777"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1036" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1740" bodyend="1777"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a4cb7198e3d0e88095d847775a12496ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::ContinuousParametric::plot_print</definition>
         <argsstring>(const char *path, const Histogram *histo1=NULL, const FrequencyDistribution *histo2=NULL)</argsstring>
         <name>plot_print</name>
         <qualifiedname>stat_tool::ContinuousParametric::plot_print</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
           <declname>histo1</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
           <declname>histo2</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Writing of a continuous distribution at the Gnuplot format. </para>
@@ -867,24 +867,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1037" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1792" bodyend="2083"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1037" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="1792" bodyend="2083"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a22f4a43265ba050aeeee0f2ffbe4840e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::ContinuousParametric::q_q_plot_print</definition>
         <argsstring>(const char *path, int nb_value, double **empirical_cdf) const</argsstring>
         <name>q_q_plot_print</name>
         <qualifiedname>stat_tool::ContinuousParametric::q_q_plot_print</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_value</declname>
         </param>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>empirical_cdf</declname>
         </param>
         <briefdescription>
@@ -922,10 +922,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1039" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2098" bodyend="2123"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1039" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2098" bodyend="2123"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1aa24eb4d9b8da2874fab122d61941b6c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::ContinuousParametric::plotable_write</definition>
         <argsstring>(SinglePlot &amp;plot, const Histogram *histo1=NULL, const FrequencyDistribution *histo2=NULL)</argsstring>
         <name>plotable_write</name>
@@ -935,14 +935,14 @@
           <declname>plot</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref> *</type>
           <declname>histo1</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
           <declname>histo2</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Plot of a continuous distribution. </para>
@@ -977,10 +977,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1041" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2136" bodyend="2408"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1041" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2136" bodyend="2408"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a3d2d82f858e17472c2b37a496fd853f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::ContinuousParametric::q_q_plotable_write</definition>
         <argsstring>(SinglePlot &amp;plot, int nb_value, double **empirical_cdf) const</argsstring>
         <name>q_q_plotable_write</name>
@@ -990,11 +990,11 @@
           <declname>plot</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_value</declname>
         </param>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>empirical_cdf</declname>
         </param>
         <briefdescription>
@@ -1030,20 +1030,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1043" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2421" bodyend="2438"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1043" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2421" bodyend="2438"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a4f155fd4817239d8233d6e6bf2b26211" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double **</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
         <definition>double ** stat_tool::ContinuousParametric::q_q_plot_computation</definition>
         <argsstring>(int nb_value, double **cdf) const</argsstring>
         <name>q_q_plot_computation</name>
         <qualifiedname>stat_tool::ContinuousParametric::q_q_plot_computation</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_value</declname>
         </param>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>cdf</declname>
           <defname>empirical_cdf</defname>
         </param>
@@ -1074,10 +1074,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1046" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2849" bodyend="2972"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1046" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2849" bodyend="2972"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1ad2ed0fd9c92dd468d0483bdfa425cd70" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::ContinuousParametric::nb_parameter_computation</definition>
         <argsstring>() const</argsstring>
         <name>nb_parameter_computation</name>
@@ -1092,20 +1092,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1048" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2449" bodyend="2512"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1048" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2449" bodyend="2512"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1adb3bd53dc5e687f600e5abb937b13ae0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::von_mises_mass_computation</definition>
         <argsstring>(double inf, double sup) const</argsstring>
         <name>von_mises_mass_computation</name>
         <qualifiedname>stat_tool::ContinuousParametric::von_mises_mass_computation</qualifiedname>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>inf</declname>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>sup</declname>
         </param>
         <briefdescription>
@@ -1135,20 +1135,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1050" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2526" bodyend="2566"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1050" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2526" bodyend="2566"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a256adc73fb6eb1a59e377a0a1b898ad0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::mass_computation</definition>
         <argsstring>(double inf, double sup) const</argsstring>
         <name>mass_computation</name>
         <qualifiedname>stat_tool::ContinuousParametric::mass_computation</qualifiedname>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>inf</declname>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>sup</declname>
         </param>
         <briefdescription>
@@ -1178,10 +1178,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1051" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2580" bodyend="2754"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1051" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2580" bodyend="2754"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1ad40494887c5cdf78e38f79485f958a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::ContinuousParametric::von_mises_cumul_computation</definition>
         <argsstring>()</argsstring>
         <name>von_mises_cumul_computation</name>
@@ -1193,10 +1193,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1052" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2763" bodyend="2835"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1052" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2763" bodyend="2835"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a4e1038fe6f204d5976601d28fdbdad21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::sup_norm_distance_computation</definition>
         <argsstring>(ContinuousParametric &amp;dist)</argsstring>
         <name>sup_norm_distance_computation</name>
@@ -1224,20 +1224,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1054" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2988" bodyend="3459"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1054" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="2988" bodyend="3459"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1ade406307e390341ca69eb8d9a1f81853" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::likelihood_computation</definition>
         <argsstring>(const FrequencyDistribution &amp;histo, int min_interval) const</argsstring>
         <name>likelihood_computation</name>
         <qualifiedname>stat_tool::ContinuousParametric::likelihood_computation</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>histo</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_interval</declname>
         </param>
         <briefdescription>
@@ -1246,10 +1246,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1056" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1056" bodyend="1057"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1056" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="1056" bodyend="1057"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ContinuousParametric_1a6b51996a7cee6cd8a1858aaa4751d5fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::ContinuousParametric::simulation</definition>
         <argsstring>()</argsstring>
         <name>simulation</name>
@@ -1264,7 +1264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1059" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="3943" bodyend="4097"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1059" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="3943" bodyend="4097"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -1283,7 +1283,7 @@
           <declname>in_file</declname>
         </param>
         <param>
-          <type>int &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> &amp;</type>
           <declname>line</declname>
         </param>
         <param>
@@ -1333,7 +1333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1022" column="33" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="191" bodyend="568"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="1022" column="33" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="191" bodyend="568"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -1341,7 +1341,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="979" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="979" bodyend="1060"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" line="979" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/stat_tools.h" bodystart="979" bodyend="1060"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1ContinuousParametric_1a31369a6b66a26811bcc254296784accb" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametric</scope><name>ascii_characteristic_print</name></member>
       <member refid="classstat__tool_1_1ContinuousParametric_1a15deb35d8be42ab2b34d185fa970c7a1" prot="public" virt="non-virtual"><scope>stat_tool::ContinuousParametric</scope><name>ascii_parameter_print</name></member>

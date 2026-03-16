@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="distance__matrix_8cpp" kind="file" language="C++">
     <compoundname>distance_matrix.cpp</compoundname>
     <includes local="no">sstream</includes>
@@ -16,7 +16,7 @@
         <link refid="config_8h"/>
       </node>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.cpp</label>
         <link refid="distance__matrix_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -198,7 +198,7 @@
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix_1a75c69c459dfd91094df29a0147415e92" kindref="member">DistanceMatrix::DistanceMatrix</ref>()</highlight></codeline>
@@ -228,7 +228,7 @@
 <codeline lineno="86"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix_1a75c69c459dfd91094df29a0147415e92" kindref="member">DistanceMatrix::DistanceMatrix</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_pattern<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ilabel<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pattern_identifier)</highlight></codeline>
@@ -298,7 +298,7 @@
 <codeline lineno="163"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="179"><highlight class="normal"></highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix_1a75c69c459dfd91094df29a0147415e92" kindref="member">DistanceMatrix::DistanceMatrix</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_pattern<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>irow_identifier<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>icolumn_identifier<sp/>,</highlight></codeline>
@@ -441,10 +441,10 @@
 <codeline lineno="317"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"></highlight></codeline>
 <codeline lineno="319"><highlight class="normal"></highlight></codeline>
-<codeline lineno="320"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="329"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="330"><highlight class="normal"></highlight></codeline>
-<codeline lineno="331"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix_1a75c69c459dfd91094df29a0147415e92" kindref="member">DistanceMatrix::DistanceMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref><sp/>&amp;dist_matrix<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_pattern<sp/>,</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix_1a75c69c459dfd91094df29a0147415e92" kindref="member">DistanceMatrix::DistanceMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DistanceMatrix<sp/>&amp;dist_matrix<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_pattern<sp/>,</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*iidentifier<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>keep)</highlight></codeline>
 <codeline lineno="333"><highlight class="normal"></highlight></codeline>
 <codeline lineno="334"><highlight class="normal">{</highlight></codeline>
@@ -629,10 +629,10 @@
 <codeline lineno="513"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="514"><highlight class="normal"></highlight></codeline>
 <codeline lineno="515"><highlight class="normal"></highlight></codeline>
-<codeline lineno="516"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="524"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="525"><highlight class="normal"></highlight></codeline>
-<codeline lineno="526"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix_1a75c69c459dfd91094df29a0147415e92" kindref="member">DistanceMatrix::DistanceMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref><sp/>&amp;dist_matrix<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_cluster<sp/>,</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix_1a75c69c459dfd91094df29a0147415e92" kindref="member">DistanceMatrix::DistanceMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DistanceMatrix<sp/>&amp;dist_matrix<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_cluster<sp/>,</highlight></codeline>
 <codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ilabel)</highlight></codeline>
 <codeline lineno="528"><highlight class="normal"></highlight></codeline>
 <codeline lineno="529"><highlight class="normal">{</highlight></codeline>
@@ -755,10 +755,10 @@
 <codeline lineno="646"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="647"><highlight class="normal"></highlight></codeline>
 <codeline lineno="648"><highlight class="normal"></highlight></codeline>
-<codeline lineno="649"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="656"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="657"><highlight class="normal"></highlight></codeline>
-<codeline lineno="658"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a57f6c23c4719e87b945fa059876a308e" kindref="member">DistanceMatrix::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref><sp/>&amp;dist_matrix<sp/>,<sp/><ref refid="namespacestat__tool_1a3cd5a1a92c269bd47669da230e0f9eec" kindref="member">matrix_transform</ref><sp/>transform)</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a57f6c23c4719e87b945fa059876a308e" kindref="member">DistanceMatrix::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DistanceMatrix<sp/>&amp;dist_matrix<sp/>,<sp/><ref refid="namespacestat__tool_1a3cd5a1a92c269bd47669da230e0f9eec" kindref="member">matrix_transform</ref><sp/>transform)</highlight></codeline>
 <codeline lineno="659"><highlight class="normal"></highlight></codeline>
 <codeline lineno="660"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="661"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>,<sp/>j;</highlight></codeline>
@@ -1066,7 +1066,7 @@
 <codeline lineno="963"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="964"><highlight class="normal"></highlight></codeline>
 <codeline lineno="965"><highlight class="normal"></highlight></codeline>
-<codeline lineno="966"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="966"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="970"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="971"><highlight class="normal"></highlight></codeline>
 <codeline lineno="972"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1ae0ed54b5916f56f3c9f6e7a0ac889453" kindref="member">DistanceMatrix::remove</ref>()</highlight></codeline>
@@ -1159,7 +1159,7 @@
 <codeline lineno="1059"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1060"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1061"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1062"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1062"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1066"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1067"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1068"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix_1a59f5ef3bab1447ce11da802f07e298f3" kindref="member">DistanceMatrix::~DistanceMatrix</ref>()</highlight></codeline>
@@ -1169,10 +1169,10 @@
 <codeline lineno="1072"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1073"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1074"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1075"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1075"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1083"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1084"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1085"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref>&amp;<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a43602d9d14304f41aa6f83b4e193128d" kindref="member">DistanceMatrix::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref><sp/>&amp;dist_matrix)</highlight></codeline>
+<codeline lineno="1085"><highlight class="normal">DistanceMatrix&amp;<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a43602d9d14304f41aa6f83b4e193128d" kindref="member">DistanceMatrix::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DistanceMatrix<sp/>&amp;dist_matrix)</highlight></codeline>
 <codeline lineno="1086"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1087"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="1088"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;dist_matrix<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -1184,10 +1184,10 @@
 <codeline lineno="1094"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1095"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1096"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1097"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1097"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1108"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1109"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1110"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref>*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a08cafe33175b9de54de79bbe0bf04ba2" kindref="member">DistanceMatrix::select_individual</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_pattern<sp/>,</highlight></codeline>
+<codeline lineno="1110"><highlight class="normal">DistanceMatrix*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a08cafe33175b9de54de79bbe0bf04ba2" kindref="member">DistanceMatrix::select_individual</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_pattern<sp/>,</highlight></codeline>
 <codeline lineno="1111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*iidentifier<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>keep)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1112"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1113"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
@@ -1272,10 +1272,10 @@
 <codeline lineno="1192"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1193"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1194"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1195"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1195"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1206"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1207"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1208"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref>*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a08cafe33175b9de54de79bbe0bf04ba2" kindref="member">DistanceMatrix::select_individual</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_pattern<sp/>,</highlight></codeline>
+<codeline lineno="1208"><highlight class="normal">DistanceMatrix*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a08cafe33175b9de54de79bbe0bf04ba2" kindref="member">DistanceMatrix::select_individual</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_pattern<sp/>,</highlight></codeline>
 <codeline lineno="1209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>&amp;iidentifier<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>keep)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1210"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1211"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
@@ -1283,10 +1283,10 @@
 <codeline lineno="1213"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1214"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1215"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1216"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1216"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1224"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1225"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1226"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref>*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1adae0aac7e89f6968acfb1b9c4586ce7d" kindref="member">DistanceMatrix::symmetrize</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1226"><highlight class="normal">DistanceMatrix*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1adae0aac7e89f6968acfb1b9c4586ce7d" kindref="member">DistanceMatrix::symmetrize</ref>(StatError<sp/>&amp;error)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1227"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1228"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="1229"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a75c69c459dfd91094df29a0147415e92" kindref="member">DistanceMatrix</ref><sp/>*dist_matrix;</highlight></codeline>
@@ -1296,7 +1296,7 @@
 <codeline lineno="1233"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1DistanceMatrix_1a64c0d3c513f1a8f11cd42e0ff56f211b" kindref="member">test_symmetry</ref>())<sp/>{</highlight></codeline>
 <codeline lineno="1235"><highlight class="normal"><sp/><sp/><sp/><sp/>dist_matrix<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="1236"><highlight class="normal"><sp/><sp/><sp/><sp/>error.update(<ref refid="namespacestat__tool_1aaab4c71fc1f1d43db8766fda2640da88" kindref="member">STAT_error</ref>[<ref refid="namespacestat__tool_1a1902d0f62db2dbed4d422262015282cdaba88bdc0a7c7c8b4226bf493ebcef5e6" kindref="member">STATR_SYMMETRICAL_MATRIX</ref>]);</highlight></codeline>
+<codeline lineno="1236"><highlight class="normal"><sp/><sp/><sp/><sp/>error.<ref refid="classstat__tool_1_1DistanceMatrix_1a5a49aba2c3349fb68b7ebefdc32a5abc" kindref="member">update</ref>(<ref refid="namespacestat__tool_1aaab4c71fc1f1d43db8766fda2640da88" kindref="member">STAT_error</ref>[<ref refid="namespacestat__tool_1a1902d0f62db2dbed4d422262015282cdaba88bdc0a7c7c8b4226bf493ebcef5e6" kindref="member">STATR_SYMMETRICAL_MATRIX</ref>]);</highlight></codeline>
 <codeline lineno="1237"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1238"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="1239"><highlight class="normal"><sp/><sp/><sp/><sp/>dist_matrix<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a75c69c459dfd91094df29a0147415e92" kindref="member">DistanceMatrix</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>,<sp/><ref refid="namespacestat__tool_1a3cd5a1a92c269bd47669da230e0f9eeca222bcf0b2d9a238570fae6c0221ece7e" kindref="member">SYMMETRIZATION</ref>);</highlight></codeline>
@@ -1306,10 +1306,10 @@
 <codeline lineno="1243"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1244"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1245"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1246"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1246"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1254"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1255"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1256"><highlight class="normal"><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref>*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a32e75d6cb868b2a774cd8545c0a75b57" kindref="member">DistanceMatrix::unnormalize</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1256"><highlight class="normal">DistanceMatrix*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a32e75d6cb868b2a774cd8545c0a75b57" kindref="member">DistanceMatrix::unnormalize</ref>(StatError<sp/>&amp;error)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1257"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1258"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="1259"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -1333,7 +1333,7 @@
 <codeline lineno="1277"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1278"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!status)<sp/>{</highlight></codeline>
-<codeline lineno="1280"><highlight class="normal"><sp/><sp/><sp/><sp/>error.update(<ref refid="namespacestat__tool_1aaab4c71fc1f1d43db8766fda2640da88" kindref="member">STAT_error</ref>[<ref refid="namespacestat__tool_1a1902d0f62db2dbed4d422262015282cda1db136b069cc97cc1df3119275c3bcc8" kindref="member">STATR_UNNORMALIZED_DISSIMILARITY_MEASURES</ref>]);</highlight></codeline>
+<codeline lineno="1280"><highlight class="normal"><sp/><sp/><sp/><sp/>error.<ref refid="classstat__tool_1_1DistanceMatrix_1a5a49aba2c3349fb68b7ebefdc32a5abc" kindref="member">update</ref>(<ref refid="namespacestat__tool_1aaab4c71fc1f1d43db8766fda2640da88" kindref="member">STAT_error</ref>[<ref refid="namespacestat__tool_1a1902d0f62db2dbed4d422262015282cda1db136b069cc97cc1df3119275c3bcc8" kindref="member">STATR_UNNORMALIZED_DISSIMILARITY_MEASURES</ref>]);</highlight></codeline>
 <codeline lineno="1281"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1282"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1283"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classstat__tool_1_1DistanceMatrix_1a64c0d3c513f1a8f11cd42e0ff56f211b" kindref="member">test_symmetry</ref>())<sp/>{</highlight></codeline>
@@ -1349,7 +1349,7 @@
 <codeline lineno="1293"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1294"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1295"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1296"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1296"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1302"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1303"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1304"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a3d9ff8d5002bb0203a95537e5325cf77" kindref="member">DistanceMatrix::line_write</ref>(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1362,7 +1362,7 @@
 <codeline lineno="1311"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1312"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1313"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1314"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1314"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1322"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1323"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1324"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a2ef8eb477cec3645abf60534d3741c90" kindref="member">DistanceMatrix::property_print</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>**normalized_distance<sp/>,</highlight></codeline>
@@ -1483,7 +1483,7 @@
 <codeline lineno="1439"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1440"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1441"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1442"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1442"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1452"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1453"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1454"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a87e6d21e3ef747df8e7a21eecd255023" kindref="member">cumul_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_row<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_column<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**value)</highlight></codeline>
@@ -1503,7 +1503,7 @@
 <codeline lineno="1468"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1469"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1470"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1471"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1471"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1480"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1481"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1482"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a1160ad9c819bc855bf163268469dfb78" kindref="member">cumul_distance_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*distance)</highlight></codeline>
@@ -1527,7 +1527,7 @@
 <codeline lineno="1500"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1501"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1502"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1503"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1503"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1513"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1514"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1515"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/><ref refid="namespacestat__tool_1a7158c17d08721ccf6aa677248524c634" kindref="member">pattern_sort</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_pattern<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*distance<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_sorted_pattern)</highlight></codeline>
@@ -1568,7 +1568,7 @@
 <codeline lineno="1550"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1551"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1552"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1553"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1553"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1560"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1561"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1562"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1aa4f9edf14fc1f5c9b83e62db25a73df6" kindref="member">DistanceMatrix::ascii_write</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1864,10 +1864,10 @@
 <codeline lineno="1852"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1853"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1854"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1855"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1855"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1865"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1866"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1867"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1aa4f9edf14fc1f5c9b83e62db25a73df6" kindref="member">DistanceMatrix::ascii_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path<sp/>,</highlight></codeline>
+<codeline lineno="1867"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1aa4f9edf14fc1f5c9b83e62db25a73df6" kindref="member">DistanceMatrix::ascii_write</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path<sp/>,</highlight></codeline>
 <codeline lineno="1868"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1869"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1870"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
@@ -1891,7 +1891,7 @@
 <codeline lineno="1888"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1889"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1890"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1891"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1891"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1897"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1898"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1899"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a732727ad1255211a1dafe4642d9790e3" kindref="member">DistanceMatrix::spreadsheet_write</ref>(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2112,10 +2112,10 @@
 <codeline lineno="2114"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2115"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2117"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2117"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2126"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2128"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a732727ad1255211a1dafe4642d9790e3" kindref="member">DistanceMatrix::spreadsheet_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="2128"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a732727ad1255211a1dafe4642d9790e3" kindref="member">DistanceMatrix::spreadsheet_write</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="2129"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="2130"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="2131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
@@ -2138,17 +2138,17 @@
 <codeline lineno="2148"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2149"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2151"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2151"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2161"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2163"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a10e672fd277f8701b2cde489475a0779" kindref="member">DistanceMatrix::plot_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,</highlight></codeline>
+<codeline lineno="2163"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a10e672fd277f8701b2cde489475a0779" kindref="member">DistanceMatrix::plot_write</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,</highlight></codeline>
 <codeline lineno="2164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*title)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="2165"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="2166"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="2167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2168"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2169"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2170"><highlight class="normal"><sp/><sp/>error.init();</highlight></codeline>
+<codeline lineno="2170"><highlight class="normal"><sp/><sp/>error.<ref refid="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" kindref="member">init</ref>();</highlight></codeline>
 <codeline lineno="2171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classstat__tool_1_1DistanceMatrix_1a0db7861c0b504c2a67c6571cefbf184b" kindref="member">nb_row</ref><sp/>==<sp/>1)<sp/>&amp;&amp;<sp/>(<ref refid="classstat__tool_1_1DistanceMatrix_1a6ed0ab1e91a1f57c6b47a6de89107740" kindref="member">nb_column</ref><sp/>==<sp/>1))<sp/>{</highlight></codeline>
 <codeline lineno="2173"><highlight class="normal"><sp/><sp/><sp/><sp/>status<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -2307,16 +2307,16 @@
 <codeline lineno="2326"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2327"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2328"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2329"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2329"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2337"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2338"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2339"><highlight class="normal"><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1adfecbe4c03130af4dce1ac451c3503de" kindref="member">DistanceMatrix::get_plotable</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="2339"><highlight class="normal"><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1adfecbe4c03130af4dce1ac451c3503de" kindref="member">DistanceMatrix::get_plotable</ref>(StatError<sp/>&amp;error)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="2340"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="2341"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="2342"><highlight class="normal"><sp/><sp/><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref><sp/>*plot_set;</highlight></codeline>
 <codeline lineno="2343"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2344"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2345"><highlight class="normal"><sp/><sp/>error.init();</highlight></codeline>
+<codeline lineno="2345"><highlight class="normal"><sp/><sp/>error.<ref refid="classstat__tool_1_1Reestimation_1a36c4fd931fa4ad34d0216737e66838a1" kindref="member">init</ref>();</highlight></codeline>
 <codeline lineno="2346"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2347"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classstat__tool_1_1DistanceMatrix_1a0db7861c0b504c2a67c6571cefbf184b" kindref="member">nb_row</ref><sp/>==<sp/>1)<sp/>&amp;&amp;<sp/>(<ref refid="classstat__tool_1_1DistanceMatrix_1a6ed0ab1e91a1f57c6b47a6de89107740" kindref="member">nb_column</ref><sp/>==<sp/>1))<sp/>{</highlight></codeline>
 <codeline lineno="2348"><highlight class="normal"><sp/><sp/><sp/><sp/>plot_set<sp/>=<sp/>NULL;</highlight></codeline>
@@ -2375,7 +2375,7 @@
 <codeline lineno="2401"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>title.str(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="2403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>title<sp/>&lt;&lt;<sp/><ref refid="namespacestat__tool_1a402794ded79b6eafc78781e40c23b4a8" kindref="member">STAT_label</ref>[<ref refid="namespacestat__tool_1a3c004532d5daffc277feeada6e9173bfa30c3b7502183fc9b9cfc3ef4b37334be" kindref="member">STATL_DISTANCE</ref>]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespacestat__tool_1a402794ded79b6eafc78781e40c23b4a8" kindref="member">STAT_label</ref>[<ref refid="namespacestat__tool_1a3c004532d5daffc277feeada6e9173bfaed46eaacd41087365cac6a86031ae48a" kindref="member">STATL_MATRIX</ref>];</highlight></codeline>
-<codeline lineno="2404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>plot.<ref refid="classstat__tool_1_1TemplateMultiPlotSet_1a10647a7f97e5acae4204bbd9d4c6e3b6" kindref="member">title</ref><sp/>=<sp/>title.str();</highlight></codeline>
+<codeline lineno="2404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>plot.title<sp/>=<sp/>title.str();</highlight></codeline>
 <codeline lineno="2405"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>plot.border<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;15<sp/>lw<sp/>0&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="2407"><highlight class="normal"></highlight></codeline>
@@ -2434,7 +2434,7 @@
 <codeline lineno="2460"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2461"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2462"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2463"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2463"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2469"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2470"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2471"><highlight class="normal"><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref>*<sp/><ref refid="classstat__tool_1_1DistanceMatrix_1adfecbe4c03130af4dce1ac451c3503de" kindref="member">DistanceMatrix::get_plotable</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2448,7 +2448,7 @@
 <codeline lineno="2479"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2480"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2481"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2482"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2482"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2488"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2489"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2490"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a64c0d3c513f1a8f11cd42e0ff56f211b" kindref="member">DistanceMatrix::test_symmetry</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2490,7 +2490,7 @@
 <codeline lineno="2526"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2527"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2528"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2529"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2529"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2547"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2548"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2549"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a5a49aba2c3349fb68b7ebefdc32a5abc" kindref="member">DistanceMatrix::update</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>irow_identifier<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>icolumn_identifier<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>idistance<sp/>,</highlight></codeline>
@@ -2537,7 +2537,7 @@
 <codeline lineno="2590"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2591"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2592"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2593"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2593"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2602"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2603"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2604"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1a5a49aba2c3349fb68b7ebefdc32a5abc" kindref="member">DistanceMatrix::update</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>irow_identifier<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>icolumn_identifier<sp/>,</highlight></codeline>
@@ -2565,7 +2565,7 @@
 <codeline lineno="2626"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2627"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2628"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2629"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2629"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2638"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2639"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2640"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1ae5fd41b88da1788074cc841db1c54f6a" kindref="member">DistanceMatrix::cumul_length_computation</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*row_flag<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*column_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2589,7 +2589,7 @@
 <codeline lineno="2658"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2659"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2660"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2661"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2661"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2670"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2671"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2672"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1DistanceMatrix_1abd6d481e67102edf7c815b139341e628" kindref="member">DistanceMatrix::cumul_distance_computation</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*row_flag<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*column_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2627,6 +2627,6 @@
 <codeline lineno="2704"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2705"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.cpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.cpp"/>
   </compounddef>
 </doxygen>

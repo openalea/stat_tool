@@ -4,7 +4,7 @@ var searchData=
   ['chi2_5ffrequency_1',['CHI2_FREQUENCY',['../namespacestat__tool.html#abc8cc77069aa538890d35ac68e30bd19',1,'stat_tool']]],
   ['child_2',['child',['../classstat__tool_1_1Dendrogram.html#ac7e80e17f981a6677df82ee24682c09b',1,'stat_tool::Dendrogram']]],
   ['child_5fdistance_3',['child_distance',['../classstat__tool_1_1Dendrogram.html#a89657b7ab6ab83e0c1022ea55229ebf6',1,'stat_tool::Dendrogram']]],
-  ['cluster_5fnb_5fpattern_4',['cluster_nb_pattern',['../classstat__tool_1_1Clusters.html#a8859207173ca3b577903bc5417f5be5a',1,'stat_tool::Clusters::cluster_nb_pattern'],['../classstat__tool_1_1Dendrogram.html#a9a16c40b5ebd674d5a5fd56e1dcd047c',1,'stat_tool::Dendrogram::cluster_nb_pattern']]],
+  ['cluster_5fnb_5fpattern_4',['cluster_nb_pattern',['../classstat__tool_1_1Dendrogram.html#a9a16c40b5ebd674d5a5fd56e1dcd047c',1,'stat_tool::Dendrogram::cluster_nb_pattern'],['../classstat__tool_1_1Clusters.html#a8859207173ca3b577903bc5417f5be5a',1,'stat_tool::Clusters::cluster_nb_pattern']]],
   ['cluster_5fpattern_5',['cluster_pattern',['../classstat__tool_1_1Dendrogram.html#a2372a230f4880dca2ec8700a4f0aa802',1,'stat_tool::Dendrogram']]],
   ['color_6',['color',['../classstat__tool_1_1SinglePlot.html#afd17bec5281424bfa46ba6cc5fae4079',1,'stat_tool::SinglePlot']]],
   ['column_7',['column',['../classstat__tool_1_1StatError.html#a2fc3ec946d515633652be79d76d1b6c9',1,'stat_tool::StatError']]],

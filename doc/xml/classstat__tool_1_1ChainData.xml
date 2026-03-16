@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1ChainData" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::ChainData</compoundname>
     <basecompoundref refid="classstat__tool_1_1ChainReestimation" prot="public" virt="non-virtual">stat_tool::ChainReestimation&lt; int &gt;</basecompoundref>
@@ -16,17 +16,17 @@
           <declname>itype</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_state</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_row</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>init_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="200" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="200" bodyend="201"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="202" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="202" bodyend="203"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainData_1ac1a54bf6886ae7b24c37f81471afa9f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -43,7 +43,7 @@
         <name>ChainData</name>
         <qualifiedname>stat_tool::ChainData::ChainData</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ChainData" kindref="compound">ChainData</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ChainData" kindref="compound">ChainData</ref> &amp;</type>
           <declname>chain_data</declname>
         </param>
         <briefdescription>
@@ -63,10 +63,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="202" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain.cpp" bodystart="921" bodyend="925"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="204" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain.cpp" bodystart="934" bodyend="938"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainData_1a844b081752d191de236611abf6ef1553" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::ChainData::nb_parameter_computation</definition>
         <argsstring>() const</argsstring>
         <name>nb_parameter_computation</name>
@@ -81,10 +81,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="204" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" bodystart="1094" bodyend="1115"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="206" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" bodystart="1094" bodyend="1115"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainData_1adc88ca56068838edfd809b42e740d748" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::ChainData::estimation</definition>
         <argsstring>(Chain &amp;chain) const</argsstring>
         <name>estimation</name>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="206" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" bodystart="1039" bodyend="1083"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="208" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp" bodystart="1039" bodyend="1083"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -119,30 +119,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
+      <node id="2">
+        <label>stat_tool::ChainReestimation&lt; int &gt;</label>
+        <link refid="classstat__tool_1_1ChainReestimation"/>
+      </node>
       <node id="1">
         <label>stat_tool::ChainData</label>
         <link refid="classstat__tool_1_1ChainData"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="2">
-        <label>stat_tool::ChainReestimation&lt; int &gt;</label>
-        <link refid="classstat__tool_1_1ChainReestimation"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="2">
+        <label>stat_tool::ChainReestimation&lt; int &gt;</label>
+        <link refid="classstat__tool_1_1ChainReestimation"/>
+      </node>
       <node id="1">
         <label>stat_tool::ChainData</label>
         <link refid="classstat__tool_1_1ChainData"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="2">
-        <label>stat_tool::ChainReestimation&lt; int &gt;</label>
-        <link refid="classstat__tool_1_1ChainReestimation"/>
-      </node>
     </collaborationgraph>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="197" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="197" bodyend="207"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="199" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="199" bodyend="209"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1ChainData_1afb78bfcb288c721edf058339fdbb49cc" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>ChainData</name></member>
       <member refid="classstat__tool_1_1ChainData_1ac1a54bf6886ae7b24c37f81471afa9f4" prot="public" virt="non-virtual"><scope>stat_tool::ChainData</scope><name>ChainData</name></member>

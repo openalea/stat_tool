@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1Clusters" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::Clusters</compoundname>
     <basecompoundref refid="classstat__tool_1_1DistanceMatrix" prot="public" virt="non-virtual">stat_tool::DistanceMatrix</basecompoundref>
     <includes refid="distance__matrix_8h" local="no">distance_matrix.h</includes>
     <sectiondef kind="friend">
       <memberdef kind="friend" id="classstat__tool_1_1Clusters_1a1e937b0a167ab6fc618194afec034e94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>class</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">class</ref></type>
         <definition>friend class DistanceMatrix</definition>
         <argsstring></argsstring>
         <name>DistanceMatrix</name>
@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="247" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="247" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="247" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="247" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classstat__tool_1_1Clusters_1a39f41a6b6cda693dba0204e389de989b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -33,7 +33,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> &amp;</type>
           <declname>clusters</declname>
         </param>
         <briefdescription>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="249" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="249" bodyend="250"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="249" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="249" bodyend="250"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -59,10 +59,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="254" column="20" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="254" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="254" column="20" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="254" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Clusters_1aadea02c61566b8cab666029127bbdd2a" prot="private" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::nb_pattern</definition>
         <argsstring></argsstring>
         <name>nb_pattern</name>
@@ -74,10 +74,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="255" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="255" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="255" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="255" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Clusters_1a91d4fb1270b4d3c93bb8944ab6d84968" prot="private" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::nb_cluster</definition>
         <argsstring></argsstring>
         <name>nb_cluster</name>
@@ -89,10 +89,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="256" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="256" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="256" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="256" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Clusters_1a8859207173ca3b577903bc5417f5be5a" prot="private" static="no" mutable="no">
-        <type>int *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
         <definition>int* stat_tool::Clusters::cluster_nb_pattern</definition>
         <argsstring></argsstring>
         <name>cluster_nb_pattern</name>
@@ -104,10 +104,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="257" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="257" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="257" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Clusters_1a2387ee97a32d3b8bf0e1037bcd29de21" prot="private" static="no" mutable="no">
-        <type>int *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
         <definition>int* stat_tool::Clusters::assignment</definition>
         <argsstring></argsstring>
         <name>assignment</name>
@@ -119,10 +119,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="258" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="258" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="258" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Clusters_1a89b9c8a57c2a75609eb79821026c5e29" prot="private" static="no" mutable="no">
-        <type>double **</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
         <definition>double** stat_tool::Clusters::pattern_distance</definition>
         <argsstring></argsstring>
         <name>pattern_distance</name>
@@ -134,10 +134,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="259" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="259" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="259" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="259" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Clusters_1ad3fd3f2728908336c7af97d3d2bc3c05" prot="private" static="no" mutable="no">
-        <type>int **</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> **</type>
         <definition>int** stat_tool::Clusters::pattern_length</definition>
         <argsstring></argsstring>
         <name>pattern_length</name>
@@ -149,18 +149,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="260" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="260" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="260" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="260" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a954b1c1fe5273f19a1122cc40fe1ad08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::copy</definition>
         <argsstring>(const Clusters &amp;clusters)</argsstring>
         <name>copy</name>
         <qualifiedname>stat_tool::Clusters::copy</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> &amp;</type>
           <declname>clusters</declname>
         </param>
         <briefdescription>
@@ -180,10 +180,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="262" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="201" bodyend="237"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="262" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="201" bodyend="237"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1acbb72c9cd890e9a55000c96e6a3b9de7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::remove</definition>
         <argsstring>()</argsstring>
         <name>remove</name>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="263" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="246" bodyend="270"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="263" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="246" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a5cabe8b0ad15694b7ccd8a16339a994c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
@@ -220,22 +220,22 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object. </para>
+<simplesect kind="return"><para>MultiPlotSet object. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="265" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1116" bodyend="1241"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="265" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1116" bodyend="1241"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1aebecf40740c8b2a4abb53a3eacc8d4c7" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
         <definition>int * stat_tool::Clusters::pattern_sort</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>pattern_sort</name>
         <qualifiedname>stat_tool::Clusters::pattern_sort</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -257,20 +257,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="267" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="340" bodyend="385"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="267" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="340" bodyend="385"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a9ef0d62d7b599df86355a634b89a6f7a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::most_distant_pattern_selection</definition>
         <argsstring>(double **normalized_distance, int ipattern) const</argsstring>
         <name>most_distant_pattern_selection</name>
         <qualifiedname>stat_tool::Clusters::most_distant_pattern_selection</qualifiedname>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>normalized_distance</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>ipattern</declname>
         </param>
         <briefdescription>
@@ -300,20 +300,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="269" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1557" bodyend="1577"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="269" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1557" bodyend="1577"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a54d97456e69fa68daeee8a4a19d651ee" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::neighbor_pattern_selection</definition>
         <argsstring>(double **normalized_distance, int ipattern) const</argsstring>
         <name>neighbor_pattern_selection</name>
         <qualifiedname>stat_tool::Clusters::neighbor_pattern_selection</qualifiedname>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>normalized_distance</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>ipattern</declname>
         </param>
         <briefdescription>
@@ -343,20 +343,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="270" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1591" bodyend="1609"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="270" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1591" bodyend="1609"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a92931cf7aece3c8d9399608af4350530" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::neighbor_pattern_cluster_selection</definition>
         <argsstring>(double **normalized_distance, int pattern) const</argsstring>
         <name>neighbor_pattern_cluster_selection</name>
         <qualifiedname>stat_tool::Clusters::neighbor_pattern_cluster_selection</qualifiedname>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>normalized_distance</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>pattern</declname>
         </param>
         <briefdescription>
@@ -386,20 +386,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="271" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1623" bodyend="1641"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="271" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1623" bodyend="1641"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a87a5cb69092d989c4e161fe2334446e1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Clusters::max_within_cluster_distance_computation</definition>
         <argsstring>(double **normalized_distance, int cluster) const</argsstring>
         <name>max_within_cluster_distance_computation</name>
         <qualifiedname>stat_tool::Clusters::max_within_cluster_distance_computation</qualifiedname>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>normalized_distance</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -429,20 +429,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="273" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1655" bodyend="1678"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="273" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1655" bodyend="1678"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1aac539d486526fbe8094429bb66fb2f13" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Clusters::min_between_cluster_distance_computation</definition>
         <argsstring>(double **normalized_distance, int cluster) const</argsstring>
         <name>min_between_cluster_distance_computation</name>
         <qualifiedname>stat_tool::Clusters::min_between_cluster_distance_computation</qualifiedname>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>normalized_distance</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -472,20 +472,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="274" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1692" bodyend="1713"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="274" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1692" bodyend="1713"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1ae84e2f86c9e257ed828bf8cb677d4d70" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Clusters::isolation_property</definition>
         <argsstring>(double **normalized_distance, int cluster, isolation_scale scale=CLUSTER_SCALE) const</argsstring>
         <name>isolation_property</name>
         <qualifiedname>stat_tool::Clusters::isolation_property</qualifiedname>
         <param>
-          <type>double **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> **</type>
           <declname>normalized_distance</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <param>
@@ -528,16 +528,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="275" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1728" bodyend="1777"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="275" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1728" bodyend="1777"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a68e2b5876f00b30f5843350f22718ad9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Clusters::between_cluster_distance_computation</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>between_cluster_distance_computation</name>
         <qualifiedname>stat_tool::Clusters::between_cluster_distance_computation</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -559,7 +559,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="277" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1791" bodyend="1820"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="277" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1791" bodyend="1820"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1aa4829be6756a944dc697593d19d80e4c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -588,10 +588,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="278" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1832" bodyend="1888"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="278" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1832" bodyend="1888"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a4950de382ed751f5e4b44b7b3e3ca386" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::prototype_initialization_1</definition>
         <argsstring>()</argsstring>
         <name>prototype_initialization_1</name>
@@ -603,10 +603,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="280" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1898" bodyend="1923"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="280" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1898" bodyend="1923"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1ac2902e12e7fd1b5bda1606ba15913255" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::prototype_initialization_2</definition>
         <argsstring>()</argsstring>
         <name>prototype_initialization_2</name>
@@ -618,24 +618,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="281" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1932" bodyend="2010"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="281" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1932" bodyend="2010"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1abef9748cbf9f9848d0a0c264ee9b015e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::pattern_distance_update</definition>
         <argsstring>(int pattern, int old_cluster, int new_cluster)</argsstring>
         <name>pattern_distance_update</name>
         <qualifiedname>stat_tool::Clusters::pattern_distance_update</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>pattern</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>old_cluster</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>new_cluster</declname>
         </param>
         <briefdescription>
@@ -671,10 +671,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="283" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="2024" bodyend="2080"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="283" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="2024" bodyend="2080"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1afd61b54ccd8c46a17db411310299bb56" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::algorithmic_step_1</definition>
         <argsstring>()</argsstring>
         <name>algorithmic_step_1</name>
@@ -686,10 +686,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="284" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="2089" bodyend="2245"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="284" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="2089" bodyend="2245"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1ac7d80a43d3a08af70b4e56e78916374e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::algorithmic_step_2</definition>
         <argsstring>()</argsstring>
         <name>algorithmic_step_2</name>
@@ -701,7 +701,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="285" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="2254" bodyend="2445"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="285" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="2254" bodyend="2445"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -718,7 +718,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="289" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="66" bodyend="79"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="289" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="66" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1accef924c57c4ce41b53db96d2387bf4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -727,11 +727,11 @@
         <name>Clusters</name>
         <qualifiedname>stat_tool::Clusters::Clusters</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref> &amp;</type>
           <declname>dist_matrix</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_cluster</declname>
         </param>
         <briefdescription>
@@ -759,7 +759,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="290" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="91" bodyend="128"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="290" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="91" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a13528c7af3fc900be896bce025cad23f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -768,19 +768,19 @@
         <name>Clusters</name>
         <qualifiedname>stat_tool::Clusters::Clusters</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref> &amp;</type>
           <declname>dist_matrix</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_cluster</declname>
         </param>
         <param>
-          <type>int *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
           <declname>icluster_nb_pattern</declname>
         </param>
         <param>
-          <type>int **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> **</type>
           <declname>cluster_pattern</declname>
         </param>
         <briefdescription>
@@ -824,7 +824,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="291" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="142" bodyend="190"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="291" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="142" bodyend="190"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1aa19d4f19f6ccc749db78aff418f93376" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -833,7 +833,7 @@
         <name>Clusters</name>
         <qualifiedname>stat_tool::Clusters::Clusters</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> &amp;</type>
           <declname>clusters</declname>
         </param>
         <briefdescription>
@@ -842,7 +842,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="293" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="293" bodyend="294"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="293" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="293" bodyend="294"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1acae5758b3a1267cb03bffb7837f5b138" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -857,7 +857,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="295" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="279" bodyend="283"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="295" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="279" bodyend="283"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a884830c2f65d4d1e2979d4866cfc812f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> &amp;</type>
@@ -866,7 +866,7 @@
         <name>operator=</name>
         <qualifiedname>stat_tool::Clusters::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> &amp;</type>
           <declname>clusters</declname>
         </param>
         <briefdescription>
@@ -888,7 +888,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="296" column="14" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="296" bodyend="308"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="296" column="14" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="296" bodyend="308"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1ae8ddde74f74c2eb033f44acc25e9a17f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -918,7 +918,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="298" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="319" bodyend="326"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="298" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="319" bodyend="326"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a93d451a9133fa9c0a89eeba75152993f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -932,9 +932,9 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -942,10 +942,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="300" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="300" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1ac9f381786f3d506d7c2b8ba3936cc4a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Clusters::ascii_write</definition>
         <argsstring>(StatError &amp;error, const std::string path, bool exhaustive=false) const</argsstring>
         <name>ascii_write</name>
@@ -956,13 +956,13 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -970,10 +970,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="301" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="301" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a7fcd08fc8452f8ad13935fda736f452b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Clusters::spreadsheet_write</definition>
         <argsstring>(StatError &amp;error, const std::string path) const</argsstring>
         <name>spreadsheet_write</name>
@@ -984,7 +984,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <briefdescription>
@@ -1014,10 +1014,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="302" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="702" bodyend="901"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="302" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="702" bodyend="901"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1ab5d5c8631df66793f6e31ca47b3410c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Clusters::plot_write</definition>
         <argsstring>(StatError &amp;error, const char *prefix, const char *title=NULL) const</argsstring>
         <name>plot_write</name>
@@ -1028,13 +1028,13 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>prefix</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>title</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Plot of a <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> object using Gnuplot. </para>
@@ -1071,7 +1071,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="303" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="916" bodyend="1103"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="303" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="916" bodyend="1103"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a494759ea641d970bb273e004c13b8b54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
@@ -1084,16 +1084,16 @@
 <para>Plot of a <ref refid="classstat__tool_1_1Clusters" kindref="compound">Clusters</ref> object. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object. </para>
+<para><simplesect kind="return"><para>MultiPlotSet object. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="304" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1252" bodyend="1260"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="304" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1252" bodyend="1260"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a119bb376ee67d7914843852bd771ffff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::cluster_nb_pattern_computation</definition>
         <argsstring>()</argsstring>
         <name>cluster_nb_pattern_computation</name>
@@ -1105,10 +1105,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="306" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1269" bodyend="1282"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="306" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1269" bodyend="1282"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a051d4f336b0f4b02ee2567e7d89c41e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::pattern_distance_computation</definition>
         <argsstring>()</argsstring>
         <name>pattern_distance_computation</name>
@@ -1120,10 +1120,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="307" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1292" bodyend="1319"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="307" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1292" bodyend="1319"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1acf3a90ee98fbbc6a69a5a784c91b14d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::cluster_distance_computation_1</definition>
         <argsstring>()</argsstring>
         <name>cluster_distance_computation_1</name>
@@ -1135,10 +1135,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="308" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1328" bodyend="1465"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="308" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1328" bodyend="1465"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1ac85473f5bc57782e0826ddfd8e4d7adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Clusters::cluster_distance_computation_2</definition>
         <argsstring>()</argsstring>
         <name>cluster_distance_computation_2</name>
@@ -1150,7 +1150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="309" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1475" bodyend="1543"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="309" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/clusters.cpp" bodystart="1475" bodyend="1543"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a25efb6b995dd2ddfd404cd5ae3476acd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DistanceMatrix" kindref="compound">DistanceMatrix</ref> *</type>
@@ -1164,10 +1164,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="313" column="20" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="313" bodyend="313"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="313" column="20" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="313" bodyend="313"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a4fc374850952935256e4d2af5cb37705" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::get_nb_pattern</definition>
         <argsstring>() const</argsstring>
         <name>get_nb_pattern</name>
@@ -1178,10 +1178,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="314" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="314" bodyend="314"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="314" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="314" bodyend="314"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1ab551dffdbb938c9f1b2716d76d5bd300" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::get_nb_cluster</definition>
         <argsstring>() const</argsstring>
         <name>get_nb_cluster</name>
@@ -1192,16 +1192,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="315" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="315" bodyend="315"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="315" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="315" bodyend="315"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1aff6c305f4a91ccd4d6598f03b028bbc0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::get_cluster_nb_pattern</definition>
         <argsstring>(int cluster) const</argsstring>
         <name>get_cluster_nb_pattern</name>
         <qualifiedname>stat_tool::Clusters::get_cluster_nb_pattern</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -1210,16 +1210,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="316" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="316" bodyend="316"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="316" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="316" bodyend="316"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a324cc61d42344c8c4356b4e47e197b28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::get_assignment</definition>
         <argsstring>(int pattern) const</argsstring>
         <name>get_assignment</name>
         <qualifiedname>stat_tool::Clusters::get_assignment</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>pattern</declname>
         </param>
         <briefdescription>
@@ -1228,20 +1228,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="317" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="317" bodyend="317"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="317" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="317" bodyend="317"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a172af84f10b7e95afd27f732f11b32f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Clusters::get_pattern_distance</definition>
         <argsstring>(int pattern, int cluster) const</argsstring>
         <name>get_pattern_distance</name>
         <qualifiedname>stat_tool::Clusters::get_pattern_distance</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>pattern</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -1250,20 +1250,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="318" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="318" bodyend="319"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="318" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="318" bodyend="319"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Clusters_1a4e341ca61977d44cd1f0e6a439e9c252" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Clusters::get_pattern_length</definition>
         <argsstring>(int pattern, int cluster) const</argsstring>
         <name>get_pattern_length</name>
         <qualifiedname>stat_tool::Clusters::get_pattern_length</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>pattern</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>cluster</declname>
         </param>
         <briefdescription>
@@ -1272,7 +1272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="320" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="320" bodyend="321"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="320" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="320" bodyend="321"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -1319,7 +1319,7 @@
         <link refid="classstat__tool_1_1StatInterface"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="245" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="245" bodyend="322"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" line="245" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/distance_matrix.h" bodystart="245" bodyend="322"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1DistanceMatrix_1a21cbe7ddc3d075cd9fedf02beb1a5b92" prot="public" virt="non-virtual"><scope>stat_tool::Clusters</scope><name>agglomerative_hierarchical_clustering</name></member>
       <member refid="classstat__tool_1_1Clusters_1afd61b54ccd8c46a17db411310299bb56" prot="private" virt="non-virtual"><scope>stat_tool::Clusters</scope><name>algorithmic_step_1</name></member>

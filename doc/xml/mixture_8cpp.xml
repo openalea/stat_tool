@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="mixture_8cpp" kind="file" language="C++">
     <compoundname>mixture.cpp</compoundname>
     <briefdescription>
@@ -42,8 +42,8 @@
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>----------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -67,10 +67,10 @@
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//namespace<sp/>stat_tool<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Default<sp/>constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Default<sp/>constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//Mixture::Mixture()</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -85,14 +85,14 @@
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>continuous_parametric_process<sp/>=<sp/>NULL;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="86"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>inb_component<sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>components,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>inb_output_process<sp/>number<sp/>of<sp/>observation<sp/>processes,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>observed<sp/>values<sp/>per<sp/>process.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="93"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//Mixture::Mixture(int<sp/>inb_component<sp/>,<sp/>int<sp/>inb_output_process<sp/>,<sp/>int<sp/>*nb_value)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -131,16 +131,16 @@
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class<sp/>(univariate<sp/>Gaussian<sp/>with<sp/>evenly<sp/>spaced<sp/>means).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="135"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class<sp/>(univariate<sp/>Gaussian<sp/>with<sp/>evenly<sp/>spaced<sp/>means).</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>inb_component<sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>components,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>offset<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mixture<sp/>offset,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>mean<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mean<sp/>-<sp/>offset<sp/>of<sp/>the<sp/>1st<sp/>component,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>standard_deviation<sp/>standard<sp/>deviation,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>common_dispersion<sp/><sp/>common<sp/>dispersion<sp/>parameter,</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="144"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//Mixture::Mixture(int<sp/>inb_component<sp/>,<sp/>double<sp/>offset<sp/>,<sp/>double<sp/>mean<sp/>,<sp/>double<sp/>standard_deviation<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>common_dispersion)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -180,8 +180,8 @@
 <codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>delete<sp/>[]<sp/>observation;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class<sp/>(univariate<sp/>gamma,<sp/>inverse<sp/>Gaussian<sp/>or<sp/>Gaussian<sp/>with<sp/>tied<sp/>parameters).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="187"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class<sp/>(univariate<sp/>gamma,<sp/>inverse<sp/>Gaussian<sp/>or<sp/>Gaussian<sp/>with<sp/>tied<sp/>parameters).</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>inb_component<sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>components,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>ident<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>component<sp/>identifiers,</highlight><highlight class="normal"></highlight></codeline>
@@ -190,8 +190,8 @@
 <codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>standard<sp/>deviation<sp/>(Gaussian)<sp/>of<sp/>the<sp/>1st<sp/>component,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>tied_mean<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flag<sp/>tied<sp/>means,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>variance_factor<sp/><sp/><sp/><sp/>type<sp/>of<sp/>link<sp/>between<sp/>the<sp/>variances<sp/>(CONVOLUTION_FACTOR/SCALING_FACTOR).</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="198"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//Mixture::Mixture(int<sp/>inb_component<sp/>,<sp/>int<sp/>ident<sp/>,<sp/>double<sp/>mean<sp/>,<sp/>double<sp/>standard_deviation<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>tied_mean<sp/>,<sp/>tying_rule<sp/>variance_factor)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -268,16 +268,16 @@
 <codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>delete<sp/>[]<sp/>observation;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="273"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="274"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="278"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>iweight<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>weight<sp/>distribution,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="281"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>inb_output_process<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>observation<sp/>processes,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>categorical_observation<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pointer<sp/>on<sp/>CategoricalProcess<sp/>objects,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>discrete_parametric_observation<sp/><sp/><sp/>pointer<sp/>on<sp/>DiscreteParametricProcess<sp/>objects,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>continuous_parametric_observation<sp/>pointer<sp/>on<sp/>ContinuousParametricProcess<sp/>objects.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="285"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="287"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="288"><highlight class="normal"></highlight><highlight class="comment">//Mixture::Mixture(const<sp/>DiscreteParametric<sp/>*iweight<sp/>,<sp/>int<sp/>inb_output_process<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="289"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CategoricalProcess<sp/>**categorical_observation<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="290"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DiscreteParametricProcess<sp/>**discrete_parametric_observation<sp/>,</highlight><highlight class="normal"></highlight></codeline>
@@ -317,13 +317,13 @@
 <codeline lineno="324"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="326"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="327"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="330"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Copy<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="330"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Copy<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="331"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="332"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>mixt<sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>Mixture<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="333"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>data_flag<sp/>flag<sp/>copy<sp/>of<sp/>the<sp/>included<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="334"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="336"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="336"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="337"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>Mixture::copy(const<sp/>Mixture<sp/>&amp;mixt<sp/>,<sp/>bool<sp/>data_flag)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="338"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="339"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -395,10 +395,10 @@
 <codeline lineno="405"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="406"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="407"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="408"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="411"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Destruction<sp/>of<sp/>the<sp/>data<sp/>members<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="412"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="414"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="411"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Destruction<sp/>of<sp/>the<sp/>data<sp/>members<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="414"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="415"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>Mixture::remove()</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="416"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="417"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -431,24 +431,24 @@
 <codeline lineno="444"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="445"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="446"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="447"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="450"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Destructor<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="451"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="453"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="450"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Destructor<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="453"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="454"><highlight class="normal"></highlight><highlight class="comment">//Mixture::~Mixture()</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="455"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="456"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="457"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>remove();</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="458"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="459"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="460"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="463"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Assignment<sp/>operator<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="463"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Assignment<sp/>operator<sp/>of<sp/>the<sp/>Mixture<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="464"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="465"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>mixt<sp/>reference<sp/>on<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="466"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="467"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="468"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="470"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="470"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="471"><highlight class="normal"></highlight><highlight class="comment">//Mixture&amp;<sp/>Mixture::operator=(const<sp/>Mixture<sp/>&amp;mixt)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="472"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="473"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -460,16 +460,16 @@
 <codeline lineno="479"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>*this;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="480"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="481"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="482"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="485"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Extraction<sp/>of<sp/>a<sp/>discrete<sp/>parametric<sp/>component.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="485"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Extraction<sp/>of<sp/>a<sp/>discrete<sp/>parametric<sp/>component.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="486"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="487"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="488"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>variable<sp/>variable<sp/>index,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="489"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>index<sp/><sp/><sp/><sp/>component<sp/>index.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="490"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="491"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DiscreteParametricModel<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="492"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="494"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="494"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="495"><highlight class="normal"></highlight><highlight class="comment">//DiscreteParametricModel*<sp/>Mixture::extract(StatError<sp/>&amp;error<sp/>,<sp/>int<sp/>variable<sp/>,<sp/>int<sp/>index)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="496"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="497"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -552,14 +552,14 @@
 <codeline lineno="574"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>dist;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="575"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="576"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="577"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="580"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Extraction<sp/>of<sp/>the<sp/>MixtureData<sp/>object<sp/>included<sp/>in<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="580"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Extraction<sp/>of<sp/>the<sp/>MixtureData<sp/>object<sp/>included<sp/>in<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="581"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="582"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="583"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="584"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="585"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="587"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="587"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="588"><highlight class="normal"></highlight><highlight class="comment">//MixtureData*<sp/>Mixture::extract_data(StatError<sp/>&amp;error)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="589"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="590"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -587,14 +587,14 @@
 <codeline lineno="612"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>vec;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="613"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="614"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="615"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="618"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Application<sp/>of<sp/>a<sp/>threshold<sp/>on<sp/>the<sp/>parameters<sp/>of<sp/>a<sp/>multivariate<sp/>mixture.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="618"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Application<sp/>of<sp/>a<sp/>threshold<sp/>on<sp/>the<sp/>parameters<sp/>of<sp/>a<sp/>multivariate<sp/>mixture.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="619"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="620"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>min_probability<sp/>minimum<sp/>probability.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="621"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="622"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="623"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="625"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="625"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="626"><highlight class="normal"></highlight><highlight class="comment">//Mixture*<sp/>Mixture::thresholding(double<sp/>min_probability)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="627"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="628"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -613,16 +613,16 @@
 <codeline lineno="641"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>mixt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="642"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="643"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="644"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="647"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>from<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="647"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>from<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="648"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="649"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="650"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>path<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file<sp/>path,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="651"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>cumul_threshold<sp/>threshold<sp/>on<sp/>the<sp/>cumulative<sp/>distribution<sp/>function.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="652"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="653"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="654"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="656"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="656"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="657"><highlight class="normal"></highlight><highlight class="comment">//Mixture*<sp/>Mixture::ascii_read(StatError<sp/>&amp;error<sp/>,<sp/>const<sp/>string<sp/>path<sp/>,<sp/>double<sp/>cumul_threshold)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="658"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="659"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -687,8 +687,8 @@
 <codeline lineno="718"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="719"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>1<sp/>:<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="720"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lstatus<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="721"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="723"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nb_component<sp/>=<sp/>stoi(*token);<sp/><sp/><sp/>in<sp/>C++<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="721"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="723"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nb_component<sp/>=<sp/>stoi(*token);<sp/><sp/><sp/>in<sp/>C++<sp/>11</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="724"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="725"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catch(invalid_argument<sp/>&amp;arg)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="726"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lstatus<sp/>=<sp/>false;</highlight><highlight class="normal"></highlight></codeline>
@@ -785,8 +785,8 @@
 <codeline lineno="817"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(tokenizer::iterator<sp/>token<sp/>=<sp/>tok_buffer.begin();token<sp/>!=<sp/>tok_buffer.end();token++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="818"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(i<sp/>&lt;<sp/>nb_component)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="819"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lstatus<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="820"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="822"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proba<sp/>=<sp/>stod(*token);<sp/><sp/><sp/>in<sp/>C++<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="820"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="822"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>proba<sp/>=<sp/>stod(*token);<sp/><sp/><sp/>in<sp/>C++<sp/>11</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="823"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="824"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catch<sp/>(invalid_argument<sp/>&amp;arg)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="825"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lstatus<sp/>=<sp/>false;</highlight><highlight class="normal"></highlight></codeline>
@@ -865,8 +865,8 @@
 <codeline lineno="898"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="899"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>0<sp/>:<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="900"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lstatus<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="901"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="903"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>stoi(*token);<sp/><sp/><sp/>in<sp/>C++<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="901"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="903"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>stoi(*token);<sp/><sp/><sp/>in<sp/>C++<sp/>11</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="904"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="905"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catch(invalid_argument<sp/>&amp;arg)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="906"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lstatus<sp/>=<sp/>false;</highlight><highlight class="normal"></highlight></codeline>
@@ -964,8 +964,8 @@
 <codeline lineno="998"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>case<sp/>1<sp/>:<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="999"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index++;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1000"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lstatus<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1001"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1003"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>stoi(*token);<sp/><sp/><sp/>in<sp/>C++<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1001"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1003"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>stoi(*token);<sp/><sp/><sp/>in<sp/>C++<sp/>11</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1004"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1005"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catch(invalid_argument<sp/>&amp;arg)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1006"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lstatus<sp/>=<sp/>false;</highlight><highlight class="normal"></highlight></codeline>
@@ -1121,12 +1121,12 @@
 <codeline lineno="1156"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>mixt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1157"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1158"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1159"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1162"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>on<sp/>a<sp/>single<sp/>line<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1159"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1162"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>on<sp/>a<sp/>single<sp/>line<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1164"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in,out]<sp/>os<sp/>stream.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1165"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1167"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1165"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1167"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1168"><highlight class="normal"></highlight><highlight class="comment">//ostream&amp;<sp/>Mixture::line_write(ostream<sp/>&amp;os)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1169"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1170"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -1135,15 +1135,15 @@
 <codeline lineno="1173"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>os;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1174"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1175"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1176"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1179"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>and<sp/>the<sp/>associated<sp/>data<sp/>structure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1176"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1179"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>and<sp/>the<sp/>associated<sp/>data<sp/>structure.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1180"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1181"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in,out]<sp/>os<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1182"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/><sp/><sp/><sp/><sp/>vec<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pointer<sp/>on<sp/>a<sp/>MixtureData<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1183"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/><sp/><sp/><sp/><sp/>exhaustive<sp/>flag<sp/>detail<sp/>level,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1184"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/><sp/><sp/><sp/><sp/>file_flag<sp/><sp/>flag<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1185"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1187"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1185"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1187"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1188"><highlight class="normal"></highlight><highlight class="comment">//ostream&amp;<sp/>Mixture::ascii_write(ostream<sp/>&amp;os<sp/>,<sp/>const<sp/>MixtureData<sp/>*vec<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1189"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>exhaustive<sp/>,<sp/>bool<sp/>file_flag)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1190"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -1296,8 +1296,8 @@
 <codeline lineno="1337"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>&quot;\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1338"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>if<sp/>(file_flag)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1339"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>&quot;#<sp/>&quot;;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1340"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1342"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>STAT_label[STATL_OBSERVATION_DISTRIBUTION_DISTANCE]<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1340"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1342"><highlight class="comment">//<sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>STAT_label[STATL_OBSERVATION_DISTRIBUTION_DISTANCE]<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1343"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1344"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>for<sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>nb_component;j++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1345"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(file_flag)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
@@ -1412,8 +1412,8 @@
 <codeline lineno="1454"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>&quot;#<sp/>&quot;;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1455"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1456"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>nb_parameter<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>STAT_label[nb_parameter<sp/>==<sp/>1<sp/>?<sp/>STATL_FREE_PARAMETER<sp/>:<sp/>STATL_FREE_PARAMETERS]</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1457"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/><sp/>2<sp/>*<sp/>&quot;<sp/>&lt;&lt;<sp/>STAT_label[STATL_PENALIZED_LIKELIHOOD]<sp/>&lt;&lt;<sp/>&quot;<sp/>(&quot;<sp/><sp/>&lt;&lt;<sp/>STAT_criterion_word[ICL]<sp/>&lt;&lt;<sp/>&quot;):<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1459"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>2<sp/>*<sp/>(vec-&gt;likelihood<sp/>-<sp/>vec-&gt;sample_entropy)<sp/>-<sp/>nb_parameter<sp/>*<sp/>log((double)vec-&gt;nb_vector)<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1457"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/><sp/>2<sp/>*<sp/>&quot;<sp/>&lt;&lt;<sp/>STAT_label[STATL_PENALIZED_LIKELIHOOD]<sp/>&lt;&lt;<sp/>&quot;<sp/>(&quot;<sp/><sp/>&lt;&lt;<sp/>STAT_criterion_word[ICL]<sp/>&lt;&lt;<sp/>&quot;):<sp/>&quot;</highlight></codeline>
+<codeline lineno="1459"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>2<sp/>*<sp/>(vec-&gt;likelihood<sp/>-<sp/>vec-&gt;sample_entropy)<sp/>-<sp/>nb_parameter<sp/>*<sp/>log((double)vec-&gt;nb_vector)<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1460"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1461"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1462"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -1422,29 +1422,29 @@
 <codeline lineno="1465"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>os;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1466"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1467"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1468"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1471"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1468"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1471"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1472"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1473"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in,out]<sp/>os<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1474"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/><sp/><sp/><sp/><sp/>exhaustive<sp/>flag<sp/>detail<sp/>level.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1475"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1477"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1475"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1477"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1478"><highlight class="normal"></highlight><highlight class="comment">//ostream&amp;<sp/>Mixture::ascii_write(ostream<sp/>&amp;os<sp/>,<sp/>bool<sp/>exhaustive)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1479"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1480"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1481"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>ascii_write(os<sp/>,<sp/>mixture_data<sp/>,<sp/>exhaustive<sp/>,<sp/>false);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1482"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1483"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1484"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1487"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>in<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1484"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1487"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>in<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1488"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1489"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1490"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>path<sp/><sp/><sp/><sp/><sp/><sp/><sp/>file<sp/>path,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1491"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>exhaustive<sp/>flag<sp/>detail<sp/>level.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1492"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1493"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1494"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1496"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1494"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1496"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1497"><highlight class="normal"></highlight><highlight class="comment">//bool<sp/>Mixture::ascii_write(StatError<sp/>&amp;error<sp/>,<sp/>const<sp/>string<sp/>path<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1498"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>exhaustive)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1499"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -1468,14 +1468,14 @@
 <codeline lineno="1517"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>status;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1518"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1519"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1520"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1523"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>and<sp/>the<sp/>associated<sp/>data<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1520"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1523"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>and<sp/>the<sp/>associated<sp/>data<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1524"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in<sp/>a<sp/>file<sp/>at<sp/>the<sp/>spreadsheet<sp/>format.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1525"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1526"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in,out]<sp/>os<sp/><sp/>stream,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1527"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/><sp/><sp/><sp/><sp/>vec<sp/>pointer<sp/>on<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1528"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1530"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1528"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1530"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1531"><highlight class="normal"></highlight><highlight class="comment">//ostream&amp;<sp/>Mixture::spreadsheet_write(ostream<sp/>&amp;os<sp/>,<sp/>const<sp/>MixtureData<sp/>*vec)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1532"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1533"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -1574,8 +1574,8 @@
 <codeline lineno="1626"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1627"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1628"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1629"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1631"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>&quot;\n&quot;<sp/>&lt;&lt;<sp/>STAT_label[STATL_OBSERVATION_DISTRIBUTION_DISTANCE]<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1629"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1631"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>&quot;\n&quot;<sp/>&lt;&lt;<sp/>STAT_label[STATL_OBSERVATION_DISTRIBUTION_DISTANCE]<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1632"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1633"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>nb_component;j++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1634"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(k<sp/>=<sp/>0;k<sp/>&lt;<sp/>nb_component;k++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
@@ -1650,23 +1650,23 @@
 <codeline lineno="1703"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>2<sp/>*<sp/>vec-&gt;likelihood<sp/>-<sp/>nb_parameter<sp/>*<sp/>log((double)vec-&gt;nb_vector)<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1704"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1705"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>&quot;\n&quot;<sp/>&lt;&lt;<sp/>nb_parameter<sp/>&lt;&lt;<sp/>&quot;\t&quot;<sp/>&lt;&lt;<sp/>STAT_label[nb_parameter<sp/>==<sp/>1<sp/>?<sp/>STATL_FREE_PARAMETER<sp/>:<sp/>STATL_FREE_PARAMETERS]<sp/>&lt;&lt;<sp/>&quot;\t&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1706"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;2<sp/>*<sp/>&quot;<sp/>&lt;&lt;<sp/>STAT_label[STATL_PENALIZED_LIKELIHOOD]<sp/>&lt;&lt;<sp/>&quot;<sp/>(&quot;<sp/><sp/>&lt;&lt;<sp/>STAT_criterion_word[ICL]<sp/>&lt;&lt;<sp/>&quot;)\t&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1708"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>2<sp/>*<sp/>(vec-&gt;likelihood<sp/>-<sp/>vec-&gt;sample_entropy)<sp/>-<sp/>nb_parameter<sp/>*<sp/>log((double)vec-&gt;nb_vector)<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1706"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;2<sp/>*<sp/>&quot;<sp/>&lt;&lt;<sp/>STAT_label[STATL_PENALIZED_LIKELIHOOD]<sp/>&lt;&lt;<sp/>&quot;<sp/>(&quot;<sp/><sp/>&lt;&lt;<sp/>STAT_criterion_word[ICL]<sp/>&lt;&lt;<sp/>&quot;)\t&quot;</highlight></codeline>
+<codeline lineno="1708"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>2<sp/>*<sp/>(vec-&gt;likelihood<sp/>-<sp/>vec-&gt;sample_entropy)<sp/>-<sp/>nb_parameter<sp/>*<sp/>log((double)vec-&gt;nb_vector)<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1709"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1710"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1711"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1712"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>os;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1713"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1714"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1715"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1718"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>in<sp/>a<sp/>file<sp/>at<sp/>the<sp/>spreadsheet<sp/>format.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1715"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1718"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>in<sp/>a<sp/>file<sp/>at<sp/>the<sp/>spreadsheet<sp/>format.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1719"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1720"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1721"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>path<sp/><sp/>file<sp/>path.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1722"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1723"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1724"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1726"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1724"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1726"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1727"><highlight class="normal"></highlight><highlight class="comment">//bool<sp/>Mixture::spreadsheet_write(StatError<sp/>&amp;error<sp/>,<sp/>const<sp/>string<sp/>path)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1728"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1729"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -1689,16 +1689,16 @@
 <codeline lineno="1746"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>status;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1747"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1748"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1749"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1752"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>and<sp/>the<sp/>associated<sp/>data<sp/>structure<sp/>using<sp/>Gnuplot.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1749"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1752"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>and<sp/>the<sp/>associated<sp/>data<sp/>structure<sp/>using<sp/>Gnuplot.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1753"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1754"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>prefix<sp/>file<sp/>prefix,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1755"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>title<sp/><sp/>figure<sp/>title,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1756"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>vec<sp/><sp/><sp/><sp/>pointer<sp/>on<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1757"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1758"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1759"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1761"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1759"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1761"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1762"><highlight class="normal"></highlight><highlight class="comment">//bool<sp/>Mixture::plot_write(const<sp/>char<sp/>*prefix<sp/>,<sp/>const<sp/>char<sp/>*title<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1763"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>MixtureData<sp/>*vec)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1764"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -1832,16 +1832,16 @@
 <codeline lineno="1892"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>status;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1893"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1894"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1895"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1898"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>using<sp/>Gnuplot.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1895"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1898"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>using<sp/>Gnuplot.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1899"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1900"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1901"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>prefix<sp/>file<sp/>prefix,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1902"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>title<sp/><sp/>figure<sp/>title.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1903"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1904"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1905"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1907"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1905"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1907"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1908"><highlight class="normal"></highlight><highlight class="comment">//bool<sp/>Mixture::plot_write(StatError<sp/>&amp;error<sp/>,<sp/>const<sp/>char<sp/>*prefix<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1909"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>char<sp/>*title)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1910"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -1857,14 +1857,14 @@
 <codeline lineno="1920"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>status;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1921"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1922"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1923"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1926"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>and<sp/>the<sp/>associated<sp/>data<sp/>structure.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1923"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="1926"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>Mixture<sp/>object<sp/>and<sp/>the<sp/>associated<sp/>data<sp/>structure.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1927"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1928"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>vec<sp/>pointer<sp/>on<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1929"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1930"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MultiPlotSet<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1931"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1933"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1931"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="1933"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1934"><highlight class="normal"></highlight><highlight class="comment">//MultiPlotSet*<sp/>Mixture::get_plotable(const<sp/>MixtureData<sp/>*vec)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1935"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1936"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2014,26 +2014,26 @@
 <codeline lineno="2080"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>plot_set;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2081"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2082"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2083"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2086"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2083"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2086"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2087"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2088"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/>MultiPlotSet<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2089"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2091"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2089"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2091"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2092"><highlight class="normal"></highlight><highlight class="comment">//MultiPlotSet*<sp/>Mixture::get_plotable()<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2093"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2094"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2095"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>get_plotable(mixture_data);</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2096"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2097"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2098"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2101"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>number<sp/>of<sp/>parameters<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2098"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2101"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>number<sp/>of<sp/>parameters<sp/>of<sp/>a<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2103"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>min_probability<sp/>minimum<sp/>probability.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>number<sp/>of<sp/>parameters.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2108"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2108"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2109"><highlight class="normal"></highlight><highlight class="comment">//int<sp/>Mixture::nb_parameter_computation(double<sp/>min_probability)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2110"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2111"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2056,10 +2056,10 @@
 <codeline lineno="2128"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>nb_parameter;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2129"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2130"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2131"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2134"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Default<sp/>constructor<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2137"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2131"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2134"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Default<sp/>constructor<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2137"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2138"><highlight class="normal"></highlight><highlight class="comment">//MixtureData::MixtureData()</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2139"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2140"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2076,15 +2076,15 @@
 <codeline lineno="2151"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>entropy<sp/>=<sp/>NULL;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2152"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2153"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2154"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2157"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2154"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2157"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Constructor<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2158"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2159"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>inb_vector<sp/><sp/><sp/>number<sp/>of<sp/>individuals,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2160"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>inb_variable<sp/>number<sp/>of<sp/>variables,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>itype<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>variable<sp/>types,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2162"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>init_flag<sp/><sp/><sp/><sp/>flag<sp/>initialization.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2165"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2165"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2166"><highlight class="normal"></highlight><highlight class="comment">//MixtureData::MixtureData(int<sp/>inb_vector<sp/>,<sp/>int<sp/>inb_variable<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2167"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>variable_nature<sp/>*itype<sp/>,<sp/>bool<sp/>init_flag)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2168"><highlight class="normal"></highlight><highlight class="comment">//:Vectors(inb_vector<sp/>,<sp/>NULL<sp/>,<sp/>inb_variable<sp/>,<sp/>itype<sp/>,<sp/>init_flag)</highlight><highlight class="normal"></highlight></codeline>
@@ -2103,13 +2103,13 @@
 <codeline lineno="2181"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>entropy<sp/>=<sp/>NULL;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2182"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2183"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2184"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2187"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>from<sp/>a<sp/>Vectors<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2184"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2187"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>from<sp/>a<sp/>Vectors<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2188"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2189"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>vec<sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>Vectors<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>transform<sp/>type<sp/>of<sp/>transform(VECTOR_COPY/ADD_COMPONENT_VARIABLE).</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2191"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2193"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2191"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2193"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2194"><highlight class="normal"></highlight><highlight class="comment">//MixtureData::MixtureData(const<sp/>Vectors<sp/>&amp;vec<sp/>,<sp/>vector_transformation<sp/>transform)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2195"><highlight class="normal"></highlight><highlight class="comment">//:Vectors(vec<sp/>,<sp/>transform)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2196"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -2127,13 +2127,13 @@
 <codeline lineno="2208"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>entropy<sp/>=<sp/>NULL;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2209"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2210"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2211"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2214"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Copy<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2211"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2214"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Copy<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2215"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2216"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>vec<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>MixtureData<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2217"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>model_flag<sp/>flag<sp/>copy<sp/>of<sp/>the<sp/>Mixture<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2218"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2220"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2218"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2220"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2221"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>MixtureData::copy(const<sp/>MixtureData<sp/>&amp;vec<sp/>,<sp/>bool<sp/>model_flag)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2222"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2223"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2216,10 +2216,10 @@
 <codeline lineno="2300"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2301"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2302"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2303"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2306"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Destruction<sp/>of<sp/>the<sp/>data<sp/>members<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2307"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2309"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2303"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2306"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Destruction<sp/>of<sp/>the<sp/>data<sp/>members<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2307"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2309"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2310"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>MixtureData::remove()</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2311"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2312"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2256,24 +2256,24 @@
 <codeline lineno="2343"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>delete<sp/>[]<sp/>entropy;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2344"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2345"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2346"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2349"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Destructor<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2350"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2352"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2346"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2349"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Destructor<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2350"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2352"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2353"><highlight class="normal"></highlight><highlight class="comment">//MixtureData::~MixtureData()</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2354"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2355"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2356"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>remove();</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2357"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2358"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2359"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2362"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Assignment<sp/>operator<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2359"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2362"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Assignment<sp/>operator<sp/>of<sp/>the<sp/>MixtureData<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2363"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2364"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>vec<sp/><sp/>reference<sp/>on<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2365"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2366"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2367"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2369"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2367"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2369"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2370"><highlight class="normal"></highlight><highlight class="comment">//MixtureData&amp;<sp/>MixtureData::operator=(const<sp/>MixtureData<sp/>&amp;vec)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2371"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2372"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2288,12 +2288,12 @@
 <codeline lineno="2381"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>*this;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2382"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2383"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2384"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2387"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Initialization<sp/>of<sp/>the<sp/>1st<sp/>variable.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2384"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2387"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Initialization<sp/>of<sp/>the<sp/>1st<sp/>variable.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2388"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2389"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>itype<sp/>1st<sp/>variable<sp/>type<sp/>(STATE/INT_VALUE/REAL_VALUE).</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2390"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2392"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2390"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2392"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2393"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>MixtureData::state_variable_init(variable_nature<sp/>itype)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2394"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2395"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2335,16 +2335,16 @@
 <codeline lineno="2431"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2432"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2433"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2434"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2437"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Extraction<sp/>of<sp/>an<sp/>empirical<sp/>component.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2434"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2437"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Extraction<sp/>of<sp/>an<sp/>empirical<sp/>component.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2438"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2439"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2440"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>variable<sp/>variable<sp/>index,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2441"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>index<sp/><sp/><sp/><sp/>component<sp/>index.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2442"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2443"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DiscreteDistributionData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2444"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2446"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2444"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2446"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2447"><highlight class="normal"></highlight><highlight class="comment">//DiscreteDistributionData*<sp/>MixtureData::extract(StatError<sp/>&amp;error<sp/>,<sp/>int<sp/>variable<sp/>,<sp/>int<sp/>index)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2448"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2449"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2415,13 +2415,13 @@
 <codeline lineno="2514"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>histo;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2515"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2516"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2517"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2520"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2517"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2520"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2521"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2522"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in,out]<sp/>os<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2523"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/><sp/><sp/><sp/><sp/>exhaustive<sp/>flag<sp/>detail<sp/>level.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2524"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2526"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2524"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2526"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2527"><highlight class="normal"></highlight><highlight class="comment">//ostream&amp;<sp/>MixtureData::ascii_write(ostream<sp/>&amp;os<sp/>,<sp/>bool<sp/>exhaustive)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2528"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2529"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2432,16 +2432,16 @@
 <codeline lineno="2534"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>os;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2535"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2536"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2537"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2540"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>in<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2537"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2540"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>in<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2541"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2542"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2543"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>path<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file<sp/>path,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2544"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>exhaustive<sp/><sp/>flag<sp/>detail<sp/>level.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2545"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2546"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2547"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2549"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2547"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2549"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2550"><highlight class="normal"></highlight><highlight class="comment">//bool<sp/>MixtureData::ascii_write(StatError<sp/>&amp;error<sp/>,<sp/>const<sp/>string<sp/>path<sp/>,<sp/>bool<sp/>exhaustive)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2551"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2552"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2467,13 +2467,13 @@
 <codeline lineno="2572"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>status;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2573"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2574"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2575"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2578"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2575"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2578"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2579"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2580"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in,out]<sp/>os<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2581"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/><sp/><sp/><sp/><sp/>exhaustive<sp/>flag<sp/>detail<sp/>level.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2582"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2584"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2582"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2584"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2585"><highlight class="normal"></highlight><highlight class="comment">//ostream&amp;<sp/>MixtureData::ascii_data_write(ostream<sp/>&amp;os<sp/>,<sp/>bool<sp/>exhaustive)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2586"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2587"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2483,14 +2483,14 @@
 <codeline lineno="2591"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>os;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2592"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2593"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2594"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2597"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2594"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2597"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2598"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2599"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>exhaustive<sp/>flag<sp/>detail<sp/>level,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2600"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2601"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/>string.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2602"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2604"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2602"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2604"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2605"><highlight class="normal"></highlight><highlight class="comment">//string<sp/>MixtureData::ascii_data_write(bool<sp/>exhaustive)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2606"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2607"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2502,16 +2502,16 @@
 <codeline lineno="2613"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>oss.str();</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2614"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2615"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2616"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2619"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>in<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2616"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2619"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>in<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2620"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2621"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2622"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>path<sp/><sp/><sp/><sp/><sp/><sp/><sp/>file<sp/>path,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2623"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>exhaustive<sp/>flag<sp/>detail<sp/>level.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2624"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2625"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2626"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2628"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2626"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2628"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2629"><highlight class="normal"></highlight><highlight class="comment">//bool<sp/>MixtureData::ascii_data_write(StatError<sp/>&amp;error<sp/>,<sp/>const<sp/>string<sp/>path<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2630"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>exhaustive)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2631"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -2536,15 +2536,15 @@
 <codeline lineno="2650"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>status;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2651"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2652"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2653"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2656"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>in<sp/>a<sp/>file<sp/>at<sp/>the<sp/>spreadsheet<sp/>format.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2653"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2656"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Writing<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>in<sp/>a<sp/>file<sp/>at<sp/>the<sp/>spreadsheet<sp/>format.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2657"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2658"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2659"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>path<sp/><sp/>file<sp/>path.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2660"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2661"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2662"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2664"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2662"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2664"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2665"><highlight class="normal"></highlight><highlight class="comment">//bool<sp/>MixtureData::spreadsheet_write(StatError<sp/>&amp;error<sp/>,<sp/>const<sp/>string<sp/>path)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2666"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2667"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2570,16 +2570,16 @@
 <codeline lineno="2687"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>status;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2688"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2689"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2690"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2693"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>using<sp/>Gnuplot.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2690"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2693"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>MixtureData<sp/>object<sp/>using<sp/>Gnuplot.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2694"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2695"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2696"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>prefix<sp/>file<sp/>prefix,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2697"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>title<sp/><sp/>figure<sp/>title.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2698"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2699"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2700"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2702"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2700"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2702"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2703"><highlight class="normal"></highlight><highlight class="comment">//bool<sp/>MixtureData::plot_write(StatError<sp/>&amp;error<sp/>,<sp/>const<sp/>char<sp/>*prefix<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2704"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>char<sp/>*title)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2705"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -2600,12 +2600,12 @@
 <codeline lineno="2720"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>status;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2721"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2722"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2723"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2726"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2723"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2726"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Plot<sp/>of<sp/>a<sp/>MixtureData<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2727"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2728"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/>MultiPlotSet<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2729"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2731"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2729"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2731"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2732"><highlight class="normal"></highlight><highlight class="comment">//MultiPlotSet*<sp/>MixtureData::get_plotable()<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2733"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2734"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2622,12 +2622,12 @@
 <codeline lineno="2745"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>plot_set;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2746"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2747"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2748"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2751"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>information<sp/>quantity.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2748"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2751"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Computation<sp/>of<sp/>the<sp/>information<sp/>quantity.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2752"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2753"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/>information<sp/>quantity.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2754"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2756"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2754"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2756"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2757"><highlight class="normal"></highlight><highlight class="comment">//double<sp/>MixtureData::information_computation()<sp/>const</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2758"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2759"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2648,13 +2648,13 @@
 <codeline lineno="2774"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>information;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2775"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2776"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2777"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2780"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Update<sp/>of<sp/>the<sp/>observation<sp/>frequency<sp/>distributions<sp/>for<sp/>a<sp/>variable.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2777"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2780"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Update<sp/>of<sp/>the<sp/>observation<sp/>frequency<sp/>distributions<sp/>for<sp/>a<sp/>variable.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2781"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2782"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>variable<sp/><sp/><sp/><sp/><sp/>variable<sp/>index,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2783"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_component<sp/>number<sp/>of<sp/>components.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2784"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2786"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2784"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2786"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2787"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>MixtureData::observation_frequency_distribution_computation(int<sp/>variable<sp/>,<sp/>int<sp/>nb_component)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2788"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2789"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2687,12 +2687,12 @@
 <codeline lineno="2816"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2817"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2818"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2819"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2822"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>the<sp/>observation<sp/>frequency<sp/>distributions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2819"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2822"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>the<sp/>observation<sp/>frequency<sp/>distributions.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2823"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2824"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_component<sp/>number<sp/>of<sp/>components.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2825"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2827"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2825"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2827"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2828"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>MixtureData::build_observation_frequency_distribution(int<sp/>nb_component)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2829"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2830"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2720,14 +2720,14 @@
 <codeline lineno="2852"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2853"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2854"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2855"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2858"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>the<sp/>observation<sp/>histograms<sp/>for<sp/>a<sp/>variable.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2855"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2858"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>the<sp/>observation<sp/>histograms<sp/>for<sp/>a<sp/>variable.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2859"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2860"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>variable<sp/><sp/><sp/><sp/><sp/>variable<sp/>index,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2861"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_component<sp/>number<sp/>of<sp/>components,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2862"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>bin_width<sp/><sp/><sp/><sp/>bin<sp/>width.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2863"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2865"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2863"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2865"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2866"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>MixtureData::build_observation_histogram(int<sp/>variable<sp/>,<sp/>int<sp/>nb_component<sp/>,<sp/>double<sp/>bin_width)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2867"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2868"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2763,8 +2763,8 @@
 <codeline lineno="2898"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2899"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2900"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>computation<sp/>of<sp/>the<sp/>minimum<sp/>and<sp/>maximum<sp/>values<sp/>for<sp/>each<sp/>component</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2901"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2903"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_histogram[variable][i]-&gt;min_value<sp/>=<sp/>max_value[variable];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2901"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2903"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_histogram[variable][i]-&gt;min_value<sp/>=<sp/>max_value[variable];</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2904"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_histogram[variable][i]-&gt;max_value<sp/>=<sp/>min_value[variable];</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2905"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2906"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -2813,15 +2813,15 @@
 <codeline lineno="2949"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>switch<sp/>(type[variable])<sp/>{</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2950"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2951"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>case<sp/>INT_VALUE<sp/>:<sp/>{</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2952"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/>nb_vector;i++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2954"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(observation_histogram[variable][int_vector[i][0]]-&gt;frequency[(int)floor((int_vector[i][variable]<sp/>-<sp/>imin_value)<sp/>/<sp/>bin_width)])++;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2952"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/>nb_vector;i++)<sp/>{</highlight></codeline>
+<codeline lineno="2954"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(observation_histogram[variable][int_vector[i][0]]-&gt;frequency[(int)floor((int_vector[i][variable]<sp/>-<sp/>imin_value)<sp/>/<sp/>bin_width)])++;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2955"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2956"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2957"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2958"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2959"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>case<sp/>REAL_VALUE<sp/>:<sp/>{</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2960"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/>nb_vector;i++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2962"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(observation_histogram[variable][int_vector[i][0]]-&gt;frequency[(int)floor((real_vector[i][variable]<sp/>-<sp/>imin_value)<sp/>/<sp/>bin_width)])++;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2960"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(i<sp/>=<sp/>0;i<sp/>&lt;<sp/>nb_vector;i++)<sp/>{</highlight></codeline>
+<codeline lineno="2962"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(observation_histogram[variable][int_vector[i][0]]-&gt;frequency[(int)floor((real_vector[i][variable]<sp/>-<sp/>imin_value)<sp/>/<sp/>bin_width)])++;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2963"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2964"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>break;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2965"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
@@ -2833,12 +2833,12 @@
 <codeline lineno="2971"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2972"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2973"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2974"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2977"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>the<sp/>observation<sp/>histograms.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2974"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="2977"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Construction<sp/>of<sp/>the<sp/>observation<sp/>histograms.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2978"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2979"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>nb_component<sp/>number<sp/>of<sp/>components.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2980"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2982"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2980"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="2982"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2983"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>MixtureData::build_observation_histogram(int<sp/>nb_component)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2984"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2985"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
@@ -2858,8 +2858,8 @@
 <codeline lineno="2999"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3000"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3001"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3002"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3005"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Change<sp/>of<sp/>the<sp/>bin<sp/>width<sp/>of<sp/>the<sp/>marginal<sp/>histogram<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3002"><highlight class="normal"></highlight><highlight class="comment">//</highlight></codeline>
+<codeline lineno="3005"><highlight class="comment">//<sp/>*<sp/><sp/>\brief<sp/>Change<sp/>of<sp/>the<sp/>bin<sp/>width<sp/>of<sp/>the<sp/>marginal<sp/>histogram<sp/>and</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3006"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>observation<sp/>histograms<sp/>for<sp/>a<sp/>variable.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3007"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3008"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>error<sp/><sp/><sp/><sp/><sp/><sp/>reference<sp/>on<sp/>a<sp/>StatError<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
@@ -2868,8 +2868,8 @@
 <codeline lineno="3011"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\param[in]<sp/>imin_value<sp/>minimum<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3012"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3013"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*<sp/><sp/>\return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error<sp/>status.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3014"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3016"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3014"><highlight class="normal"></highlight><highlight class="comment">//<sp/>*/</highlight></codeline>
+<codeline lineno="3016"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3017"><highlight class="normal"></highlight><highlight class="comment">//bool<sp/>MixtureData::select_bin_width(StatError<sp/>&amp;error<sp/>,<sp/>int<sp/>variable<sp/>,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3018"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>double<sp/>bin_width<sp/>,<sp/>double<sp/>imin_value)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3019"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
@@ -2919,6 +2919,6 @@
 <codeline lineno="3063"><highlight class="normal"></highlight><highlight class="comment">//};<sp/><sp/>//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3064"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/mixture.cpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/mixture.cpp"/>
   </compounddef>
 </doxygen>

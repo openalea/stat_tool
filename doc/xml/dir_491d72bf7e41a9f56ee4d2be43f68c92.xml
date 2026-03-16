@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="dir_491d72bf7e41a9f56ee4d2be43f68c92" kind="dir">
-    <compoundname>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool</compoundname>
+    <compoundname>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool</compoundname>
     <innerfile refid="categorical__process_8cpp">categorical_process.cpp</innerfile>
     <innerfile refid="chain_8cpp">chain.cpp</innerfile>
     <innerfile refid="chain__algorithms_8cpp">chain_algorithms.cpp</innerfile>
@@ -64,6 +64,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/"/>
   </compounddef>
 </doxygen>

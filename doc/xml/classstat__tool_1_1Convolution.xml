@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1Convolution" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::Convolution</compoundname>
     <basecompoundref refid="classstat__tool_1_1StatInterface" prot="public" virt="non-virtual">stat_tool::StatInterface</basecompoundref>
@@ -7,7 +7,7 @@
     <includes refid="convolution_8h" local="no">convolution.h</includes>
     <sectiondef kind="friend">
       <memberdef kind="friend" id="classstat__tool_1_1Convolution_1a4b140c2efdbf49a5c39265992d544d7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>class</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">class</ref></type>
         <definition>friend class FrequencyDistribution</definition>
         <argsstring></argsstring>
         <name>FrequencyDistribution</name>
@@ -21,10 +21,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="82" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="82" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="82" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classstat__tool_1_1Convolution_1ade4c49347957957cc00e46333247e55c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>class</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">class</ref></type>
         <definition>friend class ConvolutionData</definition>
         <argsstring></argsstring>
         <name>ConvolutionData</name>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="83" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="83" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="83" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classstat__tool_1_1Convolution_1ae09a783c3a4974c7be092ab292bcc9fd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -51,7 +51,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> &amp;</type>
           <declname>convol</declname>
         </param>
         <briefdescription>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="85" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="85" bodyend="86"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="85" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="85" bodyend="86"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -77,10 +77,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="90" column="21" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="90" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="90" column="21" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Convolution_1a5df06b56a312f8f911d3019a35b8af51" prot="private" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Convolution::nb_distribution</definition>
         <argsstring></argsstring>
         <name>nb_distribution</name>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="91" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="91" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="91" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="91" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Convolution_1a2083095aa8235f8c523b3f7f7eb88d0b" prot="private" static="no" mutable="no">
         <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> **</type>
@@ -107,24 +107,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="92" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="92" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="92" column="24" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="92" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1ab720999a1378fc77d28ad61c7c5ff908" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Convolution::copy</definition>
         <argsstring>(const Convolution &amp;convol, bool data_flag=true)</argsstring>
         <name>copy</name>
         <qualifiedname>stat_tool::Convolution::copy</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> &amp;</type>
           <declname>convol</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>data_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <briefdescription>
 <para>Copy of a <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> object. </para>
@@ -151,10 +151,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="94" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="178" bodyend="197"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="94" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="178" bodyend="197"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1ab2bedadac87224eab2c867d3c22f042b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Convolution::remove</definition>
         <argsstring>()</argsstring>
         <name>remove</name>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="95" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="206" bodyend="219"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="95" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="206" bodyend="219"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a61cbfa23017dc9472566e09b0714cf9f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -179,15 +179,15 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
           <declname>convol_histo</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>file_flag</declname>
         </param>
         <briefdescription>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="97" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="97" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1aca08d01e47c6b76dba4dfd49a803f4de" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -209,7 +209,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
           <declname>convol_histo</declname>
         </param>
         <briefdescription>
@@ -218,24 +218,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="99" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="99" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a69ee53dca0a87e9bf9fcec0351852057" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Convolution::plot_write</definition>
         <argsstring>(const char *prefix, const char *title, const ConvolutionData *convol_histo) const</argsstring>
         <name>plot_write</name>
         <qualifiedname>stat_tool::Convolution::plot_write</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>prefix</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>title</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
           <declname>convol_histo</declname>
         </param>
         <briefdescription>
@@ -273,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="100" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="987" bodyend="1141"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="100" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="987" bodyend="1141"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1aac5cfe6081c33cca9bedbde09f68b127" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
@@ -282,7 +282,7 @@
         <name>get_plotable</name>
         <qualifiedname>stat_tool::Convolution::get_plotable</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
           <declname>convol_histo</declname>
         </param>
         <briefdescription>
@@ -298,30 +298,30 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object. </para>
+<simplesect kind="return"><para>MultiPlotSet object. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="102" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="1183" bodyend="1340"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="102" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="1183" bodyend="1340"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a792eaf47f0bc70be80925d1b24b6e79f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Convolution::expectation_step</definition>
         <argsstring>(const FrequencyDistribution &amp;histo, const Distribution **partial_convol, Reestimation&lt; double &gt; **reestim) const</argsstring>
         <name>expectation_step</name>
         <qualifiedname>stat_tool::Convolution::expectation_step</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> &amp;</type>
           <declname>histo</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> **</type>
           <declname>partial_convol</declname>
         </param>
         <param>
-          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; double &gt; **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Reestimation</ref>&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> &gt; **</type>
           <declname>reestim</declname>
         </param>
         <briefdescription>
@@ -357,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="104" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution_algorithms.cpp" bodystart="102" bodyend="144"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="104" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution_algorithms.cpp" bodystart="102" bodyend="144"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -374,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="109" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="67" bodyend="73"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="109" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="67" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a91ae1c125e4d16c1a038a1138e9f1f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -383,11 +383,11 @@
         <name>Convolution</name>
         <qualifiedname>stat_tool::Convolution::Convolution</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_dist</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> **</type>
           <declname>pdist</declname>
         </param>
         <briefdescription>
@@ -415,7 +415,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="110" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="85" bodyend="103"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="110" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="85" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a320f0f8eae4fca2bac25375162e931fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -424,11 +424,11 @@
         <name>Convolution</name>
         <qualifiedname>stat_tool::Convolution::Convolution</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_dist</declname>
         </param>
         <param>
-          <type>const std::vector&lt; <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &gt; &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::vector&lt; <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &gt; &amp;</type>
           <declname>idist</declname>
         </param>
         <briefdescription>
@@ -437,7 +437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="111" column="5"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="111" column="5"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1aa43849f0ded47e9bc00ac0e4619a208d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -446,11 +446,11 @@
         <name>Convolution</name>
         <qualifiedname>stat_tool::Convolution::Convolution</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>known_dist</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &amp;</type>
           <declname>unknown_dist</declname>
         </param>
         <briefdescription>
@@ -478,7 +478,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="112" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="145" bodyend="166"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="112" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="145" bodyend="166"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1ad10b80a56fc520a080b6829e9914c5fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -487,13 +487,13 @@
         <name>Convolution</name>
         <qualifiedname>stat_tool::Convolution::Convolution</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> &amp;</type>
           <declname>convol</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>data_flag</declname>
-          <defval>true</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">true</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -501,7 +501,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="113" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="113" bodyend="114"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="113" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="113" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a47f8ecc731dca20ba3698ae56c392a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -516,7 +516,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="115" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="228" bodyend="232"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="115" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="228" bodyend="232"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a7294d140e12206f111ff523af386e20e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> &amp;</type>
@@ -525,7 +525,7 @@
         <name>operator=</name>
         <qualifiedname>stat_tool::Convolution::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> &amp;</type>
           <declname>convol</declname>
         </param>
         <briefdescription>
@@ -547,7 +547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="116" column="17" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="245" bodyend="258"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="116" column="17" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="245" bodyend="258"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1aae4c76dac27ca159cac9a02585718174" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteParametricModel" kindref="compound">DiscreteParametricModel</ref> *</type>
@@ -560,7 +560,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>index</declname>
         </param>
         <briefdescription>
@@ -590,7 +590,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="118" column="29" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="272" bodyend="290"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="118" column="29" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="272" bodyend="290"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a16df1d62423d11c97bb04f72b400425f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
@@ -621,7 +621,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="119" column="21" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="303" bodyend="322"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="119" column="21" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="303" bodyend="322"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a83f3914f088950d7bd5a31f5378d0460" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -651,7 +651,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="126" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="635" bodyend="643"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="126" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="635" bodyend="643"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a7093e7c568468bfc9c4651c9be932ea0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -665,9 +665,9 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -675,10 +675,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="128" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="128" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a2f18a95d197169d1cb9c65ee84cf55de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Convolution::ascii_write</definition>
         <argsstring>(StatError &amp;error, const std::string path, bool exhaustive=false) const</argsstring>
         <name>ascii_write</name>
@@ -689,13 +689,13 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -703,10 +703,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="129" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="129" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a24207ee86708d3068aa8590a9f4c62c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Convolution::spreadsheet_write</definition>
         <argsstring>(StatError &amp;error, const std::string path) const</argsstring>
         <name>spreadsheet_write</name>
@@ -717,7 +717,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <briefdescription>
@@ -726,10 +726,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="130" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="130" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1aff6a82b565b4cdf17fc3e2a6333a4e82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Convolution::plot_write</definition>
         <argsstring>(StatError &amp;error, const char *prefix, const char *title=NULL) const</argsstring>
         <name>plot_write</name>
@@ -740,13 +740,13 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>prefix</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>title</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Plot of a <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> object using Gnuplot. </para>
@@ -783,7 +783,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="131" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="1156" bodyend="1169"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="131" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="1156" bodyend="1169"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1aa018b77fc8240bd8c49101010e9afa8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
@@ -796,34 +796,34 @@
 <para>Plot of a <ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> object. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object. </para>
+<para><simplesect kind="return"><para>MultiPlotSet object. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="132" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="1351" bodyend="1355"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="132" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="1351" bodyend="1355"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1ac9cc9a17f1a2bcf9039e7694df481ad2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Convolution::computation</definition>
         <argsstring>(int min_nb_value=1, double cumul_threshold=CONVOLUTION_THRESHOLD, bool *dist_flag=NULL)</argsstring>
         <name>computation</name>
         <qualifiedname>stat_tool::Convolution::computation</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>min_nb_value</declname>
           <defval>1</defval>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>cumul_threshold</declname>
           <defval><ref refid="namespacestat__tool_1af4547c21f4b13f2eff91f0f830b1ae37" kindref="member">CONVOLUTION_THRESHOLD</ref></defval>
         </param>
         <param>
-          <type>bool *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref> *</type>
           <declname>dist_flag</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Computation of a convolution of discrete distributions. </para>
@@ -858,7 +858,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="134" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution_algorithms.cpp" bodystart="61" bodyend="89"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="134" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution_algorithms.cpp" bodystart="61" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a48297e34c0af15710a49829b3b6d6d8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
@@ -871,7 +871,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_element</declname>
         </param>
         <briefdescription>
@@ -901,7 +901,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="136" column="21" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution_algorithms.cpp" bodystart="481" bodyend="541"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="136" column="21" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution_algorithms.cpp" bodystart="481" bodyend="541"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1ad6b07ba078aea86e0460fee3e60ef838" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1ConvolutionData" kindref="compound">ConvolutionData</ref> *</type>
@@ -915,10 +915,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="140" column="21" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="140" bodyend="140"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="140" column="21" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="140" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a3bcc5b25d83cacff8140d2275081175b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Convolution::get_nb_distribution</definition>
         <argsstring>() const</argsstring>
         <name>get_nb_distribution</name>
@@ -929,7 +929,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="141" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="141" bodyend="141"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="141" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="141" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a962393ed17cb8f587ccdeb7f20e5b527" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> *</type>
@@ -938,7 +938,7 @@
         <name>get_distribution</name>
         <qualifiedname>stat_tool::Convolution::get_distribution</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>index</declname>
         </param>
         <briefdescription>
@@ -947,7 +947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="142" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="142" bodyend="142"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="142" column="24" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="142" bodyend="142"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -962,11 +962,11 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_dist</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> **</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> **</type>
           <declname>dist</declname>
         </param>
         <briefdescription>
@@ -1004,7 +1004,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="121" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="338" bodyend="356"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="121" column="24" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="338" bodyend="356"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1a69b01b84118d9a13b66a17404667f0df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> *</type>
@@ -1017,7 +1017,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::vector&lt; <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &gt; &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::vector&lt; <ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> &gt; &amp;</type>
           <declname>dist</declname>
         </param>
         <briefdescription>
@@ -1026,7 +1026,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="122" column="24"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="122" column="24"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Convolution_1ab35bb985fed119a8a31f87655b0581f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Convolution" kindref="compound">Convolution</ref> *</type>
@@ -1039,11 +1039,11 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>cumul_threshold</declname>
           <defval><ref refid="namespacestat__tool_1af4547c21f4b13f2eff91f0f830b1ae37" kindref="member">CONVOLUTION_THRESHOLD</ref></defval>
         </param>
@@ -1082,7 +1082,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="123" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="406" bodyend="624"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="123" column="24" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.cpp" bodystart="406" bodyend="624"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -1109,6 +1109,10 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="6">
+        <label>stat_tool::Reestimation&lt; int &gt;</label>
+        <link refid="classstat__tool_1_1Reestimation"/>
+      </node>
       <node id="1">
         <label>stat_tool::Convolution</label>
         <link refid="classstat__tool_1_1Convolution"/>
@@ -1153,16 +1157,12 @@
         <childnode refid="6" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="6">
-        <label>stat_tool::Reestimation&lt; int &gt;</label>
-        <link refid="classstat__tool_1_1Reestimation"/>
-      </node>
       <node id="2">
         <label>stat_tool::StatInterface</label>
         <link refid="classstat__tool_1_1StatInterface"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" line="80" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="80" bodyend="143"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" line="80" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/convolution.h" bodystart="80" bodyend="143"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1Distribution_1ae52fd301bc94d727c55a105d9636fc56" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>alloc_nb_value</name></member>
       <member refid="classstat__tool_1_1Distribution_1a660698714309ff3eeed93bd0852caa74" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>ascii_characteristic_print</name></member>
@@ -1194,12 +1194,12 @@
       <member refid="classstat__tool_1_1Distribution_1a1c9cd8f86c02ba0eb6b5cbe257b14b18" prot="public" virt="non-virtual" ambiguityscope="stat_tool::Distribution::"><scope>stat_tool::Convolution</scope><name>copy</name></member>
       <member refid="classstat__tool_1_1Distribution_1a3744419eb8ba39f1fb02998297673824" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>cumul</name></member>
       <member refid="classstat__tool_1_1Distribution_1a6e954534b65518d0c58a173878151f33" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>cumul_computation</name></member>
+      <member refid="classstat__tool_1_1Convolution_1a2083095aa8235f8c523b3f7f7eb88d0b" prot="private" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>distribution</name></member>
       <member refid="classstat__tool_1_1Distribution_1a7854c3e83af17605b6f1b2e08191a883" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>Distribution</name></member>
       <member refid="classstat__tool_1_1Distribution_1a9fa7e3d5d7dac525227c16a119dcc96f" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>Distribution</name></member>
       <member refid="classstat__tool_1_1Distribution_1a6f630eea7dc2b028f3a75c817dc1bbf7" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>Distribution</name></member>
       <member refid="classstat__tool_1_1Distribution_1adb7dd4adf9fd9f3b68268e085c80d635" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>Distribution</name></member>
       <member refid="classstat__tool_1_1Distribution_1ab829f5277a389cba2a3f48b299602e40" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>Distribution</name></member>
-      <member refid="classstat__tool_1_1Convolution_1a2083095aa8235f8c523b3f7f7eb88d0b" prot="private" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>distribution</name></member>
       <member refid="classstat__tool_1_1Distribution_1acf23daaa305165b02be680e5c5b33cc0" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>equal_size_copy</name></member>
       <member refid="classstat__tool_1_1Convolution_1a792eaf47f0bc70be80925d1b24b6e79f" prot="private" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>expectation_step</name></member>
       <member refid="classstat__tool_1_1Convolution_1aae4c76dac27ca159cac9a02585718174" prot="public" virt="non-virtual"><scope>stat_tool::Convolution</scope><name>extract</name></member>

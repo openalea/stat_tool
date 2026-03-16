@@ -1,5 +1,5 @@
-\doxysection{/\+Users/arsouze/\+Documents/\+Modeles/\+Codes/\+Open\+Alea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/vectors.h File Reference}
-\hypertarget{vectors_8h}{}\label{vectors_8h}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/vectors.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/vectors.h}}
+\doxysection{/home/jdurand/devlp/\+Git/openalea/stat\+\_\+tool/src/cpp/stat\+\_\+tool/vectors.h File Reference}
+\hypertarget{vectors_8h}{}\label{vectors_8h}\index{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/vectors.h@{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/vectors.h}}
 {\ttfamily \#include "{}stat\+\_\+tools.\+h"{}}\newline
 {\ttfamily \#include "{}distribution.\+h"{}}\newline
 {\ttfamily \#include "{}distance\+\_\+matrix.\+h"{}}\newline
@@ -50,38 +50,38 @@ enum \mbox{\hyperlink{namespacestat__tool_a22827419bdacafd3f73d1e7480c76b22}{sta
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{namespacestat__tool_a39c3b8d286e6227b76d30bbf9390f66a}{stat\+\_\+tool\+::identifier\+\_\+checking}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, int nb\+\_\+individual, int \texorpdfstring{$\ast$}{*}identifier)
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{bool}} \mbox{\hyperlink{namespacestat__tool_a39c3b8d286e6227b76d30bbf9390f66a}{stat\+\_\+tool\+::identifier\+\_\+checking}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&\mbox{\hyperlink{classstat__tool_1_1Reestimation}{error}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{nb\+\_\+individual}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \texorpdfstring{$\ast$}{*}identifier)
 \begin{DoxyCompactList}\small\item\em Checking of a list of individual identifiers (unique identifiers). \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{namespacestat__tool_a89e8fd34910ecf4e1144444c33b92f63}{stat\+\_\+tool\+::selected\+\_\+identifier\+\_\+checking}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&error, int nb\+\_\+individual, int \texorpdfstring{$\ast$}{*}identifier, int nb\+\_\+selected\+\_\+individual, int \texorpdfstring{$\ast$}{*}selected\+\_\+identifier, const char \texorpdfstring{$\ast$}{*}data\+\_\+label)
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{bool}} \mbox{\hyperlink{namespacestat__tool_a89e8fd34910ecf4e1144444c33b92f63}{stat\+\_\+tool\+::selected\+\_\+identifier\+\_\+checking}} (\mbox{\hyperlink{classstat__tool_1_1StatError}{Stat\+Error}} \&\mbox{\hyperlink{classstat__tool_1_1Reestimation}{error}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{nb\+\_\+individual}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \texorpdfstring{$\ast$}{*}identifier, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{nb\+\_\+selected\+\_\+individual}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classstat__tool_1_1Reestimation}{selected\+\_\+identifier}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{char}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classstat__tool_1_1Reestimation}{data\+\_\+label}})
 \begin{DoxyCompactList}\small\item\em Checking of an identifier list. \end{DoxyCompactList}\item 
-int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_a953a5d372db648fc5c3a55fcafb37443}{stat\+\_\+tool\+::identifier\+\_\+select}} (int nb\+\_\+individual, int \texorpdfstring{$\ast$}{*}identifier, int nb\+\_\+selected\+\_\+individual, int \texorpdfstring{$\ast$}{*}selected\+\_\+identifier, bool keep)
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_a953a5d372db648fc5c3a55fcafb37443}{stat\+\_\+tool\+::identifier\+\_\+select}} (\mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{nb\+\_\+individual}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \texorpdfstring{$\ast$}{*}identifier, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{nb\+\_\+selected\+\_\+individual}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classstat__tool_1_1Reestimation}{selected\+\_\+identifier}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{bool}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{keep}})
 \begin{DoxyCompactList}\small\item\em Selection of individuals by their identifiers. \end{DoxyCompactList}\item 
-int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_ae4f64e1c488c68728adadeaceba77815}{stat\+\_\+tool\+::select\+\_\+variable}} (int nb\+\_\+variable, int nb\+\_\+selected\+\_\+variable, int \texorpdfstring{$\ast$}{*}selected\+\_\+variable, bool keep)
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacestat__tool_ae4f64e1c488c68728adadeaceba77815}{stat\+\_\+tool\+::select\+\_\+variable}} (\mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} nb\+\_\+variable, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{nb\+\_\+selected\+\_\+variable}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classstat__tool_1_1Reestimation}{selected\+\_\+variable}}, \mbox{\hyperlink{classstat__tool_1_1Reestimation}{bool}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{keep}})
 \begin{DoxyCompactList}\small\item\em Selection of variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-const int \mbox{\hyperlink{namespacestat__tool_a7a8f65ad1113e1c7fc00512de2aba65b}{stat\+\_\+tool\+::\+VECTOR\+\_\+\+NB\+\_\+\+VARIABLE}} = 60
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_a7a8f65ad1113e1c7fc00512de2aba65b}{stat\+\_\+tool\+::\+VECTOR\+\_\+\+NB\+\_\+\+VARIABLE}} = 60
 \begin{DoxyCompactList}\small\item\em maximum number of variables \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_a6315249f2dc2f96f48b79472d31ca282}{stat\+\_\+tool\+::\+DISTANCE\+\_\+\+NB\+\_\+\+VECTOR}} = 2000
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_a6315249f2dc2f96f48b79472d31ca282}{stat\+\_\+tool\+::\+DISTANCE\+\_\+\+NB\+\_\+\+VECTOR}} = 2000
 \begin{DoxyCompactList}\small\item\em maximum number of vectors for the computation of a matrix of pairwise distances \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_ab16f105cb865ce3c4b774f775d572b15}{stat\+\_\+tool\+::\+SUP\+\_\+\+NORM\+\_\+\+DISTANCE\+\_\+\+NB\+\_\+\+VECTOR}} = 10
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_ab16f105cb865ce3c4b774f775d572b15}{stat\+\_\+tool\+::\+SUP\+\_\+\+NORM\+\_\+\+DISTANCE\+\_\+\+NB\+\_\+\+VECTOR}} = 10
 \begin{DoxyCompactList}\small\item\em minimum number of vectors for the computation of the sup norm distance \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_a72c8d36bdefd1c449f8fa78c6ed10f23}{stat\+\_\+tool\+::\+CONTINGENCY\+\_\+\+NB\+\_\+\+VALUE}} = 100
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_a72c8d36bdefd1c449f8fa78c6ed10f23}{stat\+\_\+tool\+::\+CONTINGENCY\+\_\+\+NB\+\_\+\+VALUE}} = 100
 \begin{DoxyCompactList}\small\item\em maximum number of categories for the computation of a contingency table \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_a77328c04bb85a8b9ea089a7b01d8167b}{stat\+\_\+tool\+::\+DISPLAY\+\_\+\+CONTINGENCY\+\_\+\+NB\+\_\+\+VALUE}} = 20
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_a77328c04bb85a8b9ea089a7b01d8167b}{stat\+\_\+tool\+::\+DISPLAY\+\_\+\+CONTINGENCY\+\_\+\+NB\+\_\+\+VALUE}} = 20
 \begin{DoxyCompactList}\small\item\em maximum number of categories for the display of a contingency table \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_a9e0495da3d699ce4aa0a04440ab0a31f}{stat\+\_\+tool\+::\+VARIANCE\+\_\+\+ANALYSIS\+\_\+\+NB\+\_\+\+VALUE}} = 100
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_a9e0495da3d699ce4aa0a04440ab0a31f}{stat\+\_\+tool\+::\+VARIANCE\+\_\+\+ANALYSIS\+\_\+\+NB\+\_\+\+VALUE}} = 100
 \begin{DoxyCompactList}\small\item\em maximum number of levels for the analysis of variance \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_aefe19d49242479939f4b61f37c0a60ab}{stat\+\_\+tool\+::\+DISPLAY\+\_\+\+CONDITIONAL\+\_\+\+NB\+\_\+\+VALUE}} = 100
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_aefe19d49242479939f4b61f37c0a60ab}{stat\+\_\+tool\+::\+DISPLAY\+\_\+\+CONDITIONAL\+\_\+\+NB\+\_\+\+VALUE}} = 100
 \begin{DoxyCompactList}\small\item\em maximum number of values of the display of the conditional distributions \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_a538d2f07305f8d79b0a60c3fdb6ec3c7}{stat\+\_\+tool\+::\+PLOT\+\_\+\+NB\+\_\+\+VALUE}} = 30
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_a538d2f07305f8d79b0a60c3fdb6ec3c7}{stat\+\_\+tool\+::\+PLOT\+\_\+\+NB\+\_\+\+VALUE}} = 30
 \begin{DoxyCompactList}\small\item\em threshold for the writing of frequencies (Gnuplot output) \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_ab04094fcb7d13aaa69ca40acd0616692}{stat\+\_\+tool\+::\+NB\+\_\+\+CATEGORY}} = 50
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_ab04094fcb7d13aaa69ca40acd0616692}{stat\+\_\+tool\+::\+NB\+\_\+\+CATEGORY}} = 50
 \begin{DoxyCompactList}\small\item\em maximum number of categories \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_a5660ee00c20d2ebf8e62f1c7e51851b0}{stat\+\_\+tool\+::\+MIN\+\_\+\+NB\+\_\+\+ASSIGNMENT}} = 1
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_a5660ee00c20d2ebf8e62f1c7e51851b0}{stat\+\_\+tool\+::\+MIN\+\_\+\+NB\+\_\+\+ASSIGNMENT}} = 1
 \begin{DoxyCompactList}\small\item\em minimum number of assignments of individuals (1st iteration of the MCEM algorithm) \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{namespacestat__tool_a2a53bf546d215d2b988c190368346546}{stat\+\_\+tool\+::\+MAX\+\_\+\+NB\+\_\+\+ASSIGNMENT}} = 10
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{int}} \mbox{\hyperlink{namespacestat__tool_a2a53bf546d215d2b988c190368346546}{stat\+\_\+tool\+::\+MAX\+\_\+\+NB\+\_\+\+ASSIGNMENT}} = 10
 \begin{DoxyCompactList}\small\item\em maximum number of assignments of individuals (MCEM algorithm) \end{DoxyCompactList}\item 
-const double \mbox{\hyperlink{namespacestat__tool_a1c171c288b4d9214f9c87ec33f7cab93}{stat\+\_\+tool\+::\+NB\+\_\+\+ASSIGNMENT\+\_\+\+PARAMETER}} = 1.
+\mbox{\hyperlink{classstat__tool_1_1Reestimation}{const}} \mbox{\hyperlink{classstat__tool_1_1Reestimation}{double}} \mbox{\hyperlink{namespacestat__tool_a1c171c288b4d9214f9c87ec33f7cab93}{stat\+\_\+tool\+::\+NB\+\_\+\+ASSIGNMENT\+\_\+\+PARAMETER}} = 1.
 \begin{DoxyCompactList}\small\item\em parameter for the number of assignments of individuals (MCEM algorithm) \end{DoxyCompactList}\end{DoxyCompactItemize}

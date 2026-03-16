@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1Regression" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::Regression</compoundname>
     <basecompoundref refid="classstat__tool_1_1StatInterface" prot="public" virt="non-virtual">stat_tool::StatInterface</basecompoundref>
@@ -7,7 +7,7 @@
     <includes refid="regression_8h" local="no">regression.h</includes>
     <sectiondef kind="friend">
       <memberdef kind="friend" id="classstat__tool_1_1Regression_1a543d5c204cf0202ad734acf28aa597d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>class</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">class</ref></type>
         <definition>friend class Vectors</definition>
         <argsstring></argsstring>
         <name>Vectors</name>
@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="118" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="118" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="118" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="118" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classstat__tool_1_1Regression_1a7a56b775aa0722823ad67f79a0f87c43" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -34,7 +34,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> &amp;</type>
           <declname>regression</declname>
         </param>
         <briefdescription>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="120" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="120" bodyend="121"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="120" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="120" bodyend="121"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
@@ -60,10 +60,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="125" column="13" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="125" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="125" column="13" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="125" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Regression_1aa12a3acd8c3abe125eb010908165e67c" prot="private" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Regression::nb_vector</definition>
         <argsstring></argsstring>
         <name>nb_vector</name>
@@ -75,10 +75,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="126" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="126" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="126" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1Regression_1a67e792facfa8c590858745939bad8b2e" prot="private" static="no" mutable="no">
-        <type>double *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref> *</type>
         <definition>double* stat_tool::Regression::residual</definition>
         <argsstring></argsstring>
         <name>residual</name>
@@ -90,18 +90,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="127" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="127" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="127" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="127" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
       <memberdef kind="function" id="classstat__tool_1_1Regression_1ae0b7293b7e0dfff09d3e99e2e415dbe3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Regression::copy</definition>
         <argsstring>(const Regression &amp;)</argsstring>
         <name>copy</name>
         <qualifiedname>stat_tool::Regression::copy</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> &amp;</type>
           <defname>regression</defname>
         </param>
         <briefdescription>
@@ -121,10 +121,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="129" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="593" bodyend="612"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="129" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="593" bodyend="612"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a9861a99ac0b9240c71a1cf93458ef630" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Regression::remove</definition>
         <argsstring>()</argsstring>
         <name>remove</name>
@@ -136,10 +136,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="130" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="637" bodyend="642"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="130" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="637" bodyend="642"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a4c24bd054d7274ad73b19c6776424d0c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Regression::regression_square_sum_computation</definition>
         <argsstring>() const</argsstring>
         <name>regression_square_sum_computation</name>
@@ -154,10 +154,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="132" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1628" bodyend="1642"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="132" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1628" bodyend="1642"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1adcfdc8d573e0c868f74f3c933ebbf20a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::Regression::residual_computation</definition>
         <argsstring>()</argsstring>
         <name>residual_computation</name>
@@ -169,10 +169,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="133" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1651" bodyend="1667"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="133" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1651" bodyend="1667"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a50936c92123f4ef19ffb2276086faf18" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Regression::residual_mean_computation</definition>
         <argsstring>() const</argsstring>
         <name>residual_mean_computation</name>
@@ -187,16 +187,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="134" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1678" bodyend="1692"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="134" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1678" bodyend="1692"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a4a47f58b527e554ebd500b797b1eaf4f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Regression::residual_variance_computation</definition>
         <argsstring>(double residual_mean) const</argsstring>
         <name>residual_variance_computation</name>
         <qualifiedname>stat_tool::Regression::residual_variance_computation</qualifiedname>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>residual_mean</declname>
         </param>
         <briefdescription>
@@ -218,10 +218,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="135" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1705" bodyend="1722"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="135" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1705" bodyend="1722"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a205047cbef36ab1f31972bd7067d87c4" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Regression::residual_square_sum_computation</definition>
         <argsstring>() const</argsstring>
         <name>residual_square_sum_computation</name>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="136" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1733" bodyend="1746"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="136" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1733" bodyend="1746"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -253,7 +253,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="140" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="545" bodyend="552"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="140" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="545" bodyend="552"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a2697430b66add46674a3abdc39d0ad3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -266,15 +266,15 @@
           <declname>iident</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>explanatory_variable</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>response_variable</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Vectors" kindref="compound">Vectors</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Vectors" kindref="compound">Vectors</ref> &amp;</type>
           <declname>vec</declname>
         </param>
         <briefdescription>
@@ -318,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="141" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="566" bodyend="582"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="141" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="566" bodyend="582"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a46308519148e1cf99448e83c2a5d65ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -327,7 +327,7 @@
         <name>Regression</name>
         <qualifiedname>stat_tool::Regression::Regression</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> &amp;</type>
           <declname>regression</declname>
         </param>
         <briefdescription>
@@ -347,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="143" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="623" bodyend="628"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="143" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="623" bodyend="628"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1aa6454d1661615230b9bb9497ccf6b1d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -362,7 +362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="144" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="651" bodyend="655"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="144" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="651" bodyend="655"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a18acb3516c5583e9f6c27ae6f1ef7277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> &amp;</type>
@@ -371,7 +371,7 @@
         <name>operator=</name>
         <qualifiedname>stat_tool::Regression::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> &amp;</type>
           <declname>regression</declname>
         </param>
         <briefdescription>
@@ -393,7 +393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="145" column="16" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="668" bodyend="680"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="145" column="16" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="668" bodyend="680"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1ad3bf39fddaff0466e27791242c0d7f82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -423,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="147" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="691" bodyend="699"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="147" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="691" bodyend="699"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a54b5fd8b2924a3ea4a34c8a396b45605" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>std::ostream &amp;</type>
@@ -437,9 +437,9 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -447,10 +447,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="149" column="18"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="149" column="18"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a0c3c0a60c6ccf669c1e4113217f5f77b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Regression::ascii_write</definition>
         <argsstring>(StatError &amp;error, const std::string path, bool exhaustive=false) const</argsstring>
         <name>ascii_write</name>
@@ -461,13 +461,13 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -475,10 +475,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="150" column="10"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="150" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a92f56d95ccea07ea80f9d079296552f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Regression::spreadsheet_write</definition>
         <argsstring>(StatError &amp;error, const std::string path) const</argsstring>
         <name>spreadsheet_write</name>
@@ -489,7 +489,7 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const std::string</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> std::string</type>
           <declname>path</declname>
         </param>
         <briefdescription>
@@ -519,10 +519,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="151" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1035" bodyend="1248"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="151" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1035" bodyend="1248"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a1b1615f6071c980523c3beab2959c91d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::Regression::plot_write</definition>
         <argsstring>(StatError &amp;error, const char *prefix, const char *title=NULL) const</argsstring>
         <name>plot_write</name>
@@ -533,13 +533,13 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>prefix</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>title</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <briefdescription>
 <para>Plot of a <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> object using Gnuplot. </para>
@@ -576,7 +576,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="152" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1263" bodyend="1453"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="152" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1263" bodyend="1453"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a169a52da0755e7301e49106969293603" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> *</type>
@@ -589,13 +589,13 @@
 <para>Plot of a <ref refid="classstat__tool_1_1Regression" kindref="compound">Regression</ref> object. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object. </para>
+<para><simplesect kind="return"><para>MultiPlotSet object. </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="153" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1464" bodyend="1617"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="153" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp" bodystart="1464" bodyend="1617"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1ab295561b925e43f33b97991c2ba97a24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Vectors" kindref="compound">Vectors</ref> *</type>
@@ -609,10 +609,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="157" column="13" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="157" bodyend="157"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="157" column="13" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="157" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1ad911738f6c021712a7f0a61c740b7b8f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::Regression::get_nb_vector</definition>
         <argsstring>() const</argsstring>
         <name>get_nb_vector</name>
@@ -623,16 +623,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="158" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="158" bodyend="158"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="158" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="158" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1Regression_1a70cc6430359fee666ccff141ca07af00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::Regression::get_residual</definition>
         <argsstring>(int ivec) const</argsstring>
         <name>get_residual</name>
         <qualifiedname>stat_tool::Regression::get_residual</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>ivec</declname>
         </param>
         <briefdescription>
@@ -641,7 +641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="159" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="159" bodyend="159"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="159" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="159" bodyend="159"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -668,6 +668,10 @@
       </node>
     </inheritancegraph>
     <collaborationgraph>
+      <node id="6">
+        <label>stat_tool::Reestimation&lt; int &gt;</label>
+        <link refid="classstat__tool_1_1Reestimation"/>
+      </node>
       <node id="5">
         <label>stat_tool::FrequencyDistribution</label>
         <link refid="classstat__tool_1_1FrequencyDistribution"/>
@@ -677,10 +681,6 @@
       <node id="7">
         <label>stat_tool::Histogram</label>
         <link refid="classstat__tool_1_1Histogram"/>
-      </node>
-      <node id="6">
-        <label>stat_tool::Reestimation&lt; int &gt;</label>
-        <link refid="classstat__tool_1_1Reestimation"/>
       </node>
       <node id="1">
         <label>stat_tool::Regression</label>
@@ -714,7 +714,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" line="116" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="116" bodyend="160"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" line="116" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h" bodystart="116" bodyend="160"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1RegressionKernel_1ae104c27196ec8e0646b1382bd831b426" prot="public" virt="non-virtual"><scope>stat_tool::Regression</scope><name>ascii_formal_print</name></member>
       <member refid="classstat__tool_1_1RegressionKernel_1a182d5696579060044f97a24f4657f150" prot="public" virt="non-virtual"><scope>stat_tool::Regression</scope><name>ascii_parameter_print</name></member>
@@ -762,8 +762,8 @@
       <member refid="classstat__tool_1_1Regression_1a4a47f58b527e554ebd500b797b1eaf4f" prot="private" virt="non-virtual"><scope>stat_tool::Regression</scope><name>residual_variance_computation</name></member>
       <member refid="classstat__tool_1_1RegressionKernel_1a4c1c65af94413d4bceb15380c520def9" prot="public" virt="non-virtual"><scope>stat_tool::Regression</scope><name>spreadsheet_print</name></member>
       <member refid="classstat__tool_1_1Regression_1a92f56d95ccea07ea80f9d079296552f7" prot="public" virt="virtual"><scope>stat_tool::Regression</scope><name>spreadsheet_write</name></member>
-      <member refid="classstat__tool_1_1Regression_1a543d5c204cf0202ad734acf28aa597d0" prot="private" virt="non-virtual"><scope>stat_tool::Regression</scope><name>Vectors</name></member>
       <member refid="classstat__tool_1_1Regression_1afff9f8ba86ea29e1636ebe97396561bd" prot="private" virt="non-virtual"><scope>stat_tool::Regression</scope><name>vectors</name></member>
+      <member refid="classstat__tool_1_1Regression_1a543d5c204cf0202ad734acf28aa597d0" prot="private" virt="non-virtual"><scope>stat_tool::Regression</scope><name>Vectors</name></member>
       <member refid="classstat__tool_1_1Regression_1aa6454d1661615230b9bb9497ccf6b1d7" prot="public" virt="non-virtual"><scope>stat_tool::Regression</scope><name>~Regression</name></member>
       <member refid="classstat__tool_1_1RegressionKernel_1a0c3836f85ef8f37cfaacaa70afda4736" prot="public" virt="non-virtual"><scope>stat_tool::Regression</scope><name>~RegressionKernel</name></member>
     </listofallmembers>

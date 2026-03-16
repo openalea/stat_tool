@@ -1,5 +1,5 @@
 \doxysection{curves.\+h}
-\hypertarget{curves_8h_source}{}\label{curves_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/curves.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/curves.h}}
+\hypertarget{curves_8h_source}{}\label{curves_8h_source}\index{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/curves.h@{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/curves.h}}
 \mbox{\hyperlink{curves_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
@@ -76,9 +76,9 @@
 \DoxyCodeLine{00072\ }
 \DoxyCodeLine{00073\ }
 \DoxyCodeLine{00075\ }
-\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\ \{}
+\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\ \{}
 \DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Curves_acd3a4229574dd778b6501b37682a2c72}{operator<<}}(std::ostream\&\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\&);}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Curves_acd3a4229574dd778b6501b37682a2c72}{operator<<}}(std::ostream\&\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\&);}
 \DoxyCodeLine{00079\ }
 \DoxyCodeLine{00080\ \ \ public\ :}
 \DoxyCodeLine{00081\ }
@@ -89,35 +89,35 @@
 \DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ *\mbox{\hyperlink{classstat__tool_1_1Curves_a58875b2857387fdd319c3943c069c74f}{frequency}};\ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{double}\ **\mbox{\hyperlink{classstat__tool_1_1Curves_af08bc181370d227a298559e90eafb339}{point}};\ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00088\ }
-\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Curves_ab67d9fe5436b098d517ce1b99f7f8482}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\&);}
-\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a773f61a498040aabab77342a537e9af7}{smooth}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\ \&curves\ ,\ \textcolor{keywordtype}{int}\ max\_frequency);}
-\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Curves_aa49ec22f9f2c6077a4ffe222de48950f}{remove}}();}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ copy(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\&);}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ smooth(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\ \&curves\ ,\ \textcolor{keywordtype}{int}\ max\_frequency);}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ remove();}
 \DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}();}
-\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}(\textcolor{keywordtype}{int}\ inb\_curve\ ,\ \textcolor{keywordtype}{int}\ ilength\ ,\ \textcolor{keywordtype}{bool}\ frequency\_flag\ =\ \textcolor{keyword}{false}\ ,}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}();}
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}(\textcolor{keywordtype}{int}\ inb\_curve\ ,\ \textcolor{keywordtype}{int}\ ilength\ ,\ \textcolor{keywordtype}{bool}\ frequency\_flag\ =\ \textcolor{keyword}{false}\ ,}
 \DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ index\_parameter\_flag\ =\ \textcolor{keyword}{false}\ ,\ \textcolor{keywordtype}{bool}\ init\_flag\ =\ \textcolor{keyword}{true});}
-\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\ \&curves\ ,\ \mbox{\hyperlink{namespacestat__tool_ab0aa13ab6ed39d60f719959072b14d49}{curve\_transformation}}\ transform\ =\ \mbox{\hyperlink{namespacestat__tool_ab0aa13ab6ed39d60f719959072b14d49a9d869ee3bd7ad0e49e14f6706f4d8410}{CURVE\_COPY}}\ ,}
-\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_frequency\ =\ \mbox{\hyperlink{namespacestat__tool_a05d317883bf0b7829301680d605a2403}{MAX\_FREQUENCY}});}
-\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ \&dist);}
-\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ \&histo);}
-\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{\string~Curves}}();}
-\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\&\ \mbox{\hyperlink{classstat__tool_1_1Curves_a51723c702972aca3e328eb66d85e52a6}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\ \&curves);}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\ \&curves\ ,\ \mbox{\hyperlink{namespacestat__tool_ab0aa13ab6ed39d60f719959072b14d49}{curve\_transformation}}\ transform\ =\ CURVE\_COPY\ ,}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ max\_frequency\ =\ MAX\_FREQUENCY);}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ \&dist);}
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ \&histo);}
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves}{\string~Curves}}();}
+\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\ \&curves);}
 \DoxyCodeLine{00102\ }
-\DoxyCodeLine{00103\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Curves_a27df707957a0411307f2c8273bf80892}{ascii\_print}}(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ file\_flag\ =\ \textcolor{keyword}{false}\ ,}
-\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\ *curves\ =\ NULL)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00105\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Curves_af68c5899791fe3e3d75e437a72862399}{spreadsheet\_print}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\ *curves\ =\ NULL)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a01c5e820db9d78400d7d13728ce1f510}{plot\_length\_computation}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a15a69cdb202c90d2d556d0864d94feec}{plot\_print}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path\ ,\ \textcolor{keywordtype}{int}\ ilength\ =\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}}\ ,}
-\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\ *curves\_0\ =\ NULL\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a19d298f6004f302089845ffc9f31ebcb}{Curves}}\ *curves\_1\ =\ NULL)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a1c5bf8600cf252c375df8ff596ab3dda}{plot\_print\_standard\_residual}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path\ ,\ \textcolor{keywordtype}{double}\ *standard\_residual\ =\ NULL)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ sequence\_analysis}}
-\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a80b928a1dd049fe52b8d849e97763afc}{plotable\_write}}(\textcolor{keywordtype}{int}\ index\ ,\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}\ \&plot)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a80b928a1dd049fe52b8d849e97763afc}{plotable\_write}}(\mbox{\hyperlink{classstat__tool_1_1MultiPlot}{MultiPlot}}\ \&plot)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Curves_aeab9a0e7d5738fbee9a74327ecd57864}{plotable\_frequency\_write}}(\mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}\ \&plot)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ \ \ \ \ std::ostream\&\ ascii\_print(std::ostream\ \&os\ ,\ \textcolor{keywordtype}{bool}\ file\_flag\ =\ \textcolor{keyword}{false}\ ,}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\ *curves\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ \ \ \ \ std::ostream\&\ spreadsheet\_print(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\ *curves\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{int}\ plot\_length\_computation()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_aabba140776fa4e45eae9077817bbb072}{plot\_print}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path\ ,\ \textcolor{keywordtype}{int}\ ilength\ =\ I\_DEFAULT\ ,}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\ *curves\_0\ =\ NULL\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Curves}{Curves}}\ *curves\_1\ =\ NULL)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{bool}\ plot\_print\_standard\_residual(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *path\ ,\ \textcolor{keywordtype}{double}\ *standard\_residual\ =\ NULL)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ sequence\_analysis}}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_write(\textcolor{keywordtype}{int}\ index\ ,\ \mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}\ \&plot)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_write(\mbox{\hyperlink{classstat__tool_1_1MultiPlot}{MultiPlot}}\ \&plot)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_frequency\_write(\mbox{\hyperlink{classstat__tool_1_1SinglePlot}{SinglePlot}}\ \&plot)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00113\ }
-\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Curves_acb2b10add6b30582f625b482a0dd679d}{max\_frequency\_computation}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a91059b28277db02390ecccb0b98bb2ca}{nb\_element\_computation}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a4a1d93d90c9af6dedcca8c932a620cc4}{mean\_computation}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1Curves_a5e3dc11269e2824635d56997c67b1da7}{total\_square\_sum\_computation}}(\textcolor{keywordtype}{int}\ index\ ,\ \textcolor{keywordtype}{double}\ mean)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{int}\ max\_frequency\_computation()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_element\_computation()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{double}\ mean\_computation(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{double}\ total\_square\_sum\_computation(\textcolor{keywordtype}{int}\ index\ ,\ \textcolor{keywordtype}{double}\ mean)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00118\ \ \ \};}
 \DoxyCodeLine{00119\ }
 \DoxyCodeLine{00120\ }

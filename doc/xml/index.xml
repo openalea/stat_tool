@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.13.2" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
   <compound refid="classstat__tool_1_1CategoricalProcess" kind="class"><name>stat_tool::CategoricalProcess</name>
     <member refid="classstat__tool_1_1CategoricalProcess_1afb755953e87f96d33cfe45105f91001c" kind="variable"><name>nb_state</name></member>
     <member refid="classstat__tool_1_1CategoricalProcess_1a596308dbee71be710c1d4a2d2bb00307" kind="variable"><name>nb_value</name></member>
@@ -69,6 +69,7 @@
     <member refid="classstat__tool_1_1Chain_1ac993b8fec1023bd9264d7dd4922a8098" kind="function"><name>init</name></member>
     <member refid="classstat__tool_1_1Chain_1a4ff539375f5858fd62edf6f78f87e1dd" kind="function"><name>likelihood_computation</name></member>
     <member refid="classstat__tool_1_1Chain_1a1ced0cead653ad5c1fad85ef2f28298e" kind="function"><name>chi2_fit</name></member>
+    <member refid="classstat__tool_1_1Chain_1a84b4838757b9cd47702e9f1b964930ea" kind="function"><name>get_nb_state</name></member>
     <member refid="classstat__tool_1_1Chain_1a564b28178894084c45c73c804d339cd4" kind="function"><name>parsing</name></member>
   </compound>
   <compound refid="classstat__tool_1_1ChainData" kind="class"><name>stat_tool::ChainData</name>
@@ -209,14 +210,14 @@
     <member refid="classstat__tool_1_1ContinuousParametric_1a7dcf88ea2e0c57f1eac697cfa901d7f9" kind="variable"><name>shape</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a02bf96b6d207aceaca9662a489a373cf" kind="variable"><name>location</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a9d9710aa2297d3f6f7240dbce7af5fbd" kind="variable"><name>intercept</name></member>
-    <member refid="classstat__tool_1_1ContinuousParametric_1a1df276919add2b58ccfaf4443ea14027" kind="variable"><name></name></member>
+    <member refid="classstat__tool_1_1ContinuousParametric_1a21b75557481ae3055e7d660994a822a1" kind="variable"><name></name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a6a5cb1585cb99375f44f873900609ec4" kind="variable"><name>scale</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a84a353be909c60c0f95616325371f870" kind="variable"><name>dispersion</name></member>
-    <member refid="classstat__tool_1_1ContinuousParametric_1aa246c3edb578e9d0c374fa6f1763941e" kind="variable"><name></name></member>
+    <member refid="classstat__tool_1_1ContinuousParametric_1ae92b9d4536800884194a5b66c43c91f6" kind="variable"><name></name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a4b4e49ac0b568635d650ecfd51026cc7" kind="variable"><name>zero_probability</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a92701a7ddce8da7fe61c9749391d6ebe" kind="variable"><name>slope</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1aa1dc55e81fa329ad5d4747faa207fe5c" kind="variable"><name>autoregressive_coeff</name></member>
-    <member refid="classstat__tool_1_1ContinuousParametric_1ac346972608ccff08c7ffd1aeb38c5f09" kind="variable"><name></name></member>
+    <member refid="classstat__tool_1_1ContinuousParametric_1a0bc624dc6fa1380294d529191d809f59" kind="variable"><name></name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kind="variable"><name>min_value</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kind="variable"><name>max_value</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1acafc68119ab666c0d3f1ef5925c8f9e7" kind="variable"><name>unit</name></member>
@@ -224,7 +225,7 @@
     <member refid="classstat__tool_1_1ContinuousParametric_1a61380690f9a2d4945e1b52176c70f1ce" kind="variable"><name>sample_size</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1aa3bb471c93d944e749e4d9bb7f7285cf" kind="variable"><name>correlation</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a0138fc7e39e8e257e1f08cc522855b82" kind="variable"><name>determination_coeff</name></member>
-    <member refid="classstat__tool_1_1ContinuousParametric_1a2bfaeaef284d580aa291543ecf984411" kind="variable"><name></name></member>
+    <member refid="classstat__tool_1_1ContinuousParametric_1ab5f2583bef4c9e4dcba2223a7a07ac13" kind="variable"><name></name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1ab046dfbbfae7e3401b8b3b9ff1c50979" kind="variable"><name>cumul</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1a5e9874de97d0e285fd02182295d16f70" kind="function"><name>copy</name></member>
     <member refid="classstat__tool_1_1ContinuousParametric_1ae62d6c1cc9fa506543603de360aa7f89" kind="function"><name>ContinuousParametric</name></member>
@@ -530,7 +531,7 @@
     <member refid="classstat__tool_1_1DiscreteParametric_1a132bf806a42e3e8c0ea5b3945fbb8b18" kind="variable"><name>inf_bound</name></member>
     <member refid="classstat__tool_1_1DiscreteParametric_1a12be09c473e18de4707377ea279346cf" kind="variable"><name>sup_bound</name></member>
     <member refid="classstat__tool_1_1DiscreteParametric_1a55d363e0c54bccb09f13e5db9422c396" kind="variable"><name>no_segment</name></member>
-    <member refid="classstat__tool_1_1DiscreteParametric_1a51a62ba7dada2a96b5adc9a3deedb372" kind="variable"><name></name></member>
+    <member refid="classstat__tool_1_1DiscreteParametric_1aa60f31ea11e325aaa6a51db4469d65dd" kind="variable"><name></name></member>
     <member refid="classstat__tool_1_1DiscreteParametric_1a1fc0c18865f1d6df1f463c30df18f6d0" kind="variable"><name>parameter</name></member>
     <member refid="classstat__tool_1_1DiscreteParametric_1a2cc5829f6efc1961384e983b3ee5dc9e" kind="variable"><name>probability</name></member>
     <member refid="classstat__tool_1_1DiscreteParametric_1ad357c9ffd89f606a6b239547a9960079" kind="variable"><name>sequence_length</name></member>
@@ -930,7 +931,7 @@
     <member refid="classstat__tool_1_1MultivariateMixture_1a543d5c204cf0202ad734acf28aa597d0" kind="friend"><name>Vectors</name></member>
     <member refid="classstat__tool_1_1MultivariateMixture_1a046bcaec61c1223f901e383342773ac7" kind="friend"><name>MultivariateMixtureData</name></member>
     <member refid="classstat__tool_1_1MultivariateMixture_1ae7351cc8925e01bda5f8c892cb08b782" kind="friend"><name>multivariate_mixture_building</name></member>
-    <member refid="classstat__tool_1_1MultivariateMixture_1af29f1fd87c4604921113a8850b83bc27" kind="friend"><name>multivariate_mixture_ascii_read</name></member>
+    <member refid="classstat__tool_1_1MultivariateMixture_1a1527e81c32e28aea68faf43e653568c2" kind="friend"><name>multivariate_mixture_ascii_read</name></member>
     <member refid="classstat__tool_1_1MultivariateMixture_1a8a0a85d58b251984595b65d26f4d1c33" kind="friend"><name>operator&lt;&lt;</name></member>
     <member refid="classstat__tool_1_1MultivariateMixture_1a2b30173cc1c207b003d429eeb4a2ba80" kind="variable"><name>mixture_data</name></member>
     <member refid="classstat__tool_1_1MultivariateMixture_1a0a64997a9d12edaa44b87861c8c4c6f6" kind="variable"><name>nb_component</name></member>
@@ -2170,7 +2171,7 @@
     <member refid="namespacestat__tool_1abc893784e192d0e7f864ac0761f770cb" kind="function"><name>reestimation</name></member>
     <member refid="namespacestat__tool_1a28fad8ea5bd3916f643e248ea0f9ea7e" kind="function"><name>column_width</name></member>
     <member refid="namespacestat__tool_1a2cd992551e4a0b0d59e95775e935d18e" kind="function"><name>multivariate_mixture_building</name></member>
-    <member refid="namespacestat__tool_1a0c74f4d79ab7a8d898ba9c5c84c39660" kind="function"><name>multivariate_mixture_ascii_read</name></member>
+    <member refid="namespacestat__tool_1a78257d03aa54ce4da283c0861ada085b" kind="function"><name>multivariate_mixture_ascii_read</name></member>
     <member refid="namespacestat__tool_1ab7464fbaf5ba6b2107cc03441e4a8f6a" kind="function"><name>quantile_computation</name></member>
     <member refid="namespacestat__tool_1a39c3b8d286e6227b76d30bbf9390f66a" kind="function"><name>identifier_checking</name></member>
     <member refid="namespacestat__tool_1a89e8fd34910ecf4e1144444c33b92f63" kind="function"><name>selected_identifier_checking</name></member>
@@ -2280,7 +2281,6 @@
   <compound refid="plotable_8cpp" kind="file"><name>plotable.cpp</name>
   </compound>
   <compound refid="plotable_8h" kind="file"><name>plotable.h</name>
-    <member refid="plotable_8h_1aea9b5073ca0903052a722cc5c8a0ae9d" kind="define"><name>PLOTABLE_TCC</name></member>
   </compound>
   <compound refid="plotable_8hpp" kind="file"><name>plotable.hpp</name>
   </compound>
@@ -2324,10 +2324,10 @@
   </compound>
   <compound refid="vectors_8h" kind="file"><name>vectors.h</name>
   </compound>
-  <compound refid="dir_dfdbda394c3f7a3aa55229f33a559c41" kind="dir"><name>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp</name>
+  <compound refid="dir_dfdbda394c3f7a3aa55229f33a559c41" kind="dir"><name>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp</name>
   </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src</name>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/jdurand/devlp/Git/openalea/stat_tool/src</name>
   </compound>
-  <compound refid="dir_491d72bf7e41a9f56ee4d2be43f68c92" kind="dir"><name>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool</name>
+  <compound refid="dir_491d72bf7e41a9f56ee4d2be43f68c92" kind="dir"><name>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool</name>
   </compound>
 </doxygenindex>

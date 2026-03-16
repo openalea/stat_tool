@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1DiscreteParametricProcess" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::DiscreteParametricProcess</compoundname>
     <includes refid="markovian_8h" local="no">markovian.h</includes>
     <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classstat__tool_1_1DiscreteParametricProcess_1a75063162d67083b50bfa08c5f41aa97b" prot="public" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::DiscreteParametricProcess::nb_state</definition>
         <argsstring></argsstring>
         <name>nb_state</name>
@@ -17,10 +17,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="283" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="283" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="285" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="285" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1DiscreteParametricProcess_1adda419dac534c4c7bb821e82f05fb9e2" prot="public" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::DiscreteParametricProcess::nb_value</definition>
         <argsstring></argsstring>
         <name>nb_value</name>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="284" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="284" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="286" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="286" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1DiscreteParametricProcess_1aabcb6cee196db065d444963640d0b63f" prot="public" static="no" mutable="no">
         <type><ref refid="classstat__tool_1_1DiscreteParametric" kindref="compound">DiscreteParametric</ref> **</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="285" column="24" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="285" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="287" column="24" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="287" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1DiscreteParametricProcess_1a40b81ca8472e286967ce327c0a6ef6ba" prot="public" static="no" mutable="no">
         <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="286" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="286" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="288" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="288" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1DiscreteParametricProcess_1a5c71ef45f43271701c843fd17e412732" prot="public" static="no" mutable="no">
         <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="287" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="287" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="289" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="289" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1DiscreteParametricProcess_1a303785b1edd861c3deb2f8374167d50e" prot="public" static="no" mutable="no">
         <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="288" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="288" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="290" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="290" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1DiscreteParametricProcess_1ab14df489a0b2f1b23a27586b415e7ddd" prot="public" static="no" mutable="no">
         <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
@@ -107,24 +107,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="290" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="290" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="292" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="292" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1af8a364eefaed5b36f1122e56306574c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::DiscreteParametricProcess::copy</definition>
         <argsstring>(const DiscreteParametricProcess &amp;process, bool mass_copy=false)</argsstring>
         <name>copy</name>
         <qualifiedname>stat_tool::DiscreteParametricProcess::copy</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametricProcess" kindref="compound">DiscreteParametricProcess</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametricProcess" kindref="compound">DiscreteParametricProcess</ref> &amp;</type>
           <declname>process</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>mass_copy</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
 <para>Copy of a <ref refid="classstat__tool_1_1DiscreteParametricProcess" kindref="compound">DiscreteParametricProcess</ref> object. </para>
@@ -143,10 +143,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="292" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="144" bodyend="186"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="294" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="144" bodyend="186"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1ae18cee3198aa2cb3563372ddb6ca4a64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::DiscreteParametricProcess::remove</definition>
         <argsstring>()</argsstring>
         <name>remove</name>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="293" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="195" bodyend="219"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="295" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="195" bodyend="219"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a1d3bc0b41183ae48bd37a579dc9e5dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -167,12 +167,12 @@
         <name>DiscreteParametricProcess</name>
         <qualifiedname>stat_tool::DiscreteParametricProcess::DiscreteParametricProcess</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_state</declname>
           <defval>0</defval>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_value</declname>
           <defval>0</defval>
         </param>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="295" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="65" bodyend="97"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="297" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="65" bodyend="97"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1aa4d85c3b2ab54d55d3eccc38f05d9046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -210,7 +210,7 @@
         <name>DiscreteParametricProcess</name>
         <qualifiedname>stat_tool::DiscreteParametricProcess::DiscreteParametricProcess</qualifiedname>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_state</declname>
         </param>
         <param>
@@ -242,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="296" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="109" bodyend="133"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="298" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="109" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1aaa346fc3288a4cde7d999c68c0ed9ecd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -251,13 +251,13 @@
         <name>DiscreteParametricProcess</name>
         <qualifiedname>stat_tool::DiscreteParametricProcess::DiscreteParametricProcess</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametricProcess" kindref="compound">DiscreteParametricProcess</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametricProcess" kindref="compound">DiscreteParametricProcess</ref> &amp;</type>
           <declname>process</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>mass_copy</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -265,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="297" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="297" bodyend="298"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="299" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="299" bodyend="300"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a4cd12d167d73e5e3245bc23a48c0bd16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="299" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="228" bodyend="232"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="301" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="228" bodyend="232"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1ad6920232cab2a83c7bf3b73b8afb1069" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1DiscreteParametricProcess" kindref="compound">DiscreteParametricProcess</ref> &amp;</type>
@@ -289,7 +289,7 @@
         <name>operator=</name>
         <qualifiedname>stat_tool::DiscreteParametricProcess::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1DiscreteParametricProcess" kindref="compound">DiscreteParametricProcess</ref> &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1DiscreteParametricProcess" kindref="compound">DiscreteParametricProcess</ref> &amp;</type>
           <declname>process</declname>
         </param>
         <briefdescription>
@@ -311,7 +311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="300" column="31" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="245" bodyend="254"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="302" column="31" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="245" bodyend="254"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1aebd317d1f08f62a226634148741d7471" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -332,11 +332,11 @@
           <declname>marginal_distribution</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>exhaustive</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>file_flag</declname>
         </param>
         <param>
@@ -401,7 +401,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="306" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="436" bodyend="776"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="308" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="436" bodyend="776"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a09aaacb818e2c4c0233386ed6b093567" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -416,12 +416,12 @@
         <param>
           <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>empirical_observation</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
           <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
           <declname>marginal_distribution</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
           <type><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8" kindref="member">model_type</ref></type>
@@ -469,35 +469,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="309" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="790" bodyend="1026"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="311" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="790" bodyend="1026"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a5fa8d64f055418f2935269a533ee07c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
         <definition>bool stat_tool::DiscreteParametricProcess::plot_print</definition>
         <argsstring>(const char *prefix, const char *title, int process, FrequencyDistribution **empirical_observation=NULL, FrequencyDistribution *marginal_distribution=NULL, model_type model=HIDDEN_MARKOV) const</argsstring>
         <name>plot_print</name>
         <qualifiedname>stat_tool::DiscreteParametricProcess::plot_print</qualifiedname>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>prefix</declname>
         </param>
         <param>
-          <type>const char *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">char</ref> *</type>
           <declname>title</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>process</declname>
         </param>
         <param>
           <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>empirical_observation</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
           <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
           <declname>marginal_distribution</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
           <type><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8" kindref="member">model_type</ref></type>
@@ -563,10 +563,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="313" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1044" bodyend="1410"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="315" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1044" bodyend="1410"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a63c7d8654b2cc88f7f7093c882cd7ff4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::DiscreteParametricProcess::plotable_write</definition>
         <argsstring>(MultiPlotSet &amp;plot, int &amp;index, int process, FrequencyDistribution **empirical_observation=NULL, FrequencyDistribution *marginal_distribution=NULL, model_type model=HIDDEN_MARKOV) const</argsstring>
         <name>plotable_write</name>
@@ -576,22 +576,22 @@
           <declname>plot</declname>
         </param>
         <param>
-          <type>int &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> &amp;</type>
           <declname>index</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>process</declname>
         </param>
         <param>
           <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> **</type>
           <declname>empirical_observation</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
           <type><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref> *</type>
           <declname>marginal_distribution</declname>
-          <defval>NULL</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">NULL</ref></defval>
         </param>
         <param>
           <type><ref refid="namespacestat__tool_1a3b10ec50ac971657bd19945d6768cdf8" kindref="member">model_type</ref></type>
@@ -607,7 +607,7 @@
 <parametername direction="in">plot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>reference on a <ref refid="namespacestat__tool_1aee87b7e8445b6cf3e67705eb94574b05" kindref="member">MultiPlotSet</ref> object, </para>
+<para>reference on a MultiPlotSet object, </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -655,10 +655,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="317" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1426" bodyend="1743"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="319" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1426" bodyend="1743"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a244521a8ffd4a1f404e6746fd66bffb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::DiscreteParametricProcess::nb_value_computation</definition>
         <argsstring>()</argsstring>
         <name>nb_value_computation</name>
@@ -670,16 +670,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="322" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1752" bodyend="1764"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="324" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1752" bodyend="1764"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a90eb006d7f8bcc52633afc69026799fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::DiscreteParametricProcess::state_permutation</definition>
         <argsstring>(int *permut) const</argsstring>
         <name>state_permutation</name>
         <qualifiedname>stat_tool::DiscreteParametricProcess::state_permutation</qualifiedname>
         <param>
-          <type>int *</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> *</type>
           <declname>permut</declname>
         </param>
         <briefdescription>
@@ -699,10 +699,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="323" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1776" bodyend="1793"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="325" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1776" bodyend="1793"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a7e9db690a8dfa21f52ce058639586d5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::DiscreteParametricProcess::nb_parameter_computation</definition>
         <argsstring>() const</argsstring>
         <name>nb_parameter_computation</name>
@@ -717,10 +717,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="324" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1805" bodyend="1820"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="326" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1805" bodyend="1820"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1ac3000ec7db08e7bce2b6a90f864d794a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::DiscreteParametricProcess::mean_computation</definition>
         <argsstring>(Distribution *pweight) const</argsstring>
         <name>mean_computation</name>
@@ -748,10 +748,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="325" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1834" bodyend="1847"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="327" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1834" bodyend="1847"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a6637b24b639364e6b139e42a05a7c865" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
         <definition>double stat_tool::DiscreteParametricProcess::variance_computation</definition>
         <argsstring>(Distribution *pweight, double mean=D_INF) const</argsstring>
         <name>variance_computation</name>
@@ -761,7 +761,7 @@
           <declname>pweight</declname>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>mean</declname>
           <defval><ref refid="namespacestat__tool_1a710852f459bd0493d0eaaac065dab938" kindref="member">D_INF</ref></defval>
         </param>
@@ -792,7 +792,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="326" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1862" bodyend="1881"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="328" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1862" bodyend="1881"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a37a4cb47faeb7abea263b42f64c6b2d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classstat__tool_1_1Distribution" kindref="compound">Distribution</ref> *</type>
@@ -823,10 +823,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="327" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1894" bodyend="1931"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="329" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1894" bodyend="1931"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1DiscreteParametricProcess_1a740e7378c79f035ddc3a891ce481ecfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::DiscreteParametricProcess::init</definition>
         <argsstring>()</argsstring>
         <name>init</name>
@@ -842,7 +842,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="328" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1967" bodyend="1987"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="330" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="1967" bodyend="1987"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -857,15 +857,15 @@
           <declname>error</declname>
         </param>
         <param>
-          <type>ifstream &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ifstream</ref> &amp;</type>
           <declname>in_file</declname>
         </param>
         <param>
-          <type>int &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref> &amp;</type>
           <declname>line</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>nb_state</declname>
         </param>
         <param>
@@ -873,7 +873,7 @@
           <declname>model</declname>
         </param>
         <param>
-          <type>double</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">double</ref></type>
           <declname>cumul_threshold</declname>
           <defval><ref refid="namespacestat__tool_1a960fa4d455d92bb0ea54561ce1a35524" kindref="member">OBSERVATION_THRESHOLD</ref></defval>
         </param>
@@ -936,7 +936,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="302" column="38" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="272" bodyend="420"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="304" column="38" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp" bodystart="272" bodyend="420"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -970,7 +970,7 @@
         <link refid="classstat__tool_1_1Distribution"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" line="279" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="279" bodyend="329"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" line="281" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h" bodystart="281" bodyend="331"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1DiscreteParametricProcess_1aebd317d1f08f62a226634148741d7471" prot="public" virt="non-virtual"><scope>stat_tool::DiscreteParametricProcess</scope><name>ascii_print</name></member>
       <member refid="classstat__tool_1_1DiscreteParametricProcess_1af8a364eefaed5b36f1122e56306574c8" prot="public" virt="non-virtual"><scope>stat_tool::DiscreteParametricProcess</scope><name>copy</name></member>

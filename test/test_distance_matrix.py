@@ -8,7 +8,7 @@
 __version__ = "$Id$"
 
 from .tools import robust_path as get_shared_data
-from .tools import interface
+from .tools import DISABLE_PLOT, interface
 
 from openalea.stat_tool.cluster import Clustering, ToDistanceMatrix
 from openalea.stat_tool.comparison import Compare

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="continuous__parametric_8cpp" kind="file" language="C++">
     <compoundname>continuous_parametric.cpp</compoundname>
     <includes local="no">cmath</includes>
@@ -30,7 +30,7 @@
         <link refid="config_8h"/>
       </node>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp</label>
         <link refid="continuous__parametric_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" line="38" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" line="38" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp" bodystart="38" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -298,7 +298,7 @@
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><ref refid="classstat__tool_1_1ContinuousParametric_1ae62d6c1cc9fa506543603de360aa7f89" kindref="member">ContinuousParametric::ContinuousParametric</ref>(<ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33" kindref="member">continuous_parametric</ref><sp/>iident<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ilocation<sp/>,</highlight></codeline>
@@ -323,10 +323,10 @@
 <codeline lineno="99"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a5e9874de97d0e285fd02182295d16f70" kindref="member">ContinuousParametric::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>&amp;dist)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a5e9874de97d0e285fd02182295d16f70" kindref="member">ContinuousParametric::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ContinuousParametric<sp/>&amp;dist)</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
 <codeline lineno="112"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a5f71c85ec088464e153dd17926b84567" kindref="member">ident</ref><sp/>=<sp/>dist.ident;</highlight></codeline>
@@ -359,7 +359,7 @@
 <codeline lineno="140"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><ref refid="classstat__tool_1_1ContinuousParametric_1a692864a932bdf1ddfa8c69282f6448c0" kindref="member">ContinuousParametric::~ContinuousParametric</ref>()</highlight></codeline>
@@ -369,10 +369,10 @@
 <codeline lineno="153"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>
 <codeline lineno="155"><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref>&amp;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0032621c17b107ce9a0d08924982d0bf" kindref="member">ContinuousParametric::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>&amp;dist)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">ContinuousParametric&amp;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0032621c17b107ce9a0d08924982d0bf" kindref="member">ContinuousParametric::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ContinuousParametric<sp/>&amp;dist)</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight></codeline>
 <codeline lineno="168"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;dist<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -384,10 +384,10 @@
 <codeline lineno="175"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight></codeline>
 <codeline lineno="177"><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref>*<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1ad8aa4ee3db787e2f54132640228594cd" kindref="member">ContinuousParametric::parsing</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/>ifstream<sp/>&amp;in_file<sp/>,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">ContinuousParametric*<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1ad8aa4ee3db787e2f54132640228594cd" kindref="member">ContinuousParametric::parsing</ref>(StatError<sp/>&amp;error<sp/>,<sp/>ifstream<sp/>&amp;in_file<sp/>,</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;line<sp/>,<sp/><ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33" kindref="member">continuous_parametric</ref><sp/>last_ident)</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight></codeline>
 <codeline lineno="194"><highlight class="normal">{</highlight></codeline>
@@ -767,7 +767,7 @@
 <codeline lineno="568"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="569"><highlight class="normal"></highlight></codeline>
 <codeline lineno="570"><highlight class="normal"></highlight></codeline>
-<codeline lineno="571"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="578"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="579"><highlight class="normal"></highlight></codeline>
 <codeline lineno="580"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a15deb35d8be42ab2b34d185fa970c7a1" kindref="member">ContinuousParametric::ascii_parameter_print</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>file_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -893,7 +893,7 @@
 <codeline lineno="700"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="701"><highlight class="normal"></highlight></codeline>
 <codeline lineno="702"><highlight class="normal"></highlight></codeline>
-<codeline lineno="703"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="703"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="710"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="711"><highlight class="normal"></highlight></codeline>
 <codeline lineno="712"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a31369a6b66a26811bcc254296784accb" kindref="member">ContinuousParametric::ascii_characteristic_print</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>file_flag)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1016,12 +1016,12 @@
 <codeline lineno="829"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="830"><highlight class="normal"></highlight></codeline>
 <codeline lineno="831"><highlight class="normal"></highlight></codeline>
-<codeline lineno="832"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="832"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="842"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="843"><highlight class="normal"></highlight></codeline>
 <codeline lineno="844"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1afeff26c2280fc2aec7a4353563f7f28b" kindref="member">ContinuousParametric::ascii_print</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>file_flag<sp/>,</highlight></codeline>
-<codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cumul_flag<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref><sp/>*histo1<sp/>,</highlight></codeline>
-<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref><sp/>*histo2)</highlight></codeline>
+<codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cumul_flag<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Histogram<sp/>*histo1<sp/>,</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FrequencyDistribution<sp/>*histo2)</highlight></codeline>
 <codeline lineno="847"><highlight class="normal"></highlight></codeline>
 <codeline lineno="848"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="849"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo1)<sp/>||<sp/>(histo2))<sp/>{</highlight></codeline>
@@ -1035,11 +1035,11 @@
 <codeline lineno="857"><highlight class="normal"></highlight></codeline>
 <codeline lineno="858"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo1)<sp/>{</highlight></codeline>
 <codeline lineno="859"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/>histo1-&gt;bin_width;</highlight></codeline>
-<codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo1-&gt;nb_element;</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo1-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>;</highlight></codeline>
 <codeline lineno="861"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="862"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="863"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/>histo2-&gt;min_interval_computation();</highlight></codeline>
-<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo2-&gt;nb_element;</highlight></codeline>
+<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>;</highlight></codeline>
 <codeline lineno="865"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="866"><highlight class="normal"></highlight></codeline>
 <codeline lineno="867"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1ContinuousParametric_1a5f71c85ec088464e153dd17926b84567" kindref="member">ident</ref><sp/>==<sp/><ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33a1d206cb20701c46a98622af77e75e592" kindref="member">GAMMA</ref>)<sp/>{</highlight></codeline>
@@ -1080,7 +1080,7 @@
 <codeline lineno="902"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="903"><highlight class="normal"></highlight></codeline>
 <codeline lineno="904"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;offset<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="905"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo2-&gt;offset;</highlight></codeline>
+<codeline lineno="905"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="906"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="907"><highlight class="normal"></highlight></codeline>
 <codeline lineno="908"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a02bf96b6d207aceaca9662a489a373cf" kindref="member">location</ref>;</highlight></codeline>
@@ -1116,7 +1116,7 @@
 <codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="939"><highlight class="normal"></highlight></codeline>
 <codeline lineno="940"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1<sp/>&gt;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="942"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="943"><highlight class="normal"></highlight></codeline>
 <codeline lineno="944"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cumul_flag)<sp/>{</highlight></codeline>
@@ -1319,7 +1319,7 @@
 <codeline lineno="1141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="1142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="1144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>histo2-&gt;offset<sp/>-<sp/>step;</highlight></codeline>
+<codeline lineno="1144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref><sp/>-<sp/>step;</highlight></codeline>
 <codeline lineno="1145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1146"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>nb_step;j++)<sp/>{</highlight></codeline>
@@ -1330,7 +1330,7 @@
 <codeline lineno="1152"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo1)<sp/>{</highlight></codeline>
 <codeline lineno="1154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((value<sp/>&gt;=<sp/>histo1-&gt;min_value)<sp/>&amp;&amp;<sp/>(value<sp/>&lt;=<sp/>histo1-&gt;<ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="1155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/>histo1-&gt;frequency[++i];</highlight></codeline>
+<codeline lineno="1155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/>histo1-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>[++i];</highlight></codeline>
 <codeline lineno="1156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="1158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
@@ -1340,7 +1340,7 @@
 <codeline lineno="1162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="1163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((value<sp/>&gt;=<sp/>histo2-&gt;offset)<sp/>&amp;&amp;<sp/>(value<sp/>&lt;<sp/>histo2-&gt;nb_value))<sp/>{</highlight></codeline>
 <codeline lineno="1164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>step;</highlight></codeline>
-<codeline lineno="1165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/>histo2-&gt;frequency[i];</highlight></codeline>
+<codeline lineno="1165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>[i];</highlight></codeline>
 <codeline lineno="1166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="1168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>setw(width[1])<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
@@ -1379,7 +1379,7 @@
 <codeline lineno="1201"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1202"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1203"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1204"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1204"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1210"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1211"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1212"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1ab065df5beca7ec2c65e67da9de8f5177" kindref="member">ContinuousParametric::spreadsheet_parameter_print</ref>(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1479,7 +1479,7 @@
 <codeline lineno="1306"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1307"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1308"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1309"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1309"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1315"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1316"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1317"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a870214ca57c583d0a879e79cd03380aa" kindref="member">ContinuousParametric::spreadsheet_characteristic_print</ref>(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1572,12 +1572,12 @@
 <codeline lineno="1404"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1405"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1406"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1407"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1407"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1416"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1417"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1418"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a30a0132721b4387e1bcc1f6d8f580b95" kindref="member">ContinuousParametric::spreadsheet_print</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cumul_flag<sp/>,</highlight></codeline>
-<codeline lineno="1419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref><sp/>*histo1<sp/>,</highlight></codeline>
-<codeline lineno="1420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref><sp/>*histo2)</highlight></codeline>
+<codeline lineno="1419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Histogram<sp/>*histo1<sp/>,</highlight></codeline>
+<codeline lineno="1420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FrequencyDistribution<sp/>*histo2)</highlight></codeline>
 <codeline lineno="1421"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1422"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="1423"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo1)<sp/>||<sp/>(histo2))<sp/>{</highlight></codeline>
@@ -1588,11 +1588,11 @@
 <codeline lineno="1428"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1429"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo1)<sp/>{</highlight></codeline>
 <codeline lineno="1430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/>histo1-&gt;bin_width;</highlight></codeline>
-<codeline lineno="1431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo1-&gt;nb_element;</highlight></codeline>
+<codeline lineno="1431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo1-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>;</highlight></codeline>
 <codeline lineno="1432"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1433"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="1434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/>histo2-&gt;min_interval_computation();</highlight></codeline>
-<codeline lineno="1435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo2-&gt;nb_element;</highlight></codeline>
+<codeline lineno="1435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>;</highlight></codeline>
 <codeline lineno="1436"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1437"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1438"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1ContinuousParametric_1a5f71c85ec088464e153dd17926b84567" kindref="member">ident</ref><sp/>==<sp/><ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33a1d206cb20701c46a98622af77e75e592" kindref="member">GAMMA</ref>)<sp/>{</highlight></codeline>
@@ -1633,7 +1633,7 @@
 <codeline lineno="1473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1474"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;offset<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="1476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo2-&gt;offset;</highlight></codeline>
+<codeline lineno="1476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="1477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1478"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a02bf96b6d207aceaca9662a489a373cf" kindref="member">location</ref>;</highlight></codeline>
@@ -1669,7 +1669,7 @@
 <codeline lineno="1509"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1510"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1<sp/>&gt;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="1512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="1512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="1513"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1514"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1515"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cumul_flag)<sp/>{</highlight></codeline>
@@ -1846,19 +1846,19 @@
 <codeline lineno="1686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="1687"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1688"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="1689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>histo2-&gt;offset<sp/>-<sp/>step;</highlight></codeline>
+<codeline lineno="1689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref><sp/>-<sp/>step;</highlight></codeline>
 <codeline lineno="1690"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1691"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1692"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>0;j<sp/>&lt;<sp/>nb_step;j++)<sp/>{</highlight></codeline>
 <codeline lineno="1693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>value<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1694"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1695"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo1)<sp/>&amp;&amp;<sp/>(value<sp/>&gt;=<sp/>histo1-&gt;min_value)<sp/>&amp;&amp;<sp/>(value<sp/>&lt;=<sp/>histo1-&gt;<ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="1696"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>histo1-&gt;frequency[++i];</highlight></codeline>
+<codeline lineno="1696"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>histo1-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>[++i];</highlight></codeline>
 <codeline lineno="1697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1698"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(value<sp/>&gt;=<sp/>histo2-&gt;offset)<sp/>&amp;&amp;<sp/>(value<sp/>&lt;<sp/>histo2-&gt;nb_value))<sp/>{</highlight></codeline>
 <codeline lineno="1700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>step;</highlight></codeline>
-<codeline lineno="1701"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>histo2-&gt;frequency[i];</highlight></codeline>
+<codeline lineno="1701"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>[i];</highlight></codeline>
 <codeline lineno="1702"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1703"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1704"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>frequency[j];</highlight></codeline>
@@ -1889,7 +1889,7 @@
 <codeline lineno="1729"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1730"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1731"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1732"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1732"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1738"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1739"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1740"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1af47cbbb1e1635d66a745948231bcdbb2" kindref="member">ContinuousParametric::plot_title_print</ref>(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1932,11 +1932,11 @@
 <codeline lineno="1777"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1778"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1779"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1780"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1780"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1790"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1791"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1792"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4cb7198e3d0e88095d847775a12496ea" kindref="member">ContinuousParametric::plot_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref><sp/>*histo1<sp/>,</highlight></codeline>
-<codeline lineno="1793"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref><sp/>*histo2)</highlight></codeline>
+<codeline lineno="1792"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4cb7198e3d0e88095d847775a12496ea" kindref="member">ContinuousParametric::plot_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Histogram<sp/>*histo1<sp/>,</highlight></codeline>
+<codeline lineno="1793"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FrequencyDistribution<sp/>*histo2)</highlight></codeline>
 <codeline lineno="1794"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1795"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="1796"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -1979,7 +1979,7 @@
 <codeline lineno="1833"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo1-&gt;max_value<sp/>+<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="1834"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1835"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1))<sp/>{</highlight></codeline>
-<codeline lineno="1836"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="1836"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="1837"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1838"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1839"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>/<sp/><ref refid="namespacestat__tool_1a94124737d1c429217629f3244903fb63" kindref="member">GAMMA_NB_STEP</ref>;</highlight></codeline>
@@ -2018,7 +2018,7 @@
 <codeline lineno="1872"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo1-&gt;max_value<sp/>+<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="1873"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1874"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1))<sp/>{</highlight></codeline>
-<codeline lineno="1875"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="1875"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="1876"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1877"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1878"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>/<sp/><ref refid="namespacestat__tool_1acde218c35c10eee2f2fbd35b0dbbaeeb" kindref="member">INVERSE_GAUSSIAN_NB_STEP</ref>;</highlight></codeline>
@@ -2055,7 +2055,7 @@
 <codeline lineno="1909"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo1-&gt;min_value<sp/>-<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="1910"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1911"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;offset<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="1912"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo2-&gt;offset;</highlight></codeline>
+<codeline lineno="1912"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="1913"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1914"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1915"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>quantile(complement(dist<sp/>,<sp/><ref refid="namespacestat__tool_1ad2a33df471c4abfcb3838758c1fd8ce1" kindref="member">GAUSSIAN_TAIL</ref>));</highlight></codeline>
@@ -2063,7 +2063,7 @@
 <codeline lineno="1917"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo1-&gt;max_value<sp/>+<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="1918"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1919"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1))<sp/>{</highlight></codeline>
-<codeline lineno="1920"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="1920"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="1921"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1922"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1923"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/>(<ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>-<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref>)<sp/>/<sp/><ref refid="namespacestat__tool_1aa4e604bb1fb9d33935efdc29768d5d1c" kindref="member">GAUSSIAN_NB_STEP</ref>;</highlight></codeline>
@@ -2184,7 +2184,7 @@
 <codeline lineno="2038"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo1-&gt;max_value<sp/>+<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="2039"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2040"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1))<sp/>{</highlight></codeline>
-<codeline lineno="2041"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="2041"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="2042"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2043"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2044"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>/<sp/><ref refid="namespacestat__tool_1a94124737d1c429217629f3244903fb63" kindref="member">GAMMA_NB_STEP</ref>;</highlight></codeline>
@@ -2229,7 +2229,7 @@
 <codeline lineno="2083"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2084"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2085"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2086"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2086"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2096"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2097"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2098"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a22f4a43265ba050aeeee0f2ffbe4840e" kindref="member">ContinuousParametric::q_q_plot_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_value<sp/>,</highlight></codeline>
@@ -2260,11 +2260,11 @@
 <codeline lineno="2123"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2126"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2126"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2134"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2135"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1aa24eb4d9b8da2874fab122d61941b6c2" kindref="member">ContinuousParametric::plotable_write</ref>(<ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref><sp/>&amp;plot<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Histogram" kindref="compound">Histogram</ref><sp/>*histo1<sp/>,</highlight></codeline>
-<codeline lineno="2137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref><sp/>*histo2)</highlight></codeline>
+<codeline lineno="2136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1aa24eb4d9b8da2874fab122d61941b6c2" kindref="member">ContinuousParametric::plotable_write</ref>(SinglePlot<sp/>&amp;plot<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Histogram<sp/>*histo1<sp/>,</highlight></codeline>
+<codeline lineno="2137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FrequencyDistribution<sp/>*histo2)</highlight></codeline>
 <codeline lineno="2138"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2139"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="2140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
@@ -2273,10 +2273,10 @@
 <codeline lineno="2143"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2144"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo1)<sp/>{</highlight></codeline>
-<codeline lineno="2146"><highlight class="normal"><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo1-&gt;bin_width<sp/>*<sp/>histo1-&gt;nb_element;</highlight></codeline>
+<codeline lineno="2146"><highlight class="normal"><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo1-&gt;bin_width<sp/>*<sp/>histo1-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>;</highlight></codeline>
 <codeline lineno="2147"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(histo2)<sp/>{</highlight></codeline>
-<codeline lineno="2149"><highlight class="normal"><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo2-&gt;nb_element;</highlight></codeline>
+<codeline lineno="2149"><highlight class="normal"><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref>;</highlight></codeline>
 <codeline lineno="2150"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="2152"><highlight class="normal"><sp/><sp/><sp/><sp/>histo_scale<sp/>=<sp/>1.;</highlight></codeline>
@@ -2302,7 +2302,7 @@
 <codeline lineno="2172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo1-&gt;max_value<sp/>+<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="2173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1))<sp/>{</highlight></codeline>
-<codeline lineno="2175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="2175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="2176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2177"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>/<sp/><ref refid="namespacestat__tool_1a94124737d1c429217629f3244903fb63" kindref="member">GAMMA_NB_STEP</ref>;</highlight></codeline>
@@ -2342,7 +2342,7 @@
 <codeline lineno="2212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo1-&gt;max_value<sp/>+<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="2213"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1))<sp/>{</highlight></codeline>
-<codeline lineno="2215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="2215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="2216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2217"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2218"><highlight class="normal"><sp/><sp/><sp/><sp/>step<sp/>=<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>/<sp/><ref refid="namespacestat__tool_1acde218c35c10eee2f2fbd35b0dbbaeeb" kindref="member">INVERSE_GAUSSIAN_NB_STEP</ref>;</highlight></codeline>
@@ -2379,7 +2379,7 @@
 <codeline lineno="2249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo1-&gt;min_value<sp/>-<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="2250"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;offset<sp/>&lt;<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="2252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo2-&gt;offset;</highlight></codeline>
+<codeline lineno="2252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="2253"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2254"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>quantile(complement(dist<sp/>,<sp/><ref refid="namespacestat__tool_1ad2a33df471c4abfcb3838758c1fd8ce1" kindref="member">GAUSSIAN_TAIL</ref>));</highlight></codeline>
@@ -2387,7 +2387,7 @@
 <codeline lineno="2257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo1-&gt;max_value<sp/>+<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="2258"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1))<sp/>{</highlight></codeline>
-<codeline lineno="2260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="2260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="2261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2262"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2263"><highlight class="normal"><sp/><sp/><sp/><sp/>step<sp/>=<sp/>(<ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>-<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a0a3bb5e0cfb457387b659c27e4f8ac54" kindref="member">min_value</ref>)<sp/>/<sp/><ref refid="namespacestat__tool_1aa4e604bb1fb9d33935efdc29768d5d1c" kindref="member">GAUSSIAN_NB_STEP</ref>;</highlight></codeline>
@@ -2495,7 +2495,7 @@
 <codeline lineno="2365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo1-&gt;max_value<sp/>+<sp/>histo1-&gt;bin_width;</highlight></codeline>
 <codeline lineno="2366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((histo2)<sp/>&amp;&amp;<sp/>(histo2-&gt;nb_value<sp/>-<sp/>1))<sp/>{</highlight></codeline>
-<codeline lineno="2368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;nb_value<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="2368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>=<sp/>histo2-&gt;<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref><sp/>-<sp/>1;</highlight></codeline>
 <codeline lineno="2369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="2370"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step<sp/>=<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4d62e953066d44a5c9de74ee388edcd8" kindref="member">max_value</ref><sp/>/<sp/><ref refid="namespacestat__tool_1a94124737d1c429217629f3244903fb63" kindref="member">GAMMA_NB_STEP</ref>;</highlight></codeline>
@@ -2538,10 +2538,10 @@
 <codeline lineno="2408"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2409"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2410"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2411"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2411"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2419"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2420"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2421"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a3d2d82f858e17472c2b37a496fd853f2" kindref="member">ContinuousParametric::q_q_plotable_write</ref>(<ref refid="classstat__tool_1_1SinglePlot" kindref="compound">SinglePlot</ref><sp/>&amp;plot<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_value<sp/>,</highlight></codeline>
+<codeline lineno="2421"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a3d2d82f858e17472c2b37a496fd853f2" kindref="member">ContinuousParametric::q_q_plotable_write</ref>(SinglePlot<sp/>&amp;plot<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_value<sp/>,</highlight></codeline>
 <codeline lineno="2422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>**empirical_cdf)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="2423"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="2424"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
@@ -2561,7 +2561,7 @@
 <codeline lineno="2438"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2439"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2440"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2441"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2441"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2447"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2448"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2449"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1ad2ed0fd9c92dd468d0483bdfa425cd70" kindref="member">ContinuousParametric::nb_parameter_computation</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2630,7 +2630,7 @@
 <codeline lineno="2512"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2513"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2514"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2515"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2515"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2524"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2525"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2526"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1adb3bd53dc5e687f600e5abb937b13ae0" kindref="member">ContinuousParametric::von_mises_mass_computation</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>inf<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sup)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2676,7 +2676,7 @@
 <codeline lineno="2566"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2567"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2568"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2569"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2569"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2578"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2579"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2580"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a256adc73fb6eb1a59e377a0a1b898ad0" kindref="member">ContinuousParametric::mass_computation</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>inf<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sup)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -2856,7 +2856,7 @@
 <codeline lineno="2754"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2755"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2756"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2757"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2757"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2761"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2762"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2763"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1ad40494887c5cdf78e38f79485f958a5a" kindref="member">ContinuousParametric::von_mises_cumul_computation</ref>()</highlight></codeline>
@@ -2934,7 +2934,7 @@
 <codeline lineno="2835"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2836"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2837"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2838"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2838"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2847"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2848"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2849"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">**<sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4f155fd4817239d8233d6e6bf2b26211" kindref="member">ContinuousParametric::q_q_plot_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_value<sp/>,</highlight></codeline>
@@ -3063,10 +3063,10 @@
 <codeline lineno="2972"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="2973"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2974"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2975"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2975"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="2986"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2987"><highlight class="normal"></highlight></codeline>
-<codeline lineno="2988"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4e1038fe6f204d5976601d28fdbdad21" kindref="member">ContinuousParametric::sup_norm_distance_computation</ref>(<ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>&amp;dist)</highlight></codeline>
+<codeline lineno="2988"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a4e1038fe6f204d5976601d28fdbdad21" kindref="member">ContinuousParametric::sup_norm_distance_computation</ref>(ContinuousParametric<sp/>&amp;dist)</highlight></codeline>
 <codeline lineno="2989"><highlight class="normal"></highlight></codeline>
 <codeline lineno="2990"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="2991"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>crossing;</highlight></codeline>
@@ -3540,10 +3540,10 @@
 <codeline lineno="3459"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3460"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3461"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3462"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3462"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3471"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3472"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3473"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1aea92902246e0b0e2368b8fe2bc6ef3c8" kindref="member">Vectors::likelihood_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>&amp;dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="3473"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1aea92902246e0b0e2368b8fe2bc6ef3c8" kindref="member">Vectors::likelihood_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ContinuousParametric<sp/>&amp;dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="3474"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="3475"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="3476"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
@@ -3551,7 +3551,7 @@
 <codeline lineno="3478"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3479"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3480"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1Vectors_1ac6dffb1087e5ecad429b8826ff2e82f5" kindref="member">marginal_distribution</ref>[variable])<sp/>{</highlight></codeline>
-<codeline lineno="3481"><highlight class="normal"><sp/><sp/><sp/><sp/>likelihood<sp/>=<sp/><ref refid="classstat__tool_1_1Vectors_1ac6dffb1087e5ecad429b8826ff2e82f5" kindref="member">marginal_distribution</ref>[variable]-&gt;likelihood_computation(dist<sp/>,<sp/><ref refid="classstat__tool_1_1Vectors_1abc3821b27a086ae9d75bfdf077a66ec0" kindref="member">min_interval</ref>[variable]);</highlight></codeline>
+<codeline lineno="3481"><highlight class="normal"><sp/><sp/><sp/><sp/>likelihood<sp/>=<sp/><ref refid="classstat__tool_1_1Vectors_1ac6dffb1087e5ecad429b8826ff2e82f5" kindref="member">marginal_distribution</ref>[variable]-&gt;<ref refid="classstat__tool_1_1FrequencyDistribution_1a2080f00866710b10cf1bfbe65eaebd06" kindref="member">likelihood_computation</ref>(dist<sp/>,<sp/><ref refid="classstat__tool_1_1Vectors_1abc3821b27a086ae9d75bfdf077a66ec0" kindref="member">min_interval</ref>[variable]);</highlight></codeline>
 <codeline lineno="3482"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="3483"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3484"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
@@ -3628,10 +3628,10 @@
 <codeline lineno="3555"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3556"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3557"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3558"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3558"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3567"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3568"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3569"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1aa8effc710834313d8006624591fe136a" kindref="member">Vectors::gamma_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>*dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="3569"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1aa8effc710834313d8006624591fe136a" kindref="member">Vectors::gamma_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/>ContinuousParametric<sp/>*dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="3570"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="3571"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="3572"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
@@ -3767,10 +3767,10 @@
 <codeline lineno="3702"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3703"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3704"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3705"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3705"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3714"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3715"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3716"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1a294218c9addbdbcb13398780313d715b" kindref="member">Vectors::inverse_gaussian_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>*dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="3716"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1a294218c9addbdbcb13398780313d715b" kindref="member">Vectors::inverse_gaussian_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/>ContinuousParametric<sp/>*dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="3717"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="3718"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="3719"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
@@ -3817,10 +3817,10 @@
 <codeline lineno="3760"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3761"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3762"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3763"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3763"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3772"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3773"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3774"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1afee8ee272ac2fcdd3a3bd39eb0f9c654" kindref="member">Vectors::gaussian_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>*dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="3774"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1afee8ee272ac2fcdd3a3bd39eb0f9c654" kindref="member">Vectors::gaussian_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/>ContinuousParametric<sp/>*dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="3775"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="3776"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="3777"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>likelihood<sp/>=<sp/><ref refid="namespacestat__tool_1a710852f459bd0493d0eaaac065dab938" kindref="member">D_INF</ref>;</highlight></codeline>
@@ -3841,10 +3841,10 @@
 <codeline lineno="3792"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3793"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3794"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3795"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3795"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3804"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3805"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3806"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1aed59b2243e70ee94ae2d971a23f36ada" kindref="member">Vectors::von_mises_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/><ref refid="classstat__tool_1_1ContinuousParametric" kindref="compound">ContinuousParametric</ref><sp/>*dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="3806"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1aed59b2243e70ee94ae2d971a23f36ada" kindref="member">Vectors::von_mises_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/>ContinuousParametric<sp/>*dist)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="3807"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="3808"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="3809"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
@@ -3918,7 +3918,7 @@
 <codeline lineno="3877"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3878"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3879"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3880"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3880"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3889"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3890"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3891"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Vectors_1a500c0f9593cdd1c41ae0f194e185dd1f" kindref="member">Vectors::continuous_parametric_estimation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/><ref refid="namespacestat__tool_1a92c04847d82facb3de7c85cf9350cd33" kindref="member">continuous_parametric</ref><sp/>ident)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -3965,7 +3965,7 @@
 <codeline lineno="3932"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="3933"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3934"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3935"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3935"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="3941"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3942"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3943"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ContinuousParametric_1a6b51996a7cee6cd8a1858aaa4751d5fe" kindref="member">ContinuousParametric::simulation</ref>()</highlight></codeline>
@@ -4127,6 +4127,6 @@
 <codeline lineno="4099"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4100"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp"/>
   </compounddef>
 </doxygen>

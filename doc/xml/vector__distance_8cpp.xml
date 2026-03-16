@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="vector__distance_8cpp" kind="file" language="C++">
     <compoundname>vector_distance.cpp</compoundname>
     <includes local="no">cmath</includes>
@@ -118,7 +118,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_distance.cpp</label>
         <link refid="vector__distance_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" line="38" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="38" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" line="38" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_distance.cpp" bodystart="38" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -270,7 +270,7 @@
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"><ref refid="classstat__tool_1_1VectorDistance_1a8cccd1694f32601083843f53f2c899b2" kindref="member">VectorDistance::VectorDistance</ref>()</highlight></codeline>
@@ -290,7 +290,7 @@
 <codeline lineno="79"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><ref refid="classstat__tool_1_1VectorDistance_1a8cccd1694f32601083843f53f2c899b2" kindref="member">VectorDistance::VectorDistance</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_variable<sp/>,<sp/><ref refid="namespacestat__tool_1a54f24d2ad2c1bfb8454d29c167cb5a73" kindref="member">variable_type</ref><sp/>*ivar_type<sp/>,</highlight></codeline>
@@ -334,7 +334,7 @@
 <codeline lineno="131"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><ref refid="classstat__tool_1_1VectorDistance_1a8cccd1694f32601083843f53f2c899b2" kindref="member">VectorDistance::VectorDistance</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_variable<sp/>,<sp/><ref refid="namespacestat__tool_1a767192bed74d2f854185cf899f5e4082" kindref="member">metric</ref><sp/>idistance_type<sp/>,<sp/><ref refid="namespacestat__tool_1a54f24d2ad2c1bfb8454d29c167cb5a73" kindref="member">variable_type</ref><sp/>*ivar_type<sp/>,</highlight></codeline>
@@ -389,10 +389,10 @@
 <codeline lineno="197"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"></highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="207"><highlight class="normal"></highlight></codeline>
-<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1a93d5147761576454cbdff73b948cdeb0" kindref="member">VectorDistance::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref><sp/>&amp;vector_dist)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1a93d5147761576454cbdff73b948cdeb0" kindref="member">VectorDistance::copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorDistance<sp/>&amp;vector_dist)</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"></highlight></codeline>
 <codeline lineno="210"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>,<sp/>j<sp/>,<sp/>k;</highlight></codeline>
@@ -411,7 +411,7 @@
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1VectorDistance_1aa5d2180931df5fcc22e7e2b80cdadb54" kindref="member">var_type</ref>[i]<sp/>=<sp/>vector_dist.var_type[i];</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1VectorDistance_1a0e315dc79a6f9df9c7b274c0b01148b3" kindref="member">weight</ref>[i]<sp/>=<sp/>vector_dist.weight[i];</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1VectorDistance_1a7653e373576dab7c96f5c9991c23387e" kindref="member">dispersion</ref>[i]<sp/>=<sp/>vector_dist.dispersion[i];</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1VectorDistance_1a48c8f90fa18edef9bb2b286d81ddf837" kindref="member">nb_value</ref>[i]<sp/>=<sp/>vector_dist.nb_value[i];</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1VectorDistance_1a48c8f90fa18edef9bb2b286d81ddf837" kindref="member">nb_value</ref>[i]<sp/>=<sp/>vector_dist.<ref refid="classstat__tool_1_1Reestimation_1a4a70ddcaf4e957710920e5fb61c944b6" kindref="member">nb_value</ref>[i];</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1VectorDistance_1a614c99bf32666bf8a2380bd31dad43b7" kindref="member">category_distance</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">**[<ref refid="classstat__tool_1_1VectorDistance_1a0db15e7baaeca6c6b605f2c6cfa4fd00" kindref="member">nb_variable</ref>];</highlight></codeline>
@@ -443,7 +443,7 @@
 <codeline lineno="256"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"></highlight></codeline>
 <codeline lineno="258"><highlight class="normal"></highlight></codeline>
-<codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="264"><highlight class="normal"></highlight></codeline>
 <codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1a0ccf946c3792e7fd6f09bca2203ebe09" kindref="member">VectorDistance::remove</ref>()</highlight></codeline>
@@ -474,7 +474,7 @@
 <codeline lineno="290"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="291"><highlight class="normal"></highlight></codeline>
 <codeline lineno="292"><highlight class="normal"></highlight></codeline>
-<codeline lineno="293"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="298"><highlight class="normal"></highlight></codeline>
 <codeline lineno="299"><highlight class="normal"><ref refid="classstat__tool_1_1VectorDistance_1a84cecb046bb78bfcec5f97719e9e5f6f" kindref="member">VectorDistance::~VectorDistance</ref>()</highlight></codeline>
@@ -484,10 +484,10 @@
 <codeline lineno="303"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="304"><highlight class="normal"></highlight></codeline>
 <codeline lineno="305"><highlight class="normal"></highlight></codeline>
-<codeline lineno="306"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="315"><highlight class="normal"></highlight></codeline>
-<codeline lineno="316"><highlight class="normal"><ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref>&amp;<sp/><ref refid="classstat__tool_1_1VectorDistance_1a6abb8950003c3c0fb77a9779ce1a67eb" kindref="member">VectorDistance::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref><sp/>&amp;vector_dist)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">VectorDistance&amp;<sp/><ref refid="classstat__tool_1_1VectorDistance_1a6abb8950003c3c0fb77a9779ce1a67eb" kindref="member">VectorDistance::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorDistance<sp/>&amp;vector_dist)</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"></highlight></codeline>
 <codeline lineno="318"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;vector_dist<sp/>!=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
@@ -499,10 +499,10 @@
 <codeline lineno="325"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"></highlight></codeline>
 <codeline lineno="327"><highlight class="normal"></highlight></codeline>
-<codeline lineno="328"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="337"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="338"><highlight class="normal"></highlight></codeline>
-<codeline lineno="339"><highlight class="normal"><ref refid="classstat__tool_1_1VectorDistance" kindref="compound">VectorDistance</ref>*<sp/><ref refid="classstat__tool_1_1VectorDistance_1a312e607fa62a48757a1a0c97a8a64d8b" kindref="member">VectorDistance::ascii_read</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight></codeline>
+<codeline lineno="339"><highlight class="normal">VectorDistance*<sp/><ref refid="classstat__tool_1_1VectorDistance_1a312e607fa62a48757a1a0c97a8a64d8b" kindref="member">VectorDistance::ascii_read</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight></codeline>
 <codeline lineno="340"><highlight class="normal"></highlight></codeline>
 <codeline lineno="341"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="342"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>buffer;</highlight></codeline>
@@ -1096,7 +1096,7 @@
 <codeline lineno="930"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="931"><highlight class="normal"></highlight></codeline>
 <codeline lineno="932"><highlight class="normal"></highlight></codeline>
-<codeline lineno="933"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="933"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="939"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="940"><highlight class="normal"></highlight></codeline>
 <codeline lineno="941"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1VectorDistance_1a8fac36bd923ce191a64da8311ea653b2" kindref="member">VectorDistance::line_write</ref>(ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1111,7 +1111,7 @@
 <codeline lineno="950"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="951"><highlight class="normal"></highlight></codeline>
 <codeline lineno="952"><highlight class="normal"></highlight></codeline>
-<codeline lineno="953"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="953"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="960"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="961"><highlight class="normal"></highlight></codeline>
 <codeline lineno="962"><highlight class="normal">ostream&amp;<sp/><ref refid="classstat__tool_1_1VectorDistance_1aed405f1a2e7fdbcef2937f3c54b1cf42" kindref="member">VectorDistance::ascii_write</ref>(ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1188,10 +1188,10 @@
 <codeline lineno="1033"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1034"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1035"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1036"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1036"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1040"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1041"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1042"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1aed405f1a2e7fdbcef2937f3c54b1cf42" kindref="member">VectorDistance::ascii_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1042"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1aed405f1a2e7fdbcef2937f3c54b1cf42" kindref="member">VectorDistance::ascii_write</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustive)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1043"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1044"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="1045"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
@@ -1214,7 +1214,7 @@
 <codeline lineno="1062"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1063"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1064"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1065"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1ae9677500c5966ec582c96afa33316768" kindref="member">VectorDistance::spreadsheet_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1065"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1ae9677500c5966ec582c96afa33316768" kindref="member">VectorDistance::spreadsheet_write</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>path)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1066"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1067"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="1068"><highlight class="normal"><sp/><sp/><sp/><sp/>ostringstream<sp/>error_message;</highlight></codeline>
@@ -1226,7 +1226,7 @@
 <codeline lineno="1074"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1075"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1076"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1077"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1a5b4b203f3c106f5ab8ecfe9657fa5809" kindref="member">VectorDistance::plot_write</ref>(<ref refid="classstat__tool_1_1StatError" kindref="compound">StatError</ref><sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,</highlight></codeline>
+<codeline lineno="1077"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1a5b4b203f3c106f5ab8ecfe9657fa5809" kindref="member">VectorDistance::plot_write</ref>(StatError<sp/>&amp;error<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix<sp/>,</highlight></codeline>
 <codeline lineno="1078"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*title)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1079"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1080"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
@@ -1239,7 +1239,7 @@
 <codeline lineno="1087"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1088"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1089"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1090"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1090"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1098"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1099"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1100"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="classstat__tool_1_1VectorDistance_1a26531a0a52af84c61f06bba7dc88ea12" kindref="member">VectorDistance::max_category_distance_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1266,7 +1266,7 @@
 <codeline lineno="1121"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1122"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1124"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1124"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1131"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1132"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1133"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1ab3a9fe15b889e6493bff91b4021ceeba" kindref="member">VectorDistance::dispersion_update</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>idispersion)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -1276,10 +1276,10 @@
 <codeline lineno="1137"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1138"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1140"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1140"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight></codeline>
 <codeline lineno="1148"><highlight class="normal"></highlight><highlight class="comment">/*--------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1149"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1adf2312bbf53ef0f1ab401ad52f70511a" kindref="member">VectorDistance::dispersion_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1FrequencyDistribution" kindref="compound">FrequencyDistribution</ref><sp/>*marginal_distribution<sp/>,</highlight></codeline>
+<codeline lineno="1150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1VectorDistance_1adf2312bbf53ef0f1ab401ad52f70511a" kindref="member">VectorDistance::dispersion_computation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>variable<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FrequencyDistribution<sp/>*marginal_distribution<sp/>,</highlight></codeline>
 <codeline lineno="1151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*rank)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="1152"><highlight class="keyword"></highlight></codeline>
 <codeline lineno="1153"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
@@ -1290,9 +1290,9 @@
 <codeline lineno="1158"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1159"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1VectorDistance_1a7653e373576dab7c96f5c9991c23387e" kindref="member">dispersion</ref>[variable]<sp/>=<sp/>0.;</highlight></codeline>
 <codeline lineno="1160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>marginal_distribution-&gt;offset;i<sp/>&lt;<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1VectorDistance_1a48c8f90fa18edef9bb2b286d81ddf837" kindref="member">nb_value</ref>;i++)<sp/>{</highlight></codeline>
+<codeline lineno="1161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>marginal_distribution-&gt;offset;i<sp/>&lt;<sp/>marginal_distribution-&gt;nb_value;i++)<sp/>{</highlight></codeline>
 <codeline lineno="1162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(marginal_distribution-&gt;frequency[i]<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
-<codeline lineno="1163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pfrequency<sp/>=<sp/>marginal_distribution-&gt;frequency<sp/>+<sp/>i<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="1163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pfrequency<sp/>=<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref><sp/>+<sp/>i<sp/>+<sp/>1;</highlight></codeline>
 <codeline lineno="1164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sum<sp/>=<sp/>0.;</highlight></codeline>
 <codeline lineno="1165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>i<sp/>+<sp/>1;j<sp/>&lt;<sp/>marginal_distribution-&gt;nb_value;j++)<sp/>{</highlight></codeline>
 <codeline lineno="1166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*pfrequency<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
@@ -1334,7 +1334,7 @@
 <codeline lineno="1202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pfrequency++;</highlight></codeline>
 <codeline lineno="1203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1204"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1VectorDistance_1a7653e373576dab7c96f5c9991c23387e" kindref="member">dispersion</ref>[variable]<sp/>+=<sp/>marginal_distribution-&gt;frequency[i]<sp/>*<sp/>sum;</highlight></codeline>
+<codeline lineno="1205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1VectorDistance_1a7653e373576dab7c96f5c9991c23387e" kindref="member">dispersion</ref>[variable]<sp/>+=<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref>[i]<sp/>*<sp/>sum;</highlight></codeline>
 <codeline lineno="1206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1207"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1208"><highlight class="normal"></highlight></codeline>
@@ -1351,14 +1351,14 @@
 <codeline lineno="1219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1VectorDistance_1aa5d2180931df5fcc22e7e2b80cdadb54" kindref="member">var_type</ref>[variable])<sp/>{</highlight></codeline>
 <codeline lineno="1220"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1221"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a54f24d2ad2c1bfb8454d29c167cb5a73a98e69687023fcb533f7d65715a95a02c" kindref="member">ORDINAL</ref><sp/>:<sp/>{</highlight></codeline>
-<codeline lineno="1222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dispersion2<sp/>=<sp/>marginal_distribution-&gt;nb_element<sp/>*</highlight></codeline>
+<codeline lineno="1222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dispersion2<sp/>=<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1afcf2401d30d1848338994abb0d268c3d" kindref="member">nb_element</ref><sp/>*</highlight></codeline>
 <codeline lineno="1223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((double)marginal_distribution-&gt;nb_element<sp/>*</highlight></codeline>
-<codeline lineno="1224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(double)marginal_distribution-&gt;nb_element<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="1224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)marginal_distribution-&gt;nb_element<sp/>-<sp/>1);</highlight></codeline>
 <codeline lineno="1225"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1226"><highlight class="normal"><sp/><sp/><sp/><sp/>pfrequency<sp/>=<sp/>marginal_distribution-&gt;frequency<sp/>+<sp/>marginal_distribution-&gt;offset;</highlight></codeline>
-<codeline lineno="1227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>marginal_distribution-&gt;offset;i<sp/>&lt;<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1VectorDistance_1a48c8f90fa18edef9bb2b286d81ddf837" kindref="member">nb_value</ref>;i++)<sp/>{</highlight></codeline>
+<codeline lineno="1226"><highlight class="normal"><sp/><sp/><sp/><sp/>pfrequency<sp/>=<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref><sp/>+<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="1227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>marginal_distribution-&gt;offset;i<sp/>&lt;<sp/>marginal_distribution-&gt;nb_value;i++)<sp/>{</highlight></codeline>
 <codeline lineno="1228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*pfrequency<sp/>&gt;<sp/>1)<sp/>{</highlight></codeline>
-<codeline lineno="1229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dispersion2<sp/>-=<sp/>*pfrequency<sp/>*<sp/>((double)*pfrequency<sp/>*<sp/>(double)*pfrequency<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="1229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dispersion2<sp/>-=<sp/>*pfrequency<sp/>*<sp/>((double)*pfrequency<sp/>*<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)*pfrequency<sp/>-<sp/>1);</highlight></codeline>
 <codeline lineno="1230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pfrequency++;</highlight></codeline>
 <codeline lineno="1232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1379,12 +1379,12 @@
 <codeline lineno="1247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cumul;</highlight></codeline>
 <codeline lineno="1248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>previous_rank;</highlight></codeline>
 <codeline lineno="1249"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pfrequency<sp/>=<sp/>marginal_distribution-&gt;frequency<sp/>+<sp/>marginal_distribution-&gt;offset;</highlight></codeline>
+<codeline lineno="1250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pfrequency<sp/>=<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref><sp/>+<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="1251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cumul<sp/>=<sp/>*pfrequency++;</highlight></codeline>
 <codeline lineno="1252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>previous_rank<sp/>=<sp/>rank[marginal_distribution-&gt;offset];</highlight></codeline>
 <codeline lineno="1253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dispersion2<sp/>=<sp/>0.;</highlight></codeline>
 <codeline lineno="1254"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>marginal_distribution-&gt;offset<sp/>+<sp/>1;i<sp/>&lt;<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1VectorDistance_1a48c8f90fa18edef9bb2b286d81ddf837" kindref="member">nb_value</ref>;i++)<sp/>{</highlight></codeline>
+<codeline lineno="1255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>marginal_distribution-&gt;offset<sp/>+<sp/>1;i<sp/>&lt;<sp/>marginal_distribution-&gt;nb_value;i++)<sp/>{</highlight></codeline>
 <codeline lineno="1256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*pfrequency<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
 <codeline lineno="1257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dispersion2<sp/>+=<sp/>cumul<sp/>*<sp/>(double)(marginal_distribution-&gt;nb_element<sp/>-<sp/>cumul)<sp/>*</highlight></codeline>
 <codeline lineno="1258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(rank[i]<sp/>-<sp/>previous_rank);</highlight></codeline>
@@ -1407,11 +1407,11 @@
 <codeline lineno="1275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>previous_value<sp/>,<sp/>cumul;</highlight></codeline>
 <codeline lineno="1276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dispersion2<sp/>=<sp/>0.;</highlight></codeline>
 <codeline lineno="1277"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pfrequency<sp/>=<sp/>marginal_distribution-&gt;frequency<sp/>+<sp/>marginal_distribution-&gt;offset;</highlight></codeline>
+<codeline lineno="1278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pfrequency<sp/>=<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1ab39d09d1fade5114e3587473afc2675a" kindref="member">frequency</ref><sp/>+<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="1279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cumul<sp/>=<sp/>*pfrequency++;</highlight></codeline>
-<codeline lineno="1280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>previous_value<sp/>=<sp/>marginal_distribution-&gt;offset;</highlight></codeline>
+<codeline lineno="1280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>previous_value<sp/>=<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1aaec99ffd77d22ea865f02c2b31ea504f" kindref="member">offset</ref>;</highlight></codeline>
 <codeline lineno="1281"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>marginal_distribution-&gt;offset<sp/>+<sp/>1;i<sp/>&lt;<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1VectorDistance_1a48c8f90fa18edef9bb2b286d81ddf837" kindref="member">nb_value</ref>;i++)<sp/>{</highlight></codeline>
+<codeline lineno="1282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>marginal_distribution-&gt;offset<sp/>+<sp/>1;i<sp/>&lt;<sp/>marginal_distribution-&gt;nb_value;i++)<sp/>{</highlight></codeline>
 <codeline lineno="1283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*pfrequency<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
 <codeline lineno="1284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dispersion2<sp/>+=<sp/>cumul<sp/>*<sp/>(double)(marginal_distribution-&gt;nb_element<sp/>-<sp/>cumul)<sp/>*</highlight></codeline>
 <codeline lineno="1285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(i<sp/>-<sp/>previous_value);</highlight></codeline>
@@ -1431,10 +1431,10 @@
 <codeline lineno="1299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classstat__tool_1_1VectorDistance_1ad157dd9d7f4a481f87ae63147559378c" kindref="member">distance_type</ref>)<sp/>{</highlight></codeline>
 <codeline lineno="1300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a767192bed74d2f854185cf899f5e4082a9de924e5599cfda745891fe2030714e2" kindref="member">ABSOLUTE_VALUE</ref><sp/>:</highlight></codeline>
 <codeline lineno="1301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;sqrt(2)<sp/>*<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespacestat__tool_1a402794ded79b6eafc78781e40c23b4a8" kindref="member">STAT_label</ref>[<ref refid="namespacestat__tool_1a3c004532d5daffc277feeada6e9173bfa057186f1b42746a24adfa9abb723265d" kindref="member">STATL_MEAN_ABSOLUTE_DEVIATION</ref>]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>sqrt(2.)<sp/>*<sp/>marginal_distribution-&gt;mean_absolute_deviation_computation(marginal_distribution-&gt;mean);</highlight></codeline>
+<codeline lineno="1302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>sqrt(2.)<sp/>*<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1ac7c1a17e4b1e7c9bae8daad4c31131e1" kindref="member">mean_absolute_deviation_computation</ref>(marginal_distribution-&gt;mean);</highlight></codeline>
 <codeline lineno="1303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacestat__tool_1a767192bed74d2f854185cf899f5e4082aa232660f4216b5d06fe1e3d748460e52" kindref="member">QUADRATIC</ref><sp/>:</highlight></codeline>
-<codeline lineno="1305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>2<sp/>*<sp/>marginal_distribution-&gt;variance;</highlight></codeline>
+<codeline lineno="1305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>2<sp/>*<sp/>marginal_distribution-&gt;<ref refid="classstat__tool_1_1Reestimation_1a72284881e04f61ff919c689b867c1c94" kindref="member">variance</ref>;</highlight></codeline>
 <codeline lineno="1306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1307"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -1449,6 +1449,6 @@
 <codeline lineno="1317"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1318"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>stat_tool</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_distance.cpp"/>
   </compounddef>
 </doxygen>

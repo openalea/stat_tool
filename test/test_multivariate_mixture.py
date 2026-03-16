@@ -10,7 +10,6 @@ try:
 except ImportError:
     from tools import DISABLE_PLOT, interface
 
-
 import os
 import tempfile
 from pathlib import Path

@@ -1,6 +1,6 @@
 """vectors tests"""
 
-from .tools import interface, runTestClass
+from .tools import DISABLE_PLOT, interface, runTestClass
 from .tools import robust_path as get_shared_data
 
 from openalea.stat_tool.enums import variance_type

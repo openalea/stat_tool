@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="classstat__tool_1_1ChainReestimation" kind="class" language="C++" prot="public">
     <compoundname>stat_tool::ChainReestimation</compoundname>
     <includes refid="chain__reestimation_8h" local="no">chain_reestimation.h</includes>
     <templateparamlist>
       <param>
-        <type>typename Type</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">typename</ref> <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref></type>
       </param>
     </templateparamlist>
     <sectiondef kind="public-attrib">
@@ -22,10 +22,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="64" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="64" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="64" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" prot="public" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::ChainReestimation&lt; Type &gt;::nb_state</definition>
         <argsstring></argsstring>
         <name>nb_state</name>
@@ -37,10 +37,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="65" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="65" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="65" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" prot="public" static="no" mutable="no">
-        <type>int</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
         <definition>int stat_tool::ChainReestimation&lt; Type &gt;::nb_row</definition>
         <argsstring></argsstring>
         <name>nb_row</name>
@@ -52,10 +52,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="66" column="9" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="66" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="66" column="9" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" prot="public" static="no" mutable="no">
-        <type>Type *</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref> *</type>
         <definition>Type* stat_tool::ChainReestimation&lt; Type &gt;::initial</definition>
         <argsstring></argsstring>
         <name>initial</name>
@@ -67,10 +67,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="67" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="67" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="67" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" prot="public" static="no" mutable="no">
-        <type>Type **</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref> **</type>
         <definition>Type** stat_tool::ChainReestimation&lt; Type &gt;::transition</definition>
         <argsstring></argsstring>
         <name>transition</name>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="68" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="68" bodyend="-1"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="68" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="68" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="friend">
@@ -97,7 +97,7 @@
           <declname>os</declname>
         </param>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; Type &gt; &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref> &gt; &amp;</type>
           <declname>chain_data</declname>
         </param>
         <briefdescription>
@@ -106,12 +106,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="59" column="12" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="59" bodyend="60"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="59" column="12" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="59" bodyend="60"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="classstat__tool_1_1ChainReestimation_1a23f63395a7891154f9aa4f726578dfdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::ChainReestimation&lt; Type &gt;::init</definition>
         <argsstring>()</argsstring>
         <name>init</name>
@@ -123,16 +123,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="70" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="74" bodyend="91"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="70" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="74" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::ChainReestimation&lt; Type &gt;::copy</definition>
         <argsstring>(const ChainReestimation&lt; Type &gt; &amp;chain_data)</argsstring>
         <name>copy</name>
         <qualifiedname>stat_tool::ChainReestimation::copy</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; Type &gt; &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref> &gt; &amp;</type>
           <declname>chain_data</declname>
         </param>
         <briefdescription>
@@ -152,10 +152,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="71" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="146" bodyend="188"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="71" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="146" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainReestimation_1aaaa83cd7e227873aa0c06937318fbb14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
+        <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">void</ref></type>
         <definition>void stat_tool::ChainReestimation&lt; Type &gt;::remove</definition>
         <argsstring>()</argsstring>
         <name>remove</name>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="72" column="10" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="198" bodyend="211"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="72" column="10" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="198" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="74" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="55" bodyend="64"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="74" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="55" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainReestimation_1a5e6193f39f334fa033c75b62d44e71f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -195,17 +195,17 @@
           <declname>itype</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_state</declname>
         </param>
         <param>
-          <type>int</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">int</ref></type>
           <declname>inb_row</declname>
         </param>
         <param>
-          <type>bool</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">bool</ref></type>
           <declname>init_flag</declname>
-          <defval>false</defval>
+          <defval><ref refid="classstat__tool_1_1Reestimation" kindref="compound">false</ref></defval>
         </param>
         <briefdescription>
 <para>Constructor of the <ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref> class. </para>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="75" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="106" bodyend="134"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="75" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="106" bodyend="134"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainReestimation_1ad6a1fa42225445c78f3a7bfa7fcad903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -257,7 +257,7 @@
         <name>ChainReestimation</name>
         <qualifiedname>stat_tool::ChainReestimation::ChainReestimation</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; Type &gt; &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref> &gt; &amp;</type>
           <declname>chain_data</declname>
         </param>
         <briefdescription>
@@ -266,7 +266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="76" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="76" bodyend="77"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="76" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="76" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainReestimation_1a1213c89212818e6357647a080645eef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -281,16 +281,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="78" column="5" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="221" bodyend="225"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="78" column="5" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="221" bodyend="225"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainReestimation_1afb5383372e7c666af2875e593bc0cdbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; Type &gt; &amp;</type>
+        <type><ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref> &gt; &amp;</type>
         <definition>ChainReestimation&lt; Type &gt; &amp; stat_tool::ChainReestimation&lt; Type &gt;::operator=</definition>
         <argsstring>(const ChainReestimation&lt; Type &gt; &amp;chain_data)</argsstring>
         <name>operator=</name>
         <qualifiedname>stat_tool::ChainReestimation::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; Type &gt; &amp;</type>
+          <type><ref refid="classstat__tool_1_1Reestimation" kindref="compound">const</ref> <ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref>&lt; <ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref> &gt; &amp;</type>
           <declname>chain_data</declname>
         </param>
         <briefdescription>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="79" column="23" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="239" bodyend="248"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="79" column="23" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="239" bodyend="248"/>
       </memberdef>
       <memberdef kind="function" id="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -341,7 +341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="81" column="18" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="260" bodyend="291"/>
+        <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="81" column="18" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.hpp" bodystart="260" bodyend="291"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -349,7 +349,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="57" column="3" bodyfile="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="57" bodyend="82"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" line="57" column="3" bodyfile="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h" bodystart="57" bodyend="82"/>
     <listofallmembers>
       <member refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" prot="public" virt="non-virtual"><scope>stat_tool::ChainReestimation</scope><name>ChainReestimation</name></member>
       <member refid="classstat__tool_1_1ChainReestimation_1a5e6193f39f334fa033c75b62d44e71f7" prot="public" virt="non-virtual"><scope>stat_tool::ChainReestimation</scope><name>ChainReestimation</name></member>

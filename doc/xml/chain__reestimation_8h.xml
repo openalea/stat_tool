@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="chain__reestimation_8h" kind="file" language="C++">
     <compoundname>chain_reestimation.h</compoundname>
     <includes refid="chain__reestimation_8hpp" local="yes">chain_reestimation.hpp</includes>
-    <includedby refid="markovian_8h" local="yes">/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h</includedby>
+    <includedby refid="markovian_8h" local="yes">/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h</includedby>
     <incdepgraph>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h</label>
         <link refid="chain__reestimation_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -18,43 +18,43 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="3">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/categorical_process.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/categorical_process.cpp</label>
         <link refid="categorical__process_8cpp"/>
       </node>
       <node id="4">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain.cpp</label>
         <link refid="chain_8cpp"/>
       </node>
       <node id="5">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_algorithms.cpp</label>
         <link refid="chain__algorithms_8cpp"/>
       </node>
       <node id="1">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h</label>
         <link refid="chain__reestimation_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="8">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric.cpp</label>
         <link refid="continuous__parametric_8cpp"/>
       </node>
       <node id="6">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_estimation.hpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric_estimation.hpp</label>
         <link refid="continuous__parametric__estimation_8hpp"/>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="17">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/continuous_parametric_process.cpp</label>
         <link refid="continuous__parametric__process_8cpp"/>
       </node>
       <node id="18">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/discrete_parametric_process.cpp</label>
         <link refid="discrete__parametric__process_8cpp"/>
       </node>
       <node id="2">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/markovian.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/markovian.h</label>
         <link refid="markovian_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -78,15 +78,15 @@
         </childnode>
       </node>
       <node id="9">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/mixture.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/mixture.h</label>
         <link refid="mixture_8h"/>
       </node>
       <node id="10">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.cpp</label>
         <link refid="multivariate__mixture_8cpp"/>
       </node>
       <node id="19">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture.h</label>
         <link refid="multivariate__mixture_8h"/>
         <childnode refid="10" relation="include">
         </childnode>
@@ -94,33 +94,33 @@
         </childnode>
       </node>
       <node id="11">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/multivariate_mixture_algorithms.cpp</label>
         <link refid="multivariate__mixture__algorithms_8cpp"/>
       </node>
       <node id="13">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.cpp</label>
         <link refid="regression_8cpp"/>
       </node>
       <node id="12">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/regression.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/regression.h</label>
         <link refid="regression_8h"/>
         <childnode refid="13" relation="include">
         </childnode>
       </node>
       <node id="14">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_algorithms.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_algorithms.cpp</label>
         <link refid="vector__algorithms_8cpp"/>
       </node>
       <node id="15">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vector_distance.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vector_distance.cpp</label>
         <link refid="vector__distance_8cpp"/>
       </node>
       <node id="16">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.cpp</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vectors.cpp</label>
         <link refid="vectors_8cpp"/>
       </node>
       <node id="7">
-        <label>/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/vectors.h</label>
+        <label>/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/vectors.h</label>
         <link refid="vectors_8h"/>
         <childnode refid="8" relation="include">
         </childnode>
@@ -204,31 +204,31 @@
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
-<codeline lineno="57" refid="classstat__tool_1_1ChainReestimation" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation</ref><sp/>{</highlight></codeline>
+<codeline lineno="57" refid="classstat__tool_1_1ChainReestimation" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation</ref><sp/>{</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59" refid="classstat__tool_1_1ChainReestimation_1aaf6289e4b288410c68fe9b2b1324b977" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1aaf6289e4b288410c68fe9b2b1324b977" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;os<sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;chain_data)</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>chain_data.<ref refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" kindref="member">print</ref>(os);<sp/>}</highlight></codeline>
+<codeline lineno="59" refid="classstat__tool_1_1ChainReestimation_1aaf6289e4b288410c68fe9b2b1324b977" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1aaf6289e4b288410c68fe9b2b1324b977" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref><sp/>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>.<ref refid="classstat__tool_1_1Reestimation_1a5dbf6aced93d7db69d77b269f951c4d4" kindref="member">print</ref>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref>);<sp/>}</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/>public<sp/>:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">public</ref><sp/>:</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64" refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811c" kindref="member">process_type</ref><sp/><ref refid="classstat__tool_1_1ChainReestimation_1adc106ed762671d3b1bfe4e28dddaf29c" kindref="member">type</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="65" refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a6624ae3c721e02a33a58a8dfad8d2599" kindref="member">nb_state</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="66" refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa08dd752877d04e544f63d4b93680c23" kindref="member">nb_row</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="67" refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/>*<ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="68" refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Type<sp/>**<ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref><sp/>*<ref refid="classstat__tool_1_1ChainReestimation_1a2e0d8344eced38fdb68db508f839c181" kindref="member">initial</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">Type</ref><sp/>**<ref refid="classstat__tool_1_1ChainReestimation_1ab2cc2cd52bf72ebc96a084073c3aa934" kindref="member">transition</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a23f63395a7891154f9aa4f726578dfdb" kindref="member">init</ref>();</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" kindref="member">copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;chain_data);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" kindref="member">copy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>);</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aaaa83cd7e227873aa0c06937318fbb14" kindref="member">remove</ref>();</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation</ref>();</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation</ref>(<ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811c" kindref="member">process_type</ref><sp/>itype<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_state<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inb_row<sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init_flag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="76" refid="classstat__tool_1_1ChainReestimation_1ad6a1fa42225445c78f3a7bfa7fcad903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1ad6a1fa42225445c78f3a7bfa7fcad903" kindref="member">ChainReestimation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;chain_data)</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" kindref="member">copy</ref>(chain_data);<sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1aa5d322962fd2feabb015274e987939d2" kindref="member">ChainReestimation</ref>(<ref refid="namespacestat__tool_1a8c4195a166fc208bc5ba24a71f88811c" kindref="member">process_type</ref><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">itype</ref><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">inb_state</ref><sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">inb_row</ref><sp/>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">init_flag</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76" refid="classstat__tool_1_1ChainReestimation_1ad6a1fa42225445c78f3a7bfa7fcad903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1ad6a1fa42225445c78f3a7bfa7fcad903" kindref="member">ChainReestimation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a8e2d3ca3f5647095ceb23aabd922e3bf" kindref="member">copy</ref>(<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>);<sp/>}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation_1a1213c89212818e6357647a080645eef9" kindref="member">~ChainReestimation</ref>();</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref>&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1afb5383372e7c666af2875e593bc0cdbd" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1ChainReestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;chain_data);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref>&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1afb5383372e7c666af2875e593bc0cdbd" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classstat__tool_1_1Reestimation" kindref="compound">ChainReestimation&lt;Type&gt;</ref><sp/>&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">chain_data</ref>);</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" kindref="member">print</ref>(std::ostream<sp/>&amp;os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream&amp;<sp/><ref refid="classstat__tool_1_1ChainReestimation_1a5660732b40cd72f923d8a22505894ee2" kindref="member">print</ref>(std::ostream<sp/>&amp;<ref refid="classstat__tool_1_1Reestimation" kindref="compound">os</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
@@ -241,6 +241,6 @@
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat_tool/src/cpp/stat_tool/chain_reestimation.h"/>
+    <location file="/home/jdurand/devlp/Git/openalea/stat_tool/src/cpp/stat_tool/chain_reestimation.h"/>
   </compounddef>
 </doxygen>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['p_5fthreshold_0',['P_THRESHOLD',['../namespacestat__tool.html#ae6b2f53a5f773b4531cb121bbf234693',1,'stat_tool']]],
-  ['parameter_1',['parameter',['../classstat__tool_1_1RegressionKernel.html#afefdbce482f32223aae0a32167b251ba',1,'stat_tool::RegressionKernel::parameter'],['../classstat__tool_1_1DiscreteParametric.html#a1fc0c18865f1d6df1f463c30df18f6d0',1,'stat_tool::DiscreteParametric::parameter']]],
+  ['parameter_1',['parameter',['../classstat__tool_1_1DiscreteParametric.html#a1fc0c18865f1d6df1f463c30df18f6d0',1,'stat_tool::DiscreteParametric::parameter'],['../classstat__tool_1_1RegressionKernel.html#afefdbce482f32223aae0a32167b251ba',1,'stat_tool::RegressionKernel::parameter']]],
   ['parent_2',['parent',['../classstat__tool_1_1Dendrogram.html#ac95dacef6fe49153e160c9dfa40cad42',1,'stat_tool::Dendrogram']]],
   ['partitioning_5fnb_5fiter_5f1_3',['PARTITIONING_NB_ITER_1',['../namespacestat__tool.html#aaec1ee87e01375ce4ef009d2c23b18d9',1,'stat_tool']]],
   ['partitioning_5fnb_5fiter_5f2_4',['PARTITIONING_NB_ITER_2',['../namespacestat__tool.html#ae3ca215a37e28aa00d20af83c4e8611e',1,'stat_tool']]],
@@ -21,7 +21,7 @@ var searchData=
   ['plot_5fshift_18',['PLOT_SHIFT',['../namespacestat__tool.html#a86cb53e64e70bd662f5e4f5823b21ff0',1,'stat_tool']]],
   ['plot_5fymargin_19',['PLOT_YMARGIN',['../namespacestat__tool.html#a87264f2a88479bd1c058773ff5081649',1,'stat_tool']]],
   ['plots_20',['plots',['../classstat__tool_1_1MultiPlot.html#ae6ca60fcdff279544afcd91db0ee36c4',1,'stat_tool::MultiPlot']]],
-  ['point_21',['point',['../classstat__tool_1_1Curves.html#af08bc181370d227a298559e90eafb339',1,'stat_tool::Curves::point'],['../classstat__tool_1_1RegressionKernel.html#a4f514ea760d61de72a002d9f12f1853c',1,'stat_tool::RegressionKernel::point']]],
+  ['point_21',['point',['../classstat__tool_1_1RegressionKernel.html#a4f514ea760d61de72a002d9f12f1853c',1,'stat_tool::RegressionKernel::point'],['../classstat__tool_1_1Curves.html#af08bc181370d227a298559e90eafb339',1,'stat_tool::Curves::point']]],
   ['poisson_5frange_22',['POISSON_RANGE',['../namespacestat__tool.html#a4b40c33a2342f555357d046290629363',1,'stat_tool']]],
   ['poisson_5fratio_23',['POISSON_RATIO',['../namespacestat__tool.html#a5c45e6f5622562de6e12e830862d8a07',1,'stat_tool']]],
   ['probability_24',['probability',['../classstat__tool_1_1DiscreteParametric.html#a2cc5829f6efc1961384e983b3ee5dc9e',1,'stat_tool::DiscreteParametric']]]

@@ -1,5 +1,5 @@
 \doxysection{markovian.\+h}
-\hypertarget{markovian_8h_source}{}\label{markovian_8h_source}\index{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/markovian.h@{/Users/arsouze/Documents/Modeles/Codes/OpenAlea/stat\_tool/src/cpp/stat\_tool/markovian.h}}
+\hypertarget{markovian_8h_source}{}\label{markovian_8h_source}\index{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/markovian.h@{/home/jdurand/devlp/Git/openalea/stat\_tool/src/cpp/stat\_tool/markovian.h}}
 \mbox{\hyperlink{markovian_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{comment}{/*\ -\/*-\/c++-\/*-\/}}
@@ -136,9 +136,9 @@
 \DoxyCodeLine{00132\ \ \ \textcolor{keyword}{class\ }ChainData;}
 \DoxyCodeLine{00133\ }
 \DoxyCodeLine{00135\ }
-\DoxyCodeLine{00136\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212}{Chain}}\ \{}
+\DoxyCodeLine{00136\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}\ \{}
 \DoxyCodeLine{00137\ }
-\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Chain_a19e10050927d366bf827b374e10818d9}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212}{Chain}}\ \&chain)}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ \mbox{\hyperlink{classstat__tool_1_1Chain_a19e10050927d366bf827b374e10818d9}{operator<<}}(std::ostream\ \&os\ ,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}\ \&chain)}
 \DoxyCodeLine{00139\ \ \ \ \ \{\ \textcolor{keywordflow}{return}\ chain.\mbox{\hyperlink{classstat__tool_1_1Chain_ae68543fe77a56589e794d8d286043d9f}{ascii\_print}}(os\ ,\ \textcolor{keyword}{true});\ \}}
 \DoxyCodeLine{00140\ }
 \DoxyCodeLine{00141\ \ \ public\ :}
@@ -156,13 +156,13 @@
 \DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{double}\ **\mbox{\hyperlink{classstat__tool_1_1Chain_a96445ebc728cd22d8a7fb1b26277bd16}{transition}};\ \ \ \ }
 \DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordtype}{double}\ **\mbox{\hyperlink{classstat__tool_1_1Chain_a3a93f35cf2bd9cb3f5d795fcd97c2080}{cumul\_transition}};\ \ }
 \DoxyCodeLine{00155\ }
-\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Chain_afb82eeda1401ace14f8e6392abe9d613}{parameter\_copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212}{Chain}}\&);}
-\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Chain_aa46c7cb37bfa15b09b0e44e314e87a4a}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212}{Chain}}\&);}
-\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1Chain_a5fd4ced6da0ff7731e418320f387a205}{remove}}();}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{void}\ parameter\_copy(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}\&);}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ copy(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}\&);}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{void}\ remove();}
 \DoxyCodeLine{00159\ }
-\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212}{Chain}}(\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\_type}}\ itype\ =\ \mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811ca16c1a110210c04356891c2035863d3f5}{ORDINARY}}\ ,\ \textcolor{keywordtype}{int}\ inb\_state\ =\ 0\ ,\ \textcolor{keywordtype}{bool}\ init\_flag\ =\ \textcolor{keyword}{true});}
-\DoxyCodeLine{00161\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212}{Chain}}(\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\_type}}\ itype\ ,\ \textcolor{keywordtype}{int}\ inb\_state\ ,\ \textcolor{keywordtype}{int}\ inb\_row\ ,\ \textcolor{keywordtype}{bool}\ init\_flag);}
-\DoxyCodeLine{00162\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Chain_a4a52870e19a8f7f1afe44d4857b049a8}{Chain}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Chain_a2d1675b9be970987a949895d7be4c212}{Chain}}\ \&chain)\ \{\ \mbox{\hyperlink{classstat__tool_1_1Chain_aa46c7cb37bfa15b09b0e44e314e87a4a}{copy}}(chain);\ \}}
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}(\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\_type}}\ itype\ =\ ORDINARY\ ,\ \textcolor{keywordtype}{int}\ inb\_state\ =\ 0\ ,\ \textcolor{keywordtype}{bool}\ init\_flag\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00161\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}(\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\_type}}\ itype\ ,\ \textcolor{keywordtype}{int}\ inb\_state\ ,\ \textcolor{keywordtype}{int}\ inb\_row\ ,\ \textcolor{keywordtype}{bool}\ init\_flag);}
+\DoxyCodeLine{00162\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Chain_a4a52870e19a8f7f1afe44d4857b049a8}{Chain}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}\ \&chain)\ \{\ copy(chain);\ \}}
 \DoxyCodeLine{00163\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Chain}{\string~Chain}}();}
 \DoxyCodeLine{00164\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}\ \&chain);}
 \DoxyCodeLine{00165\ }
@@ -192,205 +192,207 @@
 \DoxyCodeLine{00189\ }
 \DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordtype}{double}\ likelihood\_computation(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainData}{ChainData}}\ \&chain\_data\ ,\ \textcolor{keywordtype}{bool}\ initial\_flag\ =\ \textcolor{keyword}{true})\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordtype}{void}\ chi2\_fit(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainData}{ChainData}}\ \&chain\_data\ ,\ \mbox{\hyperlink{classstat__tool_1_1Test}{Test}}\ \&test)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00192\ \ \ \};}
-\DoxyCodeLine{00193\ }
-\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordtype}{int}\ get\_nb\_state()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00194\ \ \ \};}
+\DoxyCodeLine{00195\ }
 \DoxyCodeLine{00196\ }
-\DoxyCodeLine{00197\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1ChainData_afb78bfcb288c721edf058339fdbb49cc}{ChainData}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation}}<int>\ \{}
-\DoxyCodeLine{00198\ \ \ public\ :}
-\DoxyCodeLine{00199\ }
-\DoxyCodeLine{00200\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainData_afb78bfcb288c721edf058339fdbb49cc}{ChainData}}(\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\_type}}\ itype\ ,\ \textcolor{keywordtype}{int}\ inb\_state\ ,\ \textcolor{keywordtype}{int}\ inb\_row\ ,\ \textcolor{keywordtype}{bool}\ init\_flag\ =\ \textcolor{keyword}{false})}
-\DoxyCodeLine{00201\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1ChainReestimation_aa5d322962fd2feabb015274e987939d2}{ChainReestimation}}<int>(itype\ ,\ inb\_state\ ,\ inb\_row\ ,\ init\_flag)\ \{\}}
-\DoxyCodeLine{00202\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainData}{ChainData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainData}{ChainData}}\ \&chain\_data);}
-\DoxyCodeLine{00203\ }
-\DoxyCodeLine{00204\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_parameter\_computation()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1ChainData}{ChainData}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{ChainReestimation}}<int>\ \{}
+\DoxyCodeLine{00200\ \ \ public\ :}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainData_afb78bfcb288c721edf058339fdbb49cc}{ChainData}}(\mbox{\hyperlink{namespacestat__tool_a8c4195a166fc208bc5ba24a71f88811c}{process\_type}}\ itype\ ,\ \textcolor{keywordtype}{int}\ inb\_state\ ,\ \textcolor{keywordtype}{int}\ inb\_row\ ,\ \textcolor{keywordtype}{bool}\ init\_flag\ =\ \textcolor{keyword}{false})}
+\DoxyCodeLine{00203\ \ \ \ \ :\mbox{\hyperlink{classstat__tool_1_1ChainReestimation}{ChainReestimation}}<int>(itype\ ,\ inb\_state\ ,\ inb\_row\ ,\ init\_flag)\ \{\}}
+\DoxyCodeLine{00204\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ChainData}{ChainData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ChainData}{ChainData}}\ \&chain\_data);}
 \DoxyCodeLine{00205\ }
-\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{void}\ estimation(\mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}\ \&chain)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00207\ \ \ \};}
-\DoxyCodeLine{00208\ }
-\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_parameter\_computation()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordtype}{void}\ estimation(\mbox{\hyperlink{classstat__tool_1_1Chain}{Chain}}\ \&chain)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00209\ \ \ \};}
+\DoxyCodeLine{00210\ }
 \DoxyCodeLine{00211\ }
-\DoxyCodeLine{00217\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_ae46953ee369715f7a83e76ed658f53d9}{CategoricalProcess}}\ \{}
-\DoxyCodeLine{00218\ }
-\DoxyCodeLine{00219\ \ \ public\ :}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00219\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\ \{}
 \DoxyCodeLine{00220\ }
-\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_afb755953e87f96d33cfe45105f91001c}{nb\_state}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00222\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a596308dbee71be710c1d4a2d2bb00307}{nb\_value}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00223\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ **\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_ae5d93920359bf1458e7f6168fcbbf8cc}{observation}};\ \ }
-\DoxyCodeLine{00224\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a230c8d01ec465da1200e2ca1ef9f7a74}{weight}};\ \ \ }
-\DoxyCodeLine{00225\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a19dec9a6bc1c343909da2bb39ad68fe3}{mixture}};\ \ }
-\DoxyCodeLine{00226\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a819a6d4bffb7f9c8bb707cea58f4e604}{restoration\_weight}};\ \ }
-\DoxyCodeLine{00228\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_aca62f304923e2618f5685ad0411006f7}{restoration\_mixture}};\ \ }
-\DoxyCodeLine{00229\ }
-\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a587f3386c3b174e449c2ebcad978ec0d}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_ae46953ee369715f7a83e76ed658f53d9}{CategoricalProcess}}\ \&process);}
-\DoxyCodeLine{00231\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a15156f66b307e1e80a9fc496f47fcb9f}{remove}}();}
-\DoxyCodeLine{00232\ }
-\DoxyCodeLine{00233\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_ae46953ee369715f7a83e76ed658f53d9}{CategoricalProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ =\ 0\ ,\ \textcolor{keywordtype}{int}\ inb\_value\ =\ 0\ ,\ \textcolor{keywordtype}{bool}\ observation\_flag\ =\ \textcolor{keyword}{false});}
-\DoxyCodeLine{00234\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_ae46953ee369715f7a83e76ed658f53d9}{CategoricalProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ ,\ \textcolor{keywordtype}{int}\ inb\_value\ ,\ \textcolor{keywordtype}{double}\ **observation\_probability);}
-\DoxyCodeLine{00235\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_ae46953ee369715f7a83e76ed658f53d9}{CategoricalProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ ,\ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ **pobservation);}
-\DoxyCodeLine{00236\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a1a76347daf25068a330e850bf04f9230}{CategoricalProcess}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_ae46953ee369715f7a83e76ed658f53d9}{CategoricalProcess}}\ \&process)}
-\DoxyCodeLine{00237\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a587f3386c3b174e449c2ebcad978ec0d}{copy}}(process);\ \}}
-\DoxyCodeLine{00238\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{\string~CategoricalProcess}}();}
-\DoxyCodeLine{00239\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\ \&process);}
-\DoxyCodeLine{00240\ }
-\DoxyCodeLine{00241\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}*\ parsing(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ ifstream\ \&in\_file\ ,}
-\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&line\ ,\ \textcolor{keywordtype}{int}\ nb\_state\ ,}
-\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ ,\ \textcolor{keywordtype}{bool}\ hidden);}
-\DoxyCodeLine{00244\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}**\ old\_parsing(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ ifstream\ \&in\_file\ ,}
-\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&line\ ,\ \textcolor{keywordtype}{int}\ nb\_state\ ,\ \textcolor{keywordtype}{int}\ \&nb\_output\_process);}
-\DoxyCodeLine{00246\ }
-\DoxyCodeLine{00247\ \ \ \ \ std::ostream\&\ ascii\_print(std::ostream\ \&os\ ,\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ ,}
-\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ ,}
-\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00250\ \ \ \ \ std::ostream\&\ spreadsheet\_print(std::ostream\ \&os\ ,}
-\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
-\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00254\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_aabba140776fa4e45eae9077817bbb072}{plot\_print}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
-\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
-\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00258\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_write(\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}\ \&plot\ ,\ \textcolor{keywordtype}{int}\ \&index\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
-\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
-\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00262\ }
-\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keywordtype}{bool}\ test\_hidden()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00264\ \ \ \ \ \textcolor{keywordtype}{void}\ thresholding(\textcolor{keywordtype}{double}\ min\_probability);}
-\DoxyCodeLine{00265\ \ \ \ \ \textcolor{keywordtype}{void}\ state\_permutation(\textcolor{keywordtype}{int}\ *permut)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ permutation\ of\ states\ -\/\ to\ be\ rework\ with\ J.-\/B.}}
-\DoxyCodeLine{00266\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_parameter\_computation(\textcolor{keywordtype}{double}\ min\_probability)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00267\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}*\ mixture\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight);}
-\DoxyCodeLine{00268\ \ \ \ \ \textcolor{keywordtype}{void}\ init();}
-\DoxyCodeLine{00269\ \ \ \};}
-\DoxyCodeLine{00270\ }
-\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00221\ \ \ public\ :}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_afb755953e87f96d33cfe45105f91001c}{nb\_state}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00224\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a596308dbee71be710c1d4a2d2bb00307}{nb\_value}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00225\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ **\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_ae5d93920359bf1458e7f6168fcbbf8cc}{observation}};\ \ }
+\DoxyCodeLine{00226\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a230c8d01ec465da1200e2ca1ef9f7a74}{weight}};\ \ \ }
+\DoxyCodeLine{00227\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a19dec9a6bc1c343909da2bb39ad68fe3}{mixture}};\ \ }
+\DoxyCodeLine{00228\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a819a6d4bffb7f9c8bb707cea58f4e604}{restoration\_weight}};\ \ }
+\DoxyCodeLine{00230\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_aca62f304923e2618f5685ad0411006f7}{restoration\_mixture}};\ \ }
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keywordtype}{void}\ copy(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\ \&process);}
+\DoxyCodeLine{00233\ \ \ \ \ \textcolor{keywordtype}{void}\ remove();}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ =\ 0\ ,\ \textcolor{keywordtype}{int}\ inb\_value\ =\ 0\ ,\ \textcolor{keywordtype}{bool}\ observation\_flag\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00236\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ ,\ \textcolor{keywordtype}{int}\ inb\_value\ ,\ \textcolor{keywordtype}{double}\ **observation\_probability);}
+\DoxyCodeLine{00237\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ ,\ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ **pobservation);}
+\DoxyCodeLine{00238\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess_a1a76347daf25068a330e850bf04f9230}{CategoricalProcess}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\ \&process)}
+\DoxyCodeLine{00239\ \ \ \ \ \{\ copy(process);\ \}}
+\DoxyCodeLine{00240\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{\string~CategoricalProcess}}();}
+\DoxyCodeLine{00241\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}\ \&process);}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00243\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}*\ parsing(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ ifstream\ \&in\_file\ ,}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&line\ ,\ \textcolor{keywordtype}{int}\ nb\_state\ ,}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ ,\ \textcolor{keywordtype}{bool}\ hidden);}
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1CategoricalProcess}{CategoricalProcess}}**\ old\_parsing(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ ifstream\ \&in\_file\ ,}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&line\ ,\ \textcolor{keywordtype}{int}\ nb\_state\ ,\ \textcolor{keywordtype}{int}\ \&nb\_output\_process);}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \ \ \ \ std::ostream\&\ ascii\_print(std::ostream\ \&os\ ,\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ ,}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ ,}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00252\ \ \ \ \ std::ostream\&\ spreadsheet\_print(std::ostream\ \&os\ ,}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_aabba140776fa4e45eae9077817bbb072}{plot\_print}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_write(\mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet}{MultiPlotSet}}\ \&plot\ ,\ \textcolor{keywordtype}{int}\ \&index\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \ \ \ \ \textcolor{keywordtype}{bool}\ test\_hidden()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00266\ \ \ \ \ \textcolor{keywordtype}{void}\ thresholding(\textcolor{keywordtype}{double}\ min\_probability);}
+\DoxyCodeLine{00267\ \ \ \ \ \textcolor{keywordtype}{void}\ state\_permutation(\textcolor{keywordtype}{int}\ *permut)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ permutation\ of\ states\ -\/\ to\ be\ rework\ with\ J.-\/B.}}
+\DoxyCodeLine{00268\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_parameter\_computation(\textcolor{keywordtype}{double}\ min\_probability)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00269\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}*\ mixture\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight);}
+\DoxyCodeLine{00270\ \ \ \ \ \textcolor{keywordtype}{void}\ init();}
+\DoxyCodeLine{00271\ \ \ \};}
+\DoxyCodeLine{00272\ }
 \DoxyCodeLine{00273\ }
-\DoxyCodeLine{00279\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a1d3bc0b41183ae48bd37a579dc9e5dee}{DiscreteParametricProcess}}\ \{}
-\DoxyCodeLine{00280\ }
-\DoxyCodeLine{00281\ \ \ public\ :}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00281\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\ \{}
 \DoxyCodeLine{00282\ }
-\DoxyCodeLine{00283\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a75063162d67083b50bfa08c5f41aa97b}{nb\_state}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00284\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_adda419dac534c4c7bb821e82f05fb9e2}{nb\_value}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00285\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ **\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_aabcb6cee196db065d444963640d0b63f}{observation}};\ \ }
-\DoxyCodeLine{00286\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a40b81ca8472e286967ce327c0a6ef6ba}{weight}};\ \ \ }
-\DoxyCodeLine{00287\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a5c71ef45f43271701c843fd17e412732}{mixture}};\ \ }
-\DoxyCodeLine{00288\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a303785b1edd861c3deb2f8374167d50e}{restoration\_weight}};\ \ }
-\DoxyCodeLine{00290\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_ab14df489a0b2f1b23a27586b415e7ddd}{restoration\_mixture}};\ \ }
-\DoxyCodeLine{00291\ }
-\DoxyCodeLine{00292\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_af8a364eefaed5b36f1122e56306574c8}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a1d3bc0b41183ae48bd37a579dc9e5dee}{DiscreteParametricProcess}}\ \&process,\ \textcolor{keywordtype}{bool}\ mass\_copy=\textcolor{keyword}{false});}
-\DoxyCodeLine{00293\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_ae18cee3198aa2cb3563372ddb6ca4a64}{remove}}();}
-\DoxyCodeLine{00294\ }
-\DoxyCodeLine{00295\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a1d3bc0b41183ae48bd37a579dc9e5dee}{DiscreteParametricProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ =\ 0\ ,\ \textcolor{keywordtype}{int}\ inb\_value\ =\ 0);}
-\DoxyCodeLine{00296\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a1d3bc0b41183ae48bd37a579dc9e5dee}{DiscreteParametricProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ ,\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ **pobservation);}
-\DoxyCodeLine{00297\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_aaa346fc3288a4cde7d999c68c0ed9ecd}{DiscreteParametricProcess}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a1d3bc0b41183ae48bd37a579dc9e5dee}{DiscreteParametricProcess}}\ \&process,\ \textcolor{keywordtype}{bool}\ mass\_copy=\textcolor{keyword}{false})}
-\DoxyCodeLine{00298\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_af8a364eefaed5b36f1122e56306574c8}{copy}}(process,\ mass\_copy);\ \}}
-\DoxyCodeLine{00299\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{\string~DiscreteParametricProcess}}();}
-\DoxyCodeLine{00300\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\ \&process);}
-\DoxyCodeLine{00301\ }
-\DoxyCodeLine{00302\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}*\ parsing(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ ifstream\ \&in\_file\ ,}
-\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&line\ ,\ \textcolor{keywordtype}{int}\ nb\_state\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ ,}
-\DoxyCodeLine{00304\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ \mbox{\hyperlink{namespacestat__tool_a960fa4d455d92bb0ea54561ce1a35524}{OBSERVATION\_THRESHOLD}});}
-\DoxyCodeLine{00305\ }
-\DoxyCodeLine{00306\ \ \ \ \ std::ostream\&\ ascii\_print(std::ostream\ \&os\ ,\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ ,}
-\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ ,}
-\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00309\ \ \ \ \ std::ostream\&\ spreadsheet\_print(std::ostream\ \&os\ ,}
-\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
-\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00313\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_aabba140776fa4e45eae9077817bbb072}{plot\_print}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
-\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
-\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00317\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_write(\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}\ \&plot\ ,\ \textcolor{keywordtype}{int}\ \&index\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
-\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
-\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00321\ }
-\DoxyCodeLine{00322\ \ \ \ \ \textcolor{keywordtype}{void}\ nb\_value\_computation();}
-\DoxyCodeLine{00323\ \ \ \ \ \textcolor{keywordtype}{void}\ state\_permutation(\textcolor{keywordtype}{int}\ *permut)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ permutation\ of\ states\ -\/\ to\ be\ rework\ with\ J.-\/B.}}
-\DoxyCodeLine{00324\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_parameter\_computation()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00325\ \ \ \ \ \textcolor{keywordtype}{double}\ mean\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00326\ \ \ \ \ \textcolor{keywordtype}{double}\ variance\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight\ ,\ \textcolor{keywordtype}{double}\ mean\ =\ \mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00327\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}*\ mixture\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight);}
-\DoxyCodeLine{00328\ \ \ \ \ \textcolor{keywordtype}{void}\ init();}
-\DoxyCodeLine{00329\ \ \ \};}
-\DoxyCodeLine{00330\ }
-\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00283\ \ \ public\ :}
+\DoxyCodeLine{00284\ }
+\DoxyCodeLine{00285\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a75063162d67083b50bfa08c5f41aa97b}{nb\_state}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00286\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_adda419dac534c4c7bb821e82f05fb9e2}{nb\_value}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00287\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ **\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_aabcb6cee196db065d444963640d0b63f}{observation}};\ \ }
+\DoxyCodeLine{00288\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a40b81ca8472e286967ce327c0a6ef6ba}{weight}};\ \ \ }
+\DoxyCodeLine{00289\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a5c71ef45f43271701c843fd17e412732}{mixture}};\ \ }
+\DoxyCodeLine{00290\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_a303785b1edd861c3deb2f8374167d50e}{restoration\_weight}};\ \ }
+\DoxyCodeLine{00292\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_ab14df489a0b2f1b23a27586b415e7ddd}{restoration\_mixture}};\ \ }
+\DoxyCodeLine{00293\ }
+\DoxyCodeLine{00294\ \ \ \ \ \textcolor{keywordtype}{void}\ copy(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\ \&process,\ \textcolor{keywordtype}{bool}\ mass\_copy=\textcolor{keyword}{false});}
+\DoxyCodeLine{00295\ \ \ \ \ \textcolor{keywordtype}{void}\ remove();}
+\DoxyCodeLine{00296\ }
+\DoxyCodeLine{00297\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ =\ 0\ ,\ \textcolor{keywordtype}{int}\ inb\_value\ =\ 0);}
+\DoxyCodeLine{00298\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ ,\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametric}{DiscreteParametric}}\ **pobservation);}
+\DoxyCodeLine{00299\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess_aaa346fc3288a4cde7d999c68c0ed9ecd}{DiscreteParametricProcess}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\ \&process,\ \textcolor{keywordtype}{bool}\ mass\_copy=\textcolor{keyword}{false})}
+\DoxyCodeLine{00300\ \ \ \ \ \{\ copy(process,\ mass\_copy);\ \}}
+\DoxyCodeLine{00301\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{\string~DiscreteParametricProcess}}();}
+\DoxyCodeLine{00302\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}\ \&process);}
+\DoxyCodeLine{00303\ }
+\DoxyCodeLine{00304\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1DiscreteParametricProcess}{DiscreteParametricProcess}}*\ parsing(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ ifstream\ \&in\_file\ ,}
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&line\ ,\ \textcolor{keywordtype}{int}\ nb\_state\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ ,}
+\DoxyCodeLine{00306\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cumul\_threshold\ =\ OBSERVATION\_THRESHOLD);}
+\DoxyCodeLine{00307\ }
+\DoxyCodeLine{00308\ \ \ \ \ std::ostream\&\ ascii\_print(std::ostream\ \&os\ ,\ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ ,}
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ ,}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00311\ \ \ \ \ std::ostream\&\ spreadsheet\_print(std::ostream\ \&os\ ,}
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00315\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_aabba140776fa4e45eae9077817bbb072}{plot\_print}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00319\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_write(\mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet}{MultiPlotSet}}\ \&plot\ ,\ \textcolor{keywordtype}{int}\ \&index\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **empirical\_observation\ =\ NULL\ ,}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00323\ }
+\DoxyCodeLine{00324\ \ \ \ \ \textcolor{keywordtype}{void}\ nb\_value\_computation();}
+\DoxyCodeLine{00325\ \ \ \ \ \textcolor{keywordtype}{void}\ state\_permutation(\textcolor{keywordtype}{int}\ *permut)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ permutation\ of\ states\ -\/\ to\ be\ rework\ with\ J.-\/B.}}
+\DoxyCodeLine{00326\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_parameter\_computation()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00327\ \ \ \ \ \textcolor{keywordtype}{double}\ mean\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00328\ \ \ \ \ \textcolor{keywordtype}{double}\ variance\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight\ ,\ \textcolor{keywordtype}{double}\ mean\ =\ D\_INF)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00329\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}*\ mixture\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight);}
+\DoxyCodeLine{00330\ \ \ \ \ \textcolor{keywordtype}{void}\ init();}
+\DoxyCodeLine{00331\ \ \ \};}
+\DoxyCodeLine{00332\ }
 \DoxyCodeLine{00333\ }
-\DoxyCodeLine{00339\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a403f65e112263965ff56850e75f6c0d8}{ContinuousParametricProcess}}\ \{}
-\DoxyCodeLine{00340\ }
-\DoxyCodeLine{00341\ \ \ public\ :}
+\DoxyCodeLine{00335\ }
+\DoxyCodeLine{00341\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ \{}
 \DoxyCodeLine{00342\ }
-\DoxyCodeLine{00343\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};\ \ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00344\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33}{continuous\_parametric}}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a72b835a78df37af462caf8b5098df124}{ident}};\ \ }
-\DoxyCodeLine{00345\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a4cf77f428aed0adfe6e7c46f494fef9f}{tied\_location}};\ \ \ \ \ }
-\DoxyCodeLine{00346\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a5aae87110ab5f8ceb3ac13ea3044ba71}{tied\_dispersion}};\ \ \ }
-\DoxyCodeLine{00347\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a2cf47cf4ca7041a1256bd72d2cd9c602}{offset}};\ \ \ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00348\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4}{angle\_unit}}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_aa30219839b2ec0a4c7b500611887f086}{unit}};\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{00349\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametric}{ContinuousParametric}}\ **\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}};\ \ }
-\DoxyCodeLine{00350\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_adcd5c142a2fe1584306363a093c22e5c}{weight}};\ \ \ }
-\DoxyCodeLine{00351\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a9bde6deab8ab5866faa7aa2b87298b73}{restoration\_weight}};\ \ }
-\DoxyCodeLine{00353\ }
-\DoxyCodeLine{00354\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a009a91edb71817e120a4e4bd6382e95a}{copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a403f65e112263965ff56850e75f6c0d8}{ContinuousParametricProcess}}\ \&process);}
-\DoxyCodeLine{00355\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a15afe20e006e91a6042c546eadac327c}{remove}}();}
-\DoxyCodeLine{00356\ }
-\DoxyCodeLine{00357\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a403f65e112263965ff56850e75f6c0d8}{ContinuousParametricProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ =\ 0);}
-\DoxyCodeLine{00358\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a403f65e112263965ff56850e75f6c0d8}{ContinuousParametricProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ ,\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametric}{ContinuousParametric}}\ **pobservation);}
-\DoxyCodeLine{00359\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_ab30615d8e387849653e8c0d59bdd9b69}{ContinuousParametricProcess}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a403f65e112263965ff56850e75f6c0d8}{ContinuousParametricProcess}}\ \&process)}
-\DoxyCodeLine{00360\ \ \ \ \ \{\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a009a91edb71817e120a4e4bd6382e95a}{copy}}(process);\ \}}
-\DoxyCodeLine{00361\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{\string~ContinuousParametricProcess}}();}
-\DoxyCodeLine{00362\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ \&process);}
-\DoxyCodeLine{00363\ }
-\DoxyCodeLine{00364\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}*\ parsing(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ ifstream\ \&in\_file\ ,}
-\DoxyCodeLine{00365\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&line\ ,\ \textcolor{keywordtype}{int}\ nb\_state\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ ,}
-\DoxyCodeLine{00366\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33}{continuous\_parametric}}\ last\_ident\ =\ \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33a48aced0c60af2f7d5099ace9159c3e6c}{VON\_MISES}});}
-\DoxyCodeLine{00367\ }
-\DoxyCodeLine{00368\ \ \ \ \ std::ostream\&\ ascii\_print(std::ostream\ \&os\ ,\ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ **observation\_histogram\ ,}
-\DoxyCodeLine{00369\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **observation\_distribution\ ,}
-\DoxyCodeLine{00370\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ *marginal\_histogram\ ,}
-\DoxyCodeLine{00371\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ ,}
-\DoxyCodeLine{00372\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00373\ \ \ \ \ std::ostream\&\ spreadsheet\_print(std::ostream\ \&os\ ,}
-\DoxyCodeLine{00374\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ **observation\_histogram\ =\ NULL\ ,}
-\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **observation\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00376\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ *marginal\_histogram\ =\ NULL\ ,}
-\DoxyCodeLine{00377\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00378\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00379\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_aabba140776fa4e45eae9077817bbb072}{plot\_print}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,}
-\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ process\ ,\ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ **observation\_histogram\ =\ NULL\ ,}
-\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **observation\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ *marginal\_histogram\ =\ NULL\ ,}
-\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_value\ =\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}}\ ,\ \textcolor{keywordtype}{double}\ **empirical\_cdf\ =\ NULL\ ,}
-\DoxyCodeLine{00385\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00386\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_write(\mbox{\hyperlink{namespacestat__tool_aee87b7e8445b6cf3e67705eb94574b05}{MultiPlotSet}}\ \&plot\ ,\ \textcolor{keywordtype}{int}\ \&index\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
-\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ **observation\_histogram\ =\ NULL\ ,}
-\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **observation\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ *marginal\_histogram\ =\ NULL\ ,}
-\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
-\DoxyCodeLine{00391\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_value\ =\ \mbox{\hyperlink{namespacestat__tool_a690b48cd617f438850a33320f5faa03b}{I\_DEFAULT}}\ ,\ \textcolor{keywordtype}{double}\ **empirical\_cdf\ =\ NULL\ ,}
-\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8ac048911ce9dc543bebc3be7d71fb842e}{HIDDEN\_MARKOV}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00393\ }
-\DoxyCodeLine{00394\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_parameter\_computation()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00395\ \ \ \ \ \textcolor{keywordtype}{double}\ mean\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00396\ \ \ \ \ \textcolor{keywordtype}{double}\ variance\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight\ ,\ \textcolor{keywordtype}{double}\ mean\ =\ \mbox{\hyperlink{namespacestat__tool_a710852f459bd0493d0eaaac065dab938}{D\_INF}})\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00397\ \ \ \ \ \textcolor{keywordtype}{void}\ select\_unit(\mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4}{angle\_unit}}\ iunit);}
-\DoxyCodeLine{00398\ \ \ \ \ \textcolor{keywordtype}{void}\ init(\mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33}{continuous\_parametric}}\ iident\ ,\ \textcolor{keywordtype}{double}\ min\_value\ ,\ \textcolor{keywordtype}{double}\ max\_value\ ,}
-\DoxyCodeLine{00399\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ mean\ ,\ \textcolor{keywordtype}{double}\ variance);}
-\DoxyCodeLine{00400\ }
-\DoxyCodeLine{00401\ \ \ \ \ std::ostream\&\ interval\_computation(std::ostream\ \&os);}
-\DoxyCodeLine{00402\ \ \ \};}
-\DoxyCodeLine{00403\ }
-\DoxyCodeLine{00404\ }
-\DoxyCodeLine{00405\ \ \ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacestat__tool_a0f8d8ce87b264e6225f8228a89711a88}{log\_computation}}(\textcolor{keywordtype}{int}\ nb\_value\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ *pmass\ ,\ \textcolor{keywordtype}{double}\ *plog);}
-\DoxyCodeLine{00406\ \ \ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_ae86e2a437546a41a8e6002cd9023a3c1}{von\_mises\_concentration\_computation}}(\textcolor{keywordtype}{double}\ mean\_direction);}
-\DoxyCodeLine{00407\ }
-\DoxyCodeLine{00408\ }
-\DoxyCodeLine{00409\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
+\DoxyCodeLine{00343\ \ \ public\ :}
+\DoxyCodeLine{00344\ }
+\DoxyCodeLine{00345\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a93dc45a7f81b3c13c3c33c7fea7c221b}{nb\_state}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00346\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33}{continuous\_parametric}}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a72b835a78df37af462caf8b5098df124}{ident}};\ \ }
+\DoxyCodeLine{00347\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a4cf77f428aed0adfe6e7c46f494fef9f}{tied\_location}};\ \ \ \ \ }
+\DoxyCodeLine{00348\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a5aae87110ab5f8ceb3ac13ea3044ba71}{tied\_dispersion}};\ \ \ }
+\DoxyCodeLine{00349\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a2cf47cf4ca7041a1256bd72d2cd9c602}{offset}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00350\ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4}{angle\_unit}}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_aa30219839b2ec0a4c7b500611887f086}{unit}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00351\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametric}{ContinuousParametric}}\ **\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a21857a9f1181af0aa2afefcf6d496f7b}{observation}};\ \ }
+\DoxyCodeLine{00352\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_adcd5c142a2fe1584306363a093c22e5c}{weight}};\ \ \ }
+\DoxyCodeLine{00353\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *\mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_a9bde6deab8ab5866faa7aa2b87298b73}{restoration\_weight}};\ \ }
+\DoxyCodeLine{00355\ }
+\DoxyCodeLine{00356\ \ \ \ \ \textcolor{keywordtype}{void}\ copy(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ \&process);}
+\DoxyCodeLine{00357\ \ \ \ \ \textcolor{keywordtype}{void}\ remove();}
+\DoxyCodeLine{00358\ }
+\DoxyCodeLine{00359\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ =\ 0);}
+\DoxyCodeLine{00360\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}(\textcolor{keywordtype}{int}\ inb\_state\ ,\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametric}{ContinuousParametric}}\ **pobservation);}
+\DoxyCodeLine{00361\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess_ab30615d8e387849653e8c0d59bdd9b69}{ContinuousParametricProcess}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ \&process)}
+\DoxyCodeLine{00362\ \ \ \ \ \{\ copy(process);\ \}}
+\DoxyCodeLine{00363\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{\string~ContinuousParametricProcess}}();}
+\DoxyCodeLine{00364\ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}\ \&process);}
+\DoxyCodeLine{00365\ }
+\DoxyCodeLine{00366\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classstat__tool_1_1ContinuousParametricProcess}{ContinuousParametricProcess}}*\ parsing(\mbox{\hyperlink{classstat__tool_1_1StatError}{StatError}}\ \&error\ ,\ ifstream\ \&in\_file\ ,}
+\DoxyCodeLine{00367\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&line\ ,\ \textcolor{keywordtype}{int}\ nb\_state\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ ,}
+\DoxyCodeLine{00368\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33}{continuous\_parametric}}\ last\_ident\ =\ VON\_MISES);}
+\DoxyCodeLine{00369\ }
+\DoxyCodeLine{00370\ \ \ \ \ std::ostream\&\ ascii\_print(std::ostream\ \&os\ ,\ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ **observation\_histogram\ ,}
+\DoxyCodeLine{00371\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **observation\_distribution\ ,}
+\DoxyCodeLine{00372\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ *marginal\_histogram\ ,}
+\DoxyCodeLine{00373\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ ,}
+\DoxyCodeLine{00374\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ exhaustive\ ,\ \textcolor{keywordtype}{bool}\ file\_flag\ ,\ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00375\ \ \ \ \ std::ostream\&\ spreadsheet\_print(std::ostream\ \&os\ ,}
+\DoxyCodeLine{00376\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ **observation\_histogram\ =\ NULL\ ,}
+\DoxyCodeLine{00377\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **observation\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00378\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ *marginal\_histogram\ =\ NULL\ ,}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00381\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacestat__tool_aabba140776fa4e45eae9077817bbb072}{plot\_print}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *prefix\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *title\ ,}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ process\ ,\ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ **observation\_histogram\ =\ NULL\ ,}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **observation\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ *marginal\_histogram\ =\ NULL\ ,}
+\DoxyCodeLine{00385\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00386\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_value\ =\ I\_DEFAULT\ ,\ \textcolor{keywordtype}{double}\ **empirical\_cdf\ =\ NULL\ ,}
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00388\ \ \ \ \ \textcolor{keywordtype}{void}\ plotable\_write(\mbox{\hyperlink{classstat__tool_1_1TemplateMultiPlotSet}{MultiPlotSet}}\ \&plot\ ,\ \textcolor{keywordtype}{int}\ \&index\ ,\ \textcolor{keywordtype}{int}\ process\ ,}
+\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ **observation\_histogram\ =\ NULL\ ,}
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ **observation\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00391\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1Histogram}{Histogram}}\ *marginal\_histogram\ =\ NULL\ ,}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classstat__tool_1_1FrequencyDistribution}{FrequencyDistribution}}\ *marginal\_distribution\ =\ NULL\ ,}
+\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_value\ =\ I\_DEFAULT\ ,\ \textcolor{keywordtype}{double}\ **empirical\_cdf\ =\ NULL\ ,}
+\DoxyCodeLine{00394\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacestat__tool_a3b10ec50ac971657bd19945d6768cdf8}{model\_type}}\ model\ =\ HIDDEN\_MARKOV)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00395\ }
+\DoxyCodeLine{00396\ \ \ \ \ \textcolor{keywordtype}{int}\ nb\_parameter\_computation()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00397\ \ \ \ \ \textcolor{keywordtype}{double}\ mean\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00398\ \ \ \ \ \textcolor{keywordtype}{double}\ variance\_computation(\mbox{\hyperlink{classstat__tool_1_1Distribution}{Distribution}}\ *pweight\ ,\ \textcolor{keywordtype}{double}\ mean\ =\ D\_INF)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00399\ \ \ \ \ \textcolor{keywordtype}{void}\ select\_unit(\mbox{\hyperlink{namespacestat__tool_a969c68639e95529b91ba762a4e7d09b4}{angle\_unit}}\ iunit);}
+\DoxyCodeLine{00400\ \ \ \ \ \textcolor{keywordtype}{void}\ init(\mbox{\hyperlink{namespacestat__tool_a92c04847d82facb3de7c85cf9350cd33}{continuous\_parametric}}\ iident\ ,\ \textcolor{keywordtype}{double}\ min\_value\ ,\ \textcolor{keywordtype}{double}\ max\_value\ ,}
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ mean\ ,\ \textcolor{keywordtype}{double}\ variance);}
+\DoxyCodeLine{00402\ }
+\DoxyCodeLine{00403\ \ \ \ \ std::ostream\&\ interval\_computation(std::ostream\ \&os);}
+\DoxyCodeLine{00404\ \ \ \};}
+\DoxyCodeLine{00405\ }
+\DoxyCodeLine{00406\ }
+\DoxyCodeLine{00407\ \ \ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacestat__tool_a0f8d8ce87b264e6225f8228a89711a88}{log\_computation}}(\textcolor{keywordtype}{int}\ nb\_value\ ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ *pmass\ ,\ \textcolor{keywordtype}{double}\ *plog);}
+\DoxyCodeLine{00408\ \ \ \mbox{\hyperlink{config_8h_aff9f1eb755d5988dcad01d04e48f9d9a}{STAT\_TOOL\_API}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{namespacestat__tool_ae86e2a437546a41a8e6002cd9023a3c1}{von\_mises\_concentration\_computation}}(\textcolor{keywordtype}{double}\ mean\_direction);}
+\DoxyCodeLine{00409\ }
 \DoxyCodeLine{00410\ }
-\DoxyCodeLine{00411\ }
+\DoxyCodeLine{00411\ \};\ \ \textcolor{comment}{//\ namespace\ stat\_tool}}
 \DoxyCodeLine{00412\ }
-\DoxyCodeLine{00413\ \textcolor{preprocessor}{\#\ endif}}
+\DoxyCodeLine{00413\ }
+\DoxyCodeLine{00414\ }
+\DoxyCodeLine{00415\ \textcolor{preprocessor}{\#\ endif}}
 
 \end{DoxyCode}
