@@ -89,4 +89,8 @@ site/
 out
 
 # Sphinx
+doc/html
+doc/_build
+doc/xml
+doc/latex
 #_static
