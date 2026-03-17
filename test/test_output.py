@@ -1,8 +1,10 @@
 """output tests"""
 
-try: 
+try:
+    from .tools import DISABLE_PLOT, interface
     from .tools import robust_path as get_shared_data
 except ImportError:
+    from tools import DISABLE_PLOT, interface
     from tools import robust_path as get_shared_data
 
 from openalea.stat_tool.convolution import Convolution
@@ -42,23 +44,20 @@ class Test:
 
     def test_plot_mixture_2(self):
         m = self.get_mixture_2()
-        if DISABLE_PLOT == False:
-            m.plot()
+        m.plot()
 
     def test_plot_mixture_data(self):
         mixt1 = Mixture(
             0.6, Distribution("B", 2, 18, 0.5), 0.4, Distribution("NB", 10, 10, 0.5)
         )
         mixt_histo1 = Simulate(mixt1, 200)
-
-        if DISABLE_PLOT == False:
-            mixt1.plot()
-            mixt_histo1.plot()
+        
+        mixt1.plot()
+        mixt_histo1.plot()
 
     def test_plot_convolution(self):
-        convol1 = Convolution("data/convolution1.conv")
-        if DISABLE_PLOT == False:
-            Plot(convol1.extract_elementary(1), convol1.extract_elementary(2))
+        convol1 = Convolution("data/convolution1.conv")        
+        Plot(convol1.extract_elementary(1), convol1.extract_elementary(2))
 
         histo_b2 = Histogram("data/nothofagus_antarctica_bud_2.his")
         histo_s2 = Histogram("data/nothofagus_antarctica_shoot_2.his")
@@ -71,49 +70,40 @@ class Test:
             Estimator="PenalizedLikelihood",
             Weight=0.5,
         )
-        if DISABLE_PLOT == False:
-            Plot(convol31.extract_elementary(1))
+        Plot(convol31.extract_elementary(1))
 
     def test_plot_convolution_data(self):
         convol1 = Convolution("data/convolution1.conv")
-        convol_histo1 = Simulate(convol1, 200)
-        if DISABLE_PLOT == False:
-            convol_histo1.plot()
+        convol_histo1 = Simulate(convol1, 200)        
+        convol_histo1.plot()
 
     def _test_plot_distribution_set(self):
         d1 = Distribution("B", 2, 18, 0.5)
         d2 = Distribution("NB", 10, 10, 0.5)
         d3 = Distribution("U", 10, 20)
-
-        if DISABLE_PLOT == False:
-            Plot(d1, d2, d3)
-            d1.old_plot()
+        
+        Plot(d1, d2, d3)
+        d1.old_plot()
 
     def test_plot_survival(self):
         d1 = Distribution("B", 2, 18, 0.5)
-
-        if DISABLE_PLOT == False:
-            d1.plot(ViewPoint="Survival")
+        d1.plot(ViewPoint="Survival")
 
         histo1 = Simulate(d1, 200)
-        if DISABLE_PLOT == False:
-            histo1.plot(ViewPoint="Survival")
+        histo1.plot(ViewPoint="Survival")
 
     def test_plot_parametric_model(self):
         dist1 = Distribution("NB", 0, 3.5, 0.3)
         histo1 = Simulate(dist1, 200)
-        if DISABLE_PLOT == False:
-            Plot(histo1)
-        dist2 = Estimate(histo1, "NB", MinInfBound=0, InfBoundStatus="Fixed")
-        if DISABLE_PLOT == False:
-            Plot(dist2)
+        Plot(histo1)
+        dist2 = Estimate(histo1, "NB", MinInfBound=0, InfBoundStatus="Fixed")        
+        Plot(dist2)
 
 
 def test_output_plot_viewpoint_survival():
     d1 = Distribution("B", 2, 19, 0.5)
     Plot(d1)
     Plot(d1, ViewPoint="Survival")
-
 
 def test_output_display_detail():
     d1 = Distribution("B", 2, 19, 0.5)
@@ -148,3 +138,20 @@ def test_output_display_viewpoint_data():
     except:
         assert True
 
+
+if __name__ == "__main__":
+    T = Test()
+    T.test_plot_convolution()
+    T.test_plot_convolution_data()
+    T.test_plot_mixture_1()
+    T.test_plot_mixture_2()
+    T.test_plot_mixture_data()
+    T.test_plot_parametric_model()
+    T._test_plot_distribution_set()
+    T._test_old_plot()
+    T.test_plot_survival()
+    test_output_display_detail()
+    test_output_display_viewpoint_data()
+    test_output_display_viewpoint_survival()
+    test_output_plot_viewpoint_survival()
+    
