@@ -1,7 +1,11 @@
 """vectors tests"""
 
-from .tools import DISABLE_PLOT, interface, runTestClass
-from .tools import robust_path as get_shared_data
+try:
+    from .tools import DISABLE_PLOT, interface, runTestClass, _remove_file
+    from .tools import robust_path as get_shared_data
+except ImportError:
+    from tools import DISABLE_PLOT, interface, runTestClass, _remove_file
+    from tools import robust_path as get_shared_data
 
 from openalea.stat_tool.enums import variance_type
 from openalea.stat_tool.vectors import (
@@ -138,12 +142,14 @@ def test_variance_analysis(vec10):
     assert vec10.variance_analysis(1, 4, 1, "whatever", variance_type["O"]) == str(
         va
     )
+    _remove_file("whatever")
 
     try:
         va = VarianceAnalysis(vec10, 1, 4, "DUMMY")
         assert False
     except:
         assert True
+    _remove_file("result")
 
 def test_contingency_table(vec10):
     """test contingency table"""
@@ -151,9 +157,19 @@ def test_contingency_table(vec10):
     assert ct and str(ct)
 
     ct2 = vec10.contingency_table(1, 4, "what", OutputFormat.ASCII)
+    _remove_file("what")
+    _remove_file("result")
     assert ct == ct2
+
 
 def test_rank_computation(vec10):
     ComputeRankCorrelation(vec10, Type="Kendall", FileName="test")
     # ComputeRankCorrelation(vec10, Type="Spearman", FileName="test")
+    _remove_file("test")
 
+if __name__ == "__main__":
+    vec10 = Vectors(get_shared_data("chene_sessile.vec"))
+    test_vectors_container()
+    test_variance_analysis(vec10)
+    test_contingency_table(vec10)
+    test_rank_computation(vec10)
