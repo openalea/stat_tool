@@ -1325,7 +1325,7 @@ double Reestimation<Type>::negative_binomial_estimation(DiscreteParametric *dist
   int i, j;
   int max_inf_bound , inf_bound, swap;
   double diff , shift_mean , parameter , probability , likelihood , max_likelihood = D_INF;
-  double max_param; double min_param = DOUBLE_ERROR;
+  double max_param; double min_param = DOUBLE_ERROR, cparam;
   double dmin_param, dmax_param, left_l, right_l;
   DiscreteParametric *dist_cpl = NULL, *dist_cpr = NULL;
   bool moment_estimation_failure = false;
@@ -1422,12 +1422,13 @@ double Reestimation<Type>::negative_binomial_estimation(DiscreteParametric *dist
 			left_l = this->likelihood_computation(*dist_cpl);
 			right_l = this->likelihood_computation(*dist_cpr);
 			for (j=0; j < BISECTION_NB_ITER; j++) {
+        cparam = (dist_cpl->parameter + dist_cpr->parameter) / 2; // current candidate
 				 if (left_l < right_l) {
-					 dist_cpl->parameter = (dist_cpl->parameter + dist->parameter) / 2;
+					 dist_cpl->parameter = cparam;
 					 dist_cpl->computation();
 					 left_l = this->likelihood_computation(*dist_cpl);
 				 } else {
-					 dist_cpr->parameter = (dist_cpl->parameter + dist_cpr->parameter) / 2;
+					 dist_cpr->parameter = cparam;
 					 dist_cpr->computation();
 					 right_l = this->likelihood_computation(*dist_cpr);
 				}
