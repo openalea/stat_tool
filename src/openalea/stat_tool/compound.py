@@ -36,8 +36,8 @@ def Compound(*args, **kargs):
     elementary distribution or from an ASCII file.
 
     A compound (or stopped-sum) distribution is defined as the distribution
-    of the sum of n independent and identically distributed random variables :math:`X_i`
-    where `n` is the value taken by the random variable `N`. The distribution of N is referred
+    of the sum of `n` independent and identically distributed random variables :math:`X_i`
+    where `n` is the value taken by the random variable `N`. The distribution of :math:`N` is referred
     to as the sum distribution while the distribution of the :math:`X_i` is referred to as
     the elementary distribution.
 

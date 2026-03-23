@@ -135,7 +135,7 @@ def Binomial(inf_bound, sup_bound=I_DEFAULT,
     Construction of a binomial distribution
 
     :param float inf_bound: lower bound to the range of possible values    (shift parameter)
-    :param float sup_bound: upper bound to the range of possilbe values
+    :param float sup_bound: upper bound to the range of possible values
     :param float proba: probability of `success`
 
     .. plot::
@@ -166,7 +166,7 @@ def Binomial(inf_bound, sup_bound=I_DEFAULT,
 
 def Poisson(inf_bound, param=D_DEFAULT):
     """
-    Construction of a poisson distribution
+    Construction of a Poisson distribution
 
     :Parameters:
       * `inf_bound` (int) : lower bound to the range of possible values
@@ -195,8 +195,11 @@ def Poisson(inf_bound, param=D_DEFAULT):
 
 def NegativeBinomial(inf_bound, param=D_DEFAULT,
                      proba=D_DEFAULT):
-    """
+    r"""
     Construction of a negative binomial distribution
+    The negative binomial distribution has the following parameterization:
+    .. math::
+        P(X-inf\_bound=i) = \frac{\Gamma(param+i)}{i! \Gamma(param)} p^param (1-p)^i
 
     :Parameters:
       * inf_bound (int) : lower bound to the range of possible values
@@ -209,7 +212,7 @@ def NegativeBinomial(inf_bound, param=D_DEFAULT,
         :include-source:
 
         from openalea.stat_tool.distribution import NegativeBinomial
-        b = NegativeBinomial(1,2 ,.5)
+        b = NegativeBinomial(1,2,.5)
         b.plot(legend_size=12)
 
     """

@@ -209,6 +209,14 @@ class TestDistribution:
         except:
             assert True
 
+    def test_mass(self):
+        """test mass function"""
+        dist = Binomial(1,15,0.2)
+        assert dist.mass(0) == 0
+        assert dist.mass(16) == 0
+        for i in range(1,16):
+            assert dist.mass(i)
+
     def test_simulation(self):
         set_seed(0)
         """simulate a vector of realizations"""

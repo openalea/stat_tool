@@ -83,6 +83,15 @@ public:
     return ret;
   }
 
+  static double
+  mass(const Distribution &p, int v)
+  {    
+    if (v < p.offset | v >= p.nb_value)
+      return 0;
+    else 
+      return p.mass[v];
+  }
+
   static MultiPlotSet*
   get_plotable(const Distribution &p)
   {
@@ -140,6 +149,7 @@ void class_distribution()
     .def_readonly("get_nb_parameter", &Distribution::nb_parameter,
         "number of unknown parameters")
 
+    .def("mass", WRAP::mass, "return probability of a given value")
     .def("simulation", &Distribution::simulation, "simulate one realization")
 
     // no tested. is it useful ?
