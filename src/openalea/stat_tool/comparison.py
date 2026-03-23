@@ -175,7 +175,6 @@ def ComparisonTest(utype, histo1, histo2):
     coefficients (skewness and kurtosis coefficients). The test statistic is:
 
     .. math::
-
         F_{n_1-1,n_2-1} = \frac
             {
             \frac{\displaystyle\sum_{i=1}^{n_1}\left( x_{1i}-m_1 \right)^2}{n_1-1}

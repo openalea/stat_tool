@@ -491,10 +491,10 @@ void class_discrete_parametric_model()
     	"returns histogram")
 */
     // Output
-    .def("get_plotable", DiscreteParametricModelWrap::get_plotable,
+  .def("get_plotable", DiscreteParametricModelWrap::get_plotable,
     		return_value_policy< manage_new_object >(),
     		"Return a plotable for a list of distribution")
-    .def("get_plotable", &StatInterface::get_plotable,
+  .def("get_plotable", &StatInterface::get_plotable,
     		return_value_policy< manage_new_object >(),
     		"Return a plotable (no parameters)")
 	.def("likelihood", DiscreteParametricModelWrap::likelihood_computation,
