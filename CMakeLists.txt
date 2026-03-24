@@ -10,6 +10,10 @@ if(DEFINED ENV{CONDA_PREFIX})
   #TODO: Windows Conda environments are structured differently,
   #      how unfortunate is this?
   list(APPEND CMAKE_PREFIX_PATH "$ENV{CONDA_PREFIX}/Library")
+  # Specify where not to look !!! Needed to make sure it uses
+  # Boost from conda and not from system.
+  set(Boost_NO_SYSTEM_PATHS ON)
+  set(BOOST_ROOT $ENV{CONDA_PREFIX})
 endif()
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
