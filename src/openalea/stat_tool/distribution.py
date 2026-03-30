@@ -266,14 +266,11 @@ def Uniform(inf_bound, sup_bound=I_DEFAULT):
 
 def Multinomial(probabilities):
     r"""
-    Construction of a categorical distribution.
-
-    .. math::
-        A categorical distribution is implemented as a particular case
-         of the multinomial distribution
-         
-         \mathcal{M}(1; p_1, \ldots, p_K)
     
+    Construction of a categorical distribution.
+    A categorical distribution is implemented as a particular case 
+    of the multinomial distribution :math:`{\mathcal{M}}(1; p_1, \ldots, p_K)`
+
     :Parameters:
       * probabilities (list): list of probabilities :math:`p_1,\ldots,p_K`
 
