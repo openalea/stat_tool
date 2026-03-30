@@ -50,6 +50,49 @@ class DistributionWrap {
 
 public:
 
+  static boost::shared_ptr<Distribution> distribution_from_mass(const boost::python::list& mass)
+  {
+    StatError error;
+    Distribution *d = NULL;
+    int nb_values = boost::python::len(mass);
+    double cumul = 0.;
+    bool status = true;
+    double *probs = NULL;
+    
+    probs = new double[nb_values];
+
+    for (int i = 0; i < nb_values; i++) {
+      extract<double> x(mass[i]); 
+      if (x.check()) {
+        probs[i] = x();
+        if ((probs[i] < 0) || (probs[i] > 1)) { 
+          status = false;
+          error.update(STAT_error[STATR_VALUE]);
+          ostringstream correction_message;
+          correction_message << " should be between 0 and 1.";
+          error.correction_update(STAT_word[STATW_PROBABILITY],
+                                    (correction_message.str()).c_str(),
+                                    1, i+1);} 
+        else 
+          cumul += probs[i];}
+      else {
+         status = false;
+         error.update(STAT_error[STATR_VARIABLE_TYPE]);}}
+    if ((status) && ((cumul < CUMUL_THRESHOLD) || (cumul > 1.))) {
+        status = false;
+        error.update(STAT_parsing[STATP_PROBABILITY_SUM]);
+    }
+                        
+    if (!status) {
+    	stat_tool::wrap_util::throw_error(error);
+    	return NULL;
+    } else {
+    	d = new Distribution(nb_values, probs);
+      delete [] probs;
+      return boost::shared_ptr<Distribution>(d); 
+    }
+  }
+
   static MultiPlotSet*
   get_plotable_dists(const Distribution &p,
       const boost::python::list& dist_list)
@@ -127,6 +170,7 @@ void class_distribution()
     .def(init<const FrequencyDistribution&>())
     .def(init<const Distribution&, double>())
     .def(init<const Distribution&, boost::python::optional< distribution_transformation, int > >())
+    .def("__init__", make_constructor(DistributionWrap::distribution_from_mass))
 
     .def(self_ns::str(self)) // __str__
     .def( self == self )

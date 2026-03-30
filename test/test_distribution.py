@@ -196,18 +196,50 @@ class TestDistribution:
         m = d.simulate(1000).extract_model()
         assert isinstance(m, _DiscreteParametricModel)
 
-    def test_multimodial(self):
-        """multinomial not yet implemented"""
+    def test_multinomial(self):
+        """Test multinomial (i.e. categorical) distribution"""
+        set_seed(0)
+        p = [0.1, 0.6, 0.3]
+        d = Multinomial(p)
+        for i in range(len(p)):
+            assert p[i] == d.mass(i)
+        assert(Histogram([d.simulation() for i in range(100)]))
         try:
-            Distribution("MULTINOMIAL", 10)
-            assert False
+            d = Multinomial([0.1, 0.6, 0.29])
         except:
             assert True
+        else:
+            assert False, "Bad sum for probabilties"
         try:
-            d = Multinomial()
-            assert False
+            d = Multinomial([0.1, 0.6, 0.31])
         except:
             assert True
+        else:
+            assert False, "Bad sum for probabilties"
+        try:
+            d = Multinomial([])
+        except:
+            assert True
+        else:
+            assert False, "Bad sum for probabilties"
+        try:
+            d = Multinomial([0.1, 0.6, "a"])
+        except:
+            assert True
+        else:
+            assert False, "Bad type for probabilties"
+        try:
+            d = Multinomial([-0.1, 0.6, 0.4, 0.1])
+        except:
+            assert True
+        else:
+            assert False, "Bad value for probabilties"
+        try:
+            d = Multinomial([1.1])
+        except:
+            assert True
+        else:
+            assert False, "Bad value for probabilties"
 
     def test_mass(self):
         """test mass function"""

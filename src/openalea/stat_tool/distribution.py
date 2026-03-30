@@ -117,7 +117,7 @@ def Distribution(utype, *args):
         elif utype in ["P", "POISSON"]:
             result = Poisson(*args)
         elif utype in ["M", "MULTINOMIAL"]:
-            raise NotImplementedError("Multinomial not yet implemented")
+            result = Multinomial(*args)
         elif utype in ["NB", "NEGATIVE_BINOMIAL"]:
             result = NegativeBinomial(*args)
         elif utype in ["U", "UNIFORM"]:
@@ -237,7 +237,7 @@ def Uniform(inf_bound, sup_bound=I_DEFAULT):
     :Parameters:
       * inf_bound (int) : lower bound to the range of possible values
         (shift parameter)
-      * sup_bound (int) : upper bound to the range of possilbe values
+      * sup_bound (int) : upper bound to the range of possible values
 
     .. plot::
         :width: 50%
@@ -264,9 +264,30 @@ def Uniform(inf_bound, sup_bound=I_DEFAULT):
         inf_bound, sup_bound, param, proba, cumul_threshold)
 
 
-def Multinomial():
-    """to be done"""
-    raise NotImplementedError("Multinomial not yet implemented")
+def Multinomial(probabilities):
+    r"""
+    Construction of a categorical distribution.
+
+    .. math::
+        A categorical distribution is implemented as a particular case
+         of the multinomial distribution
+         
+         \mathcal{M}(1; p_1, \ldots, p_K)
+    
+    :Parameters:
+      * probabilities (list): list of probabilities :math:`p_1,\ldots,p_K`
+
+    .. plot::
+        :width: 50%
+        :include-source:
+
+        from openalea.stat_tool.distribution import Multinomial
+        m = Multinomial([0.1, 0.6, .3])
+        from openalea.stat_tool import Histogram
+        Histogram([m.simulation() for i in range(100)]).plot()
+    """
+
+    return _Distribution(probabilities)
 
 # Extend _DiscreteParametricModel
 interface.extend_class( _DiscreteParametricModel, interface.StatInterface)
