@@ -138,6 +138,7 @@ DiscreteParametricProcess::DiscreteParametricProcess(int inb_state , DiscretePar
  *  \brief Copy of a DiscreteParametricProcess object.
  *
  *  \param[in] process reference on a DiscreteParametricProcess object.
+ *  \param[in] mass_copy flag on copying or not probabilities (mass)
  */
 /*--------------------------------------------------------------*/
 

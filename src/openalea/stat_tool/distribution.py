@@ -198,8 +198,9 @@ def NegativeBinomial(inf_bound, param=D_DEFAULT,
     r"""
     Construction of a negative binomial distribution
     The negative binomial distribution has the following parameterization:
+    
     .. math::
-        P(X-inf\_bound=i) = \frac{\Gamma(param+i)}{i! \Gamma(param)} p^param (1-p)^i
+        P(X-inf\_bound=i) = \frac{\Gamma(param+i)}{i! \Gamma(param)} p^{param} (1-p)^i
 
     :Parameters:
       * inf_bound (int) : lower bound to the range of possible values
