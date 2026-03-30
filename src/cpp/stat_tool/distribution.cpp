@@ -583,10 +583,6 @@ ostream& Distribution::ascii_characteristic_print(ostream &os , bool shape , boo
 /*--------------------------------------------------------------*/
 /**
  *  \brief Set seed of random generator
- *
- *  \param[in] seed
- *
- *  \
  */
 /*--------------------------------------------------------------*/
 
