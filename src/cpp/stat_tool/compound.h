@@ -53,16 +53,23 @@ namespace stat_tool {
  *  Constants
  */
 
-
-  const double COMPOUND_THRESHOLD = 0.99999;  // threshold on the cumulative distribution function
-                                              // for determining the upper bound of the support
-
-  const double COMPOUND_INIT_PROBABILITY = 0.001;  // threshold for probability initialization
-  const double COMPOUND_LIKELIHOOD_DIFF = 1.e-5;  // threshold for stopping EM iterations
-  const int COMPOUND_NB_ITER = 10000;    // maximum number of EM iterations
-  const double COMPOUND_DIFFERENCE_WEIGHT = 0.5;  // default penalty weight (1st- or 2nd-order difference cases)
-  const double COMPOUND_ENTROPY_WEIGHT = 0.1;  // default penalty weight (entropy case)
-  const int COMPOUND_COEFF = 10;         // rounding coefficient for the estimator
+  /// threshold on the cumulative distribution function
+  /// for determining the upper bound of the support
+  /// in compound distributions
+  const double COMPOUND_THRESHOLD = 0.99999; 
+                                              
+  /// threshold for probability initialization in compound distributions
+  const double COMPOUND_INIT_PROBABILITY = 0.001; 
+  /// threshold for stopping EM iterations in compound distributions
+  const double COMPOUND_LIKELIHOOD_DIFF = 1.e-5;  
+  /// maximum number of EM iterations in compound distributions
+  const int COMPOUND_NB_ITER = 10000;    
+  /// default penalty weight (1st- or 2nd-order difference cases) in compound distributions
+  const double COMPOUND_DIFFERENCE_WEIGHT = 0.5;  
+  /// default penalty weight (entropy case) in compound distributions
+  const double COMPOUND_ENTROPY_WEIGHT = 0.1;  
+  /// rounding coefficient for the estimator in compound distributions
+  const int COMPOUND_COEFF = 10;         
 
 
 

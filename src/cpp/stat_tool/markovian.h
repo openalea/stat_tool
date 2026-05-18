@@ -54,35 +54,54 @@ namespace stat_tool {
  */
 
 
-  const int NB_STATE = 100;              // maximum number of states of a Markov chain
-  const int ORDER = 8;                   // maximum order of a Markov chain
-  const double MIN_PROBABILITY = 1.e-5;  // minimum initial/transition/categorical observation probability
-  const double THRESHOLDING_FACTOR = 0.8;  // factor for the thresholding of probabilities
-  const int NB_PARAMETER = 100000;       // maximum number of parameters of a Markov chain
-  const int NB_OUTPUT_PROCESS = 15;      // maximum number of observation processes
-  const int NB_OUTPUT = 25;              // maximum number of observed categories per state (categorical case)
-  const double OBSERVATION_THRESHOLD = 0.999;  // threshold on the cumulative distribution function for bounding
-                                               // a discrete parametric observation distribution
+  /// maximum number of states of a Markov chain
+  const int NB_STATE = 100;              
+  /// maximum order of a Markov chain
+  const int ORDER = 8;                   
+  /// minimum initial/transition/categorical observation probability
+  const double MIN_PROBABILITY = 1.e-5;  
+  // factor for the thresholding of probabilities
+  const double THRESHOLDING_FACTOR = 0.8;  
+  /// maximum number of parameters of a Markov chain
+  const int NB_PARAMETER = 100000;      
+  /// maximum number of observation processes
+  const int NB_OUTPUT_PROCESS = 15;      
+  /// maximum number of observed categories per state (categorical case)
+  const int NB_OUTPUT = 25;              
+  /// threshold on the cumulative distribution function for bounding
+  /// a discrete parametric observation distribution
+  const double OBSERVATION_THRESHOLD = 0.999;  
+                                               
+  /// threshold for stopping the probabilistic algorithm
+  /// for computing state accessibility
+  const double ACCESSIBILITY_THRESHOLD = 1.e-6;  
+  /// maximum sequence length for the probabilistic algorithm   
+  /// for computing state accessibility                     
+  const int ACCESSIBILITY_LENGTH = 100;                          
+  /// perturbation of observation probabilities
+  const double NOISE_PROBABILITY = 0.05;  
+  /// coefficient for shifting continuous observation distributions
+  const double MEAN_SHIFT_COEFF = 0.1;   
+  /// minimum size of the sample built by rounding
+  const int MIN_NB_ELEMENT = 10;         
+  /// rounding coefficient for the parametric observation distribution estimator
+  const int OBSERVATION_COEFF = 10;      
 
-  const double ACCESSIBILITY_THRESHOLD = 1.e-6;  // threshold for stopping the probabilistic algorithm
-                                                 // for computing state accessibility
-  const int ACCESSIBILITY_LENGTH = 100;  // maximum sequence length for the probabilistic algorithm
-                                         // for computing state accessibility
-
-  const double NOISE_PROBABILITY = 0.05;  // perturbation of observation probabilities
-  const double MEAN_SHIFT_COEFF = 0.1;   // coefficient for shifting continuous observation distributions
-
-  const int MIN_NB_ELEMENT = 10;         // minimum size of the sample built by rounding
-  const int OBSERVATION_COEFF = 10;      // rounding coefficient for the parametric observation distribution estimator
-
-  const int GAMMA_MAX_NB_DECIMAL = 6;     // maximum number of decimals for the simulation of a gamma distribution
-  const int INVERSE_GAUSSIAN_MAX_NB_DECIMAL = 6;  // maximum number of decimals for the simulation
-                                                  // of an inverse Gaussian distribution
-  const int GAUSSIAN_MAX_NB_DECIMAL = 6;  // maximum number of decimals for the simulation of a Gaussian distribution
-  const int DEGREE_DECIMAL_SCALE = 10;   // factor for determining the number of decimals
-                                         // for the simulation of a von Mises distribution in degrees
-  const int RADIAN_DECIMAL_SCALE = 1000;  // factor for determining the number of decimals
-                                          // for the simulation of a von Mises distribution in radians
+  /// maximum number of decimals for the simulation of a gamma distribution
+  const int GAMMA_MAX_NB_DECIMAL = 6;   
+  /// maximum number of decimals for the simulation  
+  /// of an inverse Gaussian distribution
+  const int INVERSE_GAUSSIAN_MAX_NB_DECIMAL = 6;  
+                                                  
+  /// maximum number of decimals for the simulation of a Gaussian distribution
+  const int GAUSSIAN_MAX_NB_DECIMAL = 6;  
+  /// factor for determining the number of decimals
+  /// for the simulation of a von Mises distribution in degrees
+  const int DEGREE_DECIMAL_SCALE = 10;   
+  /// factor for determining the number of decimals 
+  /// for the simulation of a von Mises distribution in radians                                      
+  const int RADIAN_DECIMAL_SCALE = 1000;  
+                                         
 
   // const double SELF_TRANSITION = 0.9;    initial self-tranistion
 

@@ -81,10 +81,14 @@ namespace stat_tool {
     PLOT
   };
 
-  const int I_DEFAULT = -1;              // default int
-  const double D_DEFAULT = -1.;          // default double
-  const double D_INF = -1.e37;           // smallest  real number
-  const double DOUBLE_ERROR = 1.e-6;     // error on a sum of doubles
+  /// default value for int
+  const int I_DEFAULT = -1;              
+  /// smallest real number
+  const double D_INF = -1.e37;           
+  /// error on a sum of doubles
+  const double DOUBLE_ERROR = 1.e-6;     
+  /// default value for double
+  const double D_DEFAULT = -1.;          
 //  const double DOUBLE_ERROR = 5.e-6;      error on a sum of doubles
 
   enum test_distribution {
@@ -94,11 +98,15 @@ namespace stat_tool {
     STUDENT
   };
 
+  /// default bound on a number of mutliple tests
   const int NB_CRITICAL_PROBABILITY = 2;
+  /// default levels of tests
   const double ref_critical_probability[NB_CRITICAL_PROBABILITY] = {0.05 , 0.01};
 
-  const int NB_VALUE = 1000;             // number of values of a discrete variable
-  const int SAMPLE_NB_VALUE = NB_VALUE;  // number of values of a discrete sample
+  /// number of values of a discrete variable
+  const int NB_VALUE = 1000;             
+  /// number of values of a discrete sample
+  const int SAMPLE_NB_VALUE = NB_VALUE;  
 
   enum frequency_distribution_transformation {
     FREQUENCY_DISTRIBUTION_COPY ,
