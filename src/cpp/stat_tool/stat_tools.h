@@ -70,7 +70,7 @@ namespace stat_tool {
  *  Enums
  */
 
-
+  /// maximum length of error messages
   const int ERROR_LENGTH = 200;
 
   enum output_format {

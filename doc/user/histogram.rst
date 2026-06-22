@@ -59,7 +59,7 @@ as follows:
 .. doctest::
 
     >>> h1.display()
-    'frequency distribution - sample size: 76\nmean: 18.0263   variance: 18.4526   standard deviation: 4.29565\ncoefficient of skewness: -0.370952   coefficient of kurtosis: -0.0181747\nmean absolute deviation: 3.3705   coefficient of concentration: 0.132789\ninformation: -207.685 (-2.7327)\n'
+    'n importe quoi'
     >>> Display(h1)
     'frequency distribution - sample size: 76\nmean: 18.0263   variance: 18.4526   standard deviation: 4.29565\ncoefficient of skewness: -0.370952   coefficient of kurtosis: -0.0181747\nmean absolute deviation: 3.3705   coefficient of concentration: 0.132789\ninformation: -207.685 (-2.7327)\n'
 

@@ -26,6 +26,7 @@ extensions = [
     "sphinx.ext.autodoc",  # support for automatic inclusion of docstring
     "sphinx.ext.autosummary",  # generates autodoc summaries
     "sphinx.ext.doctest",  # inclusion and testing of doctest code snippets
+    "sphinxcontrib.programoutput",  # inclusion of code snippet outputs
     "sphinx.ext.intersphinx",  # support for linking to other projects
     "sphinx.ext.imgmath",  # support for math equations
     "sphinx.ext.ifconfig",  # support for conditional content

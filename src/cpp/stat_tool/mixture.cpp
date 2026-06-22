@@ -47,9 +47,9 @@
 //#include <boost/algorithm/string/trim.hpp>
 //#include <boost/algorithm/string/classification.hpp>
 //
-//#include "mixture.h"
+//#from tools import DISABLE_PLOT, interface
 //#include "stat_label.h"
-//#include "mixture.h"
+//#from tools import DISABLE_PLOT, interface
 //
 //using namespace std;
 //using namespace boost;

@@ -54,7 +54,6 @@
 #include "markovian.h"
 #include "vectors.h"
 #include "stat_label.h"
-// #include "mixture.h"
 #include "multivariate_mixture.h"
 
 using namespace std;

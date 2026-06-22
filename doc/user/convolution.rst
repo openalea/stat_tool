@@ -9,14 +9,15 @@
     from pylab import savefig, clf
 
 
-ref:`Convolution`
-
+.. _convolution:
 
 Convolution
 ===========
 
 Here is a brief description of the Convolution type, which uses notions
 introduced in the histogram_tutorial_ section, which is recommended to look at first. 
+
+The convolution of independent random variables :math:`(X_i)_{i=1,\ldots,n}` is the distribution of their sum :math:`\sum\limits_{i=1}^{n} X_i`.
 
 Constructor
 -----------
@@ -41,6 +42,15 @@ In the first example, which we'll use later on, one create the convolution of
 two :func:`~openalea.stat_tool.distribution.Distribution` that are a 
 :func:`~openalea.stat_tool.distribution.Binomial` and 
 :func:`~openalea.stat_tool.distribution.NegativeBinomial` distributions.
+
+This can be extended to an arbitrary number of distributions:
+.. doctest::
+
+    >>> d1 = Binomial(0, 10, 0.5)
+    >>> d2 = NegativeBinomial(0, 1, 0.1)
+    >>> d3 = Binomial(1, 3, 0.2)
+    >>> conv3 = Convolution(d1, d2, d3)
+     
 
 The convolution as well as the original distributions are stored within the
 Convolution instance. We will see how to extract the original distributions later

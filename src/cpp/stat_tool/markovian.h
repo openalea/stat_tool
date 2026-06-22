@@ -60,7 +60,7 @@ namespace stat_tool {
   const int ORDER = 8;                   
   /// minimum initial/transition/categorical observation probability
   const double MIN_PROBABILITY = 1.e-5;  
-  // factor for the thresholding of probabilities
+  /// factor for the thresholding of probabilities
   const double THRESHOLDING_FACTOR = 0.8;  
   /// maximum number of parameters of a Markov chain
   const int NB_PARAMETER = 100000;      
