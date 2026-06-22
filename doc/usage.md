@@ -22,8 +22,8 @@ plotting methods. A full description of each of those objects and their methods 
 Histogram <user/histogram.rst>
 Compound <user/compound.rst>
 Convolution <user/convolution.rst>
-..note:: Distribution <user/distribution.rst>
-..note:: Mixture <user/mixture.rst>
+Distribution <user/distribution.rst>
+Mixture <user/mixture.rst>
 Plotting <user/plotting.rst>
 Vectors <user/vectors.rst>
 ```

@@ -3,8 +3,9 @@
 - [x] Add docstrings to constants. Simply add "///" instead of "//" ? Find how to transfert comments from doxygen xml to breathe
 - [x] Welcome page: better integrate code lines (`pip install...`). Also move section "Note for developpers" into a more appropriated section ?
 - [x] Move objects description from "tutorials.rst" into "Usage" section
+- [x] Wrap continuous distributions
 - [ ] Use cross references properly, see "Usage" section
-- [ ] Replace hardcoded outputs by outputs of executed code.
+- [ ] Replace hardcoded outputs by outputs of executed code; have doctest extension actually working
 - [ ] Ensure that warnings are raised if non-existing keyword arguments are used in functions (e.g. Nbiteration in place of NbIteration)
 - [ ] Have wrapper documentation be transferred to python module.
 - [ ] Replace hard-coded relative paths by Path().parent etc.
