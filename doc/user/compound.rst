@@ -68,19 +68,6 @@ plotting
 The following figure gather the original distribution and the compound distribution within 
 a single plot. 
 
-.. program-output:: 
-    python -c "from openalea.stat_tool import *; import pylab;
-    from pylab import savefig, clf; X = Binomial(0, 10, 0.5);  
-    N = NegativeBinomial(0, 1, 0.1); conv1 = Compound(X, N); 
-    import openalea.stat_tool.plot; plot.DISABLE_PLOT=True; conv1.plot()
-    savefig('user/stat_tool_compound_plot1.png')
-    import matplotlib.pyplot as plt; import matplotlib.cbook as cbook;
-    import matplotlib.image as image; 
-    with cbook.get_sample_data('user/stat_tool_compound_plot1.png') as file:
-        im = image.imread(file);
-    fig, ax = plt.subplots(); 
-    fig.figimage(im, 25, 25, zorder=3, alpha=.7);plt.show()"
-
 .. figure:: stat_tool_compound_plot1.png
     :width: 50%
     :align: center    
@@ -91,16 +78,16 @@ use the **Extract**-like functions/methods:
 .. doctest::
 
     >>> clf();
-    >>> d1_bis = Extract(conv1, "Elementary",1).plot(show=False)
-    >>> savefig('doc/user/stat_tool_compound_plot2.png')
+    >>> d1_bis = Extract(conv1, "Elementary",1).plot()
+    >>> savefig('user/stat_tool_compound_plot2.png')
     
     >>> clf();
     >>> d2_bis = Extract(conv1, "Elementary",2).plot(show=False)
-    >>> savefig('doc/user/stat_tool_compound_plot3.png')
+    >>> savefig('user/stat_tool_compound_plot3.png')
     
     >>> clf();
     >>> conv1_bis = Extract(conv1, "Compound").plot(show=False)
-    >>> savefig('doc/user/stat_tool_compound_plot4.png')
+    >>> savefig('user/stat_tool_compound_plot4.png')
     
  
 +--------------------------------------------+---------------------------------------------+
