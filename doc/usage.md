@@ -37,8 +37,8 @@ The following tutorials come under the form of python notebooks:
 
 ```{nbgallery}
 examples/clustering.ipynb
-example/comparison.ipynb
-..note:: example/data_transform.ipynb
+examples/comparison.ipynb
+..note:: examples/data_transform.ipynb
 ..note:: examples/regression.ipynb
 ..note:: examples/simulate.ipynb
 ```
