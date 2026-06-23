@@ -3,7 +3,7 @@
 There are several types of object in the the stat_tool module, which are
 associated with an ASCII format as well as a set of methods, including 
 plotting methods. A full description of each of those objects and their methods are available in the
-:ref:`Reference Guide <stat_tool_reference>`. :ref:`<user/stat_tool_reference>`. 
+:ref:`Reference Guide <stat_tool_reference>`. :ref:`stat_tool_reference`. 
  
 ```{toctree}
 :maxdepth: 1
@@ -26,6 +26,7 @@ Distribution <user/distribution.rst>
 Mixture <user/mixture.rst>
 Plotting <user/plotting.rst>
 Vectors <user/vectors.rst>
+..note:: Exceptions <user/errors.rst>
 ```
 
 # Tutorials
@@ -36,7 +37,7 @@ The following tutorials come under the form of python notebooks:
 
 ```{nbgallery}
 examples/clustering.ipynb
-..note:: example/comparison.ipynb
+example/comparison.ipynb
 ..note:: example/data_transform.ipynb
 ..note:: examples/regression.ipynb
 ..note:: examples/simulate.ipynb

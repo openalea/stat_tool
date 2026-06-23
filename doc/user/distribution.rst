@@ -23,12 +23,24 @@ Here is how to build distributions. The parameters are specific to each family o
 as a probability, it comes second and the other parameter, for example a probability parameter, comes third if any.
 
 .. doctest::
+    :pyversion: > 3.13.9
 
     >>> N = NegativeBinomial(0, 1, 0.1)
     >>> B = Binomial(0, 10, 0.5)
     >>> P = Poisson(1, 5.2)
     >>> U = Uniform(2, 10)
-     
+    >>> print(U)
+    U
+
+.. testcode::
+
+   U = Uniform(2, 10)
+   print(U)  # this will give output
+
+.. testoutput::
+
+    
+
 It is equivalent to use the constructor of Distribution with an additional parameter: the name of the parametric family:
 
 .. doctest:: 
