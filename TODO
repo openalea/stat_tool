@@ -5,8 +5,8 @@
 - [x] Move objects description from "tutorials.rst" into "Usage" section
 - [ ] Wrap continuous distributions
 - [ ] Use cross references properly, see "Usage" section
-- [ ] Define vignettes for all notebooks.
-- [ ] Replace hardcoded outputs by outputs of executed code; have doctest extension actually working
+- [x] Check that definition of vignettes works properly for all notebooks.
+- [ ] Replace hardcoded outputs by outputs of executed code; have doctest extension actually working (see jupyter-sphinx)
 - [ ] Ensure that warnings are raised if non-existing keyword arguments are used in functions (e.g. Nbiteration in place of NbIteration)
 - [ ] Have wrapper documentation be transferred to python module.
 - [ ] Replace hard-coded relative paths by Path().parent etc.

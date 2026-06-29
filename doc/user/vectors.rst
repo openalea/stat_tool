@@ -1,5 +1,8 @@
 .. define some aliases:
-.. _vectors: syntax.html#type-vectors
+
+.. _vectors:
+
+.. _vectors_ref: syntax.html#type-vectors
 .. .. _histogram_tutorial: tutorial.html#histogram
 .. _convolution_tutorial: tutorial.html#convolution
 

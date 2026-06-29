@@ -1,4 +1,5 @@
-.. define the setup for doctest:
+.. define the setup for doctest
+
 .. testsetup:: *
    
     from openalea.stat_tool import *
@@ -7,8 +8,9 @@
 
 
 .. _distribution:
+
 Distribution
-========
+============
 
 Here is a brief description of the Distribution type.
 
@@ -23,23 +25,13 @@ Here is how to build distributions. The parameters are specific to each family o
 as a probability, it comes second and the other parameter, for example a probability parameter, comes third if any.
 
 .. doctest::
-    :pyversion: > 3.13.9
 
     >>> N = NegativeBinomial(0, 1, 0.1)
     >>> B = Binomial(0, 10, 0.5)
     >>> P = Poisson(1, 5.2)
     >>> U = Uniform(2, 10)
-    >>> print(U)
+    >>> print(O)
     U
-
-.. testcode::
-
-   U = Uniform(2, 10)
-   print(U)  # this will give output
-
-.. testoutput::
-
-    
 
 It is equivalent to use the constructor of Distribution with an additional parameter: the name of the parametric family:
 
@@ -107,7 +99,7 @@ with the distribution. Thus, plotting it provides both simulated data and distri
 Estimate
 --------
 
-A Distribution can be estimated from a :ref:`vectors` or a derived class, such as :py:class:`openalea.stat_tool._stat_tool._DiscreteDistributionData`,
+A Distribution can be estimated from a :py:class:`openalea.stat_tool.Vectors` or a derived class, such as :py:class:`openalea.stat_tool._stat_tool._DiscreteDistributionData`,
 using :func:`openalea.stat_tool.estimate.Estimate`. The parametric family is passed as an argument:
 
 .. doctest::
