@@ -30,8 +30,14 @@ as a probability, it comes second and the other parameter, for example a probabi
     >>> B = Binomial(0, 10, 0.5)
     >>> P = Poisson(1, 5.2)
     >>> U = Uniform(2, 10)
-    >>> print(O)
-    U
+    >>> print(U)
+    UNIFORM   INF_BOUND : 2   SUP_BOUND : 10
+    mean: 6   median: 6   mode: 6
+    variance: 6.66667   standard deviation: 2.58199   lower quartile: 4   upper quartile: 8
+    coefficient of skewness: 0   coefficient of kurtosis: -0.5
+    mean absolute deviation: 2.22222   coefficient of concentration: 0.246914
+    information: -2.19722
+    <BLANKLINE>
 
 It is equivalent to use the constructor of Distribution with an additional parameter: the name of the parametric family:
 
@@ -50,7 +56,7 @@ Categorical distributions, i.e., multinomials :math:`{\mathcal M}(1; p_1, \ldots
 
 .. doctest:: 
 
-    >>> M = Multinomial([0.1, 0.6, 0.29])
+    >>> M = Multinomial([0.1, 0.6, 0.3])
 
 Note that the constructor has a single parameter, which is the vector of probabilities.
 
@@ -63,6 +69,13 @@ plotting
     >>> import openalea.stat_tool.plot
     >>> plot.DISABLE_PLOT=True
     >>> print(N.display())
+    NEGATIVE_BINOMIAL   INF_BOUND : 0   PARAMETER : 1   PROBABILITY : 0.1
+    mean: 9   median: 6   mode: 0
+    variance: 90   standard deviation: 9.48683   lower quartile: 2   upper quartile: 13
+    coefficient of skewness: 2.00278   coefficient of kurtosis: 6.01111
+    mean absolute deviation: 6.90287   coefficient of concentration: 0.523978
+    information: -3.24418
+    <BLANKLINE>    
     >>> N.plot()
     >>> savefig('user/stat_tool_distribution_plot1.png')
 
@@ -106,6 +119,25 @@ using :func:`openalea.stat_tool.estimate.Estimate`. The parametric family is pas
 
     >>> N_est = Estimate(simulation, "NEGATIVE_BINOMIAL")
     >>> print(N_est.display())
- 
+    NEGATIVE_BINOMIAL   INF_BOUND : 0   PARAMETER : 0.953195   PROBABILITY : 0.0943692
+    mean: 9.1475   median: 6   mode: 0
+    variance: 96.9331   standard deviation: 9.84546   lower quartile: 2   upper quartile: 13
+    coefficient of skewness: 2.05103   coefficient of kurtosis: 6.30494
+    mean absolute deviation: 7.13637   coefficient of concentration: 0.532088
+    <BLANKLINE>
+    frequency distribution - sample size: 400
+    mean: 9.1475   median: 6   mode: 0
+    variance: 96.9331   standard deviation: 9.84546   lower quartile: 2   upper quartile: 13
+    coefficient of skewness: 1.80722   coefficient of kurtosis: 3.6898
+    mean absolute deviation: 7.34454   coefficient of concentration: 0.539223
+    <BLANKLINE>
+    log-likelihood: -1306.02   (normalized: -3.26506)
+    maximum possible log-likelihood: -1267.79   (information: -3.16947)
+    deviance: 76.47
+    <BLANKLINE>
+    chi-square test (36 degrees of freedom)
+    chi-square value: 49.4593   critical probability: 0.0668912
+    reference chi-square value: 50.9985   reference critical probability: 0.05
+    <BLANKLINE>
 
 

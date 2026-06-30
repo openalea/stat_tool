@@ -8,6 +8,7 @@
 
 
 .. _mixture:
+
 Discrete mixtures of distributions
 ==================================
 
@@ -85,7 +86,7 @@ known at the time these are simulated, each component can be displayed separatel
 Estimate
 --------
 
-A Mixture can be estimated from a :ref:`histogram` or a derived class, such as :py:class:`openalea.stat_tool._stat_tool._DiscreteMixtureData`,
+A Mixture can be estimated from a `Histogram <histogram_tutorial_>` or a derived class, such as :py:class:`openalea.stat_tool._stat_tool._DiscreteMixtureData`,
 using :func:`openalea.stat_tool.estimate.Estimate`. The parametric family of each component is passed as an argument in an abbreviated way: 
 "B" for Binomial, "NB" for Negative Binomial, "P" for Poisson, etc. 
 

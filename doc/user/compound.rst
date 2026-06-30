@@ -1,7 +1,8 @@
-.. define some aliases:
-.. _histogram_tutorial: ../usage.html#id1
 
-.. define the setup for doctest:
+.. 
+    Comment:
+        define the setup for doctest:
+
 .. testsetup:: *
    
     from openalea.stat_tool import *
@@ -14,8 +15,7 @@
 Compound
 ========
 
-Here is a brief description of the Compound type, which uses notions introduced in the `Histogram Usage <histogram_tutorial_>` section 
-and is thus recommended to be looked at first.
+Here is a brief description of the Compound type, which uses notions introduced in the :ref:`Histogram <Histogram>` Section, recommended to be looked at first. 
 
 A compound (or stopped-sum) distribution is defined as the distribution of the sum of :math:`n` independent and identically distributed 
 random variables :math:`(X_i)_{i=1,\ldots,n}` where :math:`n` is the value taken by the random variable :math:`N`. 
@@ -32,14 +32,29 @@ follows:
 
     >>> X = NegativeBinomial(0, 1, 0.1)
     >>> N = Binomial(0, 10, 0.5)
-    >>> conv1 = Compound(N, X)
-     
+    >>> comp1 = Compound(N, X)
+    >>> print(comp1)
+    COMPOUND_DISTRIBUTION
+    mean: 44.9985   median: 41   mode: 33
+    variance: 652.252   standard deviation: 25.5392   lower quartile: 26   upper quartile: 60
+    <BLANKLINE>
+    SUM_DISTRIBUTION
+    BINOMIAL   INF_BOUND : 0   SUP_BOUND : 10   PROBABILITY : 0.5
+    mean: 5   median: 5   mode: 5
+    variance: 2.5   standard deviation: 1.58114   lower quartile: 4   upper quartile: 6
+    <BLANKLINE>
+    ELEMENTARY_DISTRIBUTION
+    NEGATIVE_BINOMIAL   INF_BOUND : 0   PARAMETER : 1   PROBABILITY : 0.1
+    mean: 9   median: 6   mode: 0
+    variance: 90   standard deviation: 9.48683   lower quartile: 2   upper quartile: 13
+    <BLANKLINE>
+    
 and
 
 .. doctest:: 
 
     >>> from openalea.stat_tool import get_shared_data
-    >>> conv2 = Compound(get_shared_data("compound1.comp")) 
+    >>> comp2 = Compound(get_shared_data("compound1.comp")) 
 
 In the first example, which we will use later on, one create the compound of 
 two :func:`~openalea.stat_tool.distribution.Distribution` objects that are a 
@@ -57,14 +72,20 @@ In order to display the contents, or to save the data, one uses the same functio
 plotting
 --------
 
-
-.. doctest::
-    
+.. 
+    original code
     >>> clf()
     >>> import openalea.stat_tool.plot
     >>> plot.DISABLE_PLOT=True
-    >>> conv1.plot()
+    >>> comp1.plot()
     >>> savefig('user/stat_tool_compound_plot1.png')
+
+
+
+.. doctest::
+    
+    >>> import openalea.stat_tool.plot
+    >>> comp1.plot()
 
 The following figure gather the original distribution and the compound distribution within 
 a single plot. 
@@ -79,25 +100,24 @@ use the **Extract**-like functions/methods:
 .. doctest::
 
     >>> clf();
-    >>> d1_bis = Extract(conv1, "Elementary",1).plot()
-    >>> savefig('user/stat_tool_compound_plot2.png')
+    >>> d1_bis = Extract(comp1, "Elementary",1).plot()
     
     >>> clf();
-    >>> d2_bis = Extract(conv1, "Elementary",2).plot(show=False)
-    >>> savefig('user/stat_tool_compound_plot3.png')
+    >>> d2_bis = Extract(comp1, "Elementary",2).plot(show=False)
     
     >>> clf();
-    >>> conv1_bis = Extract(conv1, "Compound").plot(show=False)
-    >>> savefig('user/stat_tool_compound_plot4.png')
-    
+    >>> comp1_bis = Extract(comp1, "Compound").plot(show=False)
+
+..
+    once the figures are created    
  
-+--------------------------------------------+---------------------------------------------+
-| .. image:: stat_tool_compound_plot1.png | .. image:: stat_tool_compound_plot2.png  |
-|     :width: 100%                           |     :width: 100%                            |   
-+--------------------------------------------+---------------------------------------------+
-| .. image:: stat_tool_compound_plot3.png | .. image:: stat_tool_compound_plot4.png  |
-|     :width: 100%                           |     :width: 100%                            |
-+--------------------------------------------+---------------------------------------------+   
+    +--------------------------------------------+---------------------------------------------+
+    | .. image:: stat_tool_compound_plot1.png | .. image:: stat_tool_compound_plot2.png  |
+    |     :width: 100%                           |     :width: 100%                            |   
+    +--------------------------------------------+---------------------------------------------+
+    | .. image:: stat_tool_compound_plot3.png | .. image:: stat_tool_compound_plot4.png  |
+    |     :width: 100%                           |     :width: 100%                            |
+    +--------------------------------------------+---------------------------------------------+   
 
 
 
@@ -108,7 +128,7 @@ Once you have a Compound, you can simulate a data set using:
 
 .. doctest::
 
-    >>> simulation = Simulate(conv1, 10)
+    >>> simulation = Simulate(comp1, 10)
  
 and compare the resulting data with the original one. This comparison can be
 done visually:
@@ -116,12 +136,13 @@ done visually:
 .. doctest::
 
     >>> simulation.plot(show=False)
-    >>> Simulate(conv1,1000).plot(show=False) # equivalent to the line above 
-    >>> savefig('doc/user/stat_tool_compound_plot5.png')
-    
-.. figure:: stat_tool_compound_plot5.png
-    :width: 50%
-    :align: center
+    >>> Simulate(comp1,1000).plot(show=False) # equivalent to the line above 
+
+..
+    once the figure is created    
+    .. figure:: stat_tool_compound_plot5.png
+        :width: 50%
+        :align: center
     
     
 

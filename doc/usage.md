@@ -9,13 +9,6 @@ Most of the docstrings provided in this document are tested with
 `doctest` and should work out of the box.
 ````
 
-```python
-from openalea.stat_tool import *
-from pylab import savefig
-```
-
-
- 
 ```{toctree}
 :maxdepth: 1
 :caption: Basic usage examples of these objects
@@ -26,7 +19,6 @@ Compound <user/compound.rst>
 Convolution <user/convolution.rst>
 Distribution <user/distribution.rst>
 Mixture <user/mixture.rst>
-Plotting <user/plotting.rst>
 Vectors <user/vectors.rst>
 ```
 <!--Exceptions <user/errors.rst> -->
@@ -42,5 +34,6 @@ examples/clustering.ipynb
 examples/comparison.ipynb
 ```
 <!-- examples/data_transform.ipynb
+examples/plotting.ipynb 
 examples/regression.ipynb
 examples/simulate.ipynb -->
