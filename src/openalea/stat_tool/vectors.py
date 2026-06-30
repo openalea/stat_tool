@@ -33,6 +33,7 @@ from .enums import (
     variable_type, 
     variance_type, 
     distance_type, 
+    correlation_type, 
     OutputFormat
     )
 
@@ -410,7 +411,8 @@ def ComputeRankCorrelation(*args, **kargs):
 
     :Usage:
 
-    >>> vec = Vectors([1,2,3,4,5,4,3,2,1])
+    >>> from openalea.stat_tool import get_shared_data
+    >>> vec = Vectors(get_shared_data("chene_sessile.vec"))
     >>> ComputeRankCorrelation(vec, Type="Spearman", FileName='')
 
     :Arguments:
@@ -427,17 +429,20 @@ def ComputeRankCorrelation(*args, **kargs):
     No object returned.
     """
 
-    func_map = {
-            "Spearman": 0,
-            "Kendall": 1
-            }
-
+    
     error.CheckArgumentsLength(args, 1, 1)
     error.CheckKargs(kargs, possible_kargs = ["Type", "FileName"])
 
     #kargs
+
+
     utype = error.ParseKargs(kargs, "Type", default="Spearman",
-                             possible=func_map)
+                             possible=correlation_type)
+
+    if (utype == correlation_type["PEARSON"] or 
+        utype == correlation_type["SPEARMAN2"]):
+        raise ValueError("Possible correlation types are SPEARMAN and KENDALL")
+
     filename = error.ParseKargs(kargs, "FileName", default=None)
 
     #args

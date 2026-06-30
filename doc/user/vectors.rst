@@ -31,7 +31,7 @@ loading an ASCII or directly using python lists as follows:
 .. filename with respect to the directory where sphinx is launch
 .. doctest::
 
-    >>> v1 = Vectors('./test/data/chene_sessile.vec') #doctest: +SKIP
+    >>> v1 = Vectors(get_shared_data("chene_sessile.vec"))
     >>> v2 = Vectors([[1,2], [3,4]])
 
 .. note:: Note the syntax, which is a list of lists
@@ -68,7 +68,7 @@ Here is the usage of One-way variance analysis.
     
 .. doctest::
 
-    >>> print VarianceAnalysis(v2, 1,2,"O")
+    >>> print(VarianceAnalysis(v2, 1,2,"O"))
     value                          1   3
     sample size                    1   1
     mean                           2   4
@@ -101,7 +101,7 @@ Compare
 
 
 
-    >>> print Compare(ExtractHistogram(v2, 1), ExtractHistogram(v2,2), "O")
+    >>> print(Compare(ExtractHistogram(v2, 1), ExtractHistogram(v2,2), "O"))
     frequency distribution 1 - sample size: 2
     mean: 2   variance: 2   standard deviation: 1.41421
     coefficient of skewness: 0   coefficient of kurtosis: -2.5
@@ -138,7 +138,7 @@ ContingencyTable
 
 .. doctest::
 
-    >>> print ContingencyTable(v2, 1, 2)
+    >>> print(ContingencyTable(v2, 1, 2))
     contingency table
     <BLANKLINE>
        2  3  4

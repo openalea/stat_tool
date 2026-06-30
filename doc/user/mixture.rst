@@ -1,4 +1,5 @@
 .. define the setup for doctest:
+
 .. testsetup:: *
    
     from openalea.stat_tool import *

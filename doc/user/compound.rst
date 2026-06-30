@@ -10,6 +10,7 @@
 
 
 .. _compound:
+
 Compound
 ========
 
@@ -38,7 +39,7 @@ and
 .. doctest:: 
 
     >>> from openalea.stat_tool import get_shared_data
-    >>> conv2 = Compound(get_shared_data("compound1.conv")) 
+    >>> conv2 = Compound(get_shared_data("compound1.comp")) 
 
 In the first example, which we will use later on, one create the compound of 
 two :func:`~openalea.stat_tool.distribution.Distribution` objects that are a 
