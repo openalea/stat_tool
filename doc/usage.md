@@ -14,14 +14,14 @@ Most of the docstrings provided in this document are tested with
 :caption: Basic usage examples of these objects
 
 
+Vectors <user/vectors.rst>
 Histogram <user/histogram.rst>
+Distribution <user/distribution.rst>
+Errors <user/errors.rst>
 Compound <user/compound.rst>
 Convolution <user/convolution.rst>
-Distribution <user/distribution.rst>
 Mixture <user/mixture.rst>
-Vectors <user/vectors.rst>
 ```
-<!--Exceptions <user/errors.rst> -->
 
 # Tutorials
 
@@ -32,8 +32,9 @@ The following tutorials come under the form of python notebooks:
 ```{nbgallery}
 examples/clustering.ipynb
 examples/comparison.ipynb
+examples/data_transform.ipynb
 ```
-<!-- examples/data_transform.ipynb
+<!-- 
 examples/plotting.ipynb 
 examples/regression.ipynb
 examples/simulate.ipynb -->

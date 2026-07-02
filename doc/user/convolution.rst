@@ -28,7 +28,7 @@ Constructor
 -----------
 
 Similarly to the histogram case, there are two constructors for the 
-:func:`~openalea.stat_tool.convolution.Convolution` class that are used as 
+:py:class:`openalea.stat_tool.convolution.Convolution` class that are used as 
 follows:
 
 .. doctest::
@@ -60,9 +60,9 @@ and
     >>> conv2 = Convolution(get_shared_data("convolution1.conv"))
 
 In the first example, which we'll use later on, one create the convolution of 
-two :func:`~openalea.stat_tool.distribution.Distribution` that are a 
-:func:`~openalea.stat_tool.distribution.Binomial` and 
-:func:`~openalea.stat_tool.distribution.NegativeBinomial` distributions.
+two :ref:`Distributions <Distribution>` that are a 
+:py:class:`openalea.stat_tool.distribution.Binomial` and 
+:py:class:`openalea.stat_tool.distribution.NegativeBinomial` distributions.
 
 This can be extended to an arbitrary number of distributions:
 

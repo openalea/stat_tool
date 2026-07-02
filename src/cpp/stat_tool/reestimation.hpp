@@ -1167,8 +1167,46 @@ double Reestimation<Type>::binomial_estimation(DiscreteParametric *dist , int mi
 //           << (max_inf_bound - min_inf_bound + 1) * (2 * SUP_BOUND_MARGIN + 1)
 //           << " | number of computations: " << k << endl;
 #     endif
+    } 
+  } else {
+    // Maximum likelihood estimation, taking the sup bound of support as sup_bound
+    // and trying all inf_bound between 0 and the inf bound of support
+    sup_bound = nb_value; 
+    dist->sup_bound = sup_bound;
+    max_likelihood = D_INF;
+    if (!min_inf_bound_flag)
+      // fix inf bound
+      max_inf_bound = min_inf_bound;
+    else
+      // search inf bound between this->offset and max_inf_bound
+      max_inf_bound = offset;
+    
+    for (i = min_inf_bound;i <= max_inf_bound;i++) {
+      shift_mean = mean - i;
+
+      dist->inf_bound = i;
+
+      if (dist->sup_bound > dist->inf_bound)
+        dist->probability = shift_mean / (dist->sup_bound - dist->inf_bound);
+      else
+        dist->probability = 1.;
+
+      dist->binomial_computation(1 , STANDARD);
+      likelihood = dist->likelihood_computation(*this);
+      if (likelihood > max_likelihood) {
+        max_likelihood = likelihood;
+        inf_bound = dist->inf_bound;
+        sup_bound = dist->sup_bound;
+        probability = dist->probability;
+      }
     }
   }
+
+    // update of the estimated parameters
+
+    if (max_likelihood != D_INF)
+      dist->init(inf_bound , sup_bound , D_DEFAULT , probability);            
+
 
   return max_likelihood;
 }

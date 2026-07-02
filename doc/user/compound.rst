@@ -8,7 +8,8 @@
     from openalea.stat_tool import *
     import pylab
     from pylab import savefig, clf
-
+    from openalea.stat_tool import get_shared_data
+    comp2 = Compound(get_shared_data("compound1.comp")) 
 
 .. _compound:
 
@@ -25,7 +26,7 @@ Constructor
 -----------
 
 Similarly to the histogram case, there are two constructors for the 
-:func:`~openalea.stat_tool.compound.Compound` class that are used as 
+:py:class:`openalea.stat_tool.compound.Compound` class that are used as 
 follows:
 
 .. doctest::
@@ -53,13 +54,14 @@ and
 
 .. doctest:: 
 
-    >>> from openalea.stat_tool import get_shared_data
-    >>> comp2 = Compound(get_shared_data("compound1.comp")) 
+    >>> from openalea.stat_tool import get_shared_data #doctest: +SKIP
+    >>> comp2 = Compound(get_shared_data("compound1.comp")) #doctest: +SKIP
+    >>> print(comp2)
 
 In the first example, which we will use later on, one create the compound of 
-two :func:`~openalea.stat_tool.distribution.Distribution` objects that are a 
-:func:`~openalea.stat_tool.distribution.Binomial` and 
-:func:`~openalea.stat_tool.distribution.NegativeBinomial` distributions.
+two :ref:`Distribution <Distribution>` objects that are a 
+:py:class:`openalea.stat_tool.distribution.Binomial` and 
+:py:class:`openalea.stat_tool.distribution.NegativeBinomial` distributions.
 
 The compound distribution as well as the original distributions are stored within the
 Compound instance. We will see how to extract the original distributions later

@@ -150,6 +150,9 @@ class EstimateFunctions:
             raise KeyError("Valid type are %s" % (str(list(dist_type.keys()))))
 
 
+        if (MinInfBound < 0):
+            raise ValueError("MinInfBound must be non-negative")
+        
         e = histo.parametric_estimation(int(ident_id), MinInfBound, flag)
         if (e is not None):
             return(_DiscreteParametricModel(e, histo))
@@ -158,6 +161,9 @@ class EstimateFunctions:
             if (e is None):
                 raise FormatError("Estimation Error")
             else:
+                import warnings
+                warnings.warn("Overriding arguments MinInfBound, InfBoundStatus " \
+                "in parametric estimation")
                 return(_DiscreteParametricModel(e, histo))
 
 
