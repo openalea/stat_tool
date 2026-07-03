@@ -8,6 +8,7 @@ from openalea.stat_tool import Simulate, ExtractHistogram, ToHistogram
 from openalea.stat_tool import Estimate, ExtractData, ExtractDistribution
 from openalea.stat_tool import Plot, Shift, Display, Save
 from openalea.stat_tool.distribution import set_seed
+import os
 
 
 def test():
@@ -63,6 +64,7 @@ def test():
     Plot(convol31)
     Plot(ExtractDistribution(convol31, "Convolution"))
     Save(convol31, "data/nothofagus_antartica_2.xls", Format="SpreadSheet")
+    os.remove("data/nothofagus_antartica_2.xls")
 
 
 if __name__ == "__main__":
