@@ -101,8 +101,8 @@ Note that the order of the two Binomial components is arbitrary, thus they are l
 Discrete mixtures of multivariate distributions
 ===============================================
 
-Mixtures can be extended to multivariate distributions. The associated class is :py:class:`openalea.stat_tool._stat_tool._MultivariateMixture <_MultivariateMixture>`, 
-which works essentially as :py:class:`openalea.stat_tool._stat_tool._DiscreteMixture <DiscreteMixture>`. Here is an example with 2 variables:
+Mixtures can be extended to multivariate distributions. The associated class is :py:class:`_MultivariateMixture <openalea.stat_tool._stat_tool._MultivariateMixture>`, 
+which works essentially as :py:class:`DiscreteMixture <openalea.stat_tool._stat_tool._DiscreteMixture>`. Here is an example with 2 variables:
 
 .. doctest::
 
@@ -183,7 +183,7 @@ Marginals can also be extracted as distributions:
     information: -2.11067
     <BLANKLINE>
 
-:ref:`Vectors <Vectors>` can be simulated with :func:`~openalea.stat_tool.multivariate_mixture._MultivariateMixture.simulate`:
+:ref:`Vectors <vectors>` can be simulated with :func:`openalea.stat_tool._stat_tool._MultivariateMixture.simulate`:
 
 .. doctest::
 
@@ -191,7 +191,8 @@ Marginals can also be extracted as distributions:
     >>> set_seed(1)
     >>> v = m.simulate(500000)
 
-Multivariate mixtures can be estimated by the EM algorithm with :ref:`Vectors <Vectors>` can be simulated with :func:`~openalea.stat_tool.vectors.Vector.mixture_estimation`:
+Multivariate mixtures can be estimated by the EM algorithm with :ref:`Vectors <vectors>` can be simulated 
+with :func:`openalea.stat_tool._stat_tool._MultivariateMixtureData.mixture_estimation`:
 
 .. doctest::
 

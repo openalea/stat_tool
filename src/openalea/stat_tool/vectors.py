@@ -190,7 +190,7 @@ def Vectors(*args, **kargs):
             for i, vec in enumerate(obj):
                 identifiers.append(i+1)
     
-            print(identifiers)
+            # print(identifiers)
             #if InputTypes:
             ret = _Vectors(obj, identifiers, InputTypes)
             #else:
