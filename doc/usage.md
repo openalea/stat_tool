@@ -33,8 +33,8 @@ The following tutorials come under the form of python notebooks:
 examples/clustering.ipynb
 examples/comparison.ipynb
 examples/data_transform.ipynb
+examples/plotting.ipynb
 ```
 <!-- 
-examples/plotting.ipynb 
 examples/regression.ipynb
 examples/simulate.ipynb -->
