@@ -60,7 +60,7 @@ Categorical distributions, i.e., multinomials :math:`{\mathcal M}(1; p_1, \ldots
 
 Note that the constructor has a single parameter, which is the vector of probabilities.
 
-plotting
+Plotting
 --------
 
 .. doctest::
@@ -112,7 +112,7 @@ with the distribution. Thus, plotting it provides both simulated data and distri
 Estimate
 --------
 
-A Distribution can be estimated from a :py:class:`openalea.stat_tool.Vectors` or a derived class, such as :py:class:`openalea.stat_tool._stat_tool._DiscreteDistributionData`,
+A Distribution can be estimated from an object of class :ref:`Vectors <vectors>` or a derived class, such as :py:class:`openalea.stat_tool._stat_tool._DiscreteDistributionData`,
 using :func:`openalea.stat_tool.estimate.Estimate`. The parametric family is passed as an argument:
 
 .. doctest::

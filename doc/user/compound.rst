@@ -71,7 +71,7 @@ In order to display the contents, or to save the data, one uses the same functio
 /methods as in the Histogram case.
 
   
-plotting
+Plotting
 --------
 
 .. 

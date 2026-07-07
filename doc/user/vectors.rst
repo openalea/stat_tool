@@ -1,8 +1,11 @@
-.. define some aliases:
+.. 
+    comment:
+    define some aliases:
 
 .. _vectors_ref: syntax.html#type-vectors
 .. .. _histogram_tutorial: tutorial.html#histogram
 .. _convolution_tutorial: tutorial.html#convolution
+.. _comparison_tutorial: ../examples/comparison.html
 
 .. define the setup for doctest:
 .. testsetup:: *
@@ -17,23 +20,23 @@
 
 Vectors
 =======
-Let us finish with a third type of objects, that are vectors, which contains 
-slighty more methods in addition to those already presented in the 
-`histogram_tutorial_ <test>` and `Convolution <convolution_tutorial_>` sections
+An object with class :py:class:`~openalea.stat_tool.vectors.Vectors` is a collection of vectors, 
+that is to say of containers for floating or integer values with fixed dimensions.
 
 Constructor
 -----------
 
-Again, :class:`~openalea.stat_tool.vectors.Vectors` can be generated either by 
+As for most other objects, :py:class:`~openalea.stat_tool.vectors.Vectors` can be generated either by 
 loading an ASCII or directly using python lists as follows:
 
 .. filename with respect to the directory where sphinx is launch
 .. doctest::
 
     >>> v1 = Vectors(get_shared_data("chene_sessile.vec"))
-    >>> v2 = Vectors([[1,2], [3,4]])
+    >>> v2 = Vectors([[1,2], [3,4], [4,5]])
 
-.. note:: Note the syntax, which is a list of lists
+.. note:: Note the syntax, which is a list of lists. The inner elements of the list correspond to the vectors, 
+    which consist here in a collection of 3 vectors of dimension 2.
 
 Then, you can access to various information using:
 
@@ -42,12 +45,14 @@ Then, you can access to various information using:
     >>> v2.nb_variable
     2
     >>> v2.nb_vector
-    2
+    3
     >>> v2.get_identifiers()
-    [1, 2]
+    [1, 2, 3]
 
-Finally, container are available and you can access to the data as follows 
-(starting at 0):
+Identifiers are the indices of each vector.
+
+Eventually,  :py:class:`~openalea.stat_tool.vectors.Vectors` are containers so you can access the data
+(starting at index 0):
 
     >>> v2[1]
     [3, 4]
@@ -58,7 +63,7 @@ Display, Save, str()  methods are available as in the previous cases.
 
 However, there is no plotting routines available.
     
-There are many more methods available, some of them are explained here below
+There are many more methods available, some of which are explained here below.
 
 VarianceAnalysis
 ----------------
@@ -131,6 +136,12 @@ Compare
     chi-square value: 0.6   critical probability: 0.448429
     reference chi-square value: 3.74866   reference critical probability: 0.05
     <BLANKLINE>
+
+.. todo::
+    
+    Link to notebook
+
+See also :ref:`comparison_tutorial`.
 
 ContingencyTable
 ----------------

@@ -1,4 +1,6 @@
-.. define the setup for doctest:
+.. 
+    Comment:
+    define the setup for doctest:
 
 .. testsetup:: *
    
@@ -40,7 +42,7 @@ Mixtures are built from their components and weights:
 In order to display the contents, or to save the data, one uses methods :func:`~openalea.stat_tool.output.Display` and 
 :func:`~openalea.stat_tool.plot`.
   
-plotting
+Plotting
 --------
 
 .. doctest::
@@ -86,7 +88,7 @@ known at the time these are simulated, each component can be displayed separatel
 Estimate
 --------
 
-A Mixture can be estimated from a `Histogram <histogram_tutorial_>` or a derived class, such as :py:class:`openalea.stat_tool._stat_tool._DiscreteMixtureData`,
+A Mixture can be estimated from a :ref:`Histogram <Histogram>` or a derived class, such as :py:class:`openalea.stat_tool._stat_tool._DiscreteMixtureData`,
 using :func:`openalea.stat_tool.estimate.Estimate`. The parametric family of each component is passed as an argument in an abbreviated way: 
 "B" for Binomial, "NB" for Negative Binomial, "P" for Poisson, etc. 
 
@@ -191,7 +193,7 @@ Marginals can also be extracted as distributions:
     >>> set_seed(1)
     >>> v = m.simulate(500000)
 
-Multivariate mixtures can be estimated by the EM algorithm with :ref:`Vectors <vectors>` can be simulated 
+Multivariate mixtures can be estimated by the EM algorithm from :ref:`Vectors <vectors>` 
 with :func:`openalea.stat_tool._stat_tool._MultivariateMixtureData.mixture_estimation`:
 
 .. doctest::
