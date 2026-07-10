@@ -196,6 +196,10 @@ Marginals can also be extracted as distributions:
 Multivariate mixtures can be estimated by the EM algorithm from :ref:`Vectors <vectors>` 
 with :func:`openalea.stat_tool._stat_tool._MultivariateMixtureData.mixture_estimation`:
 
+.. todo::
+
+    Explore the other possible arguments of mixture_estimation.
+
 .. doctest::
 
     >>> m_estim_model = v.mixture_estimation(m, 100,  [True, True])

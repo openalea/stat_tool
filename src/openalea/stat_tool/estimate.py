@@ -496,6 +496,8 @@ def Estimate(histo, itype, *args, **kargs):
         "CONVOLUTION" : _FrequencyDistribution.estimate_convolution,
         "COMPOUND": _FrequencyDistribution.estimate_compound,
         }
+    
+    CheckType([itype], [str])
 
     Type = itype.upper()
 

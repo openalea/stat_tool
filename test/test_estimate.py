@@ -243,10 +243,32 @@ def test_compound_two_distribution(compound1):
     )
     assert str(cdist2) == str(cdist3)
 
+def test_estimated_wrong_type(compound1):
+    """Check behaviour if argument 2 is not a str"""
+    cdist1 = compound1
+    set_seed(0)
+    chisto1 = Simulate(cdist1, 200)
+
+    try:
+        cdist2 = Estimate(
+            "COMPOUND",
+            chisto1,        
+            ExtractDistribution(cdist1, "Sum"),
+            "Sum",
+            InitialDistribution=ExtractDistribution(cdist1, "Elementary"),
+        )
+    except Exception:
+        assert True
+    else:
+        assert False
+
 if __name__ == "__main__":
     from openalea.stat_tool import get_shared_data
     test_binomial_estimation_failure()
     test_binomial_estimation_wrong_MinInfBound()
+    compound1 = Compound(get_shared_data("compound1.comp"))
+    test_estimated_wrong_type(compound1)
+    test_compound_two_distribution(compound1)
     peup2 = Histogram(get_shared_data("peup2.his"))
     test_binomial_from_peup2(peup2)
     test_mixture_1(peup2)
