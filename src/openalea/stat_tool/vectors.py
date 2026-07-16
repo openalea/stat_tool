@@ -58,9 +58,20 @@ __all__ = ['Vectors',
 def _Vectors_mixture_estimation(self, model,
                                 nb_iteration=I_DEFAULT,
                                 force_param=None):
-    """Estimate a mixture from _Vectors given initial model or number of
+    """
+    Estimate a mixture from _Vectors given initial model or number of
     components, the maximal number of iterations and a flag for using parametric
     observation distributions or not, within a given family
+    
+    :Examples:
+
+    .. doctest::
+
+        >>> import numpy as np
+        >>> set_seed(0)
+        >>> vec = Vectors(np.array([Uniform(0,10).simulate() for i in range(3000)]).reshape(1000,3).tolist())
+        >>> mixt =  vec.mixture_estimation(3, 100,  [True, True, True])
+
     """
     if force_param is None:
         force_param = []

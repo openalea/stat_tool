@@ -25,6 +25,9 @@ A mixture of :math:`K` distributions with probability functions :math:`(p_1,\ldo
 It represents the fact that a random variable :math:`X`  can be seen as issued from one the :math:`p_k`, each with a probability :math:`\pi_k`. As a consequence, it is 
 suitable for model-based clustering, where a cluster is a set of points issued from the same distribution :math:`p_k`, which is unknown, as :math:`k` is for a given point.
 
+Note that there is a fundamental difference with :ref:`Convolutions <convolution>`: in the latter, the random variable is a sum of random variables while in mixtures, 
+the probability measure of the mixture random variable is a weighted sum of probability measures of random variables.
+
 Constructor
 -----------
 

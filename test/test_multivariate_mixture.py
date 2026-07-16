@@ -16,7 +16,7 @@ from pathlib import Path
 
 import pytest
 
-from openalea.stat_tool.distribution import Binomial, Poisson, set_seed
+from openalea.stat_tool.distribution import Binomial, Poisson, Uniform, set_seed
 from openalea.stat_tool.multivariate_mixture import _MultivariateMixture
 from openalea.stat_tool.vectors import Vectors
 
@@ -107,6 +107,29 @@ def test_estimate(my_estimate):
     m, v = my_estimate
     assert m, v
 
+def test_estimate_2_3comp():
+    """
+    Estimate multivariate mixture from simulated data and the number of components
+    """
+    import numpy as np
+    set_seed(0)
+    vec = Vectors(np.array([Uniform(0,10).simulate() for i in range(3000)]).reshape(1000,3).tolist())
+    m3 =  vec.mixture_estimation(3, 100,  [True, True, True])
+    assert m3
+
+def test_estimate_bad_number_of_variables():
+    """
+    Estimate multivariate mixture from simulated data and the number of components: wrong number of variables
+    """
+    import numpy as np
+    set_seed(0)
+    vec = Vectors(np.array([Uniform(0,10).simulate() for i in range(3000)]).reshape(1000,3).tolist())
+    try:
+        m2 = vec.mixture_estimation(2, 100,  [True, True])
+    except: 
+        assert True
+    else:
+        assert False
 
 def test_mixture_plots(my_estimate):
     m, v = my_estimate
@@ -246,22 +269,25 @@ if __name__ == "__main__":
     )
     myi.data = data()
     print(DISABLE_PLOT)
-    test_constructor_from_file(myi)
-    test_constructor_from_file_failure(myi)
-    test_print(myi)
-    test_display(myi)
-    test_len(data())
-    test_plot(myi)
-    test_plot_write(myi)
-    test_file_ascii_write(myi)
-    test_estimate(my_estimate(path()))
-    test_mixture_plots(my_estimate(path()))
-    test_spreadsheet_write(myi)
-    test_simulate(myi)
-    test_extract(my_estimate(path()))
-    test_extract_data(my_estimate(path()))
-    test_simulate2()
-    test_permutation(data())
-    test_cluster_data(my_estimate(path()))
-    test_cluster_data_file(my_estimate(path()))
+    """
+        test_constructor_from_file(myi)
+        test_constructor_from_file_failure(myi)
+        test_print(myi)
+        test_display(myi)
+        test_len(data())
+        test_plot(myi)
+        test_plot_write(myi)
+        test_file_ascii_write(myi)
+        test_estimate(my_estimate(path()))
+        test_mixture_plots(my_estimate(path()))
+        test_spreadsheet_write(myi)
+        test_simulate(myi)
+        test_extract(my_estimate(path()))
+        test_extract_data(my_estimate(path()))
+        test_simulate2()
+        test_permutation(data())
+        test_cluster_data(my_estimate(path()))
+        test_cluster_data_file(my_estimate(path()))
+    """
+    test_estimate_2_3comp()
 

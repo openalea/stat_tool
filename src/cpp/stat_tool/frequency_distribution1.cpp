@@ -2049,7 +2049,10 @@ void FrequencyDistribution::update(const Reestimation<double> *reestim , int inb
 
 
   // copy of the real frequency distribution and scaling
-
+# ifdef DEBUG
+  assert(reestim->nb_value > 0)
+# endif
+  
   real_frequency = new double[reestim->nb_value];
 
   scale = inb_element / reestim->nb_element;
