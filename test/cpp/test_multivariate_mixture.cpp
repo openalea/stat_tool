@@ -40,7 +40,7 @@ int main(void) {
   force_param = new bool[3];
   for (i=0; i<dim; i++)  
     force_param[i] = true;
-  m =  vec->mixture_estimation(error, &cout, 2, 100,  force_param);
+  m =  vec->mixture_estimation(error, &cout, 3, 100,  force_param);
 
   delete [] force_param;
   for (v=0; v<1000; v++)  

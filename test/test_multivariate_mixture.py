@@ -118,7 +118,7 @@ def test_estimate_2comp_unif():
     m2 =  vec.mixture_estimation(2, 100,  [True, True, True])
     assert m2
 
-def estimate_3comp_simul():
+def test_estimate_3comp_simul():
     """
     Estimate multivariate mixture from simulated mixture data and the number of components
     """
@@ -323,7 +323,7 @@ if __name__ == "__main__":
     test_cluster_data_file(my_estimate(path()))    
     test_estimate_2comp_unif()
     """
-    estimate_3comp_simul()
+    test_estimate_3comp_simul()
     """
     test_estimate_bad_number_of_variables()
     test_estimate_bad_number_of_observations()
