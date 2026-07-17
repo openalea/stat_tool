@@ -159,6 +159,7 @@ namespace stat_tool {
     DiscreteMixtureData* get_mixture_data() const { return mixture_data; }
     int get_nb_component() const { return nb_component; }
     DiscreteParametric* get_weight() const { return weight; }
+    /// return mixture component (return a pointer, no new allocation)
     DiscreteParametric* get_component(int index) const { return component[index]; }
   };
 

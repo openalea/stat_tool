@@ -385,7 +385,7 @@ void Reestimation<Type>::nb_value_computation()
   while ((nb_value > 1) && (*--pfrequency == 0)) {
     nb_value--;
   }
-  if ((nb_value == 1) && (frequency[nb_value] == 0))
+  if ((nb_value == 1) && (frequency[nb_value-1] == 0))
 	nb_value = 0;
 }
 
@@ -1073,14 +1073,21 @@ double Reestimation<Type>::binomial_estimation(DiscreteParametric *dist , int mi
     }
 
     if (variance == 0.) {
+      // deterministic distribution
       if (mean <= max_inf_bound) {
         max_likelihood = 0.;
-        dist->init((int)mean , (int)mean + 1 , D_DEFAULT , 0.);
+        inf_bound = (int)mean;
+        sup_bound = (int)mean + 1;
+        probability =  0.;
+        dist->init(inf_bound , sup_bound , D_DEFAULT , probability);
       }
       else {
-        if (mean < dist->alloc_nb_value) {
+        if (mean < dist->alloc_nb_value) {          
           max_likelihood = 0.;
-          dist->init(min_inf_bound , (int)mean , D_DEFAULT , 1.);
+          inf_bound = min_inf_bound;
+          sup_bound = (int)mean;
+          probability =  1.;
+          dist->init(inf_bound , sup_bound , D_DEFAULT , probability);
         }
       }
     }
@@ -1403,15 +1410,20 @@ double Reestimation<Type>::negative_binomial_estimation(DiscreteParametric *dist
       dist->inf_bound = i;
 
       shift_mean = mean - i;
-      dist->parameter = shift_mean * shift_mean / (variance - shift_mean);
-      dist->probability = shift_mean / variance;
+      if ((shift_mean >= 0) && (variance > 0)) {
 
-#     ifdef DEBUG
-//      cout << i << " : " dist->parameter << " | " << dist->probability << endl;
-#     endif
+        dist->parameter = shift_mean * shift_mean / (variance - shift_mean);
+        dist->probability = shift_mean / variance;
 
-      dist->negative_binomial_computation(nb_value , cumul_threshold , STANDARD);
-      likelihood = dist->likelihood_computation(*this);
+  #     ifdef DEBUG
+  //      cout << i << " : " dist->parameter << " | " << dist->probability << endl;
+  #     endif
+
+        dist->negative_binomial_computation(nb_value , cumul_threshold , STANDARD);
+        likelihood = dist->likelihood_computation(*this); 
+      } else {
+        likelihood = D_INF;
+      }
 
       if (likelihood > max_likelihood) {
         max_likelihood = likelihood;

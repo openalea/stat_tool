@@ -107,14 +107,18 @@ def test_estimate(my_estimate):
     m, v = my_estimate
     assert m, v
 
-def test_estimate_2_3comp():
+def test_estimate_3comp():
     """
     Estimate multivariate mixture from simulated data and the number of components
     """
-    import numpy as np
     set_seed(0)
-    vec = Vectors(np.array([Uniform(0,10).simulate() for i in range(3000)]).reshape(1000,3).tolist())
-    m3 =  vec.mixture_estimation(3, 100,  [True, True, True])
+    import numpy as np
+    rand_list = [Uniform(0,10).simulate() for i in range(3000)]
+    # rand_list = [Uniform(0,10).simulate() for i in range(1000)] + \
+    #    [Binomial(0,10, 0.2).simulate() for i in range(1000)]  + \
+    #    [Poisson(0, 8.5).simulate() for i in range(1000)]
+    vec = Vectors(np.array(rand_list).reshape(1000,3).tolist())
+    m3 =  vec.mixture_estimation(2, 100,  [True, True, True])
     assert m3
 
 def test_estimate_bad_number_of_variables():
@@ -126,6 +130,20 @@ def test_estimate_bad_number_of_variables():
     vec = Vectors(np.array([Uniform(0,10).simulate() for i in range(3000)]).reshape(1000,3).tolist())
     try:
         m2 = vec.mixture_estimation(2, 100,  [True, True])
+    except: 
+        assert True
+    else:
+        assert False
+
+def test_estimate_bad_number_of_observations():
+    """
+    Estimate multivariate mixture from simulated data and the number of components: wrong number of observations
+    """
+    import numpy as np
+    set_seed(0)
+    vec = Vectors([[0,0,0], [1,1,1]])
+    try:
+        m2 = vec.mixture_estimation(3, 100,  [True, True, True])
     except: 
         assert True
     else:
@@ -268,26 +286,29 @@ if __name__ == "__main__":
         data, str((path() / "data" / "mixture_mv1.mixt")), _MultivariateMixture
     )
     myi.data = data()
-    print(DISABLE_PLOT)
+    print(DISABLE_PLOT)    
     """
-        test_constructor_from_file(myi)
-        test_constructor_from_file_failure(myi)
-        test_print(myi)
-        test_display(myi)
-        test_len(data())
-        test_plot(myi)
-        test_plot_write(myi)
-        test_file_ascii_write(myi)
-        test_estimate(my_estimate(path()))
-        test_mixture_plots(my_estimate(path()))
-        test_spreadsheet_write(myi)
-        test_simulate(myi)
-        test_extract(my_estimate(path()))
-        test_extract_data(my_estimate(path()))
-        test_simulate2()
-        test_permutation(data())
-        test_cluster_data(my_estimate(path()))
-        test_cluster_data_file(my_estimate(path()))
+    test_constructor_from_file(myi)
+    test_constructor_from_file_failure(myi)
+    test_print(myi)
+    test_display(myi)
+    test_len(data())
+    test_plot(myi)
+    test_plot_write(myi)
+    test_file_ascii_write(myi)
+    test_estimate(my_estimate(path()))
+    test_mixture_plots(my_estimate(path()))
+    test_spreadsheet_write(myi)
+    test_simulate(myi)
+    test_extract(my_estimate(path()))
+    test_extract_data(my_estimate(path()))
+    test_simulate2()
+    test_permutation(data())
+    test_cluster_data(my_estimate(path()))
+    test_cluster_data_file(my_estimate(path()))
     """
-    test_estimate_2_3comp()
-
+    test_estimate_3comp()
+    """
+    test_estimate_bad_number_of_variables()
+    test_estimate_bad_number_of_observations()
+    """
