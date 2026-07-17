@@ -15,7 +15,7 @@ using namespace stat_tool;
 
 int main(void) {
 
-  int v, i;
+  int v, i, dim;
   int **rand_list = NULL;
   int *identifier = NULL;
   bool *force_param = NULL;
@@ -25,19 +25,20 @@ int main(void) {
   StatError error;
 
   set_seed(0);
+  dim = 3; // dimension
   U = new DiscreteParametric(UNIFORM, 0, 10, D_DEFAULT, D_DEFAULT);
   rand_list = new int*[1000];
   identifier = new int[1000];
   for (v=0; v<1000; v++)  {
     identifier[v] = v+1;
-    rand_list[v] = new int[3];
-    for (i=0; i<3; i++) 
+    rand_list[v] = new int[dim];
+    for (i=0; i<dim; i++) 
       rand_list[v][i] = U->simulation();
   }
 
-  vec = new Vectors(1000, identifier, 3, rand_list);
+  vec = new Vectors(1000, identifier, dim, rand_list);
   force_param = new bool[3];
-  for (i=0; i<3; i++)  
+  for (i=0; i<dim; i++)  
     force_param[i] = true;
   m =  vec->mixture_estimation(error, &cout, 2, 100,  force_param);
 
@@ -51,6 +52,8 @@ int main(void) {
   delete m;
 
   delete U;
+
+  delete vec;
 
   return 0;
 }

@@ -212,6 +212,7 @@ void MultivariateMixture::get_output_conditional_distribution(const Vectors &mix
  *
  *  argument : reference sur un objet Vectors, lois des observations sachant
  *  les etats et reference sur lois des etats
+ *  posterior_dist doit etre desalloue par l'appelant.
  *
  *--------------------------------------------------------------*/
 
@@ -254,6 +255,7 @@ void MultivariateMixture::get_posterior_distribution(const Vectors &mixt_data,
  *  arguments : reference sur un objet StatError, sur un object Vectors,
  *  l' algorithme de restauration, l'index (a partir de 0)
  *  et la loi a posteriori des etats (mise a jour au besoin)
+ *  posterior_dist doit etre desalloue par l'appelant
  *
  *--------------------------------------------------------------*/
 
@@ -308,8 +310,8 @@ std::vector<int>* MultivariateMixture::state_computation(StatError &error, const
     }
     if (delete_cond) {
       for (n = 0; n < nb_vector; n++) {
-	delete [] output_cond[n];
-	output_cond[n] = NULL;
+	      delete [] output_cond[n];
+	        output_cond[n] = NULL;
       }
       delete [] output_cond;
       output_cond = NULL;
@@ -758,22 +760,21 @@ MultivariateMixture* Vectors::mixture_estimation(StatError &error, ostream* os,
       error.update(STAT_error[STATR_ESTIMATION_FAILURE]);
     }
     else {
-      mixt->mixture_data = mixt->cluster(error,  *this, VITERBI);
-      mixt_data = mixt->mixture_data;
-
-
-        mixt_data->nb_component = mixt->nb_component;
+      delete mixt_data;
+      mixt_data = mixt->cluster(error,  *this, VITERBI);
+      mixt->mixture_data = mixt_data;
+      mixt_data->nb_component = mixt->nb_component;
 
         // computation of the parametric observation distributions
         // for mixt_data->component[0] is not to be used
-        delete [] mixt_data->component[0];
-        mixt_data->component[0] = NULL;
-        for(var = 0; var < mixt->nb_var; var++)
-      if (mixt->pcomponent[var] != NULL) {
-        for(j = 0; j < mixt->nb_component; j++)
-        mixt->pcomponent[var]->observation[j]->computation(mixt_data->component[var+1][j]->nb_value,
+      delete [] mixt_data->component[0];
+      mixt_data->component[0] = NULL;
+      for(var = 0; var < mixt->nb_var; var++)
+        if (mixt->pcomponent[var] != NULL) {
+          for(j = 0; j < mixt->nb_component; j++)
+            mixt->pcomponent[var]->observation[j]->computation(mixt_data->component[var+1][j]->nb_value,
                       OBSERVATION_THRESHOLD);
-      }
+        }
 
   #       ifdef MESSAGE
         cout << "\n" << STAT_label[STATL_LIKELIHOOD] << ": " << mixt->likelihood_computation(*this, true);
@@ -811,6 +812,11 @@ MultivariateMixture* Vectors::mixture_estimation(StatError &error, ostream* os,
         }
     } // if (mixt != NULL)
   
+    if (cond_prob != NULL) {
+        for(n = 0; n < nb_vector; n++)
+          delete [] cond_prob[n];
+        delete [] cond_prob;  
+        }
   } // if (status)
 
   mixt_data= NULL;
@@ -1064,7 +1070,7 @@ MultivariateMixtureData* MultivariateMixture::cluster(StatError &error,  const V
     if (nb_real_variable > 0) {
       ireal_vector = new double*[nb_vector];
       for (n = 0; n < nb_vector; n++) {
-	ireal_vector[n] = new double[nb_res_variable];
+	      ireal_vector[n] = new double[nb_res_variable];
       }
     }
 
@@ -1101,16 +1107,17 @@ MultivariateMixtureData* MultivariateMixture::cluster(StatError &error,  const V
     itypes = NULL;
     if (ireal_vector != NULL) {
       for (n = 0; n < nb_vector; n++) {
-	delete [] ireal_vector[n];
-	ireal_vector[n] = NULL;
+	      delete [] ireal_vector[n];
+	      ireal_vector[n] = NULL;
       }
       delete [] ireal_vector;
       ireal_vector = NULL;
     }
-    if (add_state_entropy) {
+    if (posterior_dist != NULL) {
       for (n = 0; n < nb_vector; n++) {
-	delete [] posterior_dist[n];
-	posterior_dist[n] = NULL; }
+	      delete [] posterior_dist[n];
+	      posterior_dist[n] = NULL; 
+      }
       delete [] posterior_dist;
       posterior_dist = NULL;
     }

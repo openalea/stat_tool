@@ -125,7 +125,7 @@ namespace stat_tool {
 
     /** MAP algorithm */
     std::vector<int>* state_computation(StatError &error, const Vectors &vec, 
-					double** &posterior_dist,
+                                        double** &posterior_dist,
                                         int algorithm=VITERBI, int index=I_DEFAULT) const;
 
     /** Initialization of EM algorithm */
@@ -218,7 +218,7 @@ namespace stat_tool {
     { return mixt_data.ascii_write(os , false); }
 
   private :
-
+ 
     MultivariateMixture *mixture;  /// pointer on MultivariateMixture object
     int nb_component;          /// number of components
     FrequencyDistribution *weight;      /// empirical distribution of weights

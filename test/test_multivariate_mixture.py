@@ -107,18 +107,33 @@ def test_estimate(my_estimate):
     m, v = my_estimate
     assert m, v
 
-def test_estimate_3comp():
+def test_estimate_2comp_unif():
     """
-    Estimate multivariate mixture from simulated data and the number of components
+    Estimate multivariate mixture from simulated uniform data and the number of components
     """
     set_seed(0)
     import numpy as np
     rand_list = [Uniform(0,10).simulate() for i in range(3000)]
-    # rand_list = [Uniform(0,10).simulate() for i in range(1000)] + \
-    #    [Binomial(0,10, 0.2).simulate() for i in range(1000)]  + \
-    #    [Poisson(0, 8.5).simulate() for i in range(1000)]
     vec = Vectors(np.array(rand_list).reshape(1000,3).tolist())
-    m3 =  vec.mixture_estimation(2, 100,  [True, True, True])
+    m2 =  vec.mixture_estimation(2, 100,  [True, True, True])
+    assert m2
+
+def estimate_3comp_simul():
+    """
+    Estimate multivariate mixture from simulated mixture data and the number of components
+    """
+    d11 = Binomial(0, 12, 0.1)
+    d12 = Binomial(0, 12, 0.6)
+    d13 = Binomial(0, 12, 0.9)
+
+    d21 = Poisson(0, 25.0)
+    d22 = Poisson(0, 5.0)
+    d23 = Poisson(0, 0.2)
+
+    MultiM = _MultivariateMixture([0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]])
+    set_seed(0)
+    simulation_MultiM = MultiM.simulate(400)
+    m3 = simulation_MultiM.mixture_estimation(3, 100,  [True, True])
     assert m3
 
 def test_estimate_bad_number_of_variables():
@@ -305,9 +320,10 @@ if __name__ == "__main__":
     test_simulate2()
     test_permutation(data())
     test_cluster_data(my_estimate(path()))
-    test_cluster_data_file(my_estimate(path()))
+    test_cluster_data_file(my_estimate(path()))    
+    test_estimate_2comp_unif()
     """
-    test_estimate_3comp()
+    estimate_3comp_simul()
     """
     test_estimate_bad_number_of_variables()
     test_estimate_bad_number_of_observations()

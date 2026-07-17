@@ -480,7 +480,7 @@ double Reestimation<Type>::mode_computation() const
   }
   i = mode;
   if ((frequency != NULL) && (i < nb_value-1)) {
-	  while (frequency[i + 1] == frequency[i]) {
+	  while ((i < nb_value-1) && (frequency[i + 1] == frequency[i])) {
 		i++;
 	  }
 	  if (i > mode) {

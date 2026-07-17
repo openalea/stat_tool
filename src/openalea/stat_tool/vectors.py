@@ -70,9 +70,9 @@ def _Vectors_mixture_estimation(self, model,
         >>> import numpy as np
         >>> set_seed(0)
         >>> vec = Vectors(np.array([Uniform(0,10).simulate() for i in range(3000)]).reshape(1000,3).tolist())
-        >>> mixt =  vec.mixture_estimation(3, 100,  [True, True, True])
-
+        >>> mixt =  vec.mixture_estimation(2, 100,  [True, True, True])
     """
+    
     if force_param is None:
         force_param = []
 
