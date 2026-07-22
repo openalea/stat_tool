@@ -54,6 +54,30 @@ Plotting
     >>> import openalea.stat_tool.plot
     >>> plot.DISABLE_PLOT=True
     >>> print(M.display())
+    MIXTURE 3 DISTRIBUTIONS
+    mean: 5.93362   median: 4   mode: 2
+    variance: 42.8149   standard deviation: 6.54331   lower quartile: 2   upper quartile: 7
+    <BLANKLINE>
+    DISTRIBUTION 1 WEIGHT : 0.4
+    NEGATIVE_BINOMIAL   INF_BOUND : 0   PARAMETER : 1   PROBABILITY : 0.1
+    mean: 9   median: 6   mode: 0
+    variance: 90   standard deviation: 9.48683   lower quartile: 2   upper quartile: 13
+    <BLANKLINE>
+    DISTRIBUTION 2 WEIGHT : 0.4
+    BINOMIAL   INF_BOUND : 0   SUP_BOUND : 10   PROBABILITY : 0.5
+    mean: 5   median: 5   mode: 5
+    variance: 2.5   standard deviation: 1.58114   lower quartile: 4   upper quartile: 6
+    <BLANKLINE>
+    DISTRIBUTION 3 WEIGHT : 0.2
+    BINOMIAL   INF_BOUND : 1   SUP_BOUND : 5   PROBABILITY : 0.2
+    mean: 1.8   median: 2   mode: 1.5
+    variance: 0.64   standard deviation: 0.8   lower quartile: 1   upper quartile: 2
+    <BLANKLINE>
+    distances between components
+              0.592991  0.6289
+    0.592991            0.800925
+    0.6289    0.800925
+    <BLANKLINE>
     >>> M.plot()
     >>> savefig('user/stat_tool_mixture1.png')
 
@@ -99,6 +123,62 @@ using :func:`openalea.stat_tool.estimate.Estimate`. The parametric family of eac
 
     >>> M_est = Estimate(simulation, "Mixture", "NB", "B", "B")
     >>> print(M_est.display())
+    MIXTURE 3 DISTRIBUTIONS
+    mean: 5.52754   median: 4   mode: 2
+    variance: 32.6141   standard deviation: 5.71087   lower quartile: 2   upper quartile: 6
+    <BLANKLINE>
+    frequency distribution - sample size: 400
+    mean: 5.54   median: 4   mode: 1
+    variance: 33.1262   standard deviation: 5.75554   lower quartile: 2   upper quartile: 6
+    <BLANKLINE>
+    log-likelihood: -1060.51   (normalized: -2.65128)
+    maximum possible log-likelihood: -1040.61   (information: -2.60152)
+    deviance: 39.8066
+    <BLANKLINE>
+    11 free parameters   2 * penalyzed log-likelihood (AIC): -2143.03
+    11 free parameters   2 * penalyzed log-likelihood (AICc): -2143.71
+    11 free parameters   2 * penalyzed log-likelihood (BIC): -2186.93
+    11 free parameters   2 * penalyzed log-likelihood (BICc): -2175.93
+    <BLANKLINE>
+    log-likelihood for the optimal classification: -1171.28   (normalized: -2.92821)
+    maximum possible log-likelihood for the optimal classification: -1149.62   (information: -2.87406)
+    <BLANKLINE>
+    chi-square test (16 degrees of freedom)
+    chi-square value: 24.5417   critical probability: 0.0783223
+    reference chi-square value: 26.2962   reference critical probability: 0.05
+    <BLANKLINE>
+    DISTRIBUTION 1  WEIGHT : 0.137448
+    NEGATIVE_BINOMIAL   INF_BOUND : 0   PARAMETER : 9.32363   PROBABILITY : 0.351197
+    mean: 17.2245   median: 16   mode: 15
+    variance: 49.0452   standard deviation: 7.00323   lower quartile: 12   upper quartile: 21
+    <BLANKLINE>
+    frequency distribution 1 - sample size: 54
+    mean: 17.4815   median: 16.5   mode: 13
+    variance: 48.6317   standard deviation: 6.97365   lower quartile: 13   upper quartile: 22
+    <BLANKLINE>
+    DISTRIBUTION 2  WEIGHT : 0.415189
+    BINOMIAL   INF_BOUND : 0   SUP_BOUND : 8   PROBABILITY : 0.233856
+    mean: 1.87085   median: 2   mode: 2
+    variance: 1.43334   standard deviation: 1.19722   lower quartile: 1   upper quartile: 3
+    <BLANKLINE>
+    frequency distribution 2 - sample size: 167
+    mean: 1.86228   median: 2   mode: 1
+    variance: 1.38453   standard deviation: 1.17666   lower quartile: 1   upper quartile: 3
+    <BLANKLINE>
+    DISTRIBUTION 3  WEIGHT : 0.447363
+    BINOMIAL   INF_BOUND : 0   SUP_BOUND : 10   PROBABILITY : 0.533806
+    mean: 5.33806   median: 5   mode: 5
+    variance: 2.48857   standard deviation: 1.57752   lower quartile: 4   upper quartile: 6
+    <BLANKLINE>
+    frequency distribution 3 - sample size: 179
+    mean: 5.36872   median: 5   mode: 5
+    variance: 2.50373   standard deviation: 1.58232   lower quartile: 4   upper quartile: 7
+    <BLANKLINE>
+    distances between components
+              0.976936  0.895427
+    0.976936            0.785317
+    0.895427  0.785317
+    <BLANKLINE>
     
 Note that the order of the two Binomial components is arbitrary, thus they are likely to be switched.
 
@@ -193,6 +273,7 @@ Marginals can also be extracted as distributions:
 .. doctest::
 
     >>> print("Simulate multivariate mixture: ")
+    Simulate multivariate mixture:
     >>> set_seed(1)
     >>> v = m.simulate(500000)
 

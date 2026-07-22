@@ -102,7 +102,7 @@ of results using :
 
     >>> str(h1)  # equivalent to Display(h1)
     'frequency distribution - sample size: 76\nmean: 18.0263   median: 18   mode: 17\nvariance: 18.4526   standard deviation: 4.29565   lower quartile: 15   upper quartile: 21\nmean absolute deviation: 3.3705   coefficient of concentration: 0.132789\ninformation: -207.685 (-2.7327)\n'
-    >>> print str(h1) # equivalent to print Display(h1) or h1.file_ascii_write(False)
+    >>> print(str(h1)) # equivalent to print Display(h1) or h1.file_ascii_write(False)
     frequency distribution - sample size: 76
     mean: 18.0263   variance: 18.4526   standard deviation: 4.29565
     coefficient of skewness: -0.370952   coefficient of kurtosis: -0.0181747
@@ -200,9 +200,9 @@ Figure :ref:`fig_merging` for the output plots.
 .. doctest::
 
     >>> # load two histograms
-    >>> h1 = Histogram('./test/data/meri1.his')
+    >>> h1 = Histogram(get_shared_data('meri1.his'))
     >>> clf(); h1.plot(show=False); savefig('user/stat_tool_histogram_h1.png')
-    >>> h5 = Histogram('./test/data/meri5.his')
+    >>> h5 = Histogram(get_shared_data('meri5.his')
     >>> clf(); h5.plot(show=False); savefig('user/stat_tool_histogram_h5.png')
 
 The two original histograms are shown here below:

@@ -31,7 +31,7 @@ you can load this data by using
 
 .. doctest::
 
-    >>> compound = Compound('doc/user/syntax_compound.dat')
+    >>> compound = Compound('user/syntax_compound.dat')
 
 The first line gives the distribution type. The parametric sum distribution and the parametric elementary distribution are then defined in subsequent lines according to the syntactic form defined for the type DISTRIBUTION.
 
@@ -47,7 +47,7 @@ you can load this data by using
 
 .. doctest::
 
-    >>> convolution = Convolution('doc/user/syntax_convolution.dat')
+    >>> convolution = Convolution('user/syntax_convolution.dat')
 
 
 The first line gives the distribution type and the number of elementary distributions (2 or 3). The elementary parametric distributions are then defined in subsequent lines according to the syntactic form defined for the type DISTRIBUTION.
@@ -65,7 +65,7 @@ you can load this data by using
 
 .. doctest::
 
-    >>> binomial = Distribution('doc/user/syntax_distribution.dat')
+    >>> binomial = Distribution('user/syntax_distribution.dat')
 
 INF_BOUND and SUP_BOUND are integer-valued parameters while PARAMETER and PROBABILITY are real-valued parameters.
 
@@ -102,7 +102,7 @@ you can load this data by using
 
 .. doctest::
 
-    >>> histogram = Histogram('doc/user/syntax_histogram.dat')
+    >>> histogram = Histogram('user/syntax_histogram.dat')
 
 type MIXTURE
 ==================
@@ -129,7 +129,7 @@ you can load this data by using
 
 .. doctest::
 
-    >>> vector_distance = VectorDistance('doc/user/syntax_vector_distance.dat')
+    >>> vector_distance = VectorDistance('user/syntax_vector_distance.dat')
 
 VECTORS
 ===================
@@ -145,7 +145,7 @@ you can load this data by using
 .. doctest::
     :options: +SKIP
 
-    >>> vector = Vectors('doc/user/syntax_vectors.dat')
+    >>> vector = Vectors('user/syntax_vectors.dat')
 
 .. here below are aliases that won't appear in the output documents
 
