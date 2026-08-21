@@ -57,6 +57,20 @@ and
     >>> from openalea.stat_tool import get_shared_data #doctest: +SKIP
     >>> comp2 = Compound(get_shared_data("compound1.comp")) #doctest: +SKIP
     >>> print(comp2)
+    COMPOUND_DISTRIBUTION
+    mean: 6.96108   median: 5   mode: 0
+    variance: 48.8557   standard deviation: 6.98969   lower quartile: 0.5   upper quartile: 10
+    <BLANKLINE>
+    SUM_DISTRIBUTION
+    NEGATIVE_BINOMIAL   INF_BOUND : 0   PARAMETER : 2   PROBABILITY : 0.5
+    mean: 2   median: 1.5   mode: 0.5
+    variance: 4   standard deviation: 2   lower quartile: 0.5   upper quartile: 3
+    <BLANKLINE>
+    ELEMENTARY_DISTRIBUTION
+    BINOMIAL   INF_BOUND : 2   SUP_BOUND : 5   PROBABILITY : 0.5
+    mean: 3.5   median: 3.5   mode: 3.5
+    variance: 0.75   standard deviation: 0.866025   lower quartile: 3   upper quartile: 4
+    <BLANKLINE>
 
 In the first example, which we will use later on, one create the compound of 
 two :ref:`Distribution <Distribution>` objects that are a 
@@ -102,10 +116,10 @@ use the **Extract**-like functions/methods:
 .. doctest::
 
     >>> clf();
-    >>> d1_bis = Extract(comp1, "Elementary",1).plot()
+    >>> d1_bis = Extract(comp1, "Elementary").plot()
     
     >>> clf();
-    >>> d2_bis = Extract(comp1, "Elementary",2).plot(show=False)
+    >>> d2_bis = Extract(comp1, "Elementary").plot(show=False)
     
     >>> clf();
     >>> comp1_bis = Extract(comp1, "Compound").plot(show=False)
