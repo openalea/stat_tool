@@ -201,7 +201,8 @@ with :func:`openalea.stat_tool._stat_tool._MultivariateMixtureData.mixture_estim
 
 .. todo::
 
-    Explore the other possible arguments of mixture_estimation.
+    Explore the other possible arguments of mixture_estimation:
+    m_estim_model = v.mixture_estimation(3, 100,  [True, True])
 
 .. doctest::
 
