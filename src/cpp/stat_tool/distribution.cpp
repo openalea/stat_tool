@@ -420,6 +420,80 @@ void Distribution::normalization_copy(const Distribution &dist)
 }
 
 
+
+/*--------------------------------------------------------------*/
+/**
+ *  \brief Deallocate values between nb_value and alloc_nb_value
+ *
+ */
+/*--------------------------------------------------------------*/
+
+void Distribution::purge_tail()
+
+{
+  double *mass_cp = NULL, *cumul_cp = NULL;
+  int val;
+#ifdef DEBUG
+  assert (nb_value <= alloc_nb_value);
+#endif 
+  if ((mass != NULL) && (nb_value < alloc_nb_value)) 
+  // nothing to do if nb_value == alloc_nb_value
+  {
+    mass_cp = new double[nb_value];
+    for (val = 0; val < nb_value; val++)
+      mass_cp[val] = mass[val];
+    delete [] mass;
+    mass = mass_cp;
+    if (cumul != NULL)   {
+      cumul_cp = new double[nb_value];
+      for (val = 0; val < nb_value; val++)
+        cumul_cp[val] = cumul[val];
+      delete [] cumul;
+      cumul = cumul_cp;
+    }
+    alloc_nb_value = nb_value;
+  }
+}
+
+
+/*--------------------------------------------------------------*/
+/**
+ *  \brief Allocate values between alloc_nb_value and ialloc_nb_value 
+ *
+ */
+/*--------------------------------------------------------------*/
+
+void Distribution::pad_tail(int ialloc_nb_value)
+
+{
+  double *mass_cp = NULL, *cumul_cp = NULL;
+  int val;
+#ifdef DEBUG
+  assert (nb_value <= alloc_nb_value);
+#endif 
+  if ((mass != NULL) && (alloc_nb_value < ialloc_nb_value)) 
+  // nothing to do if alloc_nb_value >= ialloc_nb_value
+  {
+    mass_cp = new double[ialloc_nb_value];
+    for (val = 0; val < alloc_nb_value; val++)
+      mass_cp[val] = mass[val];
+    for (val = alloc_nb_value; val < ialloc_nb_value; val++)
+      mass_cp[val] = 0;
+    delete [] mass;
+    mass = mass_cp;
+    if (cumul != NULL)   {
+      cumul_cp = new double[ialloc_nb_value];
+      for (val = 0; val < alloc_nb_value; val++)
+        cumul_cp[val] = cumul[val];
+      for (val = alloc_nb_value; val < ialloc_nb_value; val++)
+        cumul_cp[val] = 1.;
+      delete [] cumul;
+      cumul = cumul_cp;
+    }
+    alloc_nb_value = ialloc_nb_value;
+  }
+}
+
 /*--------------------------------------------------------------*/
 /**
  *  \brief Copy constructor of the Distribution class.

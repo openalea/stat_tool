@@ -535,6 +535,10 @@ const double PLOT_RANGE_RATIO = 4.;
     void init(int inb_value);
     void copy(const Distribution &dist , int ialloc_nb_value = I_DEFAULT);
     void normalization_copy(const Distribution &dist);
+    /// deallocate values between nb_value and alloc_nb_value
+    void purge_tail();
+    /// allocate values between alloc_nb_value and ialloc_nb_value
+    void pad_tail(int ialloc_nb_value);
 
     Distribution(int inb_value = 0);
     Distribution(int inb_value , double *imass);

@@ -135,10 +135,11 @@ void DiscreteParametric::binomial_computation(int inb_value , distribution_compu
     break;
   }
   if (nb_value > previous_nb_value) {
+    alloc_nb_value = nb_value;
     delete [] mass;
-    mass = new double[nb_value];
+    mass = new double[alloc_nb_value];
     delete [] cumul;
-    cumul = new double[nb_value];
+    cumul = new double[alloc_nb_value];
   }
 
   // null probability values before the lower bound of the support

@@ -173,34 +173,40 @@ void MultivariateMixture::get_output_conditional_distribution(const Vectors &mix
   for (n = 0; n < nb_vector; n++) {
     for (i = 0; i < nb_component; i++) {
       if (log_computation)
-	output_cond[n][i] = 0.;
+	      output_cond[n][i] = 0.;
       else
-	output_cond[n][i] = 1.;
+	      output_cond[n][i] = 1.;
       for (var = 0; var < nb_variable; var++) {
-	if (pcomponent[var] != NULL) {
-	  if (log_computation) {
-	    if (pcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]] > 0)
-	      output_cond[n][i] += log(pcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]]);
-	    else {
-	      output_cond[n][i] = D_INF;
-	      break;
-	    }
-	  }
-	  else
-	    output_cond[n][i]*= pcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]];
-	}
-	else {
-	  if (log_computation) {
-	    if (npcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]] > 0)
-	      output_cond[n][i] += log(npcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]]);
-	    else {
-	      output_cond[n][i] = D_INF;
-	      break;
-	    }
-	  }
-	  else
-	    output_cond[n][i]*= npcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]];
-	}
+#ifdef DEBUG
+        if (pcomponent[var] != NULL)
+          assert(mixt_data.int_vector[n][var] < pcomponent[var]->observation[i]->alloc_nb_value);
+        else
+          assert(mixt_data.int_vector[n][var] < npcomponent[var]->observation[i]->alloc_nb_value);
+#endif
+        if (pcomponent[var] != NULL) {
+          if (log_computation) {
+            if (pcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]] > 0)
+              output_cond[n][i] += log(pcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]]);
+            else {
+              output_cond[n][i] = D_INF;
+              break;
+            }
+          }
+          else
+            output_cond[n][i]*= pcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]];
+        }
+        else {
+          if (log_computation) {
+            if (npcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]] > 0)
+              output_cond[n][i] += log(npcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]]);
+            else {
+              output_cond[n][i] = D_INF;
+              break;
+            }
+          }
+          else
+            output_cond[n][i]*= npcomponent[var]->observation[i]->mass[mixt_data.int_vector[n][var]];
+        }
       }
     }
   }
@@ -538,6 +544,15 @@ MultivariateMixture* Vectors::mixture_estimation(StatError &error, ostream* os,
           for(val = 0; val < (int)get_max_value(var) + 1; val++)
             reestim[val] = 0.; // *reestim++ = 0.;
           weight_reestim->frequency[j] = 0.;
+#         ifdef DEBUG
+          // check that the support of each component is at least the maximal
+          // observed value, otherwise conditional probabilities cannot be computed
+          if (mixt->pcomponent[var] != NULL)           
+            assert(mixt->pcomponent[var]->observation[j]->alloc_nb_value >= mixt_data->max_value[var]);
+          else
+            assert(mixt->npcomponent[var]->observation[j]->alloc_nb_value >= mixt_data->max_value[var]);
+#         endif
+
         }
 
 #     ifdef DEBUG
@@ -546,8 +561,8 @@ MultivariateMixture* Vectors::mixture_estimation(StatError &error, ostream* os,
       test[i][j] = 0.;
 #     endif
 
-      // if ((algorithm == FORWARD_BACKWARD) || (saem_exponent != .0))
-      // {
+
+
       mixt->get_output_conditional_distribution(*this, output_cond);
 
       mixt->get_posterior_distribution(*this,output_cond, cond_prob);
@@ -638,13 +653,22 @@ MultivariateMixture* Vectors::mixture_estimation(StatError &error, ostream* os,
               mixt->pcomponent[var]->observation[j]->computation((int)get_max_value(var)+1,
                                     OBSERVATION_THRESHOLD);
 
-              if (mixt->pcomponent[var]->observation[j]->ident == BINOMIAL)
-                for(i = mixt->pcomponent[var]->observation[j]->nb_value; i < (int)get_max_value(var)+1; i++)
-                  mixt->pcomponent[var]->observation[j]->mass[i]= 0.;
-              }
             }
           }
-        }
+        } // end for (j)
+
+      } // end if (mixt->npcomponent[var] != NULL) 
+      // check that the support of each component is at least the maximal
+      // observed value, otherwise conditional probabilities cannot be computed
+      for(j = 0; j < mixt->nb_component; j++) {
+        if ((mixt->pcomponent[var] != NULL) &&
+            (mixt->pcomponent[var]->observation[j]->alloc_nb_value <= mixt_data->max_value[var]))
+            mixt->pcomponent[var]->observation[j]->pad_tail(mixt_data->max_value[var]+1);
+        else
+          if ((mixt->npcomponent[var] != NULL) &&
+              (mixt->npcomponent[var]->observation[j]->alloc_nb_value <= mixt_data->max_value[var]))
+            mixt->npcomponent[var]->observation[j]->pad_tail(mixt_data->max_value[var]+1);
+      } 
     } // end for (var)
 
 #     ifdef MESSAGE

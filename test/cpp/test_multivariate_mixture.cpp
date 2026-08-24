@@ -33,12 +33,12 @@ int main(void) {
   weights[0] = 0.1;
   weights[1] = 0.2;
   weights[2] = 0.7;
-  d11 = new DiscreteParametric(BINOMIAL, 0, 12, 0.1, D_DEFAULT);
-  d12 = new DiscreteParametric(BINOMIAL, 0, 12, 0.6, D_DEFAULT);
-  d13 = new DiscreteParametric(BINOMIAL, 0, 12, 0.9, D_DEFAULT);
-  d21 = new DiscreteParametric(POISSON, 0, 0, 25.0, D_DEFAULT);
-  d22 = new DiscreteParametric(POISSON, 0, 0, 5.0, D_DEFAULT);
-  d23 = new DiscreteParametric(POISSON, 0, 0, 1.2, D_DEFAULT);
+  d11 = new DiscreteParametric(BINOMIAL, 0, 12, D_DEFAULT, 0.1);
+  d12 = new DiscreteParametric(BINOMIAL, 0, 12, D_DEFAULT, 0.4);
+  d13 = new DiscreteParametric(BINOMIAL, 0, 12, D_DEFAULT, 0.7);
+  d21 = new DiscreteParametric(NEGATIVE_BINOMIAL, 0, D_DEFAULT, 1., 0.7);
+  d22 = new DiscreteParametric(NEGATIVE_BINOMIAL, 0, D_DEFAULT, 2., 0.4);
+  d23 = new DiscreteParametric(NEGATIVE_BINOMIAL, 0, D_DEFAULT, 3., 0.1);
 
   pprocess = new DiscreteParametricProcess*[dim];
 
@@ -64,8 +64,8 @@ int main(void) {
   MultiM = new MultivariateMixture(3, weights, dim, pprocess, npprocess);
   // MultiM->ascii_write(cout, true);
   
-  set_seed(0);
-  simulation_MultiM = MultiM->simulation(error, 400);
+  set_seed(1);
+  simulation_MultiM = MultiM->simulation(error, 1500);
 
   force_param = new bool[2];
   force_param[0] = true;

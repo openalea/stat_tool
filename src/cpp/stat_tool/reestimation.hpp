@@ -1494,7 +1494,9 @@ double Reestimation<Type>::negative_binomial_estimation(DiscreteParametric *dist
           max_likelihood = likelihood;
         }
         delete dist_cpl;
+        dist_cpl = NULL;
         delete dist_cpr;
+        dist_cpr = NULL;
       } // else likelihood = D_INF;
     } // end for
 
@@ -1640,7 +1642,7 @@ double Reestimation<Type>::parametric_estimation(DiscreteParametric *dist , int 
     likelihood = geometric_poisson_estimation(dist , min_inf_bound , min_inf_bound_flag , cumul_threshold);
     break;
   }
-
+  
   return likelihood;
 }
 
@@ -1712,7 +1714,7 @@ double Reestimation<Type>::type_parametric_estimation(DiscreteParametric *dist ,
   }
 
   delete bdist;
-
+  
   return max_likelihood;
 }
 
