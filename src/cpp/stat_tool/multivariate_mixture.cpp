@@ -2154,8 +2154,8 @@ MultivariateMixtureData::MultivariateMixtureData(const Vectors &vec , int inb_co
   mixture = NULL;
   nb_component = inb_component;
 
-  for (i = 0; i < nb_variable; i++)
-    if ((vec.get_type(i) == STATE) || (vec.get_type(i) == INT_VALUE))
+  for (var = 0; var < nb_variable; var++)
+    if ((vec.get_type(var) == STATE) || (vec.get_type(var) == INT_VALUE))
       nb_int_variable++;
 
   weight = new FrequencyDistribution(nb_component);

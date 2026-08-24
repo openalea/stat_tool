@@ -1454,45 +1454,59 @@ double Reestimation<Type>::negative_binomial_estimation(DiscreteParametric *dist
   }
   if ((mean - max_inf_bound >= variance) || (moment_estimation_failure)) {
 	  for (i = max_inf_bound;i >= min_inf_bound;i--) {
-		// maximum likelihood estimation of continuous parameter by dichotomy
-		// probability is still the moment estimator
-		dist_cpl = new DiscreteParametric(*dist);
-		dist_cpr = new DiscreteParametric(*dist);
-		dist_cpl->inf_bound = i;
-		dist_cpr->inf_bound = i;
-		shift_mean = mean - i;
-		dist_cpr->probability = min(shift_mean / variance, 1-1e-10	); // dist_cpr->probability = min(shift_mean / variance, 1-std::numeric_limits<double>::min());
-		if (dist_cpr->probability > 0) {
-			max_param = pow((mean - min_inf_bound),2) / variance;
-			dist_cpl->copy(*dist_cpr);
-			dist_cpr->parameter = max_param;
-			dist_cpr->computation();
-			dist_cpl->parameter = min_param;
-			dist_cpl->computation();
-			left_l = this->likelihood_computation(*dist_cpl);
-			right_l = this->likelihood_computation(*dist_cpr);
-			for (j=0; j < BISECTION_NB_ITER; j++) {
-        cparam = (dist_cpl->parameter + dist_cpr->parameter) / 2; // current candidate
-				 if (left_l < right_l) {
-					 dist_cpl->parameter = cparam;
-					 dist_cpl->computation();
-					 left_l = this->likelihood_computation(*dist_cpl);
-				 } else {
-					 dist_cpr->parameter = cparam;
-					 dist_cpr->computation();
-					 right_l = this->likelihood_computation(*dist_cpr);
-				}
-			 }
-			dist_cpr->parameter = (dist_cpl->parameter + dist_cpr->parameter) / 2;
-			likelihood = this->likelihood_computation(*dist_cpr);
-			if (likelihood > max_likelihood) {
-				dist->copy(*dist_cpr);
-				max_likelihood = likelihood;
-			}
-			delete dist_cpl;
-			delete dist_cpr;
-		} // else likelihood = D_INF;
-	}
+      // maximum likelihood estimation of continuous parameter by dichotomy
+      // probability is still the moment estimator
+      if (dist_cpl != NULL)
+        delete dist_cpl;
+      dist_cpl = new DiscreteParametric(*dist);
+      if (dist_cpr != NULL)
+        delete dist_cpr;
+      dist_cpr = new DiscreteParametric(*dist);
+      dist_cpl->inf_bound = i;
+      dist_cpr->inf_bound = i;
+      shift_mean = mean - i;
+      dist_cpr->probability = min(shift_mean / variance, 1-1e-10	); // dist_cpr->probability = min(shift_mean / variance, 1-std::numeric_limits<double>::min());
+      if (dist_cpr->probability > 0) {
+        max_param = pow((mean - min_inf_bound),2) / variance;
+        dist_cpl->copy(*dist_cpr);
+        dist_cpr->parameter = max_param;
+        dist_cpr->computation();
+        dist_cpl->parameter = min_param;
+        dist_cpl->computation();
+        left_l = this->likelihood_computation(*dist_cpl);
+        right_l = this->likelihood_computation(*dist_cpr);
+        for (j=0; j < BISECTION_NB_ITER; j++) {
+          cparam = (dist_cpl->parameter + dist_cpr->parameter) / 2; // current candidate
+          if (left_l < right_l) {
+            dist_cpl->parameter = cparam;
+            dist_cpl->computation();
+            left_l = this->likelihood_computation(*dist_cpl);
+          } else {
+            dist_cpr->parameter = cparam;
+            dist_cpr->computation();
+            right_l = this->likelihood_computation(*dist_cpr);
+          }
+        }
+        dist_cpr->parameter = (dist_cpl->parameter + dist_cpr->parameter) / 2;
+        likelihood = this->likelihood_computation(*dist_cpr);
+        if (likelihood > max_likelihood) {
+          dist->copy(*dist_cpr);
+          max_likelihood = likelihood;
+        }
+        delete dist_cpl;
+        delete dist_cpr;
+      } // else likelihood = D_INF;
+    } // end for
+
+  }
+
+  if (dist_cpl != NULL) {
+    delete dist_cpl;
+    dist_cpl = NULL;
+  }    
+  if (dist_cpr != NULL) {
+    delete dist_cpr;
+    dist_cpr = NULL;
   }
 
   return max_likelihood;

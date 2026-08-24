@@ -802,14 +802,17 @@ MultivariateMixture* Vectors::mixture_estimation(StatError &error, ostream* os,
 		  error.update((error_message.str()).c_str());
 		  delete mixt->mixture_data;
 		  mixt->mixture_data = NULL;
+      delete mixt;
+      mixt = NULL;
 		}
 
-    for(var = 0; var < mixt->nb_var; var++)
-      if (mixt->npcomponent[var] != NULL)
-        for(j = 0; j < mixt->nb_component; j++) {
-          mixt->npcomponent[var]->observation[j]->cumul_computation();
-          mixt->npcomponent[var]->observation[j]->max_computation();
-        }
+    if (mixt != NULL)
+      for(var = 0; var < mixt->nb_var; var++)
+        if (mixt->npcomponent[var] != NULL)
+          for(j = 0; j < mixt->nb_component; j++) {
+            mixt->npcomponent[var]->observation[j]->cumul_computation();
+            mixt->npcomponent[var]->observation[j]->max_computation();
+          }
     } // if (mixt != NULL)
   
     if (cond_prob != NULL) {
@@ -944,7 +947,7 @@ MultivariateMixtureData* MultivariateMixture::simulation(StatError &error ,
     for (var = 0; var < nb_var; var++) {
       hcomponent[var] = new FrequencyDistribution*[nb_component];
       for (k = 0; k < nb_component; k++)
-    hcomponent[var][k] = new FrequencyDistribution(nb_element);
+        hcomponent[var][k] = new FrequencyDistribution(nb_element);
     }
 
     for (n = 0; n < nb_element; n++) {
@@ -974,6 +977,8 @@ MultivariateMixtureData* MultivariateMixture::simulation(StatError &error ,
       delete [] iint_vector[n];
       iint_vector[n] = NULL;
     }
+    delete [] iint_vector;
+    iint_vector = NULL;
 
     // calcul des caracteristiques des lois empiriques
     for (var = 0; var < nb_var; var++) {
@@ -994,8 +999,6 @@ MultivariateMixtureData* MultivariateMixture::simulation(StatError &error ,
     hweight->mean_computation();
     hweight->variance_computation();
 
-    delete [] iint_vector;
-    iint_vector = NULL;
     delete [] iidentifier;
     iidentifier = NULL;
 
@@ -1003,8 +1006,25 @@ MultivariateMixtureData* MultivariateMixture::simulation(StatError &error ,
     mixt_data = new MultivariateMixtureData(*vec, nb_component);
     mixt_data->mixture = new MultivariateMixture(*this , false);
 
+    if (mixt_data->weight != NULL)
+      delete mixt_data->weight;
     mixt_data->weight = hweight;
+    if (mixt_data->component != NULL) {
+      for (var = 0; var < mixt_data->nb_variable; var++) {
+        for (k = 0;k < mixt_data->nb_component;k++)
+          if (mixt_data->component[var] != NULL) {
+            delete mixt_data->component[var][k];
+            mixt_data->component[var][k] = NULL;
+          }
+        delete [] mixt_data->component[var];
+        mixt_data->component[var] = NULL;
+      }
+      delete [] mixt_data->component;
+      mixt_data->component = NULL;
+    }
     mixt_data->component = hcomponent;
+    delete vec;
+    vec = NULL;
   }
   return mixt_data;
 }

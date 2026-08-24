@@ -128,7 +128,7 @@ def test_estimate_3comp_simul():
 
     d21 = Poisson(0, 25.0)
     d22 = Poisson(0, 5.0)
-    d23 = Poisson(0, 0.2)
+    d23 = Poisson(0, 1.2)
 
     MultiM = _MultivariateMixture([0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]])
     set_seed(0)

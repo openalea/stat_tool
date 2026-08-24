@@ -15,45 +15,93 @@ using namespace stat_tool;
 
 int main(void) {
 
-  int v, i, dim;
-  int **rand_list = NULL;
-  int *identifier = NULL;
+  const int  dim = 2; // dimension
   bool *force_param = NULL;
-  Vectors *vec = NULL;
-  MultivariateMixture *m = NULL;
-  DiscreteParametric *U = NULL;
+  MultivariateMixture *MultiM = NULL, *m3 = NULL;
+  MultivariateMixtureData *simulation_MultiM = NULL;
+  double *weights = NULL;
+  DiscreteParametric *d11 = NULL, *d12 = NULL, *d13 = NULL;
+  DiscreteParametric *d21 = NULL, *d22 = NULL, *d23 = NULL;
+  DiscreteParametricProcess **pprocess = NULL;
+  CategoricalProcess **npprocess = NULL;
+  DiscreteParametric **ppcomponent = NULL;
+  Distribution **nppcomponent = NULL;
   StatError error;
+  Vectors *debug_vectors = NULL;
 
+  weights = new double[3];
+  weights[0] = 0.1;
+  weights[1] = 0.2;
+  weights[2] = 0.7;
+  d11 = new DiscreteParametric(BINOMIAL, 0, 12, 0.1, D_DEFAULT);
+  d12 = new DiscreteParametric(BINOMIAL, 0, 12, 0.6, D_DEFAULT);
+  d13 = new DiscreteParametric(BINOMIAL, 0, 12, 0.9, D_DEFAULT);
+  d21 = new DiscreteParametric(POISSON, 0, 0, 25.0, D_DEFAULT);
+  d22 = new DiscreteParametric(POISSON, 0, 0, 5.0, D_DEFAULT);
+  d23 = new DiscreteParametric(POISSON, 0, 0, 1.2, D_DEFAULT);
+
+  pprocess = new DiscreteParametricProcess*[dim];
+
+  npprocess = new CategoricalProcess*[dim];
+
+  ppcomponent = new DiscreteParametric*[3];
+  nppcomponent = new Distribution*[3];
+
+  // variable 1
+  ppcomponent[0] = d11;
+  ppcomponent[1] = d12;
+  ppcomponent[2] = d13;
+  pprocess[0] = new DiscreteParametricProcess(3, ppcomponent);  
+  npprocess[0] = NULL;
+
+  // variable 2
+  ppcomponent[0] = d21;
+  ppcomponent[1] = d22;
+  ppcomponent[2] = d23;
+  pprocess[1] = new DiscreteParametricProcess(3, ppcomponent);  
+  npprocess[1] = NULL;
+
+  MultiM = new MultivariateMixture(3, weights, dim, pprocess, npprocess);
+  // MultiM->ascii_write(cout, true);
+  
   set_seed(0);
-  dim = 3; // dimension
-  U = new DiscreteParametric(UNIFORM, 0, 10, D_DEFAULT, D_DEFAULT);
-  rand_list = new int*[1000];
-  identifier = new int[1000];
-  for (v=0; v<1000; v++)  {
-    identifier[v] = v+1;
-    rand_list[v] = new int[dim];
-    for (i=0; i<dim; i++) 
-      rand_list[v][i] = U->simulation();
+  simulation_MultiM = MultiM->simulation(error, 400);
+
+  force_param = new bool[2];
+  force_param[0] = true;
+  force_param[1] = true;
+  m3 = simulation_MultiM->mixture_estimation(error, &cout, 3, 100, force_param) ;
+  if (m3 != NULL)
+    m3->ascii_write(cout, true);
+  else {
+    cout << error;
+    return 1;
   }
 
-  vec = new Vectors(1000, identifier, dim, rand_list);
-  force_param = new bool[3];
-  for (i=0; i<dim; i++)  
-    force_param[i] = true;
-  m =  vec->mixture_estimation(error, &cout, 3, 100,  force_param);
+  delete d11;
+  delete d12;
+  delete d13;
 
+  delete d21;
+  delete d22;
+  delete d23;
+
+  delete [] weights;
+
+  delete pprocess[0];
+  delete pprocess[1];
+
+  delete [] pprocess; 
+  delete [] npprocess; 
+  delete [] ppcomponent; 
+  delete [] nppcomponent; 
   delete [] force_param;
-  for (v=0; v<1000; v++)  
-    delete [] rand_list[v];
-  
-  delete [] rand_list;
-  delete [] identifier;
 
-  delete m;
-
-  delete U;
-
-  delete vec;
+  debug_vectors = new Vectors(*(m3->get_mixture_data()));
+  delete debug_vectors;
+  delete simulation_MultiM;
+  delete MultiM;
+  delete m3;
 
   return 0;
 }
