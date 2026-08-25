@@ -18,8 +18,12 @@ from openalea.stat_tool.data_transform import SelectVariable
 from openalea.stat_tool.histogram import Histogram
 from openalea.stat_tool.vectors import VectorDistance, Vectors
 
-from .tools import robust_path as get_shared_data
-from .tools import runTestClass
+try:
+    from .tools import robust_path as get_shared_data
+    from .tools import runTestClass
+except ImportError:
+    from tools import robust_path as get_shared_data
+    from tools import runTestClass
 
 import pytest
 
@@ -115,3 +119,20 @@ def test_compare_vectors():
     assert matrix10
     assert str(vec15.compare(VectorDistance("N", "N", "N"), True)) == str(matrix10)
 
+if __name__ == "__main__":
+    def meri1():
+        return Histogram(get_shared_data("meri1.his"))
+
+    def meri2():
+        return Histogram(get_shared_data("meri2.his"))
+
+    def meri3():
+        return Histogram(get_shared_data("meri3.his"))
+    
+    test_comparisontest(meri1(), meri2())
+    test_comparison_histo(meri1(), meri2(), meri3())
+    test_comparison_wrong_argument_1(meri1())
+    test_comparison_wrong_argument_2(meri1(), meri2())
+    test_comparisontest_wrong_argument(meri1(), meri2())
+    test_comparison_histo_filename(meri1(), meri2(), meri3())
+    test_compare_vectors()
