@@ -340,7 +340,7 @@ double MultivariateMixture::likelihood_computation(const Vectors &mixt_data,
 
 {
   register int n, i, var, nb_vector = mixt_data.get_nb_vector();
-  double log_likelihood = 1. , buff , **output_cond = NULL;
+  double log_likelihood = 1. , buff = 0. , **output_cond = NULL;
   double *pmass = NULL;
 
   get_output_conditional_distribution(mixt_data, output_cond, false);
@@ -730,12 +730,14 @@ MultivariateMixture* Vectors::mixture_estimation(StatError &error, ostream* os,
                 = hobservation->Reestimation<int>::type_parametric_estimation(mixt->pcomponent[var]->observation[j],
                                               0, true, OBSERVATION_THRESHOLD);
             // above instruction allows the type of the distribution to vary
-            else
+            else 
               observation_likelihood
               = hobservation->Reestimation<int>::parametric_estimation(mixt->pcomponent[var]->observation[j],
                                           0, true, OBSERVATION_THRESHOLD);
             // above instruction prevents the type of the distribution to vary
             // (not suitable for an automatic initialization of pcomponent of UNIFORM type
+            if (mixt->pcomponent[var]->observation[j]->alloc_nb_value <= this->max_value[var])
+                mixt->pcomponent[var]->observation[j]->pad_tail(this->max_value[var]+1);
 
             if (observation_likelihood == D_INF)
               min_likelihood = D_INF;
@@ -743,9 +745,6 @@ MultivariateMixture* Vectors::mixture_estimation(StatError &error, ostream* os,
               mixt->pcomponent[var]->observation[j]->computation((int)get_max_value(var)+1,
                         OBSERVATION_THRESHOLD);
 
-              if (mixt->pcomponent[var]->observation[j]->ident == BINOMIAL)
-              for(i = mixt->pcomponent[var]->observation[j]->nb_value; i < (int)get_max_value(var)+1; i++)
-                mixt->pcomponent[var]->observation[j]->mass[i]= 0.;
             }
           } // end for(j = 0; j < mixt->nb_component; j++)
         } // end !(mixt->pcomponent[var] != NULL):

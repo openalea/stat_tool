@@ -357,12 +357,16 @@ void Distribution::copy(const Distribution &dist , int ialloc_nb_value)
 	  assert( MIN(alloc_nb_value, nb_value) > 0);
 #     endif
 	  for (i = 0;i < MIN(alloc_nb_value, nb_value);i++)
-		mass[i] = dist.mass[i];
+		  mass[i] = dist.mass[i];
+  } else {
+    mass = NULL;
   }
   if (dist.cumul != NULL) {
 	  cumul = new double[alloc_nb_value];
 	  for (i = 0;i < MIN(alloc_nb_value, nb_value);i++)
-		cumul[i] = dist.cumul[i];
+		  cumul[i] = dist.cumul[i];
+  } else {
+    cumul = NULL;
   }
 
 
