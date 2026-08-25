@@ -678,7 +678,6 @@ Test* FrequencyDistribution::kruskal_wallis_test(int nb_histo , const FrequencyD
              3 * (merged_histo->nb_element + 1)) / (1. - correction / (merged_histo->nb_element *
              ((double)merged_histo->nb_element * (double)merged_histo->nb_element - 1)));
 
-    // TODO: valgrind debug
     test = new Test(CHI2 , true , nb_histo - 1 , I_DEFAULT , value);
 
     test->chi2_critical_probability_computation();
