@@ -1,0 +1,97 @@
+```{code-cell}
+    from openalea.stat_tool import *
+    import pylab
+    from pylab import savefig, clf
+    from openalea.stat_tool import get_shared_data
+```
+
+
+(_compound)=
+# Compound
+
+Here is a brief description of the Compound type, which uses notions introduced in the [Histogram](#Histogram) Section, recommended to be looked at first. 
+
+A compound (or stopped-sum) distribution is defined as the distribution of the sum of {math}`n` independent and identically distributed 
+random variables {math}`(X_i)_{i=1,\ldots,n}` where {math}`n` is the value taken by the random variable {math}`N`. 
+The distribution of {math}`N` is referred to as the sum distribution while the distribution of the {math}`X_i` is referred to as the elementary distribution.
+
+## Constructor
+
+Similarly to the histogram case, there are two constructors for the 
+:py:class:`openalea.stat_tool.compound.Compound` class that are used as 
+follows:
+
+```{code-cell} python
+    X = NegativeBinomial(0, 1, 0.1)
+    N = Binomial(0, 10, 0.5)
+    comp1 = Compound(N, X)
+    print(comp1)
+```   
+and
+
+```{code-cell} python
+    comp2 = Compound(get_shared_data("compound1.comp")) 
+    print(comp2)
+```
+In the first example, which we will use later on, one create the compound of 
+two [Distribution](#Distribution) objects that are a 
+[](#openalea.stat_tool.distribution.Binomial) and 
+:py:class:`openalea.stat_tool.distribution.NegativeBinomial` distributions.
+
+The compound distribution as well as the original distributions are stored within the
+Compound instance. We will see how to extract the original distributions later
+on.
+
+In order to display the contents, or to save the data, one uses the same functions
+/methods as in the Histogram case.
+
+  
+## Plotting
+
+
+```{code-cell} python
+    import openalea.stat_tool.plot
+    comp1.plot()
+```
+
+The following figure gather the original distribution and the compound distribution within 
+a single plot.  
+
+It is easy to extract only the relevant distribution and to plot it. You need to 
+use the **Extract**-like functions/methods:
+
+
+```{code-cell} python
+    clf();
+    d1_bis = Extract(comp1, "Elementary").plot()
+    
+    clf();
+    d2_bis = Extract(comp1, "Elementary").plot(show=False)
+    
+    clf();
+    comp1_bis = Extract(comp1, "Compound").plot(show=False)
+```
+
+
+
+## Simulate
+
+Once you have a Compound, you can simulate a data set using:
+
+
+```{code-cell} python
+    simulation = Simulate(comp1, 10)
+ ```
+and compare the resulting data with the original one. This comparison can be
+done visually:
+
+```{code-cell} python
+    simulation.plot(show=False)
+    Simulate(comp1,1000).plot(show=False) # equivalent to the line above 
+```
+
+    
+
+ 
+
+

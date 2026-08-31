@@ -18,7 +18,7 @@ Vectors <user/vectors.rst>
 Histogram <user/histogram.rst>
 Distribution <user/distribution.rst>
 Errors <user/errors.rst>
-Compound <user/compound.rst>
+Compound <user/compound.myst>
 Convolution <user/convolution.rst>
 Mixture <user/mixture.rst>
 ```
