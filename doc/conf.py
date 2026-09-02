@@ -35,7 +35,8 @@ extensions = [
     "sphinx.ext.napoleon",  # support for numpy and google style docstrings
     "sphinx_favicon",  # support for favicon
     "nbsphinx",  # for integrating jupyter notebooks
-    "myst_parser",  # for parsing .md files
+    #    "myst_parser",  # for parsing .md files
+    "myst_nb",  # for parsing myst .md files
     "matplotlib.sphinxext.plot_directive",
     "breathe",
 ]
@@ -54,8 +55,10 @@ exclude_patterns = ["_build", "_templates"]
 # You can specify multiple suffix as a list of string:
 source_suffix = {
     ".rst": "restructuredtext",
-    ".md": "markdown",
+    #    ".md": "markdown",
+    ".md": "myst-nb",
 }
+nb_execution_mode = "cache"
 
 # C++ API
 breathe_projects = {"stat_tool": "xml"}
