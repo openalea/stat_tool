@@ -13,8 +13,6 @@ kernelspec:
 ```{code-cell} python
 :tags: [remove-cell]
 from openalea.stat_tool import *
-import pylab
-from pylab import savefig, clf
 import warnings
 warnings.filterwarnings('ignore')
 ```

@@ -15,7 +15,7 @@ Most of the docstrings provided in this document are tested with
 
 
 Vectors <user/vectors.rst>
-Histogram <user/histogram.rst>
+Histogram <user/histogram.md>
 Distribution <user/distribution.rst>
 Errors <user/errors.rst>
 Compound <user/compound.md>
