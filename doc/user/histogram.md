@@ -17,8 +17,7 @@ import warnings
 warnings.filterwarnings('ignore')
 ```
 
-(\_histogram)=
-
+(Histogram)=
 # Histogram
 
 Here is a brief description of the Histogram type.
@@ -103,20 +102,22 @@ ASCII file. So, the next step is to know how to save an histogram.
 Let us continue using the **h1** variable. Saving, can be done in two equivalent
 ways using the {func}`openalea.stat_tool.output.Save` function or the save methods:
 
-<code>
+```python
 h1.save('test.dat')
 Save(h1, 'test.dat')
-</code>
+```
 
 Then, you can construct a new instance as follows:
 
-<code>
+```python
 dummy = Histogram('test.dat')
-</code>
+```
 
 ## Plotting
 
 ### Old AML style
+If you have both the Gnuplot binary and py-gnuplot python module installed,
+you can use
 
 ```{code} python
 h1.old_plot()
@@ -125,7 +126,7 @@ h1.old_plot()
 ### New style
 either with GNUPLOT or MATPLOTLIB. 
 
-By default, matplotlib is used if it is available:
+By default, matplotlib is used for plotting if it is available:
 
 ```{code-cell} python
 h1.plot()

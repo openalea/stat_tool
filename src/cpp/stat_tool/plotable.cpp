@@ -71,7 +71,8 @@ void SinglePlot::add_point(float x, float y)
 
 void SinglePlot::add_point(const PlotPoint& p)
 {
-  data.push_back(p);
+  // data.push_back(p);
+  add_text(p.first, p.second, "");
 }
 
 void SinglePlot::add_text(float x, float y, const string& text)

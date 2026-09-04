@@ -18,10 +18,10 @@ warnings.filterwarnings('ignore')
 ```
 
 (\_compound)=
-
 # Compound
 
-Here is a brief description of the Compound type, which uses notions introduced in the {ref}`Histogram <Histogram>` Section, recommended to be looked at first.
+Here is a brief description of the Compound type, which uses notions introduced in the [Histogram](#Histogram) Section, recommended to be looked at first.
+ <!--{ref}`Histogram <Histogram>` Section, recommended to be looked at first.-->
 
 A compound (or stopped-sum) distribution is defined as the distribution of the sum of {math}`n` independent and identically distributed
 random variables {math}`(X_i)_{i=1,\ldots,n}` where {math}`n` is the value taken by the random variable {math}`N`.
