@@ -59,9 +59,9 @@ source_suffix = {
     ".md": "myst-nb",
 }
 nb_execution_mode = "cache"
-
-# Execution of python code in .myst
-nb_execution_mode = "force"
+myst_enable_extensions = [
+    "colon_fence",
+]
 # C++ API
 breathe_projects = {"stat_tool": "xml"}
 breathe_default_project = "stat_tool"

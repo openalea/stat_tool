@@ -37,7 +37,6 @@ from openalea.stat_tool import get_shared_data
 h1 = Histogram(get_shared_data('meri1.his'))
 ```
 
-
 Otherwise, you can construct an histogram from scratch providing a list of
 numbers. The following example takes a list of numbers, construct its histogram
 and returns the latter into an instance of {py:class}`Histogram <openalea.stat_tool.histogram.Histogram>`:
@@ -48,12 +47,10 @@ h2 = Histogram([1,2,2,3,4,4,4,5])
 
 Now, you can use the methods bounded to the {py:class}`Histogram <openalea.stat_tool.histogram.Histogram>` class.
 
-
 ## Display
 
-
 The object `h1` has a few methods among which some are useful to print
-information on the screen or in a file. The {func}`Display <openalea.stat_tool.output.Display>` 
+information on the screen or in a file. The {func}`Display <openalea.stat_tool.output.Display>`
 method is one of them. This methods works as follows:
 
 <!-- TODO: We could expect that .display() would use print().-->
@@ -62,22 +59,23 @@ method is one of them. This methods works as follows:
 h1.display()
 Display(h1)
 ```
+
 :::{todo}
 We could expect that .display() would use print().
 :::
 
 :::{note}
 Note here that you can call the methods in two different ways.
-    {func}`Display <openalea.stat_tool.output.Display>` is in fact a layer above `h1.display()`. 
-    We advise you to use his function instead of the methods *.display*. The function *Display* 
-    will indeed allow you to add extra layer of robustness and flexibility over the
-    methods (because the function is written in python). There are a few
-    functions like that (Save, Display, Estimate, Simulate) that we will see
-    in this tutorial.
+{func}`Display <openalea.stat_tool.output.Display>` is in fact a layer above `h1.display()`.
+We advise you to use his function instead of the methods _.display_. The function _Display_
+will indeed allow you to add extra layer of robustness and flexibility over the
+methods (because the function is written in python). There are a few
+functions like that (Save, Display, Estimate, Simulate) that we will see
+in this tutorial.
 :::
 
 There is another method that is very similar to Display, that is called
-{func}`ascii_write <openalea.stat_tool._stat_tool._DiscreteDistributionData.ascii_write>`. 
+{func}`ascii_write <openalea.stat_tool._stat_tool._DiscreteDistributionData.ascii_write>`.
 It prints ASCII information on the screen as well, but with a
 nicer layout by taking the special character '\n' into account:
 
@@ -124,7 +122,8 @@ h1.old_plot()
 ```
 
 ### New style
-either with GNUPLOT or MATPLOTLIB. 
+
+either with GNUPLOT or MATPLOTLIB.
 
 By default, matplotlib is used for plotting if it is available:
 
@@ -135,7 +134,7 @@ h1.plot()
 # but you can still use gnuplot
 # plot.set_plotter(plot.gnuplot())
 # and come back to matplotlib later on
-# plot.set_plotter(plot.mplotlib()) 
+# plot.set_plotter(plot.mplotlib())
 ```
 
 There are other methods related to GNUPLOT that we will not supported anymore
@@ -153,7 +152,7 @@ are grouped within a same bin. See {func}`openalea.stat_tool.cluster.Cluster`
 
 ```{code-cell} python
 hcl = h1.cluster_information(0.5)
-# equivalently: 
+# equivalently:
 hcl = Cluster(h1, "Information", 0.5)
 hcl.plot()
 ```
@@ -184,7 +183,7 @@ Figure {ref}`fig_merging` for the output plots.
 ```{code-cell} python
 # load two histograms
 h1 = Histogram(get_shared_data('meri1.his'))
-h1.plot() 
+h1.plot()
 ```
 
 :::{todo}
@@ -204,13 +203,9 @@ The two original histograms are shown hereabove.
 ```{code-cell} python
 :label: fig_merging
 a = Merge(h1,h5)
-# equivalent to 
+# equivalent to
 a = h1.merge([h5])
 a = h5.merge([h1])
 a.plot(Title = "The merging of two histograms")
 # savefig('user/stat_tool_histogram_merging.png')
 ```
-
-
-
-
