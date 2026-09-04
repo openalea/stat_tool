@@ -113,10 +113,6 @@ def Display(obj, *args, **kargs):
       and hence, if the first argument is of type `_Vectors`, `_Sequences`,
       `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData` or `_Tops`.
 
-    :Returns:
-
-    A string
-
     :Examples:
 
     .. doctest::

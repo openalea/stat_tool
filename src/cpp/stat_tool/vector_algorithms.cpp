@@ -436,7 +436,7 @@ bool Vectors::rank_correlation_computation(StatError &error , ostream *os ,
 {
   bool status = true;
   int i;
-  double **correlation;
+  double **correlation = NULL;
 
 
   error.init();
@@ -446,6 +446,18 @@ bool Vectors::rank_correlation_computation(StatError &error , ostream *os ,
     ostringstream correction_message;
     correction_message << STAT_error[STATR_GREATER_THAN] << " " << 2;
     error.correction_update(STAT_error[STATR_NB_VECTOR] , (correction_message.str()).c_str());
+  }
+
+  if ((correl_type != SPEARMAN) && (correl_type != KENDALL)) {
+    status = false;
+    ostringstream error_message, correction_message;
+    error_message << "bad correlation type: ";
+    if (correl_type == PEARSON)
+      error_message << " PEARSON";
+    if (correl_type == SPEARMAN2)
+      error_message << " SPEARMAN2";      
+    correction_message << " SPEARMAN or KENDALL";
+    error.correction_update((error_message.str()).c_str(), (correction_message.str()).c_str());
   }
 
   for (i = 0;i < nb_variable;i++) {

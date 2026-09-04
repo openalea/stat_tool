@@ -16,7 +16,13 @@ from pathlib import Path
 
 import pytest
 
-from openalea.stat_tool.distribution import Binomial, Poisson, set_seed
+from openalea.stat_tool.distribution import (
+    Binomial, 
+    NegativeBinomial, 
+    Poisson, 
+    Uniform, 
+    set_seed
+)
 from openalea.stat_tool.multivariate_mixture import _MultivariateMixture
 from openalea.stat_tool.vectors import Vectors
 
@@ -55,7 +61,7 @@ def my_estimate(path):
     v = Vectors(data_file)
     assert len(v) == 836
     assert v.nb_variable == 5
-    m = v.mixture_estimation(3, 300, [])
+    m = v.mixture_estimation(3, 100, [])
 
     return m, v
 
@@ -107,6 +113,62 @@ def test_estimate(my_estimate):
     m, v = my_estimate
     assert m, v
 
+def test_estimate_2comp_unif():
+    """
+    Estimate multivariate mixture from simulated uniform data and the number of components
+    """
+    set_seed(0)
+    import numpy as np
+    rand_list = [Uniform(0,10).simulate() for i in range(3000)]
+    vec = Vectors(np.array(rand_list).reshape(1000,3).tolist())
+    m2 =  vec.mixture_estimation(2, 200,  [True, True, True])
+    assert m2
+
+def test_estimate_3comp_simul():
+    """
+    Estimate multivariate mixture from simulated mixture data and the number of components
+    """
+    d11 = Binomial(0, 12, 0.1)
+    d12 = Binomial(0, 12, 0.4)
+    d13 = Binomial(0, 12, 0.7)
+
+    d21 = NegativeBinomial(0, 1., 0.7)
+    d22 = NegativeBinomial(0,  2., 0.4)
+    d23 = NegativeBinomial(0, 3., 0.1)
+
+    MultiM = _MultivariateMixture([0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]])
+    set_seed(1)
+    simulation_MultiM = MultiM.simulate(1500)
+    m3 = simulation_MultiM.mixture_estimation(3, 300,  [True, True])
+    assert m3
+
+def test_estimate_bad_number_of_variables():
+    """
+    Estimate multivariate mixture from simulated data and the number of components: wrong number of variables
+    """
+    import numpy as np
+    set_seed(0)
+    vec = Vectors(np.array([Uniform(0,10).simulate() for i in range(3000)]).reshape(1000,3).tolist())
+    try:
+        m2 = vec.mixture_estimation(2, 400,  [True, True])
+    except: 
+        assert True
+    else:
+        assert False
+
+def test_estimate_bad_number_of_observations():
+    """
+    Estimate multivariate mixture from simulated data and the number of components: wrong number of observations
+    """
+    import numpy as np
+    set_seed(0)
+    vec = Vectors([[0,0,0], [1,1,1]])
+    try:
+        m2 = vec.mixture_estimation(3, 500,  [True, True, True])
+    except: 
+        assert True
+    else:
+        assert False
 
 def test_mixture_plots(my_estimate):
     m, v = my_estimate
@@ -155,7 +217,7 @@ def test_simulate2():
     estimation_failed = True
     while estimation_failed:
         try:
-            m_estim_model = v.mixture_estimation(m, 100, [True, True])
+            m_estim_model = v.mixture_estimation(m, 600, [True, True])
         except Exception:
             pass
         else:
@@ -237,7 +299,7 @@ if __name__ == "__main__":
         v = Vectors(data_file)
         assert len(v) == 836
         assert v.nb_variable == 5
-        m = v.mixture_estimation(3, 300, [])
+        m = v.mixture_estimation(3, 100, [])
 
         return m, v
 
@@ -263,5 +325,8 @@ if __name__ == "__main__":
     test_simulate2()
     test_permutation(data())
     test_cluster_data(my_estimate(path()))
-    test_cluster_data_file(my_estimate(path()))
-
+    test_cluster_data_file(my_estimate(path()))    
+    test_estimate_2comp_unif()
+    test_estimate_3comp_simul()
+    test_estimate_bad_number_of_variables()
+    test_estimate_bad_number_of_observations()

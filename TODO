@@ -1,7 +1,14 @@
 - [x] Fix “ContinousParametric” and “ContinousParametricProcess” classes API documentation
 - [x] Move "Usage Example" from "User guide" section (user/index.rst) to "Usage" (usage.md) section
-- [ ] Add docstrings to constants. Simply add "///" instead of "//" ? Find how to transfert comments from doxygen xml to breathe
+- [x] Add docstrings to constants. Simply add "///" instead of "//" ? Find how to transfert comments from doxygen xml to breathe
 - [x] Welcome page: better integrate code lines (`pip install...`). Also move section "Note for developpers" into a more appropriated section ?
-- [ ] Move objects description from "tutorials.rst" into "Usage" section
-- [ ] Ensure that warnings are raise is non-existing keyword arguments are used in functions (e.g. Nbiteration in place of NbIteration)
+- [x] Move objects description from "tutorials.rst" into "Usage" section
+- [ ] Check that class members appear in C++ documentation (Reestimation, FrequencyDistribution...)
+- [ ] Check consistency in StatError, StatErrorClass, _StatError, etc. Let them derive from BaseException.
+- [ ] Wrap continuous distributions
+- [ ] Use cross references properly, see "Usage" section
+- [x] Check that definition of vignettes works properly for all notebooks.
+- [ ] Replace hardcoded outputs by outputs of executed code; have doctest extension actually working (see jupyter-sphinx)
+- [ ] Ensure that warnings are raised if non-existing keyword arguments are used in functions (e.g. Nbiteration in place of NbIteration)
 - [ ] Have wrapper documentation be transferred to python module.
+- [ ] Replace hard-coded relative paths by Path().parent etc.

@@ -117,7 +117,7 @@ def Distribution(utype, *args):
         elif utype in ["P", "POISSON"]:
             result = Poisson(*args)
         elif utype in ["M", "MULTINOMIAL"]:
-            raise NotImplementedError("Multinomial not yet implemented")
+            result = Multinomial(*args)
         elif utype in ["NB", "NEGATIVE_BINOMIAL"]:
             result = NegativeBinomial(*args)
         elif utype in ["U", "UNIFORM"]:
@@ -135,7 +135,7 @@ def Binomial(inf_bound, sup_bound=I_DEFAULT,
     Construction of a binomial distribution
 
     :param float inf_bound: lower bound to the range of possible values    (shift parameter)
-    :param float sup_bound: upper bound to the range of possilbe values
+    :param float sup_bound: upper bound to the range of possible values
     :param float proba: probability of `success`
 
     .. plot::
@@ -166,7 +166,7 @@ def Binomial(inf_bound, sup_bound=I_DEFAULT,
 
 def Poisson(inf_bound, param=D_DEFAULT):
     """
-    Construction of a poisson distribution
+    Construction of a Poisson distribution
 
     :Parameters:
       * `inf_bound` (int) : lower bound to the range of possible values
@@ -195,8 +195,12 @@ def Poisson(inf_bound, param=D_DEFAULT):
 
 def NegativeBinomial(inf_bound, param=D_DEFAULT,
                      proba=D_DEFAULT):
-    """
+    r"""
     Construction of a negative binomial distribution
+    The negative binomial distribution has the following parameterization:
+    
+    .. math::
+        P(X-inf\_bound=i) = \frac{\Gamma(param+i)}{i! \Gamma(param)} p^{param} (1-p)^i
 
     :Parameters:
       * inf_bound (int) : lower bound to the range of possible values
@@ -209,7 +213,7 @@ def NegativeBinomial(inf_bound, param=D_DEFAULT,
         :include-source:
 
         from openalea.stat_tool.distribution import NegativeBinomial
-        b = NegativeBinomial(1,2 ,.5)
+        b = NegativeBinomial(1,2,.5)
         b.plot(legend_size=12)
 
     """
@@ -233,7 +237,7 @@ def Uniform(inf_bound, sup_bound=I_DEFAULT):
     :Parameters:
       * inf_bound (int) : lower bound to the range of possible values
         (shift parameter)
-      * sup_bound (int) : upper bound to the range of possilbe values
+      * sup_bound (int) : upper bound to the range of possible values
 
     .. plot::
         :width: 50%
@@ -260,9 +264,27 @@ def Uniform(inf_bound, sup_bound=I_DEFAULT):
         inf_bound, sup_bound, param, proba, cumul_threshold)
 
 
-def Multinomial():
-    """to be done"""
-    raise NotImplementedError("Multinomial not yet implemented")
+def Multinomial(probabilities):
+    r"""
+    
+    Construction of a categorical distribution.
+    A categorical distribution is implemented as a particular case 
+    of the multinomial distribution :math:`{\mathcal{M}}(1; p_1, \ldots, p_K)`
+
+    :Parameters:
+      * probabilities (list): list of probabilities :math:`p_1,\ldots,p_K`
+
+    .. plot::
+        :width: 50%
+        :include-source:
+
+        from openalea.stat_tool.distribution import Multinomial
+        m = Multinomial([0.1, 0.6, .3])
+        from openalea.stat_tool import Histogram
+        Histogram([m.simulation() for i in range(100)]).plot()
+    """
+
+    return _Distribution(probabilities)
 
 # Extend _DiscreteParametricModel
 interface.extend_class( _DiscreteParametricModel, interface.StatInterface)

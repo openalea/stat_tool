@@ -70,7 +70,7 @@ namespace stat_tool {
  *  Enums
  */
 
-
+  /// maximum length of error messages
   const int ERROR_LENGTH = 200;
 
   enum output_format {
@@ -81,10 +81,14 @@ namespace stat_tool {
     PLOT
   };
 
-  const int I_DEFAULT = -1;              // default int
-  const double D_DEFAULT = -1.;          // default double
-  const double D_INF = -1.e37;           // smallest  real number
-  const double DOUBLE_ERROR = 1.e-6;     // error on a sum of doubles
+  /// default value for int
+  const int I_DEFAULT = -1;              
+  /// smallest real number
+  const double D_INF = -1.e37;           
+  /// error on a sum of doubles
+  const double DOUBLE_ERROR = 1.e-6;     
+  /// default value for double
+  const double D_DEFAULT = -1.;          
 //  const double DOUBLE_ERROR = 5.e-6;      error on a sum of doubles
 
   enum test_distribution {
@@ -94,11 +98,15 @@ namespace stat_tool {
     STUDENT
   };
 
+  /// default bound on a number of mutliple tests
   const int NB_CRITICAL_PROBABILITY = 2;
+  /// default levels of tests
   const double ref_critical_probability[NB_CRITICAL_PROBABILITY] = {0.05 , 0.01};
 
-  const int NB_VALUE = 1000;             // number of values of a discrete variable
-  const int SAMPLE_NB_VALUE = NB_VALUE;  // number of values of a discrete sample
+  /// number of values of a discrete variable
+  const int NB_VALUE = 1000;             
+  /// number of values of a discrete sample
+  const int SAMPLE_NB_VALUE = NB_VALUE;  
 
   enum frequency_distribution_transformation {
     FREQUENCY_DISTRIBUTION_COPY ,
@@ -527,6 +535,10 @@ const double PLOT_RANGE_RATIO = 4.;
     void init(int inb_value);
     void copy(const Distribution &dist , int ialloc_nb_value = I_DEFAULT);
     void normalization_copy(const Distribution &dist);
+    /// deallocate values between nb_value and alloc_nb_value
+    void purge_tail();
+    /// allocate values between alloc_nb_value and ialloc_nb_value
+    void pad_tail(int ialloc_nb_value);
 
     Distribution(int inb_value = 0);
     Distribution(int inb_value , double *imass);

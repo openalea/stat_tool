@@ -298,8 +298,14 @@ public:
   {
     discrete_parametric iident = discrete_parametric(ident);
     DiscreteParametric *dist = NULL;
+    StatError error;
 
     dist = histo.parametric_estimation(iident, min_inf_bound, flag);
+
+    if (!dist) {
+      error.update("Estimation failure");
+      stat_tool::wrap_util::throw_error(error);
+    }
 
     return dist;
   }

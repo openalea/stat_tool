@@ -54,7 +54,6 @@
 #include "markovian.h"
 #include "vectors.h"
 #include "stat_label.h"
-// #include "mixture.h"
 #include "multivariate_mixture.h"
 
 using namespace std;
@@ -235,9 +234,6 @@ MultivariateMixture::MultivariateMixture(int inb_component, int inb_variable,
 
   weight = NULL;
 
-  pcomponent = new DiscreteParametricProcess*[nb_var];
-  npcomponent = new CategoricalProcess*[nb_var];
-
   fparam= new bool[nb_var];
   if (force_param == NULL) {
     for (var = 0; var < nb_var; var++)
@@ -260,16 +256,19 @@ MultivariateMixture::MultivariateMixture(int inb_component, int inb_variable,
       npcomponent[var] = NULL;
       pcomponent[var] = new DiscreteParametricProcess(nb_component, (int)(*nb_value * SAMPLE_NB_VALUE_COEFF));
       for(i = 0; i < nb_component; i++) {
-    delete pcomponent[var]->observation[i];
-    param = (cumul_method(10, rand->cumul, 1.) + 1);
-    // TODO: change default parameter values
-    pcomponent[var]->observation[i] =
-      new DiscreteParametric(NEGATIVE_BINOMIAL, 0, I_DEFAULT , 1., 1. / (double)((param * *nb_value)+1.));
+        // choose negative binomial components with random parameters
+        delete pcomponent[var]->observation[i];
+        param = (cumul_method(10, rand->cumul, 1.) + 1);
+        // TODO: change default parameter values
+        pcomponent[var]->observation[i] =
+          new DiscreteParametric(NEGATIVE_BINOMIAL, 0, I_DEFAULT , 1., 1. / (double)((param * *nb_value)+1.));
       }
       nb_value++;
     }
   }
   delete [] fparam;
+  delete rand;
+  
   fparam= NULL;
 }
 
@@ -1334,8 +1333,8 @@ ostream& MultivariateMixture::ascii_write(ostream &os , const MultivariateMixtur
 	os << bnb_parameter << " " << STAT_label[STATL_FREE_PARAMETERS] << "   2 * "
 	   << STAT_label[STATL_PENALIZED_LIKELIHOOD] << " (" << STAT_criterion_word[AIC] << "): "
 	   << 2 * (likelihood - bnb_parameter) << endl;
-	
-	if (0 < bnb_parameter < mixt_data->nb_vector - 1) {
+ 
+  if ((0 < bnb_parameter) && (bnb_parameter < mixt_data->nb_vector - 1)) {
 	  if (file_flag) 
 	    os << "# ";
 
@@ -1572,7 +1571,7 @@ ostream& MultivariateMixture::spreadsheet_write(ostream &os ,
          << STAT_label[STATL_PENALIZED_LIKELIHOOD] << " (" << STAT_criterion_word[AIC] << "): "
          << 2 * (likelihood - bnb_parameter) << endl;
 
-      if (0 < bnb_parameter < mixt_data->nb_vector - 1) {
+      if ((0 < bnb_parameter) && (bnb_parameter < mixt_data->nb_vector - 1)) {
         os << bnb_parameter << "\t" << STAT_label[STATL_FREE_PARAMETERS] << "\t 2 * "
            << STAT_label[STATL_PENALIZED_LIKELIHOOD] << " (" << STAT_criterion_word[AICc] << "): "
            << 2 * (likelihood - (double)(bnb_parameter * mixt_data->nb_vector) /
@@ -2155,8 +2154,8 @@ MultivariateMixtureData::MultivariateMixtureData(const Vectors &vec , int inb_co
   mixture = NULL;
   nb_component = inb_component;
 
-  for (i = 0; i < nb_variable; i++)
-    if ((vec.get_type(i) == STATE) || (vec.get_type(i) == INT_VALUE))
+  for (var = 0; var < nb_variable; var++)
+    if ((vec.get_type(var) == STATE) || (vec.get_type(var) == INT_VALUE))
       nb_int_variable++;
 
   weight = new FrequencyDistribution(nb_component);
@@ -2166,9 +2165,8 @@ MultivariateMixtureData::MultivariateMixtureData(const Vectors &vec , int inb_co
     for (var = 0; var < nb_int_variable; var++) {
       component[var] = new FrequencyDistribution*[nb_component];
       nb_val = (int)ceil(get_max_value(var))+1;
-      for (i = 0; i < nb_component; i++) {
-	component[var][i] = new FrequencyDistribution(nb_val);
-      }
+      for (i = 0; i < nb_component; i++) 
+	      component[var][i] = new FrequencyDistribution(nb_val);
     }
     for (var = nb_int_variable; var < nb_variable; var++)
       component[var] = NULL;
@@ -2267,10 +2265,10 @@ void MultivariateMixtureData::remove()
 
     for (var = 0; var < nb_variable; var++) {
       for (i = 0;i < nb_component;i++)
-	if (component[var] != NULL) {
-	  delete component[var][i];
-	  component[var][i] = NULL;
-	}
+	      if (component[var] != NULL) {
+	        delete component[var][i];
+	        component[var][i] = NULL;
+	      }
       delete [] component[var];
       component[var] = NULL;
     }

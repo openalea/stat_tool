@@ -3506,7 +3506,7 @@ Vectors* Vectors::remove_variable_1() const
  *
  *  \param[in] error              reference on a StatError object,
  *  \param[in] nb_summed_variable number of variables to be summed,
- *  \param[in] variable           variable indices.
+ *  \param[in] ivariable           variable indices.
  *
  *  \return                       Vectors object.
  */

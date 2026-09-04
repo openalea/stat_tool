@@ -1147,10 +1147,10 @@ class_vectors()
    // ---------------------Mixtures
   DEF_RETURN_VALUE("mixture_estimation_model", WRAP::mixture_estimation_model,
 	  args("initial_mixture", "nb_max_iteration", "force_param"),
-	  "TODO Mixture estimation (EM algorithm with initial model)")
+	  "Multivariate mixture estimation (EM algorithm with initial model)")
   DEF_RETURN_VALUE("mixture_estimation_nb_component", WRAP::mixture_estimation_nb_component,
 	  args("nb_component", "nb_max_iteration", "force_param"),
-	  "TODO Mixture estimation (EM algorithm with fixed number of components)")
+	  "Multivariate mixture estimation (EM algorithm with fixed number of components)")
 
   DEF_RETURN_VALUE("compare", WRAP::comparison,
       args("distance"), "TODOCompare Vectors given a VectorDistance")

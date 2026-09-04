@@ -51,8 +51,10 @@ namespace stat_tool {
  *  Constants :
  */
 
-  const double MVMIXTURE_LIKELIHOOD_DIFF = 1.e-8; // stopping criterion for relative log-likelihood in EM
-  const int MIXTURE_COEFF = 2;           // coefficient: rounding for estimators
+  /// stopping criterion for relative log-likelihood in EM for multivariate mixtures
+  const double MVMIXTURE_LIKELIHOOD_DIFF = 1.e-8; 
+  /// coefficient: rounding for estimators in multivariate mixtures
+  const int MIXTURE_COEFF = 2;           
 
 
 /****************************************************************
@@ -123,7 +125,7 @@ namespace stat_tool {
 
     /** MAP algorithm */
     std::vector<int>* state_computation(StatError &error, const Vectors &vec, 
-					double** &posterior_dist,
+                                        double** &posterior_dist,
                                         int algorithm=VITERBI, int index=I_DEFAULT) const;
 
     /** Initialization of EM algorithm */
@@ -216,7 +218,7 @@ namespace stat_tool {
     { return mixt_data.ascii_write(os , false); }
 
   private :
-
+ 
     MultivariateMixture *mixture;  /// pointer on MultivariateMixture object
     int nb_component;          /// number of components
     FrequencyDistribution *weight;      /// empirical distribution of weights
