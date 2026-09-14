@@ -4,12 +4,13 @@
 - [x] Welcome page: better integrate code lines (`pip install...`). Also move section "Note for developpers" into a more appropriated section ?
 - [x] Move objects description from "tutorials.rst" into "Usage" section
 - [ ] Check that class members appear in C++ documentation (Reestimation, FrequencyDistribution...)
-- [ ] Check consistency in StatError, StatErrorClass, _StatError, etc. Let them derive from BaseException.
+- [ ] Check consistency in StatError, StatErrorClass, _StatError, etc. Let them derive from BaseException, PyExc_Exception, ...
 - [ ] Wrap continuous distributions
 - [ ] Use cross references properly, see "Usage" section
 - [x] Check that definition of vignettes works properly for all notebooks.
-- [ ] Replace hardcoded outputs by outputs of executed code; have doctest extension actually working (see jupyter-sphinx)
+- [X] Replace hardcoded outputs by outputs of executed code; have doctest extension actually working (see jupyter-sphinx)
 - [ ] Ensure that warnings are raised if non-existing keyword arguments are used in functions (e.g. Nbiteration in place of NbIteration)
 - [ ] Have wrapper documentation be transferred to python module.
 - [ ] Replace hard-coded relative paths by Path().parent etc.
-- [ ] Doc: figure labels (Histogram), cross-references in .md Myst (Compound), Display, TODO, multiple outputs in python cells.
+- [ ] Saving matplotlib figures in command line.
+- [ ] Doc: ~~Display~~, multiple outputs in python cells, ~~maths in .ipynb notebooks included in sphinx, figure legends~~.

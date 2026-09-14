@@ -20,7 +20,7 @@ C++ binding guide
 Data structures
 ===================
 
-.. module:: openalea.stat_tool.compound
+.. currentmodule:: openalea.stat_tool.compound
 .. module:: compound
 
 :mod:`openalea.stat_tool.compound` module

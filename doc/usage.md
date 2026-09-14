@@ -16,11 +16,11 @@ Most of the docstrings provided in this document are tested with
 
 Vectors <user/vectors.md>
 Histogram <user/histogram.md>
-Distribution <user/distribution.rst>
-Errors <user/errors.rst>
+Distribution <user/distribution.md>
+Errors <user/errors.md>
 Compound <user/compound.md>
 Convolution <user/convolution.md>
-Mixture <user/mixture.rst>
+Mixture <user/mixture.md>
 ```
 
 # Tutorials

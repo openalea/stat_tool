@@ -21,7 +21,9 @@ warnings.filterwarnings('ignore')
 
 # Histogram
 
-Here is a brief description of the Histogram class.
+Here is a brief description of the Histogram class. More precisely, this consists
+in graphical representations of samples issued from discrete distributions actually
+referred to as bar diagrams.
 
 ## Constructor
 
@@ -48,22 +50,28 @@ h2 = Histogram([1,2,2,3,4,4,4,5])
 
 Now, you can use the methods bounded to the {py:class}`Histogram <openalea.stat_tool.histogram.Histogram>` class.
 
+<!--Label Display is not mandatory and difficult to use-->
+<!--(Display)=-->
 ## Display
 
 The object `h1` has a few methods among which some are useful to print
-information on the screen or in a file. The {func}`Display <openalea.stat_tool.output.Display>`
-method is one of them. This methods works as follows:
+information on the screen or in a file. The most straightfoward way to achieve this
+is to resort to the `print`function: 
 
-<!-- TODO: We could expect that .display() would use print().-->
+```{code-cell} python
+print(h1)
+```
+
+Other functions can be used to return string representations of objects. 
+They may accept optional arguments controlling the level of detail.
+{func}`Display <openalea.stat_tool.output.Display>`
+method is one of them. This method works as follows:
 
 ```{code-cell} python
 h1.display()
 Display(h1)
+Display(h1, Detail=2)
 ```
-
-:::{todo}
-We could expect that .display() would use print().
-:::
 
 :::{note}
 Note here that you can call the methods in two different ways.
@@ -173,13 +181,15 @@ hcl = Cluster(h1, "Step", 3)
 hcl.plot()
 ```
 
-:::{warning} Again, although the function is equivalent to the method, we advice you to use the functions. See Display section for details.
+:::{warning} 
+Again, although the function is equivalent to the method, we advice you to use the functions. See Section [Display](#Display) for details.
 :::
 
-### Merging
+## Merging
 
+Merging histograms is the concept of merging (concatenating) the underlying samples.
 The following examples illustrates the usage of the
-{func}`openalea.stat_tool.data_transform.Merge` function. See also {ref}`how to plot the outputs of merging <fig-merging>`.
+{func}`openalea.stat_tool.data_transform.Merge` function. See also code block {ref}`how to plot the outputs of merging <fig-merging>`.
 
 ```{code-cell} python
 # load two histograms
@@ -213,3 +223,16 @@ a = h5.merge([h1])
 a.plot(Title = "The merging of two histograms")
 # savefig('user/stat_tool_histogram_merging.png')
 ```
+
+## Comparing
+
+Comparing histograms consists in performing a statistical test whose null 
+hypothesis is the equality of their underlying distributions. The nature
+of the random variable (numeric, ordinal, symbolic) can be made explicit 
+in arguments of the {func}`~openalea.stat_tool.comparison.Compare` function.
+
+```{code-cell} python
+print(Compare(h1, h2, "NUMERIC"))
+```
+
+See also the tutorial on [comparison](../examples/comparison.ipynb).
