@@ -14,7 +14,7 @@ Most of the docstrings provided in this document are tested with
 :caption: Basic usage examples of these objects
 
 
-Vectors <user/vectors.rst>
+Vectors <user/vectors.md>
 Histogram <user/histogram.md>
 Distribution <user/distribution.rst>
 Errors <user/errors.rst>
