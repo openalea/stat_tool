@@ -60,8 +60,13 @@ source_suffix = {
 }
 nb_execution_mode = "cache"
 myst_enable_extensions = [
+    "amsmath",
     "colon_fence",
+    "deflist",
+    "dollarmath",
+    "html_image",
 ]
+myst_url_schemes = ("http", "https", "mailto")
 # C++ API
 breathe_projects = {"stat_tool": "xml"}
 breathe_default_project = "stat_tool"
