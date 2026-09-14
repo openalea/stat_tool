@@ -12,3 +12,4 @@
 - [ ] Ensure that warnings are raised if non-existing keyword arguments are used in functions (e.g. Nbiteration in place of NbIteration)
 - [ ] Have wrapper documentation be transferred to python module.
 - [ ] Replace hard-coded relative paths by Path().parent etc.
+- [ ] Doc: figure labels (Histogram), cross-references in .md Myst (Compound), Display, TODO, multiple outputs in python cells.

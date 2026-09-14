@@ -20,7 +20,7 @@ warnings.filterwarnings('ignore')
 (Histogram)=
 # Histogram
 
-Here is a brief description of the Histogram type.
+Here is a brief description of the Histogram class.
 
 ## Constructor
 

@@ -19,7 +19,7 @@ Histogram <user/histogram.md>
 Distribution <user/distribution.rst>
 Errors <user/errors.rst>
 Compound <user/compound.md>
-Convolution <user/convolution.rst>
+Convolution <user/convolution.md>
 Mixture <user/mixture.rst>
 ```
 
