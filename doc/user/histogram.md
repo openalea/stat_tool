@@ -18,6 +18,7 @@ warnings.filterwarnings('ignore')
 ```
 
 (Histogram)=
+
 # Histogram
 
 Here is a brief description of the Histogram class.
@@ -114,6 +115,7 @@ dummy = Histogram('test.dat')
 ## Plotting
 
 ### Old AML style
+
 If you have both the Gnuplot binary and py-gnuplot python module installed,
 you can use
 
@@ -177,8 +179,7 @@ hcl.plot()
 ### Merging
 
 The following examples illustrates the usage of the
-{func}`openalea.stat_tool.data_transform.Merge` function. See also
-Figure {ref}`fig_merging` for the output plots.
+{func}`openalea.stat_tool.data_transform.Merge` function. See also {ref}`how to plot the outputs of merging <fig-merging>`.
 
 ```{code-cell} python
 # load two histograms
@@ -200,8 +201,11 @@ h5.plot()
 
 The two original histograms are shown hereabove.
 
+(fig-merging)=
+
 ```{code-cell} python
-:label: fig_merging
+:caption: Output plots from merging.
+
 a = Merge(h1,h5)
 # equivalent to
 a = h1.merge([h5])
