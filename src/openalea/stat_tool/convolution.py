@@ -39,8 +39,8 @@ def Convolution(*args):
     """Construction of an object of type convolution from elementary
     distributions or from an ASCII file.
 
-    The distribution of the sum of independent random variables is the
-    convolution of the distributions of these elementary random variables.
+    The convolution of independent random variables is the distribution 
+    of their sum.
 
     :Parameters:
       * dist1, dist2, ...(distribution, mixture, convolution, compound) -
@@ -64,9 +64,9 @@ def Convolution(*args):
         :include-source:
 
         from openalea.stat_tool import *
-        sum_dist = Binomial(0,10,0.5)
-        dist = Binomial(0,15,0.2)
-        c = Convolution(sum_dist, dist)
+        dist1 = Binomial(0,10,0.5)
+        dist2 = Binomial(0,15,0.2)
+        c = Convolution(dist1, dist2)
         c.plot()
 
 

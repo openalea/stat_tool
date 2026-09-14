@@ -27,6 +27,7 @@ help:
 	@echo "  pickle     to make pickle files"
 	@echo "  json       to make JSON files"
 	@echo "  htmlhelp   to make HTML files and a HTML help project"
+	@echo "  html-nodoxygen to make HTML files without generating the doxygen documentation" 
 	@echo "  qthelp     to make HTML files and a qthelp project"
 	@echo "  applehelp  to make an Apple Help Book"
 	@echo "  devhelp    to make HTML files and a Devhelp project"
@@ -99,6 +100,12 @@ html-noplot: doxygen
 	$(SPHINXBUILD) -D plot_gallery=0 -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+.PHONY: html-nodoxygen
+html-nodoxygen:
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html. Doxgygen documentation has not been regenerated."
 
 .PHONY: pickle
 pickle: doxygen

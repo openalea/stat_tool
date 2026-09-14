@@ -13,6 +13,29 @@ from openalea.stat_tool.plot import get_plotter, gnuplot
 
 
 class Test:
+
+    def test_add_point_plotable(self):
+        p = _stat_tool.MultiPlotSet(1)
+
+        p[0].resize(1)
+
+        p[0][0].add_point(_stat_tool.PlotPoint(1.0, 1.2))
+        p[0][0].add_point(_stat_tool.PlotPoint(3.0, 5.2))
+        p[0][0].add_point(_stat_tool.PlotPoint(2.0, 2.3))
+
+        assert(len(p[0][0]) == 3)
+
+    def test_add_point_plotable2(self):
+        p = _stat_tool.MultiPlotSet(1)
+
+        p[0].resize(1)
+
+        p[0][0].add_point(1.0, 1.2)
+        p[0][0].add_point(3.0, 5.2)
+        p[0][0].add_point(2.0, 2.3)
+
+        assert(len(p[0][0]) == 3)
+
     def test_plotable(self):
         p = _stat_tool.SinglePlot()
         p.add_point(_stat_tool.PlotPoint(1.0, 1.2))
@@ -28,7 +51,6 @@ class Test:
         assert len(p) == 3
 
     def test_plotable2(self):
-        # TODO: understand why the three points do not show up.
         p = _stat_tool.MultiPlotSet(1)
 
         p[0].resize(1)
@@ -40,9 +62,9 @@ class Test:
         p[0].xtics = 1
         p[0].ytics = 1
 
-        p[0][0].add_point(_stat_tool.PlotPoint(1.0, 1.2))
-        p[0][0].add_point(_stat_tool.PlotPoint(3.0, 5.2))
-        p[0][0].add_point(_stat_tool.PlotPoint(2.0, 2.3))
+        p[0][0].add_point(1.0, 1.2)
+        p[0][0].add_point(3.0, 5.2)
+        p[0][0].add_point(2.0, 2.3)
         p[0][0].add_text(0.5, 0.2, "*")
         p[0][0].add_text(3.5, 5.5, "*")
         p[0][0].legend = "legend"
@@ -82,9 +104,11 @@ class Test:
         p[0].title = "P1"
         p[0].xlabel = "x1"
         p[0].ylabel = "y1"
+        p[0].set_xrange((0.0, 4.0))
+        p[0].set_yrange((0.0, 6.0))
 
-        p[0][0].add_point(_stat_tool.PlotPoint(1.0, 1.2))
-        p[0][0].add_point(_stat_tool.PlotPoint(3.0, 5.2))
+        p[0][0].add_point(1.0, 1.2)
+        p[0][0].add_point(3.0, 5.2)
         p[0][0].style = "lines"
 
         p[1].resize(2)
@@ -92,17 +116,19 @@ class Test:
         p[1].title = "P2"
         p[1].xlabel = "x2"
         p[1].ylabel = "y2"
+        p[1].set_xrange((0.0, 40.0))
+        p[1].set_yrange((0.0, 6.0))
 
-        p[1][0].add_point(_stat_tool.PlotPoint(12.0, 1.2))
-        p[1][0].add_point(_stat_tool.PlotPoint(31.0, 5.2))
+        p[1][0].add_point(12.0, 1.2)
+        p[1][0].add_point(31.0, 5.2)
         p[1][0].legend = "PLOT1"
         p[1][0].color = "g"
         p[1][0].style = "points"
 
-        p[1][1].add_point(_stat_tool.PlotPoint(14.0, 5.2))
-        p[1][1].add_point(_stat_tool.PlotPoint(5.0, 2))
-        p[1][1].add_point(_stat_tool.PlotPoint(3.0, 5))
-        p[1][1].add_point(_stat_tool.PlotPoint(35.0, 3.2))
+        p[1][1].add_point(14.0, 5.2)
+        p[1][1].add_point(5.0, 2)
+        p[1][1].add_point(3.0, 5)
+        p[1][1].add_point(35.0, 3.2)
         p[1][1].legend = "PLOT2"
         p[1][1].style = "impulses"
 
@@ -111,11 +137,13 @@ class Test:
         p[2].ylabel = "y3"
         p[2].xtics = 1.5
         p[2].group = 1
+        p[2].set_xrange((0.0, 40.0))
+        p[2].set_yrange((0.0, 8.0))
 
-        p[2][0].add_point(_stat_tool.PlotPoint(3, 0.2))
-        p[2][0].add_point(_stat_tool.PlotPoint(8, 7.2))
-        p[2][0].add_point(_stat_tool.PlotPoint(12.0, 1.2))
-        p[2][0].add_point(_stat_tool.PlotPoint(31.0, 5.2))
+        p[2][0].add_point(3, 0.2)
+        p[2][0].add_point(8, 7.2)
+        p[2][0].add_point(12.0, 1.2)
+        p[2][0].add_point(31.0, 5.2)
         p[2][0].legend = "PLOT3"
         p[2][0].color = "y"
         p[2][0].style = "linespoints"
@@ -132,6 +160,7 @@ class Test:
 
     def test_gnuplot(self):
         try:
+            # import pygnuplot
             import Gnuplot
         except ModuleNotFoundError:
             pass
@@ -142,3 +171,12 @@ class Test:
             plotter = gnuplot()
             #    if DISABLE_PLOT == False:
             plotter.plot(a, "test_plot")
+
+
+if __name__ == "__main__":
+    T = Test()
+    T.test_add_point_plotable()
+    T.test_add_point_plotable2()
+    T.test_matplotlib()
+    T.test_plotable2()
+    T.test_gnuplot()

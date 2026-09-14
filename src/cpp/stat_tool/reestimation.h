@@ -52,12 +52,15 @@ namespace stat_tool {
  *  Constants
  */
 
+  /// threshold on cumulative distribution functions
+  /// to determine an upper bound of the support
+  const double CUMUL_THRESHOLD = 0.999;  
+                                         
 
-  const double CUMUL_THRESHOLD = 0.999;  // threshold on the cumulative distribution function
-                                         // to determine an upper bound of the support
-
-  const double BISECTION_RATIO_THRESHOLD = 1.e-8;  // threshold for stopping the interval bisection method
-  const int BISECTION_NB_ITER = 100;     // maximum number of iterations for the interval bisection method
+  /// threshold for stopping the interval bisection method  
+  const double BISECTION_RATIO_THRESHOLD = 1.e-8;  
+  /// maximum number of iterations for the interval bisection method
+  const int BISECTION_NB_ITER = 100;     
 
   enum penalty_type {
     FIRST_DIFFERENCE ,

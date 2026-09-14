@@ -33,6 +33,7 @@ from .enums import (
     variable_type, 
     variance_type, 
     distance_type, 
+    correlation_type, 
     OutputFormat
     )
 
@@ -57,10 +58,21 @@ __all__ = ['Vectors',
 def _Vectors_mixture_estimation(self, model,
                                 nb_iteration=I_DEFAULT,
                                 force_param=None):
-    """Estimate a mixture from _Vectors given initial model or number of
+    """
+    Estimate a mixture from _Vectors given initial model or number of
     components, the maximal number of iterations and a flag for using parametric
     observation distributions or not, within a given family
+    
+    :Examples:
+
+    .. doctest::
+
+        >>> import numpy as np
+        >>> set_seed(0)
+        >>> vec = Vectors(np.array([Uniform(0,10).simulate() for i in range(3000)]).reshape(1000,3).tolist())
+        >>> mixt =  vec.mixture_estimation(2, 100,  [True, True, True])
     """
+    
     if force_param is None:
         force_param = []
 
@@ -189,7 +201,7 @@ def Vectors(*args, **kargs):
             for i, vec in enumerate(obj):
                 identifiers.append(i+1)
     
-            print(identifiers)
+            # print(identifiers)
             #if InputTypes:
             ret = _Vectors(obj, identifiers, InputTypes)
             #else:
@@ -410,7 +422,8 @@ def ComputeRankCorrelation(*args, **kargs):
 
     :Usage:
 
-    >>> vec = Vectors([1,2,3,4,5,4,3,2,1])
+    >>> from openalea.stat_tool import get_shared_data
+    >>> vec = Vectors(get_shared_data("chene_sessile.vec"))
     >>> ComputeRankCorrelation(vec, Type="Spearman", FileName='')
 
     :Arguments:
@@ -427,17 +440,20 @@ def ComputeRankCorrelation(*args, **kargs):
     No object returned.
     """
 
-    func_map = {
-            "Spearman": 0,
-            "Kendall": 1
-            }
-
+    
     error.CheckArgumentsLength(args, 1, 1)
     error.CheckKargs(kargs, possible_kargs = ["Type", "FileName"])
 
     #kargs
+
+
     utype = error.ParseKargs(kargs, "Type", default="Spearman",
-                             possible=func_map)
+                             possible=correlation_type)
+
+    if (utype == correlation_type["PEARSON"] or 
+        utype == correlation_type["SPEARMAN2"]):
+        raise ValueError("Possible correlation types are SPEARMAN and KENDALL")
+
     filename = error.ParseKargs(kargs, "FileName", default=None)
 
     #args

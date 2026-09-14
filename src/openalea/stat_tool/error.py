@@ -16,6 +16,7 @@
 __version__ = "$Id$"
 
 
+from openalea.stat_tool._stat_tool import _StatError
 
 arguments_labels = {1:'first',
                     2:'second',
@@ -34,7 +35,8 @@ __all__ = ['CheckArgumentsLength',
            'CheckDictKeys',
            'ParseKargs',
            'CheckKargs',
-           'FormatError']
+           'FormatError',
+           '_StatError']
 
 
 

@@ -7,7 +7,7 @@ except ImportError:
     from tools import robust_path as get_shared_data
 
 from openalea.stat_tool.multivariate_mixture import _MultivariateMixture
-from openalea.stat_tool.distribution import Binomial, Poisson
+from openalea.stat_tool.distribution import Binomial, NegativeBinomial
 from openalea.stat_tool.distribution import set_seed
 
 from openalea.stat_tool.output import plot, Plot
@@ -18,14 +18,19 @@ def test1():
 
     set_seed(4)
     plotter = mplotlib()
-     
+
+    # First variable
     d11 = Binomial(0, 12, 0.1)
-    d12 = Binomial(0, 12, 0.6)
-    d13 = Binomial(0, 12, 0.9)
-    
-    d21 = Poisson(0, 25.0)
-    d22 = Poisson(0, 5.0)
-    d23 = Poisson(0, 0.2)
+    d12 = Binomial(0, 12, 0.4)
+    d13 = Binomial(0, 12, 0.7)
+
+    # second variable
+    d21 = NegativeBinomial(0, 1., 0.7)
+    d22 = NegativeBinomial(0,  2., 0.4)
+    d23 = NegativeBinomial(0, 3., 0.1)
+
+    m = _MultivariateMixture([0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]])
+    v = m.simulate(5000)
 
     m = _MultivariateMixture([0.1, 0.2, 0.7], [[d11, d21], [d12, d22], [d13, d23]])
     print(m)

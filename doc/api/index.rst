@@ -1,5 +1,6 @@
 API Reference
 =============
+
 .. toctree::
    :maxdepth: 2
    :caption: AML API:

@@ -118,11 +118,12 @@ void Distribution::convolution(Distribution &dist1 , Distribution &dist2 , int i
 void DiscreteParametric::binomial_computation(int inb_value , distribution_computation mode)
 
 {
-  int i;
+  int i, previous_nb_value;
   int set , subset;
   double failure = 1. - probability , success = probability , ratio , scale , term;
 
 
+  previous_nb_value = nb_value;
   switch (mode) {
   case STANDARD :
     offset = inf_bound;
@@ -133,6 +134,8 @@ void DiscreteParametric::binomial_computation(int inb_value , distribution_compu
     nb_value = MIN(sup_bound + 1 , inb_value);
     break;
   }
+  if (nb_value > previous_nb_value) 
+    this->pad_tail(nb_value);
 
   // null probability values before the lower bound of the support
 

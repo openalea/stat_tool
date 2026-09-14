@@ -385,7 +385,7 @@ void Reestimation<Type>::nb_value_computation()
   while ((nb_value > 1) && (*--pfrequency == 0)) {
     nb_value--;
   }
-  if ((nb_value == 1) && (frequency[nb_value] == 0))
+  if ((nb_value == 1) && (frequency[nb_value-1] == 0))
 	nb_value = 0;
 }
 
@@ -480,7 +480,7 @@ double Reestimation<Type>::mode_computation() const
   }
   i = mode;
   if ((frequency != NULL) && (i < nb_value-1)) {
-	  while (frequency[i + 1] == frequency[i]) {
+	  while ((i < nb_value-1) && (frequency[i + 1] == frequency[i])) {
 		i++;
 	  }
 	  if (i > mode) {
@@ -1073,14 +1073,21 @@ double Reestimation<Type>::binomial_estimation(DiscreteParametric *dist , int mi
     }
 
     if (variance == 0.) {
+      // deterministic distribution
       if (mean <= max_inf_bound) {
         max_likelihood = 0.;
-        dist->init((int)mean , (int)mean + 1 , D_DEFAULT , 0.);
+        inf_bound = (int)mean;
+        sup_bound = (int)mean + 1;
+        probability =  0.;
+        dist->init(inf_bound , sup_bound , D_DEFAULT , probability);
       }
       else {
-        if (mean < dist->alloc_nb_value) {
+        if (mean < dist->alloc_nb_value) {          
           max_likelihood = 0.;
-          dist->init(min_inf_bound , (int)mean , D_DEFAULT , 1.);
+          inf_bound = min_inf_bound;
+          sup_bound = (int)mean;
+          probability =  1.;
+          dist->init(inf_bound , sup_bound , D_DEFAULT , probability);
         }
       }
     }
@@ -1167,8 +1174,46 @@ double Reestimation<Type>::binomial_estimation(DiscreteParametric *dist , int mi
 //           << (max_inf_bound - min_inf_bound + 1) * (2 * SUP_BOUND_MARGIN + 1)
 //           << " | number of computations: " << k << endl;
 #     endif
+    } 
+  } else {
+    // Maximum likelihood estimation, taking the sup bound of support as sup_bound
+    // and trying all inf_bound between 0 and the inf bound of support
+    sup_bound = nb_value; 
+    dist->sup_bound = sup_bound;
+    max_likelihood = D_INF;
+    if (!min_inf_bound_flag)
+      // fix inf bound
+      max_inf_bound = min_inf_bound;
+    else
+      // search inf bound between this->offset and max_inf_bound
+      max_inf_bound = offset;
+    
+    for (i = min_inf_bound;i <= max_inf_bound;i++) {
+      shift_mean = mean - i;
+
+      dist->inf_bound = i;
+
+      if (dist->sup_bound > dist->inf_bound)
+        dist->probability = shift_mean / (dist->sup_bound - dist->inf_bound);
+      else
+        dist->probability = 1.;
+
+      dist->binomial_computation(1 , STANDARD);
+      likelihood = dist->likelihood_computation(*this);
+      if (likelihood > max_likelihood) {
+        max_likelihood = likelihood;
+        inf_bound = dist->inf_bound;
+        sup_bound = dist->sup_bound;
+        probability = dist->probability;
+      }
     }
   }
+
+    // update of the estimated parameters
+
+    if (max_likelihood != D_INF)
+      dist->init(inf_bound , sup_bound , D_DEFAULT , probability);            
+
 
   return max_likelihood;
 }
@@ -1365,15 +1410,20 @@ double Reestimation<Type>::negative_binomial_estimation(DiscreteParametric *dist
       dist->inf_bound = i;
 
       shift_mean = mean - i;
-      dist->parameter = shift_mean * shift_mean / (variance - shift_mean);
-      dist->probability = shift_mean / variance;
+      if ((shift_mean >= 0) && (variance > 0)) {
 
-#     ifdef DEBUG
-//      cout << i << " : " dist->parameter << " | " << dist->probability << endl;
-#     endif
+        dist->parameter = shift_mean * shift_mean / (variance - shift_mean);
+        dist->probability = shift_mean / variance;
 
-      dist->negative_binomial_computation(nb_value , cumul_threshold , STANDARD);
-      likelihood = dist->likelihood_computation(*this);
+  #     ifdef DEBUG
+  //      cout << i << " : " dist->parameter << " | " << dist->probability << endl;
+  #     endif
+
+        dist->negative_binomial_computation(nb_value , cumul_threshold , STANDARD);
+        likelihood = dist->likelihood_computation(*this); 
+      } else {
+        likelihood = D_INF;
+      }
 
       if (likelihood > max_likelihood) {
         max_likelihood = likelihood;
@@ -1404,45 +1454,61 @@ double Reestimation<Type>::negative_binomial_estimation(DiscreteParametric *dist
   }
   if ((mean - max_inf_bound >= variance) || (moment_estimation_failure)) {
 	  for (i = max_inf_bound;i >= min_inf_bound;i--) {
-		// maximum likelihood estimation of continuous parameter by dichotomy
-		// probability is still the moment estimator
-		dist_cpl = new DiscreteParametric(*dist);
-		dist_cpr = new DiscreteParametric(*dist);
-		dist_cpl->inf_bound = i;
-		dist_cpr->inf_bound = i;
-		shift_mean = mean - i;
-		dist_cpr->probability = min(shift_mean / variance, 1-1e-10	); // dist_cpr->probability = min(shift_mean / variance, 1-std::numeric_limits<double>::min());
-		if (dist_cpr->probability > 0) {
-			max_param = pow((mean - min_inf_bound),2) / variance;
-			dist_cpl->copy(*dist_cpr);
-			dist_cpr->parameter = max_param;
-			dist_cpr->computation();
-			dist_cpl->parameter = min_param;
-			dist_cpl->computation();
-			left_l = this->likelihood_computation(*dist_cpl);
-			right_l = this->likelihood_computation(*dist_cpr);
-			for (j=0; j < BISECTION_NB_ITER; j++) {
-        cparam = (dist_cpl->parameter + dist_cpr->parameter) / 2; // current candidate
-				 if (left_l < right_l) {
-					 dist_cpl->parameter = cparam;
-					 dist_cpl->computation();
-					 left_l = this->likelihood_computation(*dist_cpl);
-				 } else {
-					 dist_cpr->parameter = cparam;
-					 dist_cpr->computation();
-					 right_l = this->likelihood_computation(*dist_cpr);
-				}
-			 }
-			dist_cpr->parameter = (dist_cpl->parameter + dist_cpr->parameter) / 2;
-			likelihood = this->likelihood_computation(*dist_cpr);
-			if (likelihood > max_likelihood) {
-				dist->copy(*dist_cpr);
-				max_likelihood = likelihood;
-			}
-			delete dist_cpl;
-			delete dist_cpr;
-		} // else likelihood = D_INF;
-	}
+      // maximum likelihood estimation of continuous parameter by dichotomy
+      // probability is still the moment estimator
+      if (dist_cpl != NULL)
+        delete dist_cpl;
+      dist_cpl = new DiscreteParametric(*dist);
+      if (dist_cpr != NULL)
+        delete dist_cpr;
+      dist_cpr = new DiscreteParametric(*dist);
+      dist_cpl->inf_bound = i;
+      dist_cpr->inf_bound = i;
+      shift_mean = mean - i;
+      dist_cpr->probability = min(shift_mean / variance, 1-1e-10	); // dist_cpr->probability = min(shift_mean / variance, 1-std::numeric_limits<double>::min());
+      if (dist_cpr->probability > 0) {
+        max_param = pow((mean - min_inf_bound),2) / variance;
+        dist_cpl->copy(*dist_cpr);
+        dist_cpr->parameter = max_param;
+        dist_cpr->computation();
+        dist_cpl->parameter = min_param;
+        dist_cpl->computation();
+        left_l = this->likelihood_computation(*dist_cpl);
+        right_l = this->likelihood_computation(*dist_cpr);
+        for (j=0; j < BISECTION_NB_ITER; j++) {
+          cparam = (dist_cpl->parameter + dist_cpr->parameter) / 2; // current candidate
+          if (left_l < right_l) {
+            dist_cpl->parameter = cparam;
+            dist_cpl->computation();
+            left_l = this->likelihood_computation(*dist_cpl);
+          } else {
+            dist_cpr->parameter = cparam;
+            dist_cpr->computation();
+            right_l = this->likelihood_computation(*dist_cpr);
+          }
+        }
+        dist_cpr->parameter = (dist_cpl->parameter + dist_cpr->parameter) / 2;
+        likelihood = this->likelihood_computation(*dist_cpr);
+        if (likelihood > max_likelihood) {
+          dist->copy(*dist_cpr);
+          max_likelihood = likelihood;
+        }
+        delete dist_cpl;
+        dist_cpl = NULL;
+        delete dist_cpr;
+        dist_cpr = NULL;
+      } // else likelihood = D_INF;
+    } // end for
+
+  }
+
+  if (dist_cpl != NULL) {
+    delete dist_cpl;
+    dist_cpl = NULL;
+  }    
+  if (dist_cpr != NULL) {
+    delete dist_cpr;
+    dist_cpr = NULL;
   }
 
   return max_likelihood;
@@ -1576,7 +1642,7 @@ double Reestimation<Type>::parametric_estimation(DiscreteParametric *dist , int 
     likelihood = geometric_poisson_estimation(dist , min_inf_bound , min_inf_bound_flag , cumul_threshold);
     break;
   }
-
+  
   return likelihood;
 }
 
@@ -1648,7 +1714,7 @@ double Reestimation<Type>::type_parametric_estimation(DiscreteParametric *dist ,
   }
 
   delete bdist;
-
+  
   return max_likelihood;
 }
 

@@ -25,28 +25,33 @@ from openalea.stat_tool import (
     Plot, Shift
 )
 
-# read data file
 def test():
-    # cdist1 = Compound("data/compound1.cd")
-    # Plot(cdist1)
-    #
-    # chisto1 = Simulate(cdist1, 200)
-    # Plot(chisto1)
-    #
-    # histo30 = ExtractHistogram(chisto1, "Sum")
-    # Plot(histo30)
-    #
-    # histo30e = ExtractHistogram(chisto1, "Elementary")
-    # Plot(histo30e)
-    #
-    #
-    # cdist2 = Estimate(chisto1, "COMPOUND",
-    #                   ExtractDistribution(cdist1, "Elementary"),
-    #                   "Sum", MinInfBound=0)
-    #
-    # histo31 = ExtractHistogram(ExtractData(cdist2), "Sum")
-    # histo32 = ToHistogram(ExtractDistribution(cdist2, "Sum"))
-    # Plot(histo31, histo32)
+    # read data file
+    from pathlib import Path
+    this_dir = Path(__file__).parent if '__file__' in globals() else Path(".").resolve()
+    data_dir = this_dir.parent / "test"
+    data_path = data_dir / "data/compound1.cd"
+    cdist1 = Compound(str(data_path))
+
+    Plot(cdist1)
+    
+    chisto1 = Simulate(cdist1, 200)
+    Plot(chisto1)
+    
+    histo30 = ExtractHistogram(chisto1, "Sum")
+    Plot(histo30)
+    
+    histo30e = ExtractHistogram(chisto1, "Elementary")
+    Plot(histo30e)
+    
+    
+    cdist2 = Estimate(chisto1, "COMPOUND",
+                      ExtractDistribution(cdist1, "Elementary"),
+                      "Sum", MinInfBound=0)
+    
+    histo31 = ExtractHistogram(ExtractData(cdist2), "Sum")
+    histo32 = ToHistogram(ExtractDistribution(cdist2, "Sum"))
+    Plot(histo31, histo32)
 
     peup1 = Histogram(get_shared_data("peup1.his"))
     mixt4 = Estimate(peup1, "MIXTURE", "B", "NB")

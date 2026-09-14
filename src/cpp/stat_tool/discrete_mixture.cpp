@@ -871,7 +871,7 @@ ostream& DiscreteMixture::ascii_write(ostream &os , const DiscreteMixtureData *m
        << STAT_label[STATL_PENALIZED_LIKELIHOOD] << " (" << STAT_criterion_word[AIC] << "): "
        << 2 * (likelihood - bnb_parameter) << endl;
 
-    if (0 < bnb_parameter < mixt_histo->nb_element - 1) {
+    if ((0 < bnb_parameter) && (bnb_parameter < mixt_histo->nb_element - 1)) {
       if (file_flag) {
         os << "# ";
       }
@@ -1163,7 +1163,7 @@ ostream& DiscreteMixture::spreadsheet_write(ostream &os , const DiscreteMixtureD
        << "2 * " << STAT_label[STATL_PENALIZED_LIKELIHOOD] << " (" << STAT_criterion_word[AIC] << ")\t"
        << 2 * (likelihood - bnb_parameter) << endl;
 
-    if (0 < bnb_parameter < mixt_histo->nb_element - 1) {
+    if ((0 < bnb_parameter) &&  (bnb_parameter < mixt_histo->nb_element - 1)) {
       os << bnb_parameter << "\t" << STAT_label[STATL_FREE_PARAMETERS] << "\t"
          << "2 * " << STAT_label[STATL_PENALIZED_LIKELIHOOD] << " (" << STAT_criterion_word[AICc] << ")\t"
          << 2 * (likelihood - (double)(bnb_parameter * mixt_histo->nb_element) /

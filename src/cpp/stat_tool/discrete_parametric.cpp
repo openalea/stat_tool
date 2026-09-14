@@ -160,8 +160,9 @@ DiscreteParametric::DiscreteParametric(discrete_parametric iident , int iinf_bou
   }
 
   else if ((ident == POISSON) || (ident == NEGATIVE_BINOMIAL) || (ident == GEOMETRIC_POISSON)) {
-    nb_value = (int)round(inf_bound + (parametric_mean_computation() - inf_bound +
-                                       sqrt(parametric_variance_computation())) * 20.);
+    nb_value = MAX(0,
+                  (int)round(inf_bound + (parametric_mean_computation() - inf_bound +
+                                       sqrt(parametric_variance_computation())) * 20.));
     if (nb_value == inf_bound) {
       nb_value++;
     }

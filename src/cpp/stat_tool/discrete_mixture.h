@@ -54,14 +54,21 @@ namespace stat_tool {
  */
 
 
-  const int DISCRETE_MIXTURE_NB_COMPONENT = 100;   // maximum number of components
+  /// maximum number of components for discrete mixtures
+  const int DISCRETE_MIXTURE_NB_COMPONENT = 100;   
 
-  const double NEGATIVE_BINOMIAL_PARAMETER = 20.;  // initial parameter for a negative binomial distribution
-  const double MIN_WEIGHT_STEP = 0.1;    // minimum step for weight initialization
-  const double MAX_WEIGHT_STEP = 0.5;    // maximum step for weight initialization
-  const int DISCRETE_MIXTURE_COEFF = 2;           // rounding coefficient for the estimator
-  const double DISCRETE_MIXTURE_LIKELIHOOD_DIFF = 1.e-5;  // threshold for stopping the EM iterations
-  const int DISCRETE_MIXTURE_NB_ITER = 500;        // maximum number of EM iterations
+  /// initial parameter for a negative binomial distribution
+  const double NEGATIVE_BINOMIAL_PARAMETER = 20.;  
+  /// minimum step for weight initialization in discrete mixtures
+  const double MIN_WEIGHT_STEP = 0.1;    
+  /// maximum step for weight initialization in discrete mixtures
+  const double MAX_WEIGHT_STEP = 0.5; 
+  /// rounding coefficient for the estimator in discrete mixtures     
+  const int DISCRETE_MIXTURE_COEFF = 2;      
+  /// threshold for stopping the EM iterations in discrete mixtures
+  const double DISCRETE_MIXTURE_LIKELIHOOD_DIFF = 1.e-5;  
+  /// maximum number of EM iterations in discrete mixtures
+  const int DISCRETE_MIXTURE_NB_ITER = 500;        
 
 
 
@@ -152,6 +159,7 @@ namespace stat_tool {
     DiscreteMixtureData* get_mixture_data() const { return mixture_data; }
     int get_nb_component() const { return nb_component; }
     DiscreteParametric* get_weight() const { return weight; }
+    /// return mixture component (return a pointer, no new allocation)
     DiscreteParametric* get_component(int index) const { return component[index]; }
   };
 

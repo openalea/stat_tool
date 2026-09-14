@@ -86,6 +86,11 @@ public:
 
 	 return lviewpoint;
   }
+
+  static void add_point(SinglePlot& plot, const PlotPoint& point)
+  {
+      plot.add_point(point);
+  }
 };
 
 
@@ -100,7 +105,8 @@ void class_plotable()
 
   class_< SinglePlot >("SinglePlot")
 
-    .def("add_point", (void (SinglePlot::*)(const PlotPoint&)) &SinglePlot::add_point)
+     // .def("add_point", (void (SinglePlot::*)(const PlotPoint&)) &SinglePlot::add_point)
+    .def("add_point", WRAP::add_point, "Add point to SinglePlot")
     .def("add_point", (void (SinglePlot::*)(float, float)) &SinglePlot::add_point)
     .def("add_text", (void (SinglePlot::*)(float, float, const string&)) &SinglePlot::add_text)
     .def_readwrite("legend", &SinglePlot::legend)

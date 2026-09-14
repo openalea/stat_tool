@@ -1,13 +1,17 @@
 """Convolution functional test extracted from original version of
 stat_tool_test.aml"""
+try:
+    from .tools import robust_path as get_shared_data
+except ImportError:
+    from tools import robust_path as get_shared_data
 
-from .tools import robust_path as get_shared_data
 
 from openalea.stat_tool import Convolution, Histogram, Distribution
 from openalea.stat_tool import Simulate, ExtractHistogram, ToHistogram
 from openalea.stat_tool import Estimate, ExtractData, ExtractDistribution
 from openalea.stat_tool import Plot, Shift, Display, Save
 from openalea.stat_tool.distribution import set_seed
+import os
 
 
 def test():
@@ -15,6 +19,7 @@ def test():
     convol2 = Convolution(Distribution("B", 0, 10, 0.5),
                           Distribution("NB", 0, 10, 0.5))
     Plot(convol2, Title='convol2')
+    Display(convol2)
 
     convol1 = Convolution('data/convolution1.conv')
     Plot(convol1, Title='Convol1 (from file data/convolution.conv)')
@@ -63,6 +68,7 @@ def test():
     Plot(convol31)
     Plot(ExtractDistribution(convol31, "Convolution"))
     Save(convol31, "data/nothofagus_antartica_2.xls", Format="SpreadSheet")
+    os.remove("data/nothofagus_antartica_2.xls")
 
 
 if __name__ == "__main__":

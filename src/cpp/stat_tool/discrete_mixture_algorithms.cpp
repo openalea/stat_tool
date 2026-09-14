@@ -368,7 +368,7 @@ void DiscreteMixture::expectation_step(DiscreteMixtureData *mixt_histo , int nb_
     mixt_histo->component[i]->variance_computation();
 
 #   ifdef DEBUG
-    cout << *mixt_histo->component[i];
+      // cout << *mixt_histo->component[i];
 #   endif
 
   }

@@ -83,7 +83,7 @@ def Display(obj, *args, **kargs):
 
     * `obj` - object to display,
     * `vec` (`_Vectors`),
-    * `seq` (`_Sequences`, `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData`, `_Tops`),
+    * `seq` (`_Sequences`, `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData`),
     * `dist` (`_Distribution`, `_MixtureDist`, `_Convolution`, `_Compound`),
     * `histo` (`_FrequencyDistribution`, `_DiscreteMixtureData`, `_ConvolutionData`, `_CompoundData`),
     * `hmc` (`_HiddenMarkov`),
@@ -97,7 +97,7 @@ def Display(obj, *args, **kargs):
 
       * "Data" only if the first argument is of type `_Vectors`,
         `_Sequences`, `_DiscreteSequences`, `_MarkovData`,
-        `_SemiMarkovData` or `_Tops`,
+        or `_SemiMarkovData`
       * "Survival" only if the first argument is of type `_Distribution`,
         `_MixtureDist`, `_Convolution`, `_Compound`, `_FrequencyDistribution`,
         `_DiscreteMixtureData`, `_ConvolutionData` or `_CompoundData`
@@ -111,7 +111,7 @@ def Display(obj, *args, **kargs):
       sequences): "Column" (default value) or "Line". This optional argument
       can only be used if the  optional argument ViewPoint is set at "Data",
       and hence, if the first argument is of type `_Vectors`, `_Sequences`,
-      `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData` or `_Tops`.
+      `_DiscreteSequences`, `_MarkovData` or `_SemiMarkovData`.
 
     :Returns:
 
@@ -180,7 +180,7 @@ def Plot(obj, *args, **kargs):
     obj1: (`_Distribution`, `_Mixture`, `_Convolution`, `_Compound`,
         `_DiscreteDistributionData`, `_DiscreteMixtureData`, `_ConvolutionData`,
         `_CompoundData`,`_Renewal`, `_TimeEvents`, `_RenewalData`,
-        `_Sequences`, `_DistanceMatrix`, ` _TopParameters`, `_Tops`),
+        `_Sequences`, `_DistanceMatrix`),
     vec1: (`_Vectors`) values,
     vecn: (`_Vectors`) vectors,
     variable: (int) variable index,
@@ -196,8 +196,7 @@ def Plot(obj, *args, **kargs):
     dist1, dist2, ...: (`_Distribution`, `_Mixture`, `_Convolution`, `_Compound`),
     histo1, histo2, ...: (`_DiscreteDistributionData`, `_DiscreteMixtureData`, `_ConvolutionData`,
         `_CompoundData`),
-    seq: (`_Sequences`, `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData`,
-        `_Tops`),
+    seq: (`_Sequences`, `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData`),
     dist: (`_Distribution`, `_Mixture`, `_Convolution`, `_Compound`),
     histo: (`_DiscreteDistributionData`, `_DiscreteMixtureData`, `_ConvolutionData`,
         `_CompoundData`),
@@ -273,7 +272,7 @@ def Save(obj, *args, **kargs):
     Saving of an object of the STAT module in a file.
 
     Saving of sets of sequences or 'tops' (ViewPoint="Data"): the format "Column"
-    corresponds to the ASCII file syntax for objects of type _Sequences or _Tops.
+    corresponds to the ASCII file syntax for objects of type _Sequences.
     For a given value of the index parameter, the different variables are
     successively written. With the format "Line", the univariate sequence for
     each variable are written on consecutive lines. In the case of univariate
@@ -302,7 +301,7 @@ def Save(obj, *args, **kargs):
     histo : (_FrequencyDistribution, _DiscreteMixtureData, _ConvolutionData, _CompoundData),
     vec : (_Vectors),
     timev : (_TimeEvents, _RenewalData),
-    seq : (_Sequences, _DiscreteSequences, _MarkovData, _SemiMarkovData, _Tops).
+    seq : (_Sequences, _DiscreteSequences, _MarkovData, _SemiMarkovData).
     dist : (_Distribution, _Mixture, _Convolution, _Compound),
     hmc : (_HiddenMarkov),
     hsmc : (_HiddenSemiMarkov).
@@ -316,18 +315,18 @@ def Save(obj, *args, **kargs):
         This optional argument can be set at :
 
         * "Data" only if the first argument is of type `_Sequences`,
-            `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData` or `_Tops`,
+            `_DiscreteSequences`, `_MarkovData` or `_SemiMarkovData`
         * "Survival" only if the first argument is of type `_Distribution`,
             `_Mixture`, `_Convolution`, `_Compound`, `_FrequencyDistribution`, `_DiscreteMixtureData`,
             `_ConvolutionData` or `_CompoundData`
-        * "StateProfile" only if the first argument is of type `_HiddenMarkov or
+        * "StateProfile" only if the first argument is of type `_HiddenMarkov` or
             `_HiddenSemiMarkov`.
     Detail : (int)
         level of detail: 1 (default value) or 2.
         This optional argument can only be used if the optional argument ViewPoint
         is not set, or if the optional argument ViewPoint is set at "Data" and
         if the first mandatory argument is of type `_Vectors`, `_Sequences`,
-        `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData` or `_Tops`.
+        `_DiscreteSequences`, `_MarkovData` or `_SemiMarkovData`.
     file format: "ASCII" (default format), "Binary" or "SpreadSheet".
         These file formats cannot be specified if the optional argument ViewPoint
         is set at "Data". The optional argument Format can only be set at "Binary"
@@ -336,8 +335,8 @@ def Save(obj, *args, **kargs):
         format of sequences (only relevant for multivariate sequences):
         "Column" (default value) or "Line". This optional argument can only be used if the
         optional argument ViewPoint is set at "Data", and hence, if the first argument is of
-        type `_Sequences`, `_DiscreteSequences`, `_MarkovData`, `_SemiMarkovData`
-        or `_Tops`. If the first argument is of type `_Vectors`, use Format="Data" to actually
+        type `_Sequences`, `_DiscreteSequences`, `_MarkovData` or `_SemiMarkovData`.
+        If the first argument is of type `_Vectors`, use Format="Data" to actually
         save the data rather than their summary.
     Sequence : (int)
         identifier of a sequence. This optional argument can only be used
@@ -1233,7 +1232,7 @@ class StatInterface:
         return output
 
     @add_doc
-    def save(self, filename, Detail=2, ViewPoint="", Format="ASCII"):
+    def save(self, filename, Detail=2, ViewPoint="", Format="ASCII"):        
         # Detail level
         if Detail > 1:
             exhaustive = True

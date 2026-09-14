@@ -164,8 +164,21 @@ def test_contingency_table(vec10):
 
 def test_rank_computation(vec10):
     ComputeRankCorrelation(vec10, Type="Kendall", FileName="test")
+    ComputeRankCorrelation(vec10, Type="Spearman", FileName='')
+
     # ComputeRankCorrelation(vec10, Type="Spearman", FileName="test")
     _remove_file("test")
+    vec = Vectors([[1,2,3,4],[5,4,3,2],[0,0,0,0]])
+    ComputeRankCorrelation(vec, Type="Kendall", FileName="")
+
+def bad_test_rank_computation(vec10):
+    try:
+        ComputeRankCorrelation(vec10, Type="Pearson", FileName='')
+    except ValueError:
+        assert True
+    else:
+        assert False
+
 
 if __name__ == "__main__":
     vec10 = Vectors(get_shared_data("chene_sessile.vec"))
@@ -173,3 +186,4 @@ if __name__ == "__main__":
     test_variance_analysis(vec10)
     test_contingency_table(vec10)
     test_rank_computation(vec10)
+    bad_test_rank_computation(vec10)

@@ -52,11 +52,15 @@ namespace stat_tool {
  */
 
 
-  const int MAX_FREQUENCY = 50;          // maximum frequency for smoothing the curves
-  const int MAX_RANGE = 2;               // maximum half-width of the smoothing window
+  /// maximum frequency for smoothing curves
+  const int MAX_FREQUENCY = 50;          
+  /// maximum half-width of the smoothing window
+  const int MAX_RANGE = 2;               
 
-  const int PLOT_NB_CURVE = 12;          // maximum number of curves (Gnuplot output)
-  const int PLOT_MIN_FREQUENCY = 10;     // minimum frequency for plotting curve points (Gnuplot output)
+  /// maximum number of curves (Gnuplot output)
+  const int PLOT_NB_CURVE = 12;          
+  /// minimum frequency for plotting curve points (Gnuplot output)
+  const int PLOT_MIN_FREQUENCY = 10;     
 
   enum curve_transformation {
     CURVE_COPY ,

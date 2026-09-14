@@ -6,11 +6,21 @@ Reference guide
 .. contents::
 
 
+C++ binding guide
+=================
+.. automodule:: openalea.stat_tool._stat_tool
+    :members:
+    :undoc-members:
+    :inherited-members:
+    :show-inheritance:
+    :private-members:
+
+
 
 Data structures
 ===================
 
-.. module:: openalea.stat_tool.compound
+.. currentmodule:: openalea.stat_tool.compound
 .. module:: compound
 
 :mod:`openalea.stat_tool.compound` module

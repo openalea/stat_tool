@@ -52,9 +52,10 @@ namespace stat_tool {
  *  Constants
  */
 
-
-  const int REGRESSION_NB_VECTOR = 10000;  // maximum number of individuals for the nonparametric regression
-  const int NEIGHBORHOOD = 3;            // minimum neighborhood on the values of the explanatory variable
+  /// maximum number of individuals for the nonparametric regression
+  const int REGRESSION_NB_VECTOR = 10000;
+  /// minimum neighborhood on the values of the explanatory variable  
+  const int NEIGHBORHOOD = 3;            
 
   enum parametric_function {
     LINEAR_FUNCTION ,

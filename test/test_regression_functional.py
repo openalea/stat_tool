@@ -36,6 +36,10 @@
 #
 #########################################################################
 """
+try:
+    from .tools import DISABLE_PLOT
+except ImportError:
+    from tools import DISABLE_PLOT
 
 from openalea.stat_tool import Vectors
 from openalea.stat_tool import ExtractHistogram
@@ -60,7 +64,11 @@ def test():
         pass
     else:
         return
-    vec1 = Vectors(Sequences("../examples/Sample/Sequences/hetre.seq"))
+    from pathlib import Path
+    this_dir = Path(__file__).parent if '__file__' in globals() else Path(".").resolve()
+    data_dir = this_dir.parent / "examples"
+    data_path = data_dir / "Sample/Sequences/hetre.seq"
+    vec1 = Vectors(Sequences(str(data_path)))
 
     Plot(ExtractHistogram(ValueSelect(vec1, 1, 0), 4),
          ExtractHistogram(ValueSelect(vec1, 1, 1), 4),

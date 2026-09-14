@@ -50,16 +50,23 @@ namespace stat_tool {
  *
  *  Constants
  */
+  /// maximum number of individuals for displaying the results of
+  /// individual alignments
+  const int ASCII_NB_INDIVIDUAL = 10;    
+                                         
+  /// y axis margin for the plotting of distances
+  const double PLOT_YMARGIN = 0.1;       
 
-  const int ASCII_NB_INDIVIDUAL = 10;    // maximum number of individuals for displaying the results of
-                                         // individual alignments
-  const double PLOT_YMARGIN = 0.1;       // y axis margin for the plotting of distances
+  /// distance rounding value
+  const double DISTANCE_ROUNDNESS = 1.e-12;  
 
-  const double DISTANCE_ROUNDNESS = 1.e-12;  // distance rounding
-
-  const int GLOBAL_NB_ITER = 20;         // number of iterations when the clusters are globally computed
-  const int PARTITIONING_NB_ITER_1 = 50;  // maximum number of iterations
-  const int PARTITIONING_NB_ITER_2 = 20;  // maximum number of iterations
+  /// number of iterations when the clusters are globally computed
+  /// in hierarchical clustering
+  const int GLOBAL_NB_ITER = 20;     
+  /// maximum number of iterations in clustering: partitioning variant 1  
+  const int PARTITIONING_NB_ITER_1 = 50;  
+  /// maximum number of iterations in clustering: partitioning variant 2
+  const int PARTITIONING_NB_ITER_2 = 20;  
 
   enum matrix_transform {
     COPY ,

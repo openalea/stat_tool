@@ -222,7 +222,7 @@ void class_constant()
   .export_values()
   ;
 
-  enum_<stat_tool::wrap_util::UniqueInt<3, 7> >("PearsonType")
+  enum_<stat_tool::wrap_util::UniqueInt<3, 7> >("CorrelationType")
   .value("PEARSON", PEARSON)
   .value("SPEARMAN", SPEARMAN)
   .value("KENDALL", KENDALL)

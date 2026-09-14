@@ -91,15 +91,15 @@ sub_variable_type = {
     "SYMBOLIC" : VariableType.NOMINAL,
     }
 
-pearson_type = {
-    "PEARSON": PearsonType.PEARSON,
-    "SPEARMAN": PearsonType.SPEARMAN,
-    "KENDALL": PearsonType.KENDALL,
-    "SPEARMAN2": PearsonType.SPEARMAN2,
-    "Pearson": PearsonType.PEARSON,
-    "Spearman": PearsonType.SPEARMAN,
-    "Kendall": PearsonType.KENDALL,
-    "Spearman2": PearsonType.SPEARMAN2
+correlation_type = {
+    "PEARSON": CorrelationType.PEARSON,
+    "SPEARMAN": CorrelationType.SPEARMAN,
+    "KENDALL": CorrelationType.KENDALL,
+    "SPEARMAN2": CorrelationType.SPEARMAN2,
+    "Pearson": CorrelationType.PEARSON,
+    "Spearman": CorrelationType.SPEARMAN,
+    "Kendall": CorrelationType.KENDALL,
+    "Spearman2": CorrelationType.SPEARMAN2
     }
 
 smoothing_penalty_type = {
