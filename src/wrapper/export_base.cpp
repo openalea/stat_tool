@@ -361,6 +361,22 @@ void class_constant()
   .export_values()
   ;
 
+ enum_<stat_tool::wrap_util::UniqueInt<7, 23> >("ContinuousDistributionIdentifierType")
+  .value("GAMMA", GAMMA)
+  .value("INVERSE_GAUSSIAN", INVERSE_GAUSSIAN)
+  .value("GAUSSIAN", GAUSSIAN)
+  .value("VON_MISES", VON_MISES)
+  .value("ZERO_INFLATED_GAMMA", ZERO_INFLATED_GAMMA)
+  .value("LINEAR_MODEL", LINEAR_MODEL)
+  .value("AUTOREGRESSIVE_MODEL", AUTOREGRESSIVE_MODEL)
+  .export_values()
+  ;
+
+ enum_<stat_tool::wrap_util::UniqueInt<2, 24> >("AngleUnit")
+  .value("DEGREE", DEGREE)
+  .value("RADIAN", RADIAN)
+  .export_values()
+  ;
 
   /*const int NB_STATE = 100;
   const int ORDER = 8;

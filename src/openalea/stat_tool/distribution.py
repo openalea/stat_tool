@@ -23,6 +23,7 @@ from openalea.stat_tool._stat_tool import (
     _DiscreteParametricModel,
     _DiscreteDistributionData,
     _Distribution,
+    _ContinuousParametric,
     I_DEFAULT,
     D_DEFAULT,
     D_INF,
@@ -37,7 +38,10 @@ from openalea.stat_tool._stat_tool import (
 _SetSeedInstance = _SetSeed()
 set_seed = _SetSeedInstance.set_seed
 
-from .enums import distribution_identifier_type
+from .enums import (distribution_identifier_type,
+                    continuous_distribution_identifier_type,
+                    angle_unit
+)
 
 __all__ = ["_Distribution",
            "_DiscreteParametricModel",
@@ -341,4 +345,88 @@ def ToHistogram(dist):
     """
     return dist.extract_data()
 
+
+def ContinuousDistribution(utype, *args):
+    """
+    Construction of a parametric continuous distribution (either Gamma,
+    Inverse Gaussian, Gaussian, Von Mises or zero-inflated Gamma 
+    from the name and the parameters of the distribution.
+
+    :Parameters:
+      * `utype`: name of the distribution (str) or instance
+
+      .. note:: the names of the parametric continuous distributions can be
+        summarized by their first letters:
+
+        * "GM" (GAMMA)
+        * "IGS" (INVERSE_GAUSSIAN)
+        * "GS", (GAUSSIAN)
+        * "VM", (VON_MISES)
+        * "ZIG", (ZERO_INFLATED_GAMMA)
+
+    :Returns:
+        If the construction succeeds, an object of type ContinuousDistribution 
+        is returned, otherwise no object is returned.
+
+    :Examples:
+
+    .. doctest::
+        :options: +SKIP
+
+        >>> ContinuousDistribution("GAUSSIAN", mean, variance)
+
+    .. seealso::
+        :func:`~openalea.stat_tool.output.Save`,
+        :func:`~openalea.stat_tool.estimate.Estimate`
+        :func:`~openalea.stat_tool.simulate.Simulate`.
+    """
+    # Constructor from ContinuousDistribution
+    if(len(args) == 0):
+        error.CheckType([utype],
+                        [[str, _ContinuousParametric]],
+                        arg_id=[1])
+        result =  _ContinuousParametric(utype)
+    # from parameters
+    if len(args)>0:
+        error.CheckArgumentsLength(args, 1)
+        if utype in ["GM",  "GAMMA"]:
+            result = Gamma(*args)
+        elif utype in ["GS", "GAUSSIAN"]:
+            result = Gaussian(*args)
+        elif utype in ["M", "MULTINOMIAL"]:
+            result = Multinomial(*args)
+        elif utype in ["NB", "NEGATIVE_BINOMIAL"]:
+            result = NegativeBinomial(*args)
+        elif utype in ["U", "UNIFORM"]:
+            result = Uniform(*args)
+        else:
+            raise KeyError(" %s not found. Allowed keys are %s" 
+                           % (utype, list(distribution_identifier_type.keys())))
+
+    return result
+
+
+def Gaussian(mean=0., std=1.):
+    """
+    Construction of a Gaussian distribution
+
+    :param float mean: mean
+    :param float std: standard deviation
+
+    .. plot::
+        :width: 50%
+        :include-source:
+
+        from openalea.stat_tool.distribution import Gaussian
+        g = Gaussian(-3,10)
+        g.plot(legend_size=8)
+
+    """
+
+    mean = float(mean)
+    variance = float(variance)
+    assert variance > 0
+
+    return(_ContinuousParametric(GAUSSIAN.real,
+        mean, variance, 0., 0))
 

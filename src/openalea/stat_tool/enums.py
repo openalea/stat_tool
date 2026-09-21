@@ -26,7 +26,8 @@ from openalea.stat_tool._stat_tool import (
     _VectorDistance, 
     _Regression,
     _MultivariateMixture,
-    _MultivariateMixtureData
+    _MultivariateMixtureData,
+    _ContinuousParametric
     )
 
 # map to enumerate in boost python
@@ -195,6 +196,28 @@ threshold_direction = {
     "BELOW": ThresholdDirection.BELOW,
   }
 
+continuous_distribution_identifier_type = {
+    "GM":            ContinuousDistributionIdentifierType.GAMMA,
+    "GAMMA":         ContinuousDistributionIdentifierType.GAMMA,
+    "IGS":                ContinuousDistributionIdentifierType.INVERSE_GAUSSIAN,
+    "INVERSE_GAUSSIAN":          ContinuousDistributionIdentifierType.INVERSE_GAUSSIAN,
+    "GS":               ContinuousDistributionIdentifierType.GAUSSIAN,
+    "GAUSSIAN": ContinuousDistributionIdentifierType.GAUSSIAN,
+    "VM": ContinuousDistributionIdentifierType.VON_MISES,
+    "VON_MISES": ContinuousDistributionIdentifierType.VON_MISES,
+    "ZIG": ContinuousDistributionIdentifierType.ZERO_INFLATED_GAMMA,
+    "ZERO_INFLATED_GAMMA": ContinuousDistributionIdentifierType.ZERO_INFLATED_GAMMA,
+    "LM": ContinuousDistributionIdentifierType.LINEAR_MODEL,
+    "LINEAR_MODEL": ContinuousDistributionIdentifierType.LINEAR_MODEL,
+    "AR": ContinuousDistributionIdentifierType.AUTOREGRESSIVE_MODEL,
+    "AUTOREGRESSIVE_MODEL": ContinuousDistributionIdentifierType.AUTOREGRESSIVE_MODEL,
+    }
+
+angle_unit = {
+    "DEGREE", AngleUnit.DEGREE,
+    "RADIAN", AngleUnit.RADIAN,
+    }
+
 keep_type = {
              "keep": "Keep",
              "Keep": "Keep",
@@ -227,6 +250,7 @@ model_distribution_types = [ _DiscreteMixture,
                             _Compound,
                             _Convolution,
                             _DiscreteParametricModel,
+                            _ContinuousParametric,
                             _Distribution]
 
 all_stat_tool_types  = [_FrequencyDistribution,
@@ -245,7 +269,8 @@ all_stat_tool_types  = [_FrequencyDistribution,
                         _DistanceMatrix,
                         _Regression,
                         _MultivariateMixture,
-                        _MultivariateMixtureData
+                        _MultivariateMixtureData,
+                        _ContinuousParametric
                         ]
 
 

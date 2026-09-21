@@ -3,9 +3,15 @@
 
 __version__ = "$Id$"
 
-from .tools import DISABLE_PLOT, interface
+try:
+    from .tools import DISABLE_PLOT, interface
+except ImportError:
+    from tools import DISABLE_PLOT, interface
 
-from openalea.stat_tool._stat_tool import _DiscreteParametricModel
+from openalea.stat_tool._stat_tool import (
+    _DiscreteParametricModel,
+    _ContinuousParametric
+    )
 
 from openalea.stat_tool import Estimate
 from openalea.stat_tool.distribution import (
@@ -17,6 +23,8 @@ from openalea.stat_tool.distribution import (
     ToDistribution,
     ToHistogram,
     Uniform,
+    ContinuousDistribution,
+    Gaussian,
     set_seed,
 )
 from openalea.stat_tool.histogram import Histogram
@@ -196,6 +204,14 @@ class TestDistribution:
         m = d.simulate(1000).extract_model()
         assert isinstance(m, _DiscreteParametricModel)
 
+    def test_gaussian(self):
+        set_seed(0)
+        d1 = ContinuousDistribution("GAUSSIAN", -3, 10)
+        assert list(d1.simulate(1000))
+        assert isinstance(d1, _ContinuousParametric)
+        d2 = Gaussian(-3, 10)
+        assert d2
+
     def test_multinomial(self):
         """Test multinomial (i.e. categorical) distribution"""
         set_seed(0)
@@ -284,3 +300,7 @@ class TestDistribution:
         assert s1 == s3
         #return s1, s2, s3
 
+if __name__ == "__main__":
+    T = TestDistribution()
+    T.test_neg_binomial()
+    T.test_gaussian()

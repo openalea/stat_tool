@@ -3934,13 +3934,14 @@ double Vectors::continuous_parametric_estimation(int variable , continuous_param
 
 /*--------------------------------------------------------------*/
 /**
- *  \brief Simulation using a continuous distribution.
+ *  \brief Simulation using a continuous distribution 
+ * (may modify) the instance
  *
  *  \return generated value.
  */
 /*--------------------------------------------------------------*/
 
-double ContinuousParametric::simulation()
+double ContinuousParametric::simulation_non_const() 
 
 {
   int i;
@@ -4096,5 +4097,54 @@ double ContinuousParametric::simulation()
   return value;
 }
 
+
+/*--------------------------------------------------------------*/
+/**
+ *  \brief Simulation using a continuous distribution 
+ *
+ *  \return generated value.
+ */
+/*--------------------------------------------------------------*/
+
+double ContinuousParametric::simulation() const
+{
+  
+  ContinuousParametric *dist = new ContinuousParametric(*this);
+  double val;
+
+  val = dist->simulation_non_const();
+
+  delete dist;
+  return val;
+}
+
+/*--------------------------------------------------------------*/
+/**
+ *  \brief Simulation of sample using a continuous distribution 
+ *
+ *  \return generated values.
+ */
+/*--------------------------------------------------------------*/
+
+std::vector<double> ContinuousParametric::simulation(StatError& error, int sample_size) const
+{
+  ContinuousParametric *dist = NULL;
+  std::vector<double> val(0);
+  int i;
+
+  error.init();
+
+  if (sample_size <= 0)
+      error.update(STAT_error[STATR_SAMPLE_SIZE]);
+  else  {
+      dist = new ContinuousParametric(*this);
+      val.resize(sample_size);
+      for (i = 0; i < sample_size; i++)
+        val[i] = dist->simulation_non_const();
+      delete dist;
+  }
+
+  return val;
+}
 
 };  // namespace stat_tool

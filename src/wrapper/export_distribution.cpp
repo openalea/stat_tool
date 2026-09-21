@@ -327,7 +327,7 @@ void class_discrete_parametric()
     .def_readonly("get_parameter", &DiscreteParametric::parameter)
     .def_readonly("get_probability", &DiscreteParametric::probability)
     .def(self_ns::str(self))
-    .def("simulate", &DiscreteParametric::simulation, "Simulation one value")
+    .def("simulate", &DiscreteParametric::simulation, "Simulation of one value")
 
     ;
 
@@ -601,3 +601,80 @@ void class_discrete_parametric_model()
 */
 #undef WRAP
 }
+
+
+
+class ContinuousParametricWrap
+{
+
+public:
+
+    static int get_ident(const ContinuousParametric& Model)
+    { return int(Model.ident); }
+
+    static boost::shared_ptr<ContinuousParametric> parametric_model_from_ident(int iident, 
+      double ilocation = D_INF, double idispersion = D_DEFAULT, double izero_probability = D_DEFAULT, 
+      int iunit = int(DEGREE))
+    {
+      continuous_parametric ident = continuous_parametric(iident);
+      angle_unit unit = angle_unit(iunit);
+      ContinuousParametric *dist = NULL;
+
+      dist = new ContinuousParametric(ident, ilocation, idispersion, izero_probability, unit);
+      return boost::shared_ptr<ContinuousParametric>(dist);
+    }
+
+    static double simulation1(const ContinuousParametric& dist)
+    {
+      return dist.simulation();
+    }
+
+    static boost::python::list simulation(const ContinuousParametric& dist, int sample_size)
+    {
+      int i;
+      double val;
+      StatError error;
+      boost::python::list ret;
+      std::vector<double> sim;
+
+      sim = dist.simulation(error, sample_size);
+      if (sim.size() == sample_size) {
+        for (i=0; i < sample_size; i++) {
+          val = dist.simulation();
+          ret.append(val);
+        }
+      } else {
+        stat_tool::wrap_util::throw_error(error);
+      }
+      return ret;
+    }
+};
+ 
+void class_continuous_parametric()
+{
+
+#define WRAP ContinuousParametricWrap
+
+  // DiscreteParametric base class
+  class_< ContinuousParametric >("_ContinuousParametric" )
+    .def(init< const ContinuousParametric&>())
+    .def("__init__", make_constructor(ContinuousParametricWrap::parametric_model_from_ident))
+    // .def("ascii_parameter_print", &ContinuousParametric::ascii_parameter_print, "Print parameters")
+    .def("get_ident", ContinuousParametricWrap::get_ident)
+    .def("get_plotable", &StatInterface::get_plotable,
+    		return_value_policy< manage_new_object >(),
+    		"Return a plotable (no parameters)")    
+    // .def(self_ns::str(self))
+    .def("simulate", WRAP::simulation1, "Simulation of one value")
+    .def("simulate", WRAP::simulation,
+    		args("nb_value"),
+    		"Simulate values")    
+    ;
+
+  
+#undef WRAP
+
+}
+
+ // class_< Distribution>("_Distribution")
+//     .def(init< boost::python::optional< int > > ())

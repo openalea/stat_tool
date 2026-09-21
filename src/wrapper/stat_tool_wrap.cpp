@@ -80,6 +80,7 @@ BOOST_PYTHON_MODULE(_stat_tool) {
   class_distribution();
   class_discrete_parametric();
   class_discrete_parametric_model();
+  class_continuous_parametric();
 
   // depends on discrete_parametric
   class_forward();

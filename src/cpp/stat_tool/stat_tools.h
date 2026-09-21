@@ -1068,7 +1068,12 @@ const double PLOT_RANGE_RATIO = 4.;
     double likelihood_computation(const FrequencyDistribution &histo , int min_interval) const
     { return histo.likelihood_computation(*this , min_interval); }
 
-    double simulation();
+
+    double simulation_non_const();
+
+    double simulation() const;
+
+    std::vector<double> simulation(StatError& error, int sample_size) const;
   };
 
 

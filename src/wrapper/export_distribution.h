@@ -26,5 +26,6 @@
 void class_distribution();
 void class_discrete_parametric();
 void class_discrete_parametric_model();
+void class_continuous_parametric();
 
 #endif
