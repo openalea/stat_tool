@@ -60,8 +60,9 @@ using namespace boost::math;
 
 namespace stat_tool {
 
-
+/// default quantiles in continuous parametric processes
 const static double bilateral_tail[7] = {0.05, 0.025, 0.01, 0.005, 0.0025, 0.001, 0.0005};
+/// default probability thresholds in continuous parametric processes
 const static double posterior_threshold[7] = {0.25, 0.1, 0.05, 0.025, 0.01, 0.005, 0.0025};
 
 

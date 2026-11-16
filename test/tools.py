@@ -20,7 +20,6 @@ if ("nosetests" in sys.argv) or ("pytest" in sys.argv[0]):
 else:
     DISABLE_PLOT = openalea.stat_tool.plot.DISABLE_PLOT = False
 
-# DISABLE_PLOT = openalea.stat_tool.plot.DISABLE_PLOT = True
 from pathlib import Path
 
 import openalea.stat_tool as st

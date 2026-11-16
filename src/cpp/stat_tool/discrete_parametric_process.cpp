@@ -138,6 +138,7 @@ DiscreteParametricProcess::DiscreteParametricProcess(int inb_state , DiscretePar
  *  \brief Copy of a DiscreteParametricProcess object.
  *
  *  \param[in] process reference on a DiscreteParametricProcess object.
+ *  \param[in] mass_copy flag on copying or not probabilities (mass)
  */
 /*--------------------------------------------------------------*/
 
@@ -155,7 +156,8 @@ void DiscreteParametricProcess::copy(const DiscreteParametricProcess &process, b
 	  for (i = 0;i < nb_state;i++) {
 		  if (process.observation[i] != NULL)
 			  observation[i] = new DiscreteParametric(*(process.observation[i]) , DISTRIBUTION_COPY , process.observation[i]->alloc_nb_value);
-		  	  observation[i]->mass_copy(*(process.observation[i]));
+		  	// already done by   new DiscreteParametric(. , DISTRIBUTION_COPY , nb_value);
+        // observation[i]->mass_copy(*(process.observation[i]));
 	  }
   } else {
 	  if (process.observation != NULL) {

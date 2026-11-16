@@ -5,8 +5,10 @@
 """
 
 __version__ = "$Id$"
-
-from .tools import DISABLE_PLOT, interface, runTestClass
+try:
+    from .tools import DISABLE_PLOT, interface, runTestClass
+except ImportError:
+    from tools import DISABLE_PLOT, interface, runTestClass
 
 from openalea.stat_tool import Convolution, Estimate
 from openalea.stat_tool.data_transform import ExtractDistribution

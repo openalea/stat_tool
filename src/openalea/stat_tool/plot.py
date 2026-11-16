@@ -59,16 +59,17 @@ class gnuplot(plotter):
     def __init__(self):
         """Initialize GnuPlot"""
         plotter.__init__(self)
-        import Gnuplot
+        from pygnuplot import gnuplot
 
-        self.session = Gnuplot.Gnuplot()
+        self.session = gnuplot.Gnuplot()
 
     def plot(self, plotable, title, groups=None, *args, **kargs):
         """
         Plot a plotable with title
         groups : list of group (int) to plot
         """
-        import Gnuplot
+        raise NotImplementedError("Gnuplot support not maintained (yet!)")
+        from pygnuplot.gnuplot import Gnuplot
 
         multiset = plotable
         g = self.session
@@ -83,54 +84,90 @@ class gnuplot(plotter):
             # Group filter
             if groups and multiplot.group not in groups:
                 continue
-            g.title(multiplot.title)
+            g.set(title = "'" + '"' + 
+                  str(multiplot.title) + '"' + "'")
             # yoffset = i * plotsize
 
             # g('set origin 0.0, %f'%(yoffset))
             # g('set size 1.0, %f'%(plotsize))
 
             # Labels
-            g.xlabel(multiplot.xlabel)
-            g.ylabel(multiplot.ylabel)
+            g.set(xlabel =  "'" + '"' + 
+                  str(multiplot.xlabel) + '"' + "'")
+            g.set(ylabel =  "'" + '"' + 
+                  str(multiplot.ylabel) + '"' + "'")
 
             # List of argument for the plot function
             plot_list = []
-            for singleplot in multiplot:
+            for j, singleplot in enumerate(multiplot):
                 style = singleplot.style
                 legend = singleplot.legend
-                _color = singleplot.color
+                color = singleplot.color
+                label = singleplot.label
 
                 x = []
                 y = []
-                for pt in singleplot:
-                    x.append(pt.x)
-                    y.append(pt.y)
+                labels = []
+                for i in range(0, len(singleplot)):
+                    x.append(singleplot.get_label_x(i))
+                    y.append(singleplot.get_label_y(i))
 
-                p = Gnuplot.Data(x, y)
-                if style:
-                    # todo: check that this option works.
-                    p.set_option(with_=style)
+                # no data available. check if label is on.
+                if len(x) == 0:
+                    if label == True:
+                        for i in range(0, singleplot.get_label_size()):
+                            x = singleplot.get_label_x(i)
+                            y = singleplot.get_label_y(i)
+                            labels = singleplot.get_label_text(i)
+                            # TODO: see gnuplot syntax
+                            # matplotlib.pyplot.text(x, y, labels)
+                            # pylab.hold(True)
+                    #        break # nothing else to be done in principle
+                    else:
+                        print("Warning. Empty data.")
+                        for i in range(0, singleplot.get_label_size()):
+                            x = singleplot.get_label_x(i)
+                            y = singleplot.get_label_y(i)
+                            labels = singleplot.get_label_text(i)
+                            matplotlib.pyplot.text(x, y, labels)
+                            pylab.hold(True)
+                        # return
+                else:
+                    pass
+                    # continue to the normal plots
+                    import pandas as pd
+                    if multiplot.xlabel:
+                        colname1 = str(multiplot.xlabel)
+                    else:
+                        colname1 = "x"
+                    if legend:
+                        colname2 = str(legend)
+                    else:
+                        colname2 = "y"
+                    df = pd.DataFrame({colname1: x, colname2: y})
+                    # p = g.plot_data(str(list(zip(x,y))),
+                    #                 style =  "'" + style + "'",
+                    #                 legend =  legend)
+                    p = g.plot_data(df,
+                                    style =  "'" + style + "'")
+                    # plot_list.append(p)
 
-                if legend:
-                    p.set_option(title=legend)
-                plot_list.append(p)
+                # Range
+                _xrange = multiplot.xrange
+                _yrange = multiplot.yrange
+                if _xrange.min != _xrange.max:
+                    g("set xrange[%f:%f]" % (_xrange.min, _xrange.max))
+                if _yrange.min != _yrange.max:
+                    g("set yrange[%f:%f]" % (_yrange.min, _yrange.max))
 
-            # Range
-            _xrange = multiplot.xrange
-            _yrange = multiplot.yrange
-            if _xrange.min != _xrange.max:
-                g("set xrange[%f:%f]" % (_xrange.min, _xrange.max))
-            if _yrange.min != _yrange.max:
-                g("set yrange[%f:%f]" % (_yrange.min, _yrange.max))
+                # Tics
+                if multiplot.xtics > 0:
+                    g("set xtics 0, %f" % (multiplot.xtics))
+                if multiplot.ytics > 0:
+                    g("set ytics 0, %f" % (multiplot.ytics))
 
-            # Tics
-            if multiplot.xtics > 0:
-                g("set xtics 0, %f" % (multiplot.xtics))
-            if multiplot.ytics > 0:
-                g("set ytics 0, %f" % (multiplot.ytics))
-
-            g.plot(*plot_list)
-            eval(input("Press Enter to continue"))
+                #  g.plot(*plot_list)
+                eval(input("Press Enter to continue"))
 
 
 class mplotlib(plotter):

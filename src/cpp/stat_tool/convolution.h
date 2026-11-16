@@ -54,16 +54,24 @@ namespace stat_tool {
  */
 
 
-  const int CONVOLUTION_NB_DISTRIBUTION = 10;  // maximum number of elementary distributions
-  const double CONVOLUTION_THRESHOLD = 0.9999;  // threshold on the cumulative distribution function
-                                                // for determining the upper bound of the support
-
-  const double CONVOLUTION_INIT_PROBABILITY = 0.001;  // threshold for probability initialization
-  const double CONVOLUTION_LIKELIHOOD_DIFF = 1.e-5;  // threshold for stopping EM iterations
-  const int CONVOLUTION_NB_ITER = 10000;  // maximum number of EM iterations
-  const double CONVOLUTION_DIFFERENCE_WEIGHT = 0.5;  // default penalty weight (1st- or 2nd-order difference cases)
-  const double CONVOLUTION_ENTROPY_WEIGHT = 0.1;  // default penalty weight (entropy case)
-  const int CONVOLUTION_COEFF = 10;      // rounding coefficient for the estimator
+  /// maximum number of elementary distributions in convoluations
+  const int CONVOLUTION_NB_DISTRIBUTION = 10;  
+  /// threshold on the cumulative distribution function
+  /// for determining the upper bound of the support
+  /// in convolutions
+  const double CONVOLUTION_THRESHOLD = 0.9999;  
+  /// threshold for probability initialization in convolutions
+  const double CONVOLUTION_INIT_PROBABILITY = 0.001;  
+  /// threshold for stopping EM iterations in convolutions
+  const double CONVOLUTION_LIKELIHOOD_DIFF = 1.e-5;  
+  /// maximum number of EM iterations in convolutions
+  const int CONVOLUTION_NB_ITER = 10000;  
+  /// default penalty weight (1st- or 2nd-order difference cases) in convolutions
+  const double CONVOLUTION_DIFFERENCE_WEIGHT = 0.5;  
+  /// default penalty weight (entropy case) in convolutions
+  const double CONVOLUTION_ENTROPY_WEIGHT = 0.1;  
+  /// rounding coefficient for the estimator in convolutions
+  const int CONVOLUTION_COEFF = 10;     
 
 
 
