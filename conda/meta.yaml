@@ -33,12 +33,14 @@ requirements:
     {% for dep in build_deps %}
     - {{ dep }}
     {% endfor  %}
-    - boost
+    - libboost-devel
+    - libboost-python-devel
     - scikit-build-core
     - numpy
 
   build:
     - {{ compiler("cxx") }}
+    - {{ stdlib('c') }}
     - cmake
     - make                                 # [not win]
 
