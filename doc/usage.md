@@ -32,8 +32,8 @@ examples/clustering.ipynb
 examples/comparison.ipynb
 examples/data_transform.ipynb
 examples/plotting.ipynb
+examples/regression.ipynb
 ```
 
 <!--
-examples/regression.ipynb
 examples/simulate.ipynb -->
