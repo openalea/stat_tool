@@ -6,9 +6,10 @@ dependencies:
   - scikit-build-core
   - setuptools_scm
   - cmake
-  - boost
-  - doxygen
+  - libboost-devel
+  - libboost-python-devel
   - matplotlib-base
+  - compilers
   - pip
   - pip:
       - -e '..[test,dev,doc]'

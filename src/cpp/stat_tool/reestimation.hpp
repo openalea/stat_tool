@@ -42,6 +42,7 @@
 
 #define _USE_MATH_DEFINES // for C++ win to get M_PI in cmath
 #include <cmath>
+#include <algorithm>
 
 #include <boost/math/special_functions/digamma.hpp>
 
@@ -1465,7 +1466,7 @@ double Reestimation<Type>::negative_binomial_estimation(DiscreteParametric *dist
       dist_cpl->inf_bound = i;
       dist_cpr->inf_bound = i;
       shift_mean = mean - i;
-      dist_cpr->probability = min(shift_mean / variance, 1-1e-10	); // dist_cpr->probability = min(shift_mean / variance, 1-std::numeric_limits<double>::min());
+		dist_cpr->probability = (std::min)(shift_mean / variance, 1.0 - 1e-10	); // dist_cpr->probability = min(shift_mean / variance, 1-std::numeric_limits<double>::min());
       if (dist_cpr->probability > 0) {
         max_param = pow((mean - min_inf_bound),2) / variance;
         dist_cpl->copy(*dist_cpr);
