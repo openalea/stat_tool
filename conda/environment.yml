@@ -6,7 +6,8 @@ dependencies:
   - scikit-build-core
   - setuptools_scm
   - cmake
-  - boost
+  - libboost-devel
+  - libboost-python-devel
   - matplotlib-base
   - compilers
   - pip
